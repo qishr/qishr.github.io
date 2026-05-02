@@ -1,0 +1,7 @@
+module:cascara.lang.yaml
+io.github.qishr.cascara.lang.yaml
+io.github.qishr.cascara.lang.yaml.annotation
+io.github.qishr.cascara.lang.yaml.ast
+io.github.qishr.cascara.lang.yaml.exception
+io.github.qishr.cascara.lang.yaml.processor
+io.github.qishr.cascara.lang.yaml.token
