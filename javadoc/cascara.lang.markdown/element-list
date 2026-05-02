@@ -1,0 +1,5 @@
+module:cascara.lang.markdown
+io.github.qishr.cascara.lang.markdown
+io.github.qishr.cascara.lang.markdown.ast
+io.github.qishr.cascara.lang.markdown.processor
+io.github.qishr.cascara.lang.markdown.token

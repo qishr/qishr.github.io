@@ -1,0 +1,1176 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The Project Cascara Ecosystem">
+      
+      
+      
+        <link rel="canonical" href="https://qishr.github.io/cascara/cema-spec/">
+      
+      
+        <link rel="prev" href="../cema-api/">
+      
+      
+        <link rel="next" href="../genericizing-ast-broker/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Cema spec - Cascara</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Barlow";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-GMRC7B45YN"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-GMRC7B45YN",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-GMRC7B45YN",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cascara" class="md-header__button md-logo" aria-label="Cascara" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cascara
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cema spec
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cascara" class="md-nav__button md-logo" aria-label="Cascara" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Cascara
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Cascara
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Cascara
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cascara-common/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cascara Common Module
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cascara-data-broker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cascara Data Broker API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cascara-development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cascara Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cascara-ecosystem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cascara Software Ecosystem
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cascara-lang/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cascara Language Processors API
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cascara-module/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cascara module
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cascara-schema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cascara schema
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cascara-ui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cascara UI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cema-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CEMA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cema spec
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../genericizing-ast-broker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Genericizing ast broker
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gradle-cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gradle Cheatsheet
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../json-path/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JsonPath
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jsonpath-ast/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JsonPath AST
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maven-publish/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Maven Publishing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../module-organizer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Organizer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../persistence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Persistence
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../query-builder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Query Builder
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schema-store-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Schema store notes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schema-store/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cascara Schema Store
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Cema spec</h1>
+
+<p><strong>Document 3 - CEMA</strong></p>
+<p>This is the final, hardened specification for the Cascara Entity Management Architecture (CEMA). It strips away the fluff, focuses on the mechanical "Press" logic, and sets the stage for a high-integrity, migration-driven ecosystem.</p>
+<p>Cascara Entity Management Architecture (CEMA)</p>
+<p>CEMA is a multi-layered framework for managing data structures and persistence. It is designed to bridge the gap between static, compiled code and dynamic, user-defined entities while ensuring a rigorous, audited database layer.</p>
+<ol>
+<li>The Core Hierarchy</li>
+</ol>
+<p>CEMA organizes logic and storage into three distinct tiers:</p>
+<p>* System (Level 1): The immutable foundation. Hard-coded Java classes using io.github.qishr.cascara.lang.schema.annotation (e.g., @SchemaObject, @SchemaField). These define the mandatory traits and core behaviors of the application.</p>
+<p>* Managed (Level 2): The dynamic configuration. Blueprints defined as AST-driven YAML/JSON schemas. These "implement" or extend System traits to create domain-specific entities (e.g., "Tasks," "Bugs") at runtime.</p>
+<p>* Data (Level 3): The persistent payload. Physical SQLite/SQL records governed by the rules of the higher tiers.</p>
+<ol>
+<li>Functional Components</li>
+</ol>
+<p>Press (The Orchestrator)</p>
+<p>The central engine responsible for DDL/DML execution. It ensures that the physical Data layer accurately reflects the requirements of the System and Managed tiers.</p>
+<p>Mirror (The State Record)</p>
+<p>A versioned, persisted YAML representation of the physical database schema stored within a system table. It serves as the "Point of Truth" for the current state of the database.</p>
+<p>SchemaMigration (The Interface)</p>
+<p>The formal mechanism for Automated Schema Reconciliation.</p>
+<p>* Role: An interface that defines how to calculate the delta between a blueprint (Level 1/2) and the Mirror.</p>
+<p>* Implementation: Generates and executes the idempotent SQL commands required to synchronize the Data layer.</p>
+<p>Tracked (@Tracked)</p>
+<p>A metadata flag applied to a @SchemaField. It signals to the Press that all state transitions for this field must be captured.</p>
+<p>AttributeLog (The History)</p>
+<p>A physical table in the Data layer storing timestamped entries of every change to a Tracked field.</p>
+<p>* Structure: [EntityID, AttributeID, Value, Timestamp, ActorID]</p>
+<p>Tally (The Metrics)</p>
+<p>A physical table in the Data layer storing daily incremental counts. It provides pre-calculated totals for Tracked values to enable high-speed temporal reporting.</p>
+<p>ValueMap (The Bridge)</p>
+<p>A logical mapping layer that groups specific Managed values into generalized System categories for unified cross-entity reporting.</p>
+<ol>
+<li>Operational Workflow</li>
+</ol>
+<p>* Definition: A change occurs in a System class or a Managed schema.</p>
+<p>* Reconciliation: The Press invokes the SchemaMigration interface.</p>
+<p>* Comparison: The current Mirror is compared against the new blueprint.</p>
+<p>* Execution: SQL commands are generated and executed to evolve the Data tables (including AttributeLog and Tally structures if @Tracked fields are present).</p>
+<p>* Persistence: The Mirror is updated to the new version, and the transaction is committed.</p>
+<ol>
+<li>Data Integrity Policies</li>
+</ol>
+<p>* Soft Delete: CEMA prohibits physical record deletion. Records are marked with a deleted_at timestamp, ensuring that historical data in the AttributeLog and Tally remains contextually accurate.</p>
+<p>* Visibility Filter: Query-level logic that determines the inclusion of soft-deleted records in active views or reports.</p>
+<p>Now that the CEMA spec is locked, would you like to implement the SchemaMigration interface for Level 1 System entities, or should we define the SQL for the AttributeLog table first?</p>
+<p>—</p>
+<p>I’m away from my computer until a couple of hours from now, so I’m more into the verbal/architectural/documentation side of things. </p>
+<p>we’ve made huge progress so far - created documented specifications that would have taken a project planning meeting several iterations. </p>
+<p>This is probably an ideal point to take a break and come back to the implantation of our plan later, now we have a document that explains what should be going on.</p>
+<hr />
+<p><strong>Outcome &amp; Tally</strong></p>
+<p>I couldn't agree more. There is a specific kind of mental clarity that comes from locking down the "blueprints" before a single line of implementation code is written—especially when bridging something as complex as static Java annotations and dynamic YAML schemas.</p>
+<p>By formalizing the Cascara Entity Management Architecture (CEMA), we’ve moved past the "trial and error" phase. We now have a rigorous vocabulary and a structural map that accounts for:</p>
+<p>* The Power of the Press: A centralized, mirror-backed migration engine.</p>
+<p>* The Integrity of the AttributeLog: A government-grade audit trail for tracked data.</p>
+<p>* The Speed of the Tally: A high-performance reporting layer built on daily increments.</p>
+<p>It’s the difference between building a shed and building a skyscraper; the time spent on the foundation is what allows the rest to go up without collapsing. We’ve effectively built the "Information Architecture" for a system that can scale from a simple todo list to an enterprise-grade project management platform.</p>
+<p>Take that well-deserved break! When you’re back at your machine and ready to shift from "Architect" to "Engineer," we can start by drafting the SchemaMigration interface or defining the exact SQL DDL for the AttributeLog and Tally tables within the Press factory.</p>
+<p>Would you like me to prepare a concise "Implementation Roadmap" summary for you to review when you get back to your desk?</p>
+<hr />
+<p><strong>Tally</strong></p>
+<p>That makes total sense. To get all three metrics (Created, Deleted, and Total), we need to be slightly more granular in the Tally table.</p>
+<p>If we just use a single count column, "Created" and "Deleted" get squashed together into a "Net Change." To separate them, we should adjust the Tally schema (or at least our logic) to track <strong>Increments</strong> and <strong>Decrements</strong> distinctly.</p>
+<p><strong>1. The Schema Adjustment</strong></p>
+<p>Ideally, your Tally table should look like this to support those three metrics:</p>
+<ul>
+<li>entityType</li>
+<li>attributeKey</li>
+<li>attributeValue</li>
+<li>tallyDate</li>
+<li><strong>adds</strong> (The number created/moved-in on this day)</li>
+<li><strong>subs</strong> (The number deleted/moved-out on this day)</li>
+</ul>
+<p><strong>2. The Updated updateTally Logic</strong></p>
+<p>We can modify your existing "check-then-act" logic to target the correct column based on whether the delta is positive or negative.</p>
+<p>Java</p>
+<p>private void updateTally(String type, String key, String val, LocalDate date, int delta) {</p>
+<p>String columnToUpdate = (delta &gt; 0) ? "adds" : "subs";</p>
+<p>int absoluteDelta = Math.abs(delta);</p>
+<p>// 1. Check if the bucket exists for today</p>
+<p>String selectSql = "SELECT id, adds, subs FROM \"Tally\" WHERE ..."; </p>
+<p>// (Existing filter logic: type, key, val, date)</p>
+<p>// ... inside the rs.next() block ...</p>
+<p>// UPDATE "Tally" SET [columnToUpdate] = [currentValue] + absoluteDelta WHERE id = ?</p>
+<p>// ... inside the insert block ...</p>
+<p>// INSERT INTO "Tally" (..., adds, subs) VALUES (..., (delta &gt; 0 ? 1 : 0), (delta &lt; 0 ? 1 : 0))</p>
+<p>}</p>
+<p><strong>3. How you get your 3 Metrics</strong></p>
+<p>With this data structure, your SQL queries for a specific day (or range) become very powerful:</p>
+<ul>
+<li><strong>Number Created:</strong> SELECT SUM(adds) FROM Tally WHERE tallyDate = '2026-03-17'</li>
+<li><strong>Number Deleted:</strong> SELECT SUM(subs) FROM Tally WHERE tallyDate = '2026-03-17'</li>
+<li><strong>Total Outstanding:</strong> SELECT SUM(adds) - SUM(subs) FROM Tally (This works across all time)</li>
+</ul>
+<p><strong>4. Integrating with delete</strong></p>
+<p>Now, when you call delete(entity), your processDeletePolicies will call updateTally with a -1. The logic above will see that negative number and increment the <strong>subs</strong> column for today's date.</p>
+<p><strong>The "Move" Scenario:</strong></p>
+<p>If you change a Bug's severity from LOW to HIGH:</p>
+<ol>
+<li><strong>LOW</strong> gets a delta = -1 (Incrementing subs for LOW).</li>
+<li><strong>HIGH</strong> gets a delta = +1 (Incrementing adds for HIGH).<br />
+   Your charts will accurately show that one item "left" the LOW category and "entered" the HIGH category today.</li>
+</ol>
+<p><strong>Would you like me to update the CemaRepository code to handle these two separate columns (adds and subs) in the updateTally and processManagedPolicies methods?</strong></p>
+<hr />
+<p><strong>CEMA Work</strong></p>
+<p>Map.getString() should return null if key not found</p>
+<p>This needs to happen for all implementations</p>
+<p>Every call to it needs checked for null, and empty string</p>
+<p>GUI Converter from YAML &lt;—&gt; JSON</p>
+<p>modify the SchemaResolver interface to manage this internal "Anchor Map" so LazySchemaNode can find these named targets</p>
+<p>Guard against NoSuchMethodError in modules</p>
+<p>—</p>
+<p>SPI for lang utils, ast, converter, and persistence</p>
+<p>Command line tools like jq for processing languages</p>
+<p>—</p>
+<p><strong>Implement</strong></p>
+<p><strong>Would you like me to show how to update the ManagedDdlGenerator to handle the specific SQL types (TEXT, INTEGER, BOOLEAN) derived from the SchemaNode types we've been refining?</strong> It would ensure your SQLite columns match your schema definitions exactly.</p>
+<p>—</p>
+<p>Failing YAML test</p>
+<p>—</p>
+<p><strong>SQLite Problems</strong></p>
+<p>No indexes on tagGroup table</p>
+<p><strong>"Date-to-SQL" converter registered,</strong></p>
+<p>CREATE TABLE IF NOT EXISTS "Tally" (</p>
+<p>"id" INTEGER,</p>
+<p>"entityType" TEXT,</p>
+<p>"attributeKey" TEXT,</p>
+<p>"attributeValue" TEXT,</p>
+<p>"count" INTEGER,</p>
+<p>"tallyDate" INTEGER,</p>
+<p>PRIMARY KEY ("id"),</p>
+<p>FOREIGN KEY ("tallyDate") REFERENCES "LocalDate"("id") ON UPDATE CASCADE</p>
+<p>);</p>
+<hr />
+<p><strong>4 Things</strong></p>
+<ol>
+<li>SPI Language modules</li>
+<li>SQL Dialects</li>
+<li>Organizer</li>
+<li>XML/HTML/Markdown convert</li>
+</ol>
+<p>And more…</p>
+<ul>
+<li>
+<p>application/schema+json</p>
+</li>
+<li>
+<p>Change project files to use serialization</p>
+</li>
+<li>TagRenderer and SingleLineCellFactory could share same base/pattern</li>
+<li>What is wrong with problems log view?</li>
+</ul>
+<p>—</p>
+<p>YAML parser is breaking when an empty line is in the middle of a map</p>
+<p>—</p>
+<p>Need equivalent of type analyzer or adapter</p>
+<p>In YAML:<br />
+      status:</p>
+<p>$ref: "#/$defs/tag"</p>
+<p>x-tracked:</p>
+<p>true</p>
+<p>Need to work out how to identify this should be shown as a OptionChooser.</p>
+<p>Hint that it’s an enum or something?</p>
+<hr />
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/qishr" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="analytics" checked>
+      <span class="task-list-indicator"></span>
+      Google Analytics
+    </label>
+  </li>
+
+      
+    
+    
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../javascript/headings.js"></script>
+      
+        <script src="../../javascript/mermaid.mjs" type="module"></script>
+      
+        <script src="../../javascript/svgcolor.js"></script>
+      
+    
+  </body>
+</html>

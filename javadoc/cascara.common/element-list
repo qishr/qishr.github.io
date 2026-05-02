@@ -1,0 +1,14 @@
+module:cascara.common
+io.github.qishr.cascara.common.lang.annotation
+io.github.qishr.cascara.common.diagnostic
+io.github.qishr.cascara.common.lang
+io.github.qishr.cascara.common.lang.ast
+io.github.qishr.cascara.common.lang.exception
+io.github.qishr.cascara.common.lang.processor
+io.github.qishr.cascara.common.lang.semantic
+io.github.qishr.cascara.common.lang.simple
+io.github.qishr.cascara.common.lang.token
+io.github.qishr.cascara.common.semver
+io.github.qishr.cascara.common.service
+io.github.qishr.cascara.common.spi
+io.github.qishr.cascara.common.util
