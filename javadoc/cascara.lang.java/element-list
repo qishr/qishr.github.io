@@ -1,8 +1,0 @@
-module:cascara.lang.java
-io.github.qishr.cascara.lang.java
-io.github.qishr.cascara.lang.java.exception
-io.github.qishr.cascara.lang.java.model
-io.github.qishr.cascara.lang.java.modeler
-io.github.qishr.cascara.lang.java.processor
-io.github.qishr.cascara.lang.java.token
-io.github.qishr.cascara.lang.java.util
