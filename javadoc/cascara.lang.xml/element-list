@@ -1,6 +1,0 @@
-module:cascara.lang.xml
-io.github.qishr.cascara.lang.xml
-io.github.qishr.cascara.lang.xml.ast
-io.github.qishr.cascara.lang.xml.exception
-io.github.qishr.cascara.lang.xml.processor
-io.github.qishr.cascara.lang.xml.token
