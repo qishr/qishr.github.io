@@ -1,0 +1,6 @@
+module:cascara.lang.json
+io.github.qishr.cascara.lang.json
+io.github.qishr.cascara.lang.json.ast
+io.github.qishr.cascara.lang.json.exception
+io.github.qishr.cascara.lang.json.processor
+io.github.qishr.cascara.lang.json.token
