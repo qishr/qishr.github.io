@@ -837,6 +837,18 @@
          <lastmod>2026-05-18</lastmod>
     </url>
     <url>
+         <loc>https://qishr.github.io/javadoc/cascara.macos.menus/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.macos.menus/menus/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.macos.menus/menus/MacosSystemMenus/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
          <loc>https://qishr.github.io/javadoc/cascara.schema/</loc>
          <lastmod>2026-05-18</lastmod>
     </url>
@@ -850,6 +862,10 @@
     </url>
     <url>
          <loc>https://qishr.github.io/javadoc/cascara.schema/schema/CompiledSchema/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/Schema/</loc>
          <lastmod>2026-05-18</lastmod>
     </url>
     <url>
@@ -973,6 +989,42 @@
          <lastmod>2026-05-18</lastmod>
     </url>
     <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/internal/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/internal/CascaraSchemaCompiler/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/internal/CascaraSchemaDecompiler/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/internal/CascaraSchemaGenerator/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/internal/CascaraSchemaResolver/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/internal/CompiledSchema/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/internal/SchemaComparator/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/internal/SchemaNodeDumper/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/internal/SchemaUtils/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
          <loc>https://qishr.github.io/javadoc/cascara.schema/schema/rule/</loc>
          <lastmod>2026-05-18</lastmod>
     </url>
@@ -1029,6 +1081,34 @@
          <lastmod>2026-05-18</lastmod>
     </url>
     <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/structure/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/structure/ArraySchemaNode/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/structure/BaseSchemaNode/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/structure/LazySchemaNode/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/structure/ObjectSchemaNode/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/structure/ScalarSchemaNode/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/structure/SchemaNode/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
          <loc>https://qishr.github.io/javadoc/cascara.schema/schema/util/</loc>
          <lastmod>2026-05-18</lastmod>
     </url>
@@ -1073,7 +1153,15 @@
          <lastmod>2026-05-18</lastmod>
     </url>
     <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/util/SchemaDecompiler/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
          <loc>https://qishr.github.io/javadoc/cascara.schema/schema/util/SchemaDiffDiagnostic/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/util/SchemaGenerator/</loc>
          <lastmod>2026-05-18</lastmod>
     </url>
     <url>
@@ -1081,7 +1169,15 @@
          <lastmod>2026-05-18</lastmod>
     </url>
     <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/util/SchemaResolver/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
          <loc>https://qishr.github.io/javadoc/cascara.schema/schema/util/SchemaStore/</loc>
+         <lastmod>2026-05-18</lastmod>
+    </url>
+    <url>
+         <loc>https://qishr.github.io/javadoc/cascara.schema/schema/util/TypeAnalyzer/</loc>
          <lastmod>2026-05-18</lastmod>
     </url>
     <url>
