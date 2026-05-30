@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://qishr.github.io/javadoc/cascara.common/diagnostic/Reporter/">
       
       
-        <link rel="prev" href="../ReportStringWriter/">
+        <link rel="prev" href="../NoOpReporter/">
       
       
         <link rel="next" href="../SimpleReporter/">
@@ -428,12 +428,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
     
     
     
@@ -593,75 +587,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../ReportCollector/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ReportCollector
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ReportDiagnosticWriter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ReportDiagnosticWriter
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ReportStringWriter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    ReportStringWriter
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -743,18 +668,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#setdiagnosticwriter" class="md-nav__link">
+  <a href="#setdiagnosticcollector" class="md-nav__link">
     <span class="md-ellipsis">
-      setDiagnosticWriter
+      setDiagnosticCollector
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#setcollector" class="md-nav__link">
+  <a href="#setproblemcollector" class="md-nav__link">
     <span class="md-ellipsis">
-      setCollector
+      setProblemCollector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collectsproblems" class="md-nav__link">
+    <span class="md-ellipsis">
+      collectsProblems
     </span>
   </a>
   
@@ -1539,8 +1473,6 @@
       
         
       
-        
-      
     
     
     
@@ -1579,29 +1511,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lang/exception/LanguageException/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    LanguageException
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -4562,8 +4471,6 @@
       
         
       
-        
-      
     
     
     
@@ -4876,6 +4783,16 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -4885,102 +4802,6 @@
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_2_5" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../../cascara.lang.json/json/exception/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    Exception
-    
-  </span>
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_1_3_2_5" id="__nav_1_3_2_5_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_3_2_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_3_2_5">
-            <span class="md-nav__icon md-icon"></span>
-            Exception
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../cascara.lang.json/json/exception/JsonException/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    JsonException
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_2_6" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -4997,14 +4818,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_1_3_2_6" id="__nav_1_3_2_6_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_1_3_2_5" id="__nav_1_3_2_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_3_2_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_3_2_6">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_3_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3_2_5">
             <span class="md-nav__icon md-icon"></span>
             Processor
           </label>
@@ -5183,7 +5004,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_2_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_2_6" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -5200,14 +5021,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_1_3_2_7" id="__nav_1_3_2_7_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_1_3_2_6" id="__nav_1_3_2_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_3_2_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_3_2_7">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_3_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3_2_6">
             <span class="md-nav__icon md-icon"></span>
             Token
           </label>
@@ -5351,8 +5172,6 @@
       
         
           
-        
-      
         
       
         
@@ -5552,6 +5371,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -5561,96 +5384,6 @@
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4_2_5" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../../cascara.lang.xml/xml/exception/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    Exception
-    
-  </span>
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_1_4_2_5" id="__nav_1_4_2_5_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_4_2_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_4_2_5">
-            <span class="md-nav__icon md-icon"></span>
-            Exception
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../cascara.lang.xml/xml/exception/XmlParserException/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    XmlParserException
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4_2_6" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -5667,14 +5400,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_1_4_2_6" id="__nav_1_4_2_6_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_1_4_2_5" id="__nav_1_4_2_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_4_2_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_4_2_6">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_4_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4_2_5">
             <span class="md-nav__icon md-icon"></span>
             Processor
           </label>
@@ -5784,7 +5517,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4_2_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4_2_6" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -5801,14 +5534,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_1_4_2_7" id="__nav_1_4_2_7_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_1_4_2_6" id="__nav_1_4_2_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_4_2_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_4_2_7">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_1_4_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4_2_6">
             <span class="md-nav__icon md-icon"></span>
             Token
           </label>
@@ -6468,10 +6201,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -6542,58 +6271,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cascara.lang.yaml/yaml/exception/YamlParserException/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    YamlParserException
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../cascara.lang.yaml/yaml/exception/YamlSerializerException/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     YamlSerializerException
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../cascara.lang.yaml/yaml/exception/YamlTokenierException/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    YamlTokenierException
     
   </span>
   
@@ -15909,18 +15592,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#setdiagnosticwriter" class="md-nav__link">
+  <a href="#setdiagnosticcollector" class="md-nav__link">
     <span class="md-ellipsis">
-      setDiagnosticWriter
+      setDiagnosticCollector
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#setcollector" class="md-nav__link">
+  <a href="#setproblemcollector" class="md-nav__link">
     <span class="md-ellipsis">
-      setCollector
+      setProblemCollector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collectsproblems" class="md-nav__link">
+    <span class="md-ellipsis">
+      collectsProblems
     </span>
   </a>
   
@@ -16072,67 +15764,72 @@ All Known Implementing Classes:<br/>
 </tr>
 <tr>
 <td>public abstract <a href="./">Reporter</a></td>
-<td><a href="#setdiagnosticwriter">setDiagnosticWriter</a>(<a href="../ReportDiagnosticWriter/">ReportDiagnosticWriter</a> diagnosticWriter)</td>
+<td><a href="#setdiagnosticcollector">setDiagnosticCollector</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html">Consumer</a>&lt;<a href="../Diagnostic/">Diagnostic</a>&gt; collector)</td>
 <td></td>
 </tr>
 <tr>
 <td>public abstract <a href="./">Reporter</a></td>
-<td><a href="#setcollector">setCollector</a>(<a href="../ReportCollector/">ReportCollector</a> collector)</td>
+<td><a href="#setproblemcollector">setProblemCollector</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html">Consumer</a>&lt;<a href="../Diagnostic/">Diagnostic</a>&gt; collector)</td>
+<td></td>
+</tr>
+<tr>
+<td>public abstract boolean</td>
+<td><a href="#collectsproblems">collectsProblems</a>()</td>
 <td></td>
 </tr>
 <tr>
 <td>public abstract void</td>
-<td><a href="#trace">trace</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] m)</td>
+<td><a href="#trace">trace</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</td>
 <td>Reports an trace message through the reporter.</td>
 </tr>
 <tr>
 <td>public abstract void</td>
-<td><a href="#debug">debug</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] m)</td>
+<td><a href="#debug">debug</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</td>
 <td>Reports an debug message through the reporter.</td>
 </tr>
 <tr>
 <td>public abstract void</td>
-<td><a href="#info">info</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] m)</td>
+<td><a href="#info">info</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</td>
 <td>Reports an informational message through the reporter.</td>
 </tr>
 <tr>
 <td>public abstract void</td>
-<td><a href="#warn">warn</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] m)</td>
+<td><a href="#warn">warn</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</td>
 <td>Reports a warning message including location information.</td>
 </tr>
 <tr>
 <td>public abstract void</td>
-<td><a href="#error">error</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] m)</td>
+<td><a href="#error">error</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</td>
 <td>Reports an error message including location information.</td>
 </tr>
 <tr>
 <td>public abstract void</td>
-<td><a href="#infoat">infoAt</a>(int start, int end, int line, int column, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] m)</td>
+<td><a href="#infoat">infoAt</a>(int start, int end, int line, int column, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</td>
 <td></td>
 </tr>
 <tr>
 <td>public abstract void</td>
-<td><a href="#warnat">warnAt</a>(int start, int end, int line, int column, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] m)</td>
+<td><a href="#warnat">warnAt</a>(int start, int end, int line, int column, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</td>
 <td></td>
 </tr>
 <tr>
 <td>public abstract void</td>
-<td><a href="#errorat">errorAt</a>(int start, int end, int line, int column, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] m)</td>
+<td><a href="#errorat">errorAt</a>(int start, int end, int line, int column, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</td>
 <td></td>
 </tr>
 <tr>
 <td>public abstract void</td>
-<td><a href="#infoat">infoAt</a>(<a href="../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] msg)</td>
+<td><a href="#infoat">infoAt</a>(<a href="../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</td>
 <td></td>
 </tr>
 <tr>
 <td>public abstract void</td>
-<td><a href="#warnat">warnAt</a>(<a href="../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] msg)</td>
+<td><a href="#warnat">warnAt</a>(<a href="../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</td>
 <td></td>
 </tr>
 <tr>
 <td>public abstract void</td>
-<td><a href="#errorat">errorAt</a>(<a href="../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] msg)</td>
+<td><a href="#errorat">errorAt</a>(<a href="../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</td>
 <td></td>
 </tr>
 </tbody>
@@ -16142,59 +15839,77 @@ All Known Implementing Classes:<br/>
 <p><span style="font-family: monospace; font-size: 80%;">public abstract <a href="./">Reporter</a> <strong>setLevel</strong>(<a href="../Diagnostic.Level/">Level</a> level)</span></p>
 <p>Sets the level of output when logging directly to the console.</p>
 <hr />
-<h3 id="setdiagnosticwriter">setDiagnosticWriter</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public abstract <a href="./">Reporter</a> <strong>setDiagnosticWriter</strong>(<a href="../ReportDiagnosticWriter/">ReportDiagnosticWriter</a> diagnosticWriter)</span></p>
+<h3 id="setdiagnosticcollector">setDiagnosticCollector</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract <a href="./">Reporter</a> <strong>setDiagnosticCollector</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html">Consumer</a>&lt;<a href="../Diagnostic/">Diagnostic</a>&gt; collector)</span></p>
 <hr />
-<h3 id="setcollector">setCollector</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public abstract <a href="./">Reporter</a> <strong>setCollector</strong>(<a href="../ReportCollector/">ReportCollector</a> collector)</span></p>
+<h3 id="setproblemcollector">setProblemCollector</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract <a href="./">Reporter</a> <strong>setProblemCollector</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html">Consumer</a>&lt;<a href="../Diagnostic/">Diagnostic</a>&gt; collector)</span></p>
+<hr />
+<h3 id="collectsproblems">collectsProblems</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract boolean <strong>collectsProblems</strong>()</span></p>
 <hr />
 <h3 id="trace">trace</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>trace</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] m)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>trace</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</span></p>
 <p>Reports an trace message through the reporter.</p>
 <p><strong>Parameters:</strong></p>
-<p><code>m</code> - The message to report.</p>
+<p><code>format</code> - The format of the message to report.</p>
+<p><code>args</code> - Arguments referenced by the format specifiers in the format string.
+If the last argument is a Throwable, it will not be used in message formatting
+and will instead become a field in the Diagnostic produced by this call.</p>
 <hr />
 <h3 id="debug">debug</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>debug</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] m)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>debug</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</span></p>
 <p>Reports an debug message through the reporter.</p>
 <p><strong>Parameters:</strong></p>
-<p><code>m</code> - The message to report.</p>
+<p><code>format</code> - The format of the message to report.</p>
+<p><code>args</code> - Arguments referenced by the format specifiers in the format string.
+If the last argument is a Throwable, it will not be used in message formatting
+and will instead become a field in the Diagnostic produced by this call.</p>
 <hr />
 <h3 id="info">info</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>info</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] m)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>info</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</span></p>
 <p>Reports an informational message through the reporter.</p>
 <p><strong>Parameters:</strong></p>
-<p><code>m</code> - The message to report.</p>
+<p><code>format</code> - The format of the message to report.</p>
+<p><code>args</code> - Arguments referenced by the format specifiers in the format string.
+If the last argument is a Throwable, it will not be used in message formatting
+and will instead become a field in the Diagnostic produced by this call.</p>
 <hr />
 <h3 id="warn">warn</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>warn</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] m)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>warn</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</span></p>
 <p>Reports a warning message including location information.</p>
 <p><strong>Parameters:</strong></p>
-<p><code>m</code> - The warning message to report.</p>
+<p><code>format</code> - The format of the message to report.</p>
+<p><code>args</code> - Arguments referenced by the format specifiers in the format string.
+If the last argument is a Throwable, it will not be used in message formatting
+and will instead become a field in the Diagnostic produced by this call.</p>
 <hr />
 <h3 id="error">error</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>error</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] m)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>error</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</span></p>
 <p>Reports an error message including location information.</p>
 <p><strong>Parameters:</strong></p>
-<p><code>m</code> - The error message to report.</p>
+<p><code>format</code> - The format of the message to report.</p>
+<p><code>args</code> - Arguments referenced by the format specifiers in the format string.
+If the last argument is a Throwable, it will not be used in message formatting
+and will instead become a field in the Diagnostic produced by this call.</p>
 <hr />
 <h3 id="infoat">infoAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>infoAt</strong>(int start, int end, int line, int column, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] m)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>infoAt</strong>(int start, int end, int line, int column, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</span></p>
 <hr />
 <h3 id="warnat">warnAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>warnAt</strong>(int start, int end, int line, int column, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] m)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>warnAt</strong>(int start, int end, int line, int column, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</span></p>
 <hr />
 <h3 id="errorat">errorAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>errorAt</strong>(int start, int end, int line, int column, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] m)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>errorAt</strong>(int start, int end, int line, int column, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</span></p>
 <hr />
 <h3 id="infoat_1">infoAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>infoAt</strong>(<a href="../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] msg)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>infoAt</strong>(<a href="../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</span></p>
 <hr />
 <h3 id="warnat_1">warnAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>warnAt</strong>(<a href="../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] msg)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>warnAt</strong>(<a href="../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</span></p>
 <hr />
 <h3 id="errorat_1">errorAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>errorAt</strong>(<a href="../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] msg)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract void <strong>errorAt</strong>(<a href="../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> format, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] args)</span></p>
 <hr />
 
 
