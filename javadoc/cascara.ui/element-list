@@ -6,8 +6,6 @@ io.github.qishr.cascara.ui.api.render
 io.github.qishr.cascara.ui.color
 io.github.qishr.cascara.ui.control
 io.github.qishr.cascara.ui.data
-io.github.qishr.cascara.ui.data.table
-io.github.qishr.cascara.ui.data.tree
 io.github.qishr.cascara.ui.form
 io.github.qishr.cascara.ui.menu
 io.github.qishr.cascara.ui.render
