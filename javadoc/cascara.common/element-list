@@ -2,6 +2,7 @@ module:cascara.common
 io.github.qishr.cascara.common.data
 io.github.qishr.cascara.common.data.reference
 io.github.qishr.cascara.common.diagnostic
+io.github.qishr.cascara.common.diagnostic.code
 io.github.qishr.cascara.common.lang
 io.github.qishr.cascara.common.lang.annotation
 io.github.qishr.cascara.common.lang.ast
@@ -13,5 +14,5 @@ io.github.qishr.cascara.common.lang.reference
 io.github.qishr.cascara.common.lang.token
 io.github.qishr.cascara.common.semver
 io.github.qishr.cascara.common.service
-io.github.qishr.cascara.common.type
+io.github.qishr.cascara.common.lang.type
 io.github.qishr.cascara.common.util
