@@ -7,7 +7,6 @@ io.github.qishr.cascara.common.lang
 io.github.qishr.cascara.common.lang.annotation
 io.github.qishr.cascara.common.lang.ast
 io.github.qishr.cascara.common.lang.exception
-io.github.qishr.cascara.common.lang.factory
 io.github.qishr.cascara.common.lang.processor
 io.github.qishr.cascara.common.lang.semantic
 io.github.qishr.cascara.common.lang.reference
