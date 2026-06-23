@@ -455,6 +455,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    YAML
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -466,6 +479,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#yaml-parser-performance-benchmarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      YAML Parser Performance Benchmarks
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -16959,6 +17000,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#yaml-parser-performance-benchmarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      YAML Parser Performance Benchmarks
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -16974,6 +17032,13 @@
 
 
 <h1 id="yaml">YAML</h1>
+<h2 id="yaml-parser-performance-benchmarks">YAML Parser Performance Benchmarks</h2>
+<p>Executed on OpenJDK 25 (Zulu 25+36-LTS). Warmed-up metrics measure Throughput (ops/ms, higher is better). Cold Start metrics measure Single-Shot execution (us/op, lower is better).</p>
+<p>Benchmarks were made using <a href="https://github.com/sandydunlop/cascara-benchmark-yaml">cascara-benchmark-yaml</a>, a fork of <a href="https://github.com/vansencool/LSYAML-Benchmark">LSYAML-Benchmark</a>.</p>
+<p>For CLI tools, short-lived serverless tasks, or developer environment initializations, cold startup is what developers actually experience. Cascara eliminates the heavy framework tax:</p>
+<p><img alt="" src="../benchmark-yaml-parser-cold.svg" /></p>
+<p>Once the JVM optimizes the execution path, Cascara's stream-centric parsing model dominates mid-sized configurations and complex, anchor-heavy structural trees.</p>
+<p><img alt="" src="../benchmark-yaml-parser-hot.svg" /></p>
 
 
 
