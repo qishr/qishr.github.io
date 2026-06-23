@@ -8,10 +8,10 @@ io.github.qishr.cascara.ui.control
 io.github.qishr.cascara.ui.data
 io.github.qishr.cascara.ui.form
 io.github.qishr.cascara.ui.language
+io.github.qishr.cascara.ui.language.binding
 io.github.qishr.cascara.ui.menu
 io.github.qishr.cascara.ui.render
 io.github.qishr.cascara.ui.render.control
-io.github.qishr.cascara.ui.render.factory
 io.github.qishr.cascara.ui.render.standard
 io.github.qishr.cascara.ui.schema
 io.github.qishr.cascara.ui.theme
@@ -21,4 +21,3 @@ io.github.qishr.cascara.ui.style.standard
 io.github.qishr.cascara.ui.vsix
 io.github.qishr.cascara.ui.widget
 io.github.qishr.cascara.ui.window
-io.github.qishr.cascara.ui.demo
