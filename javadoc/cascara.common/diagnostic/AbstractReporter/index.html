@@ -1413,6 +1413,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#printstacktrace" class="md-nav__link">
+    <span class="md-ellipsis">
+      printStackTrace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#problemcollector" class="md-nav__link">
     <span class="md-ellipsis">
       problemCollector
@@ -1512,6 +1521,15 @@
   <a href="#setdisableflush" class="md-nav__link">
     <span class="md-ellipsis">
       setDisableFlush
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setprintstacktrace" class="md-nav__link">
+    <span class="md-ellipsis">
+      setPrintStackTrace
     </span>
   </a>
   
@@ -1746,6 +1764,15 @@
   <a href="#disableflush_1" class="md-nav__link">
     <span class="md-ellipsis">
       disableFlush
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#printstacktrace_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      printStackTrace
     </span>
   </a>
   
@@ -2671,6 +2698,8 @@
       
         
       
+        
+      
     
     
     
@@ -2724,6 +2753,29 @@
   
   <span class="md-ellipsis">
     AstNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lang/ast/AstNodeFactory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AstNodeFactory
     
   </span>
   
@@ -4117,8 +4169,6 @@
       
         
       
-        
-      
     
     
     
@@ -4157,29 +4207,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lang/util/AstFactory/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    AstFactory
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -6800,12 +6827,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cascara.lang.json/json/processor/JsonFactory/" class="md-nav__link">
+      <a href="../../../cascara.lang.json/json/processor/JsonNodeFactory/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    JsonFactory
+    JsonNodeFactory
     
   </span>
   
@@ -8375,12 +8402,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cascara.lang.yaml/yaml/processor/YamlFactory/" class="md-nav__link">
+      <a href="../../../cascara.lang.yaml/yaml/processor/YamlNodeFactory/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    YamlFactory
+    YamlNodeFactory
     
   </span>
   
@@ -17836,6 +17863,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#printstacktrace" class="md-nav__link">
+    <span class="md-ellipsis">
+      printStackTrace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#problemcollector" class="md-nav__link">
     <span class="md-ellipsis">
       problemCollector
@@ -17935,6 +17971,15 @@
   <a href="#setdisableflush" class="md-nav__link">
     <span class="md-ellipsis">
       setDisableFlush
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setprintstacktrace" class="md-nav__link">
+    <span class="md-ellipsis">
+      setPrintStackTrace
     </span>
   </a>
   
@@ -18175,6 +18220,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#printstacktrace_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      printStackTrace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#report" class="md-nav__link">
     <span class="md-ellipsis">
       report
@@ -18300,9 +18354,14 @@ All Implemented Interfaces:<br/>
 <td></td>
 </tr>
 <tr>
+<td>protected boolean</td>
+<td><a href="#printstacktrace">printStackTrace</a></td>
+<td></td>
+</tr>
+<tr>
 <td>protected Consumer<Diagnostic></td>
 <td><a href="#problemcollector">problemCollector</a></td>
-<td></td>
+<td>Consumes ERROR, WARN, and INFO diagnostics.</td>
 </tr>
 <tr>
 <td>protected String</td>
@@ -18378,6 +18437,11 @@ All Implemented Interfaces:<br/>
 <tr>
 <td>public T</td>
 <td><a href="#setdisableflush">setDisableFlush</a>(boolean b)</td>
+<td></td>
+</tr>
+<tr>
+<td>public T</td>
+<td><a href="#setprintstacktrace">setPrintStackTrace</a>(boolean b)</td>
 <td></td>
 </tr>
 <tr>
@@ -18511,18 +18575,23 @@ All Implemented Interfaces:<br/>
 <td></td>
 </tr>
 <tr>
+<td>protected boolean</td>
+<td><a href="#printstacktrace">printStackTrace</a>()</td>
+<td></td>
+</tr>
+<tr>
 <td>protected void</td>
 <td><a href="#report">report</a>(<a href="../Diagnostic/">Diagnostic</a> diagnostic)</td>
 <td></td>
 </tr>
 <tr>
 <td>protected void</td>
-<td><a href="#writestring">writeString</a>(<a href="../Diagnostic.Level/">Level</a> level, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</td>
+<td><a href="#writestring">writeString</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../Diagnostic.Level/">Level</a> level, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</td>
 <td></td>
 </tr>
 <tr>
 <td>protected void</td>
-<td><a href="#outputtoconsole">outputToConsole</a>(<a href="../Diagnostic.Level/">Level</a> level, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</td>
+<td><a href="#outputtoconsole">outputToConsole</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../Diagnostic.Level/">Level</a> level, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</td>
 <td></td>
 </tr>
 <tr>
@@ -18562,8 +18631,12 @@ important, with ERROR being the most important.</p>
 <h3 id="level">level</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected Level <strong>level</strong></span></p>
 <hr />
+<h3 id="printstacktrace">printStackTrace</h3>
+<p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>printStackTrace</strong></span></p>
+<hr />
 <h3 id="problemcollector">problemCollector</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected Consumer<Diagnostic> <strong>problemCollector</strong></span></p>
+<p>Consumes ERROR, WARN, and INFO diagnostics.</p>
 <hr />
 <h3 id="source">source</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected String <strong>source</strong></span></p>
@@ -18604,6 +18677,9 @@ important, with ERROR being the most important.</p>
 <hr />
 <h3 id="setdisableflush">setDisableFlush</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public T <strong>setDisableFlush</strong>(boolean b)</span></p>
+<hr />
+<h3 id="setprintstacktrace">setPrintStackTrace</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public T <strong>setPrintStackTrace</strong>(boolean b)</span></p>
 <hr />
 <h3 id="error">error</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public void <strong>error</strong>(<a href="../LocalizableException/">LocalizableException</a> e)</span></p>
@@ -18743,14 +18819,17 @@ important, with ERROR being the most important.</p>
 <h3 id="disableflush_1">disableFlush</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>disableFlush</strong>()</span></p>
 <hr />
+<h3 id="printstacktrace_1">printStackTrace</h3>
+<p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>printStackTrace</strong>()</span></p>
+<hr />
 <h3 id="report">report</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected void <strong>report</strong>(<a href="../Diagnostic/">Diagnostic</a> diagnostic)</span></p>
 <hr />
 <h3 id="writestring_1">writeString</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected void <strong>writeString</strong>(<a href="../Diagnostic.Level/">Level</a> level, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">protected void <strong>writeString</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../Diagnostic.Level/">Level</a> level, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</span></p>
 <hr />
 <h3 id="outputtoconsole">outputToConsole</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected void <strong>outputToConsole</strong>(<a href="../Diagnostic.Level/">Level</a> level, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">protected void <strong>outputToConsole</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../Diagnostic.Level/">Level</a> level, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message)</span></p>
 <hr />
 <h3 id="builddiagnostic">buildDiagnostic</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected <a href="../Diagnostic/">Diagnostic</a> <strong>buildDiagnostic</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> source, <a href="../Diagnostic.Level/">Level</a> level, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>

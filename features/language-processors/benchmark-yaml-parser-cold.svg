@@ -24,41 +24,41 @@
   <line x1="750" y1="60" x2="750" y2="440" stroke="#897966" stroke-width="1" />
   <text x="750" y="460" text-anchor="middle" font-size="11" fill="#897966">2s</text>
   <text x="120" y="105" text-anchor="end" font-size="13" fill="#897966">insane</text>
-  <rect x="140" y="70" width="507" height="14" fill="#526cfe" rx="2" />
-  <text x="652" y="81" font-size="11" fill="#897966">  381,773 µs</text>
-  <rect x="140" y="88" width="458" height="14" fill="#8484d5" rx="2" />
-  <text x="603" y="99" font-size="11" fill="#897966">  170,828 µs</text>
-  <rect x="140" y="106" width="463" height="14" fill="#b69dac" rx="2" />
-  <text x="608" y="117" font-size="11" fill="#897966">  186,072 µs</text>
-  <rect x="140" y="124" width="586" height="14" fill="#E8B583" rx="2" />
-  <text x="731" y="135" font-size="11" fill="#897966">  1,355,067 µs</text>
+  <rect x="140" y="70" width="470" height="14" fill="#526cfe" rx="2" />
+  <text x="615" y="81" font-size="11" fill="#897966">  208,687 µs</text>
+  <rect x="140" y="88" width="465" height="14" fill="#8484d5" rx="2" />
+  <text x="610" y="99" font-size="11" fill="#897966">  192,386 µs</text>
+  <rect x="140" y="106" width="474" height="14" fill="#b69dac" rx="2" />
+  <text x="619" y="117" font-size="11" fill="#897966">  220,652 µs</text>
+  <rect x="140" y="124" width="592" height="14" fill="#E8B583" rx="2" />
+  <text x="737" y="135" font-size="11" fill="#897966">  1,505,156 µs</text>
   <text x="120" y="200" text-anchor="end" font-size="13" fill="#897966">complex</text>
-  <rect x="140" y="165" width="348" height="14" fill="#526cfe" rx="2" />
-  <text x="493" y="176" font-size="11" fill="#897966">  28,456 µs</text>
-  <rect x="140" y="183" width="366" height="14" fill="#8484d5" rx="2" />
-  <text x="511" y="194" font-size="11" fill="#897966">  38,117 µs</text>
-  <rect x="140" y="201" width="382" height="14" fill="#b69dac" rx="2" />
-  <text x="527" y="212" font-size="11" fill="#897966">  49,389 µs</text>
-  <rect x="140" y="219" width="389" height="14" fill="#E8B583" rx="2" />
-  <text x="534" y="230" font-size="11" fill="#897966">  55,982 µs</text>
+  <rect x="140" y="165" width="357" height="14" fill="#526cfe" rx="2" />
+  <text x="502" y="176" font-size="11" fill="#897966">  33,246 µs</text>
+  <rect x="140" y="183" width="388" height="14" fill="#8484d5" rx="2" />
+  <text x="533" y="194" font-size="11" fill="#897966">  54,635 µs</text>
+  <rect x="140" y="201" width="395" height="14" fill="#b69dac" rx="2" />
+  <text x="540" y="212" font-size="11" fill="#897966">  61,636 µs</text>
+  <rect x="140" y="219" width="450" height="14" fill="#E8B583" rx="2" />
+  <text x="595" y="230" font-size="11" fill="#897966">  149,023 µs</text>
   <text x="120" y="295" text-anchor="end" font-size="13" fill="#897966">medium</text>
-  <rect x="140" y="260" width="180" height="14" fill="#526cfe" rx="2" />
-  <text x="325" y="271" font-size="11" fill="#897966">  1,885 µs</text>
-  <rect x="140" y="278" width="170" height="14" fill="#8484d5" rx="2" />
-  <text x="315" y="289" font-size="11" fill="#897966">  1,582 µs</text>
-  <rect x="140" y="296" width="167" height="14" fill="#b69dac" rx="2" />
-  <text x="312" y="307" font-size="11" fill="#897966">  1,526 µs</text>
-  <rect x="140" y="314" width="191" height="14" fill="#E8B583" rx="2" />
-  <text x="336" y="325" font-size="11" fill="#897966">  2,238 µs</text>
+  <rect x="140" y="260" width="203" height="14" fill="#526cfe" rx="2" />
+  <text x="348" y="271" font-size="11" fill="#897966">  2,727 µs</text>
+  <rect x="140" y="278" width="218" height="14" fill="#8484d5" rx="2" />
+  <text x="363" y="289" font-size="11" fill="#897966">  3,459 µs</text>
+  <rect x="140" y="296" width="242" height="14" fill="#b69dac" rx="2" />
+  <text x="387" y="307" font-size="11" fill="#897966">  5,163 µs</text>
+  <rect x="140" y="314" width="254" height="14" fill="#E8B583" rx="2" />
+  <text x="399" y="325" font-size="11" fill="#897966">  6,213 µs</text>
   <text x="120" y="390" text-anchor="end" font-size="13" fill="#897966">simple</text>
-  <rect x="140" y="355" width="129" height="14" fill="#526cfe" rx="2" />
-  <text x="274" y="366" font-size="11" fill="#897966">  823 µs</text>
-  <rect x="140" y="373" width="125" height="14" fill="#8484d5" rx="2" />
-  <text x="270" y="384" font-size="11" fill="#897966">  764 µs</text>
-  <rect x="140" y="391" width="117" height="14" fill="#b69dac" rx="2" />
-  <text x="262" y="402" font-size="11" fill="#897966">  674 µs</text>
-  <rect x="140" y="409" width="151" height="14" fill="#E8B583" rx="2" />
-  <text x="296" y="420" font-size="11" fill="#897966">  1,179 µs</text>
+  <rect x="140" y="355" width="175" height="14" fill="#526cfe" rx="2" />
+  <text x="320" y="366" font-size="11" fill="#897966">  1,728 µs</text>
+  <rect x="140" y="373" width="188" height="14" fill="#8484d5" rx="2" />
+  <text x="333" y="384" font-size="11" fill="#897966">  2,143 µs</text>
+  <rect x="140" y="391" width="216" height="14" fill="#b69dac" rx="2" />
+  <text x="361" y="402" font-size="11" fill="#897966">  3,354 µs</text>
+  <rect x="140" y="409" width="223" height="14" fill="#E8B583" rx="2" />
+  <text x="368" y="420" font-size="11" fill="#897966">  3,770 µs</text>
   <line x1="140" y1="60" x2="140" y2="440" stroke="#897966" stroke-width="1.5" />
   <rect x="200" y="480" width="12" height="12" fill="#526cfe" rx="2" />
   <text x="216" y="491" font-size="12" fill="#897966">cascaraYaml</text>

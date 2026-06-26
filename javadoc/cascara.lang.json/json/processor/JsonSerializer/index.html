@@ -2145,6 +2145,8 @@
       
         
       
+        
+      
     
     
     
@@ -2198,6 +2200,29 @@
   
   <span class="md-ellipsis">
     AstNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cascara.common/lang/ast/AstNodeFactory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AstNodeFactory
     
   </span>
   
@@ -3591,8 +3616,6 @@
       
         
       
-        
-      
     
     
     
@@ -3631,29 +3654,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../cascara.common/lang/util/AstFactory/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    AstFactory
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -6280,12 +6280,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../JsonFactory/" class="md-nav__link">
+      <a href="../JsonNodeFactory/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    JsonFactory
+    JsonNodeFactory
     
   </span>
   
@@ -6499,6 +6499,15 @@
   <a href="#fromtext" class="md-nav__link">
     <span class="md-ellipsis">
       fromText
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fromstream" class="md-nav__link">
+    <span class="md-ellipsis">
+      fromStream
     </span>
   </a>
   
@@ -8026,12 +8035,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../cascara.lang.yaml/yaml/processor/YamlFactory/" class="md-nav__link">
+      <a href="../../../../cascara.lang.yaml/yaml/processor/YamlNodeFactory/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    YamlFactory
+    YamlNodeFactory
     
   </span>
   
@@ -17520,6 +17529,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#fromstream" class="md-nav__link">
+    <span class="md-ellipsis">
+      fromStream
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#toast" class="md-nav__link">
     <span class="md-ellipsis">
       toAst
@@ -17629,6 +17647,11 @@
 <td></td>
 </tr>
 <tr>
+<td>public C</td>
+<td><a href="#fromstream">fromStream</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html">InputStream</a> is, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a><C> jvmType)</td>
+<td></td>
+</tr>
+<tr>
 <td>public <a href="../../ast/JsonNode/">JsonNode</a></td>
 <td><a href="#toast">toAst</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a> jvmInstance)</td>
 <td></td>
@@ -17665,6 +17688,9 @@
 <hr />
 <h3 id="fromtext">fromText</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public C <strong>fromText</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> text, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a><C> jvmType)</span></p>
+<hr />
+<h3 id="fromstream">fromStream</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public C <strong>fromStream</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html">InputStream</a> is, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a><C> jvmType)</span></p>
 <hr />
 <h3 id="toast">toAst</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public <a href="../../ast/JsonNode/">JsonNode</a> <strong>toAst</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a> jvmInstance)</span></p>
