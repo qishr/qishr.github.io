@@ -17405,32 +17405,32 @@ All Implemented Interfaces:<br/>
 <tbody>
 <tr>
 <td>public abstract <a href="../../ast/AstNode/">AstNode</a></td>
-<td><a href="#serialize">serialize</a>(T value)</td>
+<td><a href="#serialize">serialize</a>(T jvmInstance)</td>
 <td>Transforms a concrete Java object into its structural AST representation.</td>
 </tr>
 <tr>
 <td>public abstract T</td>
-<td><a href="#deserialize">deserialize</a>(<a href="../../ast/AstNode/">AstNode</a> jvmInstance)</td>
+<td><a href="#deserialize">deserialize</a>(<a href="../../ast/AstNode/">AstNode</a> astNode)</td>
 <td>Deserializes an AST node into a strongly-typed Java object.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="method-details">Method Details</h2>
 <h3 id="serialize">serialize</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public abstract <a href="../../ast/AstNode/">AstNode</a> <strong>serialize</strong>(T value)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract <a href="../../ast/AstNode/">AstNode</a> <strong>serialize</strong>(T jvmInstance)</span></p>
 <p>Transforms a concrete Java object into its structural AST representation.</p>
 <p><strong>Parameters:</strong></p>
-<p><code>value</code> - The live runtime object instance to serialize.</p>
+<p><code>jvmInstance</code> - The live runtime object instance to serialize.</p>
 <p><strong>Returns:</strong></p>
 <p>The matching structural AstNode graph.</p>
 <p><strong>Throws:</strong></p>
 <p><a href="../../exception/SerializerException/">SerializerException</a></p>
 <hr />
 <h3 id="deserialize">deserialize</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public abstract T <strong>deserialize</strong>(<a href="../../ast/AstNode/">AstNode</a> jvmInstance)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public abstract T <strong>deserialize</strong>(<a href="../../ast/AstNode/">AstNode</a> astNode)</span></p>
 <p>Deserializes an AST node into a strongly-typed Java object.</p>
 <p><strong>Parameters:</strong></p>
-<p><code>jvmInstance</code> - The structural AST node being parsed (e.g., YamlScalarNode, YamlMapNode).</p>
+<p><code>astNode</code> - The structural AST node being parsed (e.g., YamlScalarNode, YamlMapNode).</p>
 <p><strong>Returns:</strong></p>
 <p>The fully constructed Java object instance.</p>
 <p><strong>Throws:</strong></p>
