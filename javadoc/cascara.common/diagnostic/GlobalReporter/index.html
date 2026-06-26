@@ -1592,6 +1592,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#printstacktrace" class="md-nav__link">
+    <span class="md-ellipsis">
+      printStackTrace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#writestring" class="md-nav__link">
     <span class="md-ellipsis">
       writeString
@@ -2365,6 +2374,8 @@
       
         
       
+        
+      
     
     
     
@@ -2418,6 +2429,29 @@
   
   <span class="md-ellipsis">
     AstNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lang/ast/AstNodeFactory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AstNodeFactory
     
   </span>
   
@@ -3811,8 +3845,6 @@
       
         
       
-        
-      
     
     
     
@@ -3851,29 +3883,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../lang/util/AstFactory/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    AstFactory
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -6494,12 +6503,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cascara.lang.json/json/processor/JsonFactory/" class="md-nav__link">
+      <a href="../../../cascara.lang.json/json/processor/JsonNodeFactory/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    JsonFactory
+    JsonNodeFactory
     
   </span>
   
@@ -8069,12 +8078,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cascara.lang.yaml/yaml/processor/YamlFactory/" class="md-nav__link">
+      <a href="../../../cascara.lang.yaml/yaml/processor/YamlNodeFactory/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    YamlFactory
+    YamlNodeFactory
     
   </span>
   
@@ -17617,6 +17626,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#printstacktrace" class="md-nav__link">
+    <span class="md-ellipsis">
+      printStackTrace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#writestring" class="md-nav__link">
     <span class="md-ellipsis">
       writeString
@@ -17736,6 +17754,11 @@
 <td></td>
 </tr>
 <tr>
+<td>protected boolean</td>
+<td><a href="#printstacktrace">printStackTrace</a>()</td>
+<td></td>
+</tr>
+<tr>
 <td>protected void</td>
 <td><a href="#writestring">writeString</a>(<a href="../Diagnostic/">Diagnostic</a> diagnostic)</td>
 <td></td>
@@ -17743,7 +17766,7 @@
 </tbody>
 </table>
 <h3 id="methods-inherited-from-abstractreporter">Methods inherited from <a href="../AbstractReporter/">AbstractReporter</a></h3>
-<p>errorAt, trace, outputToConsole, debug, buildDiagnostic, warnAt, errorAt, infoAt, collectsProblems, infoAt, errorAt, <a href="#writestring">writeString</a>, infoAt, warnAt, error, warnAt, warn, error, buildDiagnostic, buildDiagnostic, errorAt, errorAt, errorAt, report, info, error, error, buildDiagnostic</p>
+<p>errorAt, trace, debug, buildDiagnostic, warnAt, errorAt, infoAt, collectsProblems, infoAt, errorAt, infoAt, <a href="#writestring">writeString</a>, warnAt, error, warnAt, outputToConsole, warn, error, buildDiagnostic, buildDiagnostic, errorAt, errorAt, errorAt, report, setPrintStackTrace, info, error, error, buildDiagnostic</p>
 <h2 id="method-details">Method Details</h2>
 <h3 id="self">self</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected <a href="./">GlobalReporter</a> <strong>self</strong>()</span></p>
@@ -17804,6 +17827,11 @@
 <p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>disableFlush</strong>()</span></p>
 <p><strong>Overrides:</strong></p>
 <p><a href="../cascara.common/diagnostic/AbstractReporter.md#disableflush">AbstractReporter</a></p>
+<hr />
+<h3 id="printstacktrace">printStackTrace</h3>
+<p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>printStackTrace</strong>()</span></p>
+<p><strong>Overrides:</strong></p>
+<p><a href="../cascara.common/diagnostic/AbstractReporter.md#printstacktrace">AbstractReporter</a></p>
 <hr />
 <h3 id="writestring">writeString</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected void <strong>writeString</strong>(<a href="../Diagnostic/">Diagnostic</a> diagnostic)</span></p>

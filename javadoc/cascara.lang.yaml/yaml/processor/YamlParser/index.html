@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://qishr.github.io/javadoc/cascara.lang.yaml/yaml/processor/YamlParser/">
       
       
-        <link rel="prev" href="../YamlFactory/">
+        <link rel="prev" href="../YamlNodeFactory/">
       
       
         <link rel="next" href="../YamlSerializer/">
@@ -2145,6 +2145,8 @@
       
         
       
+        
+      
     
     
     
@@ -2198,6 +2200,29 @@
   
   <span class="md-ellipsis">
     AstNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cascara.common/lang/ast/AstNodeFactory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AstNodeFactory
     
   </span>
   
@@ -3591,8 +3616,6 @@
       
         
       
-        
-      
     
     
     
@@ -3631,29 +3654,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../cascara.common/lang/util/AstFactory/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    AstFactory
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -6274,12 +6274,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../cascara.lang.json/json/processor/JsonFactory/" class="md-nav__link">
+      <a href="../../../../cascara.lang.json/json/processor/JsonNodeFactory/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    JsonFactory
+    JsonNodeFactory
     
   </span>
   
@@ -7855,12 +7855,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../YamlFactory/" class="md-nav__link">
+      <a href="../YamlNodeFactory/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    YamlFactory
+    YamlNodeFactory
     
   </span>
   
@@ -7999,6 +7999,24 @@
         
           <li class="md-nav__item">
   <a href="#parse_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      parse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parse_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      parse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parse_3" class="md-nav__link">
     <span class="md-ellipsis">
       parse
     </span>
@@ -17447,6 +17465,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#parse_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      parse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parse_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      parse
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -17500,7 +17536,7 @@ comments, indentation styles, and quote styles for round-tripping.</p>
 <tbody>
 <tr>
 <td>YamlParser()</td>
-<td>Default constructor for SPI</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -17522,12 +17558,22 @@ comments, indentation styles, and quote styles for round-tripping.</p>
 <tr>
 <td>public <a href="../../ast/YamlNode/">YamlNode</a></td>
 <td><a href="#parse">parse</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> text)</td>
-<td>Entry point for parsing a full YAML source string.</td>
+<td>Entry point for parsing a full YAML source string via the new streaming API.</td>
+</tr>
+<tr>
+<td>public <a href="../../ast/YamlNode/">YamlNode</a></td>
+<td><a href="#parse">parse</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html">InputStream</a> is)</td>
+<td>Entry point for parsing an InputStream via the new streaming API.</td>
+</tr>
+<tr>
+<td>public <a href="../../ast/YamlNode/">YamlNode</a></td>
+<td><a href="#parse">parse</a>(<a href="../../../../cascara.common/lang/processor/Tokenizer/">Tokenizer</a>&lt;<a href="../../token/YamlToken/">YamlToken</a>&gt; tokenizer)</td>
+<td>Primary parsing core driven directly by the new Tokenizer interface structure.</td>
 </tr>
 <tr>
 <td>public <a href="../../ast/YamlNode/">YamlNode</a></td>
 <td><a href="#parse">parse</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../token/YamlToken/">YamlToken</a>&gt; tokens)</td>
-<td>Parses the top-level document structure and handles stream boundaries.</td>
+<td>Retained for backwards compatibility or list-based test runners</td>
 </tr>
 </tbody>
 </table>
@@ -17541,17 +17587,23 @@ comments, indentation styles, and quote styles for round-tripping.</p>
 <hr />
 <h3 id="parse">parse</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public <a href="../../ast/YamlNode/">YamlNode</a> <strong>parse</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> text)</span></p>
-<p>Entry point for parsing a full YAML source string.</p>
-<p><strong>Parameters:</strong></p>
-<p><code>text</code> - The raw YAML source.</p>
-<p><strong>Returns:</strong></p>
-<p>A <a href="../../ast/YamlNode/">YamlNode</a> representing the root of the AST.</p>
+<p>Entry point for parsing a full YAML source string via the new streaming API.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../../../../cascara.common/lang/processor/Parser/">Parser</a></p>
 <hr />
 <h3 id="parse_1">parse</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../../ast/YamlNode/">YamlNode</a> <strong>parse</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html">InputStream</a> is)</span></p>
+<p>Entry point for parsing an InputStream via the new streaming API.</p>
+<p><strong>Specified By:</strong></p>
+<p><a href="../../../../cascara.common/lang/processor/Parser/">Parser</a></p>
+<hr />
+<h3 id="parse_2">parse</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../../ast/YamlNode/">YamlNode</a> <strong>parse</strong>(<a href="../../../../cascara.common/lang/processor/Tokenizer/">Tokenizer</a>&lt;<a href="../../token/YamlToken/">YamlToken</a>&gt; tokenizer)</span></p>
+<p>Primary parsing core driven directly by the new Tokenizer interface structure.Primary parsing core driven directly by the new Tokenizer interface structure.</p>
+<hr />
+<h3 id="parse_3">parse</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public <a href="../../ast/YamlNode/">YamlNode</a> <strong>parse</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="../../token/YamlToken/">YamlToken</a>&gt; tokens)</span></p>
-<p>Parses the top-level document structure and handles stream boundaries.</p>
+<p>Retained for backwards compatibility or list-based test runners</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../../../../cascara.common/lang/processor/Parser/">Parser</a></p>
 <hr />

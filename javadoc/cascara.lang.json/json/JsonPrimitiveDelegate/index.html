@@ -2145,6 +2145,8 @@
       
         
       
+        
+      
     
     
     
@@ -2198,6 +2200,29 @@
   
   <span class="md-ellipsis">
     AstNode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cascara.common/lang/ast/AstNodeFactory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AstNodeFactory
     
   </span>
   
@@ -3591,8 +3616,6 @@
       
         
       
-        
-      
     
     
     
@@ -3631,29 +3654,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../cascara.common/lang/util/AstFactory/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    AstFactory
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -6380,12 +6380,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../processor/JsonFactory/" class="md-nav__link">
+      <a href="../processor/JsonNodeFactory/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    JsonFactory
+    JsonNodeFactory
     
   </span>
   
@@ -7955,12 +7955,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../cascara.lang.yaml/yaml/processor/YamlFactory/" class="md-nav__link">
+      <a href="../../../cascara.lang.yaml/yaml/processor/YamlNodeFactory/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    YamlFactory
+    YamlNodeFactory
     
   </span>
   
@@ -17477,7 +17477,9 @@ All Implemented Interfaces:<br/>
 <hr />
 <h3 id="coerceliteralvalue">coerceLiteralValue</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a> <strong>coerceLiteralValue</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> text)</span></p>
-<p>Converts JSON primitive literal values into native Java types.Strictly handles case-sensitive 'true', 'false', and 'null'.</p>
+<p>Converts JSON primitive literal values into native Java types.Strictly handles case-sensitive 'true', 'false', and 'null'.
+Converts JSON primitive literal values into native Java types.
+Handles case-sensitive 'true', 'false', 'null', and JSON5 floating-point literals.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../../../cascara.common/lang/type/PrimitiveDelegate/">PrimitiveDelegate</a></p>
 <hr />
