@@ -18,42 +18,7 @@ To use *Cascara Core* in a your project, add the following dependencies:
     ```
 === "Maven"
     ```xml
-    <dependency>
-        <groupId>io.github.qishr</groupId>
-        <artifactId>cascara-common</artifactId>
-        <version>1.1.4</version>
-        <scope>runtime</scope>
-    </dependency>
-    <dependency>
-        <groupId>io.github.qishr</groupId>
-        <artifactId>cascara-common-io</artifactId>
-        <version>0.4.0</version>
-        <scope>runtime</scope>
-    </dependency>
-    <dependency>
-        <groupId>io.github.qishr</groupId>
-        <artifactId>cascara-lang-json</artifactId>
-        <version>0.4.0</version>
-        <scope>runtime</scope>
-    </dependency>
-    <dependency>
-        <groupId>io.github.qishr</groupId>
-        <artifactId>cascara-lang-xml</artifactId>
-        <version>0.4.0</version>
-        <scope>runtime</scope>
-    </dependency>
-    <dependency>
-        <groupId>io.github.qishr</groupId>
-        <artifactId>cascara-lang-yaml</artifactId>
-        <version>0.4.0</version>
-        <scope>runtime</scope>
-    </dependency>
-    <dependency>
-        <groupId>io.github.qishr</groupId>
-        <artifactId>cascara-schema</artifactId>
-        <version>0.4.0</version>
-        <scope>runtime</scope>
-    </dependency>
+    --8<-- "pom-lang.xml"
     ```
 
 ## Cascara UI
@@ -68,46 +33,5 @@ To use *Cascara UI* in a your project, add the following dependencies:
     ```
 === "Maven"
     ```xml
-    <dependency>
-        <groupId>io.github.qishr</groupId>
-        <artifactId>cascara-common</artifactId>
-        <version>1.1.4</version>
-        <scope>runtime</scope>
-    </dependency>
-    <dependency>
-        <groupId>io.github.qishr</groupId>
-        <artifactId>cascara-common-io</artifactId>
-        <version>0.4.0</version>
-        <scope>runtime</scope>
-    </dependency>
-    <dependency>
-        <groupId>io.github.qishr</groupId>
-        <artifactId>cascara-lang-json</artifactId>
-        <version>0.4.0</version>
-        <scope>runtime</scope>
-    </dependency>
-    <dependency>
-        <groupId>io.github.qishr</groupId>
-        <artifactId>cascara-lang-xml</artifactId>
-        <version>0.4.0</version>
-        <scope>runtime</scope>
-    </dependency>
-    <dependency>
-        <groupId>io.github.qishr</groupId>
-        <artifactId>cascara-lang-yaml</artifactId>
-        <version>0.4.0</version>
-        <scope>runtime</scope>
-    </dependency>
-    <dependency>
-        <groupId>io.github.qishr</groupId>
-        <artifactId>cascara-schema</artifactId>
-        <version>0.4.0</version>
-        <scope>runtime</scope>
-    </dependency>
-    <dependency>
-        <groupId>io.github.qishr</groupId>
-        <artifactId>cascara-ui</artifactId>
-        <version>0.4.0</version>
-        <scope>runtime</scope>
-    </dependency>
+    --8<-- "pom-ui.xml"
     ```

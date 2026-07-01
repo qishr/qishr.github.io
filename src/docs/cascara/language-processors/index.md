@@ -1,6 +1,6 @@
 # Cascara Language Processors Collection
 
-The Cascara language processors collection is a set of modules that provide high performance extensible language tools.
+The Cascara language processors collection is a set of modules that provide [high performance](/cascara/language-processors/yaml/performance-comparison/) and [extensible](/cascara/language-processors/extensible-design/type-descriptors/) language tools.
 
 The collection is currently under development, with YAML being the most mature implementation.  
 
