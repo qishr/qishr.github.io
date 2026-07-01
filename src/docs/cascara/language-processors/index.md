@@ -2,7 +2,7 @@
 
 The Cascara language processors collection is a set of modules that provide [high performance](/cascara/language-processors/yaml/performance-comparison/) and [extensible](/cascara/language-processors/extensible-design/type-descriptors/) language tools.
 
-The collection is currently under development, with YAML being the most mature implementation.  
+The collection is currently under development, with YAML being the most mature implementation.
 
 |                                                     | YAML             | JSON                | XML                 |
 | --------------------------------------------------- | ---------------- | ------------------- | ------------------- |
@@ -20,7 +20,7 @@ For installation, see [Getting Started](/cascara/getting-started/).
 
 ## Examples
 
-The examples shown here are available in the [cascara-docs-examples-lang](https://github.com/qishr/cascara-docs-examples-lang) Github repository.
+The examples shown here are available in the [cascara-docs-examples](https://github.com/qishr/cascara-docs-examples) Github repository under `examples/lang`.
 
 ### Tokenizers
 

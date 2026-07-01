@@ -10,7 +10,7 @@ Theme support for JavaFX.
 
 ## Demonstration
 
-These screenshots are of the **Cascara UI Demp app** which is available in the  [cascara-ui](https://github.com/qishr/cascara-ui) Github repository.
+These screenshots are of the **Cascara UI Demp app** which is available in the  [cascara-docs-examples](https://github.com/qishr/cascara-docs-examples) Github repository under `examples/ui`.
 
 
 ### Default *Cascara* Theme
