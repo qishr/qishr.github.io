@@ -1,28 +1,22 @@
 # Cascara Language Processors Collection
 
-The Cascara language processors collection is a set of modules that provide:
+The Cascara language processors collection is a set of modules that provide high performance extensible language tools.
 
-- [Tokenizers](#tokenizers)
-- [Parsers](#parsers)
-- [Emitters](#emitters)
-- [Serializers](#serializers)
-- [Converters](#converters)
+The collection is currently under development, with YAML being the most mature implementation.  
 
-Currently supported languages are:
-
-- [JSON](json/)
-- [XML](xml/)
-- [YAML](yaml/)
-
-## Gradle
+|                                                     | YAML             | JSON                | XML                 |
+| --------------------------------------------------- | ---------------- | ------------------- | ------------------- |
+| **[Tokenizer](#tokenizers)**                        | :material-check: | :material-check:    | :material-check:    |
+| **[AST Parser](#ast-parser)**                       | :material-check: | :material-check:    | :octicons-tools-24: |
+| **[Streaming Push Parser](#streaming-push-parser)** | :material-check: | :octicons-tools-24: |                     |
+| **[Streaming Pull Parser](#streaming-pull-parser)** | :material-check: | :octicons-tools-24: |                     |
+| **[Emitter](#emitters)**                            | :material-check: | :material-check:    |                     |
+| **[Serializer](#serializers)**                      | :material-check: | :material-check:    |                     |
+| **[Converter](#converters)**                        | :material-check: | :material-check:    |                     |
 
 *Cascara Language Processors* and *Cascara Common* are available in the [Maven Central](https://mvnrepository.com/artifact/io.github.qishr) repository.
 
-To use them in a Gradle project, add the following dependencies:
-
-```groovy
---8<-- "build-lang.gradle"
-```
+For installation, see [Getting Started](/cascara/getting-started/).
 
 ## Examples
 
@@ -64,7 +58,7 @@ The examples shown here are available in the [cascara-docs-examples-lang](https:
     --8<-- "examples/yaml/SimpleAstParse.java"
     ```
 
-#### Pull Parser
+#### Streaming Pull Parser
 
 [javadoc](https://qishr.github.io/javadoc/cascara.common/lang/processor/PullParser)
 
@@ -73,7 +67,7 @@ The examples shown here are available in the [cascara-docs-examples-lang](https:
     --8<-- "examples/yaml/SimplePullParse.java"
     ```
 
-#### Push Parser
+#### Streaming Push Parser
 
 [javadoc](https://qishr.github.io/javadoc/cascara.common/lang/processor/PushParser)
 
@@ -81,7 +75,6 @@ The examples shown here are available in the [cascara-docs-examples-lang](https:
     ```java
     --8<-- "examples/yaml/SimplePushParse.java"
     ```
-
 
 ### Serializers
 
@@ -95,6 +88,7 @@ The examples shown here are available in the [cascara-docs-examples-lang](https:
     ```java
     --8<-- "examples/yaml/SimpleSerialize.java"
     ```
+
 ### Emitters
 
 *Examples coming shortly*
@@ -103,3 +97,11 @@ The examples shown here are available in the [cascara-docs-examples-lang](https:
 
 *Examples coming shortly*
 
+## Comparison with Jackson
+
+| **Cascara**                                                                                                                                                                       | **Jackson**                                                                                       |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| [Type Descriptors & Type Serializers](extensible-design/type-descriptors.md)                                                                                                      | [Third-party datatype modules](https://github.com/FasterXML/jackson#third-party-datatype-modules) |
+| [Cascara Annotations](https://qishr.github.io/javadoc/cascara.common/lang/annotation/)                                                                                            | [Jackson Core: Annotations](https://github.com/FasterXML/jackson-annotations/wiki)                |
+| [Cascara Serializers](https://qishr.github.io/javadoc/cascara.common/lang/processor/Serializer/)                                                                                  | [Jackson Core: Databind](https://github.com/FasterXML/jackson-databind/wiki)                      |
+| [PushParser](https://qishr.github.io/javadoc/cascara.common/lang/processor/PushParser/) & [PullParser](https://qishr.github.io/javadoc/cascara.common/lang/processor/PullParser/) | [Streaming](https://github.com/FasterXML/jackson-core/wiki)                                       |
