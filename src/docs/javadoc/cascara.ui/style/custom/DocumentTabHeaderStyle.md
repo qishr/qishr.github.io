@@ -1,0 +1,67 @@
+Package [io.github.qishr.cascara.ui.style.custom](index.md)
+
+# Class DocumentTabHeaderStyle
+[java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
+        [io.github.qishr.cascara.ui.style.ControlStyle](../ControlStyle.md)<br/>
+                io.github.qishr.cascara.ui.style.custom.DocumentTabHeaderStyle<br/>
+<br/>
+
+----
+
+<span style="font-family: monospace; font-size: 80%;">public class __DocumentTabHeaderStyle__<br/>extends [ControlStyle](../ControlStyle.md)
+</span>
+
+
+## Field Summary
+
+| Modifier and Type                                                                                                | Field                                       | Description |
+|------------------------------------------------------------------------------------------------------------------|---------------------------------------------|-------------|
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [DOCUMENT_TAB_HEADER](#document_tab_header) |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [DOCUMENT_TAB_PANE](#document_tab_pane)     |             |
+
+
+
+## Constructor Summary
+
+| Constructor              | Description |
+|--------------------------|-------------|
+| DocumentTabHeaderStyle() |             |
+
+
+### Methods inherited from [ControlStyle](../ControlStyle.md)
+
+applyTo, defineRule, newRule, sides, applyTo, classSelector, incorporateRules, color, literal, mapped, derive, values, selector, degrees, shape, childSelector, pseudoSelector, em, sides, color, getRules, px, dropshadow
+
+
+## Field Details
+
+### DOCUMENT_TAB_HEADER
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __DOCUMENT_TAB_HEADER__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../../constant-values.md)
+
+
+
+---
+
+### DOCUMENT_TAB_PANE
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __DOCUMENT_TAB_PANE__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../../constant-values.md)
+
+
+
+---
+

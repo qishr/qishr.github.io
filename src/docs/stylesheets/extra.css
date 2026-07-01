@@ -1,0 +1,123 @@
+:root  > * {
+  --md-primary-fg-color: #3b3680;
+  --md-primary-bg-color: #FAE9CF;
+
+  --md-typeset-a-color:  #464196;
+  --scrollbar-color: #464196;
+
+
+  .md-grid {
+    max-width: calc(100vw - 50px);
+  }
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 36;
+  --sb-hue: 264;
+
+  --md-default-bg-color: hsla(var(--sb-hue),15%,14%,1);
+  --md-code-bg-color: hsla(var(--sb-hue),15%,18%,1);
+  --md-typeset-kbd-border-color: hsla(var(--sb-hue),15%,14%,1);
+  --md-admonition-bg-color: var(--md-default-bg-color);
+  --md-footer-bg-color: hsla(var(--sb-hue),15%,10%,0.87);
+  --md-footer-bg-color--dark: hsla(var(--sb-hue),15%,8%,1);
+
+  --md-primary-bg-color--light: #FAE9CF;
+  --md-accent-bg-color: #FAE9CF;
+  --md-accent-bg-color--light: #FAE9CFb3;
+
+  .md-typeset a {
+    color: #fae0b9;
+  }
+  .md-typeset a:hover {
+    color: #7B75DA;
+  }
+
+/*  .md-nav__title {
+    display: none;
+  }*/
+  .md-nav__link:hover {
+    color: #7B75DA;
+  }
+  .md-nav__link--active {
+    /* color:#464196; */
+    color:#7B75DA;
+
+  }
+}
+
+/* Hero */
+.home-hero {
+  padding: 5rem 2rem 4rem;
+  text-align: center;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  margin-bottom: 3rem;
+}
+
+.home-hero__title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--md-primary-fg-color);
+}
+
+.home-hero__subtitle {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.8;
+}
+
+/* Features grid */
+.home-features {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.home-feature {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.home-feature__icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  width: 3rem;
+  text-align: center;
+}
+
+.home-feature__body h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.home-feature__body p {
+  margin: 0;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.7;
+}
+
+.home-feature__body pre {
+  margin-top: 1rem;
+}
+
+.home-feature__tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-primary-fg-color);
+  border: 1px solid var(--md-primary-fg-color);
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.4rem;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
