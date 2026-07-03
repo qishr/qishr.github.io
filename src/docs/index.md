@@ -5,6 +5,7 @@ hide:
   - toc
 ---
 
+
 Cascara is a Java platform for building desktop applications that work with structured data — designed from the ground up as a cohesive whole, rather than a collection of loosely connected libraries.
 
 At its foundation are full-pipeline language processors for YAML, JSON, and XML. Each one is implemented from scratch, with a stream-centric architecture that keeps cold-start overhead low and throughput high — even on complex, anchor-heavy documents. Above that sits a rich schema layer that handles validation, type analysis, and schema compilation, with localization support for JSON Schemas and compatibility with standards like OpenAPI.
