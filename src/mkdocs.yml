@@ -102,6 +102,7 @@ nav:
       - Theme Engine: cascara/ui/theme-engine/index.md
       - Localizable Menus: cascara/ui/localizable-menus/index.md
       - Schema-Driven Controls: cascara/ui/schema-driven-controls/index.md
+  - Diagnostics: cascara/diagnostics/index.md
   - Javadoc: javadoc/
 
 watch:
