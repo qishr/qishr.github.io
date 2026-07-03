@@ -1,0 +1,7 @@
+module:cascara.schema
+io.github.qishr.cascara.schema
+io.github.qishr.cascara.schema.annotation
+io.github.qishr.cascara.schema.structure
+io.github.qishr.cascara.schema.constraint
+io.github.qishr.cascara.schema.rule
+io.github.qishr.cascara.schema.util

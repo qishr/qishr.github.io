@@ -1,0 +1,37 @@
+<dependencies>
+    <dependency>
+        <groupId>io.github.qishr</groupId>
+        <artifactId>cascara-common</artifactId>
+        <version>1.1.4</version>
+    </dependency>
+    <dependency>
+        <groupId>io.github.qishr</groupId>
+        <artifactId>cascara-common-io</artifactId>
+        <version>0.4.0</version>
+    </dependency>
+    <dependency>
+        <groupId>io.github.qishr</groupId>
+        <artifactId>cascara-lang-json</artifactId>
+        <version>0.4.0</version>
+    </dependency>
+    <dependency>
+        <groupId>io.github.qishr</groupId>
+        <artifactId>cascara-lang-xml</artifactId>
+        <version>0.4.0</version>
+    </dependency>
+    <dependency>
+        <groupId>io.github.qishr</groupId>
+        <artifactId>cascara-lang-yaml</artifactId>
+        <version>0.4.0</version>
+    </dependency>
+    <dependency>
+        <groupId>io.github.qishr</groupId>
+        <artifactId>cascara-schema</artifactId>
+        <version>0.4.0</version>
+    </dependency>
+    <dependency>
+        <groupId>io.github.qishr</groupId>
+        <artifactId>cascara-ui</artifactId>
+        <version>0.4.0</version>
+    </dependency>
+</dependencies>
