@@ -16,9 +16,9 @@
     | [SchemaGenerator](SchemaGenerator.md)   |             |
     | [SchemaResolver](SchemaResolver.md)     |             |
     | [SchemaStore](SchemaStore.md)           |             |
+    | [SchemaValidator](SchemaValidator.md)   |             |
     | [Schemas](Schemas.md)                   |             |
     | [TypeAnalyzer](TypeAnalyzer.md)         |             |
-    | [ValidationResult](ValidationResult.md) |             |
 
 
 === "Interfaces"
@@ -40,7 +40,7 @@
     | [SchemaGenerator](SchemaGenerator.md)   |             |
     | [SchemaResolver](SchemaResolver.md)     |             |
     | [SchemaStore](SchemaStore.md)           |             |
+    | [SchemaValidator](SchemaValidator.md)   |             |
     | [Schemas](Schemas.md)                   |             |
-    | [ValidationResult](ValidationResult.md) |             |
 
 

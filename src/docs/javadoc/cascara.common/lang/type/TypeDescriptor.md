@@ -18,11 +18,12 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                             | Method                                                                           | Description                                                                                                                |
-|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| public abstract [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> | [getJvmType](#getjvmtype)()                                                      | Returns the JVM type handled by this TypeDescriptor.                                                                       |
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)  | [getSchemaType](#getschematype)()                                                | Returns the JSON Schema type handled by this TypeDescriptor.                                                               |
-| public abstract void                                                                                          | [populateSchema](#populateschema)([MapAstNode](../ast/MapAstNode.md)<?, ?> node) | Adds JSON Schema keywords and values to a map representing a JSON schema for the JSON type handled by this TypeDescriptor. |
+| Modifier and Type                                                                                             | Method                                                                                                                                                                       | Description                                                                                                                |
+|---------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| public abstract [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> | [getJvmType](#getjvmtype)()                                                                                                                                                  | Returns the JVM type handled by this TypeDescriptor.                                                                       |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)  | [getSchemaType](#getschematype)()                                                                                                                                            | Returns the JSON Schema type handled by this TypeDescriptor.                                                               |
+| public abstract void                                                                                          | [populateSchema](#populateschema)([MapAstNode](../ast/MapAstNode.md)<?, ?> node)                                                                                             | Adds JSON Schema keywords and values to a map representing a JSON schema for the JSON type handled by this TypeDescriptor. |
+| public abstract boolean                                                                                       | [validate](#validate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector) |                                                                                                                            |
 
 
 
@@ -52,6 +53,15 @@ Returns the JSON Schema type handled by this TypeDescriptor.
 
 Adds JSON Schema keywords and values to a map representing a
 JSON schema for the JSON type handled by this TypeDescriptor.
+
+
+---
+
+### validate
+
+<span style="font-family: monospace; font-size: 80%;">public abstract boolean __validate__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector)</span>
+
+
 
 
 ---

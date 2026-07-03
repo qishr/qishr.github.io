@@ -18,9 +18,11 @@ Direct Known Subtypes:<br/>
 
 ## Field Summary
 
-| Modifier and Type    | Field                     | Description |
-|----------------------|---------------------------|-------------|
-| protected Properties | [properties](#properties) |             |
+| Modifier and Type                                                                                                | Field                         | Description |
+|------------------------------------------------------------------------------------------------------------------|-------------------------------|-------------|
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [JVM_TYPE](#jvm_type)         |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [KEYWORD_TYPE](#keyword_type) |             |
+| protected Properties                                                                                             | [properties](#properties)     |             |
 
 
 
@@ -44,6 +46,36 @@ Direct Known Subtypes:<br/>
 
 
 ## Field Details
+
+### JVM_TYPE
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __JVM_TYPE__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../../constant-values.md)
+
+
+
+---
+
+### KEYWORD_TYPE
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __KEYWORD_TYPE__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../../constant-values.md)
+
+
+
+---
 
 ### properties
 

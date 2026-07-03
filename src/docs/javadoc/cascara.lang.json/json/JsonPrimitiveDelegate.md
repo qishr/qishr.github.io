@@ -50,9 +50,7 @@ All Implemented Interfaces:<br/>
 
 <span style="font-family: monospace; font-size: 80%;">public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) __coerceLiteralValue__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)</span>
 
-Converts JSON primitive literal values into native Java types.Strictly handles case-sensitive 'true', 'false', and 'null'.
-Converts JSON primitive literal values into native Java types.
-Handles case-sensitive 'true', 'false', 'null', and JSON5 floating-point literals.
+Converts JSON primitive literal values into native Java types.Handles case-sensitive 'true', 'false', 'null', and JSON5 floating-point literals.
 
 **Specified By:**
 

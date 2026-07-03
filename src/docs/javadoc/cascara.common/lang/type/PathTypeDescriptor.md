@@ -23,19 +23,20 @@ Package [io.github.qishr.cascara.common.lang.type](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                   | Method                                                                                                                          | Description |
-|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) | [toJvmType](#tojvmtype)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)      |             |
-| public [Primitive](Primitive.md)                                                                    | [toPrimitive](#toprimitive)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) value) |             |
+| Modifier and Type                                                                                   | Method                                                                                                                                                                       | Description |
+|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) | [toJvmType](#tojvmtype)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                                   |             |
+| public [Primitive](Primitive.md)                                                                    | [toPrimitive](#toprimitive)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) value)                                              |             |
+| public boolean                                                                                      | [validate](#validate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector) |             |
 
+
+### Methods inherited from [AbstractScalarDescriptor](AbstractScalarDescriptor.md)
+
+getFormat, populateSchema, getContentEncoding, formatError
 
 ### Methods inherited from [AbstractTypeDescriptor](AbstractTypeDescriptor.md)
 
 getSchemaType, getServiceProperties, getJvmType
-
-### Methods inherited from [AbstractScalarDescriptor](AbstractScalarDescriptor.md)
-
-getFormat, populateSchema, getContentEncoding
 
 
 ## Method Details
@@ -52,6 +53,15 @@ getFormat, populateSchema, getContentEncoding
 ### toPrimitive
 
 <span style="font-family: monospace; font-size: 80%;">public [Primitive](Primitive.md) __toPrimitive__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) value)</span>
+
+
+
+
+---
+
+### validate
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __validate__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector)</span>
 
 
 

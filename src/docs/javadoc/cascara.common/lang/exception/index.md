@@ -6,19 +6,21 @@
 
 === "All Classes and Interfaces"
 
-    | Class                                         | Description |
-    |-----------------------------------------------|-------------|
-    | [ParserException](ParserException.md)         |             |
-    | [SerializerException](SerializerException.md) |             |
-    | [TokenizerException](TokenizerException.md)   |             |
+    | Class                                           | Description |
+    |-------------------------------------------------|-------------|
+    | [JsonPointerException](JsonPointerException.md) |             |
+    | [ParserException](ParserException.md)           |             |
+    | [SerializerException](SerializerException.md)   |             |
+    | [TokenizerException](TokenizerException.md)     |             |
 
 
 === "Classes"
 
-    | Class                                         | Description |
-    |-----------------------------------------------|-------------|
-    | [ParserException](ParserException.md)         |             |
-    | [SerializerException](SerializerException.md) |             |
-    | [TokenizerException](TokenizerException.md)   |             |
+    | Class                                           | Description |
+    |-------------------------------------------------|-------------|
+    | [JsonPointerException](JsonPointerException.md) |             |
+    | [ParserException](ParserException.md)           |             |
+    | [SerializerException](SerializerException.md)   |             |
+    | [TokenizerException](TokenizerException.md)     |             |
 
 

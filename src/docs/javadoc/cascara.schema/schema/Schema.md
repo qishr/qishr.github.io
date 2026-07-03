@@ -12,16 +12,19 @@ Package [io.github.qishr.cascara.schema](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                           | Method                                                                                                                             | Description |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public abstract [Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<[SchemaNode](structure/SchemaNode.md)> | [getProperties](#getproperties)()                                                                                                  |             |
-| public abstract [Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<[SchemaNode](structure/SchemaNode.md)> | [getDefinitions](#getdefinitions)()                                                                                                |             |
-| public abstract [SchemaNode](structure/SchemaNode.md)                                                                                                       | [getRoot](#getroot)()                                                                                                              |             |
-| public abstract [URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html)                                                       | [getOriginUri](#getoriginuri)()                                                                                                    |             |
-| public abstract [URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html)                                                       | [getId](#getid)()                                                                                                                  |             |
-| public abstract [URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html)                                                       | [getSchemaUri](#getschemauri)()                                                                                                    |             |
-| public abstract [SchemaNode](structure/SchemaNode.md)                                                                                                       | [getDefinition](#getdefinition)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name) |             |
-| public abstract [SchemaNode](structure/SchemaNode.md)                                                                                                       | [getProperty](#getproperty)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)     |             |
+| Modifier and Type                                                                                                                                           | Method                                                                                                                                            | Description                            |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
+| public abstract [Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<[SchemaNode](structure/SchemaNode.md)> | [getProperties](#getproperties)()                                                                                                                 |                                        |
+| public abstract [Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<[SchemaNode](structure/SchemaNode.md)> | [getDefinitions](#getdefinitions)()                                                                                                               |                                        |
+| public abstract [SchemaNode](structure/SchemaNode.md)                                                                                                       | [getRoot](#getroot)()                                                                                                                             |                                        |
+| public abstract [URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html)                                                       | [getOriginUri](#getoriginuri)()                                                                                                                   |                                        |
+| public abstract [URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html)                                                       | [getId](#getid)()                                                                                                                                 |                                        |
+| public abstract [URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html)                                                       | [getSchemaUri](#getschemauri)()                                                                                                                   |                                        |
+| public abstract [SchemaNode](structure/SchemaNode.md)                                                                                                       | [getDefinition](#getdefinition)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                |                                        |
+| public abstract [SchemaNode](structure/SchemaNode.md)                                                                                                       | [getProperty](#getproperty)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                    |                                        |
+| public abstract void                                                                                                                                        | [validate](#validate)([AstNode](../../cascara.common/lang/ast/AstNode.md) root)                                                                   | Validates and AST against this schema. |
+| public abstract boolean                                                                                                                                     | [validate](#validate)([AstNode](../../cascara.common/lang/ast/AstNode.md) root, [Reporter](../../cascara.common/diagnostic/Reporter.md) reporter) | Validates and AST against this schema. |
+| public abstract [Schema](Schema.md)                                                                                                                         | [setResolver](#setresolver)([SchemaResolver](util/SchemaResolver.md) resolver)                                                                    |                                        |
 
 
 
@@ -93,6 +96,41 @@ Package [io.github.qishr.cascara.schema](index.md)
 ### getProperty
 
 <span style="font-family: monospace; font-size: 80%;">public abstract [SchemaNode](structure/SchemaNode.md) __getProperty__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)</span>
+
+
+
+
+---
+
+### validate
+
+<span style="font-family: monospace; font-size: 80%;">public abstract void __validate__([AstNode](../../cascara.common/lang/ast/AstNode.md) root)</span>
+
+Validates and AST against this schema.
+
+
+---
+
+### validate
+
+<span style="font-family: monospace; font-size: 80%;">public abstract boolean __validate__([AstNode](../../cascara.common/lang/ast/AstNode.md) root, [Reporter](../../cascara.common/diagnostic/Reporter.md) reporter)</span>
+
+Validates and AST against this schema.
+
+**Parameters:**
+
+`reporter` - a reporter for collecting problem diagnostics.
+
+**Returns:**
+
+true on success, false on failure.
+
+
+---
+
+### setResolver
+
+<span style="font-family: monospace; font-size: 80%;">public abstract [Schema](Schema.md) __setResolver__([SchemaResolver](util/SchemaResolver.md) resolver)</span>
 
 
 

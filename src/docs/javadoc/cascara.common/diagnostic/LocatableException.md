@@ -9,7 +9,7 @@ Package [io.github.qishr.cascara.common.diagnostic](index.md)
                                         io.github.qishr.cascara.common.diagnostic.LocatableException<br/>
 <br/>
 Direct Known Subtypes:<br/>
-    [ParserException](../lang/exception/ParserException.md), [TokenizerException](../lang/exception/TokenizerException.md), [SerializerException](../lang/exception/SerializerException.md), [SchemaException](../../cascara.schema/schema/SchemaException.md), [YamlEmitterException](../../cascara.lang.yaml/yaml/exception/YamlEmitterException.md)
+    [ParserException](../lang/exception/ParserException.md), [TokenizerException](../lang/exception/TokenizerException.md), [SerializerException](../lang/exception/SerializerException.md), [SchemaException](../../cascara.schema/schema/exception/SchemaException.md), [YamlEmitterException](../../cascara.lang.yaml/yaml/exception/YamlEmitterException.md)
 
 
 ----
@@ -43,8 +43,8 @@ Direct Known Subtypes:<br/>
 | public int                                                                                          | [getLine](#getline)()                         |             |
 | public int                                                                                          | [getColumn](#getcolumn)()                     |             |
 | public [URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html)        | [getUri](#geturi)()                           |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getMessage](#getmessage)()                   |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getRawMessage](#getrawmessage)()             |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getMessage](#getmessage)()                   |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getLocalizedMessage](#getlocalizedmessage)() |             |
 
 
@@ -100,18 +100,18 @@ getCode, setLocalizer, getDetails
 
 ---
 
-### getMessage
+### getRawMessage
 
-<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getMessage__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getRawMessage__()</span>
 
 
 
 
 ---
 
-### getRawMessage
+### getMessage
 
-<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getRawMessage__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getMessage__()</span>
 
 
 

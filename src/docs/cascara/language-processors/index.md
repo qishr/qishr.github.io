@@ -28,15 +28,15 @@ The examples shown here are available in the [cascara-docs-examples](https://git
 
 === "JSON"
     ```java
-    --8<-- "examples/json/SimpleTokenize.java"
+    --8<-- "examples/lang/json/SimpleTokenize.java"
     ```
 === "XML"
     ```java
-    --8<-- "examples/xml/SimpleTokenize.java"
+    --8<-- "examples/lang/xml/SimpleTokenize.java"
     ```
 === "YAML"
     ```java
-    --8<-- "examples/yaml/SimpleTokenize.java"
+    --8<-- "examples/lang/yaml/SimpleTokenize.java"
     ```
 
 ### Parsers
@@ -47,15 +47,15 @@ The examples shown here are available in the [cascara-docs-examples](https://git
 
 === "Factory"
     ```java
-    --8<-- "examples/factory/SimpleAstParse.java"
+    --8<-- "examples/lang/factory/SimpleAstParse.java"
     ```
 === "JSON"
     ```java
-    --8<-- "examples/json/SimpleAstParse.java"
+    --8<-- "examples/lang/json/SimpleAstParse.java"
     ```
 === "YAML"
     ```java
-    --8<-- "examples/yaml/SimpleAstParse.java"
+    --8<-- "examples/lang/yaml/SimpleAstParse.java"
     ```
 
 #### Streaming Pull Parser
@@ -64,7 +64,7 @@ The examples shown here are available in the [cascara-docs-examples](https://git
 
 === "YAML"
     ```java
-    --8<-- "examples/yaml/SimplePullParse.java"
+    --8<-- "examples/lang/yaml/SimplePullParse.java"
     ```
 
 #### Streaming Push Parser
@@ -73,7 +73,7 @@ The examples shown here are available in the [cascara-docs-examples](https://git
 
 === "YAML"
     ```java
-    --8<-- "examples/yaml/SimplePushParse.java"
+    --8<-- "examples/lang/yaml/SimplePushParse.java"
     ```
 
 ### Serializers
@@ -82,11 +82,11 @@ The examples shown here are available in the [cascara-docs-examples](https://git
 
 === "JSON"
     ```java
-    --8<-- "examples/json/SimpleSerialize.java"
+    --8<-- "examples/lang/json/SimpleSerialize.java"
     ```
 === "YAML"
     ```java
-    --8<-- "examples/yaml/SimpleSerialize.java"
+    --8<-- "examples/lang/yaml/SimpleSerialize.java"
     ```
 
 ### Emitters

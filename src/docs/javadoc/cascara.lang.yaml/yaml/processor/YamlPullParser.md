@@ -17,9 +17,10 @@ All Implemented Interfaces:<br/>
 
 ## Constructor Summary
 
-| Constructor                                                                                                                | Description |
-|----------------------------------------------------------------------------------------------------------------------------|-------------|
-| YamlPullParser([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) input) |             |
+| Constructor                                                                                                                | Description                  |
+|----------------------------------------------------------------------------------------------------------------------------|------------------------------|
+| YamlPullParser()                                                                                                           | Default constructor for SPI. |
+| YamlPullParser([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) input) |                              |
 
 
 

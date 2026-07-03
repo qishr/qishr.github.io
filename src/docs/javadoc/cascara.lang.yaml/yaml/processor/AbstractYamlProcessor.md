@@ -94,10 +94,6 @@ Direct Known Subtypes:<br/>
 
 
 
-**Specified By:**
-
-[Processor](../../../cascara.common/lang/processor/Processor.md)
-
 
 ---
 

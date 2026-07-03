@@ -2,13 +2,13 @@ Package [io.github.qishr.cascara.schema.structure](index.md)
 
 # Class ObjectSchemaNode
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [io.github.qishr.cascara.schema.structure.BaseSchemaNode](BaseSchemaNode.md)<br/>
+        [io.github.qishr.cascara.schema.structure.AbstractSchemaNode](AbstractSchemaNode.md)<br/>
                 io.github.qishr.cascara.schema.structure.ObjectSchemaNode<br/>
 <br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __ObjectSchemaNode__<br/>extends [BaseSchemaNode](BaseSchemaNode.md)
+<span style="font-family: monospace; font-size: 80%;">public class __ObjectSchemaNode__<br/>extends [AbstractSchemaNode](AbstractSchemaNode.md)
 </span>
 
 
@@ -22,24 +22,24 @@ Package [io.github.qishr.cascara.schema.structure](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                        | Method                                                                                                                                                                                                                                        | Description |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public void                                                                                                                                                                                                              | [addProperty](#addproperty)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, [SchemaNode](SchemaNode.md) node)                                                                              |             |
-| public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [SchemaNode](SchemaNode.md)> | [getProperties](#getproperties)()                                                                                                                                                                                                             |             |
-| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                       | [getItemSchema](#getitemschema)()                                                                                                                                                                                                             |             |
-| public void                                                                                                                                                                                                              | [validate](#validate)([AstNode](../../../cascara.common/lang/ast/AstNode.md) node, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [ValidationResult](../util/ValidationResult.md) result) |             |
-| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                       | [getPropertySchema](#getpropertyschema)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                     |             |
-| public void                                                                                                                                                                                                              | [setAdditionalPropertiesSchema](#setadditionalpropertiesschema)([SchemaNode](SchemaNode.md) schema)                                                                                                                                           |             |
-| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                       | [getAdditionalPropertiesSchema](#getadditionalpropertiesschema)()                                                                                                                                                                             |             |
-| public void                                                                                                                                                                                                              | [setUnevaluatedPropertiesSchema](#setunevaluatedpropertiesschema)([SchemaNode](SchemaNode.md) schema)                                                                                                                                         |             |
-| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                       | [getUnevaluatedPropertiesSchema](#getunevaluatedpropertiesschema)()                                                                                                                                                                           |             |
-| public void                                                                                                                                                                                                              | [setUnevaluatedPropertiesAllowed](#setunevaluatedpropertiesallowed)(boolean allowed)                                                                                                                                                          |             |
-| public boolean                                                                                                                                                                                                           | [areUnevaluatedPropertiesAllowed](#areunevaluatedpropertiesallowed)()                                                                                                                                                                         |             |
-| public void                                                                                                                                                                                                              | [setAdditionalPropertiesAllowed](#setadditionalpropertiesallowed)(boolean b)                                                                                                                                                                  |             |
-| public boolean                                                                                                                                                                                                           | [areAdditionalPropertiesAllowed](#areadditionalpropertiesallowed)()                                                                                                                                                                           |             |
+| Modifier and Type                                                                                                                                                                                                        | Method                                                                                                                                                                                                                                                     | Description |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public void                                                                                                                                                                                                              | [addProperty](#addproperty)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, [SchemaNode](SchemaNode.md) node)                                                                                           |             |
+| public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [SchemaNode](SchemaNode.md)> | [getProperties](#getproperties)()                                                                                                                                                                                                                          |             |
+| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                       | [getItemSchema](#getitemschema)()                                                                                                                                                                                                                          |             |
+| public boolean                                                                                                                                                                                                           | [validate](#validate)([AstNode](../../../cascara.common/lang/ast/AstNode.md) node, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter) |             |
+| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                       | [getPropertySchema](#getpropertyschema)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                  |             |
+| public void                                                                                                                                                                                                              | [setAdditionalPropertiesSchema](#setadditionalpropertiesschema)([SchemaNode](SchemaNode.md) schema)                                                                                                                                                        |             |
+| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                       | [getAdditionalPropertiesSchema](#getadditionalpropertiesschema)()                                                                                                                                                                                          |             |
+| public void                                                                                                                                                                                                              | [setUnevaluatedPropertiesSchema](#setunevaluatedpropertiesschema)([SchemaNode](SchemaNode.md) schema)                                                                                                                                                      |             |
+| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                       | [getUnevaluatedPropertiesSchema](#getunevaluatedpropertiesschema)()                                                                                                                                                                                        |             |
+| public void                                                                                                                                                                                                              | [setUnevaluatedPropertiesAllowed](#setunevaluatedpropertiesallowed)(boolean allowed)                                                                                                                                                                       |             |
+| public boolean                                                                                                                                                                                                           | [areUnevaluatedPropertiesAllowed](#areunevaluatedpropertiesallowed)()                                                                                                                                                                                      |             |
+| public void                                                                                                                                                                                                              | [setAdditionalPropertiesAllowed](#setadditionalpropertiesallowed)(boolean b)                                                                                                                                                                               |             |
+| public boolean                                                                                                                                                                                                           | [areAdditionalPropertiesAllowed](#areadditionalpropertiesallowed)()                                                                                                                                                                                        |             |
 
 
-### Methods inherited from [BaseSchemaNode](BaseSchemaNode.md)
+### Methods inherited from [AbstractSchemaNode](AbstractSchemaNode.md)
 
 getTitle, getDescription, getExtension, getFormatOption, setExtension, addAllOf, getDescriptionKey, addDefinition, getOriginAst, getRef, getStartLine, getAllOf, getEndColumn, isRef, getOriginUri, setDefaultValue, getType, isReadOnly, getRules, setRef, getContentMediaType, getExtensions, setOriginUri, getStartColumn, getDynamicAnchor, addRule, getFormat, setDescriptionKey, getTitleKey, getProperty, setDynamicAnchor, setType, getEndLine, getComments, setFormat, setTitle, getDefinition, getMetaSchema, setTitleKey, setFormatOption, setDescription, getDefaultValue, getChildren, setOriginAst, setReadOnly, getDefinitions, setContentMediaType
 
@@ -63,7 +63,7 @@ getTitle, getDescription, getExtension, getFormatOption, setExtension, addAllOf,
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getproperties)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getproperties)
 
 
 ---
@@ -79,13 +79,13 @@ getTitle, getDescription, getExtension, getFormatOption, setExtension, addAllOf,
 
 ### validate
 
-<span style="font-family: monospace; font-size: 80%;">public void __validate__([AstNode](../../../cascara.common/lang/ast/AstNode.md) node, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [ValidationResult](../util/ValidationResult.md) result)</span>
+<span style="font-family: monospace; font-size: 80%;">public boolean __validate__([AstNode](../../../cascara.common/lang/ast/AstNode.md) node, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter)</span>
 
 
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#validate)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#validate)
 
 
 ---
@@ -98,7 +98,7 @@ getTitle, getDescription, getExtension, getFormatOption, setExtension, addAllOf,
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getpropertyschema)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getpropertyschema)
 
 
 ---

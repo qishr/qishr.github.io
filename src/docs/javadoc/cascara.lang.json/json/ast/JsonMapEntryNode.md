@@ -28,12 +28,13 @@ Represents the structural pairing of a key and a value in a JSON object.
 
 ## Method Summary
 
-| Modifier and Type                                                                                                        | Method                                           | Description |
-|--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------|
-| public [JsonNode](JsonNode.md)                                                                                           | [getKey](#getkey)()                              |             |
-| public [JsonNode](JsonNode.md)                                                                                           | [getValue](#getvalue)()                          |             |
-| public [JsonMapEntryNode](JsonMapEntryNode.md)                                                                           | [setRaw](#setraw)([JsonNode](JsonNode.md) value) |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](JsonNode.md)> | [getChildren](#getchildren)()                    |             |
+| Modifier and Type                                                                                                        | Method                                               | Description |
+|--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|-------------|
+| public [JsonNode](JsonNode.md)                                                                                           | [getKey](#getkey)()                                  |             |
+| public [JsonNode](JsonNode.md)                                                                                           | [getValue](#getvalue)()                              |             |
+| public [JsonMapEntryNode](JsonMapEntryNode.md)                                                                           | [setRaw](#setraw)([JsonNode](JsonNode.md) value)     |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](JsonNode.md)> | [getChildren](#getchildren)()                        |             |
+| public [JsonMapEntryNode](JsonMapEntryNode.md)                                                                           | [setValue](#setvalue)([JsonNode](JsonNode.md) value) |             |
 
 
 ### Methods inherited from [JsonNode](JsonNode.md)
@@ -91,6 +92,15 @@ getEndColumn, getEndLine, getComments, getStartColumn, getToken, setToken, equal
 **Overrides:**
 
 [JsonNode](../cascara.lang.json/json/ast/JsonNode.md#getchildren)
+
+
+---
+
+### setValue
+
+<span style="font-family: monospace; font-size: 80%;">public [JsonMapEntryNode](JsonMapEntryNode.md) __setValue__([JsonNode](JsonNode.md) value)</span>
+
+
 
 
 ---

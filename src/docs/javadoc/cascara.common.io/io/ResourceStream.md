@@ -12,26 +12,26 @@ Package [io.github.qishr.cascara.common.io](index.md)
 
 ## Field Summary
 
-| Modifier and Type        | Field                 | Description |
-|--------------------------|-----------------------|-------------|
-| public final String      | [mimeType](#mimetype) |             |
-| public final InputStream | [stream](#stream)     |             |
+| Modifier and Type        | Field                       | Description |
+|--------------------------|-----------------------------|-------------|
+| public final ContentType | [contentType](#contenttype) |             |
+| public final InputStream | [stream](#stream)           |             |
 
 
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                        | Description |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| ResourceStream([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) stream, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) mimeType) |             |
+| Constructor                                                                                                                                                                                      | Description |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| ResourceStream([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) stream, [ContentType](../../cascara.common/util/ContentType.md) contentType) |             |
 
 
 
 ## Field Details
 
-### mimeType
+### contentType
 
-<span style="font-family: monospace; font-size: 80%;">public final String __mimeType__</span>
+<span style="font-family: monospace; font-size: 80%;">public final ContentType __contentType__</span>
 
 
 

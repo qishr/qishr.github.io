@@ -2,13 +2,13 @@ Package [io.github.qishr.cascara.schema.structure](index.md)
 
 # Class LazySchemaNode
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [io.github.qishr.cascara.schema.structure.BaseSchemaNode](BaseSchemaNode.md)<br/>
+        [io.github.qishr.cascara.schema.structure.AbstractSchemaNode](AbstractSchemaNode.md)<br/>
                 io.github.qishr.cascara.schema.structure.LazySchemaNode<br/>
 <br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __LazySchemaNode__<br/>extends [BaseSchemaNode](BaseSchemaNode.md)
+<span style="font-family: monospace; font-size: 80%;">public class __LazySchemaNode__<br/>extends [AbstractSchemaNode](AbstractSchemaNode.md)
 </span>
 
 
@@ -22,34 +22,34 @@ Package [io.github.qishr.cascara.schema.structure](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                                                                                         | Method                                                                                                                                                                                                                                        | Description |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public void                                                                                                                                                                                                                                                                               | [setRoot](#setroot)([SchemaNode](SchemaNode.md) root)                                                                                                                                                                                         |             |
-| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                                                                                        | [getRoot](#getroot)()                                                                                                                                                                                                                         |             |
-| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                                                                                        | [peekResolved](#peekresolved)()                                                                                                                                                                                                               |             |
-| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                                                                                        | [getResolved](#getresolved)()                                                                                                                                                                                                                 |             |
-| public [URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html)                                                                                                                                                                                              | [getOriginUri](#getoriginuri)()                                                                                                                                                                                                               |             |
-| public void                                                                                                                                                                                                                                                                               | [validate](#validate)([AstNode](../../../cascara.common/lang/ast/AstNode.md) node, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [ValidationResult](../util/ValidationResult.md) result) |             |
-| public [AstNode](../../../cascara.common/lang/ast/AstNode.md)                                                                                                                                                                                                                             | [getInitialAst](#getinitialast)()                                                                                                                                                                                                             |             |
-| public [AstNode](../../../cascara.common/lang/ast/AstNode.md)                                                                                                                                                                                                                             | [getOriginAst](#getoriginast)()                                                                                                                                                                                                               |             |
-| public [SchemaType](../SchemaType.md)                                                                                                                                                                                                                                                     | [getType](#gettype)()                                                                                                                                                                                                                         |             |
-| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                                                                                        | [getProperty](#getproperty)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                 |             |
-| public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [SchemaNode](SchemaNode.md)>                                                                  | [getProperties](#getproperties)()                                                                                                                                                                                                             |             |
-| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                                                                                        | [getItemSchema](#getitemschema)()                                                                                                                                                                                                             |             |
-| public boolean                                                                                                                                                                                                                                                                            | [isRef](#isref)()                                                                                                                                                                                                                             |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [getRef](#getref)()                                                                                                                                                                                                                           |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ValidationRule](../rule/ValidationRule.md)>                                                                                                                                              | [getRules](#getrules)()                                                                                                                                                                                                                       |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [getDescription](#getdescription)()                                                                                                                                                                                                           |             |
-| public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [SchemaNode](SchemaNode.md)>                                                                  | [getDefinitions](#getdefinitions)()                                                                                                                                                                                                           |             |
-| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)                                                                                                                                                                                       | [getDefaultValue](#getdefaultvalue)()                                                                                                                                                                                                         |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [getContentMediaType](#getcontentmediatype)()                                                                                                                                                                                                 |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [getFormat](#getformat)()                                                                                                                                                                                                                     |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [getFormatOption](#getformatoption)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                         |             |
-| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)                                                                                                                                                                                       | [getExtension](#getextension)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                               |             |
-| public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)> | [getExtensions](#getextensions)()                                                                                                                                                                                                             |             |
+| Modifier and Type                                                                                                                                                                                                                                                                         | Method                                                                                                                                                                                                                                                     | Description |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public void                                                                                                                                                                                                                                                                               | [setRoot](#setroot)([SchemaNode](SchemaNode.md) root)                                                                                                                                                                                                      |             |
+| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                                                                                        | [getRoot](#getroot)()                                                                                                                                                                                                                                      |             |
+| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                                                                                        | [peekResolved](#peekresolved)()                                                                                                                                                                                                                            |             |
+| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                                                                                        | [getResolved](#getresolved)()                                                                                                                                                                                                                              |             |
+| public [URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html)                                                                                                                                                                                              | [getOriginUri](#getoriginuri)()                                                                                                                                                                                                                            |             |
+| public boolean                                                                                                                                                                                                                                                                            | [validate](#validate)([AstNode](../../../cascara.common/lang/ast/AstNode.md) node, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter) |             |
+| public [AstNode](../../../cascara.common/lang/ast/AstNode.md)                                                                                                                                                                                                                             | [getInitialAst](#getinitialast)()                                                                                                                                                                                                                          |             |
+| public [AstNode](../../../cascara.common/lang/ast/AstNode.md)                                                                                                                                                                                                                             | [getOriginAst](#getoriginast)()                                                                                                                                                                                                                            |             |
+| public [SchemaType](../SchemaType.md)                                                                                                                                                                                                                                                     | [getType](#gettype)()                                                                                                                                                                                                                                      |             |
+| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                                                                                        | [getProperty](#getproperty)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                              |             |
+| public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [SchemaNode](SchemaNode.md)>                                                                  | [getProperties](#getproperties)()                                                                                                                                                                                                                          |             |
+| public [SchemaNode](SchemaNode.md)                                                                                                                                                                                                                                                        | [getItemSchema](#getitemschema)()                                                                                                                                                                                                                          |             |
+| public boolean                                                                                                                                                                                                                                                                            | [isRef](#isref)()                                                                                                                                                                                                                                          |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [getRef](#getref)()                                                                                                                                                                                                                                        |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ValidationRule](../rule/ValidationRule.md)>                                                                                                                                              | [getRules](#getrules)()                                                                                                                                                                                                                                    |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [getDescription](#getdescription)()                                                                                                                                                                                                                        |             |
+| public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [SchemaNode](SchemaNode.md)>                                                                  | [getDefinitions](#getdefinitions)()                                                                                                                                                                                                                        |             |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)                                                                                                                                                                                       | [getDefaultValue](#getdefaultvalue)()                                                                                                                                                                                                                      |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [getContentMediaType](#getcontentmediatype)()                                                                                                                                                                                                              |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [getFormat](#getformat)()                                                                                                                                                                                                                                  |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [getFormatOption](#getformatoption)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                      |             |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)                                                                                                                                                                                       | [getExtension](#getextension)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                            |             |
+| public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)> | [getExtensions](#getextensions)()                                                                                                                                                                                                                          |             |
 
 
-### Methods inherited from [BaseSchemaNode](BaseSchemaNode.md)
+### Methods inherited from [AbstractSchemaNode](AbstractSchemaNode.md)
 
 getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine, getAllOf, getEndColumn, setDefaultValue, isReadOnly, getPropertySchema, setRef, setOriginUri, getStartColumn, getDynamicAnchor, addRule, setDescriptionKey, getTitleKey, setDynamicAnchor, setType, getEndLine, getComments, setFormat, setTitle, getDefinition, getMetaSchema, setTitleKey, setFormatOption, setDescription, getChildren, setOriginAst, setReadOnly, setContentMediaType
 
@@ -91,7 +91,7 @@ getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine
 
 **Throws:**
 
-[SchemaException](../SchemaException.md)
+[SchemaException](../exception/SchemaException.md)
 
 
 ---
@@ -104,20 +104,20 @@ getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getoriginuri)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getoriginuri)
 
 
 ---
 
 ### validate
 
-<span style="font-family: monospace; font-size: 80%;">public void __validate__([AstNode](../../../cascara.common/lang/ast/AstNode.md) node, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [ValidationResult](../util/ValidationResult.md) result)</span>
+<span style="font-family: monospace; font-size: 80%;">public boolean __validate__([AstNode](../../../cascara.common/lang/ast/AstNode.md) node, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter)</span>
 
 
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#validate)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#validate)
 
 
 ---
@@ -139,7 +139,7 @@ getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getoriginast)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getoriginast)
 
 
 ---
@@ -161,7 +161,7 @@ getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getproperty)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getproperty)
 
 
 ---
@@ -174,7 +174,7 @@ getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getproperties)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getproperties)
 
 
 ---
@@ -196,7 +196,7 @@ getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#isref)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#isref)
 
 
 ---
@@ -209,7 +209,7 @@ getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getref)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getref)
 
 
 ---
@@ -222,7 +222,7 @@ getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getrules)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getrules)
 
 
 ---
@@ -235,7 +235,7 @@ getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getdescription)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getdescription)
 
 
 ---
@@ -248,7 +248,7 @@ getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getdefinitions)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getdefinitions)
 
 
 ---
@@ -261,7 +261,7 @@ getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getdefaultvalue)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getdefaultvalue)
 
 
 ---
@@ -274,7 +274,7 @@ getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getcontentmediatype)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getcontentmediatype)
 
 
 ---
@@ -287,7 +287,7 @@ getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getformat)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getformat)
 
 
 ---
@@ -300,7 +300,7 @@ getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getformatoption)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getformatoption)
 
 
 ---
@@ -313,7 +313,7 @@ getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getextension)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getextension)
 
 
 ---
@@ -326,7 +326,7 @@ getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, getStartLine
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getextensions)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getextensions)
 
 
 ---

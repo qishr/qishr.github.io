@@ -144,10 +144,6 @@ Returns the final produced string.
 
 
 
-**Specified By:**
-
-[Processor](Processor.md)
-
 
 ---
 

@@ -24,9 +24,11 @@ public class __TypeDescriptorFactory__<br/>extends [AbstractServiceProviderFacto
 
 ## Method Summary
 
-| Modifier and Type                             | Method                                                                                                                                               | Description |
-|-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [TypeDescriptor](TypeDescriptor.md)<?> | [createTypeDescriptor](#createtypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType) |             |
+| Modifier and Type                                 | Method                                                                                                                                                       | Description |
+|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [TypeDescriptor](TypeDescriptor.md)<?>     | [createTypeDescriptor](#createtypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)         |             |
+| public [ScalarDescriptor](ScalarDescriptor.md)<?> | [createScalarDescriptor](#createscalardescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)     |             |
+| public [ScalarDescriptor](ScalarDescriptor.md)<?> | [createScalarDescriptor](#createscalardescriptor)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) schemaFormat) |             |
 
 
 ### Methods inherited from [AbstractServiceProviderFactory](../../service/AbstractServiceProviderFactory.md)
@@ -39,6 +41,32 @@ createServiceProvider
 ### createTypeDescriptor
 
 <span style="font-family: monospace; font-size: 80%;">public [TypeDescriptor](TypeDescriptor.md)<?> __createTypeDescriptor__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
+
+
+
+**Throws:**
+
+[ServiceException](../../service/ServiceException.md)
+
+
+---
+
+### createScalarDescriptor
+
+<span style="font-family: monospace; font-size: 80%;">public [ScalarDescriptor](ScalarDescriptor.md)<?> __createScalarDescriptor__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
+
+
+
+**Throws:**
+
+[ServiceException](../../service/ServiceException.md)
+
+
+---
+
+### createScalarDescriptor
+
+<span style="font-family: monospace; font-size: 80%;">public [ScalarDescriptor](ScalarDescriptor.md)<?> __createScalarDescriptor__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) schemaFormat)</span>
 
 
 

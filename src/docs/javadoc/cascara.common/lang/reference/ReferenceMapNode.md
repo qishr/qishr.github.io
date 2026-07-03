@@ -25,28 +25,29 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                  | Method                                                                                                                                                                                                            | Description |
-|----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public boolean                                                                                                                                     | [isEmpty](#isempty)()                                                                                                                                                                                             |             |
-| public int                                                                                                                                         | [size](#size)()                                                                                                                                                                                                   |             |
-| public boolean                                                                                                                                     | [containsKey](#containskey)([ReferenceNode](ReferenceNode.md) key)                                                                                                                                                |             |
-| public [ReferenceNode](ReferenceNode.md)                                                                                                           | [get](#get)([ReferenceNode](ReferenceNode.md) key)                                                                                                                                                                |             |
-| public [ReferenceMapEntryNode](ReferenceMapEntryNode.md)                                                                                           | [getEntry](#getentry)([ReferenceNode](ReferenceNode.md) key)                                                                                                                                                      |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ReferenceMapEntryNode](ReferenceMapEntryNode.md)> | [getEntries](#getentries)()                                                                                                                                                                                       |             |
-| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[ReferenceNode](ReferenceNode.md)>                   | [keySet](#keyset)()                                                                                                                                                                                               |             |
-| public [ReferenceMapNode](ReferenceMapNode.md)                                                                                                     | [put](#put)([ReferenceNode](ReferenceNode.md) key, [ReferenceNode](ReferenceNode.md) value)                                                                                                                       |             |
-| public [ReferenceMapNode](ReferenceMapNode.md)                                                                                                     | [remove](#remove)([ReferenceNode](ReferenceNode.md) key)                                                                                                                                                          |             |
-| public boolean                                                                                                                                     | [containsKey](#containskey)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                     |             |
-| public [ReferenceMapNode](ReferenceMapNode.md)                                                                                                     | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value) |             |
-| public [ReferenceMapNode](ReferenceMapNode.md)                                                                                                     | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [ReferenceNode](ReferenceNode.md) value)                                                            |             |
-| public [ReferenceMapNode](ReferenceMapNode.md)                                                                                                     | [remove](#remove)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                               |             |
-| public [ReferenceNode](ReferenceNode.md)                                                                                                           | [get](#get)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                     |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ReferenceMapEntryNode](ReferenceMapEntryNode.md)> | [getChildren](#getchildren)()                                                                                                                                                                                     |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../ast/CommentAstNode.md)>        | [getComments](#getcomments)()                                                                                                                                                                                     |             |
-| public [ReferenceMapNode](ReferenceMapNode.md)                                                                                                     | [getMap](#getmap)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                               |             |
-| public [ReferenceSequenceNode](ReferenceSequenceNode.md)                                                                                           | [getSequence](#getsequence)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                     |             |
-| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[ReferenceMapEntryNode](ReferenceMapEntryNode.md)>   | [entrySet](#entryset)()                                                                                                                                                                                           |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ReferenceNode](ReferenceNode.md)>                 | [values](#values)()                                                                                                                                                                                               |             |
+| Modifier and Type                                                                                                                                          | Method                                                                                                                                                                                                            | Description               |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
+| public boolean                                                                                                                                             | [isEmpty](#isempty)()                                                                                                                                                                                             |                           |
+| public int                                                                                                                                                 | [size](#size)()                                                                                                                                                                                                   |                           |
+| public boolean                                                                                                                                             | [containsKey](#containskey)([ReferenceNode](ReferenceNode.md) key)                                                                                                                                                |                           |
+| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[ReferenceNode](ReferenceNode.md)>                           | [keySet](#keyset)()                                                                                                                                                                                               |                           |
+| public [ReferenceNode](ReferenceNode.md)                                                                                                                   | [get](#get)([ReferenceNode](ReferenceNode.md) key)                                                                                                                                                                |                           |
+| public [ReferenceMapEntryNode](ReferenceMapEntryNode.md)                                                                                                   | [getEntry](#getentry)([ReferenceNode](ReferenceNode.md) key)                                                                                                                                                      |                           |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ReferenceMapEntryNode](ReferenceMapEntryNode.md)>         | [getEntries](#getentries)()                                                                                                                                                                                       |                           |
+| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[ReferenceMapEntryNode](ReferenceMapEntryNode.md)>           | [entrySet](#entryset)()                                                                                                                                                                                           |                           |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ReferenceNode](ReferenceNode.md)>                         | [values](#values)()                                                                                                                                                                                               |                           |
+| public [ReferenceMapNode](ReferenceMapNode.md)                                                                                                             | [put](#put)([ReferenceNode](ReferenceNode.md) key, [ReferenceNode](ReferenceNode.md) value)                                                                                                                       |                           |
+| public [ReferenceMapNode](ReferenceMapNode.md)                                                                                                             | [remove](#remove)([ReferenceNode](ReferenceNode.md) key)                                                                                                                                                          |                           |
+| public boolean                                                                                                                                             | [containsKey](#containskey)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                     |                           |
+| public [ReferenceMapNode](ReferenceMapNode.md)                                                                                                             | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value) |                           |
+| public [ReferenceMapNode](ReferenceMapNode.md)                                                                                                             | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [ReferenceNode](ReferenceNode.md) value)                                                            |                           |
+| public [ReferenceMapNode](ReferenceMapNode.md)                                                                                                             | [remove](#remove)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                               |                           |
+| public [ReferenceNode](ReferenceNode.md)                                                                                                                   | [get](#get)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                     |                           |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ReferenceMapEntryNode](ReferenceMapEntryNode.md)>         | [getChildren](#getchildren)()                                                                                                                                                                                     |                           |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../ast/CommentAstNode.md)>                | [getComments](#getcomments)()                                                                                                                                                                                     |                           |
+| public [ReferenceMapNode](ReferenceMapNode.md)                                                                                                             | [getMap](#getmap)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                               |                           |
+| public [ReferenceSequenceNode](ReferenceSequenceNode.md)                                                                                                   | [getSequence](#getsequence)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                     |                           |
+| public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<[ReferenceMapEntryNode](ReferenceMapEntryNode.md)> | [iterator](#iterator)()                                                                                                                                                                                           | Returns Iterator instance |
 
 
 ### Methods inherited from [ReferenceNode](ReferenceNode.md)
@@ -91,6 +92,19 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 
 ---
 
+### keySet
+
+<span style="font-family: monospace; font-size: 80%;">public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[ReferenceNode](ReferenceNode.md)> __keySet__()</span>
+
+
+
+**Specified By:**
+
+[MapAstNode](../ast/MapAstNode.md)
+
+
+---
+
 ### get
 
 <span style="font-family: monospace; font-size: 80%;">public [ReferenceNode](ReferenceNode.md) __get__([ReferenceNode](ReferenceNode.md) key)</span>
@@ -122,9 +136,22 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 
 ---
 
-### keySet
+### entrySet
 
-<span style="font-family: monospace; font-size: 80%;">public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[ReferenceNode](ReferenceNode.md)> __keySet__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[ReferenceMapEntryNode](ReferenceMapEntryNode.md)> __entrySet__()</span>
+
+
+
+**Specified By:**
+
+[MapAstNode](../ast/MapAstNode.md)
+
+
+---
+
+### values
+
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ReferenceNode](ReferenceNode.md)> __values__()</span>
 
 
 
@@ -262,28 +289,11 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 
 ---
 
-### entrySet
+### iterator
 
-<span style="font-family: monospace; font-size: 80%;">public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[ReferenceMapEntryNode](ReferenceMapEntryNode.md)> __entrySet__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<[ReferenceMapEntryNode](ReferenceMapEntryNode.md)> __iterator__()</span>
 
-
-
-**Specified By:**
-
-[MapAstNode](../ast/MapAstNode.md)
-
-
----
-
-### values
-
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ReferenceNode](ReferenceNode.md)> __values__()</span>
-
-
-
-**Specified By:**
-
-[MapAstNode](../ast/MapAstNode.md)
+Returns Iterator instance
 
 
 ---

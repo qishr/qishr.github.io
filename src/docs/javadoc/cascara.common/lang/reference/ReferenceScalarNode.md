@@ -17,9 +17,10 @@ All Implemented Interfaces:<br/>
 
 ## Constructor Summary
 
-| Constructor                                                                                                             | Description |
-|-------------------------------------------------------------------------------------------------------------------------|-------------|
-| ReferenceScalarNode([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value) |             |
+| Constructor                                                                                                                                                             | Description |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| ReferenceScalarNode([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value)                                                 |             |
+| ReferenceScalarNode([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value, [QuoteStyle](../util/QuoteStyle.md) quoteStyle) |             |
 
 
 

@@ -1,12 +1,12 @@
-Package [io.github.qishr.cascara.schema](index.md)
+Package [io.github.qishr.cascara.schema.exception](index.md)
 
 # Enum SchemaDiagnosticCode
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [java.lang.Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<[io.github.qishr.cascara.schema.SchemaDiagnosticCode](SchemaDiagnosticCode.md)><br/>
-                io.github.qishr.cascara.schema.SchemaDiagnosticCode<br/>
+        [java.lang.Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<[io.github.qishr.cascara.schema.exception.SchemaDiagnosticCode](SchemaDiagnosticCode.md)><br/>
+                io.github.qishr.cascara.schema.exception.SchemaDiagnosticCode<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [DiagnosticCode](../../cascara.common/diagnostic/code/DiagnosticCode.md)
+    [DiagnosticCode](../../../cascara.common/diagnostic/code/DiagnosticCode.md)
 
 
 ----
@@ -31,17 +31,33 @@ All Implemented Interfaces:<br/>
 | [NO_ID](#no_id)                                             |             |
 | [DECOMPILER](#decompiler)                                   |             |
 | [MISSING_REF](#missing_ref)                                 |             |
-| [GENERATOR](#generator)                                     |             |
-| [NOT_OBJECT](#not_object)                                   |             |
+| [STORE](#store)                                             |             |
+| [FAILED_TO_STORE](#failed_to_store)                         |             |
+| [DYNAMIC_NOT_ALLOWED](#dynamic_not_allowed)                 |             |
+| [NOT_FOUND](#not_found)                                     |             |
 | [RESOLVER](#resolver)                                       |             |
 | [RESOLUTION_FAILED](#resolution_failed)                     |             |
 | [LOCAL_RESOLUTION_FAILED](#local_resolution_failed)         |             |
 | [NODE_NOT_FOUND](#node_not_found)                           |             |
 | [META_INITIALIZATION_FAILURE](#meta_initialization_failure) |             |
-| [STORE](#store)                                             |             |
-| [FAILED_TO_STORE](#failed_to_store)                         |             |
-| [NOT_FOUND](#not_found)                                     |             |
-| [DYNAMIC_NOT_ALLOWED](#dynamic_not_allowed)                 |             |
+| [GENERATOR](#generator)                                     |             |
+| [NOT_OBJECT](#not_object)                                   |             |
+| [VALIDATION_WARNING](#validation_warning)                   |             |
+| [VALIDATION_ERROR](#validation_error)                       |             |
+| [MISSING_REQUIRED_PROPERTY](#missing_required_property)     |             |
+| [EXPECTED_TYPE](#expected_type)                             |             |
+| [DUPLICATE_ITEM](#duplicate_item)                           |             |
+| [DOES_NOT_MATCH_PATTERN](#does_not_match_pattern)           |             |
+| [LESS_THAN_MIN_VALUE](#less_than_min_value)                 |             |
+| [LESS_THAN_MIN_LENGTH](#less_than_min_length)               |             |
+| [LESS_THAN_MIN_ITEMS](#less_than_min_items)                 |             |
+| [LESS_THAN_MIN_ITEMS_2](#less_than_min_items_2)             |             |
+| [MORE_THAN_MAX_VALUE](#more_than_max_value)                 |             |
+| [MORE_THAN_MAX_LENGTH](#more_than_max_length)               |             |
+| [MORE_THAN_MAX_ITEMS](#more_than_max_items)                 |             |
+| [NOT_ALLOWED_IN_LIST](#not_allowed_in_list)                 |             |
+| [BROKEN_SCHEMA_REF](#broken_schema_ref)                     |             |
+| [TARGET_IS_NULL](#target_is_null)                           |             |
 
 
 
@@ -166,18 +182,36 @@ public static final  MISSING_REF
 
 ---
 
-### GENERATOR
+### STORE
 
-public static final  GENERATOR
+public static final  STORE
 
 
 
 
 ---
 
-### NOT_OBJECT
+### FAILED_TO_STORE
 
-public static final  NOT_OBJECT
+public static final  FAILED_TO_STORE
+
+
+
+
+---
+
+### DYNAMIC_NOT_ALLOWED
+
+public static final  DYNAMIC_NOT_ALLOWED
+
+
+
+
+---
+
+### NOT_FOUND
+
+public static final  NOT_FOUND
 
 
 
@@ -229,36 +263,162 @@ public static final  META_INITIALIZATION_FAILURE
 
 ---
 
-### STORE
+### GENERATOR
 
-public static final  STORE
-
-
-
-
----
-
-### FAILED_TO_STORE
-
-public static final  FAILED_TO_STORE
+public static final  GENERATOR
 
 
 
 
 ---
 
-### NOT_FOUND
+### NOT_OBJECT
 
-public static final  NOT_FOUND
+public static final  NOT_OBJECT
 
 
 
 
 ---
 
-### DYNAMIC_NOT_ALLOWED
+### VALIDATION_WARNING
 
-public static final  DYNAMIC_NOT_ALLOWED
+public static final  VALIDATION_WARNING
+
+
+
+
+---
+
+### VALIDATION_ERROR
+
+public static final  VALIDATION_ERROR
+
+
+
+
+---
+
+### MISSING_REQUIRED_PROPERTY
+
+public static final  MISSING_REQUIRED_PROPERTY
+
+
+
+
+---
+
+### EXPECTED_TYPE
+
+public static final  EXPECTED_TYPE
+
+
+
+
+---
+
+### DUPLICATE_ITEM
+
+public static final  DUPLICATE_ITEM
+
+
+
+
+---
+
+### DOES_NOT_MATCH_PATTERN
+
+public static final  DOES_NOT_MATCH_PATTERN
+
+
+
+
+---
+
+### LESS_THAN_MIN_VALUE
+
+public static final  LESS_THAN_MIN_VALUE
+
+
+
+
+---
+
+### LESS_THAN_MIN_LENGTH
+
+public static final  LESS_THAN_MIN_LENGTH
+
+
+
+
+---
+
+### LESS_THAN_MIN_ITEMS
+
+public static final  LESS_THAN_MIN_ITEMS
+
+
+
+
+---
+
+### LESS_THAN_MIN_ITEMS_2
+
+public static final  LESS_THAN_MIN_ITEMS_2
+
+
+
+
+---
+
+### MORE_THAN_MAX_VALUE
+
+public static final  MORE_THAN_MAX_VALUE
+
+
+
+
+---
+
+### MORE_THAN_MAX_LENGTH
+
+public static final  MORE_THAN_MAX_LENGTH
+
+
+
+
+---
+
+### MORE_THAN_MAX_ITEMS
+
+public static final  MORE_THAN_MAX_ITEMS
+
+
+
+
+---
+
+### NOT_ALLOWED_IN_LIST
+
+public static final  NOT_ALLOWED_IN_LIST
+
+
+
+
+---
+
+### BROKEN_SCHEMA_REF
+
+public static final  BROKEN_SCHEMA_REF
+
+
+
+
+---
+
+### TARGET_IS_NULL
+
+public static final  TARGET_IS_NULL
 
 
 
@@ -294,7 +454,7 @@ public static final  DYNAMIC_NOT_ALLOWED
 
 **Specified By:**
 
-[DiagnosticCode](../../cascara.common/diagnostic/code/DiagnosticCode.md)
+[DiagnosticCode](../../../cascara.common/diagnostic/code/DiagnosticCode.md)
 
 
 ---
@@ -307,7 +467,7 @@ public static final  DYNAMIC_NOT_ALLOWED
 
 **Specified By:**
 
-[DiagnosticCode](../../cascara.common/diagnostic/code/DiagnosticCode.md)
+[DiagnosticCode](../../../cascara.common/diagnostic/code/DiagnosticCode.md)
 
 
 ---

@@ -39,6 +39,7 @@ Package [io.github.qishr.cascara.schema.util](index.md)
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getModuleName](#getmodulename)()                                                                              |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getSchemaName](#getschemaname)()                                                                              |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getVersion](#getversion)()                                                                                    |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toString](#tostring)()                                                                                        |             |
 
 
 
@@ -79,7 +80,7 @@ Package [io.github.qishr.cascara.schema.util](index.md)
 
 **Throws:**
 
-[SchemaException](../SchemaException.md)
+[SchemaException](../exception/SchemaException.md)
 
 
 ---
@@ -125,6 +126,19 @@ Package [io.github.qishr.cascara.schema.util](index.md)
 <span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getVersion__()</span>
 
 
+
+
+---
+
+### toString
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toString__()</span>
+
+
+
+**Overrides:**
+
+[Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#tostring)
 
 
 ---

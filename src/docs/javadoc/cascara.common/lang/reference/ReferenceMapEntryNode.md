@@ -27,13 +27,14 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                           | Method                                                     | Description |
-|---------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|-------------|
-| public [ReferenceNode](ReferenceNode.md)                                                                                                    | [getKey](#getkey)()                                        |             |
-| public [ReferenceNode](ReferenceNode.md)                                                                                                    | [getValue](#getvalue)()                                    |             |
-| public [ReferenceMapEntryNode](ReferenceMapEntryNode.md)                                                                                    | [setRaw](#setraw)([ReferenceNode](ReferenceNode.md) value) |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ReferenceNode](ReferenceNode.md)>          | [getChildren](#getchildren)()                              |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../ast/CommentAstNode.md)> | [getComments](#getcomments)()                              |             |
+| Modifier and Type                                                                                                                           | Method                                                         | Description |
+|---------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|-------------|
+| public [ReferenceNode](ReferenceNode.md)                                                                                                    | [getKey](#getkey)()                                            |             |
+| public [ReferenceNode](ReferenceNode.md)                                                                                                    | [getValue](#getvalue)()                                        |             |
+| public [ReferenceMapEntryNode](ReferenceMapEntryNode.md)                                                                                    | [setRaw](#setraw)([ReferenceNode](ReferenceNode.md) value)     |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ReferenceNode](ReferenceNode.md)>          | [getChildren](#getchildren)()                                  |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../ast/CommentAstNode.md)> | [getComments](#getcomments)()                                  |             |
+| public [ReferenceNode](ReferenceNode.md)                                                                                                    | [setValue](#setvalue)([ReferenceNode](ReferenceNode.md) value) |             |
 
 
 ### Methods inherited from [ReferenceNode](ReferenceNode.md)
@@ -94,6 +95,15 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 ### getComments
 
 <span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../ast/CommentAstNode.md)> __getComments__()</span>
+
+
+
+
+---
+
+### setValue
+
+<span style="font-family: monospace; font-size: 80%;">public [ReferenceNode](ReferenceNode.md) __setValue__([ReferenceNode](ReferenceNode.md) value)</span>
 
 
 

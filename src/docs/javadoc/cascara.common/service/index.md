@@ -10,6 +10,7 @@ Cascara Service Provider Layer
     |---------------------------------------------------------------------|-------------|
     | [AbstractServiceProviderFactory](AbstractServiceProviderFactory.md) |             |
     | [CapabilityQueries](CapabilityQueries.md)                           |             |
+    | [ContentTypeProvider](ContentTypeProvider.md)                       |             |
     | [ServiceException](ServiceException.md)                             |             |
     | [ServiceMetadata](ServiceMetadata.md)                               |             |
     | [ServiceProvider](ServiceProvider.md)                               |             |
@@ -19,9 +20,10 @@ Cascara Service Provider Layer
 
 === "Interfaces"
 
-    | Class                                 | Description |
-    |---------------------------------------|-------------|
-    | [ServiceProvider](ServiceProvider.md) |             |
+    | Class                                         | Description |
+    |-----------------------------------------------|-------------|
+    | [ContentTypeProvider](ContentTypeProvider.md) |             |
+    | [ServiceProvider](ServiceProvider.md)         |             |
 
 
 === "Classes"

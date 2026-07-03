@@ -70,6 +70,14 @@ themeChooser.getSelectionModel().selectedItemProperty().addListener((obs, old, t
 ThemeEngine.applyTheme(scene);
 ```
 
+## Example App
+
+This is the source code for the Cascara UI Demo app.
+
+```java
+--8<-- "examples/ui/Launcher.java"
+```
+
 ## API Documentation
 
 Javadoc is available [here](https://qishr.github.io/javadoc/cascara.ui/theme/ThemeEngine/).

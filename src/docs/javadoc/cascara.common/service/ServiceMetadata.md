@@ -12,9 +12,10 @@ Package [io.github.qishr.cascara.common.service](index.md)
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                       | Description |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| ServiceMetadata([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](ServiceProvider.md)> type, [Properties](../util/Properties.md) properties) |             |
+| Constructor                                                                                                                                                                                                                                                          | Description |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| ServiceMetadata([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](ServiceProvider.md)> type, [Properties](../util/Properties.md) properties)                                                    |             |
+| ServiceMetadata([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](ServiceProvider.md)> type, [Properties](../util/Properties.md) properties, [ContentType](../util/ContentType.md) contentType) |             |
 
 
 
@@ -31,6 +32,7 @@ Package [io.github.qishr.cascara.common.service](index.md)
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                | [getProperty](#getproperty)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                      |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                | [getJarPath](#getjarpath)()                                                                                                                         |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                | [getTitle](#gettitle)()                                                                                                                             |             |
+| public [ContentType](../util/ContentType.md)                                                                                                       | [getContentType](#getcontenttype)()                                                                                                                 |             |
 | public boolean                                                                                                                                     | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                                   |             |
 | public int                                                                                                                                         | [hashCode](#hashcode)()                                                                                                                             |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                | [toString](#tostring)()                                                                                                                             |             |
@@ -114,6 +116,15 @@ Package [io.github.qishr.cascara.common.service](index.md)
 ### getTitle
 
 <span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getTitle__()</span>
+
+
+
+
+---
+
+### getContentType
+
+<span style="font-family: monospace; font-size: 80%;">public [ContentType](../util/ContentType.md) __getContentType__()</span>
 
 
 

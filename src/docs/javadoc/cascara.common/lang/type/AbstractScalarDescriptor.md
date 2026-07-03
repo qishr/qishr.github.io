@@ -18,6 +18,15 @@ Direct Known Subtypes:<br/>
 </span>
 
 
+## Field Summary
+
+| Modifier and Type                                                                                                | Field                                                 | Description |
+|------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|-------------|
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [KEYWORD_CONTENT_ENCODING](#keyword_content_encoding) |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [KEYWORD_FORMAT](#keyword_format)                     |             |
+
+
+
 ## Constructor Summary
 
 | Constructor                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Description |
@@ -29,16 +38,50 @@ Direct Known Subtypes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                   | Method                                                                           | Description |
-|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|-------------|
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getFormat](#getformat)()                                                        |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getContentEncoding](#getcontentencoding)()                                      |             |
-| public void                                                                                         | [populateSchema](#populateschema)([MapAstNode](../ast/MapAstNode.md)<?, ?> node) |             |
+| Modifier and Type                                                                                   | Method                                                                                                                                                                             | Description |
+|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getFormat](#getformat)()                                                                                                                                                          |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getContentEncoding](#getcontentencoding)()                                                                                                                                        |             |
+| public void                                                                                         | [populateSchema](#populateschema)([MapAstNode](../ast/MapAstNode.md)<?, ?> node)                                                                                                   |             |
+| protected void                                                                                      | [formatError](#formaterror)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector) |             |
 
 
 ### Methods inherited from [AbstractTypeDescriptor](AbstractTypeDescriptor.md)
 
 getSchemaType, getServiceProperties, getJvmType
+
+
+## Field Details
+
+### KEYWORD_CONTENT_ENCODING
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __KEYWORD_CONTENT_ENCODING__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../../constant-values.md)
+
+
+
+---
+
+### KEYWORD_FORMAT
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __KEYWORD_FORMAT__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../../constant-values.md)
+
+
+
+---
 
 
 ## Method Details
@@ -82,6 +125,15 @@ getSchemaType, getServiceProperties, getJvmType
 **Overrides:**
 
 [AbstractTypeDescriptor](../cascara.common/lang/type/AbstractTypeDescriptor.md#populateschema)
+
+
+---
+
+### formatError
+
+<span style="font-family: monospace; font-size: 80%;">protected void __formatError__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector)</span>
+
+
 
 
 ---

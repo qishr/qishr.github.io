@@ -34,7 +34,7 @@ All Known Implementing Classes:<br/>
 
 **Throws:**
 
-[LocalizableException](../../../cascara.common/diagnostic/LocalizableException.md)
+[LocalizableIOException](../../../cascara.common/diagnostic/LocalizableIOException.md)
 
 
 ---

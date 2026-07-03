@@ -6,13 +6,11 @@
 
 === "All Classes and Interfaces"
 
-    | Class                                           | Description |
-    |-------------------------------------------------|-------------|
-    | [Schema](Schema.md)                             |             |
-    | [SchemaDiagnosticCode](SchemaDiagnosticCode.md) |             |
-    | [SchemaException](SchemaException.md)           |             |
-    | [SchemaKeyword](SchemaKeyword.md)               |             |
-    | [SchemaType](SchemaType.md)                     |             |
+    | Class                             | Description |
+    |-----------------------------------|-------------|
+    | [Schema](Schema.md)               |             |
+    | [SchemaKeyword](SchemaKeyword.md) |             |
+    | [SchemaType](SchemaType.md)       |             |
 
 
 === "Interfaces"
@@ -22,19 +20,11 @@
     | [Schema](Schema.md) |             |
 
 
-=== "Classes"
-
-    | Class                                 | Description |
-    |---------------------------------------|-------------|
-    | [SchemaException](SchemaException.md) |             |
-
-
 === "Enum Classes"
 
-    | Class                                           | Description |
-    |-------------------------------------------------|-------------|
-    | [SchemaDiagnosticCode](SchemaDiagnosticCode.md) |             |
-    | [SchemaKeyword](SchemaKeyword.md)               |             |
-    | [SchemaType](SchemaType.md)                     |             |
+    | Class                             | Description |
+    |-----------------------------------|-------------|
+    | [SchemaKeyword](SchemaKeyword.md) |             |
+    | [SchemaType](SchemaType.md)       |             |
 
 

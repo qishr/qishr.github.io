@@ -2,13 +2,13 @@ Package [io.github.qishr.cascara.schema.structure](index.md)
 
 # Class ScalarSchemaNode
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [io.github.qishr.cascara.schema.structure.BaseSchemaNode](BaseSchemaNode.md)<br/>
+        [io.github.qishr.cascara.schema.structure.AbstractSchemaNode](AbstractSchemaNode.md)<br/>
                 io.github.qishr.cascara.schema.structure.ScalarSchemaNode<br/>
 <br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __ScalarSchemaNode__<br/>extends [BaseSchemaNode](BaseSchemaNode.md)
+<span style="font-family: monospace; font-size: 80%;">public class __ScalarSchemaNode__<br/>extends [AbstractSchemaNode](AbstractSchemaNode.md)
 </span>
 
 
@@ -30,9 +30,9 @@ Package [io.github.qishr.cascara.schema.structure](index.md)
 | public void                                                                                                                                                                                                              | [setPrimaryKey](#setprimarykey)(boolean primaryKey) |             |
 
 
-### Methods inherited from [BaseSchemaNode](BaseSchemaNode.md)
+### Methods inherited from [AbstractSchemaNode](AbstractSchemaNode.md)
 
-getDescription, getDescriptionKey, getOriginAst, getRef, getEndColumn, isRef, getPropertySchema, getRules, setRef, getExtensions, setOriginUri, getFormat, setDynamicAnchor, getEndLine, getComments, getDefinition, getMetaSchema, setFormatOption, setDescription, getChildren, setOriginAst, setReadOnly, getDefinitions, getTitle, getExtension, getFormatOption, setExtension, addAllOf, addDefinition, getStartLine, getAllOf, getOriginUri, setDefaultValue, getType, isReadOnly, getContentMediaType, getStartColumn, getDynamicAnchor, addRule, setDescriptionKey, getTitleKey, getProperty, setType, validate, setFormat, setTitle, setTitleKey, getDefaultValue, setContentMediaType
+getDescription, getDescriptionKey, getOriginAst, getRef, getEndColumn, isRef, getPropertySchema, getRules, validate, setRef, getExtensions, setOriginUri, getFormat, setDynamicAnchor, getEndLine, getComments, getDefinition, getMetaSchema, setFormatOption, setDescription, getChildren, setOriginAst, setReadOnly, getDefinitions, getTitle, getExtension, getFormatOption, setExtension, addAllOf, addDefinition, getStartLine, getAllOf, getOriginUri, setDefaultValue, getType, isReadOnly, getContentMediaType, getStartColumn, getDynamicAnchor, addRule, setDescriptionKey, getTitleKey, getProperty, setType, setFormat, setTitle, setTitleKey, getDefaultValue, setContentMediaType
 
 
 ## Method Details
@@ -45,7 +45,7 @@ getDescription, getDescriptionKey, getOriginAst, getRef, getEndColumn, isRef, ge
 
 **Overrides:**
 
-[BaseSchemaNode](../cascara.schema/schema/structure/BaseSchemaNode.md#getproperties)
+[AbstractSchemaNode](../cascara.schema/schema/structure/AbstractSchemaNode.md#getproperties)
 
 
 ---

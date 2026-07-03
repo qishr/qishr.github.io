@@ -26,11 +26,11 @@ Package [io.github.qishr.cascara.lang.yaml.exception](index.md)
 | YamlParserException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](../../../cascara.common/diagnostic/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) | Constructor for I/O or Stream failures.                |
 
 
-### Methods inherited from [LocalizableRuntimeException](../../../cascara.common/diagnostic/LocalizableRuntimeException.md)
-
-getCode, setLocalizer, getDetails
-
 ### Methods inherited from [LocatableException](../../../cascara.common/diagnostic/LocatableException.md)
 
 getRawMessage, getUri, getLine, getLocalizedMessage, getMessage, getColumn
+
+### Methods inherited from [LocalizableRuntimeException](../../../cascara.common/diagnostic/LocalizableRuntimeException.md)
+
+getCode, setLocalizer, getDetails
 

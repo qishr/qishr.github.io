@@ -35,6 +35,7 @@ Represents the structural pairing of a key and a value.
 | public [YamlMapEntryNode](YamlMapEntryNode.md)                                                                           | [setRaw](#setraw)([YamlNode](YamlNode.md) value)         |                                                                                                                      |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlNode](YamlNode.md)> | [getChildren](#getchildren)()                            |   Implementation-specific nodes must return their constituent children. For example, a Map node returns its entries. |
 | public void                                                                                                              | [accept](#accept)([YamlVisitor](YamlVisitor.md) visitor) |                                                                                                                      |
+| public [YamlNode](YamlNode.md)                                                                                           | [setValue](#setvalue)([YamlNode](YamlNode.md) value)     |                                                                                                                      |
 
 
 ### Methods inherited from [YamlNode](YamlNode.md)
@@ -108,6 +109,15 @@ For example, a Map node returns its entries.
 **Overrides:**
 
 [YamlNode](../cascara.lang.yaml/yaml/ast/YamlNode.md#accept)
+
+
+---
+
+### setValue
+
+<span style="font-family: monospace; font-size: 80%;">public [YamlNode](YamlNode.md) __setValue__([YamlNode](YamlNode.md) value)</span>
+
+
 
 
 ---

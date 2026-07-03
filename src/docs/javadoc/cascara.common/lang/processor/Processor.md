@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.lang.processor](index.md)
         io.github.qishr.cascara.common.lang.processor.Processor<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [ServiceProvider](../../service/ServiceProvider.md)
+    [ServiceProvider](../../service/ServiceProvider.md), [ContentTypeProvider](../../service/ContentTypeProvider.md)
 
 All Known Implementing Classes:<br/>
     [PullParser](PullParser.md), [AstConverter](AstConverter.md), [Tokenizer](Tokenizer.md), [AstParser](AstParser.md), [PushParser](PushParser.md), [Serializer](Serializer.md), [PathEvaluator](PathEvaluator.md), [Emitter](Emitter.md), [AbstractJsonProcessor](../../../cascara.lang.json/json/processor/AbstractJsonProcessor.md), [AbstractXmlProcessor](../../../cascara.lang.xml/xml/processor/AbstractXmlProcessor.md), [AbstractYamlProcessor](../../../cascara.lang.yaml/yaml/processor/AbstractYamlProcessor.md)
@@ -18,24 +18,14 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                        | Method                                                                              | Description                                                              |
-|----------------------------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| public abstract [ContentType](../../util/ContentType.md) | [getContentType](#getcontenttype)()                                                 |                                                                          |
-| public abstract [Processor](Processor.md)                | [setReporter](#setreporter)([Reporter](../../diagnostic/Reporter.md) reporter)      | Sets the reporter for communicating warnings or errors.                  |
-| public abstract [Processor](Processor.md)                | [setOptions](#setoptions)([LanguageOptions](../util/LanguageOptions.md)<?> options) | Sets the language-specific options (e.g., indentation, Unicode support). |
+| Modifier and Type                         | Method                                                                              | Description                                                              |
+|-------------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| public abstract [Processor](Processor.md) | [setReporter](#setreporter)([Reporter](../../diagnostic/Reporter.md) reporter)      | Sets the reporter for communicating warnings or errors.                  |
+| public abstract [Processor](Processor.md) | [setOptions](#setoptions)([LanguageOptions](../util/LanguageOptions.md)<?> options) | Sets the language-specific options (e.g., indentation, Unicode support). |
 
 
 
 ## Method Details
-
-### getContentType
-
-<span style="font-family: monospace; font-size: 80%;">public abstract [ContentType](../../util/ContentType.md) __getContentType__()</span>
-
-
-
-
----
 
 ### setReporter
 

@@ -6,14 +6,14 @@
 
 === "All Classes and Interfaces"
 
-    | Class                                   | Description |
-    |-----------------------------------------|-------------|
-    | [ArraySchemaNode](ArraySchemaNode.md)   |             |
-    | [BaseSchemaNode](BaseSchemaNode.md)     |             |
-    | [LazySchemaNode](LazySchemaNode.md)     |             |
-    | [ObjectSchemaNode](ObjectSchemaNode.md) |             |
-    | [ScalarSchemaNode](ScalarSchemaNode.md) |             |
-    | [SchemaNode](SchemaNode.md)             |             |
+    | Class                                       | Description |
+    |---------------------------------------------|-------------|
+    | [AbstractSchemaNode](AbstractSchemaNode.md) |             |
+    | [ArraySchemaNode](ArraySchemaNode.md)       |             |
+    | [LazySchemaNode](LazySchemaNode.md)         |             |
+    | [ObjectSchemaNode](ObjectSchemaNode.md)     |             |
+    | [ScalarSchemaNode](ScalarSchemaNode.md)     |             |
+    | [SchemaNode](SchemaNode.md)                 |             |
 
 
 === "Interfaces"
@@ -25,12 +25,12 @@
 
 === "Classes"
 
-    | Class                                   | Description |
-    |-----------------------------------------|-------------|
-    | [ArraySchemaNode](ArraySchemaNode.md)   |             |
-    | [BaseSchemaNode](BaseSchemaNode.md)     |             |
-    | [LazySchemaNode](LazySchemaNode.md)     |             |
-    | [ObjectSchemaNode](ObjectSchemaNode.md) |             |
-    | [ScalarSchemaNode](ScalarSchemaNode.md) |             |
+    | Class                                       | Description |
+    |---------------------------------------------|-------------|
+    | [AbstractSchemaNode](AbstractSchemaNode.md) |             |
+    | [ArraySchemaNode](ArraySchemaNode.md)       |             |
+    | [LazySchemaNode](LazySchemaNode.md)         |             |
+    | [ObjectSchemaNode](ObjectSchemaNode.md)     |             |
+    | [ScalarSchemaNode](ScalarSchemaNode.md)     |             |
 
 

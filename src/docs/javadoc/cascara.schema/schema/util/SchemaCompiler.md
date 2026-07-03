@@ -32,6 +32,7 @@ Package [io.github.qishr.cascara.schema.util](index.md)
 
 | Modifier and Type                          | Method                                                                                                                                                                            | Description |
 |--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public void                                | [registerTypeDescriptor](#registertypedescriptor)([ScalarDescriptor](../../../cascara.common/lang/type/ScalarDescriptor.md)<?> typeDescriptor)                                    |             |
 | public [SchemaCompiler](SchemaCompiler.md) | [setReporter](#setreporter)([Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter)                                                                                  |             |
 | public [SchemaCompiler](SchemaCompiler.md) | [setResolver](#setresolver)([SchemaResolver](SchemaResolver.md) resolver)                                                                                                         |             |
 | public [Schema](../Schema.md)              | [compile](#compile)([AstNode](../../../cascara.common/lang/ast/AstNode.md) root)                                                                                                  |             |
@@ -58,6 +59,15 @@ Package [io.github.qishr.cascara.schema.util](index.md)
 
 
 ## Method Details
+
+### registerTypeDescriptor
+
+<span style="font-family: monospace; font-size: 80%;">public void __registerTypeDescriptor__([ScalarDescriptor](../../../cascara.common/lang/type/ScalarDescriptor.md)<?> typeDescriptor)</span>
+
+
+
+
+---
 
 ### setReporter
 

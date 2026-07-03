@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [Reporter](Reporter.md)
 
 Direct Known Subtypes:<br/>
-    [GlobalReporter](GlobalReporter.md), [StandardReporter](StandardReporter.md)
+    [SilentCollectingReporter](SilentCollectingReporter.md), [GlobalReporter](GlobalReporter.md), [StandardReporter](StandardReporter.md)
 
 
 ----
@@ -26,7 +26,7 @@ Direct Known Subtypes:<br/>
 | protected Level                | [level](#level)                             |                                                                                                            |
 | protected boolean              | [printStackTrace](#printstacktrace)         |                                                                                                            |
 | protected Consumer<Diagnostic> | [problemCollector](#problemcollector)       | Consumes ERROR, WARN, and INFO diagnostics.                                                                |
-| protected String               | [source](#source)                           |                                                                                                            |
+| protected String               | [source](#source)                           | The simple name of the class that made the report                                                          |
 | protected Consumer<String>     | [stringWriter](#stringwriter)               |                                                                                                            |
 
 
@@ -63,6 +63,7 @@ Direct Known Subtypes:<br/>
 | public void                                                                                                                                                                                                       | [infoAt](#infoat)(int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                                                                                                 | Reports an informational message anchored to a resource location by line and column.         |
 | public void                                                                                                                                                                                                       | [warnAt](#warnat)(int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                                                                                                 | Reports a warning anchored to a resource location by line and column.                        |
 | public void                                                                                                                                                                                                       | [errorAt](#errorat)(int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                                                                                               | Reports an error anchored to a resource location by line and column.                         |
+| public void                                                                                                                                                                                                       | [errorAt](#errorat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                    |                                                                                              |
 | public void                                                                                                                                                                                                       | [errorAt](#errorat)(int line, int column, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                     | Reports an error anchored to a resource location by line and column.                         |
 | public void                                                                                                                                                                                                       | [infoAt](#infoat)(int line, int column, int startOffset, int endOffset, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                                                                 | Reports an informational message anchored to a precise character span within a resource.     |
 | public void                                                                                                                                                                                                       | [warnAt](#warnat)(int line, int column, int startOffset, int endOffset, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                                                                 | Reports a warning anchored to a precise character span within a resource.                    |
@@ -86,6 +87,7 @@ Direct Known Subtypes:<br/>
 | protected [Diagnostic](Diagnostic.md)                                                                                                                                                                             | [buildDiagnostic](#builddiagnostic)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source, [Level](Diagnostic.Level.md) level, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                  | With diagnostic code, and cause                                                              |
 | protected [Diagnostic](Diagnostic.md)                                                                                                                                                                             | [buildDiagnostic](#builddiagnostic)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, int startOffset, int endOffset, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source, [Level](Diagnostic.Level.md) level, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) | With diagnostic code, location, and cause                                                    |
 | protected [Diagnostic](Diagnostic.md)                                                                                                                                                                             | [buildDiagnostic](#builddiagnostic)([Token](../lang/token/Token.md) token, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source, [Level](Diagnostic.Level.md) level, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           | With diagnostic code, token, and cause                                                       |
+| protected boolean                                                                                                                                                                                                 | [isProblem](#isproblem)([Level](Diagnostic.Level.md) level)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                              |
 
 
 
@@ -150,7 +152,7 @@ Consumes ERROR, WARN, and INFO diagnostics.
 
 <span style="font-family: monospace; font-size: 80%;">protected String __source__</span>
 
-
+The simple name of the class that made the report
 
 
 ---
@@ -400,6 +402,19 @@ Reports an error anchored to a resource location by line and column.
 
 ### errorAt
 
+<span style="font-family: monospace; font-size: 80%;">public void __errorAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+
+
+
+**Specified By:**
+
+[Reporter](Reporter.md)
+
+
+---
+
+### errorAt
+
 <span style="font-family: monospace; font-size: 80%;">public void __errorAt__(int line, int column, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports an error anchored to a resource location by line and column.
@@ -637,6 +652,15 @@ With diagnostic code, location, and cause
 <span style="font-family: monospace; font-size: 80%;">protected [Diagnostic](Diagnostic.md) __buildDiagnostic__([Token](../lang/token/Token.md) token, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source, [Level](Diagnostic.Level.md) level, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 With diagnostic code, token, and cause
+
+
+---
+
+### isProblem
+
+<span style="font-family: monospace; font-size: 80%;">protected boolean __isProblem__([Level](Diagnostic.Level.md) level)</span>
+
+
 
 
 ---

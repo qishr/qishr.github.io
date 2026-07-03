@@ -33,10 +33,15 @@ All Implemented Interfaces:<br/>
 | [EXPECTED_MAP_STRUCTURE](#expected_map_structure)           |             |
 | [FAILED_SERIALIZE](#failed_serialize)                       |             |
 | [FAILED_DESERIALIZE](#failed_deserialize)                   |             |
+| [WRONG_FORMAT](#wrong_format)                               |             |
 | [INCOMPATIBLE_TYPES](#incompatible_types)                   |             |
 | [FAILED_DESERIALIZE_SCALAR](#failed_deserialize_scalar)     |             |
 | [UNSUPPORTED_TYPE](#unsupported_type)                       |             |
 | [EXPECTED_SEQUENCE](#expected_sequence)                     |             |
+| [NOT_ARRAY_OR_OBJECT](#not_array_or_object)                 |             |
+| [OUT_OF_BOUNDS](#out_of_bounds)                             |             |
+| [ERROR_READING_VALUE_AT](#error_reading_value_at)           |             |
+| [NOT_AN_ARRAY_INDEX](#not_an_array_index)                   |             |
 
 
 
@@ -179,6 +184,15 @@ public static final  FAILED_DESERIALIZE
 
 ---
 
+### WRONG_FORMAT
+
+public static final  WRONG_FORMAT
+
+
+
+
+---
+
 ### INCOMPATIBLE_TYPES
 
 public static final  INCOMPATIBLE_TYPES
@@ -209,6 +223,42 @@ public static final  UNSUPPORTED_TYPE
 ### EXPECTED_SEQUENCE
 
 public static final  EXPECTED_SEQUENCE
+
+
+
+
+---
+
+### NOT_ARRAY_OR_OBJECT
+
+public static final  NOT_ARRAY_OR_OBJECT
+
+
+
+
+---
+
+### OUT_OF_BOUNDS
+
+public static final  OUT_OF_BOUNDS
+
+
+
+
+---
+
+### ERROR_READING_VALUE_AT
+
+public static final  ERROR_READING_VALUE_AT
+
+
+
+
+---
+
+### NOT_AN_ARRAY_INDEX
+
+public static final  NOT_AN_ARRAY_INDEX
 
 
 

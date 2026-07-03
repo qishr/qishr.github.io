@@ -9,6 +9,7 @@
     |-------------------------------------------------------------------------|------------------------------------------------------------------------------|
     | [io.github.qishr.cascara.schema](schema/index.md)                       |                                                                              |
     | [io.github.qishr.cascara.schema.annotation](schema/annotation/index.md) |                                                                              |
+    | [io.github.qishr.cascara.schema.exception](schema/exception/index.md)   |                                                                              |
     | [io.github.qishr.cascara.schema.structure](schema/structure/index.md)   |                                                                              |
     | [io.github.qishr.cascara.schema.constraint](schema/constraint/index.md) | Constraints are applied to members variables in classes.                     |
     | [io.github.qishr.cascara.schema.rule](schema/rule/index.md)             | Rules are created by the Schema Compiler when a rule keyword is encountered. |

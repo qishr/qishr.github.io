@@ -36,7 +36,7 @@ Package [io.github.qishr.cascara.common.diagnostic](index.md)
 
 ### Methods inherited from [AbstractReporter](AbstractReporter.md)
 
-errorAt, trace, debug, buildDiagnostic, warnAt, errorAt, infoAt, collectsProblems, infoAt, errorAt, infoAt, [writeString](#writestring), warnAt, error, warnAt, outputToConsole, warn, error, buildDiagnostic, buildDiagnostic, errorAt, errorAt, errorAt, report, setPrintStackTrace, info, error, error, buildDiagnostic
+errorAt, trace, debug, buildDiagnostic, warnAt, errorAt, infoAt, collectsProblems, infoAt, isProblem, errorAt, infoAt, [writeString](#writestring), errorAt, warnAt, error, warnAt, outputToConsole, warn, error, buildDiagnostic, buildDiagnostic, errorAt, errorAt, errorAt, report, setPrintStackTrace, info, error, error, buildDiagnostic
 
 
 ## Method Details

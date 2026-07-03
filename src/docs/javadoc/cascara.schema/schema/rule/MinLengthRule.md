@@ -2,7 +2,8 @@ Package [io.github.qishr.cascara.schema.rule](index.md)
 
 # Class MinLengthRule
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        io.github.qishr.cascara.schema.rule.MinLengthRule<br/>
+        [io.github.qishr.cascara.schema.rule.AbstractValidationRule](AbstractValidationRule.md)<br/>
+                io.github.qishr.cascara.schema.rule.MinLengthRule<br/>
 <br/>
 All Implemented Interfaces:<br/>
     [ValidationRule](ValidationRule.md)
@@ -10,7 +11,8 @@ All Implemented Interfaces:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __MinLengthRule__</span>
+<span style="font-family: monospace; font-size: 80%;">public class __MinLengthRule__<br/>extends [AbstractValidationRule](AbstractValidationRule.md)
+</span>
 
 
 ## Constructor Summary
@@ -23,19 +25,23 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type | Method                                                                                                                                                                                                                                                                                         | Description |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public void       | [validate](#validate)([AstNode](../../../cascara.common/lang/ast/AstNode.md) node, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [ValidationResult](../util/ValidationResult.md) result)                                                  |             |
-| public void       | [validateValue](#validatevalue)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [ValidationResult](../util/ValidationResult.md) result) |             |
-| public int        | [getMin](#getmin)()                                                                                                                                                                                                                                                                            |             |
+| Modifier and Type | Method                                                                                                                                                                                                                                                                                                      | Description |
+|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public boolean    | [validate](#validate)([AstNode](../../../cascara.common/lang/ast/AstNode.md) node, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter)                                                  |             |
+| public boolean    | [validateValue](#validatevalue)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter) |             |
+| public int        | [getMin](#getmin)()                                                                                                                                                                                                                                                                                         |             |
 
+
+### Methods inherited from [AbstractValidationRule](AbstractValidationRule.md)
+
+error, error
 
 
 ## Method Details
 
 ### validate
 
-<span style="font-family: monospace; font-size: 80%;">public void __validate__([AstNode](../../../cascara.common/lang/ast/AstNode.md) node, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [ValidationResult](../util/ValidationResult.md) result)</span>
+<span style="font-family: monospace; font-size: 80%;">public boolean __validate__([AstNode](../../../cascara.common/lang/ast/AstNode.md) node, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter)</span>
 
 
 
@@ -48,7 +54,7 @@ All Implemented Interfaces:<br/>
 
 ### validateValue
 
-<span style="font-family: monospace; font-size: 80%;">public void __validateValue__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [ValidationResult](../util/ValidationResult.md) result)</span>
+<span style="font-family: monospace; font-size: 80%;">public boolean __validateValue__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter)</span>
 
 
 

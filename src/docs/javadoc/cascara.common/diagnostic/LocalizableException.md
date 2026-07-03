@@ -7,7 +7,7 @@ Package [io.github.qishr.cascara.common.diagnostic](index.md)
                         io.github.qishr.cascara.common.diagnostic.LocalizableException<br/>
 <br/>
 Direct Known Subtypes:<br/>
-    [LocalizableIOException](LocalizableIOException.md), [ResourceException](../../cascara.common.io/io/ResourceException.md)
+    [LocalizableIOException](LocalizableIOException.md), [JsonPointerException](../lang/exception/JsonPointerException.md), [ResourceException](../../cascara.common.io/io/ResourceException.md)
 
 
 ----
@@ -33,6 +33,7 @@ Direct Known Subtypes:<br/>
 | public [DiagnosticCode](code/DiagnosticCode.md)                                                       | [getCode](#getcode)()                                                                        | Returns a diagnostic error code for the error message.                   |
 | public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] | [getDetails](#getdetails)()                                                                  | Returns the details, if any, to be used in formatting the error message. |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)   | [getLocalizedMessage](#getlocalizedmessage)()                                                | Returns a localized, formatted error message.                            |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)   | [getMessage](#getmessage)()                                                                  | Returns a localized, formatted error message.                            |
 
 
 
@@ -74,6 +75,19 @@ Returns a localized, formatted error message.
 **Overrides:**
 
 [Exception](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Exception.html#getlocalizedmessage)
+
+
+---
+
+### getMessage
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getMessage__()</span>
+
+Returns a localized, formatted error message.
+
+**Overrides:**
+
+[Exception](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Exception.html#getmessage)
 
 
 ---

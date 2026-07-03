@@ -18,7 +18,7 @@
     | [LocatableException](LocatableException.md)                   |                                                                                                                            |
     | [NoOpReporter](NoOpReporter.md)                               |                                                                                                                            |
     | [Reporter](Reporter.md)                                       |                                                                                                                            |
-    | [SilentErrorTracker](SilentErrorTracker.md)                   |                                                                                                                            |
+    | [SilentCollectingReporter](SilentCollectingReporter.md)       |                                                                                                                            |
     | [StandardReporter](StandardReporter.md)                       |                                                                                                                            |
 
 
@@ -42,7 +42,7 @@
     | [LocalizableRuntimeException](LocalizableRuntimeException.md) |                                                                                                                            |
     | [LocatableException](LocatableException.md)                   |                                                                                                                            |
     | [NoOpReporter](NoOpReporter.md)                               |                                                                                                                            |
-    | [SilentErrorTracker](SilentErrorTracker.md)                   |                                                                                                                            |
+    | [SilentCollectingReporter](SilentCollectingReporter.md)       |                                                                                                                            |
     | [StandardReporter](StandardReporter.md)                       |                                                                                                                            |
 
 

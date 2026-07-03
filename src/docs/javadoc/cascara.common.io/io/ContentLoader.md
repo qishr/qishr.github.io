@@ -28,7 +28,7 @@ Package [io.github.qishr.cascara.common.io](index.md)
 
 **Throws:**
 
-[LocalizableException](../../cascara.common/diagnostic/LocalizableException.md)
+[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
 
 
 ---
