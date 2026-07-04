@@ -27,7 +27,7 @@ markdown_extensions:
 
 theme:
   logo: assets/logo.png
-  # favicon: assets/penguin.svg
+  favicon: assets/logo.png
   name: material
   custom_dir: overrides
   font:
