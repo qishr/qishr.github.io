@@ -1,9 +1,0 @@
-dependencies {
-    implementation "io.github.qishr:cascara-common:1.1.6"
-    implementation "io.github.qishr:cascara-common-io:0.5.1"
-    implementation "io.github.qishr:cascara-lang-json:0.5.1"
-    implementation "io.github.qishr:cascara-lang-xml:0.5.1"
-    implementation "io.github.qishr:cascara-lang-yaml:0.5.1"
-    implementation "io.github.qishr:cascara-schema:0.5.1"
-    implementation "io.github.qishr:cascara-ui:0.5.1"
-}

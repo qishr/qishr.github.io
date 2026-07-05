@@ -72,3 +72,5 @@ Behind the scenes, SchemaResolver caches compiled schemas, so a schema is typica
 ## Performance
 
 ![](benchmark-schema-hot.svg)
+
+![](benchmark-schema-cold.svg)

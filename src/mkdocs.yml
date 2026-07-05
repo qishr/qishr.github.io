@@ -18,7 +18,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.snippets:
       base_path:
-        - src/docs/snippets
+        - src/snippets
       check_paths: true
   - attr_list
   - pymdownx.emoji:
