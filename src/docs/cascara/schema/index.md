@@ -71,6 +71,8 @@ Behind the scenes, SchemaResolver caches compiled schemas, so a schema is typica
 
 ## Performance
 
+Benchmarks were created using the [cascara-benchmark-suite](https://github.com/qishr/cascara-benchmark-suite).
+
 ![](benchmark-schema-hot.svg)
 
 ![](benchmark-schema-cold.svg)
