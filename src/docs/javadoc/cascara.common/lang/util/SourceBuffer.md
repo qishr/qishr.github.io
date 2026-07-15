@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.lang.util](index.md)
         io.github.qishr.cascara.common.lang.util.SourceBuffer<br/>
 <br/>
 All Known Implementing Classes:<br/>
-    [SourceStringBuffer](SourceStringBuffer.md), [SourceInputStreamBuffer](SourceInputStreamBuffer.md)
+    [SimdCapableBuffer](SimdCapableBuffer.md), [SourceInputStreamBuffer](SourceInputStreamBuffer.md)
 
 
 ----
@@ -29,6 +29,7 @@ All Known Implementing Classes:<br/>
 | public abstract int                                                                                                      | [line](#line)()                                 |             |
 | public abstract int                                                                                                      | [column](#column)()                             |             |
 | public abstract int                                                                                                      | [offset](#offset)()                             |             |
+| public abstract void                                                                                                     | [setOffset](#setoffset)(int newOffset)          |             |
 | public abstract void                                                                                                     | [startTokenWindow](#starttokenwindow)()         |             |
 | public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)             | [getTokenWindowLexeme](#gettokenwindowlexeme)() |             |
 | public abstract int                                                                                                      | [windowStartOffset](#windowstartoffset)()       |             |
@@ -141,6 +142,15 @@ All Known Implementing Classes:<br/>
 ### offset
 
 <span style="font-family: monospace; font-size: 80%;">public abstract int __offset__()</span>
+
+
+
+
+---
+
+### setOffset
+
+<span style="font-family: monospace; font-size: 80%;">public abstract void __setOffset__(int newOffset)</span>
 
 
 

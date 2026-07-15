@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [AstNode](AstNode.md), [Iterable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Iterable.html)<E>
 
 All Known Implementing Classes:<br/>
-    [ReferenceMapNode](../reference/ReferenceMapNode.md), [JsonMapNode](../../../cascara.lang.json/json/ast/JsonMapNode.md), [YamlMapNode](../../../cascara.lang.yaml/yaml/ast/YamlMapNode.md)
+    [ReferenceMapNode](../reference/ReferenceMapNode.md), [JsonMapNode](../../../cascara.lang.json/ast/JsonMapNode.md), [YamlMapNode](../../../cascara.lang.yaml/yaml/ast/YamlMapNode.md)
 
 
 ----
@@ -22,23 +22,23 @@ All Known Implementing Classes:<br/>
 |-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | public abstract int                                                                                         | [size](#size)()                                                                                                                                                                                                                                              |             |
 | public abstract boolean                                                                                     | [isEmpty](#isempty)()                                                                                                                                                                                                                                        |             |
-| public abstract boolean                                                                                     | [containsKey](#containskey)(T key)                                                                                                                                                                                                                           |             |
-| public abstract T                                                                                           | [get](#get)(T key)                                                                                                                                                                                                                                           |             |
-| public abstract E                                                                                           | [getEntry](#getentry)(T key)                                                                                                                                                                                                                                 |             |
+| public abstract boolean                                                                                     | [containsKey](#containskey)(K key)                                                                                                                                                                                                                           |             |
+| public abstract V                                                                                           | [get](#get)(K key)                                                                                                                                                                                                                                           |             |
+| public abstract E                                                                                           | [getEntry](#getentry)(K key)                                                                                                                                                                                                                                 |             |
 | public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<E> | [getEntries](#getentries)()                                                                                                                                                                                                                                  |             |
 | public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<E>   | [entrySet](#entryset)()                                                                                                                                                                                                                                      |             |
-| public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<T>   | [keySet](#keyset)()                                                                                                                                                                                                                                          |             |
-| public abstract [MapAstNode](MapAstNode.md)<T, E>                                                           | [put](#put)(T key, T value)                                                                                                                                                                                                                                  |             |
-| public abstract [MapAstNode](MapAstNode.md)<T, E>                                                           | [remove](#remove)(T key)                                                                                                                                                                                                                                     |             |
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> | [values](#values)()                                                                                                                                                                                                                                          |             |
+| public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<K>   | [keySet](#keyset)()                                                                                                                                                                                                                                          |             |
+| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [put](#put)(K key, V value)                                                                                                                                                                                                                                  |             |
+| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [remove](#remove)(K key)                                                                                                                                                                                                                                     |             |
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<V> | [values](#values)()                                                                                                                                                                                                                                          |             |
 | public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<E>  | [getChildren](#getchildren)()                                                                                                                                                                                                                                |             |
 | public abstract boolean                                                                                     | [containsKey](#containskey)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                |             |
-| public abstract [MapAstNode](MapAstNode.md)<T, E>                                                           | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, T value)                                                                                                                                       |             |
-| public abstract [MapAstNode](MapAstNode.md)<T, E>                                                           | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value)                                            |             |
-| public abstract [MapAstNode](MapAstNode.md)<T, E>                                                           | [remove](#remove)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                          |             |
-| public abstract T                                                                                           | [get](#get)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                                |             |
-| public abstract [MapAstNode](MapAstNode.md)<T, E>                                                           | [getMap](#getmap)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                          |             |
-| public abstract [SequenceAstNode](SequenceAstNode.md)<T>                                                    | [getSequence](#getsequence)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                |             |
+| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, V value)                                                                                                                                       |             |
+| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value)                                            |             |
+| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [remove](#remove)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                          |             |
+| public abstract V                                                                                           | [get](#get)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                                |             |
+| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [getMap](#getmap)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                          |             |
+| public abstract [SequenceAstNode](SequenceAstNode.md)<V>                                                    | [getSequence](#getsequence)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                |             |
 | public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getString](#getstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                    |             |
 | public default int                                                                                          | [getInteger](#getinteger)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, int defaultValue)                                                                                                                |             |
 | public default double                                                                                       | [getDouble](#getdouble)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, double defaultValue)                                                                                                               |             |
@@ -73,7 +73,7 @@ All Known Implementing Classes:<br/>
 
 ### containsKey
 
-<span style="font-family: monospace; font-size: 80%;">public abstract boolean __containsKey__(T key)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract boolean __containsKey__(K key)</span>
 
 
 
@@ -82,7 +82,7 @@ All Known Implementing Classes:<br/>
 
 ### get
 
-<span style="font-family: monospace; font-size: 80%;">public abstract T __get__(T key)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract V __get__(K key)</span>
 
 
 
@@ -91,7 +91,7 @@ All Known Implementing Classes:<br/>
 
 ### getEntry
 
-<span style="font-family: monospace; font-size: 80%;">public abstract E __getEntry__(T key)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract E __getEntry__(K key)</span>
 
 
 
@@ -118,7 +118,7 @@ All Known Implementing Classes:<br/>
 
 ### keySet
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<T> __keySet__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<K> __keySet__()</span>
 
 
 
@@ -127,7 +127,7 @@ All Known Implementing Classes:<br/>
 
 ### put
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [MapAstNode](MapAstNode.md)<T, E> __put__(T key, T value)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [MapAstNode](MapAstNode.md)<K, V, E> __put__(K key, V value)</span>
 
 
 
@@ -136,7 +136,7 @@ All Known Implementing Classes:<br/>
 
 ### remove
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [MapAstNode](MapAstNode.md)<T, E> __remove__(T key)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [MapAstNode](MapAstNode.md)<K, V, E> __remove__(K key)</span>
 
 
 
@@ -145,7 +145,7 @@ All Known Implementing Classes:<br/>
 
 ### values
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> __values__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<V> __values__()</span>
 
 
 
@@ -176,7 +176,7 @@ All Known Implementing Classes:<br/>
 
 ### put
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [MapAstNode](MapAstNode.md)<T, E> __put__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, T value)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [MapAstNode](MapAstNode.md)<K, V, E> __put__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, V value)</span>
 
 
 
@@ -185,7 +185,7 @@ All Known Implementing Classes:<br/>
 
 ### put
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [MapAstNode](MapAstNode.md)<T, E> __put__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [MapAstNode](MapAstNode.md)<K, V, E> __put__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value)</span>
 
 
 
@@ -194,7 +194,7 @@ All Known Implementing Classes:<br/>
 
 ### remove
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [MapAstNode](MapAstNode.md)<T, E> __remove__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [MapAstNode](MapAstNode.md)<K, V, E> __remove__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
 
 
 
@@ -203,7 +203,7 @@ All Known Implementing Classes:<br/>
 
 ### get
 
-<span style="font-family: monospace; font-size: 80%;">public abstract T __get__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract V __get__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
 
 
 
@@ -212,7 +212,7 @@ All Known Implementing Classes:<br/>
 
 ### getMap
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [MapAstNode](MapAstNode.md)<T, E> __getMap__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [MapAstNode](MapAstNode.md)<K, V, E> __getMap__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
 
 
 
@@ -221,7 +221,7 @@ All Known Implementing Classes:<br/>
 
 ### getSequence
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [SequenceAstNode](SequenceAstNode.md)<T> __getSequence__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [SequenceAstNode](SequenceAstNode.md)<V> __getSequence__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
 
 
 

@@ -30,6 +30,7 @@
 
     | Package                                                     | Description |
     |-------------------------------------------------------------|-------------|
+    | [io.github.qishr.cascara.schema](schema/index.md)           |             |
     | [io.github.qishr.cascara.schema.util](schema/util/index.md) |             |
 
 

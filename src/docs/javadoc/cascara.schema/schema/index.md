@@ -10,7 +10,6 @@
     |-----------------------------------|-------------|
     | [Schema](Schema.md)               |             |
     | [SchemaKeyword](SchemaKeyword.md) |             |
-    | [SchemaType](SchemaType.md)       |             |
 
 
 === "Interfaces"
@@ -25,6 +24,5 @@
     | Class                             | Description |
     |-----------------------------------|-------------|
     | [SchemaKeyword](SchemaKeyword.md) |             |
-    | [SchemaType](SchemaType.md)       |             |
 
 

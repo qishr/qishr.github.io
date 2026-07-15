@@ -15,6 +15,14 @@ All Implemented Interfaces:<br/>
 </span>
 
 
+## Field Summary
+
+| Modifier and Type               | Field               | Description |
+|---------------------------------|---------------------|-------------|
+| public static final YamlOptions | [DEFAULT](#default) |             |
+
+
+
 ## Constructor Summary
 
 | Constructor   | Description |
@@ -45,6 +53,18 @@ All Implemented Interfaces:<br/>
 ### Methods inherited from [LanguageOptions](../../cascara.common/lang/util/LanguageOptions.md)
 
 setIndentSize, getIndentSize
+
+
+## Field Details
+
+### DEFAULT
+
+<span style="font-family: monospace; font-size: 80%;">public static final YamlOptions __DEFAULT__</span>
+
+
+
+
+---
 
 
 ## Method Details

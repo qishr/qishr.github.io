@@ -21,6 +21,7 @@ All Known Implementing Classes:<br/>
 | public abstract [Reporter](Reporter.md) | [setDiagnosticCollector](#setdiagnosticcollector)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)                                                                                                                            | Registers a collector to receive all diagnostics processed by this reporter.                 |
 | public abstract [Reporter](Reporter.md) | [setProblemCollector](#setproblemcollector)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)                                                                                                                                  | Registers a specialized collector to receive only problem-level diagnostics.                 |
 | public abstract boolean                 | [collectsProblems](#collectsproblems)()                                                                                                                                                                                                                                                                                        | Checks whether any active listener or collector is tracking problems.                        |
+| public abstract boolean                 | [isSilent](#issilent)()                                                                                                                                                                                                                                                                                                        |                                                                                              |
 | public abstract void                    | [trace](#trace)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                   | Reports a trace message through the reporter.                                                |
 | public abstract void                    | [debug](#debug)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                   | Reports a debug message through the reporter.                                                |
 | public abstract void                    | [info](#info)([DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                           | Reports an informational message through the reporter.                                       |
@@ -93,6 +94,15 @@ is actively listening for error diagnostics.
 **Returns:**
 
 `true` if warnings or errors are being collected, otherwise `false`.
+
+
+---
+
+### isSilent
+
+<span style="font-family: monospace; font-size: 80%;">public abstract boolean __isSilent__()</span>
+
+
 
 
 ---

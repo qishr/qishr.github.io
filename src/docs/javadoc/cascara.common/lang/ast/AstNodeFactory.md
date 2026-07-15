@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.lang.ast](index.md)
         io.github.qishr.cascara.common.lang.ast.AstNodeFactory<br/>
 <br/>
 All Known Implementing Classes:<br/>
-    [JsonNodeFactory](../../../cascara.lang.json/json/processor/JsonNodeFactory.md), [YamlNodeFactory](../../../cascara.lang.yaml/yaml/processor/YamlNodeFactory.md)
+    [JsonNodeFactory](../../../cascara.lang.json/ast/JsonNodeFactory.md), [YamlNodeFactory](../../../cascara.lang.yaml/yaml/processor/YamlNodeFactory.md)
 
 
 ----
@@ -15,14 +15,14 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type | Method                                                                                                                                                                                             | Description |
-|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public abstract S | [createScalarNode](#createscalarnode)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) primitiveValue)                                                 |             |
-| public abstract S | [createScalarNode](#createscalarnode)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) primitiveValue, [QuoteStyle](../util/QuoteStyle.md) quoteStyle) |             |
-| public abstract S | [createScalarNode](#createscalarnode)([Primitive](../type/Primitive.md) primitive)                                                                                                                 |             |
-| public abstract N | [createScalarKeyNode](#createscalarkeynode)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                      |             |
-| public abstract L | [createSequenceNode](#createsequencenode)()                                                                                                                                                        |             |
-| public abstract M | [createMapNode](#createmapnode)()                                                                                                                                                                  |             |
+| Modifier and Type | Method                                                                                                                                                                                                                                                 | Description |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public abstract S | [createScalarNode](#createscalarnode)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue)                                                                                                           |             |
+| public abstract S | [createScalarNode](#createscalarnode)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue, [QuoteStyle](../util/QuoteStyle.md) quoteStyle)                                                           |             |
+| public abstract S | [createScalarNode](#createscalarnode)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue, [QuoteStyle](../util/QuoteStyle.md) quoteStyle, [LanguageOptions](../util/LanguageOptions.md)<?> options) |             |
+| public abstract K | [createKey](#createkey)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                                              |             |
+| public abstract L | [createSequenceNode](#createsequencenode)()                                                                                                                                                                                                            |             |
+| public abstract M | [createMapNode](#createmapnode)()                                                                                                                                                                                                                      |             |
 
 
 
@@ -30,7 +30,7 @@ All Known Implementing Classes:<br/>
 
 ### createScalarNode
 
-<span style="font-family: monospace; font-size: 80%;">public abstract S __createScalarNode__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) primitiveValue)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract S __createScalarNode__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue)</span>
 
 
 
@@ -39,7 +39,7 @@ All Known Implementing Classes:<br/>
 
 ### createScalarNode
 
-<span style="font-family: monospace; font-size: 80%;">public abstract S __createScalarNode__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) primitiveValue, [QuoteStyle](../util/QuoteStyle.md) quoteStyle)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract S __createScalarNode__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue, [QuoteStyle](../util/QuoteStyle.md) quoteStyle)</span>
 
 
 
@@ -48,16 +48,16 @@ All Known Implementing Classes:<br/>
 
 ### createScalarNode
 
-<span style="font-family: monospace; font-size: 80%;">public abstract S __createScalarNode__([Primitive](../type/Primitive.md) primitive)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract S __createScalarNode__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue, [QuoteStyle](../util/QuoteStyle.md) quoteStyle, [LanguageOptions](../util/LanguageOptions.md)<?> options)</span>
 
 
 
 
 ---
 
-### createScalarKeyNode
+### createKey
 
-<span style="font-family: monospace; font-size: 80%;">public abstract N __createScalarKeyNode__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract K __createKey__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 

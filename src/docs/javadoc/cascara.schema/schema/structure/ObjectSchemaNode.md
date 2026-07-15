@@ -41,7 +41,7 @@ Package [io.github.qishr.cascara.schema.structure](index.md)
 
 ### Methods inherited from [AbstractSchemaNode](AbstractSchemaNode.md)
 
-getTitle, getDescription, getExtension, getFormatOption, setExtension, addAllOf, getDescriptionKey, addDefinition, getOriginAst, getRef, getStartLine, getAllOf, getEndColumn, isRef, getOriginUri, setDefaultValue, getType, isReadOnly, getRules, setRef, getContentMediaType, getExtensions, setOriginUri, getStartColumn, getDynamicAnchor, addRule, getFormat, setDescriptionKey, getTitleKey, getProperty, setDynamicAnchor, setType, getEndLine, getComments, setFormat, setTitle, getDefinition, getMetaSchema, setTitleKey, setFormatOption, setDescription, getDefaultValue, getChildren, setOriginAst, setReadOnly, getDefinitions, setContentMediaType
+setType, getTitle, getDescription, getExtension, getFormatOption, setExtension, addAllOf, getDescriptionKey, addDefinition, getOriginAst, getRef, getStartLine, getAllOf, getEndColumn, isRef, getOriginUri, setDefaultValue, getType, isReadOnly, getRules, setRef, getContentMediaType, getExtensions, setOriginUri, getStartColumn, getDynamicAnchor, addRule, getFormat, setDescriptionKey, getTitleKey, getProperty, setDynamicAnchor, getEndLine, getComments, setFormat, setTitle, getDefinition, getMetaSchema, setTitleKey, setFormatOption, setDescription, getDefaultValue, getChildren, setOriginAst, setReadOnly, getDefinitions, setContentMediaType
 
 
 ## Method Details

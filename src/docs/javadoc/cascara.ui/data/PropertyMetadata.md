@@ -12,9 +12,9 @@ Package [io.github.qishr.cascara.ui.data](index.md)
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                              | Description |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| PropertyMetadata([SchemaType](../../cascara.schema/schema/SchemaType.md) schemaType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) mediaType, boolean isDeclaredProperty) |             |
+| Constructor                                                                                                                                                                                                                       | Description |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| PropertyMetadata([PrimitiveType](../../cascara.common/lang/type/PrimitiveType.md) schemaType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) mediaType, boolean isDeclaredProperty) |             |
 
 
 
@@ -22,7 +22,7 @@ Package [io.github.qishr.cascara.ui.data](index.md)
 
 | Modifier and Type                                                                                   | Method                                      | Description |
 |-----------------------------------------------------------------------------------------------------|---------------------------------------------|-------------|
-| public [SchemaType](../../cascara.schema/schema/SchemaType.md)                                      | [getSchemaType](#getschematype)()           |             |
+| public [PrimitiveType](../../cascara.common/lang/type/PrimitiveType.md)                             | [getSchemaType](#getschematype)()           |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getMediaType](#getmediatype)()             |             |
 | public boolean                                                                                      | [isDeclaredProperty](#isdeclaredproperty)() |             |
 
@@ -32,7 +32,7 @@ Package [io.github.qishr.cascara.ui.data](index.md)
 
 ### getSchemaType
 
-<span style="font-family: monospace; font-size: 80%;">public [SchemaType](../../cascara.schema/schema/SchemaType.md) __getSchemaType__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [PrimitiveType](../../cascara.common/lang/type/PrimitiveType.md) __getSchemaType__()</span>
 
 
 

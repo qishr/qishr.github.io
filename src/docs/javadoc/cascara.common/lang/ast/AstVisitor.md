@@ -14,13 +14,13 @@ Defines a visitor pattern interface for traversing the Cascara AST hierarchy.
 
 ## Method Summary
 
-| Modifier and Type    | Method                                                         | Description |
-|----------------------|----------------------------------------------------------------|-------------|
-| public abstract void | [visit](#visit)([MapAstNode](MapAstNode.md)<?, ?> node)        |             |
-| public abstract void | [visit](#visit)([MapEntryAstNode](MapEntryAstNode.md)<?> node) |             |
-| public abstract void | [visit](#visit)([SequenceAstNode](SequenceAstNode.md)<?> node) |             |
-| public abstract void | [visit](#visit)([ScalarAstNode](ScalarAstNode.md)<?> node)     |             |
-| public abstract void | [visit](#visit)([CommentAstNode](CommentAstNode.md) node)      |             |
+| Modifier and Type    | Method                                                            | Description |
+|----------------------|-------------------------------------------------------------------|-------------|
+| public abstract void | [visit](#visit)([MapAstNode](MapAstNode.md)<?, ?, ?> node)        |             |
+| public abstract void | [visit](#visit)([MapEntryAstNode](MapEntryAstNode.md)<?, ?> node) |             |
+| public abstract void | [visit](#visit)([SequenceAstNode](SequenceAstNode.md)<?> node)    |             |
+| public abstract void | [visit](#visit)([ScalarAstNode](ScalarAstNode.md)<?> node)        |             |
+| public abstract void | [visit](#visit)([CommentAstNode](CommentAstNode.md) node)         |             |
 
 
 
@@ -28,7 +28,7 @@ Defines a visitor pattern interface for traversing the Cascara AST hierarchy.
 
 ### visit
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([MapAstNode](MapAstNode.md)<?, ?> node)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([MapAstNode](MapAstNode.md)<?, ?, ?> node)</span>
 
 
 
@@ -37,7 +37,7 @@ Defines a visitor pattern interface for traversing the Cascara AST hierarchy.
 
 ### visit
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([MapEntryAstNode](MapEntryAstNode.md)<?> node)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([MapEntryAstNode](MapEntryAstNode.md)<?, ?> node)</span>
 
 
 

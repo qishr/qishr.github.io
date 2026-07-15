@@ -13,9 +13,9 @@ public interface __StreamHandler__</span>
 
 ## Method Summary
 
-| Modifier and Type    | Method                                       | Description |
-|----------------------|----------------------------------------------|-------------|
-| public abstract void | [onEvent](#onevent)([Event](Event.md) event) |             |
+| Modifier and Type    | Method                                                         | Description |
+|----------------------|----------------------------------------------------------------|-------------|
+| public abstract void | [onEvent](#onevent)([StreamingEvent](StreamingEvent.md) event) |             |
 
 
 
@@ -23,7 +23,7 @@ public interface __StreamHandler__</span>
 
 ### onEvent
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __onEvent__([Event](Event.md) event)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __onEvent__([StreamingEvent](StreamingEvent.md) event)</span>
 
 
 

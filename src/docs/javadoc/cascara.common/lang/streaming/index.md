@@ -6,25 +6,25 @@
 
 === "All Classes and Interfaces"
 
-    | Class                             | Description |
-    |-----------------------------------|-------------|
-    | [Event](Event.md)                 |             |
-    | [EventType](EventType.md)         |             |
-    | [StreamHandler](StreamHandler.md) |             |
+    | Class                                       | Description |
+    |---------------------------------------------|-------------|
+    | [StreamHandler](StreamHandler.md)           |             |
+    | [StreamingEvent](StreamingEvent.md)         |             |
+    | [StreamingEventType](StreamingEventType.md) |             |
 
 
 === "Interfaces"
 
-    | Class                             | Description |
-    |-----------------------------------|-------------|
-    | [Event](Event.md)                 |             |
-    | [StreamHandler](StreamHandler.md) |             |
+    | Class                               | Description |
+    |-------------------------------------|-------------|
+    | [StreamHandler](StreamHandler.md)   |             |
+    | [StreamingEvent](StreamingEvent.md) |             |
 
 
 === "Enum Classes"
 
-    | Class                     | Description |
-    |---------------------------|-------------|
-    | [EventType](EventType.md) |             |
+    | Class                                       | Description |
+    |---------------------------------------------|-------------|
+    | [StreamingEventType](StreamingEventType.md) |             |
 
 

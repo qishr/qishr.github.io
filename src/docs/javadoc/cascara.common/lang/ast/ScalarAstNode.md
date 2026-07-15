@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [AstNode](AstNode.md)
 
 All Known Implementing Classes:<br/>
-    [ReferenceScalarNode](../reference/ReferenceScalarNode.md), [JsonScalarNode](../../../cascara.lang.json/json/ast/JsonScalarNode.md), [JsonCommentNode](../../../cascara.lang.json/json/ast/JsonCommentNode.md), [YamlScalarNode](../../../cascara.lang.yaml/yaml/ast/YamlScalarNode.md)
+    [ReferenceScalarNode](../reference/ReferenceScalarNode.md), [JsonScalarNode](../../../cascara.lang.json/ast/JsonScalarNode.md), [JsonCommentNode](../../../cascara.lang.json/ast/JsonCommentNode.md), [YamlScalarNode](../../../cascara.lang.yaml/yaml/ast/YamlScalarNode.md)
 
 
 ----
@@ -18,20 +18,20 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                            | Method                                                                                                                            | Description                                                                                                |
-|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| public abstract [QuoteStyle](../util/QuoteStyle.md)                                                          | [getQuoteStyle](#getquotestyle)()                                                                                                 | Returns the [QuoteStyle](../util/QuoteStyle.md) used by a node: PLAIN, SINGLE, DOUBLE, LITERAL, or FOLDED. |
-| public abstract [ScalarAstNode](ScalarAstNode.md)<T>                                                         | [setQuoteStyle](#setquotestyle)([QuoteStyle](../util/QuoteStyle.md) style)                                                        | Sets the [QuoteStyle](../util/QuoteStyle.md) used by a node                                                |
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getRaw](#getraw)()                                                                                                               | Returns the exact, unparsed text block directly from the file buffer.                                      |
-| public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) | [getPrimitive](#getprimitive)()                                                                                                   | Returns the Java-native representation of the scalar (e.g., Integer, Boolean, String).                     |
-| public abstract [ScalarAstNode](ScalarAstNode.md)<T>                                                         | [setPrimitive](#setprimitive)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value) | Updates the logical native primitive value of this node.                                                   |
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [asString](#asstring)()                                                                                                           | Returns the string form or the primitive.                                                                  |
-| public abstract int                                                                                          | [asInteger](#asinteger)()                                                                                                         |                                                                                                            |
-| public abstract int                                                                                          | [asInteger](#asinteger)(int defaultValue)                                                                                         |                                                                                                            |
-| public abstract double                                                                                       | [asDouble](#asdouble)()                                                                                                           |                                                                                                            |
-| public abstract double                                                                                       | [asDouble](#asdouble)(double defaultValue)                                                                                        |                                                                                                            |
-| public abstract boolean                                                                                      | [asBoolean](#asboolean)()                                                                                                         | Returns the boolean value of the scalar, if there is one.                                                  |
-| public abstract boolean                                                                                      | [asBoolean](#asboolean)(boolean defaultValue)                                                                                     | Returns the boolean value of the scalar, if there is one, otherwise the specified default is returned.     |
+| Modifier and Type                                                                                            | Method                                                                     | Description                                                                                                |
+|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| public abstract [QuoteStyle](../util/QuoteStyle.md)                                                          | [getQuoteStyle](#getquotestyle)()                                          | Returns the [QuoteStyle](../util/QuoteStyle.md) used by a node: PLAIN, SINGLE, DOUBLE, LITERAL, or FOLDED. |
+| public abstract [ScalarAstNode](ScalarAstNode.md)<T>                                                         | [setQuoteStyle](#setquotestyle)([QuoteStyle](../util/QuoteStyle.md) style) | Sets the [QuoteStyle](../util/QuoteStyle.md) used by a node                                                |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getLexeme](#getlexeme)()                                                  | Returns the exact, unparsed text block directly from the file buffer.                                      |
+| public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) | [getPrimitive](#getprimitive)()                                            | Returns the Java-native representation of the scalar (e.g., Integer, Boolean, String).                     |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getContent](#getcontent)()                                                |                                                                                                            |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [asString](#asstring)()                                                    | Returns the string form or the primitive.                                                                  |
+| public abstract int                                                                                          | [asInteger](#asinteger)()                                                  |                                                                                                            |
+| public abstract int                                                                                          | [asInteger](#asinteger)(int defaultValue)                                  |                                                                                                            |
+| public abstract double                                                                                       | [asDouble](#asdouble)()                                                    |                                                                                                            |
+| public abstract double                                                                                       | [asDouble](#asdouble)(double defaultValue)                                 |                                                                                                            |
+| public abstract boolean                                                                                      | [asBoolean](#asboolean)()                                                  | Returns the boolean value of the scalar, if there is one.                                                  |
+| public abstract boolean                                                                                      | [asBoolean](#asboolean)(boolean defaultValue)                              | Returns the boolean value of the scalar, if there is one, otherwise the specified default is returned.     |
 
 
 
@@ -55,10 +55,10 @@ Sets the [QuoteStyle](../util/QuoteStyle.md) used by a node
 
 ---
 
-### getRaw
+### getLexeme
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Nullable<br/>
-public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getRaw__()</span>
+public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getLexeme__()</span>
 
 Returns the exact, unparsed text block directly from the file buffer.
 
@@ -75,13 +75,12 @@ Returns the Java-native representation of the scalar (e.g., Integer, Boolean, St
 
 ---
 
-### setPrimitive
+### getContent
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [ScalarAstNode](ScalarAstNode.md)<T> __setPrimitive__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value)</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Nullable<br/>
+public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getContent__()</span>
 
-Updates the logical native primitive value of this node.This method invalidates any pre-existing raw string cache derived from
-a file buffer, marking the node as dirty so the emitter can contextually
-re-serialize the new value on the next text export pass.
+
 
 
 ---

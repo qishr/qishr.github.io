@@ -17,9 +17,9 @@ All Implemented Interfaces:<br/>
 
 ## Constructor Summary
 
-| Constructor                                           | Description |
-|-------------------------------------------------------|-------------|
-| TypeRule([SchemaType](../SchemaType.md) expectedType) |             |
+| Constructor                                                                                | Description |
+|--------------------------------------------------------------------------------------------|-------------|
+| TypeRule([PrimitiveType](../../../cascara.common/lang/type/PrimitiveType.md) expectedType) |             |
 
 
 

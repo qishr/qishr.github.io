@@ -10,7 +10,9 @@ Language-agnostic lexing, parsing, emitting, serializing, and schema APIs.
     |-------------------------------------------------------|-----------------------------------------------------|
     | [AstTreeData](AstTreeData.md)                         |                                                     |
     | [LanguageOptions](LanguageOptions.md)                 | Base class for all language-specific configuration. |
+    | [LexemeProvider](LexemeProvider.md)                   |                                                     |
     | [QuoteStyle](QuoteStyle.md)                           |                                                     |
+    | [SimdCapableBuffer](SimdCapableBuffer.md)             |                                                     |
     | [SourceBuffer](SourceBuffer.md)                       |                                                     |
     | [SourceInputStreamBuffer](SourceInputStreamBuffer.md) |                                                     |
     | [SourceStringBuffer](SourceStringBuffer.md)           |                                                     |
@@ -18,9 +20,11 @@ Language-agnostic lexing, parsing, emitting, serializing, and schema APIs.
 
 === "Interfaces"
 
-    | Class                           | Description |
-    |---------------------------------|-------------|
-    | [SourceBuffer](SourceBuffer.md) |             |
+    | Class                                     | Description |
+    |-------------------------------------------|-------------|
+    | [LexemeProvider](LexemeProvider.md)       |             |
+    | [SimdCapableBuffer](SimdCapableBuffer.md) |             |
+    | [SourceBuffer](SourceBuffer.md)           |             |
 
 
 === "Classes"

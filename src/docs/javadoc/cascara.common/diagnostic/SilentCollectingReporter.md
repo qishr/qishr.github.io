@@ -27,6 +27,7 @@ Package [io.github.qishr.cascara.common.diagnostic](index.md)
 | public boolean                                                    | [hasErrors](#haserrors)()                                           |             |
 | protected [SilentCollectingReporter](SilentCollectingReporter.md) | [self](#self)()                                                     |             |
 | public boolean                                                    | [collectsProblems](#collectsproblems)()                             |             |
+| public boolean                                                    | [isSilent](#issilent)()                                             |             |
 | protected void                                                    | [report](#report)([Diagnostic](Diagnostic.md) diagnostic)           |             |
 | protected void                                                    | [writeString](#writestring)([Diagnostic](Diagnostic.md) diagnostic) |             |
 
@@ -69,6 +70,19 @@ errorAt, printStackTrace, getProblemCollector, trace, debug, getDiagnosticCollec
 **Overrides:**
 
 [AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#collectsproblems)
+
+
+---
+
+### isSilent
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __isSilent__()</span>
+
+
+
+**Overrides:**
+
+[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#issilent)
 
 
 ---

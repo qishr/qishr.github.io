@@ -81,7 +81,7 @@ Package [io.github.qishr.cascara.schema](index.md)
 | public static [SchemaKeyword](SchemaKeyword.md)[]                                                                                                                                             | [values](#values)()                                                                                                       |                                      |
 | public static [SchemaKeyword](SchemaKeyword.md)                                                                                                                                               | [valueOf](#valueof)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)    |                                      |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [asString](#asstring)()                                                                                                   | Returns the JSON Schema keyword name |
-| public [SchemaType](SchemaType.md)                                                                                                                                                            | [type](#type)()                                                                                                           |                                      |
+| public [PrimitiveType](../../cascara.common/lang/type/PrimitiveType.md)                                                                                                                       | [type](#type)()                                                                                                           |                                      |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [suggestions](#suggestions)()                                                                                             |                                      |
 | public boolean                                                                                                                                                                                | [hasSuggestions](#hassuggestions)()                                                                                       |                                      |
 | public static [SchemaKeyword](SchemaKeyword.md)                                                                                                                                               | [fromString](#fromstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) s) |                                      |
@@ -619,7 +619,7 @@ Returns the JSON Schema keyword name
 
 ### type
 
-<span style="font-family: monospace; font-size: 80%;">public [SchemaType](SchemaType.md) __type__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [PrimitiveType](../../cascara.common/lang/type/PrimitiveType.md) __type__()</span>
 
 
 

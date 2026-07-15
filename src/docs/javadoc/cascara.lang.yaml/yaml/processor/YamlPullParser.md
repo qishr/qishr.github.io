@@ -26,12 +26,12 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                               | Method                | Description |
-|-----------------------------------------------------------------|-----------------------|-------------|
-| protected [YamlPullParser](YamlPullParser.md)                   | [self](#self)()       |             |
-| public boolean                                                  | [hasNext](#hasnext)() |             |
-| public [Event](../../../cascara.common/lang/streaming/Event.md) | [next](#next)()       |             |
-| public void                                                     | [close](#close)()     |             |
+| Modifier and Type                                                                 | Method                | Description |
+|-----------------------------------------------------------------------------------|-----------------------|-------------|
+| protected [YamlPullParser](YamlPullParser.md)                                     | [self](#self)()       |             |
+| public boolean                                                                    | [hasNext](#hasnext)() |             |
+| public [StreamingEvent](../../../cascara.common/lang/streaming/StreamingEvent.md) | [next](#next)()       |             |
+| public void                                                                       | [close](#close)()     |             |
 
 
 ### Methods inherited from [AbstractYamlProcessor](AbstractYamlProcessor.md)
@@ -69,7 +69,7 @@ setReporter, getOptions, getContentType, getServiceProperties, getReporter, setO
 
 ### next
 
-<span style="font-family: monospace; font-size: 80%;">public [Event](../../../cascara.common/lang/streaming/Event.md) __next__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [StreamingEvent](../../../cascara.common/lang/streaming/StreamingEvent.md) __next__()</span>
 
 
 

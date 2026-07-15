@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.common.lang.reference](index.md)
                 io.github.qishr.cascara.common.lang.reference.ReferenceMapEntryNode<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [MapEntryAstNode](../ast/MapEntryAstNode.md)<[ReferenceNode](ReferenceNode.md)>
+    [MapEntryAstNode](../ast/MapEntryAstNode.md)<[ReferenceNode](ReferenceNode.md), [ReferenceNode](ReferenceNode.md)>
 
 
 ----

@@ -36,12 +36,12 @@ Direct Known Subtypes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                    | Method                                                                           | Description |
-|------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|-------------|
-| public [Properties](../../util/Properties.md)                                                        | [getServiceProperties](#getserviceproperties)()                                  |             |
-| public [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> | [getJvmType](#getjvmtype)()                                                      |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)  | [getSchemaType](#getschematype)()                                                |             |
-| public void                                                                                          | [populateSchema](#populateschema)([MapAstNode](../ast/MapAstNode.md)<?, ?> node) |             |
+| Modifier and Type                                                                                    | Method                                                                              | Description |
+|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|-------------|
+| public [Properties](../../util/Properties.md)                                                        | [getServiceProperties](#getserviceproperties)()                                     |             |
+| public [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> | [getJvmType](#getjvmtype)()                                                         |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)  | [getSchemaType](#getschematype)()                                                   |             |
+| public void                                                                                          | [populateSchema](#populateschema)([MapAstNode](../ast/MapAstNode.md)<?, ?, ?> node) |             |
 
 
 
@@ -126,7 +126,7 @@ Direct Known Subtypes:<br/>
 
 ### populateSchema
 
-<span style="font-family: monospace; font-size: 80%;">public void __populateSchema__([MapAstNode](../ast/MapAstNode.md)<?, ?> node)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __populateSchema__([MapAstNode](../ast/MapAstNode.md)<?, ?, ?> node)</span>
 
 
 

@@ -32,7 +32,7 @@ Represents a comment within the YAML source.
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                      | [asString](#asstring)()                                  | The actual comment text without the '#'                                                                              |
 | public boolean                                                                                                           | [isMultiLine](#ismultiline)()                            | Useful for CSS or Java modules                                                                                       |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlNode](YamlNode.md)> | [getChildren](#getchildren)()                            |   Implementation-specific nodes must return their constituent children. For example, a Map node returns its entries. |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                      | [getRaw](#getraw)()                                      |                                                                                                                      |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                      | [getLexeme](#getlexeme)()                                |                                                                                                                      |
 | public void                                                                                                              | [accept](#accept)([YamlVisitor](YamlVisitor.md) visitor) |                                                                                                                      |
 
 
@@ -85,9 +85,9 @@ For example, a Map node returns its entries.
 
 ---
 
-### getRaw
+### getLexeme
 
-<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getRaw__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getLexeme__()</span>
 
 
 

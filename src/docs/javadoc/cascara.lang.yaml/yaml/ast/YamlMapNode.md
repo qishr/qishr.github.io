@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.lang.yaml.ast](index.md)
                 io.github.qishr.cascara.lang.yaml.ast.YamlMapNode<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [MapAstNode](../../../cascara.common/lang/ast/MapAstNode.md)<[YamlNode](YamlNode.md), [YamlMapEntryNode](YamlMapEntryNode.md)>
+    [MapAstNode](../../../cascara.common/lang/ast/MapAstNode.md)<[YamlNode](YamlNode.md), [YamlNode](YamlNode.md), [YamlMapEntryNode](YamlMapEntryNode.md)>
 
 
 ----

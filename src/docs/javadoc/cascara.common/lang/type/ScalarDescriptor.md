@@ -18,13 +18,13 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                            | Method                                                                                                                     | Description                                                              |
-|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| public abstract T                                                                                            | [toJvmType](#tojvmtype)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text) | Converts the `text` into the JVM type specified by this TypeDescriptor.  |
-| public abstract [Primitive](Primitive.md)                                                                    | [toPrimitive](#toprimitive)(T jvmInstance)                                                                                 | Converts the JVM type specified by this TypeDescriptor into a Primitive. |
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getFormat](#getformat)()                                                                                                  | Retuns the JSON Schema `format` used by this TypeDescriptor.             |
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getContentEncoding](#getcontentencoding)()                                                                                | Returns the JSON Schema `contentEncoding` use by this TypeDescriptor.    |
-| public default void                                                                                          | [populateSchema](#populateschema)([MapAstNode](../ast/MapAstNode.md)<?, ?> node)                                           |                                                                          |
+| Modifier and Type                                                                                            | Method                                                                                                                     | Description                                                                               |
+|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| public abstract T                                                                                            | [toJvmType](#tojvmtype)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text) | Converts the `text` into the JVM type specified by this TypeDescriptor.                   |
+| public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) | [toPrimitive](#toprimitive)(T jvmInstance)                                                                                 | Converts the JVM type specified by this TypeDescriptor into a JSON Schema primitive type. |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getFormat](#getformat)()                                                                                                  | Retuns the JSON Schema `format` used by this TypeDescriptor.                              |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getContentEncoding](#getcontentencoding)()                                                                                | Returns the JSON Schema `contentEncoding` use by this TypeDescriptor.                     |
+| public default void                                                                                          | [populateSchema](#populateschema)([MapAstNode](../ast/MapAstNode.md)<?, ?, ?> node)                                        |                                                                                           |
 
 
 
@@ -41,9 +41,13 @@ Converts the `text` into the JVM type specified by this TypeDescriptor.
 
 ### toPrimitive
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [Primitive](Primitive.md) __toPrimitive__(T jvmInstance)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) __toPrimitive__(T jvmInstance)</span>
 
-Converts the JVM type specified by this TypeDescriptor into a Primitive.
+Converts the JVM type specified by this TypeDescriptor into a JSON Schema primitive type.
+
+**Returns:**
+
+One of: null, string, integer (JVM Long), number (JVM Double), boolean.
 
 
 ---
@@ -68,7 +72,7 @@ Returns the JSON Schema `contentEncoding` use by this TypeDescriptor.
 
 ### populateSchema
 
-<span style="font-family: monospace; font-size: 80%;">public default void __populateSchema__([MapAstNode](../ast/MapAstNode.md)<?, ?> node)</span>
+<span style="font-family: monospace; font-size: 80%;">public default void __populateSchema__([MapAstNode](../ast/MapAstNode.md)<?, ?, ?> node)</span>
 
 
 

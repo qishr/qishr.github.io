@@ -26,7 +26,7 @@ Package [io.github.qishr.cascara.common.lang.type](index.md)
 | Modifier and Type                                                                                   | Method                                                                                                                                                                       | Description |
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) | [toJvmType](#tojvmtype)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                                   |             |
-| public [Primitive](Primitive.md)                                                                    | [toPrimitive](#toprimitive)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) value)                                              |             |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) | [toPrimitive](#toprimitive)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) jvmInstance)                                        |             |
 | public boolean                                                                                      | [validate](#validate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector) |             |
 
 
@@ -52,7 +52,7 @@ getSchemaType, getServiceProperties, getJvmType
 
 ### toPrimitive
 
-<span style="font-family: monospace; font-size: 80%;">public [Primitive](Primitive.md) __toPrimitive__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) value)</span>
+<span style="font-family: monospace; font-size: 80%;">public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) __toPrimitive__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) jvmInstance)</span>
 
 
 

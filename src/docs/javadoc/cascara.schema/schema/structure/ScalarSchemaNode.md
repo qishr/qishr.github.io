@@ -14,9 +14,9 @@ Package [io.github.qishr.cascara.schema.structure](index.md)
 
 ## Constructor Summary
 
-| Constructor                                                                                   | Description |
-|-----------------------------------------------------------------------------------------------|-------------|
-| ScalarSchemaNode([SchemaType](../SchemaType.md) type, [SchemaNode](SchemaNode.md) metaSchema) |             |
+| Constructor                                                                                                                        | Description |
+|------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| ScalarSchemaNode([PrimitiveType](../../../cascara.common/lang/type/PrimitiveType.md) type, [SchemaNode](SchemaNode.md) metaSchema) |             |
 
 
 
@@ -32,7 +32,7 @@ Package [io.github.qishr.cascara.schema.structure](index.md)
 
 ### Methods inherited from [AbstractSchemaNode](AbstractSchemaNode.md)
 
-getDescription, getDescriptionKey, getOriginAst, getRef, getEndColumn, isRef, getPropertySchema, getRules, validate, setRef, getExtensions, setOriginUri, getFormat, setDynamicAnchor, getEndLine, getComments, getDefinition, getMetaSchema, setFormatOption, setDescription, getChildren, setOriginAst, setReadOnly, getDefinitions, getTitle, getExtension, getFormatOption, setExtension, addAllOf, addDefinition, getStartLine, getAllOf, getOriginUri, setDefaultValue, getType, isReadOnly, getContentMediaType, getStartColumn, getDynamicAnchor, addRule, setDescriptionKey, getTitleKey, getProperty, setType, setFormat, setTitle, setTitleKey, getDefaultValue, setContentMediaType
+setType, getDescription, getDescriptionKey, getOriginAst, getRef, getEndColumn, isRef, getPropertySchema, getRules, validate, setRef, getExtensions, setOriginUri, getFormat, setDynamicAnchor, getEndLine, getComments, getDefinition, getMetaSchema, setFormatOption, setDescription, getChildren, setOriginAst, setReadOnly, getDefinitions, getTitle, getExtension, getFormatOption, setExtension, addAllOf, addDefinition, getStartLine, getAllOf, getOriginUri, setDefaultValue, getType, isReadOnly, getContentMediaType, getStartColumn, getDynamicAnchor, addRule, setDescriptionKey, getTitleKey, getProperty, setFormat, setTitle, setTitleKey, getDefaultValue, setContentMediaType
 
 
 ## Method Details

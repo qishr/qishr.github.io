@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [Serializer](Serializer.md)<N>
 
 Direct Known Subtypes:<br/>
-    [JsonSerializer](../../../cascara.lang.json/json/processor/JsonSerializer.md), [YamlSerializer](../../../cascara.lang.yaml/yaml/processor/YamlSerializer.md)
+    [JsonSerializer](../../../cascara.lang.json/processor/JsonSerializer.md), [YamlSerializer](../../../cascara.lang.yaml/yaml/processor/YamlSerializer.md)
 
 
 ----
@@ -26,9 +26,9 @@ Direct Known Subtypes:<br/>
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                             | Description |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| AbstractSerializer([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType, [AstNodeFactory](../ast/AstNodeFactory.md)<N, S, L, M, E> astFactory, [PrimitiveDelegate](../type/PrimitiveDelegate.md) primitiveDelegate) |             |
+| Constructor                                                                                                                                                                                                                                                     | Description |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| AbstractSerializer([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType, [AstNodeFactory](../ast/AstNodeFactory.md)<N, S, L, M, E, K> astFactory, [LanguageOptions](../util/LanguageOptions.md)<?> options) |             |
 
 
 
@@ -37,6 +37,8 @@ Direct Known Subtypes:<br/>
 | Modifier and Type                                                                                                                                                                                        | Method                                                                                                                                                                | Description                                                                              |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | protected abstract T                                                                                                                                                                                     | [self](#self)()                                                                                                                                                       |                                                                                          |
+| protected abstract K                                                                                                                                                                                     | [serializeKey](#serializekey)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                       |                                                                                          |
+| public T                                                                                                                                                                                                 | [setOptions](#setoptions)([LanguageOptions](../util/LanguageOptions.md)<?> options)                                                                                   |                                                                                          |
 | public [Properties](../../util/Properties.md)                                                                                                                                                            | [getServiceProperties](#getserviceproperties)()                                                                                                                       |                                                                                          |
 | public T                                                                                                                                                                                                 | [registerTypeDescriptor](#registertypedescriptor)([TypeDescriptor](../type/TypeDescriptor.md)<?> typeDescriptor)                                                      |                                                                                          |
 | protected N                                                                                                                                                                                              | [serialize](#serialize)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                     | Creates the appropriate AstNode (Scalar, Sequence, or Map) based on the Java value type. |
@@ -67,6 +69,24 @@ Direct Known Subtypes:<br/>
 ### self
 
 <span style="font-family: monospace; font-size: 80%;">protected abstract T __self__()</span>
+
+
+
+
+---
+
+### serializeKey
+
+<span style="font-family: monospace; font-size: 80%;">protected abstract K __serializeKey__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
+
+
+
+
+---
+
+### setOptions
+
+<span style="font-family: monospace; font-size: 80%;">public T __setOptions__([LanguageOptions](../util/LanguageOptions.md)<?> options)</span>
 
 
 

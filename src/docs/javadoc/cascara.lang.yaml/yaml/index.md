@@ -6,17 +6,15 @@
 
 === "All Classes and Interfaces"
 
-    | Class                                             | Description |
-    |---------------------------------------------------|-------------|
-    | [YamlOptions](YamlOptions.md)                     |             |
-    | [YamlPrimitiveDelegate](YamlPrimitiveDelegate.md) |             |
+    | Class                         | Description |
+    |-------------------------------|-------------|
+    | [YamlOptions](YamlOptions.md) |             |
 
 
 === "Classes"
 
-    | Class                                             | Description |
-    |---------------------------------------------------|-------------|
-    | [YamlOptions](YamlOptions.md)                     |             |
-    | [YamlPrimitiveDelegate](YamlPrimitiveDelegate.md) |             |
+    | Class                         | Description |
+    |-------------------------------|-------------|
+    | [YamlOptions](YamlOptions.md) |             |
 
 

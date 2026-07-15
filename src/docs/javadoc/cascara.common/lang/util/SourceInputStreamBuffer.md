@@ -42,6 +42,7 @@ All Implemented Interfaces:<br/>
 | public int                                                                                                      | [windowStartOffset](#windowstartoffset)()       |             |
 | public int                                                                                                      | [windowStartLine](#windowstartline)()           |             |
 | public int                                                                                                      | [windowStartColumn](#windowstartcolumn)()       |             |
+| public void                                                                                                     | [setOffset](#setoffset)(int newOffset)          |             |
 
 
 
@@ -258,6 +259,19 @@ All Implemented Interfaces:<br/>
 ### windowStartColumn
 
 <span style="font-family: monospace; font-size: 80%;">public int __windowStartColumn__()</span>
+
+
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
+
+---
+
+### setOffset
+
+<span style="font-family: monospace; font-size: 80%;">public void __setOffset__(int newOffset)</span>
 
 
 

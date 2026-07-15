@@ -23,11 +23,11 @@ Package [io.github.qishr.cascara.common.lang.type](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                               | Method                                                                                                                                                                       | Description |
-|-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [UUID](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/UUID.html) | [toJvmType](#tojvmtype)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                                   |             |
-| public [Primitive](Primitive.md)                                                                | [toPrimitive](#toprimitive)([UUID](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/UUID.html) value)                                                  |             |
-| public boolean                                                                                  | [validate](#validate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector) |             |
+| Modifier and Type                                                                                   | Method                                                                                                                                                                       | Description |
+|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [UUID](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/UUID.html)     | [toJvmType](#tojvmtype)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                                   |             |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) | [toPrimitive](#toprimitive)([UUID](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/UUID.html) jvmInstance)                                            |             |
+| public boolean                                                                                      | [validate](#validate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector) |             |
 
 
 ### Methods inherited from [AbstractTypeDescriptor](AbstractTypeDescriptor.md)
@@ -52,7 +52,7 @@ getFormat, populateSchema, getContentEncoding, formatError
 
 ### toPrimitive
 
-<span style="font-family: monospace; font-size: 80%;">public [Primitive](Primitive.md) __toPrimitive__([UUID](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/UUID.html) value)</span>
+<span style="font-family: monospace; font-size: 80%;">public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) __toPrimitive__([UUID](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/UUID.html) jvmInstance)</span>
 
 
 

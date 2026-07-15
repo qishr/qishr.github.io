@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [Processor](Processor.md)
 
 All Known Implementing Classes:<br/>
-    [JsonAstParser](../../../cascara.lang.json/json/processor/JsonAstParser.md), [XmlAstParser](../../../cascara.lang.xml/xml/processor/XmlAstParser.md), [YamlAstParser](../../../cascara.lang.yaml/yaml/processor/YamlAstParser.md)
+    [JsonAstParser](../../../cascara.lang.json/processor/JsonAstParser.md), [XmlAstParser](../../../cascara.lang.xml/xml/processor/XmlAstParser.md), [YamlAstParser](../../../cascara.lang.yaml/yaml/processor/YamlAstParser.md)
 
 
 ----
@@ -52,6 +52,10 @@ The root [AstNode](../ast/AstNode.md).
 <span style="font-family: monospace; font-size: 80%;">public abstract N __parse__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)</span>
 
 Entry point for parsing an `InputStream`.
+
+**Parameters:**
+
+`is` - is An input stream of the raw text source.
 
 **Returns:**
 

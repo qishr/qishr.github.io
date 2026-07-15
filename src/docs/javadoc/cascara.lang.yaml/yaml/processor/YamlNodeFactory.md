@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.lang.yaml.processor](index.md)
         io.github.qishr.cascara.lang.yaml.processor.YamlNodeFactory<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [AstNodeFactory](../../../cascara.common/lang/ast/AstNodeFactory.md)<[YamlNode](../ast/YamlNode.md), [YamlScalarNode](../ast/YamlScalarNode.md), [YamlSequenceNode](../ast/YamlSequenceNode.md), [YamlMapNode](../ast/YamlMapNode.md), [YamlMapEntryNode](../ast/YamlMapEntryNode.md)>
+    [AstNodeFactory](../../../cascara.common/lang/ast/AstNodeFactory.md)<[YamlNode](../ast/YamlNode.md), [YamlScalarNode](../ast/YamlScalarNode.md), [YamlSequenceNode](../ast/YamlSequenceNode.md), [YamlMapNode](../ast/YamlMapNode.md), [YamlMapEntryNode](../ast/YamlMapEntryNode.md), [YamlNode](../ast/YamlNode.md)>
 
 
 ----
@@ -23,14 +23,14 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                     | Method                                                                                                                                                                                                            | Description |
-|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [YamlScalarNode](../ast/YamlScalarNode.md)     | [createScalarNode](#createscalarnode)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) primitiveValue)                                                                |             |
-| public [YamlScalarNode](../ast/YamlScalarNode.md)     | [createScalarNode](#createscalarnode)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key, [QuoteStyle](../../../cascara.common/lang/util/QuoteStyle.md) quoteStyle) |             |
-| public [YamlScalarNode](../ast/YamlScalarNode.md)     | [createScalarNode](#createscalarnode)([Primitive](../../../cascara.common/lang/type/Primitive.md) primitive)                                                                                                      |             |
-| public [YamlScalarNode](../ast/YamlScalarNode.md)     | [createScalarKeyNode](#createscalarkeynode)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                     |             |
-| public [YamlSequenceNode](../ast/YamlSequenceNode.md) | [createSequenceNode](#createsequencenode)()                                                                                                                                                                       |             |
-| public [YamlMapNode](../ast/YamlMapNode.md)           | [createMapNode](#createmapnode)()                                                                                                                                                                                 |             |
+| Modifier and Type                                     | Method                                                                                                                                                                                                                                                                                                     | Description |
+|-------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [YamlScalarNode](../ast/YamlScalarNode.md)     | [createScalarNode](#createscalarnode)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue)                                                                                                                                                               |             |
+| public [YamlScalarNode](../ast/YamlScalarNode.md)     | [createScalarNode](#createscalarnode)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key, [QuoteStyle](../../../cascara.common/lang/util/QuoteStyle.md) quoteStyle)                                                                                          |             |
+| public [YamlScalarNode](../ast/YamlScalarNode.md)     | [createScalarNode](#createscalarnode)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue, [QuoteStyle](../../../cascara.common/lang/util/QuoteStyle.md) quoteStyle, [LanguageOptions](../../../cascara.common/lang/util/LanguageOptions.md)<?> options) |             |
+| public [YamlScalarNode](../ast/YamlScalarNode.md)     | [createKey](#createkey)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                                                                                                  |             |
+| public [YamlSequenceNode](../ast/YamlSequenceNode.md) | [createSequenceNode](#createsequencenode)()                                                                                                                                                                                                                                                                |             |
+| public [YamlMapNode](../ast/YamlMapNode.md)           | [createMapNode](#createmapnode)()                                                                                                                                                                                                                                                                          |             |
 
 
 
@@ -38,7 +38,7 @@ All Implemented Interfaces:<br/>
 
 ### createScalarNode
 
-<span style="font-family: monospace; font-size: 80%;">public [YamlScalarNode](../ast/YamlScalarNode.md) __createScalarNode__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) primitiveValue)</span>
+<span style="font-family: monospace; font-size: 80%;">public [YamlScalarNode](../ast/YamlScalarNode.md) __createScalarNode__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue)</span>
 
 
 
@@ -64,7 +64,7 @@ All Implemented Interfaces:<br/>
 
 ### createScalarNode
 
-<span style="font-family: monospace; font-size: 80%;">public [YamlScalarNode](../ast/YamlScalarNode.md) __createScalarNode__([Primitive](../../../cascara.common/lang/type/Primitive.md) primitive)</span>
+<span style="font-family: monospace; font-size: 80%;">public [YamlScalarNode](../ast/YamlScalarNode.md) __createScalarNode__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue, [QuoteStyle](../../../cascara.common/lang/util/QuoteStyle.md) quoteStyle, [LanguageOptions](../../../cascara.common/lang/util/LanguageOptions.md)<?> options)</span>
 
 
 
@@ -75,9 +75,9 @@ All Implemented Interfaces:<br/>
 
 ---
 
-### createScalarKeyNode
+### createKey
 
-<span style="font-family: monospace; font-size: 80%;">public [YamlScalarNode](../ast/YamlScalarNode.md) __createScalarKeyNode__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">public [YamlScalarNode](../ast/YamlScalarNode.md) __createKey__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 

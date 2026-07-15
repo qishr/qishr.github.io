@@ -21,6 +21,7 @@ Package [io.github.qishr.cascara.common.lang.util](index.md)
 | [DOUBLE](#double)               |             |
 | [LITERAL_BLOCK](#literal_block) |             |
 | [FOLDED](#folded)               |             |
+| [UNDETERMINED](#undetermined)   |             |
 
 
 
@@ -74,6 +75,15 @@ public static final  LITERAL_BLOCK
 ### FOLDED
 
 public static final  FOLDED
+
+
+
+
+---
+
+### UNDETERMINED
+
+public static final  UNDETERMINED
 
 
 

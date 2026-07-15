@@ -38,6 +38,7 @@ comments, indentation styles, and quote styles for round-tripping.
 | Modifier and Type                                                                                                                   | Method                                                                                                                                               | Description                                                                |
 |-------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | protected [YamlAstParser](YamlAstParser.md)                                                                                         | [self](#self)()                                                                                                                                      |                                                                            |
+| public [YamlAstParser](YamlAstParser.md)                                                                                            | [setOptions](#setoptions)([YamlOptions](../YamlOptions.md) options)                                                                                  |                                                                            |
 | public [YamlNode](../ast/YamlNode.md)                                                                                               | [parse](#parse)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                   | Entry point for parsing a full YAML source string.                         |
 | public [YamlNode](../ast/YamlNode.md)                                                                                               | [parse](#parse)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)                             | Entry point for parsing an InputStream.                                    |
 | public io.github.qishr.cascara.lang.yaml.ast.@io.github.qishr.cascara.common.lang.annotation.Experimental YamlStreamNode            | [parseMulti](#parsemulti)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                         | Type-safe method specifically for multi-document scenarios.                |
@@ -49,7 +50,7 @@ comments, indentation styles, and quote styles for round-tripping.
 
 ### Methods inherited from [AbstractYamlProcessor](AbstractYamlProcessor.md)
 
-setReporter, getOptions, getContentType, getServiceProperties, getReporter, setOptions
+setReporter, getOptions, getContentType, getServiceProperties, getReporter, [setOptions](#setoptions)
 
 
 ## Method Details
@@ -63,6 +64,15 @@ setReporter, getOptions, getContentType, getServiceProperties, getReporter, setO
 **Overrides:**
 
 [AbstractYamlProcessor](../cascara.lang.yaml/yaml/processor/AbstractYamlProcessor.md#self)
+
+
+---
+
+### setOptions
+
+<span style="font-family: monospace; font-size: 80%;">public [YamlAstParser](YamlAstParser.md) __setOptions__([YamlOptions](../YamlOptions.md) options)</span>
+
+
 
 
 ---

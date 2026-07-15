@@ -9,7 +9,7 @@ All Implemented Interfaces:<br/>
     [ScalarDescriptor](ScalarDescriptor.md)<T>
 
 Direct Known Subtypes:<br/>
-    [UuidTypeDescriptor](UuidTypeDescriptor.md), [UriTypeDescriptor](UriTypeDescriptor.md), [LocalDateTimeTypeDescriptor](LocalDateTimeTypeDescriptor.md), [PathTypeDescriptor](PathTypeDescriptor.md), [InstantTypeDescriptor](InstantTypeDescriptor.md), [ByteArrayDescriptor](ByteArrayDescriptor.md)
+    [UuidTypeDescriptor](UuidTypeDescriptor.md), [UriTypeDescriptor](UriTypeDescriptor.md), [PathTypeDescriptor](PathTypeDescriptor.md), [DateTimeTypeDescriptor](DateTimeTypeDescriptor.md), [InstantTypeDescriptor](InstantTypeDescriptor.md), [ByteArrayDescriptor](ByteArrayDescriptor.md)
 
 
 ----
@@ -42,7 +42,7 @@ Direct Known Subtypes:<br/>
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getFormat](#getformat)()                                                                                                                                                          |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getContentEncoding](#getcontentencoding)()                                                                                                                                        |             |
-| public void                                                                                         | [populateSchema](#populateschema)([MapAstNode](../ast/MapAstNode.md)<?, ?> node)                                                                                                   |             |
+| public void                                                                                         | [populateSchema](#populateschema)([MapAstNode](../ast/MapAstNode.md)<?, ?, ?> schema)                                                                                              |             |
 | protected void                                                                                      | [formatError](#formaterror)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector) |             |
 
 
@@ -114,7 +114,7 @@ getSchemaType, getServiceProperties, getJvmType
 
 ### populateSchema
 
-<span style="font-family: monospace; font-size: 80%;">public void __populateSchema__([MapAstNode](../ast/MapAstNode.md)<?, ?> node)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __populateSchema__([MapAstNode](../ast/MapAstNode.md)<?, ?, ?> schema)</span>
 
 
 

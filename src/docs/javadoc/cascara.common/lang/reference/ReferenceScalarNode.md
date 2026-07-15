@@ -26,22 +26,24 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                           | Method                                                                                                                            | Description |
-|---------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [ReferenceScalarNode](ReferenceScalarNode.md)                                                                                        | [setQuoteStyle](#setquotestyle)([QuoteStyle](../util/QuoteStyle.md) style)                                                        |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                         | [getRaw](#getraw)()                                                                                                               |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                         | [asString](#asstring)()                                                                                                           |             |
-| public int                                                                                                                                  | [asInteger](#asinteger)()                                                                                                         |             |
-| public int                                                                                                                                  | [asInteger](#asinteger)(int defaultValue)                                                                                         |             |
-| public double                                                                                                                               | [asDouble](#asdouble)()                                                                                                           |             |
-| public double                                                                                                                               | [asDouble](#asdouble)(double defaultValue)                                                                                        |             |
-| public boolean                                                                                                                              | [asBoolean](#asboolean)()                                                                                                         |             |
-| public boolean                                                                                                                              | [asBoolean](#asboolean)(boolean defaultValue)                                                                                     |             |
-| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)                                         | [getPrimitive](#getprimitive)()                                                                                                   |             |
-| public [ReferenceScalarNode](ReferenceScalarNode.md)                                                                                        | [setPrimitive](#setprimitive)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value) |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [AstNode](../ast/AstNode.md)>     | [getChildren](#getchildren)()                                                                                                     |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../ast/CommentAstNode.md)> | [getComments](#getcomments)()                                                                                                     |             |
-| public [QuoteStyle](../util/QuoteStyle.md)                                                                                                  | [getQuoteStyle](#getquotestyle)()                                                                                                 |             |
+| Modifier and Type                                                                                                                           | Method                                                                                                            | Description |
+|---------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------|
+| public [ReferenceScalarNode](ReferenceScalarNode.md)                                                                                        | [setQuoteStyle](#setquotestyle)([QuoteStyle](../util/QuoteStyle.md) style)                                        |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                         | [getLexeme](#getlexeme)()                                                                                         |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                         | [asString](#asstring)()                                                                                           |             |
+| public int                                                                                                                                  | [asInteger](#asinteger)()                                                                                         |             |
+| public int                                                                                                                                  | [asInteger](#asinteger)(int defaultValue)                                                                         |             |
+| public double                                                                                                                               | [asDouble](#asdouble)()                                                                                           |             |
+| public double                                                                                                                               | [asDouble](#asdouble)(double defaultValue)                                                                        |             |
+| public boolean                                                                                                                              | [asBoolean](#asboolean)()                                                                                         |             |
+| public boolean                                                                                                                              | [asBoolean](#asboolean)(boolean defaultValue)                                                                     |             |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)                                         | [getPrimitive](#getprimitive)()                                                                                   |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [AstNode](../ast/AstNode.md)>     | [getChildren](#getchildren)()                                                                                     |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../ast/CommentAstNode.md)> | [getComments](#getcomments)()                                                                                     |             |
+| public [QuoteStyle](../util/QuoteStyle.md)                                                                                                  | [getQuoteStyle](#getquotestyle)()                                                                                 |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                         | [getContent](#getcontent)()                                                                                       |             |
+| public boolean                                                                                                                              | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o) |             |
+| public int                                                                                                                                  | [hashCode](#hashcode)()                                                                                           |             |
 
 
 ### Methods inherited from [ReferenceNode](ReferenceNode.md)
@@ -64,10 +66,10 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 
 ---
 
-### getRaw
+### getLexeme
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Nullable<br/>
-public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getRaw__()</span>
+public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getLexeme__()</span>
 
 
 
@@ -183,19 +185,6 @@ public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/jav
 
 ---
 
-### setPrimitive
-
-<span style="font-family: monospace; font-size: 80%;">public [ReferenceScalarNode](ReferenceScalarNode.md) __setPrimitive__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value)</span>
-
-
-
-**Specified By:**
-
-[ScalarAstNode](../ast/ScalarAstNode.md)
-
-
----
-
 ### getChildren
 
 <span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [AstNode](../ast/AstNode.md)> __getChildren__()</span>
@@ -223,6 +212,45 @@ public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/jav
 **Specified By:**
 
 [ScalarAstNode](../ast/ScalarAstNode.md)
+
+
+---
+
+### getContent
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getContent__()</span>
+
+
+
+**Specified By:**
+
+[ScalarAstNode](../ast/ScalarAstNode.md)
+
+
+---
+
+### equals
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __equals__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)</span>
+
+
+
+**Overrides:**
+
+[Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#equals)
+
+
+---
+
+### hashCode
+
+<span style="font-family: monospace; font-size: 80%;">public int __hashCode__()</span>
+
+
+
+**Overrides:**
+
+[Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#hashcode)
 
 
 ---

@@ -26,17 +26,17 @@ Package [io.github.qishr.cascara.common.lang.type](index.md)
 | Modifier and Type                                                                                     | Method                                                                                                                                                                       | Description |
 |-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | public [Instant](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Instant.html) | [toJvmType](#tojvmtype)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                                   |             |
-| public [Primitive](Primitive.md)                                                                      | [toPrimitive](#toprimitive)([Instant](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Instant.html) value)                                            |             |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)   | [toPrimitive](#toprimitive)([Instant](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Instant.html) jvmInstance)                                      |             |
 | public boolean                                                                                        | [validate](#validate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector) |             |
 
-
-### Methods inherited from [AbstractTypeDescriptor](AbstractTypeDescriptor.md)
-
-getSchemaType, getServiceProperties, getJvmType
 
 ### Methods inherited from [AbstractScalarDescriptor](AbstractScalarDescriptor.md)
 
 getFormat, populateSchema, getContentEncoding, formatError
+
+### Methods inherited from [AbstractTypeDescriptor](AbstractTypeDescriptor.md)
+
+getSchemaType, getServiceProperties, getJvmType
 
 
 ## Method Details
@@ -52,7 +52,7 @@ getFormat, populateSchema, getContentEncoding, formatError
 
 ### toPrimitive
 
-<span style="font-family: monospace; font-size: 80%;">public [Primitive](Primitive.md) __toPrimitive__([Instant](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Instant.html) value)</span>
+<span style="font-family: monospace; font-size: 80%;">public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) __toPrimitive__([Instant](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Instant.html) jvmInstance)</span>
 
 
 

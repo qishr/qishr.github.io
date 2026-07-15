@@ -19,6 +19,7 @@ All Implemented Interfaces:<br/>
 
 | Enum Constant                                               | Description |
 |-------------------------------------------------------------|-------------|
+| [CONFIGURATION_ERROR](#configuration_error)                 |             |
 | [NOT_A_SERVICE](#not_a_service)                             |             |
 | [NOT_A_SERVICE_PROVIDER](#not_a_service_provider)           |             |
 | [FAILED_TO_REGISTER_MODULE](#failed_to_register_module)     |             |
@@ -44,6 +45,15 @@ All Implemented Interfaces:<br/>
 
 
 ## Enum Constant Details
+
+### CONFIGURATION_ERROR
+
+public static final  CONFIGURATION_ERROR
+
+
+
+
+---
 
 ### NOT_A_SERVICE
 

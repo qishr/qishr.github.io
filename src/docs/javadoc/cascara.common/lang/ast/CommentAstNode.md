@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [AstNode](AstNode.md)
 
 All Known Implementing Classes:<br/>
-    [JsonCommentNode](../../../cascara.lang.json/json/ast/JsonCommentNode.md), [YamlCommentNode](../../../cascara.lang.yaml/yaml/ast/YamlCommentNode.md)
+    [JsonCommentNode](../../../cascara.lang.json/ast/JsonCommentNode.md), [YamlCommentNode](../../../cascara.lang.yaml/yaml/ast/YamlCommentNode.md)
 
 
 ----
@@ -21,7 +21,7 @@ All Known Implementing Classes:<br/>
 | Modifier and Type                                                                                            | Method                        | Description                             |
 |--------------------------------------------------------------------------------------------------------------|-------------------------------|-----------------------------------------|
 | public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [asString](#asstring)()       | The actual comment text without the '#' |
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getRaw](#getraw)()           | The lexeme, including the '#'           |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getLexeme](#getlexeme)()     | The lexeme, including the '#'           |
 | public abstract boolean                                                                                      | [isMultiLine](#ismultiline)() | Useful for CSS or Java modules          |
 
 
@@ -41,9 +41,9 @@ The actual comment text without the '#'
 
 ---
 
-### getRaw
+### getLexeme
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getRaw__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getLexeme__()</span>
 
 The lexeme, including the '#'
 
