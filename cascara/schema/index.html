@@ -20927,7 +20927,7 @@
 </span></code></pre></div>
 <p>Behind the scenes, SchemaResolver caches compiled schemas, so a schema is typically only compiled once regardless of how many times it's referenced. The main reason to compile a schema explicitly and call validate directly on it is control — you choose exactly which schema is used, rather than relying on auto-discovery via the $schema property in the data.</p>
 <h2 id="performance">Performance</h2>
-<p>Benchmarks were created using the <a href="https://github.com/qishr/cascara-benchmark-suite">cascara-benchmark-suite</a>.</p>
+<p>Benchmarks were created using the <a href="https://github.com/qishr/cascara-test-benchmark">cascara-test-benchmark</a>.</p>
 <p><img alt="" src="benchmark-schema-hot.svg" /></p>
 <p><img alt="" src="benchmark-schema-cold.svg" /></p>
 
