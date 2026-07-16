@@ -16,7 +16,7 @@ text {
 </style>
 </defs>
 <text x="392" y="32" fill="#999596" font-size="18" text-anchor="middle">JSON Compliance Matrix</text>
-<text x="335" y="225" fill="#897966" font-size="12" text-anchor="start" transform="rotate(-90 335 225)">java_cascara_json_0_5_2.json</text>
+<text x="335" y="225" fill="#897966" font-size="12" text-anchor="start" transform="rotate(-90 335 225)">Cascara JSON 0.6.0.json</text>
 <text x="359" y="225" fill="#897966" font-size="12" text-anchor="start" transform="rotate(-90 359 225)">java_glassfish_1_0_2.json</text>
 <text x="383" y="225" fill="#897966" font-size="12" text-anchor="start" transform="rotate(-90 383 225)">java_gson_2_7.json</text>
 <text x="407" y="225" fill="#897966" font-size="12" text-anchor="start" transform="rotate(-90 407 225)">java_jackson_2_8_4.json</text>
