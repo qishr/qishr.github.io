@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [Serializer](Serializer.md)<N>
 
 Direct Known Subtypes:<br/>
-    [JsonSerializer](../../../cascara.lang.json/processor/JsonSerializer.md), [YamlSerializer](../../../cascara.lang.yaml/processor/YamlSerializer.md)
+    [JsonSerializer](../../../cascara.lang.json/json/processor/JsonSerializer.md), [YamlSerializer](../../../cascara.lang.yaml/yaml/processor/YamlSerializer.md)
 
 
 ----

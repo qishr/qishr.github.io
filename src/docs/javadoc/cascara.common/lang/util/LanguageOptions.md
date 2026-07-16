@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.lang.util](index.md)
         io.github.qishr.cascara.common.lang.util.LanguageOptions<br/>
 <br/>
 Direct Known Subtypes:<br/>
-    [JsonOptions](../../../cascara.lang.json/util/JsonOptions.md), [XmlOptions](../../../cascara.lang.xml/util/XmlOptions.md), [YamlOptions](../../../cascara.lang.yaml/util/YamlOptions.md)
+    [JsonOptions](../../../cascara.lang.json/json/util/JsonOptions.md), [XmlOptions](../../../cascara.lang.xml/util/XmlOptions.md), [YamlOptions](../../../cascara.lang.yaml/yaml/util/YamlOptions.md)
 
 
 ----

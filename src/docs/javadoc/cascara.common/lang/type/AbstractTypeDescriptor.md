@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [TypeDescriptor](TypeDescriptor.md)<T>
 
 Direct Known Subtypes:<br/>
-    [AbstractScalarDescriptor](AbstractScalarDescriptor.md), [YamlTypeSerializer](../../../cascara.lang.yaml/processor/YamlTypeSerializer.md)
+    [AbstractScalarDescriptor](AbstractScalarDescriptor.md), [YamlTypeSerializer](../../../cascara.lang.yaml/yaml/processor/YamlTypeSerializer.md)
 
 
 ----

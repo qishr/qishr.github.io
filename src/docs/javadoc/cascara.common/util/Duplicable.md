@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
         io.github.qishr.cascara.common.util.Duplicable<br/>
 <br/>
 All Known Implementing Classes:<br/>
-    [Properties](Properties.md), [JsonOptions](../cascara.lang.json/JsonOptions.md), [YamlOptions](../cascara.lang.yaml/YamlOptions.md)
+    [Properties](Properties.md), [JsonOptions](../../cascara.lang.json/json/util/JsonOptions.md), [YamlOptions](../../cascara.lang.yaml/yaml/util/YamlOptions.md)
 
 
 ----

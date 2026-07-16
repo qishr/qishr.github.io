@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.lang.util](index.md)
         io.github.qishr.cascara.common.lang.util.LexemeProvider<br/>
 <br/>
 All Known Implementing Classes:<br/>
-    [SourceStringBuffer](SourceStringBuffer.md), [JsonSourceByteBuffer](../../../cascara.lang.json/token/JsonSourceByteBuffer.md)
+    [SourceStringBuffer](SourceStringBuffer.md), [JsonSourceByteBuffer](../../../cascara.lang.json/json/token/JsonSourceByteBuffer.md)
 
 
 ----

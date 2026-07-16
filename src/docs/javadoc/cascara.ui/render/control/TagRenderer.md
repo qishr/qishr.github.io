@@ -32,13 +32,13 @@ All Implemented Interfaces:<br/>
 | public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)           | [getContrastColor](#getcontrastcolor)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) colorStr)                                                                                                                                                                                                                           |             |
 
 
-### Methods inherited from [AbstractScalarRenderer](../AbstractScalarRenderer.md)
-
-extractString, extractString
-
 ### Methods inherited from [AbstractRenderer](../AbstractRenderer.md)
 
 getSchemaType, getSchemaFormat, getContentType, getServiceProperties
+
+### Methods inherited from [AbstractScalarRenderer](../AbstractScalarRenderer.md)
+
+extractString, extractString
 
 
 ## Method Details

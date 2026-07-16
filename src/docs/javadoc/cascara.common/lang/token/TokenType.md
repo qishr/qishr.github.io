@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.lang.token](index.md)
         io.github.qishr.cascara.common.lang.token.TokenType<br/>
 <br/>
 All Known Implementing Classes:<br/>
-    [JsonTokenType](../../../cascara.lang.json/token/JsonTokenType.md), [XmlTokenType](../../../cascara.lang.xml/token/XmlTokenType.md), [YamlTokenType](../../../cascara.lang.yaml/token/YamlTokenType.md)
+    [JsonTokenType](../../../cascara.lang.json/json/token/JsonTokenType.md), [XmlTokenType](../../../cascara.lang.xml/token/XmlTokenType.md), [YamlTokenType](../../../cascara.lang.yaml/yaml/token/YamlTokenType.md)
 
 
 ----

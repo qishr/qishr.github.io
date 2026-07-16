@@ -10,7 +10,7 @@ Package [io.github.qishr.cascara.common.lang.exception](index.md)
                                                 io.github.qishr.cascara.common.lang.exception.ParserException<br/>
 <br/>
 Direct Known Subtypes:<br/>
-    [YamlParserException](../../../cascara.lang.yaml/exception/YamlParserException.md)
+    [YamlParserException](../../../cascara.lang.yaml/yaml/exception/YamlParserException.md)
 
 
 ----

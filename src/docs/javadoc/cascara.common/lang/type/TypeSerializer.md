@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [TypeDescriptor](TypeDescriptor.md)<T>
 
 All Known Implementing Classes:<br/>
-    [YamlTypeSerializer](../../../cascara.lang.yaml/processor/YamlTypeSerializer.md)
+    [YamlTypeSerializer](../../../cascara.lang.yaml/yaml/processor/YamlTypeSerializer.md)
 
 
 ----

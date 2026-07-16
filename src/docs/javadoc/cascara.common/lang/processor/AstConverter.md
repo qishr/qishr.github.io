@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [Processor](Processor.md)
 
 All Known Implementing Classes:<br/>
-    [JsonConverter](../../../cascara.lang.json/processor/JsonConverter.md), [YamlConverter](../../../cascara.lang.yaml/processor/YamlConverter.md)
+    [JsonConverter](../../../cascara.lang.json/json/processor/JsonConverter.md), [YamlConverter](../../../cascara.lang.yaml/yaml/processor/YamlConverter.md)
 
 
 ----

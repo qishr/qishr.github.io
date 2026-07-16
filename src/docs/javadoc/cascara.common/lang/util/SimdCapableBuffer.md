@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [SourceBuffer](SourceBuffer.md)
 
 All Known Implementing Classes:<br/>
-    [SourceStringBuffer](SourceStringBuffer.md), [JsonSimdCapableBuffer](../../../cascara.lang.json/token/JsonSimdCapableBuffer.md)
+    [SourceStringBuffer](SourceStringBuffer.md), [JsonSimdCapableBuffer](../../../cascara.lang.json/json/token/JsonSimdCapableBuffer.md)
 
 
 ----
