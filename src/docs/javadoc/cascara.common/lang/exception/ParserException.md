@@ -10,7 +10,7 @@ Package [io.github.qishr.cascara.common.lang.exception](index.md)
                                                 io.github.qishr.cascara.common.lang.exception.ParserException<br/>
 <br/>
 Direct Known Subtypes:<br/>
-    [YamlParserException](../../../cascara.lang.yaml/yaml/exception/YamlParserException.md)
+    [YamlParserException](../../../cascara.lang.yaml/exception/YamlParserException.md)
 
 
 ----
@@ -28,11 +28,11 @@ Direct Known Subtypes:<br/>
 | ParserException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](../../diagnostic/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) | Constructor for I/O or Stream failures.                |
 
 
-### Methods inherited from [LocalizableRuntimeException](../../diagnostic/LocalizableRuntimeException.md)
-
-getCode, setLocalizer, getDetails
-
 ### Methods inherited from [LocatableException](../../diagnostic/LocatableException.md)
 
 getRawMessage, getUri, getLine, getLocalizedMessage, getMessage, getColumn
+
+### Methods inherited from [LocalizableRuntimeException](../../diagnostic/LocalizableRuntimeException.md)
+
+getCode, getDetails
 

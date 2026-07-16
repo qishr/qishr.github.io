@@ -33,6 +33,7 @@ A recursive descent parser for JSON/JSON5.
 | protected [JsonAstParser](JsonAstParser.md) | [self](#self)()                                                                                                                                      |             |
 | public [JsonNode](../ast/JsonNode.md)       | [parse](#parse)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                   |             |
 | public [JsonNode](../ast/JsonNode.md)       | [parse](#parse)(byte[] data)                                                                                                                         |             |
+| public [JsonNode](../ast/JsonNode.md)       | [parse](#parse)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)                                   |             |
 | public [JsonNode](../ast/JsonNode.md)       | [parse](#parse)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)                             |             |
 | public [JsonNode](../ast/JsonNode.md)       | [parse](#parse)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonToken](../token/JsonToken.md)> tokens) |             |
 | public [JsonNode](../ast/JsonNode.md)       | [parse](#parse)([Tokenizer](../../cascara.common/lang/processor/Tokenizer.md)<[JsonToken](../token/JsonToken.md)> tokenizer)                         |             |
@@ -40,7 +41,7 @@ A recursive descent parser for JSON/JSON5.
 
 ### Methods inherited from [AbstractJsonProcessor](AbstractJsonProcessor.md)
 
-setReporter, getOptions, getContentType, getServiceProperties, getReporter, [setOptions](#setoptions)
+setReporter, getOptions, getContentType, getServiceProperties, getVersion, getReporter, [setOptions](#setoptions), getTextResource
 
 
 ## Method Details
@@ -85,6 +86,19 @@ setReporter, getOptions, getContentType, getServiceProperties, getReporter, [set
 <span style="font-family: monospace; font-size: 80%;">public [JsonNode](../ast/JsonNode.md) __parse__(byte[] data)</span>
 
 
+
+
+---
+
+### parse
+
+<span style="font-family: monospace; font-size: 80%;">public [JsonNode](../ast/JsonNode.md) __parse__([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)</span>
+
+
+
+**Specified By:**
+
+[AstParser](../../cascara.common/lang/processor/AstParser.md)
 
 
 ---

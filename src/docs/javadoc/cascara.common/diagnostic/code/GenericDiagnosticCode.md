@@ -23,8 +23,11 @@ All Implemented Interfaces:<br/>
 | [WARN](#warn)                                               |             |
 | [UNIMPLEMENTED_METHOD](#unimplemented_method)               |             |
 | [ERROR](#error)                                             |             |
-| [UNEXPECTED_NULL](#unexpected_null)                         |             |
 | [UNEXPECTED_NULL_PARAMETER](#unexpected_null_parameter)     |             |
+| [UNEXPECTED_NULL_RETURN](#unexpected_null_return)           |             |
+| [MANIFEST_NOT_FOUND](#manifest_not_found)                   |             |
+| [MANIFEST_READ](#manifest_read)                             |             |
+| [RESOURCE_INACCESSIBLE](#resource_inaccessible)             |             |
 | [EXCEPTION](#exception)                                     |             |
 | [RUNTIME_EXCEPTION](#runtime_exception)                     |             |
 | [NPE](#npe)                                                 |             |
@@ -91,18 +94,45 @@ public static final  ERROR
 
 ---
 
-### UNEXPECTED_NULL
+### UNEXPECTED_NULL_PARAMETER
 
-public static final  UNEXPECTED_NULL
+public static final  UNEXPECTED_NULL_PARAMETER
 
 
 
 
 ---
 
-### UNEXPECTED_NULL_PARAMETER
+### UNEXPECTED_NULL_RETURN
 
-public static final  UNEXPECTED_NULL_PARAMETER
+public static final  UNEXPECTED_NULL_RETURN
+
+
+
+
+---
+
+### MANIFEST_NOT_FOUND
+
+public static final  MANIFEST_NOT_FOUND
+
+
+
+
+---
+
+### MANIFEST_READ
+
+public static final  MANIFEST_READ
+
+
+
+
+---
+
+### RESOURCE_INACCESSIBLE
+
+public static final  RESOURCE_INACCESSIBLE
 
 
 

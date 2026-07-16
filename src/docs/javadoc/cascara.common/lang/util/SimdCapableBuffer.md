@@ -13,7 +13,8 @@ All Known Implementing Classes:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public interface __SimdCapableBuffer__</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Experimental<br/>
+public interface __SimdCapableBuffer__</span>
 
 
 ## Method Summary

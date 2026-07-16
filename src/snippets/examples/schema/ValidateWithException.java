@@ -1,5 +1,5 @@
 public class ValidateWithException {
-    public static void main(String args[]) throws LocalizableException {
+    public static void main(String args[]) throws IOException {
         // Tell IOUtils to use this class when reading resources
         IOUtils.setResourceProvider(UriScheme.RES, new ResResourceProvider(AgnosticValidationExample.class));
 

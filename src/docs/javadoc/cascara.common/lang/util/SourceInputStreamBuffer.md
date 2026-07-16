@@ -10,7 +10,8 @@ All Implemented Interfaces:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __SourceInputStreamBuffer__</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Experimental<br/>
+public class __SourceInputStreamBuffer__</span>
 
 
 ## Constructor Summary
@@ -18,6 +19,7 @@ All Implemented Interfaces:<br/>
 | Constructor                                                                                                                      | Description |
 |----------------------------------------------------------------------------------------------------------------------------------|-------------|
 | SourceInputStreamBuffer([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is) |             |
+| SourceInputStreamBuffer([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)       |             |
 
 
 

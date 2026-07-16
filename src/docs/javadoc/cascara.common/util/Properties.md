@@ -7,6 +7,9 @@ Package [io.github.qishr.cascara.common.util](index.md)
 All Implemented Interfaces:<br/>
     [TableData](../data/TableData.md), [Duplicable](Duplicable.md)<[Properties](Properties.md)>
 
+Direct Known Subtypes:<br/>
+    [JarManifest](JarManifest.md)
+
 
 ----
 

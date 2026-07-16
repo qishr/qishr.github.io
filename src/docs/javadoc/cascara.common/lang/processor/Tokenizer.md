@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [Processor](Processor.md)
 
 All Known Implementing Classes:<br/>
-    [JsonTokenizer](../../../cascara.lang.json/processor/JsonTokenizer.md), [XmlTokenizer](../../../cascara.lang.xml/xml/processor/XmlTokenizer.md), [YamlTokenizer](../../../cascara.lang.yaml/yaml/processor/YamlTokenizer.md)
+    [JsonTokenizer](../../../cascara.lang.json/processor/JsonTokenizer.md), [XmlTokenizer](../../../cascara.lang.xml/processor/XmlTokenizer.md), [YamlTokenizer](../../../cascara.lang.yaml/processor/YamlTokenizer.md)
 
 
 ----
@@ -23,6 +23,7 @@ All Known Implementing Classes:<br/>
 | public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T>                                          | [tokenize](#tokenize)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)       | High-level API: Tokenizes a complete String eagerly.                       |
 | public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T>                                          | [tokenize](#tokenize)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is) | High-level API: Tokenizes an entire InputStream eagerly.                   |
 | public abstract void                                                                                                                                | [open](#open)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)               | Low-level Streaming API: Resets the tokenizer state to read from a String. |
+| public abstract void                                                                                                                                | [open](#open)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)               |                                                                            |
 | public abstract void                                                                                                                                | [open](#open)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)         | Low-level Streaming API: Resets the tokenizer state to read from a stream. |
 | public abstract T                                                                                                                                   | [nextToken](#nexttoken)()                                                                                                      | Low-level Streaming API: Pulls the next token on demand.                   |
 | public default [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<? extends [TokenType](../token/TokenType.md)> | [getTokenTypes](#gettokentypes)()                                                                                              |                                                                            |
@@ -54,6 +55,15 @@ High-level API: Tokenizes an entire InputStream eagerly.
 <span style="font-family: monospace; font-size: 80%;">public abstract void __open__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)</span>
 
 Low-level Streaming API: Resets the tokenizer state to read from a String.
+
+
+---
+
+### open
+
+<span style="font-family: monospace; font-size: 80%;">public abstract void __open__([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)</span>
+
+
 
 
 ---

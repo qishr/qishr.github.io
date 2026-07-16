@@ -61,6 +61,8 @@ Direct Known Subtypes:<br/>
 | public boolean                       | [useSimd](#usesimd)()                                                    |                                                         |
 | public boolean                       | [validateUnicode](#validateunicode)()                                    |                                                         |
 | public boolean                       | [trackPosition](#trackposition)()                                        |                                                         |
+| public int                           | [getDepthLimit](#getdepthlimit)()                                        |                                                         |
+| public [JsonOptions](JsonOptions.md) | [setDepthLimit](#setdepthlimit)(int limit)                               |                                                         |
 | public [JsonOptions](JsonOptions.md) | [setAllowBooleanKeys](#setallowbooleankeys)(boolean val)                 |                                                         |
 | public [JsonOptions](JsonOptions.md) | [setAllowComments](#setallowcomments)(boolean val)                       |                                                         |
 | public [JsonOptions](JsonOptions.md) | [setAllowHexadecimalNumbers](#setallowhexadecimalnumbers)(boolean val)   |                                                         |
@@ -218,6 +220,24 @@ public static final io.github.qishr.cascara.lang.json.util.@io.github.qishr.casc
 ### trackPosition
 
 <span style="font-family: monospace; font-size: 80%;">public boolean __trackPosition__()</span>
+
+
+
+
+---
+
+### getDepthLimit
+
+<span style="font-family: monospace; font-size: 80%;">public int __getDepthLimit__()</span>
+
+
+
+
+---
+
+### setDepthLimit
+
+<span style="font-family: monospace; font-size: 80%;">public [JsonOptions](JsonOptions.md) __setDepthLimit__(int limit)</span>
 
 
 

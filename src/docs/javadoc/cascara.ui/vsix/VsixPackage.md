@@ -57,10 +57,6 @@ listFiles, extractFile, getInputStream, listFiles, extractFile, listFiles
 
 
 
-**Throws:**
-
-[LocalizableException](../../cascara.common/diagnostic/LocalizableException.md)
-
 
 ---
 

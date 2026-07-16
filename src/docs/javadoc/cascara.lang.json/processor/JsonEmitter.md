@@ -47,7 +47,7 @@ All Implemented Interfaces:<br/>
 
 ### Methods inherited from [AbstractJsonProcessor](AbstractJsonProcessor.md)
 
-getOptions, getServiceProperties, getReporter
+getOptions, getServiceProperties, getVersion, getReporter, getTextResource
 
 
 ## Method Details

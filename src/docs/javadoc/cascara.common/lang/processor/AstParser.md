@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [Processor](Processor.md)
 
 All Known Implementing Classes:<br/>
-    [JsonAstParser](../../../cascara.lang.json/processor/JsonAstParser.md), [XmlAstParser](../../../cascara.lang.xml/xml/processor/XmlAstParser.md), [YamlAstParser](../../../cascara.lang.yaml/yaml/processor/YamlAstParser.md)
+    [JsonAstParser](../../../cascara.lang.json/processor/JsonAstParser.md), [XmlAstParser](../../../cascara.lang.xml/processor/XmlAstParser.md), [YamlAstParser](../../../cascara.lang.yaml/processor/YamlAstParser.md)
 
 
 ----
@@ -22,6 +22,7 @@ public interface __AstParser__</span>
 | Modifier and Type | Method                                                                                                                   | Description                                                                |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | public abstract N | [parse](#parse)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)       | Entry point for parsing a source string.                                   |
+| public abstract N | [parse](#parse)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)       |                                                                            |
 | public abstract N | [parse](#parse)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is) | Entry point for parsing an `InputStream`.                                  |
 | public abstract N | [parse](#parse)([Tokenizer](Tokenizer.md)<T> tokenizer)                                                                  | Primary parsing core driven directly by the Tokenizer interface structure. |
 | public abstract N | [parse](#parse)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> tokens)      | Entry point for parsing a list of tokens.                                  |
@@ -43,6 +44,15 @@ Entry point for parsing a source string.
 **Returns:**
 
 The root [AstNode](../ast/AstNode.md).
+
+
+---
+
+### parse
+
+<span style="font-family: monospace; font-size: 80%;">public abstract N __parse__([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)</span>
+
+
 
 
 ---

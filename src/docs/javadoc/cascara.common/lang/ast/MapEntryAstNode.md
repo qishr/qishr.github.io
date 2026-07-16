@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     Entry<K, V>, [AstNode](AstNode.md)
 
 All Known Implementing Classes:<br/>
-    [ReferenceMapEntryNode](../reference/ReferenceMapEntryNode.md), [JsonMapEntryNode](../../../cascara.lang.json/ast/JsonMapEntryNode.md), [YamlMapEntryNode](../../../cascara.lang.yaml/yaml/ast/YamlMapEntryNode.md)
+    [ReferenceMapEntryNode](../reference/ReferenceMapEntryNode.md), [JsonMapEntryNode](../../../cascara.lang.json/ast/JsonMapEntryNode.md), [YamlMapEntryNode](../../../cascara.lang.yaml/ast/YamlMapEntryNode.md)
 
 
 ----

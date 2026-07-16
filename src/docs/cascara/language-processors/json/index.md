@@ -6,3 +6,5 @@
 Preliminary JSON parsing performance comparison:
 
 ![](images/benchmark-json-parser-hot.svg)
+
+![](images/compliance-json-parser.svg)

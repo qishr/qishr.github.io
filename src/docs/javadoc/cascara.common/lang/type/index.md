@@ -19,6 +19,7 @@ Language-agnostic Primitive type and TypeDescriptor utilities.
     | [ScalarValue](ScalarValue.md)                           |                                                                            |
     | [TypeDescriptor](TypeDescriptor.md)                     |                                                                            |
     | [TypeDescriptorFactory](TypeDescriptorFactory.md)       |                                                                            |
+    | [TypeReference](TypeReference.md)                       | References a generic type.                                                 |
     | [TypeSerializer](TypeSerializer.md)                     |                                                                            |
     | [UriTypeDescriptor](UriTypeDescriptor.md)               |                                                                            |
     | [UuidTypeDescriptor](UuidTypeDescriptor.md)             |                                                                            |
@@ -35,17 +36,18 @@ Language-agnostic Primitive type and TypeDescriptor utilities.
 
 === "Classes"
 
-    | Class                                                   | Description |
-    |---------------------------------------------------------|-------------|
-    | [AbstractScalarDescriptor](AbstractScalarDescriptor.md) |             |
-    | [AbstractTypeDescriptor](AbstractTypeDescriptor.md)     |             |
-    | [ByteArrayDescriptor](ByteArrayDescriptor.md)           |             |
-    | [DateTimeTypeDescriptor](DateTimeTypeDescriptor.md)     |             |
-    | [InstantTypeDescriptor](InstantTypeDescriptor.md)       |             |
-    | [PathTypeDescriptor](PathTypeDescriptor.md)             |             |
-    | [TypeDescriptorFactory](TypeDescriptorFactory.md)       |             |
-    | [UriTypeDescriptor](UriTypeDescriptor.md)               |             |
-    | [UuidTypeDescriptor](UuidTypeDescriptor.md)             |             |
+    | Class                                                   | Description                |
+    |---------------------------------------------------------|----------------------------|
+    | [AbstractScalarDescriptor](AbstractScalarDescriptor.md) |                            |
+    | [AbstractTypeDescriptor](AbstractTypeDescriptor.md)     |                            |
+    | [ByteArrayDescriptor](ByteArrayDescriptor.md)           |                            |
+    | [DateTimeTypeDescriptor](DateTimeTypeDescriptor.md)     |                            |
+    | [InstantTypeDescriptor](InstantTypeDescriptor.md)       |                            |
+    | [PathTypeDescriptor](PathTypeDescriptor.md)             |                            |
+    | [TypeDescriptorFactory](TypeDescriptorFactory.md)       |                            |
+    | [TypeReference](TypeReference.md)                       | References a generic type. |
+    | [UriTypeDescriptor](UriTypeDescriptor.md)               |                            |
+    | [UuidTypeDescriptor](UuidTypeDescriptor.md)             |                            |
 
 
 === "Record Classes"

@@ -6,14 +6,13 @@
 
 === "All Classes and Interfaces"
 
-    | Class                                     | Description |
-    |-------------------------------------------|-------------|
-    | [ContentLoader](ContentLoader.md)         |             |
-    | [IOUtils](IOUtils.md)                     |             |
-    | [ResourceException](ResourceException.md) |             |
-    | [ResourceStream](ResourceStream.md)       |             |
-    | [StreamLoader](StreamLoader.md)           |             |
-    | [UriScheme](UriScheme.md)                 |             |
+    | Class                               | Description |
+    |-------------------------------------|-------------|
+    | [ContentLoader](ContentLoader.md)   |             |
+    | [IOUtils](IOUtils.md)               |             |
+    | [ResourceStream](ResourceStream.md) |             |
+    | [StreamLoader](StreamLoader.md)     |             |
+    | [UriScheme](UriScheme.md)           |             |
 
 
 === "Interfaces"
@@ -26,11 +25,10 @@
 
 === "Classes"
 
-    | Class                                     | Description |
-    |-------------------------------------------|-------------|
-    | [IOUtils](IOUtils.md)                     |             |
-    | [ResourceException](ResourceException.md) |             |
-    | [ResourceStream](ResourceStream.md)       |             |
+    | Class                               | Description |
+    |-------------------------------------|-------------|
+    | [IOUtils](IOUtils.md)               |             |
+    | [ResourceStream](ResourceStream.md) |             |
 
 
 === "Enum Classes"

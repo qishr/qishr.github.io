@@ -42,7 +42,7 @@ Package [io.github.qishr.cascara.schema.util](index.md)
 
 **Parameters:**
 
-`reporter` - The reporter that collects or reports problem [Diagnostic](../../../cascara.common/diagnostic/Diagnostic.md) objects.
+`reporter` - The reporter that collects or reports problem `Diagnostic` objects.
 
 
 ---

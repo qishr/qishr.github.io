@@ -41,13 +41,13 @@ Enclosing Class:<br/>
 | public [JsonOptions](JsonOptions.md) | [setPrettyPrint](#setprettyprint)(boolean v)                             |             |
 
 
+### Methods inherited from [JsonOptions](JsonOptions.md)
+
+insertSpaces, allowTrailingComma, allowJson5Numbers, allowComments, setDepthLimit, allowUnicode, getDepthLimit, setAllowBooleanKeys, setUseSimd, duplicate, captureComments, prettyPrint, trackPosition, useSimd, setValidateUnicode, allowHexadecimalNumbers, allowSingleQuotedStrings, allowUnquotedKeys, setTrackPosition, validateUnicode
+
 ### Methods inherited from [LanguageOptions](../../cascara.common/lang/util/LanguageOptions.md)
 
 setIndentSize, getIndentSize
-
-### Methods inherited from [JsonOptions](JsonOptions.md)
-
-insertSpaces, allowTrailingComma, allowJson5Numbers, allowComments, allowUnicode, setAllowBooleanKeys, setUseSimd, duplicate, captureComments, prettyPrint, trackPosition, useSimd, setValidateUnicode, allowHexadecimalNumbers, allowSingleQuotedStrings, allowUnquotedKeys, setTrackPosition, validateUnicode
 
 
 ## Method Details

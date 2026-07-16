@@ -2,22 +2,21 @@ Package [io.github.qishr.cascara.common.io](index.md)
 
 # Class ResourceStream
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        io.github.qishr.cascara.common.io.ResourceStream<br/>
+        [java.io.InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html)<br/>
+                io.github.qishr.cascara.common.io.ResourceStream<br/>
 <br/>
-All Implemented Interfaces:<br/>
-    [AutoCloseable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/AutoCloseable.html)
-
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public final class __ResourceStream__</span>
+<span style="font-family: monospace; font-size: 80%;">public final class __ResourceStream__<br/>extends [InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html)
+</span>
 
 
 ## Field Summary
 
 | Modifier and Type        | Field                       | Description |
 |--------------------------|-----------------------------|-------------|
-| public final ContentType | [contentType](#contenttype) |             |
+| public ContentType       | [contentType](#contenttype) |             |
 | public final InputStream | [stream](#stream)           |             |
 
 
@@ -32,18 +31,20 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type | Method                                                                                                                                | Description |
-|-------------------|---------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public void       | [close](#close)()                                                                                                                     |             |
-| public int        | [read](#read)(byte[] b)                                                                                                               |             |
-| public int        | [read](#read)(byte[] b, int off, int len)                                                                                             |             |
-| public byte[]     | [readAllBytes](#readallbytes)()                                                                                                       |             |
-| public byte[]     | [readNBytes](#readnbytes)(int len)                                                                                                    |             |
-| public int        | [readNBytes](#readnbytes)(byte[] b, int off, int len)                                                                                 |             |
-| public long       | [skip](#skip)(long n)                                                                                                                 |             |
-| public void       | [skipNBytes](#skipnbytes)(long n)                                                                                                     |             |
-| public int        | [available](#available)()                                                                                                             |             |
-| public long       | [transferTo](#transferto)([OutputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/OutputStream.html) out) |             |
+| Modifier and Type                          | Method                                                                                                                                | Description |
+|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [ResourceStream](ResourceStream.md) | [setContentType](#setcontenttype)([ContentType](../../cascara.common/util/ContentType.md) contentType)                                |             |
+| public void                                | [close](#close)()                                                                                                                     |             |
+| public int                                 | [read](#read)(byte[] b)                                                                                                               |             |
+| public int                                 | [read](#read)(byte[] b, int off, int len)                                                                                             |             |
+| public byte[]                              | [readAllBytes](#readallbytes)()                                                                                                       |             |
+| public byte[]                              | [readNBytes](#readnbytes)(int len)                                                                                                    |             |
+| public int                                 | [readNBytes](#readnbytes)(byte[] b, int off, int len)                                                                                 |             |
+| public long                                | [skip](#skip)(long n)                                                                                                                 |             |
+| public void                                | [skipNBytes](#skipnbytes)(long n)                                                                                                     |             |
+| public int                                 | [available](#available)()                                                                                                             |             |
+| public long                                | [transferTo](#transferto)([OutputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/OutputStream.html) out) |             |
+| public int                                 | [read](#read)()                                                                                                                       |             |
 
 
 
@@ -51,7 +52,7 @@ All Implemented Interfaces:<br/>
 
 ### contentType
 
-<span style="font-family: monospace; font-size: 80%;">public final ContentType __contentType__</span>
+<span style="font-family: monospace; font-size: 80%;">public ContentType __contentType__</span>
 
 
 
@@ -70,6 +71,15 @@ All Implemented Interfaces:<br/>
 
 ## Method Details
 
+### setContentType
+
+<span style="font-family: monospace; font-size: 80%;">public [ResourceStream](ResourceStream.md) __setContentType__([ContentType](../../cascara.common/util/ContentType.md) contentType)</span>
+
+
+
+
+---
+
 ### close
 
 <span style="font-family: monospace; font-size: 80%;">public void __close__()</span>
@@ -78,11 +88,11 @@ All Implemented Interfaces:<br/>
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
 
-**Specified By:**
+**Overrides:**
 
-[AutoCloseable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/AutoCloseable.html)
+[InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html#close)
 
 
 ---
@@ -95,7 +105,7 @@ All Implemented Interfaces:<br/>
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
 
 
 ---
@@ -108,7 +118,7 @@ All Implemented Interfaces:<br/>
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
 
 
 ---
@@ -121,7 +131,7 @@ All Implemented Interfaces:<br/>
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
 
 
 ---
@@ -134,7 +144,7 @@ All Implemented Interfaces:<br/>
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
 
 
 ---
@@ -147,7 +157,7 @@ All Implemented Interfaces:<br/>
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
 
 
 ---
@@ -160,7 +170,7 @@ All Implemented Interfaces:<br/>
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
 
 
 ---
@@ -173,7 +183,7 @@ All Implemented Interfaces:<br/>
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
 
 
 ---
@@ -186,7 +196,7 @@ All Implemented Interfaces:<br/>
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
 
 
 ---
@@ -199,7 +209,24 @@ All Implemented Interfaces:<br/>
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
+
+
+---
+
+### read
+
+<span style="font-family: monospace; font-size: 80%;">public int __read__()</span>
+
+
+
+**Throws:**
+
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
+
+**Overrides:**
+
+[InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html#read)
 
 
 ---

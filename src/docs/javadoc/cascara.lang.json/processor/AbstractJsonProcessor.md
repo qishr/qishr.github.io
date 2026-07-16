@@ -35,15 +35,17 @@ Direct Known Subtypes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                              | Method                                                                                                     | Description                                                              |
-|----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| protected abstract P                                           | [self](#self)()                                                                                            |                                                                          |
-| public [Properties](../../cascara.common/util/Properties.md)   | [getServiceProperties](#getserviceproperties)()                                                            |                                                                          |
-| public [ContentType](../../cascara.common/util/ContentType.md) | [getContentType](#getcontenttype)()                                                                        |                                                                          |
-| public P                                                       | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter)              | Sets the reporter for communicating warnings or errors.                  |
-| public P                                                       | [setOptions](#setoptions)([LanguageOptions](../../cascara.common/lang/util/LanguageOptions.md)<?> options) | Sets the language-specific options (e.g., indentation, Unicode support). |
-| public [JsonOptions](../util/JsonOptions.md)                   | [getOptions](#getoptions)()                                                                                |                                                                          |
-| public [Reporter](../../cascara.common/diagnostic/Reporter.md) | [getReporter](#getreporter)()                                                                              |                                                                          |
+| Modifier and Type                                                                                   | Method                                                                                                                                         | Description                                                              |
+|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| protected abstract P                                                                                | [self](#self)()                                                                                                                                |                                                                          |
+| public [Properties](../../cascara.common/util/Properties.md)                                        | [getServiceProperties](#getserviceproperties)()                                                                                                |                                                                          |
+| public [ContentType](../../cascara.common/util/ContentType.md)                                      | [getContentType](#getcontenttype)()                                                                                                            |                                                                          |
+| public P                                                                                            | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter)                                                  | Sets the reporter for communicating warnings or errors.                  |
+| public P                                                                                            | [setOptions](#setoptions)([LanguageOptions](../../cascara.common/lang/util/LanguageOptions.md)<?> options)                                     | Sets the language-specific options (e.g., indentation, Unicode support). |
+| public [JsonOptions](../util/JsonOptions.md)                                                        | [getOptions](#getoptions)()                                                                                                                    |                                                                          |
+| public [Reporter](../../cascara.common/diagnostic/Reporter.md)                                      | [getReporter](#getreporter)()                                                                                                                  |                                                                          |
+| public [SemVer](../../cascara.common/semver/SemVer.md)                                              | [getVersion](#getversion)()                                                                                                                    |                                                                          |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getTextResource](#gettextresource)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) resourcePath) |                                                                          |
 
 
 
@@ -135,6 +137,24 @@ Sets the language-specific options (e.g., indentation, Unicode support).
 ### getReporter
 
 <span style="font-family: monospace; font-size: 80%;">public [Reporter](../../cascara.common/diagnostic/Reporter.md) __getReporter__()</span>
+
+
+
+
+---
+
+### getVersion
+
+<span style="font-family: monospace; font-size: 80%;">public [SemVer](../../cascara.common/semver/SemVer.md) __getVersion__()</span>
+
+
+
+
+---
+
+### getTextResource
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getTextResource__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) resourcePath)</span>
 
 
 

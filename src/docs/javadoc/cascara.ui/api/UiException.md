@@ -28,5 +28,5 @@ Direct Known Subtypes:<br/>
 
 ### Methods inherited from [LocalizableRuntimeException](../../cascara.common/diagnostic/LocalizableRuntimeException.md)
 
-getCode, getLocalizedMessage, setLocalizer, getDetails
+getCode, getLocalizedMessage, getDetails
 

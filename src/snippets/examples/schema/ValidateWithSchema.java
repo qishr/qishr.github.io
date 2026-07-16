@@ -1,5 +1,5 @@
 public class ValidateWithSchema {
-    public static void main(String args[]) throws LocalizableException {
+    public static void main(String args[]) throws IOException {
         // Load the schema from resources
         InputStream is = ValidateWithSchema.class.getResourceAsStream("schema.json");
         JsonNode schemaAst = new JsonAstParser().parse(is);

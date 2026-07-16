@@ -11,6 +11,7 @@ A reference implementation of the AST API
     | [ReferenceMapEntryNode](ReferenceMapEntryNode.md) |             |
     | [ReferenceMapNode](ReferenceMapNode.md)           |             |
     | [ReferenceNode](ReferenceNode.md)                 |             |
+    | [ReferenceNodeFactory](ReferenceNodeFactory.md)   |             |
     | [ReferenceScalarNode](ReferenceScalarNode.md)     |             |
     | [ReferenceSequenceNode](ReferenceSequenceNode.md) |             |
 
@@ -22,6 +23,7 @@ A reference implementation of the AST API
     | [ReferenceMapEntryNode](ReferenceMapEntryNode.md) |             |
     | [ReferenceMapNode](ReferenceMapNode.md)           |             |
     | [ReferenceNode](ReferenceNode.md)                 |             |
+    | [ReferenceNodeFactory](ReferenceNodeFactory.md)   |             |
     | [ReferenceScalarNode](ReferenceScalarNode.md)     |             |
     | [ReferenceSequenceNode](ReferenceSequenceNode.md) |             |
 

@@ -9,7 +9,7 @@ Package [io.github.qishr.cascara.common.diagnostic](index.md)
                                         io.github.qishr.cascara.common.diagnostic.LocatableException<br/>
 <br/>
 Direct Known Subtypes:<br/>
-    [ParserException](../lang/exception/ParserException.md), [TokenizerException](../lang/exception/TokenizerException.md), [SerializerException](../lang/exception/SerializerException.md), [SchemaException](../../cascara.schema/schema/exception/SchemaException.md), [YamlEmitterException](../../cascara.lang.yaml/yaml/exception/YamlEmitterException.md)
+    [ParserException](../lang/exception/ParserException.md), [TokenizerException](../lang/exception/TokenizerException.md), [SerializerException](../lang/exception/SerializerException.md), [SchemaException](../../cascara.schema/schema/exception/SchemaException.md), [YamlEmitterException](../../cascara.lang.yaml/exception/YamlEmitterException.md)
 
 
 ----
@@ -50,7 +50,7 @@ Direct Known Subtypes:<br/>
 
 ### Methods inherited from [LocalizableRuntimeException](LocalizableRuntimeException.md)
 
-getCode, setLocalizer, getDetails
+getCode, getDetails
 
 
 ## Field Details

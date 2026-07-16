@@ -7,6 +7,9 @@ Package [io.github.qishr.cascara.common.lang.type](index.md)
 All Implemented Interfaces:<br/>
     [TypeDescriptor](TypeDescriptor.md)<T>
 
+All Known Implementing Classes:<br/>
+    [YamlTypeSerializer](../../../cascara.lang.yaml/processor/YamlTypeSerializer.md)
+
 
 ----
 

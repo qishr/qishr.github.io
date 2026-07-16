@@ -24,10 +24,16 @@ move seamlessly between raw objects, structured ASTs, and the final string outpu
 | Modifier and Type                                                                                            | Method                                                                                                                                                                                                                                    | Description                                                      |
 |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
 | public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toText](#totext)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                               |                                                                  |
-| public abstract C                                                                                            | [fromText](#fromtext)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)           |                                                                  |
-| public abstract C                                                                                            | [fromStream](#fromstream)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType) |                                                                  |
+| public abstract void                                                                                         | [toWriter](#towriter)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance, [Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html) writer)        |                                                                  |
 | public abstract N                                                                                            | [toAst](#toast)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                                 | Transforms a Java Object into an AST representation.             |
+| public abstract C                                                                                            | [fromText](#fromtext)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)           |                                                                  |
+| public abstract C                                                                                            | [fromText](#fromtext)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [TypeReference](../type/TypeReference.md)<C> typeRef)                                                            |                                                                  |
+| public abstract C                                                                                            | [fromReader](#fromreader)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)       |                                                                  |
+| public abstract C                                                                                            | [fromReader](#fromreader)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader, [TypeReference](../type/TypeReference.md)<C> typeRef)                                                        |                                                                  |
+| public abstract C                                                                                            | [fromStream](#fromstream)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType) |                                                                  |
+| public abstract C                                                                                            | [fromStream](#fromstream)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [TypeReference](../type/TypeReference.md)<C> typeRef)                                                  |                                                                  |
 | public abstract C                                                                                            | [fromAst](#fromast)(N astNode, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)                                                                                                     | Transforms an AST representation back into a specific Java type. |
+| public abstract C                                                                                            | [fromAst](#fromast)(N astNode, [TypeReference](../type/TypeReference.md)<C> typeRef)                                                                                                                                                      |                                                                  |
 | public abstract [Serializer](Serializer.md)<N>                                                               | [registerTypeDescriptor](#registertypedescriptor)([TypeDescriptor](../type/TypeDescriptor.md)<?> typeDescriptor)                                                                                                                          |                                                                  |
 | public abstract [Serializer](Serializer.md)<N>                                                               | [setParser](#setparser)([AstParser](AstParser.md)<N, ?> parser)                                                                                                                                                                           |                                                                  |
 
@@ -56,6 +62,36 @@ The formatted string (e.g., YAML or JSON).
 
 ---
 
+### toWriter
+
+<span style="font-family: monospace; font-size: 80%;">public abstract void __toWriter__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance, [Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html) writer)</span>
+
+
+
+**Throws:**
+
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
+
+
+---
+
+### toAst
+
+<span style="font-family: monospace; font-size: 80%;">public abstract N __toAst__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)</span>
+
+Transforms a Java Object into an AST representation.
+
+**Parameters:**
+
+`jvmInstance` - The POJO or collection to transform.
+
+**Returns:**
+
+An AST representation of the provided object.
+
+
+---
+
 ### fromText
 
 <span style="font-family: monospace; font-size: 80%;">public abstract C __fromText__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)</span>
@@ -79,6 +115,45 @@ A populated instance of the requested class.
 
 ---
 
+### fromText
+
+<span style="font-family: monospace; font-size: 80%;">public abstract C __fromText__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [TypeReference](../type/TypeReference.md)<C> typeRef)</span>
+
+
+
+**Throws:**
+
+[SerializerException](../exception/SerializerException.md)
+
+
+---
+
+### fromReader
+
+<span style="font-family: monospace; font-size: 80%;">public abstract C __fromReader__([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)</span>
+
+
+
+**Throws:**
+
+[SerializerException](../exception/SerializerException.md)
+
+
+---
+
+### fromReader
+
+<span style="font-family: monospace; font-size: 80%;">public abstract C __fromReader__([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader, [TypeReference](../type/TypeReference.md)<C> typeRef)</span>
+
+
+
+**Throws:**
+
+[SerializerException](../exception/SerializerException.md)
+
+
+---
+
 ### fromStream
 
 <span style="font-family: monospace; font-size: 80%;">public abstract C __fromStream__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)</span>
@@ -92,19 +167,15 @@ A populated instance of the requested class.
 
 ---
 
-### toAst
+### fromStream
 
-<span style="font-family: monospace; font-size: 80%;">public abstract N __toAst__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract C __fromStream__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [TypeReference](../type/TypeReference.md)<C> typeRef)</span>
 
-Transforms a Java Object into an AST representation.
 
-**Parameters:**
 
-`jvmInstance` - The POJO or collection to transform.
+**Throws:**
 
-**Returns:**
-
-An AST representation of the provided object.
+[SerializerException](../exception/SerializerException.md)
 
 
 ---
@@ -124,6 +195,15 @@ Transforms an AST representation back into a specific Java type.
 **Returns:**
 
 A populated instance of the requested class.
+
+
+---
+
+### fromAst
+
+<span style="font-family: monospace; font-size: 80%;">public abstract C __fromAst__(N astNode, [TypeReference](../type/TypeReference.md)<C> typeRef)</span>
+
+
 
 
 ---

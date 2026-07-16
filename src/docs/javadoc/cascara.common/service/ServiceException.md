@@ -27,5 +27,5 @@ Package [io.github.qishr.cascara.common.service](index.md)
 
 ### Methods inherited from [LocalizableRuntimeException](../diagnostic/LocalizableRuntimeException.md)
 
-getCode, getLocalizedMessage, setLocalizer, getDetails
+getCode, getLocalizedMessage, getDetails
 

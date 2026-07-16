@@ -30,6 +30,7 @@ All Implemented Interfaces:<br/>
 | [INVOCATION_TARGET_EXCEPTION](#invocation_target_exception) |             |
 | [ILLEGAL_ARGUMENT_EXCEPTION](#illegal_argument_exception)   |             |
 | [INSTANTIATION_EXCEPTION](#instantiation_exception)         |             |
+| [EXCEPTION_IN_INITIALIZER](#exception_in_initializer)       |             |
 | [EXPECTED_MAP_STRUCTURE](#expected_map_structure)           |             |
 | [FAILED_SERIALIZE](#failed_serialize)                       |             |
 | [FAILED_DESERIALIZE](#failed_deserialize)                   |             |
@@ -151,6 +152,15 @@ public static final  ILLEGAL_ARGUMENT_EXCEPTION
 ### INSTANTIATION_EXCEPTION
 
 public static final  INSTANTIATION_EXCEPTION
+
+
+
+
+---
+
+### EXCEPTION_IN_INITIALIZER
+
+public static final  EXCEPTION_IN_INITIALIZER
 
 
 

@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.diagnostic.code](index.md)
         io.github.qishr.cascara.common.diagnostic.code.DiagnosticCode<br/>
 <br/>
 All Known Implementing Classes:<br/>
-    [FileDiagnosticCode](FileDiagnosticCode.md), [HttpDiagnosticCode](HttpDiagnosticCode.md), [LangDiagnosticCode](LangDiagnosticCode.md), [GenericDiagnosticCode](GenericDiagnosticCode.md), [DnsDiagnosticCode](DnsDiagnosticCode.md), [InetDiagnosticCode](InetDiagnosticCode.md), [ServiceDiagnosticCode](ServiceDiagnosticCode.md), [ContentTypeDiagnosticCode](../../../cascara.common.io/content/type/ContentTypeDiagnosticCode.md), [SchemaDiagnosticCode](../../../cascara.schema/schema/exception/SchemaDiagnosticCode.md), [YamlDiagnosticCode](../../../cascara.lang.yaml/yaml/exception/YamlDiagnosticCode.md), [UiDiagnosticCode](../../../cascara.ui/api/UiDiagnosticCode.md)
+    [FileDiagnosticCode](FileDiagnosticCode.md), [HttpDiagnosticCode](HttpDiagnosticCode.md), [LangDiagnosticCode](LangDiagnosticCode.md), [GenericDiagnosticCode](GenericDiagnosticCode.md), [DnsDiagnosticCode](DnsDiagnosticCode.md), [InetDiagnosticCode](InetDiagnosticCode.md), [ServiceDiagnosticCode](ServiceDiagnosticCode.md), [ContentTypeDiagnosticCode](../../../cascara.common.io/content/type/ContentTypeDiagnosticCode.md), [SchemaDiagnosticCode](../../../cascara.schema/schema/exception/SchemaDiagnosticCode.md), [YamlDiagnosticCode](../../../cascara.lang.yaml/exception/YamlDiagnosticCode.md), [UiDiagnosticCode](../../../cascara.ui/api/UiDiagnosticCode.md)
 
 
 ----

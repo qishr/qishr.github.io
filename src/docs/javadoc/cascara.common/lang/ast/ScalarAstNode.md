@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [AstNode](AstNode.md)
 
 All Known Implementing Classes:<br/>
-    [ReferenceScalarNode](../reference/ReferenceScalarNode.md), [JsonScalarNode](../../../cascara.lang.json/ast/JsonScalarNode.md), [JsonCommentNode](../../../cascara.lang.json/ast/JsonCommentNode.md), [YamlScalarNode](../../../cascara.lang.yaml/yaml/ast/YamlScalarNode.md)
+    [ReferenceScalarNode](../reference/ReferenceScalarNode.md), [JsonScalarNode](../../../cascara.lang.json/ast/JsonScalarNode.md), [JsonCommentNode](../../../cascara.lang.json/ast/JsonCommentNode.md), [YamlScalarNode](../../../cascara.lang.yaml/ast/YamlScalarNode.md)
 
 
 ----

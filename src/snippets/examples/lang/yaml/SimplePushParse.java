@@ -9,7 +9,7 @@ public class SimplePushParse implements StreamHandler {
     }
 
     @Override
-    public void onEvent(Event event) {
+    public void onEvent(StreamingEvent event) {
         if (event != null) {
             switch(event.getType()) {
                 case FIELD_NAME:

@@ -31,6 +31,7 @@ All Implemented Interfaces:<br/>
 | protected [JsonTokenizer](JsonTokenizer.md)                                                                                               | [self](#self)()                                                                                                            |             |
 | public void                                                                                                                               | [open](#open)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)           |             |
 | public void                                                                                                                               | [open](#open)(byte[] data)                                                                                                 |             |
+| public void                                                                                                                               | [open](#open)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)           |             |
 | public void                                                                                                                               | [open](#open)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) stream) |             |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonToken](../token/JsonToken.md)>       | [tokenize](#tokenize)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source) |             |
 | public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[JsonTokenType](../token/JsonTokenType.md)> | [getTokenTypes](#gettokentypes)()                                                                                          |             |
@@ -39,7 +40,7 @@ All Implemented Interfaces:<br/>
 
 ### Methods inherited from [AbstractJsonProcessor](AbstractJsonProcessor.md)
 
-setReporter, getOptions, getContentType, getServiceProperties, getReporter
+setReporter, getOptions, getContentType, getServiceProperties, getVersion, getReporter, getTextResource
 
 
 ## Method Details
@@ -88,6 +89,19 @@ setReporter, getOptions, getContentType, getServiceProperties, getReporter
 <span style="font-family: monospace; font-size: 80%;">public void __open__(byte[] data)</span>
 
 
+
+
+---
+
+### open
+
+<span style="font-family: monospace; font-size: 80%;">public void __open__([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)</span>
+
+
+
+**Specified By:**
+
+[Tokenizer](../../cascara.common/lang/processor/Tokenizer.md)
 
 
 ---
