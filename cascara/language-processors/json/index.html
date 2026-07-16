@@ -668,6 +668,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cascara JSON
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -684,6 +702,47 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -21447,6 +21506,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -21463,10 +21552,41 @@
 
 
 <h1 id="cascara-json">Cascara JSON</h1>
-<div class="admonition info">
-<p class="admonition-title">Under Construction</p>
-<p>This section of the online documentation has yet to be created.</p>
-</div>
+<p>Cascara JSON is a low‑level JSON/JSON5 tokenizer and parser engineered for speed, correctness, and integration into language tooling. It supports both character‑based and byte‑buffer‑based input, enabling fast paths for UTF‑8 data and efficient processing of large documents. The tokenizer implements strict numeric grammar, full JSON5 extensions (including hexadecimal numbers, single‑quoted strings, Infinity/NaN, and Unicode identifiers), and robust escape‑sequence handling. Cascara JSON is designed for predictable performance: structural tokens, strings, identifiers, and numbers are scanned using specialized routines that minimize branching and avoid unnecessary conversions. The result is a parser that is easy to embed, easy to reason about, and capable of handling demanding workloads.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>
+<p><strong>High‑performance tokenizer</strong> — Optimized ASCII and byte‑buffer scanning paths with minimal branching and predictable performance across all input sizes.</p>
+</li>
+<li>
+<p><strong>Full JSON5 support</strong> — Single‑quoted strings, hexadecimal numbers, Infinity/NaN, Unicode identifiers, and relaxed whitespace rules.</p>
+</li>
+<li>
+<p><strong>Strict numeric grammar</strong> — Accurate handling of integers, fractions, exponents, signs, and JSON5 numeric extensions.</p>
+</li>
+<li>
+<p><strong>Fast string scanning</strong> — Efficient escape processing, surrogate correctness checks, and SIMD‑accelerated ASCII scanning when enabled.</p>
+</li>
+<li>
+<p><strong>Byte‑buffer optimized path</strong> — Direct UTF‑8 processing without widening, ideal for large documents and streaming scenarios.</p>
+</li>
+<li>
+<p><strong>Unicode‑aware parsing</strong> — Correct handling of Unicode escapes, identifiers, and BOM behavior when enabled.</p>
+</li>
+<li>
+<p><strong>Predictable structural scanning</strong> — Fast detection of braces, brackets, commas, colons, and string delimiters.</p>
+</li>
+<li>
+<p><strong>Clean integration with Cascara language tooling</strong> — Designed to plug directly into Cascara’s AST, serializer, and diagnostic systems.</p>
+</li>
+<li>
+<p><strong>Configurable behavior</strong> — Toggle JSON5 features, Unicode validation, comment handling, and strictness levels.</p>
+</li>
+<li>
+<p><strong>Lightweight and embeddable</strong> — No external dependencies, small footprint, and easy to integrate into editors, compilers, and configuration systems.</p>
+</li>
+</ul>
+<h2 id="performance">Performance</h2>
 <p>Preliminary JSON parsing performance comparison:</p>
 <p><img alt="" src="images/benchmark-json-parser-hot.svg" /></p>
 <p><img alt="" src="images/compliance-json-parser.svg" /></p>
