@@ -730,6 +730,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#javadoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Javadoc
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#performance" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -21524,6 +21535,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#javadoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Javadoc
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#performance" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -21552,7 +21574,7 @@
 
 
 <h1 id="cascara-json">Cascara JSON</h1>
-<p>Cascara JSON is a low‑level JSON/JSON5 tokenizer and parser engineered for speed, correctness, and integration into language tooling. It supports both character‑based and byte‑buffer‑based input, enabling fast paths for UTF‑8 data and efficient processing of large documents. The tokenizer implements strict numeric grammar, full JSON5 extensions (including hexadecimal numbers, single‑quoted strings, Infinity/NaN, and Unicode identifiers), and robust escape‑sequence handling. Cascara JSON is designed for predictable performance: structural tokens, strings, identifiers, and numbers are scanned using specialized routines that minimize branching and avoid unnecessary conversions. The result is a parser that is easy to embed, easy to reason about, and capable of handling demanding workloads.</p>
+<p><em>Cascara JSON</em> is a low‑level JSON/JSON5 tokenizer and parser engineered for speed, correctness, and integration into language tooling. It supports both character‑based and byte‑buffer‑based input, enabling fast paths for UTF‑8 data and efficient processing of large documents. The tokenizer implements strict numeric grammar, full JSON5 extensions (including hexadecimal numbers, single‑quoted strings, Infinity/NaN, and Unicode identifiers), and robust escape‑sequence handling. <em>Cascara JSON</em> is designed for predictable performance: structural tokens, strings, identifiers, and numbers are scanned using specialized routines that minimize branching and avoid unnecessary conversions. The result is a parser that is easy to embed, easy to reason about, and capable of handling demanding workloads.</p>
 <h2 id="features">Features</h2>
 <ul>
 <li>
@@ -21577,7 +21599,7 @@
 <p><strong>Predictable structural scanning</strong> — Fast detection of braces, brackets, commas, colons, and string delimiters.</p>
 </li>
 <li>
-<p><strong>Clean integration with Cascara language tooling</strong> — Designed to plug directly into Cascara’s AST, serializer, and diagnostic systems.</p>
+<p><strong>Clean integration with Cascara language tooling</strong> — Designed to plug directly into Cascara’s <a href="https://qishr.github.io/javadoc/cascara.common/lang/ast/">AST</a>, <a href="https://qishr.github.io/cascara/schema/">Schema</a>, and <a href="https://qishr.github.io/cascara/diagnostics/">diagnostic</a> systems.</p>
 </li>
 <li>
 <p><strong>Configurable behavior</strong> — Toggle JSON5 features, Unicode validation, comment handling, and strictness levels.</p>
@@ -21585,6 +21607,21 @@
 <li>
 <p><strong>Lightweight and embeddable</strong> — No external dependencies, small footprint, and easy to integrate into editors, compilers, and configuration systems.</p>
 </li>
+<li>
+<p><strong>Serialization</strong> - Convert between POJOs, text, and AST nodes.</p>
+</li>
+<li>
+<p><strong>Fluent API</strong> - Easily configure JSON processors or construct AST nodes.</p>
+</li>
+</ul>
+<h2 id="javadoc">Javadoc</h2>
+<ul>
+<li><a href="https://qishr.github.io/javadoc/cascara.lang.json/json/CascaraJson/">CascaraJson</a></li>
+<li><a href="https://qishr.github.io/javadoc/cascara.lang.json/json/processor/JsonSerializer/">JsonSerializer</a></li>
+<li><a href="https://qishr.github.io/javadoc/cascara.lang.json/json/processor/JsonAstParser/">JsonAstParser</a></li>
+<li><a href="https://qishr.github.io/javadoc/cascara.lang.json/json/processor/JsonTokenizer/">JsonTokenizer</a></li>
+<li><a href="https://qishr.github.io/javadoc/cascara.lang.json/json/processor/JsonEmitter/">JsonEmitter</a></li>
+<li><a href="https://qishr.github.io/javadoc/cascara.lang.json/json/processor/JsonConverter/">JsonConverter</a></li>
 </ul>
 <h2 id="performance">Performance</h2>
 <p>Preliminary JSON parsing performance comparison:</p>
