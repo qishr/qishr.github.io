@@ -17,6 +17,8 @@ public final enum __StreamingEventType__<br/>extends [Enum](https://docs.oracle.
 
 | Enum Constant                     | Description |
 |-----------------------------------|-------------|
+| [START_STREAM](#start_stream)     |             |
+| [END_STREAM](#end_stream)         |             |
 | [START_DOCUMENT](#start_document) |             |
 | [END_DOCUMENT](#end_document)     |             |
 | [START_OBJECT](#start_object)     |             |
@@ -39,6 +41,24 @@ public final enum __StreamingEventType__<br/>extends [Enum](https://docs.oracle.
 
 
 ## Enum Constant Details
+
+### START_STREAM
+
+public static final  START_STREAM
+
+
+
+
+---
+
+### END_STREAM
+
+public static final  END_STREAM
+
+
+
+
+---
 
 ### START_DOCUMENT
 

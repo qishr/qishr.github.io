@@ -25,6 +25,7 @@ All Known Implementing Classes:<br/>
 | public abstract boolean                                                                                     | [containsKey](#containskey)(K key)                                                                                                                                                                                                                           |             |
 | public abstract V                                                                                           | [get](#get)(K key)                                                                                                                                                                                                                                           |             |
 | public abstract E                                                                                           | [getEntry](#getentry)(K key)                                                                                                                                                                                                                                 |             |
+| public abstract E                                                                                           | [getEntry](#getentry)(int i)                                                                                                                                                                                                                                 |             |
 | public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<E> | [getEntries](#getentries)()                                                                                                                                                                                                                                  |             |
 | public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<E>   | [entrySet](#entryset)()                                                                                                                                                                                                                                      |             |
 | public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<K>   | [keySet](#keyset)()                                                                                                                                                                                                                                          |             |
@@ -39,6 +40,7 @@ All Known Implementing Classes:<br/>
 | public abstract V                                                                                           | [get](#get)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                                |             |
 | public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [getMap](#getmap)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                          |             |
 | public abstract [SequenceAstNode](SequenceAstNode.md)<V>                                                    | [getSequence](#getsequence)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                |             |
+| public abstract [ScalarAstNode](ScalarAstNode.md)<V>                                                        | [getScalar](#getscalar)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                    |             |
 | public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getString](#getstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                    |             |
 | public default int                                                                                          | [getInteger](#getinteger)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, int defaultValue)                                                                                                                |             |
 | public default double                                                                                       | [getDouble](#getdouble)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, double defaultValue)                                                                                                               |             |
@@ -92,6 +94,15 @@ All Known Implementing Classes:<br/>
 ### getEntry
 
 <span style="font-family: monospace; font-size: 80%;">public abstract E __getEntry__(K key)</span>
+
+
+
+
+---
+
+### getEntry
+
+<span style="font-family: monospace; font-size: 80%;">public abstract E __getEntry__(int i)</span>
 
 
 
@@ -222,6 +233,15 @@ All Known Implementing Classes:<br/>
 ### getSequence
 
 <span style="font-family: monospace; font-size: 80%;">public abstract [SequenceAstNode](SequenceAstNode.md)<V> __getSequence__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+
+
+
+
+---
+
+### getScalar
+
+<span style="font-family: monospace; font-size: 80%;">public abstract [ScalarAstNode](ScalarAstNode.md)<V> __getScalar__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
 
 
 

@@ -21,6 +21,7 @@ Package [io.github.qishr.cascara.lang.yaml.ast](index.md)
 | [DOUBLE_QUOTED](#double_quoted) |             |
 | [LITERAL](#literal)             |             |
 | [FOLDED](#folded)               |             |
+| [UNDETERMINED](#undetermined)   |             |
 
 
 
@@ -74,6 +75,15 @@ public static final  LITERAL
 ### FOLDED
 
 public static final  FOLDED
+
+
+
+
+---
+
+### UNDETERMINED
+
+public static final  UNDETERMINED
 
 
 

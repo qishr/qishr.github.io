@@ -28,6 +28,7 @@ All Implemented Interfaces:<br/>
 | Modifier and Type                                                                                                                                                     | Method                                                                                               | Description                                                 |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                   | [getContent](#getcontent)()                                                                          |                                                             |
+| public [PrimitiveType](../../../cascara.common/lang/type/PrimitiveType.md)                                                                                            | [getPrimitiveType](#getprimitivetype)()                                                              |                                                             |
 | public [JsonCommentNode](JsonCommentNode.md)                                                                                                                          | [setQuoteStyle](#setquotestyle)([QuoteStyle](../../../cascara.common/lang/util/QuoteStyle.md) style) |                                                             |
 | public [QuoteStyle](../../../cascara.common/lang/util/QuoteStyle.md)                                                                                                  | [getQuoteStyle](#getquotestyle)()                                                                    |                                                             |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](JsonNode.md)>                                              | [getChildren](#getchildren)()                                                                        |                                                             |
@@ -54,6 +55,19 @@ getEndColumn, getEndLine, getStartColumn, getToken, setToken, equals, addComment
 ### getContent
 
 <span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getContent__()</span>
+
+
+
+**Specified By:**
+
+[ScalarAstNode](../../../cascara.common/lang/ast/ScalarAstNode.md)
+
+
+---
+
+### getPrimitiveType
+
+<span style="font-family: monospace; font-size: 80%;">public [PrimitiveType](../../../cascara.common/lang/type/PrimitiveType.md) __getPrimitiveType__()</span>
 
 
 

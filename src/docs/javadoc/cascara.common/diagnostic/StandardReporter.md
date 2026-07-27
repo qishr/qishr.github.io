@@ -25,16 +25,26 @@ Package [io.github.qishr.cascara.common.diagnostic](index.md)
 
 | Modifier and Type                                 | Method                                                              | Description |
 |---------------------------------------------------|---------------------------------------------------------------------|-------------|
+| public [StandardReporter](StandardReporter.md)    | [setAnsiColoringEnabled](#setansicoloringenabled)(boolean b)        |             |
 | protected [StandardReporter](StandardReporter.md) | [self](#self)()                                                     |             |
 | protected void                                    | [writeString](#writestring)([Diagnostic](Diagnostic.md) diagnostic) |             |
 
 
 ### Methods inherited from [AbstractReporter](AbstractReporter.md)
 
-errorAt, printStackTrace, getProblemCollector, trace, debug, getDiagnosticCollector, buildDiagnostic, warnAt, errorAt, infoAt, collectsProblems, infoAt, isProblem, errorAt, infoAt, [writeString](#writestring), errorAt, warnAt, error, setDiagnosticCollector, warnAt, outputToConsole, warn, disableSystemOutput, setDisableSystemOutput, error, setDisableFlush, buildDiagnostic, buildDiagnostic, setProblemCollector, errorAt, errorAt, disableFlush, errorAt, report, setPrintStackTrace, info, isSilent, error, error, buildDiagnostic, setLevel, getStringWriter
+errorAt, isSystemOutputEnabled, getProblemCollector, trace, setStackTraceEnabled, debug, getDiagnosticCollector, buildDiagnostic, warnAt, errorAt, infoAt, collectsProblems, setSystemErrorEnabled, infoAt, isProblem, errorAt, infoAt, [writeString](#writestring), errorAt, warnAt, error, setDiagnosticCollector, warnAt, outputToConsole, setFlushEnabled, warn, error, setSystemOutputEnabled, buildDiagnostic, buildDiagnostic, setProblemCollector, errorAt, errorAt, isStackTraceEnabled, errorAt, report, info, isFlushEnabled, getLevel, isSilent, error, error, buildDiagnostic, setLevel, getStringWriter
 
 
 ## Method Details
+
+### setAnsiColoringEnabled
+
+<span style="font-family: monospace; font-size: 80%;">public [StandardReporter](StandardReporter.md) __setAnsiColoringEnabled__(boolean b)</span>
+
+
+
+
+---
 
 ### self
 

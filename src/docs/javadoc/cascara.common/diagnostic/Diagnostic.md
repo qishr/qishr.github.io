@@ -15,6 +15,14 @@ structural tracking indicators like thread name and execution timestamps, and
 an optional underlying exception cause.
 
 
+## Field Summary
+
+| Modifier and Type       | Field                           | Description |
+|-------------------------|---------------------------------|-------------|
+| public static final int | [UNKNOWN_COORD](#unknown_coord) |             |
+
+
+
 ## Constructor Summary
 
 | Constructor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Description                                                                                                                               |
@@ -43,6 +51,24 @@ an optional underlying exception cause.
 | public [LocalDateTime](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/LocalDateTime.html) | [getTimestamp](#gettimestamp)()                                                                              | Returns the exact timestamp indicating when this diagnostic was instantiated.                 |
 | public void                                                                                                       | [setUri](#seturi)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri) | Sets the URI of the source resource associated with this diagnostic.                          |
 
+
+
+## Field Details
+
+### UNKNOWN_COORD
+
+<span style="font-family: monospace; font-size: 80%;">public static final int __UNKNOWN_COORD__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../constant-values.md)
+
+
+
+---
 
 
 ## Method Details

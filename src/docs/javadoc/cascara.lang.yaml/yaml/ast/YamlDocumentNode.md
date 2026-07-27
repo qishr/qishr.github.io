@@ -14,9 +14,9 @@ Package [io.github.qishr.cascara.lang.yaml.ast](index.md)
 
 ## Constructor Summary
 
-| Constructor                            | Description |
-|----------------------------------------|-------------|
-| YamlDocumentNode(int line, int column) |             |
+| Constructor                                                | Description |
+|------------------------------------------------------------|-------------|
+| YamlDocumentNode([YamlToken](../token/YamlToken.md) token) |             |
 
 
 
@@ -29,12 +29,12 @@ Package [io.github.qishr.cascara.lang.yaml.ast](index.md)
 | public [YamlNode](YamlNode.md)                                                                                                             | [getBody](#getbody)()                                                              |             |
 | public void                                                                                                                                | [setBody](#setbody)([YamlNode](YamlNode.md) body)                                  |             |
 | public void                                                                                                                                | [accept](#accept)([YamlVisitor](YamlVisitor.md) visitor)                           |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [YamlNode](YamlNode.md)>         | [getChildren](#getchildren)()                                                      |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlNode](YamlNode.md)>                   | [getChildren](#getchildren)()                                                      |             |
 
 
 ### Methods inherited from [YamlNode](YamlNode.md)
 
-setAnchor, getStartColumn, addComments, getStartLine, setToken, hashCode, getEndColumn, getEndLine, getComments, getToken, getAnchor, equals, addComment
+getNodeStyle, getOptions, getTag, setAnchor, getStartColumn, addComments, getStartLine, setToken, hashCode, getEndColumn, getEndLine, getComments, setTag, setNodeStyle, getToken, getAnchor, equals, addComment
 
 
 ## Method Details
@@ -90,7 +90,7 @@ setAnchor, getStartColumn, addComments, getStartLine, setToken, hashCode, getEnd
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [YamlNode](YamlNode.md)> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlNode](YamlNode.md)> __getChildren__()</span>
 
 
 

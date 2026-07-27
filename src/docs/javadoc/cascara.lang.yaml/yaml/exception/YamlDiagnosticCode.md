@@ -34,7 +34,9 @@ All Implemented Interfaces:<br/>
 | [INCONSISTENT_INDENTATION](#inconsistent_indentation)                   |             |
 | [EXPECTED_INDENTATION_BLOCK_SCALAR](#expected_indentation_block_scalar) |             |
 | [EXPECTED_DEDENT_BLOCK_COMMENT](#expected_dedent_block_comment)         |             |
+| [DEPTH_LIMIT](#depth_limit)                                             |             |
 | [DUPLICATE_KEY](#duplicate_key)                                         |             |
+| [UNKNOWN_DIRECTIVE](#unknown_directive)                                 |             |
 
 
 
@@ -186,9 +188,27 @@ public static final  EXPECTED_DEDENT_BLOCK_COMMENT
 
 ---
 
+### DEPTH_LIMIT
+
+public static final  DEPTH_LIMIT
+
+
+
+
+---
+
 ### DUPLICATE_KEY
 
 public static final  DUPLICATE_KEY
+
+
+
+
+---
+
+### UNKNOWN_DIRECTIVE
+
+public static final  UNKNOWN_DIRECTIVE
 
 
 

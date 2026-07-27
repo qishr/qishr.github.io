@@ -11,7 +11,7 @@ Package [io.github.qishr.cascara.common.lang.type](index.md)
 <span style="font-family: monospace; font-size: 80%;">public final enum __PrimitiveType__<br/>extends [Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<[PrimitiveType](PrimitiveType.md)>
 </span>
 
-Based on https://json-schema.org/draft-04/json-schema-core#rfc.section.3.5
+Based on [JSON Schema: core definitions and terminology §3.5](https://json-schema.org/draft-04/json-schema-core#rfc.section.3.5)
 
 
 ##Enum Constants

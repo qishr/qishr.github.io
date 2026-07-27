@@ -35,7 +35,7 @@ move seamlessly between raw objects, structured ASTs, and the final string outpu
 | public abstract C                                                                                            | [fromAst](#fromast)(N astNode, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)                                                                                                     | Transforms an AST representation back into a specific Java type. |
 | public abstract C                                                                                            | [fromAst](#fromast)(N astNode, [TypeReference](../type/TypeReference.md)<C> typeRef)                                                                                                                                                      |                                                                  |
 | public abstract [Serializer](Serializer.md)<N>                                                               | [registerTypeDescriptor](#registertypedescriptor)([TypeDescriptor](../type/TypeDescriptor.md)<?> typeDescriptor)                                                                                                                          |                                                                  |
-| public abstract [Serializer](Serializer.md)<N>                                                               | [setParser](#setparser)([AstParser](AstParser.md)<N, ?> parser)                                                                                                                                                                           |                                                                  |
+| public abstract [Serializer](Serializer.md)<N>                                                               | [setParser](#setparser)([AstParser](AstParser.md)<N, ?, ?> parser)                                                                                                                                                                        |                                                                  |
 
 
 
@@ -219,7 +219,7 @@ A populated instance of the requested class.
 
 ### setParser
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [Serializer](Serializer.md)<N> __setParser__([AstParser](AstParser.md)<N, ?> parser)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Serializer](Serializer.md)<N> __setParser__([AstParser](AstParser.md)<N, ?, ?> parser)</span>
 
 
 

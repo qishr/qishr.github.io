@@ -14,7 +14,7 @@ All Implemented Interfaces:<br/>
 <span style="font-family: monospace; font-size: 80%;">public class __YamlEmitter__<br/>extends [AbstractYamlProcessor](AbstractYamlProcessor.md)<[YamlEmitter](YamlEmitter.md)>
 </span>
 
-Responsible for converting a [YamlNode](../ast/YamlNode.md) AST back into a valid YAML string.This emitter is high-fidelity: it prioritizes preserving the original [CollectionStyle](../ast/CollectionStyle.md)
+Responsible for converting a [YamlNode](../ast/YamlNode.md) AST back into a valid YAML string.This emitter is high-fidelity: it prioritizes preserving the original [NodeStyle](../ast/NodeStyle.md)
 and [QuoteStyle](../../../cascara.common/lang/util/QuoteStyle.md) of nodes while ensuring that comments are placed correctly relative
 to their owner nodes.
 
@@ -53,7 +53,7 @@ the mapping starts on the same line as the sequence dash (`- key: value`).
 
 ### Methods inherited from [AbstractYamlProcessor](AbstractYamlProcessor.md)
 
-setReporter, getOptions, getContentType, getServiceProperties, getReporter, setOptions
+setReporter, getOptions, getContentType, getServiceProperties, getVersion, getReporter, setOptions
 
 
 ## Method Details

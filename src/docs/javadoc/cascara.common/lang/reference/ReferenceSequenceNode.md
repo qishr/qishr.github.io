@@ -34,6 +34,8 @@ All Implemented Interfaces:<br/>
 | public [ReferenceSequenceNode](ReferenceSequenceNode.md)                                                                                    | [remove](#remove)([ReferenceNode](ReferenceNode.md) node) |                           |
 | public [ReferenceSequenceNode](ReferenceSequenceNode.md)                                                                                    | [remove](#remove)(int index)                              |                           |
 | public [ReferenceNode](ReferenceNode.md)                                                                                                    | [get](#get)(int index)                                    |                           |
+| public [ReferenceNode](ReferenceNode.md)                                                                                                    | [getFirst](#getfirst)()                                   |                           |
+| public [ReferenceNode](ReferenceNode.md)                                                                                                    | [getLast](#getlast)()                                     |                           |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ReferenceNode](ReferenceNode.md)>          | [getElements](#getelements)()                             |                           |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [AstNode](../ast/AstNode.md)>     | [getChildren](#getchildren)()                             |                           |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../ast/CommentAstNode.md)> | [getComments](#getcomments)()                             |                           |
@@ -120,6 +122,32 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 ### get
 
 <span style="font-family: monospace; font-size: 80%;">public [ReferenceNode](ReferenceNode.md) __get__(int index)</span>
+
+
+
+**Specified By:**
+
+[SequenceAstNode](../ast/SequenceAstNode.md)
+
+
+---
+
+### getFirst
+
+<span style="font-family: monospace; font-size: 80%;">public [ReferenceNode](ReferenceNode.md) __getFirst__()</span>
+
+
+
+**Specified By:**
+
+[SequenceAstNode](../ast/SequenceAstNode.md)
+
+
+---
+
+### getLast
+
+<span style="font-family: monospace; font-size: 80%;">public [ReferenceNode](ReferenceNode.md) __getLast__()</span>
 
 
 

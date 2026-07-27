@@ -27,6 +27,8 @@ All Known Implementing Classes:<br/>
 | public abstract [SequenceAstNode](SequenceAstNode.md)<T>                                                            | [remove](#remove)(T node)     |             |
 | public abstract [SequenceAstNode](SequenceAstNode.md)<T>                                                            | [remove](#remove)(int index)  |             |
 | public abstract T                                                                                                   | [get](#get)(int index)        |             |
+| public abstract T                                                                                                   | [getFirst](#getfirst)()       |             |
+| public abstract T                                                                                                   | [getLast](#getlast)()         |             |
 | public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T>         | [getElements](#getelements)() |             |
 | public abstract [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<T> | [iterator](#iterator)()       |             |
 
@@ -91,6 +93,24 @@ All Known Implementing Classes:<br/>
 ### get
 
 <span style="font-family: monospace; font-size: 80%;">public abstract T __get__(int index)</span>
+
+
+
+
+---
+
+### getFirst
+
+<span style="font-family: monospace; font-size: 80%;">public abstract T __getFirst__()</span>
+
+
+
+
+---
+
+### getLast
+
+<span style="font-family: monospace; font-size: 80%;">public abstract T __getLast__()</span>
 
 
 

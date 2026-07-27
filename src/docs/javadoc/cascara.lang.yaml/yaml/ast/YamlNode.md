@@ -20,12 +20,24 @@ source coordinates (line and column), the source URI, and support for
 YAML anchors and comments.
 
 
+## Field Summary
+
+| Modifier and Type     | Field                   | Description |
+|-----------------------|-------------------------|-------------|
+| protected NodeStyle   | [nodeStyle](#nodestyle) |             |
+| protected YamlOptions | [options](#options)     |             |
+| protected YamlToken   | [token](#token)         |             |
+
+
+
 ## Constructor Summary
 
-| Constructor                    | Description                                                 |
-|--------------------------------|-------------------------------------------------------------|
-| YamlNode()                     |                                                             |
-| YamlNode(int line, int column) | Constructs a new YamlNode with specific source coordinates. |
+| Constructor                                                                                       | Description                                                                                                     |
+|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| YamlNode()                                                                                        |                                                                                                                 |
+| YamlNode([YamlToken](../token/YamlToken.md) token)                                                | Constructs a new YamlNode with specific source coordinates obtained from a YamLToken                            |
+| YamlNode([YamlToken](../token/YamlToken.md) token, [YamlOptions](../util/YamlOptions.md) options) | Constructs a new YamlNode with specific source coordinates obtained from a YamLToken and a set of YAML options. |
+| YamlNode(int line, int column, [YamlOptions](../util/YamlOptions.md) options)                     | Constructs a new YamlNode with specific source coordinates and a set of YAML options.                           |
 
 
 
@@ -34,6 +46,11 @@ YAML anchors and comments.
 | Modifier and Type                                                                                                                           | Method                                                                                                                                                                         | Description                                                                                                          |
 |---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | public abstract void                                                                                                                        | [accept](#accept)([YamlVisitor](YamlVisitor.md) visitor)                                                                                                                       |                                                                                                                      |
+| public [YamlOptions](../util/YamlOptions.md)                                                                                                | [getOptions](#getoptions)()                                                                                                                                                    |                                                                                                                      |
+| public [NodeStyle](NodeStyle.md)                                                                                                            | [getNodeStyle](#getnodestyle)()                                                                                                                                                |                                                                                                                      |
+| public [YamlNode](YamlNode.md)                                                                                                              | [setNodeStyle](#setnodestyle)([NodeStyle](NodeStyle.md) nodeStyle)                                                                                                             |                                                                                                                      |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                         | [getTag](#gettag)()                                                                                                                                                            |                                                                                                                      |
+| public void                                                                                                                                 | [setTag](#settag)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) tag)                                                            |                                                                                                                      |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                         | [getAnchor](#getanchor)()                                                                                                                                                      | Gets the YAML anchor associated with this node (e.g., &anchorName).                                                  |
 | public void                                                                                                                                 | [setAnchor](#setanchor)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) anchor)                                                   | Sets the YAML anchor for this node.                                                                                  |
 | public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [YamlNode](YamlNode.md)> | [getChildren](#getchildren)()                                                                                                                                                  |   Implementation-specific nodes must return their constituent children. For example, a Map node returns its entries. |
@@ -51,11 +68,86 @@ YAML anchors and comments.
 
 
 
+## Field Details
+
+### nodeStyle
+
+<span style="font-family: monospace; font-size: 80%;">protected NodeStyle __nodeStyle__</span>
+
+
+
+
+---
+
+### options
+
+<span style="font-family: monospace; font-size: 80%;">protected YamlOptions __options__</span>
+
+
+
+
+---
+
+### token
+
+<span style="font-family: monospace; font-size: 80%;">protected YamlToken __token__</span>
+
+
+
+
+---
+
+
 ## Method Details
 
 ### accept
 
 <span style="font-family: monospace; font-size: 80%;">public abstract void __accept__([YamlVisitor](YamlVisitor.md) visitor)</span>
+
+
+
+
+---
+
+### getOptions
+
+<span style="font-family: monospace; font-size: 80%;">public [YamlOptions](../util/YamlOptions.md) __getOptions__()</span>
+
+
+
+
+---
+
+### getNodeStyle
+
+<span style="font-family: monospace; font-size: 80%;">public [NodeStyle](NodeStyle.md) __getNodeStyle__()</span>
+
+
+
+
+---
+
+### setNodeStyle
+
+<span style="font-family: monospace; font-size: 80%;">public [YamlNode](YamlNode.md) __setNodeStyle__([NodeStyle](NodeStyle.md) nodeStyle)</span>
+
+
+
+
+---
+
+### getTag
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getTag__()</span>
+
+
+
+
+---
+
+### setTag
+
+<span style="font-family: monospace; font-size: 80%;">public void __setTag__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) tag)</span>
 
 
 

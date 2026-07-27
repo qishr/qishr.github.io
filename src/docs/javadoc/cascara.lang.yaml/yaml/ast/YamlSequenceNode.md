@@ -19,37 +19,39 @@ Represents a YAML sequence (a list of items).
 
 ## Constructor Summary
 
-| Constructor                            | Description |
-|----------------------------------------|-------------|
-| YamlSequenceNode()                     |             |
-| YamlSequenceNode(int line, int column) |             |
+| Constructor                                                | Description |
+|------------------------------------------------------------|-------------|
+| YamlSequenceNode()                                         |             |
+| YamlSequenceNode([YamlToken](../token/YamlToken.md) token) |             |
 
 
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                | Method                                                             | Description                                                                                                          |
-|----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| public boolean                                                                                                                   | [isEmpty](#isempty)()                                              |                                                                                                                      |
-| public [YamlSequenceNode](YamlSequenceNode.md)                                                                                   | [remove](#remove)(int index)                                       |                                                                                                                      |
-| public [YamlSequenceNode](YamlSequenceNode.md)                                                                                   | [clear](#clear)()                                                  |                                                                                                                      |
-| public [YamlSequenceNode](YamlSequenceNode.md)                                                                                   | [add](#add)([YamlNode](YamlNode.md) item)                          | Appends an item to the sequence.                                                                                     |
-| public int                                                                                                                       | [size](#size)()                                                    |                                                                                                                      |
-| public [YamlNode](YamlNode.md)                                                                                                   | [get](#get)(int index)                                             |                                                                                                                      |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlNode](YamlNode.md)>         | [getElements](#getelements)()                                      |                                                                                                                      |
-| public [YamlSequenceNode](YamlSequenceNode.md)                                                                                   | [remove](#remove)([YamlNode](YamlNode.md) node)                    |                                                                                                                      |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlNode](YamlNode.md)>         | [getChildren](#getchildren)()                                      |   Implementation-specific nodes must return their constituent children. For example, a Map node returns its entries. |
-| public [CollectionStyle](CollectionStyle.md)                                                                                     | [getStyle](#getstyle)()                                            |                                                                                                                      |
-| public [YamlSequenceNode](YamlSequenceNode.md)                                                                                   | [setStyle](#setstyle)([CollectionStyle](CollectionStyle.md) style) |                                                                                                                      |
-| public boolean                                                                                                                   | [isExpanded](#isexpanded)()                                        |                                                                                                                      |
-| public void                                                                                                                      | [setExpanded](#setexpanded)(boolean expanded)                      |                                                                                                                      |
-| public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<[YamlNode](YamlNode.md)> | [iterator](#iterator)()                                            | Returns Iterator instance                                                                                            |
-| public void                                                                                                                      | [accept](#accept)([YamlVisitor](YamlVisitor.md) visitor)           |                                                                                                                      |
+| Modifier and Type                                                                                                                | Method                                                   | Description                                                                                                          |
+|----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| public boolean                                                                                                                   | [isEmpty](#isempty)()                                    |                                                                                                                      |
+| public [YamlSequenceNode](YamlSequenceNode.md)                                                                                   | [remove](#remove)(int index)                             |                                                                                                                      |
+| public [YamlSequenceNode](YamlSequenceNode.md)                                                                                   | [clear](#clear)()                                        |                                                                                                                      |
+| public [YamlSequenceNode](YamlSequenceNode.md)                                                                                   | [add](#add)([YamlNode](YamlNode.md) item)                | Appends an item to the sequence.                                                                                     |
+| public int                                                                                                                       | [size](#size)()                                          |                                                                                                                      |
+| public [YamlNode](YamlNode.md)                                                                                                   | [get](#get)(int index)                                   |                                                                                                                      |
+| public [YamlNode](YamlNode.md)                                                                                                   | [getFirst](#getfirst)()                                  |                                                                                                                      |
+| public [YamlNode](YamlNode.md)                                                                                                   | [getLast](#getlast)()                                    |                                                                                                                      |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlNode](YamlNode.md)>         | [getElements](#getelements)()                            |                                                                                                                      |
+| public [YamlSequenceNode](YamlSequenceNode.md)                                                                                   | [remove](#remove)([YamlNode](YamlNode.md) node)          |                                                                                                                      |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlNode](YamlNode.md)>         | [getChildren](#getchildren)()                            |   Implementation-specific nodes must return their constituent children. For example, a Map node returns its entries. |
+| public [NodeStyle](NodeStyle.md)                                                                                                 | [getStyle](#getstyle)()                                  |                                                                                                                      |
+| public [YamlSequenceNode](YamlSequenceNode.md)                                                                                   | [setStyle](#setstyle)([NodeStyle](NodeStyle.md) style)   |                                                                                                                      |
+| public boolean                                                                                                                   | [isExpanded](#isexpanded)()                              |                                                                                                                      |
+| public void                                                                                                                      | [setExpanded](#setexpanded)(boolean expanded)            |                                                                                                                      |
+| public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<[YamlNode](YamlNode.md)> | [iterator](#iterator)()                                  | Returns Iterator instance                                                                                            |
+| public void                                                                                                                      | [accept](#accept)([YamlVisitor](YamlVisitor.md) visitor) |                                                                                                                      |
 
 
 ### Methods inherited from [YamlNode](YamlNode.md)
 
-setAnchor, getStartColumn, addComments, getStartLine, setToken, hashCode, getEndColumn, getEndLine, getComments, getToken, getAnchor, equals, addComment
+getNodeStyle, getOptions, getTag, setAnchor, getStartColumn, addComments, getStartLine, setToken, hashCode, getEndColumn, getEndLine, getComments, setTag, setNodeStyle, getToken, getAnchor, equals, addComment
 
 
 ## Method Details
@@ -128,6 +130,32 @@ Appends an item to the sequence.
 
 ---
 
+### getFirst
+
+<span style="font-family: monospace; font-size: 80%;">public [YamlNode](YamlNode.md) __getFirst__()</span>
+
+
+
+**Specified By:**
+
+[SequenceAstNode](../../../cascara.common/lang/ast/SequenceAstNode.md)
+
+
+---
+
+### getLast
+
+<span style="font-family: monospace; font-size: 80%;">public [YamlNode](YamlNode.md) __getLast__()</span>
+
+
+
+**Specified By:**
+
+[SequenceAstNode](../../../cascara.common/lang/ast/SequenceAstNode.md)
+
+
+---
+
 ### getElements
 
 <span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlNode](YamlNode.md)> __getElements__()</span>
@@ -168,7 +196,7 @@ For example, a Map node returns its entries.
 
 ### getStyle
 
-<span style="font-family: monospace; font-size: 80%;">public [CollectionStyle](CollectionStyle.md) __getStyle__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [NodeStyle](NodeStyle.md) __getStyle__()</span>
 
 
 
@@ -177,7 +205,7 @@ For example, a Map node returns its entries.
 
 ### setStyle
 
-<span style="font-family: monospace; font-size: 80%;">public [YamlSequenceNode](YamlSequenceNode.md) __setStyle__([CollectionStyle](CollectionStyle.md) style)</span>
+<span style="font-family: monospace; font-size: 80%;">public [YamlSequenceNode](YamlSequenceNode.md) __setStyle__([NodeStyle](NodeStyle.md) style)</span>
 
 
 

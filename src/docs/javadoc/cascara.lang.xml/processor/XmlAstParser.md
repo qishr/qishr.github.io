@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.lang.xml.processor](index.md)
                 io.github.qishr.cascara.lang.xml.processor.XmlAstParser<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [AstParser](../../cascara.common/lang/processor/AstParser.md)<[XmlNode](../ast/XmlNode.md), [XmlToken](../token/XmlToken.md)>
+    [AstParser](../../cascara.common/lang/processor/AstParser.md)<[XmlNode](../ast/XmlNode.md), [XmlToken](../token/XmlToken.md), [XmlTokenizer](XmlTokenizer.md)>
 
 
 ----
@@ -25,14 +25,16 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                         | Method                                                                                                                                             | Description                               |
-|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| protected [XmlAstParser](XmlAstParser.md) | [self](#self)()                                                                                                                                    |                                           |
-| public [XmlNode](../ast/XmlNode.md)       | [parse](#parse)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                 |                                           |
-| public [XmlNode](../ast/XmlNode.md)       | [parse](#parse)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[XmlToken](../token/XmlToken.md)> tokens) | Entry point for parsing a list of tokens. |
-| public [XmlNode](../ast/XmlNode.md)       | [parse](#parse)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)                           |                                           |
-| public [XmlNode](../ast/XmlNode.md)       | [parse](#parse)([Tokenizer](../../cascara.common/lang/processor/Tokenizer.md)<[XmlToken](../token/XmlToken.md)> tokenizer)                         |                                           |
-| public [XmlNode](../ast/XmlNode.md)       | [parse](#parse)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)                                 |                                           |
+| Modifier and Type                                                                                                                 | Method                                                                                                                                             | Description                               |
+|-----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
+| protected [XmlAstParser](XmlAstParser.md)                                                                                         | [self](#self)()                                                                                                                                    |                                           |
+| public [XmlNode](../ast/XmlNode.md)                                                                                               | [parse](#parse)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                 |                                           |
+| public [XmlNode](../ast/XmlNode.md)                                                                                               | [parse](#parse)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[XmlToken](../token/XmlToken.md)> tokens) | Entry point for parsing a list of tokens. |
+| public [XmlNode](../ast/XmlNode.md)                                                                                               | [parse](#parse)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)                           |                                           |
+| public [XmlNode](../ast/XmlNode.md)                                                                                               | [parse](#parse)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)                                 |                                           |
+| public [XmlNode](../ast/XmlNode.md)                                                                                               | [parse](#parse)([XmlTokenizer](XmlTokenizer.md) tokenizer)                                                                                         |                                           |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[XmlToken](../token/XmlToken.md)> | [getTokens](#gettokens)()                                                                                                                          |                                           |
+| public [XmlTokenizer](XmlTokenizer.md)                                                                                            | [getTokenizer](#gettokenizer)()                                                                                                                    |                                           |
 
 
 ### Methods inherited from [AbstractXmlProcessor](AbstractXmlProcessor.md)
@@ -96,7 +98,7 @@ Entry point for parsing a list of tokens.
 
 ### parse
 
-<span style="font-family: monospace; font-size: 80%;">public [XmlNode](../ast/XmlNode.md) __parse__([Tokenizer](../../cascara.common/lang/processor/Tokenizer.md)<[XmlToken](../token/XmlToken.md)> tokenizer)</span>
+<span style="font-family: monospace; font-size: 80%;">public [XmlNode](../ast/XmlNode.md) __parse__([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)</span>
 
 
 
@@ -109,7 +111,29 @@ Entry point for parsing a list of tokens.
 
 ### parse
 
-<span style="font-family: monospace; font-size: 80%;">public [XmlNode](../ast/XmlNode.md) __parse__([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)</span>
+<span style="font-family: monospace; font-size: 80%;">public [XmlNode](../ast/XmlNode.md) __parse__([XmlTokenizer](XmlTokenizer.md) tokenizer)</span>
+
+
+
+
+---
+
+### getTokens
+
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[XmlToken](../token/XmlToken.md)> __getTokens__()</span>
+
+
+
+**Specified By:**
+
+[AstParser](../../cascara.common/lang/processor/AstParser.md)
+
+
+---
+
+### getTokenizer
+
+<span style="font-family: monospace; font-size: 80%;">public [XmlTokenizer](XmlTokenizer.md) __getTokenizer__()</span>
 
 
 

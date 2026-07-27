@@ -24,10 +24,10 @@ public class __ServiceProviderFactory__<br/>extends [AbstractServiceProviderFact
 
 ## Method Summary
 
-| Modifier and Type                                          | Method                                                                                                                                               | Description |
-|------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [AstParser](../lang/processor/AstParser.md)<?, ?>   | [createParser](#createparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)              |             |
-| public [TypeDescriptor](../lang/type/TypeDescriptor.md)<?> | [createTypeDescriptor](#createtypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType) |             |
+| Modifier and Type                                           | Method                                                                                                                                               | Description |
+|-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [AstParser](../lang/processor/AstParser.md)<?, ?, ?> | [createParser](#createparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)              |             |
+| public [TypeDescriptor](../lang/type/TypeDescriptor.md)<?>  | [createTypeDescriptor](#createtypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType) |             |
 
 
 ### Methods inherited from [AbstractServiceProviderFactory](AbstractServiceProviderFactory.md)
@@ -39,7 +39,7 @@ createServiceProvider
 
 ### createParser
 
-<span style="font-family: monospace; font-size: 80%;">public [AstParser](../lang/processor/AstParser.md)<?, ?> __createParser__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [AstParser](../lang/processor/AstParser.md)<?, ?, ?> __createParser__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)</span>
 
 
 

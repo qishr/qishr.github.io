@@ -19,10 +19,9 @@ Represents the structural pairing of a key and a value.
 
 ## Constructor Summary
 
-| Constructor                                                                                        | Description |
-|----------------------------------------------------------------------------------------------------|-------------|
-| YamlMapEntryNode(int line, int column, [YamlNode](YamlNode.md) key, [YamlNode](YamlNode.md) value) |             |
-| YamlMapEntryNode([YamlNode](YamlNode.md) key, [YamlNode](YamlNode.md) value)                       |             |
+| Constructor                                                                  | Description |
+|------------------------------------------------------------------------------|-------------|
+| YamlMapEntryNode([YamlNode](YamlNode.md) key, [YamlNode](YamlNode.md) value) |             |
 
 
 
@@ -40,7 +39,7 @@ Represents the structural pairing of a key and a value.
 
 ### Methods inherited from [YamlNode](YamlNode.md)
 
-setAnchor, getStartColumn, addComments, getStartLine, setToken, hashCode, getEndColumn, getEndLine, getComments, getToken, getAnchor, equals, addComment
+getNodeStyle, getOptions, getTag, setAnchor, getStartColumn, addComments, getStartLine, setToken, hashCode, getEndColumn, getEndLine, getComments, setTag, setNodeStyle, getToken, getAnchor, equals, addComment
 
 
 ## Method Details

@@ -33,7 +33,7 @@ Package [io.github.qishr.cascara.lang.yaml.ast](index.md)
 
 ### Methods inherited from [YamlNode](YamlNode.md)
 
-setAnchor, getStartColumn, addComments, getStartLine, setToken, hashCode, getEndColumn, getEndLine, getComments, getToken, getAnchor, equals, addComment
+getNodeStyle, getOptions, getTag, setAnchor, getStartColumn, addComments, getStartLine, setToken, hashCode, getEndColumn, getEndLine, getComments, setTag, setNodeStyle, getToken, getAnchor, equals, addComment
 
 
 ## Method Details

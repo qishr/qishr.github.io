@@ -10,7 +10,6 @@
     |-------------------------------------------------------|---------------------------------------------------------------------|
     | [ArchiveFile](ArchiveFile.md)                         |                                                                     |
     | [CascaraRuntimeException](CascaraRuntimeException.md) |                                                                     |
-    | [CaseConverter](CaseConverter.md)                     |                                                                     |
     | [ContentType](ContentType.md)                         | A stable, persisted canonical content type used throughout Cascara. |
     | [ContentTypeResolver](ContentTypeResolver.md)         |                                                                     |
     | [ContentTypes](ContentTypes.md)                       |                                                                     |
@@ -23,6 +22,7 @@
     | [Properties](Properties.md)                           |                                                                     |
     | [Property](Property.md)                               |                                                                     |
     | [ReflectionUtils](ReflectionUtils.md)                 |                                                                     |
+    | [StringUtils](StringUtils.md)                         |                                                                     |
 
 
 === "Interfaces"
@@ -39,7 +39,6 @@
     |-------------------------------------------------------|---------------------------------------------------------------------|
     | [ArchiveFile](ArchiveFile.md)                         |                                                                     |
     | [CascaraRuntimeException](CascaraRuntimeException.md) |                                                                     |
-    | [CaseConverter](CaseConverter.md)                     |                                                                     |
     | [ContentType](ContentType.md)                         | A stable, persisted canonical content type used throughout Cascara. |
     | [ContentTypes](ContentTypes.md)                       |                                                                     |
     | [JarFile](JarFile.md)                                 |                                                                     |
@@ -50,5 +49,6 @@
     | [Properties](Properties.md)                           |                                                                     |
     | [Property](Property.md)                               |                                                                     |
     | [ReflectionUtils](ReflectionUtils.md)                 |                                                                     |
+    | [StringUtils](StringUtils.md)                         |                                                                     |
 
 

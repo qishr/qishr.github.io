@@ -32,18 +32,18 @@ public class __ProcessorFactory__<br/>extends [AbstractServiceProviderFactory](.
 
 ## Method Summary
 
-| Modifier and Type                      | Method                                                                                                                                          | Description |
-|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [Tokenizer](Tokenizer.md)<?>    | [createTokenizer](#createtokenizer)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)   |             |
-| public [Tokenizer](Tokenizer.md)<?>    | [createTokenizer](#createtokenizer)([ContentType](../../util/ContentType.md) contentType)                                                       |             |
-| public [AstParser](AstParser.md)<?, ?> | [createAstParser](#createastparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)   |             |
-| public [AstParser](AstParser.md)<?, ?> | [createAstParser](#createastparser)([ContentType](../../util/ContentType.md) contentType)                                                       |             |
-| public [PullParser](PullParser.md)     | [createPullParser](#createpullparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType) |             |
-| public [PullParser](PullParser.md)     | [createPullParser](#createpullparser)([ContentType](../../util/ContentType.md) contentType)                                                     |             |
-| public [PushParser](PushParser.md)     | [createPushParser](#createpushparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType) |             |
-| public [PushParser](PushParser.md)     | [createPushParser](#createpushparser)([ContentType](../../util/ContentType.md) contentType)                                                     |             |
-| public [Serializer](Serializer.md)<?>  | [createSerializer](#createserializer)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType) |             |
-| public [Serializer](Serializer.md)<?>  | [createSerializer](#createserializer)([ContentType](../../util/ContentType.md) contentType)                                                     |             |
+| Modifier and Type                         | Method                                                                                                                                          | Description |
+|-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [Tokenizer](Tokenizer.md)<?>       | [createTokenizer](#createtokenizer)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)   |             |
+| public [Tokenizer](Tokenizer.md)<?>       | [createTokenizer](#createtokenizer)([ContentType](../../util/ContentType.md) contentType)                                                       |             |
+| public [AstParser](AstParser.md)<?, ?, ?> | [createAstParser](#createastparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)   |             |
+| public [AstParser](AstParser.md)<?, ?, ?> | [createAstParser](#createastparser)([ContentType](../../util/ContentType.md) contentType)                                                       |             |
+| public [PullParser](PullParser.md)        | [createPullParser](#createpullparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType) |             |
+| public [PullParser](PullParser.md)        | [createPullParser](#createpullparser)([ContentType](../../util/ContentType.md) contentType)                                                     |             |
+| public [PushParser](PushParser.md)        | [createPushParser](#createpushparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType) |             |
+| public [PushParser](PushParser.md)        | [createPushParser](#createpushparser)([ContentType](../../util/ContentType.md) contentType)                                                     |             |
+| public [Serializer](Serializer.md)<?>     | [createSerializer](#createserializer)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType) |             |
+| public [Serializer](Serializer.md)<?>     | [createSerializer](#createserializer)([ContentType](../../util/ContentType.md) contentType)                                                     |             |
 
 
 ### Methods inherited from [AbstractServiceProviderFactory](../../service/AbstractServiceProviderFactory.md)
@@ -99,7 +99,7 @@ createServiceProvider
 
 ### createAstParser
 
-<span style="font-family: monospace; font-size: 80%;">public [AstParser](AstParser.md)<?, ?> __createAstParser__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [AstParser](AstParser.md)<?, ?, ?> __createAstParser__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)</span>
 
 
 
@@ -112,7 +112,7 @@ createServiceProvider
 
 ### createAstParser
 
-<span style="font-family: monospace; font-size: 80%;">public [AstParser](AstParser.md)<?, ?> __createAstParser__([ContentType](../../util/ContentType.md) contentType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [AstParser](AstParser.md)<?, ?, ?> __createAstParser__([ContentType](../../util/ContentType.md) contentType)</span>
 
 
 

@@ -14,10 +14,10 @@ Package [io.github.qishr.cascara.lang.yaml.ast](index.md)
 
 ## Constructor Summary
 
-| Constructor                          | Description |
-|--------------------------------------|-------------|
-| YamlStreamNode()                     |             |
-| YamlStreamNode(int line, int column) |             |
+| Constructor                                              | Description |
+|----------------------------------------------------------|-------------|
+| YamlStreamNode()                                         |             |
+| YamlStreamNode([YamlToken](../token/YamlToken.md) token) |             |
 
 
 
@@ -35,7 +35,7 @@ Package [io.github.qishr.cascara.lang.yaml.ast](index.md)
 
 ### Methods inherited from [YamlNode](YamlNode.md)
 
-getEndColumn, getEndLine, setAnchor, getStartColumn, getToken, addComments, getAnchor, equals, getStartLine, addComment, setToken, hashCode
+getNodeStyle, getOptions, getTag, setAnchor, getStartColumn, addComments, getStartLine, setToken, hashCode, getEndColumn, getEndLine, setTag, setNodeStyle, getToken, getAnchor, equals, addComment
 
 
 ## Method Details

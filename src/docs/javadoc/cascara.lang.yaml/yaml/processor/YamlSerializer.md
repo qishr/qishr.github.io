@@ -30,7 +30,7 @@ Standard implementation for YAML serialization.
 | public [ContentType](../../../cascara.common/util/ContentType.md)                                   | [getContentType](#getcontenttype)()                                                                                                                                                                                                       |             |
 | public [YamlSerializer](YamlSerializer.md)                                                          | [setReporter](#setreporter)([Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter)                                                                                                                                          |             |
 | public [YamlSerializer](YamlSerializer.md)                                                          | [setOptions](#setoptions)([LanguageOptions](../../../cascara.common/lang/util/LanguageOptions.md)<?> options)                                                                                                                             |             |
-| public [YamlSerializer](YamlSerializer.md)                                                          | [setParser](#setparser)([AstParser](../../../cascara.common/lang/processor/AstParser.md)<[YamlNode](../ast/YamlNode.md), ?> parser)                                                                                                       |             |
+| public [YamlSerializer](YamlSerializer.md)                                                          | [setParser](#setparser)([AstParser](../../../cascara.common/lang/processor/AstParser.md)<[YamlNode](../ast/YamlNode.md), ?, ?> parser)                                                                                                    |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toText](#totext)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                               |             |
 | public void                                                                                         | [toWriter](#towriter)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance, [Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html) writer)        |             |
 | public [YamlNode](../ast/YamlNode.md)                                                               | [toAst](#toast)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                                 |             |
@@ -98,7 +98,7 @@ serializeObject, serializeList, getAllMethods, error, serialize, serializeMap, g
 
 ### setParser
 
-<span style="font-family: monospace; font-size: 80%;">public [YamlSerializer](YamlSerializer.md) __setParser__([AstParser](../../../cascara.common/lang/processor/AstParser.md)<[YamlNode](../ast/YamlNode.md), ?> parser)</span>
+<span style="font-family: monospace; font-size: 80%;">public [YamlSerializer](YamlSerializer.md) __setParser__([AstParser](../../../cascara.common/lang/processor/AstParser.md)<[YamlNode](../ast/YamlNode.md), ?, ?> parser)</span>
 
 
 

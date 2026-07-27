@@ -10,6 +10,7 @@
     | [io.github.qishr.cascara.lang.json](json/index.md)                     |             |
     | [io.github.qishr.cascara.lang.json.ast](json/ast/index.md)             |             |
     | [io.github.qishr.cascara.lang.json.processor](json/processor/index.md) |             |
+    | [io.github.qishr.cascara.lang.json.streaming](json/streaming/index.md) |             |
     | [io.github.qishr.cascara.lang.json.token](json/token/index.md)         |             |
     | [io.github.qishr.cascara.lang.json.util](json/util/index.md)           |             |
 

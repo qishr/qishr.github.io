@@ -108,10 +108,6 @@ Renders the table as text without any indentation.
 
 `writer` - The Writer to output text to.
 
-**Throws:**
-
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
-
 
 ---
 
@@ -126,10 +122,6 @@ Renders the table as text with a given indentation level (number of spaces).
 `writer` - The Writer to output text to.
 
 `indent` - The number of spaces to indent each line.
-
-**Throws:**
-
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
 
 
 ---

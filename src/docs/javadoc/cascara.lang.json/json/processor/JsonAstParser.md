@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.lang.json.processor](index.md)
                 io.github.qishr.cascara.lang.json.processor.JsonAstParser<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [AstParser](../../../cascara.common/lang/processor/AstParser.md)<[JsonNode](../ast/JsonNode.md), [JsonToken](../token/JsonToken.md)>
+    [AstParser](../../../cascara.common/lang/processor/AstParser.md)<[JsonNode](../ast/JsonNode.md), [JsonToken](../token/JsonToken.md), [JsonTokenizer](JsonTokenizer.md)>
 
 
 ----
@@ -27,16 +27,18 @@ A recursive descent parser for JSON/JSON5.
 
 ## Method Summary
 
-| Modifier and Type                           | Method                                                                                                                                               | Description |
-|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [JsonAstParser](JsonAstParser.md)    | [setOptions](#setoptions)([JsonOptions](../util/JsonOptions.md) options)                                                                             |             |
-| protected [JsonAstParser](JsonAstParser.md) | [self](#self)()                                                                                                                                      |             |
-| public [JsonNode](../ast/JsonNode.md)       | [parse](#parse)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                   |             |
-| public [JsonNode](../ast/JsonNode.md)       | [parse](#parse)(byte[] data)                                                                                                                         |             |
-| public [JsonNode](../ast/JsonNode.md)       | [parse](#parse)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)                                   |             |
-| public [JsonNode](../ast/JsonNode.md)       | [parse](#parse)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)                             |             |
-| public [JsonNode](../ast/JsonNode.md)       | [parse](#parse)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonToken](../token/JsonToken.md)> tokens) |             |
-| public [JsonNode](../ast/JsonNode.md)       | [parse](#parse)([Tokenizer](../../../cascara.common/lang/processor/Tokenizer.md)<[JsonToken](../token/JsonToken.md)> tokenizer)                      |             |
+| Modifier and Type                                                                                                                   | Method                                                                                                                                               | Description                                       |
+|-------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
+| public [JsonAstParser](JsonAstParser.md)                                                                                            | [setOptions](#setoptions)([JsonOptions](../util/JsonOptions.md) options)                                                                             |                                                   |
+| protected [JsonAstParser](JsonAstParser.md)                                                                                         | [self](#self)()                                                                                                                                      |                                                   |
+| public [JsonNode](../ast/JsonNode.md)                                                                                               | [parse](#parse)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                   |                                                   |
+| public [JsonNode](../ast/JsonNode.md)                                                                                               | [parse](#parse)(byte[] data)                                                                                                                         |                                                   |
+| public [JsonNode](../ast/JsonNode.md)                                                                                               | [parse](#parse)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)                                   |                                                   |
+| public [JsonNode](../ast/JsonNode.md)                                                                                               | [parse](#parse)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)                             |                                                   |
+| public [JsonNode](../ast/JsonNode.md)                                                                                               | [parse](#parse)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonToken](../token/JsonToken.md)> tokens) | Eager API: List<JsonToken> (adapter to streaming) |
+| public [JsonNode](../ast/JsonNode.md)                                                                                               | [parse](#parse)([JsonTokenizer](JsonTokenizer.md) tokenizer)                                                                                         | Streaming API: Tokenizer<JsonToken>               |
+| public [JsonTokenizer](JsonTokenizer.md)                                                                                            | [getTokenizer](#gettokenizer)()                                                                                                                      |                                                   |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonToken](../token/JsonToken.md)> | [getTokens](#gettokens)()                                                                                                                            |                                                   |
 
 
 ### Methods inherited from [AbstractJsonProcessor](AbstractJsonProcessor.md)
@@ -120,7 +122,7 @@ setReporter, getOptions, getContentType, getServiceProperties, getVersion, getRe
 
 <span style="font-family: monospace; font-size: 80%;">public [JsonNode](../ast/JsonNode.md) __parse__([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonToken](../token/JsonToken.md)> tokens)</span>
 
-
+Eager API: List<JsonToken> (adapter to streaming)
 
 **Specified By:**
 
@@ -131,7 +133,29 @@ setReporter, getOptions, getContentType, getServiceProperties, getVersion, getRe
 
 ### parse
 
-<span style="font-family: monospace; font-size: 80%;">public [JsonNode](../ast/JsonNode.md) __parse__([Tokenizer](../../../cascara.common/lang/processor/Tokenizer.md)<[JsonToken](../token/JsonToken.md)> tokenizer)</span>
+<span style="font-family: monospace; font-size: 80%;">public [JsonNode](../ast/JsonNode.md) __parse__([JsonTokenizer](JsonTokenizer.md) tokenizer)</span>
+
+Streaming API: Tokenizer<JsonToken>
+
+
+---
+
+### getTokenizer
+
+<span style="font-family: monospace; font-size: 80%;">public [JsonTokenizer](JsonTokenizer.md) __getTokenizer__()</span>
+
+
+
+**Specified By:**
+
+[AstParser](../../../cascara.common/lang/processor/AstParser.md)
+
+
+---
+
+### getTokens
+
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonToken](../token/JsonToken.md)> __getTokens__()</span>
 
 
 

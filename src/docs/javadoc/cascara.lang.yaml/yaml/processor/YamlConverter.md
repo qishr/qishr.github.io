@@ -30,11 +30,12 @@ All Implemented Interfaces:<br/>
 | protected [YamlConverter](YamlConverter.md)                                                         | [self](#self)()                                                                 |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toText](#totext)([AstNode](../../../cascara.common/lang/ast/AstNode.md) ast)   |             |
 | public [YamlNode](../ast/YamlNode.md)                                                               | [fromAst](#fromast)([AstNode](../../../cascara.common/lang/ast/AstNode.md) ast) |             |
+| public [ReferenceNode](../../../cascara.common/lang/reference/ReferenceNode.md)                     | [toPlainAst](#toplainast)([YamlNode](../ast/YamlNode.md) yaml)                  |             |
 
 
 ### Methods inherited from [AbstractYamlProcessor](AbstractYamlProcessor.md)
 
-setReporter, getOptions, getContentType, getServiceProperties, getReporter, setOptions
+setReporter, getOptions, getContentType, getServiceProperties, getVersion, getReporter, setOptions
 
 
 ## Method Details
@@ -67,13 +68,24 @@ setReporter, getOptions, getContentType, getServiceProperties, getReporter, setO
 
 ### fromAst
 
-<span style="font-family: monospace; font-size: 80%;">public [YamlNode](../ast/YamlNode.md) __fromAst__([AstNode](../../../cascara.common/lang/ast/AstNode.md) ast)</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Nullable<br/>
+public [YamlNode](../ast/YamlNode.md) __fromAst__([AstNode](../../../cascara.common/lang/ast/AstNode.md) ast)</span>
 
 
 
 **Specified By:**
 
 [AstConverter](../../../cascara.common/lang/processor/AstConverter.md)
+
+
+---
+
+### toPlainAst
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Nullable<br/>
+public [ReferenceNode](../../../cascara.common/lang/reference/ReferenceNode.md) __toPlainAst__([YamlNode](../ast/YamlNode.md) yaml)</span>
+
+
 
 
 ---

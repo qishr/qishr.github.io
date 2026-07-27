@@ -33,6 +33,7 @@ All Implemented Interfaces:<br/>
 | public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[ReferenceNode](ReferenceNode.md)>                           | [keySet](#keyset)()                                                                                                                                                                                               |                           |
 | public [ReferenceNode](ReferenceNode.md)                                                                                                                   | [get](#get)([ReferenceNode](ReferenceNode.md) key)                                                                                                                                                                |                           |
 | public [ReferenceMapEntryNode](ReferenceMapEntryNode.md)                                                                                                   | [getEntry](#getentry)([ReferenceNode](ReferenceNode.md) key)                                                                                                                                                      |                           |
+| public [ReferenceMapEntryNode](ReferenceMapEntryNode.md)                                                                                                   | [getEntry](#getentry)(int i)                                                                                                                                                                                      |                           |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ReferenceMapEntryNode](ReferenceMapEntryNode.md)>         | [getEntries](#getentries)()                                                                                                                                                                                       |                           |
 | public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[ReferenceMapEntryNode](ReferenceMapEntryNode.md)>           | [entrySet](#entryset)()                                                                                                                                                                                           |                           |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ReferenceNode](ReferenceNode.md)>                         | [values](#values)()                                                                                                                                                                                               |                           |
@@ -47,6 +48,7 @@ All Implemented Interfaces:<br/>
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../ast/CommentAstNode.md)>                | [getComments](#getcomments)()                                                                                                                                                                                     |                           |
 | public [ReferenceMapNode](ReferenceMapNode.md)                                                                                                             | [getMap](#getmap)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                               |                           |
 | public [ReferenceSequenceNode](ReferenceSequenceNode.md)                                                                                                   | [getSequence](#getsequence)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                     |                           |
+| public [ReferenceScalarNode](ReferenceScalarNode.md)                                                                                                       | [getScalar](#getscalar)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                         |                           |
 | public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<[ReferenceMapEntryNode](ReferenceMapEntryNode.md)> | [iterator](#iterator)()                                                                                                                                                                                           | Returns Iterator instance |
 
 
@@ -119,6 +121,19 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 <span style="font-family: monospace; font-size: 80%;">public [ReferenceMapEntryNode](ReferenceMapEntryNode.md) __getEntry__([ReferenceNode](ReferenceNode.md) key)</span>
 
 
+
+
+---
+
+### getEntry
+
+<span style="font-family: monospace; font-size: 80%;">public [ReferenceMapEntryNode](ReferenceMapEntryNode.md) __getEntry__(int i)</span>
+
+
+
+**Specified By:**
+
+[MapAstNode](../ast/MapAstNode.md)
 
 
 ---
@@ -279,6 +294,20 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 ### getSequence
 
 <span style="font-family: monospace; font-size: 80%;">public [ReferenceSequenceNode](ReferenceSequenceNode.md) __getSequence__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+
+
+
+**Specified By:**
+
+[MapAstNode](../ast/MapAstNode.md)
+
+
+---
+
+### getScalar
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Nullable<br/>
+public [ReferenceScalarNode](ReferenceScalarNode.md) __getScalar__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
 
 
 

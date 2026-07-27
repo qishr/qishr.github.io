@@ -44,6 +44,7 @@ All Implemented Interfaces:<br/>
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                         | [getContent](#getcontent)()                                                                                       |             |
 | public boolean                                                                                                                              | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o) |             |
 | public int                                                                                                                                  | [hashCode](#hashcode)()                                                                                           |             |
+| public [PrimitiveType](../type/PrimitiveType.md)                                                                                            | [getPrimitiveType](#getprimitivetype)()                                                                           |             |
 
 
 ### Methods inherited from [ReferenceNode](ReferenceNode.md)
@@ -251,6 +252,19 @@ public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/jav
 **Overrides:**
 
 [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#hashcode)
+
+
+---
+
+### getPrimitiveType
+
+<span style="font-family: monospace; font-size: 80%;">public [PrimitiveType](../type/PrimitiveType.md) __getPrimitiveType__()</span>
+
+
+
+**Specified By:**
+
+[ScalarAstNode](../ast/ScalarAstNode.md)
 
 
 ---

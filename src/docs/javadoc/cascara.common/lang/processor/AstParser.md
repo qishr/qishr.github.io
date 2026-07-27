@@ -19,13 +19,15 @@ public interface __AstParser__</span>
 
 ## Method Summary
 
-| Modifier and Type | Method                                                                                                                   | Description                                                                |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| public abstract N | [parse](#parse)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)       | Entry point for parsing a source string.                                   |
-| public abstract N | [parse](#parse)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)       |                                                                            |
-| public abstract N | [parse](#parse)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is) | Entry point for parsing an `InputStream`.                                  |
-| public abstract N | [parse](#parse)([Tokenizer](Tokenizer.md)<T> tokenizer)                                                                  | Primary parsing core driven directly by the Tokenizer interface structure. |
-| public abstract N | [parse](#parse)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> tokens)      | Entry point for parsing a list of tokens.                                  |
+| Modifier and Type                                                                                           | Method                                                                                                                   | Description                                                                |
+|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| public abstract N                                                                                           | [parse](#parse)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)       | Entry point for parsing a source string.                                   |
+| public abstract N                                                                                           | [parse](#parse)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)       |                                                                            |
+| public abstract N                                                                                           | [parse](#parse)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is) | Entry point for parsing an `InputStream`.                                  |
+| public abstract N                                                                                           | [parse](#parse)(L tokenizer)                                                                                             | Primary parsing core driven directly by the Tokenizer interface structure. |
+| public abstract N                                                                                           | [parse](#parse)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> tokens)      | Entry point for parsing a list of tokens.                                  |
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> | [getTokens](#gettokens)()                                                                                                |                                                                            |
+| public abstract L                                                                                           | [getTokenizer](#gettokenizer)()                                                                                          |                                                                            |
 
 
 
@@ -76,7 +78,7 @@ The root [AstNode](../ast/AstNode.md).
 
 ### parse
 
-<span style="font-family: monospace; font-size: 80%;">public abstract N __parse__([Tokenizer](Tokenizer.md)<T> tokenizer)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract N __parse__(L tokenizer)</span>
 
 Primary parsing core driven directly by the Tokenizer interface structure.
 
@@ -104,6 +106,24 @@ Entry point for parsing a list of tokens.
 **Returns:**
 
 The root [AstNode](../ast/AstNode.md).
+
+
+---
+
+### getTokens
+
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> __getTokens__()</span>
+
+
+
+
+---
+
+### getTokenizer
+
+<span style="font-family: monospace; font-size: 80%;">public abstract L __getTokenizer__()</span>
+
+
 
 
 ---

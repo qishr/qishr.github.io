@@ -22,11 +22,12 @@ All Implemented Interfaces:<br/>
 | [EXPECTED_STREAM_START](#expected_stream_start)             |             |
 | [EXPECTED_STREAM_END](#expected_stream_end)                 |             |
 | [UNEXPECTED_STREAM_END](#unexpected_stream_end)             |             |
+| [UNKNOWN_NODE_TYPE](#unknown_node_type)                     |             |
 | [FAILED_TO_MAP_TYPE](#failed_to_map_type)                   |             |
 | [FAILED_TO_MAP_AST](#failed_to_map_ast)                     |             |
 | [CLASS_NOT_SERIALIZABLE](#class_not_serializable)           |             |
-| [FIELD_NOT_ACCESSIBLE](#field_not_accessible)               |             |
 | [NO_SUCH_METHOD](#no_such_method)                           |             |
+| [FIELD_NOT_ACCESSIBLE](#field_not_accessible)               |             |
 | [INVOCATION_TARGET_EXCEPTION](#invocation_target_exception) |             |
 | [ILLEGAL_ARGUMENT_EXCEPTION](#illegal_argument_exception)   |             |
 | [INSTANTIATION_EXCEPTION](#instantiation_exception)         |             |
@@ -86,6 +87,15 @@ public static final  UNEXPECTED_STREAM_END
 
 ---
 
+### UNKNOWN_NODE_TYPE
+
+public static final  UNKNOWN_NODE_TYPE
+
+
+
+
+---
+
 ### FAILED_TO_MAP_TYPE
 
 public static final  FAILED_TO_MAP_TYPE
@@ -113,18 +123,18 @@ public static final  CLASS_NOT_SERIALIZABLE
 
 ---
 
-### FIELD_NOT_ACCESSIBLE
+### NO_SUCH_METHOD
 
-public static final  FIELD_NOT_ACCESSIBLE
+public static final  NO_SUCH_METHOD
 
 
 
 
 ---
 
-### NO_SUCH_METHOD
+### FIELD_NOT_ACCESSIBLE
 
-public static final  NO_SUCH_METHOD
+public static final  FIELD_NOT_ACCESSIBLE
 
 
 

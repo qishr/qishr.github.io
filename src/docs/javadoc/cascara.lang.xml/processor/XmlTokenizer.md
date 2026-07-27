@@ -28,6 +28,7 @@ All Implemented Interfaces:<br/>
 | Modifier and Type                                                                                                                 | Method                                                                                                                     | Description |
 |-----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|-------------|
 | protected [XmlTokenizer](XmlTokenizer.md)                                                                                         | [self](#self)()                                                                                                            |             |
+| public int                                                                                                                        | [getOffset](#getoffset)()                                                                                                  |             |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[XmlToken](../token/XmlToken.md)> | [tokenize](#tokenize)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source) |             |
 | public void                                                                                                                       | [open](#open)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)           |             |
 | public void                                                                                                                       | [open](#open)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)     |             |
@@ -51,6 +52,19 @@ setReporter, getContentType, getServiceProperties, setOptions
 **Overrides:**
 
 [AbstractXmlProcessor](../cascara.lang.xml/processor/AbstractXmlProcessor.md#self)
+
+
+---
+
+### getOffset
+
+<span style="font-family: monospace; font-size: 80%;">public int __getOffset__()</span>
+
+
+
+**Specified By:**
+
+[Tokenizer](../../cascara.common/lang/processor/Tokenizer.md)
 
 
 ---

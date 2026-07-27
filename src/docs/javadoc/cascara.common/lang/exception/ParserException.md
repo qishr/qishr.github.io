@@ -23,16 +23,17 @@ Direct Known Subtypes:<br/>
 
 | Constructor                                                                                                                                                                                                                                                                                       | Description                                            |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
+| ParserException([DiagnosticCode](../../diagnostic/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           | Standard constructor for generic errors.               |
 | ParserException(int line, int column, [DiagnosticCode](../../diagnostic/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                     | Standard constructor for parser-detected logic errors. |
 | ParserException([Token](../token/Token.md) token, [DiagnosticCode](../../diagnostic/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                         | Standard constructor for parser-detected logic errors. |
 | ParserException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](../../diagnostic/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) | Constructor for I/O or Stream failures.                |
 
 
-### Methods inherited from [LocatableException](../../diagnostic/LocatableException.md)
-
-getRawMessage, getUri, getLine, getLocalizedMessage, getMessage, getColumn
-
 ### Methods inherited from [LocalizableRuntimeException](../../diagnostic/LocalizableRuntimeException.md)
 
 getCode, getDetails
+
+### Methods inherited from [LocatableException](../../diagnostic/LocatableException.md)
+
+getRawMessage, getUri, getLine, getLocalizedMessage, getMessage, getColumn
 

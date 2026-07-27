@@ -23,20 +23,20 @@ Package [io.github.qishr.cascara.common.diagnostic](index.md)
 | public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setLevel](#setlevel)([Level](Diagnostic.Level.md) level)                                                                                                                                           |             |
 | public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setDiagnosticCollector](#setdiagnosticcollector)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector) |             |
 | public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setProblemCollector](#setproblemcollector)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)       |             |
-| public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setDisableSystemOutput](#setdisablesystemoutput)(boolean b)                                                                                                                                        |             |
-| public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setDisableFlush](#setdisableflush)(boolean b)                                                                                                                                                      |             |
+| public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setSystemOutputEnabled](#setsystemoutputenabled)(boolean b)                                                                                                                                        |             |
+| public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setFlushEnabled](#setflushenabled)(boolean b)                                                                                                                                                      |             |
 | protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)>                                                                  | [getDiagnosticCollector](#getdiagnosticcollector)()                                                                                                                                                 |             |
 | protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)>                                                                  | [getProblemCollector](#getproblemcollector)()                                                                                                                                                       |             |
 | protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getStringWriter](#getstringwriter)()                                                                                                                                                               |             |
-| protected boolean                                                                                                                                                                                                 | [disableSystemOutput](#disablesystemoutput)()                                                                                                                                                       |             |
-| protected boolean                                                                                                                                                                                                 | [disableFlush](#disableflush)()                                                                                                                                                                     |             |
-| protected boolean                                                                                                                                                                                                 | [printStackTrace](#printstacktrace)()                                                                                                                                                               |             |
+| protected boolean                                                                                                                                                                                                 | [isSystemOutputEnabled](#issystemoutputenabled)()                                                                                                                                                   |             |
+| protected boolean                                                                                                                                                                                                 | [isFlushEnabled](#isflushenabled)()                                                                                                                                                                 |             |
+| protected boolean                                                                                                                                                                                                 | [isStackTraceEnabled](#isstacktraceenabled)()                                                                                                                                                       |             |
 | protected void                                                                                                                                                                                                    | [writeString](#writestring)([Diagnostic](Diagnostic.md) diagnostic)                                                                                                                                 |             |
 
 
 ### Methods inherited from [AbstractReporter](AbstractReporter.md)
 
-errorAt, trace, debug, buildDiagnostic, warnAt, errorAt, infoAt, collectsProblems, infoAt, isProblem, errorAt, infoAt, [writeString](#writestring), errorAt, warnAt, error, warnAt, outputToConsole, warn, error, buildDiagnostic, buildDiagnostic, errorAt, errorAt, errorAt, report, setPrintStackTrace, info, isSilent, error, error, buildDiagnostic
+errorAt, trace, setStackTraceEnabled, debug, buildDiagnostic, warnAt, errorAt, infoAt, collectsProblems, setSystemErrorEnabled, infoAt, isProblem, errorAt, infoAt, [writeString](#writestring), errorAt, warnAt, error, warnAt, outputToConsole, warn, error, buildDiagnostic, buildDiagnostic, errorAt, errorAt, errorAt, report, info, getLevel, isSilent, error, error, buildDiagnostic
 
 
 ## Method Details
@@ -120,18 +120,18 @@ errorAt, trace, debug, buildDiagnostic, warnAt, errorAt, infoAt, collectsProblem
 
 ---
 
-### setDisableSystemOutput
+### setSystemOutputEnabled
 
-<span style="font-family: monospace; font-size: 80%;">public [GlobalReporter](GlobalReporter.md) __setDisableSystemOutput__(boolean b)</span>
+<span style="font-family: monospace; font-size: 80%;">public [GlobalReporter](GlobalReporter.md) __setSystemOutputEnabled__(boolean b)</span>
 
 
 
 
 ---
 
-### setDisableFlush
+### setFlushEnabled
 
-<span style="font-family: monospace; font-size: 80%;">public [GlobalReporter](GlobalReporter.md) __setDisableFlush__(boolean b)</span>
+<span style="font-family: monospace; font-size: 80%;">public [GlobalReporter](GlobalReporter.md) __setFlushEnabled__(boolean b)</span>
 
 
 
@@ -177,41 +177,41 @@ errorAt, trace, debug, buildDiagnostic, warnAt, errorAt, infoAt, collectsProblem
 
 ---
 
-### disableSystemOutput
+### isSystemOutputEnabled
 
-<span style="font-family: monospace; font-size: 80%;">protected boolean __disableSystemOutput__()</span>
+<span style="font-family: monospace; font-size: 80%;">protected boolean __isSystemOutputEnabled__()</span>
 
 
 
 **Overrides:**
 
-[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#disablesystemoutput)
+[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#issystemoutputenabled)
 
 
 ---
 
-### disableFlush
+### isFlushEnabled
 
-<span style="font-family: monospace; font-size: 80%;">protected boolean __disableFlush__()</span>
+<span style="font-family: monospace; font-size: 80%;">protected boolean __isFlushEnabled__()</span>
 
 
 
 **Overrides:**
 
-[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#disableflush)
+[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#isflushenabled)
 
 
 ---
 
-### printStackTrace
+### isStackTraceEnabled
 
-<span style="font-family: monospace; font-size: 80%;">protected boolean __printStackTrace__()</span>
+<span style="font-family: monospace; font-size: 80%;">protected boolean __isStackTraceEnabled__()</span>
 
 
 
 **Overrides:**
 
-[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#printstacktrace)
+[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#isstacktraceenabled)
 
 
 ---

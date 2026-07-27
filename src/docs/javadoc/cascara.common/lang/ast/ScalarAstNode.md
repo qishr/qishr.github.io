@@ -24,6 +24,7 @@ All Known Implementing Classes:<br/>
 | public abstract [ScalarAstNode](ScalarAstNode.md)<T>                                                         | [setQuoteStyle](#setquotestyle)([QuoteStyle](../util/QuoteStyle.md) style) | Sets the [QuoteStyle](../util/QuoteStyle.md) used by a node                                                |
 | public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getLexeme](#getlexeme)()                                                  | Returns the exact, unparsed text block directly from the file buffer.                                      |
 | public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) | [getPrimitive](#getprimitive)()                                            | Returns the Java-native representation of the scalar (e.g., Integer, Boolean, String).                     |
+| public abstract [PrimitiveType](../type/PrimitiveType.md)                                                    | [getPrimitiveType](#getprimitivetype)()                                    |                                                                                                            |
 | public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getContent](#getcontent)()                                                |                                                                                                            |
 | public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [asString](#asstring)()                                                    | Returns the string form or the primitive.                                                                  |
 | public abstract int                                                                                          | [asInteger](#asinteger)()                                                  |                                                                                                            |
@@ -71,6 +72,15 @@ Returns the exact, unparsed text block directly from the file buffer.
 public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) __getPrimitive__()</span>
 
 Returns the Java-native representation of the scalar (e.g., Integer, Boolean, String).
+
+
+---
+
+### getPrimitiveType
+
+<span style="font-family: monospace; font-size: 80%;">public abstract [PrimitiveType](../type/PrimitiveType.md) __getPrimitiveType__()</span>
+
+
 
 
 ---

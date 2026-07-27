@@ -26,23 +26,27 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                | Method                                          | Description               |
-|----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|---------------------------|
-| public [JsonSequenceNode](JsonSequenceNode.md)                                                                                   | [add](#add)([JsonNode](JsonNode.md) item)       |                           |
-| public [JsonSequenceNode](JsonSequenceNode.md)                                                                                   | [remove](#remove)(int index)                    |                           |
-| public [JsonSequenceNode](JsonSequenceNode.md)                                                                                   | [clear](#clear)()                               |                           |
-| public int                                                                                                                       | [size](#size)()                                 |                           |
-| public [JsonNode](JsonNode.md)                                                                                                   | [get](#get)(int index)                          |                           |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](JsonNode.md)>         | [getElements](#getelements)()                   |                           |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](JsonNode.md)>         | [getChildren](#getchildren)()                   |                           |
-| public [JsonSequenceNode](JsonSequenceNode.md)                                                                                   | [remove](#remove)([JsonNode](JsonNode.md) node) |                           |
-| public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<[JsonNode](JsonNode.md)> | [iterator](#iterator)()                         | Returns Iterator instance |
-| public boolean                                                                                                                   | [isEmpty](#isempty)()                           |                           |
+| Modifier and Type                                                                                                                | Method                                                                                                            | Description               |
+|----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|---------------------------|
+| public [JsonSequenceNode](JsonSequenceNode.md)                                                                                   | [add](#add)([JsonNode](JsonNode.md) item)                                                                         |                           |
+| public [JsonSequenceNode](JsonSequenceNode.md)                                                                                   | [remove](#remove)(int index)                                                                                      |                           |
+| public [JsonSequenceNode](JsonSequenceNode.md)                                                                                   | [clear](#clear)()                                                                                                 |                           |
+| public int                                                                                                                       | [size](#size)()                                                                                                   |                           |
+| public [JsonNode](JsonNode.md)                                                                                                   | [get](#get)(int index)                                                                                            |                           |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](JsonNode.md)>         | [getElements](#getelements)()                                                                                     |                           |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](JsonNode.md)>         | [getChildren](#getchildren)()                                                                                     |                           |
+| public [JsonNode](JsonNode.md)                                                                                                   | [getFirst](#getfirst)()                                                                                           |                           |
+| public [JsonNode](JsonNode.md)                                                                                                   | [getLast](#getlast)()                                                                                             |                           |
+| public [JsonSequenceNode](JsonSequenceNode.md)                                                                                   | [remove](#remove)([JsonNode](JsonNode.md) node)                                                                   |                           |
+| public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<[JsonNode](JsonNode.md)> | [iterator](#iterator)()                                                                                           | Returns Iterator instance |
+| public boolean                                                                                                                   | [isEmpty](#isempty)()                                                                                             |                           |
+| public boolean                                                                                                                   | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o) |                           |
+| public int                                                                                                                       | [hashCode](#hashcode)()                                                                                           |                           |
 
 
 ### Methods inherited from [JsonNode](JsonNode.md)
 
-getEndColumn, getEndLine, getComments, getStartColumn, getToken, setToken, equals, addComment, getStartLine, hashCode
+getEndColumn, getEndLine, getComments, getStartColumn, getToken, setToken, addComment, getStartLine
 
 
 ## Method Details
@@ -134,6 +138,32 @@ getEndColumn, getEndLine, getComments, getStartColumn, getToken, setToken, equal
 
 ---
 
+### getFirst
+
+<span style="font-family: monospace; font-size: 80%;">public [JsonNode](JsonNode.md) __getFirst__()</span>
+
+
+
+**Specified By:**
+
+[SequenceAstNode](../../../cascara.common/lang/ast/SequenceAstNode.md)
+
+
+---
+
+### getLast
+
+<span style="font-family: monospace; font-size: 80%;">public [JsonNode](JsonNode.md) __getLast__()</span>
+
+
+
+**Specified By:**
+
+[SequenceAstNode](../../../cascara.common/lang/ast/SequenceAstNode.md)
+
+
+---
+
 ### remove
 
 <span style="font-family: monospace; font-size: 80%;">public [JsonSequenceNode](JsonSequenceNode.md) __remove__([JsonNode](JsonNode.md) node)</span>
@@ -165,6 +195,32 @@ Returns Iterator instance
 **Specified By:**
 
 [SequenceAstNode](../../../cascara.common/lang/ast/SequenceAstNode.md)
+
+
+---
+
+### equals
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __equals__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)</span>
+
+
+
+**Overrides:**
+
+[JsonNode](../cascara.lang.json/json/ast/JsonNode.md#equals)
+
+
+---
+
+### hashCode
+
+<span style="font-family: monospace; font-size: 80%;">public int __hashCode__()</span>
+
+
+
+**Overrides:**
+
+[JsonNode](../cascara.lang.json/json/ast/JsonNode.md#hashcode)
 
 
 ---

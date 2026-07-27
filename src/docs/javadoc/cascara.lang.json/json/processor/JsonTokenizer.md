@@ -27,6 +27,9 @@ All Implemented Interfaces:<br/>
 
 | Modifier and Type                                                                                                                         | Method                                                                                                                     | Description |
 |-------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|-------------|
+| public int                                                                                                                                | [getOffset](#getoffset)()                                                                                                  |             |
+| public int                                                                                                                                | [getLine](#getline)()                                                                                                      |             |
+| public int                                                                                                                                | [getColumn](#getcolumn)()                                                                                                  |             |
 | public [JsonTokenizer](JsonTokenizer.md)                                                                                                  | [setOptions](#setoptions)([LanguageOptions](../../../cascara.common/lang/util/LanguageOptions.md)<?> options)              |             |
 | protected [JsonTokenizer](JsonTokenizer.md)                                                                                               | [self](#self)()                                                                                                            |             |
 | public void                                                                                                                               | [open](#open)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)           |             |
@@ -44,6 +47,37 @@ setReporter, getOptions, getContentType, getServiceProperties, getVersion, getRe
 
 
 ## Method Details
+
+### getOffset
+
+<span style="font-family: monospace; font-size: 80%;">public int __getOffset__()</span>
+
+
+
+**Specified By:**
+
+[Tokenizer](../../../cascara.common/lang/processor/Tokenizer.md)
+
+
+---
+
+### getLine
+
+<span style="font-family: monospace; font-size: 80%;">public int __getLine__()</span>
+
+
+
+
+---
+
+### getColumn
+
+<span style="font-family: monospace; font-size: 80%;">public int __getColumn__()</span>
+
+
+
+
+---
 
 ### setOptions
 

@@ -17,10 +17,10 @@ All Implemented Interfaces:<br/>
 
 ## Constructor Summary
 
-| Constructor                       | Description |
-|-----------------------------------|-------------|
-| YamlMapNode()                     |             |
-| YamlMapNode(int line, int column) |             |
+| Constructor                                                                                          | Description |
+|------------------------------------------------------------------------------------------------------|-------------|
+| YamlMapNode()                                                                                        |             |
+| YamlMapNode([YamlToken](../token/YamlToken.md) token, [YamlOptions](../util/YamlOptions.md) options) |             |
 
 
 
@@ -34,17 +34,19 @@ All Implemented Interfaces:<br/>
 | public [YamlNode](YamlNode.md)                                                                                                                   | [get](#get)([YamlNode](YamlNode.md) key)                                                                                                                                                                          |                                                                                                                      |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlMapEntryNode](YamlMapEntryNode.md)>         | [getChildren](#getchildren)()                                                                                                                                                                                     |   Implementation-specific nodes must return their constituent children. For example, a Map node returns its entries. |
 | public [YamlMapEntryNode](YamlMapEntryNode.md)                                                                                                   | [getEntry](#getentry)([YamlNode](YamlNode.md) key)                                                                                                                                                                |                                                                                                                      |
+| public [YamlMapEntryNode](YamlMapEntryNode.md)                                                                                                   | [getEntry](#getentry)(int i)                                                                                                                                                                                      |                                                                                                                      |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlMapEntryNode](YamlMapEntryNode.md)>         | [getEntries](#getentries)()                                                                                                                                                                                       |                                                                                                                      |
-| public [CollectionStyle](CollectionStyle.md)                                                                                                     | [getStyle](#getstyle)()                                                                                                                                                                                           |                                                                                                                      |
+| public [NodeStyle](NodeStyle.md)                                                                                                                 | [getStyle](#getstyle)()                                                                                                                                                                                           |                                                                                                                      |
 | public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[YamlNode](YamlNode.md)>                           | [keySet](#keyset)()                                                                                                                                                                                               |                                                                                                                      |
 | public [YamlMapNode](YamlMapNode.md)                                                                                                             | [put](#put)([YamlNode](YamlNode.md) key, [YamlNode](YamlNode.md) value)                                                                                                                                           |                                                                                                                      |
 | public [YamlMapNode](YamlMapNode.md)                                                                                                             | [remove](#remove)([YamlNode](YamlNode.md) key)                                                                                                                                                                    |                                                                                                                      |
 | public [YamlMapNode](YamlMapNode.md)                                                                                                             | [remove](#remove)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                               |                                                                                                                      |
-| public [YamlMapNode](YamlMapNode.md)                                                                                                             | [setStyle](#setstyle)([CollectionStyle](CollectionStyle.md) style)                                                                                                                                                |                                                                                                                      |
+| public [YamlMapNode](YamlMapNode.md)                                                                                                             | [setStyle](#setstyle)([NodeStyle](NodeStyle.md) style)                                                                                                                                                            |                                                                                                                      |
 | public boolean                                                                                                                                   | [containsKey](#containskey)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                     |                                                                                                                      |
 | public [YamlNode](YamlNode.md)                                                                                                                   | [get](#get)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                     |                                                                                                                      |
 | public [YamlMapNode](YamlMapNode.md)                                                                                                             | [getMap](#getmap)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                               |                                                                                                                      |
 | public [YamlSequenceNode](YamlSequenceNode.md)                                                                                                   | [getSequence](#getsequence)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                     |                                                                                                                      |
+| public [YamlScalarNode](YamlScalarNode.md)                                                                                                       | [getScalar](#getscalar)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                         |                                                                                                                      |
 | public [YamlMapNode](YamlMapNode.md)                                                                                                             | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [YamlNode](YamlNode.md) value)                                                                      | Associates the specified value with the specified string key.                                                        |
 | public [YamlMapNode](YamlMapNode.md)                                                                                                             | [put](#put)([YamlMapEntryNode](YamlMapEntryNode.md) entry)                                                                                                                                                        |                                                                                                                      |
 | public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[YamlMapEntryNode](YamlMapEntryNode.md)>           | [entrySet](#entryset)()                                                                                                                                                                                           |                                                                                                                      |
@@ -56,7 +58,7 @@ All Implemented Interfaces:<br/>
 
 ### Methods inherited from [YamlNode](YamlNode.md)
 
-setAnchor, getStartColumn, addComments, getStartLine, setToken, hashCode, getEndColumn, getEndLine, getComments, getToken, getAnchor, equals, addComment
+getNodeStyle, getOptions, getTag, setAnchor, getStartColumn, addComments, getStartLine, setToken, hashCode, getEndColumn, getEndLine, getComments, setTag, setNodeStyle, getToken, getAnchor, equals, addComment
 
 
 ## Method Details
@@ -136,6 +138,20 @@ public [YamlMapEntryNode](YamlMapEntryNode.md) __getEntry__([YamlNode](YamlNode.
 
 ---
 
+### getEntry
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Nullable<br/>
+public [YamlMapEntryNode](YamlMapEntryNode.md) __getEntry__(int i)</span>
+
+
+
+**Specified By:**
+
+[MapAstNode](../../../cascara.common/lang/ast/MapAstNode.md)
+
+
+---
+
 ### getEntries
 
 <span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlMapEntryNode](YamlMapEntryNode.md)> __getEntries__()</span>
@@ -151,7 +167,7 @@ public [YamlMapEntryNode](YamlMapEntryNode.md) __getEntry__([YamlNode](YamlNode.
 
 ### getStyle
 
-<span style="font-family: monospace; font-size: 80%;">public [CollectionStyle](CollectionStyle.md) __getStyle__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [NodeStyle](NodeStyle.md) __getStyle__()</span>
 
 
 
@@ -204,7 +220,7 @@ public [YamlMapEntryNode](YamlMapEntryNode.md) __getEntry__([YamlNode](YamlNode.
 
 ### setStyle
 
-<span style="font-family: monospace; font-size: 80%;">public [YamlMapNode](YamlMapNode.md) __setStyle__([CollectionStyle](CollectionStyle.md) style)</span>
+<span style="font-family: monospace; font-size: 80%;">public [YamlMapNode](YamlMapNode.md) __setStyle__([NodeStyle](NodeStyle.md) style)</span>
 
 
 
@@ -256,6 +272,20 @@ public [YamlMapNode](YamlMapNode.md) __getMap__([String](https://docs.oracle.com
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Nullable<br/>
 public [YamlSequenceNode](YamlSequenceNode.md) __getSequence__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+
+
+
+**Specified By:**
+
+[MapAstNode](../../../cascara.common/lang/ast/MapAstNode.md)
+
+
+---
+
+### getScalar
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Nullable<br/>
+public [YamlScalarNode](YamlScalarNode.md) __getScalar__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
 
 
 

@@ -19,9 +19,9 @@ Represents a comment within the YAML source.
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                 | Description |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| YamlCommentNode(int line, int column, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, boolean multiLine) |             |
+| Constructor                                                                                                                                                                     | Description |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| YamlCommentNode([YamlToken](../token/YamlToken.md) token, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, boolean multiLine) |             |
 
 
 
@@ -38,7 +38,7 @@ Represents a comment within the YAML source.
 
 ### Methods inherited from [YamlNode](YamlNode.md)
 
-setAnchor, getStartColumn, addComments, getStartLine, setToken, hashCode, getEndColumn, getEndLine, getComments, getToken, getAnchor, equals, addComment
+getNodeStyle, getOptions, getTag, setAnchor, getStartColumn, addComments, getStartLine, setToken, hashCode, getEndColumn, getEndLine, getComments, setTag, setNodeStyle, getToken, getAnchor, equals, addComment
 
 
 ## Method Details

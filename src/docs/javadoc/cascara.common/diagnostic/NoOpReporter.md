@@ -27,6 +27,7 @@ All Implemented Interfaces:<br/>
 | Modifier and Type                      | Method                                                                                                                                                                                                                                                                                                                      | Description |
 |----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | public boolean                         | [collectsProblems](#collectsproblems)()                                                                                                                                                                                                                                                                                     |             |
+| public [Level](Diagnostic.Level.md)    | [getLevel](#getlevel)()                                                                                                                                                                                                                                                                                                     |             |
 | public boolean                         | [isSilent](#issilent)()                                                                                                                                                                                                                                                                                                     |             |
 | public [NoOpReporter](NoOpReporter.md) | [setLevel](#setlevel)([Level](Diagnostic.Level.md) level)                                                                                                                                                                                                                                                                   |             |
 | public [NoOpReporter](NoOpReporter.md) | [setDiagnosticCollector](#setdiagnosticcollector)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> diagnosticCollector)                                                                                                               |             |
@@ -61,6 +62,19 @@ All Implemented Interfaces:<br/>
 ### collectsProblems
 
 <span style="font-family: monospace; font-size: 80%;">public boolean __collectsProblems__()</span>
+
+
+
+**Specified By:**
+
+[Reporter](Reporter.md)
+
+
+---
+
+### getLevel
+
+<span style="font-family: monospace; font-size: 80%;">public [Level](Diagnostic.Level.md) __getLevel__()</span>
 
 
 

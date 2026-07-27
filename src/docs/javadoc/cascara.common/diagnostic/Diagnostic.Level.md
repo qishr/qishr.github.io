@@ -22,6 +22,7 @@ Defines the severity hierarchy classifications available for diagnostic tracking
 | Enum Constant       | Description |
 |---------------------|-------------|
 | [DEFAULT](#default) |             |
+| [NONE](#none)       |             |
 | [ERROR](#error)     |             |
 | [WARN](#warn)       |             |
 | [INFO](#info)       |             |
@@ -32,11 +33,13 @@ Defines the severity hierarchy classifications available for diagnostic tracking
 
 ## Method Summary
 
-| Modifier and Type                            | Method                                                                                                                 | Description                                                                                |
-|----------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| public static [Level](Diagnostic.Level.md)[] | [values](#values)()                                                                                                    |                                                                                            |
-| public static [Level](Diagnostic.Level.md)   | [valueOf](#valueof)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name) |                                                                                            |
-| public int                                   | [getLevel](#getlevel)()                                                                                                | Returns the raw integer ordinal configuration weight assigned to this severity tier level. |
+| Modifier and Type                                                                                   | Method                                                                                                                 | Description                                                                                |
+|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| public static [Level](Diagnostic.Level.md)[]                                                        | [values](#values)()                                                                                                    |                                                                                            |
+| public static [Level](Diagnostic.Level.md)                                                          | [valueOf](#valueof)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name) |                                                                                            |
+| public int                                                                                          | [getLevel](#getlevel)()                                                                                                | Returns the raw integer ordinal configuration weight assigned to this severity tier level. |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getLogPrefix](#getlogprefix)()                                                                                        |                                                                                            |
+| public boolean                                                                                      | [includes](#includes)([Level](Diagnostic.Level.md) level)                                                              |                                                                                            |
 
 
 
@@ -45,6 +48,15 @@ Defines the severity hierarchy classifications available for diagnostic tracking
 ### DEFAULT
 
 public static final  DEFAULT
+
+
+
+
+---
+
+### NONE
+
+public static final  NONE
 
 
 
@@ -122,6 +134,24 @@ public static final  TRACE
 <span style="font-family: monospace; font-size: 80%;">public int __getLevel__()</span>
 
 Returns the raw integer ordinal configuration weight assigned to this severity tier level.
+
+
+---
+
+### getLogPrefix
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getLogPrefix__()</span>
+
+
+
+
+---
+
+### includes
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __includes__([Level](Diagnostic.Level.md) level)</span>
+
+
 
 
 ---

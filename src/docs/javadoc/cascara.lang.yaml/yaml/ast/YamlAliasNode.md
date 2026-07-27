@@ -14,9 +14,9 @@ Package [io.github.qishr.cascara.lang.yaml.ast](index.md)
 
 ## Constructor Summary
 
-| Constructor                                                                                                                             | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| YamlAliasNode(int line, int column, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) alias) |             |
+| Constructor                                                                                                                                                 | Description |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| YamlAliasNode([YamlToken](../token/YamlToken.md) token, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) alias) |             |
 
 
 
@@ -34,7 +34,7 @@ Package [io.github.qishr.cascara.lang.yaml.ast](index.md)
 
 ### Methods inherited from [YamlNode](YamlNode.md)
 
-getEndColumn, getEndLine, getComments, setAnchor, getStartColumn, getToken, addComments, equals, getStartLine, addComment, setToken, hashCode
+getNodeStyle, getOptions, getTag, setAnchor, getStartColumn, addComments, getStartLine, setToken, hashCode, getEndColumn, getEndLine, getComments, setTag, setNodeStyle, getToken, equals, addComment
 
 
 ## Method Details

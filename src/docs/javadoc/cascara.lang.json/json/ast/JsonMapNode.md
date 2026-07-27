@@ -32,6 +32,7 @@ All Implemented Interfaces:<br/>
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonMapEntryNode](JsonMapEntryNode.md)>                                                    | [getChildren](#getchildren)()                                                                                                                                                                                     |                           |
 | public [JsonMapEntryNode](JsonMapEntryNode.md)                                                                                                                                              | [getEntry](#getentry)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                           |                           |
+| public [JsonMapEntryNode](JsonMapEntryNode.md)                                                                                                                                              | [getEntry](#getentry)(int i)                                                                                                                                                                                      |                           |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonMapEntryNode](JsonMapEntryNode.md)>                                                    | [getEntries](#getentries)()                                                                                                                                                                                       |                           |
 | public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [keySet](#keyset)()                                                                                                                                                                                               |                           |
 | public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[JsonMapEntryNode](JsonMapEntryNode.md)>                                                      | [entrySet](#entryset)()                                                                                                                                                                                           |                           |
@@ -39,6 +40,7 @@ All Implemented Interfaces:<br/>
 | public [JsonNode](JsonNode.md)                                                                                                                                                              | [get](#get)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                     |                           |
 | public [JsonMapNode](JsonMapNode.md)                                                                                                                                                        | [getMap](#getmap)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                               |                           |
 | public [JsonSequenceNode](JsonSequenceNode.md)                                                                                                                                              | [getSequence](#getsequence)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                     |                           |
+| public [JsonScalarNode](JsonScalarNode.md)                                                                                                                                                  | [getScalar](#getscalar)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                         |                           |
 | public [JsonMapNode](JsonMapNode.md)                                                                                                                                                        | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [JsonNode](JsonNode.md) value)                                                                      |                           |
 | public [JsonMapNode](JsonMapNode.md)                                                                                                                                                        | [put](#put)([JsonMapEntryNode](JsonMapEntryNode.md) entry)                                                                                                                                                        |                           |
 | public boolean                                                                                                                                                                              | [containsKey](#containskey)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                     |                           |
@@ -47,11 +49,13 @@ All Implemented Interfaces:<br/>
 | public int                                                                                                                                                                                  | [size](#size)()                                                                                                                                                                                                   |                           |
 | public boolean                                                                                                                                                                              | [isEmpty](#isempty)()                                                                                                                                                                                             |                           |
 | public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<[JsonMapEntryNode](JsonMapEntryNode.md)>                                            | [iterator](#iterator)()                                                                                                                                                                                           | Returns Iterator instance |
+| public boolean                                                                                                                                                                              | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                                                                                                 |                           |
+| public int                                                                                                                                                                                  | [hashCode](#hashcode)()                                                                                                                                                                                           |                           |
 
 
 ### Methods inherited from [JsonNode](JsonNode.md)
 
-getEndColumn, getEndLine, getComments, getStartColumn, getToken, setToken, equals, addComment, getStartLine, hashCode
+getEndColumn, getEndLine, getComments, getStartColumn, getToken, setToken, addComment, getStartLine
 
 
 ## Method Details
@@ -79,6 +83,20 @@ getEndColumn, getEndLine, getComments, getStartColumn, getToken, setToken, equal
 public [JsonMapEntryNode](JsonMapEntryNode.md) __getEntry__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
 
 
+
+
+---
+
+### getEntry
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Nullable<br/>
+public [JsonMapEntryNode](JsonMapEntryNode.md) __getEntry__(int i)</span>
+
+
+
+**Specified By:**
+
+[MapAstNode](../../../cascara.common/lang/ast/MapAstNode.md)
 
 
 ---
@@ -164,6 +182,20 @@ public [JsonMapEntryNode](JsonMapEntryNode.md) __getEntry__([String](https://doc
 ### getSequence
 
 <span style="font-family: monospace; font-size: 80%;">public [JsonSequenceNode](JsonSequenceNode.md) __getSequence__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+
+
+
+**Specified By:**
+
+[MapAstNode](../../../cascara.common/lang/ast/MapAstNode.md)
+
+
+---
+
+### getScalar
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Nullable<br/>
+public [JsonScalarNode](JsonScalarNode.md) __getScalar__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
 
 
 
@@ -262,6 +294,32 @@ public [JsonMapEntryNode](JsonMapEntryNode.md) __getEntry__([String](https://doc
 <span style="font-family: monospace; font-size: 80%;">public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<[JsonMapEntryNode](JsonMapEntryNode.md)> __iterator__()</span>
 
 Returns Iterator instance
+
+
+---
+
+### equals
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __equals__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)</span>
+
+
+
+**Overrides:**
+
+[JsonNode](../cascara.lang.json/json/ast/JsonNode.md#equals)
+
+
+---
+
+### hashCode
+
+<span style="font-family: monospace; font-size: 80%;">public int __hashCode__()</span>
+
+
+
+**Overrides:**
+
+[JsonNode](../cascara.lang.json/json/ast/JsonNode.md#hashcode)
 
 
 ---

@@ -26,12 +26,12 @@ All Implemented Interfaces:<br/>
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                                                                                                                                               | Description |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| JsonLexemeBackedToken(int line, int column, int startOffset, [JsonTokenType](JsonTokenType.md) type)                                                                                                                                                                                                                                                                                      |             |
-| JsonLexemeBackedToken(int line, int column, int startOffset, [JsonTokenType](JsonTokenType.md) type, [JsonLiteral](JsonLiteral.md) literal)                                                                                                                                                                                                                                               |             |
-| JsonLexemeBackedToken(int line, int column, int startOffset, [JsonTokenType](JsonTokenType.md) type, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) lexeme)                                                                                                                                                                                 |             |
-| JsonLexemeBackedToken(int line, int column, int startOffset, [JsonTokenType](JsonTokenType.md) type, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) lexeme, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) content, [QuoteStyle](../../../cascara.common/lang/util/QuoteStyle.md) quoteStyle) |             |
+| Constructor                                                                                                                                                                                                                                                                                                                                                                               | Description                |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
+| JsonLexemeBackedToken(int line, int column, int startOffset, [JsonTokenType](JsonTokenType.md) type)                                                                                                                                                                                                                                                                                      | Structural Token           |
+| JsonLexemeBackedToken(int line, int column, int startOffset, [JsonTokenType](JsonTokenType.md) type, [JsonLiteral](JsonLiteral.md) literal)                                                                                                                                                                                                                                               | Literals Token             |
+| JsonLexemeBackedToken(int line, int column, int startOffset, [JsonTokenType](JsonTokenType.md) type, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) lexeme)                                                                                                                                                                                 | Number & Identifier Tokens |
+| JsonLexemeBackedToken(int line, int column, int startOffset, [JsonTokenType](JsonTokenType.md) type, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) lexeme, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) content, [QuoteStyle](../../../cascara.common/lang/util/QuoteStyle.md) quoteStyle) | String Token               |
 
 
 
@@ -39,14 +39,14 @@ All Implemented Interfaces:<br/>
 
 | Modifier and Type                                                                                                              | Method                                                                                                                                                          | Description |
 |--------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public int                                                                                                                     | [getStartLine](#getstartline)()                                                                                                                                 |             |
+| public int                                                                                                                     | [getStartColumn](#getstartcolumn)()                                                                                                                             |             |
+| public int                                                                                                                     | [getOffset](#getoffset)()                                                                                                                                       |             |
 | public [JsonTokenType](JsonTokenType.md)                                                                                       | [getType](#gettype)()                                                                                                                                           |             |
 | public [JsonLiteral](JsonLiteral.md)                                                                                           | [getLiteral](#getliteral)()                                                                                                                                     |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                            | [getLexeme](#getlexeme)()                                                                                                                                       |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                            | [getContent](#getcontent)()                                                                                                                                     |             |
 | public [QuoteStyle](../../../cascara.common/lang/util/QuoteStyle.md)                                                           | [getQuoteStyle](#getquotestyle)()                                                                                                                               |             |
-| public int                                                                                                                     | [getOffset](#getoffset)()                                                                                                                                       |             |
-| public int                                                                                                                     | [getStartLine](#getstartline)()                                                                                                                                 |             |
-| public int                                                                                                                     | [getStartColumn](#getstartcolumn)()                                                                                                                             |             |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonComment](JsonComment.md)> | [getComments](#getcomments)()                                                                                                                                   |             |
 | public void                                                                                                                    | [attachComments](#attachcomments)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonComment](JsonComment.md)> list) |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                            | [toString](#tostring)()                                                                                                                                         |             |
@@ -93,6 +93,33 @@ All Implemented Interfaces:<br/>
 
 
 ## Method Details
+
+### getStartLine
+
+<span style="font-family: monospace; font-size: 80%;">public int __getStartLine__()</span>
+
+
+
+
+---
+
+### getStartColumn
+
+<span style="font-family: monospace; font-size: 80%;">public int __getStartColumn__()</span>
+
+
+
+
+---
+
+### getOffset
+
+<span style="font-family: monospace; font-size: 80%;">public int __getOffset__()</span>
+
+
+
+
+---
 
 ### getType
 
@@ -147,33 +174,6 @@ All Implemented Interfaces:<br/>
 **Specified By:**
 
 [JsonToken](JsonToken.md)
-
-
----
-
-### getOffset
-
-<span style="font-family: monospace; font-size: 80%;">public int __getOffset__()</span>
-
-
-
-
----
-
-### getStartLine
-
-<span style="font-family: monospace; font-size: 80%;">public int __getStartLine__()</span>
-
-
-
-
----
-
-### getStartColumn
-
-<span style="font-family: monospace; font-size: 80%;">public int __getStartColumn__()</span>
-
-
 
 
 ---

@@ -44,6 +44,7 @@ Direct Known Subtypes:<br/>
 | public P                                                          | [setOptions](#setoptions)([LanguageOptions](../../../cascara.common/lang/util/LanguageOptions.md)<?> options) | Sets the language-specific options (e.g., indentation, Unicode support). |
 | public [YamlOptions](../util/YamlOptions.md)                      | [getOptions](#getoptions)()                                                                                   |                                                                          |
 | public [Reporter](../../../cascara.common/diagnostic/Reporter.md) | [getReporter](#getreporter)()                                                                                 |                                                                          |
+| public [SemVer](../../../cascara.common/semver/SemVer.md)         | [getVersion](#getversion)()                                                                                   |                                                                          |
 
 
 
@@ -135,6 +136,15 @@ Sets the language-specific options (e.g., indentation, Unicode support).
 ### getReporter
 
 <span style="font-family: monospace; font-size: 80%;">public [Reporter](../../../cascara.common/diagnostic/Reporter.md) __getReporter__()</span>
+
+
+
+
+---
+
+### getVersion
+
+<span style="font-family: monospace; font-size: 80%;">public [SemVer](../../../cascara.common/semver/SemVer.md) __getVersion__()</span>
 
 
 

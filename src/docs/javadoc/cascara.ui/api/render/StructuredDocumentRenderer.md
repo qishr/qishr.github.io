@@ -15,9 +15,9 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                  | Method                    | Description |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|-------------|
-| public abstract [AstParser](../../../cascara.common/lang/processor/AstParser.md)<? extends [AstNode](../../../cascara.common/lang/ast/AstNode.md), ? extends [Token](../../../cascara.common/lang/token/Token.md)> | [getParser](#getparser)() |             |
+| Modifier and Type                                                       | Method                    | Description |
+|-------------------------------------------------------------------------|---------------------------|-------------|
+| public abstract io.github.qishr.cascara.common.lang.processor.AstParser | [getParser](#getparser)() |             |
 
 
 
@@ -25,7 +25,7 @@ All Implemented Interfaces:<br/>
 
 ### getParser
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [AstParser](../../../cascara.common/lang/processor/AstParser.md)<? extends [AstNode](../../../cascara.common/lang/ast/AstNode.md), ? extends [Token](../../../cascara.common/lang/token/Token.md)> __getParser__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract io.github.qishr.cascara.common.lang.processor.AstParser __getParser__()</span>
 
 
 

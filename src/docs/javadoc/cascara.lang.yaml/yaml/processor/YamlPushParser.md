@@ -33,7 +33,7 @@ All Implemented Interfaces:<br/>
 
 ### Methods inherited from [AbstractYamlProcessor](AbstractYamlProcessor.md)
 
-setReporter, getOptions, getContentType, getServiceProperties, getReporter, setOptions
+setReporter, getOptions, getContentType, getServiceProperties, getVersion, getReporter, setOptions
 
 
 ## Method Details

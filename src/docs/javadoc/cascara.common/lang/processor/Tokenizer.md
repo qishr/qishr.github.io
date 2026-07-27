@@ -27,6 +27,7 @@ All Known Implementing Classes:<br/>
 | public abstract void                                                                                                                                | [open](#open)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)         | Low-level Streaming API: Resets the tokenizer state to read from a stream. |
 | public abstract T                                                                                                                                   | [nextToken](#nexttoken)()                                                                                                      | Low-level Streaming API: Pulls the next token on demand.                   |
 | public default [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<? extends [TokenType](../token/TokenType.md)> | [getTokenTypes](#gettokentypes)()                                                                                              |                                                                            |
+| public abstract int                                                                                                                                 | [getOffset](#getoffset)()                                                                                                      |                                                                            |
 
 
 
@@ -89,6 +90,15 @@ Low-level Streaming API: Pulls the next token on demand.
 ### getTokenTypes
 
 <span style="font-family: monospace; font-size: 80%;">public default [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<? extends [TokenType](../token/TokenType.md)> __getTokenTypes__()</span>
+
+
+
+
+---
+
+### getOffset
+
+<span style="font-family: monospace; font-size: 80%;">public abstract int __getOffset__()</span>
 
 
 

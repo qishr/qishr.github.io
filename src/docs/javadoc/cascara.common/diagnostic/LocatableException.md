@@ -18,14 +18,6 @@ Direct Known Subtypes:<br/>
 </span>
 
 
-## Field Summary
-
-| Modifier and Type       | Field                           | Description |
-|-------------------------|---------------------------------|-------------|
-| public static final int | [UNKNOWN_COORD](#unknown_coord) |             |
-
-
-
 ## Constructor Summary
 
 | Constructor                                                                                                                                                                                                                                                                                                                                                                                          | Description                                                   |
@@ -51,24 +43,6 @@ Direct Known Subtypes:<br/>
 ### Methods inherited from [LocalizableRuntimeException](LocalizableRuntimeException.md)
 
 getCode, getDetails
-
-
-## Field Details
-
-### UNKNOWN_COORD
-
-<span style="font-family: monospace; font-size: 80%;">public static final int __UNKNOWN_COORD__</span>
-
-
-
-**See Also:**
-
-
-[Constant Field Values](../../../../../../constant-values.md)
-
-
-
----
 
 
 ## Method Details

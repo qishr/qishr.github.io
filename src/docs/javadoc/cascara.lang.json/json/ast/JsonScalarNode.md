@@ -19,9 +19,9 @@ All Implemented Interfaces:<br/>
 
 | Constructor                                                                                                                                                                                                                                                   | Description                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| JsonScalarNode([JsonToken](../token/JsonToken.md) token, [PrimitiveType](../../../cascara.common/lang/type/PrimitiveType.md) schemaType, boolean isKey, [JsonOptions](../util/JsonOptions.md) options)                                                        | Constructor for use in parsers.            |
-| JsonScalarNode([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) content, [JsonOptions](../util/JsonOptions.md) options)                                                                                           |                                            |
+| JsonScalarNode([JsonToken](../token/JsonToken.md) token, [PrimitiveType](../../../cascara.common/lang/type/PrimitiveType.md) primitiveType, boolean isKey, [JsonOptions](../util/JsonOptions.md) options)                                                     | Constructor for use in parsers.            |
 | JsonScalarNode([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue, [QuoteStyle](../../../cascara.common/lang/util/QuoteStyle.md) quoteStyle, boolean isKey, [JsonOptions](../util/JsonOptions.md) options) |                                            |
+| JsonScalarNode([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) content, [JsonOptions](../util/JsonOptions.md) options)                                                                                           |                                            |
 | JsonScalarNode([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue, [QuoteStyle](../../../cascara.common/lang/util/QuoteStyle.md) quoteStyle)                                                               | A programmatic and serializer constructor. |
 | JsonScalarNode([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue)                                                                                                                                         | A programmatic and serializer constructor. |
 | JsonScalarNode([JsonToken](../token/JsonToken.md) tok, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue)                                                                                                 |                                            |
@@ -32,26 +32,26 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                        | Method                                                                                                            | Description                                                                            |
-|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](JsonNode.md)> | [getChildren](#getchildren)()                                                                                     |                                                                                        |
-| public [PrimitiveType](../../../cascara.common/lang/type/PrimitiveType.md)                                               | [getPrimitiveType](#getprimitivetype)()                                                                           |                                                                                        |
-| public [QuoteStyle](../../../cascara.common/lang/util/QuoteStyle.md)                                                     | [getQuoteStyle](#getquotestyle)()                                                                                 |                                                                                        |
-| public [JsonScalarNode](JsonScalarNode.md)                                                                               | [setQuoteStyle](#setquotestyle)([QuoteStyle](../../../cascara.common/lang/util/QuoteStyle.md) style)              |                                                                                        |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                      | [getLexeme](#getlexeme)()                                                                                         |                                                                                        |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                      | [getContent](#getcontent)()                                                                                       |                                                                                        |
-| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)                      | [getPrimitive](#getprimitive)()                                                                                   | Returns the dialect-aware JVM value (cached).                                          |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                      | [asString](#asstring)()                                                                                           | Returns the logical clean text value, stripped of outer formatting and escape markers. |
-| public int                                                                                                               | [asInteger](#asinteger)()                                                                                         |                                                                                        |
-| public int                                                                                                               | [asInteger](#asinteger)(int defaultValue)                                                                         |                                                                                        |
-| public double                                                                                                            | [asDouble](#asdouble)()                                                                                           |                                                                                        |
-| public double                                                                                                            | [asDouble](#asdouble)(double defaultValue)                                                                        |                                                                                        |
-| public boolean                                                                                                           | [asBoolean](#asboolean)()                                                                                         |                                                                                        |
-| public boolean                                                                                                           | [asBoolean](#asboolean)(boolean defaultValue)                                                                     |                                                                                        |
-| public boolean                                                                                                           | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o) |                                                                                        |
-| public int                                                                                                               | [hashCode](#hashcode)()                                                                                           |                                                                                        |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                      | [toString](#tostring)()                                                                                           |                                                                                        |
-| public [JsonOptions](../util/JsonOptions.md)                                                                             | [getOptions](#getoptions)()                                                                                       |                                                                                        |
+| Modifier and Type                                                                                                        | Method                                                                                                            | Description                                                                                            |
+|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| public [PrimitiveType](../../../cascara.common/lang/type/PrimitiveType.md)                                               | [getPrimitiveType](#getprimitivetype)()                                                                           |                                                                                                        |
+| public [QuoteStyle](../../../cascara.common/lang/util/QuoteStyle.md)                                                     | [getQuoteStyle](#getquotestyle)()                                                                                 |                                                                                                        |
+| public [JsonScalarNode](JsonScalarNode.md)                                                                               | [setQuoteStyle](#setquotestyle)([QuoteStyle](../../../cascara.common/lang/util/QuoteStyle.md) style)              |                                                                                                        |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                      | [getLexeme](#getlexeme)()                                                                                         |                                                                                                        |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                      | [getContent](#getcontent)()                                                                                       |                                                                                                        |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)                      | [getPrimitive](#getprimitive)()                                                                                   | Returns the dialect-aware JVM value (cached).                                                          |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                      | [asString](#asstring)()                                                                                           | Returns the logical clean text value, stripped of outer formatting and escape markers.                 |
+| public int                                                                                                               | [asInteger](#asinteger)()                                                                                         |                                                                                                        |
+| public int                                                                                                               | [asInteger](#asinteger)(int defaultValue)                                                                         |                                                                                                        |
+| public double                                                                                                            | [asDouble](#asdouble)()                                                                                           |                                                                                                        |
+| public double                                                                                                            | [asDouble](#asdouble)(double defaultValue)                                                                        |                                                                                                        |
+| public boolean                                                                                                           | [asBoolean](#asboolean)()                                                                                         |                                                                                                        |
+| public boolean                                                                                                           | [asBoolean](#asboolean)(boolean defaultValue)                                                                     | Returns the boolean value of the scalar, if there is one, otherwise the specified default is returned. |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](JsonNode.md)> | [getChildren](#getchildren)()                                                                                     |  Scalars are leaf nodes and have no children.                                                          |
+| public boolean                                                                                                           | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o) |                                                                                                        |
+| public int                                                                                                               | [hashCode](#hashcode)()                                                                                           |                                                                                                        |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                      | [toString](#tostring)()                                                                                           |                                                                                                        |
+| public [JsonOptions](../util/JsonOptions.md)                                                                             | [getOptions](#getoptions)()                                                                                       |                                                                                                        |
 
 
 ### Methods inherited from [JsonNode](JsonNode.md)
@@ -61,24 +61,15 @@ getEndColumn, getEndLine, getComments, getStartColumn, getToken, setToken, addCo
 
 ## Method Details
 
-### getChildren
-
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](JsonNode.md)> __getChildren__()</span>
-
-
-
-**Overrides:**
-
-[JsonNode](../cascara.lang.json/json/ast/JsonNode.md#getchildren)
-
-
----
-
 ### getPrimitiveType
 
 <span style="font-family: monospace; font-size: 80%;">public [PrimitiveType](../../../cascara.common/lang/type/PrimitiveType.md) __getPrimitiveType__()</span>
 
 
+
+**Specified By:**
+
+[ScalarAstNode](../../../cascara.common/lang/ast/ScalarAstNode.md)
 
 
 ---
@@ -230,11 +221,25 @@ Returns the logical clean text value, stripped of outer formatting and escape ma
 
 <span style="font-family: monospace; font-size: 80%;">public boolean __asBoolean__(boolean defaultValue)</span>
 
-
+Returns the boolean value of the scalar, if there is one, otherwise the specified default is returned.
 
 **Specified By:**
 
 [ScalarAstNode](../../../cascara.common/lang/ast/ScalarAstNode.md)
+
+
+---
+
+### getChildren
+
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](JsonNode.md)> __getChildren__()</span>
+
+
+Scalars are leaf nodes and have no children.
+
+**Overrides:**
+
+[JsonNode](../cascara.lang.json/json/ast/JsonNode.md#getchildren)
 
 
 ---

@@ -38,22 +38,26 @@ YAML indicators and scalars.
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                         | Method                                                                                                                     | Description |
-|-------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|-------------|
-| protected [YamlTokenizer](YamlTokenizer.md)                                                                                               | [self](#self)()                                                                                                            |             |
-| public int                                                                                                                                | [getLine](#getline)()                                                                                                      |             |
-| public int                                                                                                                                | [getColumn](#getcolumn)()                                                                                                  |             |
-| public void                                                                                                                               | [open](#open)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)           |             |
-| public void                                                                                                                               | [open](#open)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)           |             |
-| public void                                                                                                                               | [open](#open)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)     |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlToken](../token/YamlToken.md)>       | [tokenize](#tokenize)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source) |             |
-| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[YamlTokenType](../token/YamlTokenType.md)> | [getTokenTypes](#gettokentypes)()                                                                                          |             |
-| public [YamlToken](../token/YamlToken.md)                                                                                                 | [nextToken](#nexttoken)()                                                                                                  |             |
+| Modifier and Type                                                                                                                         | Method                                                                                                                     | Description                      |
+|-------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|----------------------------------|
+| protected [YamlTokenizer](YamlTokenizer.md)                                                                                               | [self](#self)()                                                                                                            |                                  |
+| public int                                                                                                                                | [getOffset](#getoffset)()                                                                                                  |                                  |
+| public int                                                                                                                                | [getLine](#getline)()                                                                                                      |                                  |
+| public int                                                                                                                                | [getColumn](#getcolumn)()                                                                                                  |                                  |
+| public void                                                                                                                               | [open](#open)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)           |                                  |
+| public void                                                                                                                               | [open](#open)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)           |                                  |
+| public void                                                                                                                               | [open](#open)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)     |                                  |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlToken](../token/YamlToken.md)>       | [tokenize](#tokenize)(byte[] bytes)                                                                                        |                                  |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlToken](../token/YamlToken.md)>       | [tokenize](#tokenize)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source) |                                  |
+| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[YamlTokenType](../token/YamlTokenType.md)> | [getTokenTypes](#gettokentypes)()                                                                                          |                                  |
+| public [YamlToken](../token/YamlToken.md)                                                                                                 | [nextToken](#nexttoken)()                                                                                                  |                                  |
+| public [YamlToken](../token/YamlToken.md)                                                                                                 | [peekToken](#peektoken)()                                                                                                  |                                  |
+| public void                                                                                                                               | [scanBlockScalar](#scanblockscalar)(char headerChar)                                                                       | Scans a folded block scalar (>). |
 
 
 ### Methods inherited from [AbstractYamlProcessor](AbstractYamlProcessor.md)
 
-setReporter, getOptions, getContentType, getServiceProperties, getReporter, setOptions
+setReporter, getOptions, getContentType, getServiceProperties, getVersion, getReporter, setOptions
 
 
 ## Method Details
@@ -67,6 +71,19 @@ setReporter, getOptions, getContentType, getServiceProperties, getReporter, setO
 **Overrides:**
 
 [AbstractYamlProcessor](../cascara.lang.yaml/yaml/processor/AbstractYamlProcessor.md#self)
+
+
+---
+
+### getOffset
+
+<span style="font-family: monospace; font-size: 80%;">public int __getOffset__()</span>
+
+
+
+**Specified By:**
+
+[Tokenizer](../../../cascara.common/lang/processor/Tokenizer.md)
 
 
 ---
@@ -130,6 +147,15 @@ setReporter, getOptions, getContentType, getServiceProperties, getReporter, setO
 
 ### tokenize
 
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlToken](../token/YamlToken.md)> __tokenize__(byte[] bytes)</span>
+
+
+
+
+---
+
+### tokenize
+
 <span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlToken](../token/YamlToken.md)> __tokenize__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source)</span>
 
 
@@ -163,6 +189,32 @@ setReporter, getOptions, getContentType, getServiceProperties, getReporter, setO
 **Specified By:**
 
 [Tokenizer](../../../cascara.common/lang/processor/Tokenizer.md)
+
+
+---
+
+### peekToken
+
+<span style="font-family: monospace; font-size: 80%;">public [YamlToken](../token/YamlToken.md) __peekToken__()</span>
+
+
+
+**Throws:**
+
+[ParserException](../../../cascara.common/lang/exception/ParserException.md)
+
+
+---
+
+### scanBlockScalar
+
+<span style="font-family: monospace; font-size: 80%;">public void __scanBlockScalar__(char headerChar)</span>
+
+Scans a folded block scalar (>).YAML 1.2 rules:
+  - The first newline after '>' is NOT part of the content.
+  - Each indented line becomes its own SCALAR token.
+  - Blank lines produce NEWLINE tokens.
+  - Folding is done in the parser, not here.
 
 
 ---

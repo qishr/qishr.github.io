@@ -22,6 +22,7 @@
     |-----------------------------------------------------------------------------------------------|-------------|
     | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html) |             |
     | [cascara.common](../cascara.common/index.md)                                                  |             |
+    | [javafx.graphics](../javafx.graphicsindex.md)                                                 |             |
 
 
 === "Opens"
@@ -33,6 +34,7 @@
     | [io.github.qishr.cascara.lang.yaml.exception](yaml/exception/index.md)   |                                                                             |
     | [io.github.qishr.cascara.lang.yaml.processor](yaml/processor/index.md)   |                                                                             |
     | [io.github.qishr.cascara.lang.yaml.token](yaml/token/index.md)           |                                                                             |
+    | [io.github.qishr.cascara.lang.yaml.util](yaml/util/index.md)             |                                                                             |
 
 
 

@@ -31,7 +31,7 @@ Standard implementation for JSON serialization.
 | public [ContentType](../../../cascara.common/util/ContentType.md)                                      | [getContentType](#getcontenttype)()                                                                                                                                                                                                       |             |
 | public [JsonSerializer](JsonSerializer.md)                                                             | [setReporter](#setreporter)([Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter)                                                                                                                                          |             |
 | public [JsonSerializer](JsonSerializer.md)                                                             | [setOptions](#setoptions)([LanguageOptions](../../../cascara.common/lang/util/LanguageOptions.md)<?> options)                                                                                                                             |             |
-| public [JsonSerializer](JsonSerializer.md)                                                             | [setParser](#setparser)([AstParser](../../../cascara.common/lang/processor/AstParser.md)<[JsonNode](../ast/JsonNode.md), ?> parser)                                                                                                       |             |
+| public [JsonSerializer](JsonSerializer.md)                                                             | [setParser](#setparser)([AstParser](../../../cascara.common/lang/processor/AstParser.md)<[JsonNode](../ast/JsonNode.md), ?, ?> parser)                                                                                                    |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)    | [toText](#totext)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                               |             |
 | public [JsonNode](../ast/JsonNode.md)                                                                  | [toAst](#toast)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                                 |             |
 | public void                                                                                            | [toWriter](#towriter)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance, [Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html) writer)        |             |
@@ -111,7 +111,7 @@ serializeObject, serializeList, getAllMethods, error, serialize, serializeMap, g
 
 ### setParser
 
-<span style="font-family: monospace; font-size: 80%;">public [JsonSerializer](JsonSerializer.md) __setParser__([AstParser](../../../cascara.common/lang/processor/AstParser.md)<[JsonNode](../ast/JsonNode.md), ?> parser)</span>
+<span style="font-family: monospace; font-size: 80%;">public [JsonSerializer](JsonSerializer.md) __setParser__([AstParser](../../../cascara.common/lang/processor/AstParser.md)<[JsonNode](../ast/JsonNode.md), ?, ?> parser)</span>
 
 
 

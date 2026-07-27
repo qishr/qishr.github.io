@@ -14,14 +14,12 @@ Package [io.github.qishr.cascara.common.lang.util](index.md)
 
 ##Enum Constants
 
-| Enum Constant                   | Description |
-|---------------------------------|-------------|
-| [PLAIN](#plain)                 |             |
-| [SINGLE](#single)               |             |
-| [DOUBLE](#double)               |             |
-| [LITERAL_BLOCK](#literal_block) |             |
-| [FOLDED](#folded)               |             |
-| [UNDETERMINED](#undetermined)   |             |
+| Enum Constant                 | Description |
+|-------------------------------|-------------|
+| [PLAIN](#plain)               |             |
+| [SINGLE](#single)             |             |
+| [DOUBLE](#double)             |             |
+| [UNDETERMINED](#undetermined) |             |
 
 
 
@@ -57,24 +55,6 @@ public static final  SINGLE
 ### DOUBLE
 
 public static final  DOUBLE
-
-
-
-
----
-
-### LITERAL_BLOCK
-
-public static final  LITERAL_BLOCK
-
-
-
-
----
-
-### FOLDED
-
-public static final  FOLDED
 
 
 

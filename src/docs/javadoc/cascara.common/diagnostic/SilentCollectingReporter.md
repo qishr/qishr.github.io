@@ -34,7 +34,7 @@ Package [io.github.qishr.cascara.common.diagnostic](index.md)
 
 ### Methods inherited from [AbstractReporter](AbstractReporter.md)
 
-errorAt, printStackTrace, getProblemCollector, trace, debug, getDiagnosticCollector, buildDiagnostic, warnAt, errorAt, infoAt, infoAt, isProblem, errorAt, infoAt, [writeString](#writestring), errorAt, warnAt, error, setDiagnosticCollector, warnAt, outputToConsole, warn, disableSystemOutput, setDisableSystemOutput, error, setDisableFlush, buildDiagnostic, buildDiagnostic, setProblemCollector, errorAt, errorAt, disableFlush, errorAt, setPrintStackTrace, info, error, error, buildDiagnostic, setLevel, getStringWriter
+errorAt, isSystemOutputEnabled, getProblemCollector, trace, setStackTraceEnabled, debug, getDiagnosticCollector, buildDiagnostic, warnAt, errorAt, infoAt, setSystemErrorEnabled, infoAt, isProblem, errorAt, infoAt, [writeString](#writestring), errorAt, warnAt, error, setDiagnosticCollector, warnAt, outputToConsole, setFlushEnabled, warn, error, setSystemOutputEnabled, buildDiagnostic, buildDiagnostic, setProblemCollector, errorAt, errorAt, isStackTraceEnabled, errorAt, info, isFlushEnabled, getLevel, error, error, buildDiagnostic, setLevel, getStringWriter
 
 
 ## Method Details

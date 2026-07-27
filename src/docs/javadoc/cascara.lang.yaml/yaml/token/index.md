@@ -6,17 +6,19 @@
 
 === "All Classes and Interfaces"
 
-    | Class                             | Description |
-    |-----------------------------------|-------------|
-    | [YamlToken](YamlToken.md)         |             |
-    | [YamlTokenType](YamlTokenType.md) |             |
+    | Class                               | Description |
+    |-------------------------------------|-------------|
+    | [YamlErrorToken](YamlErrorToken.md) |             |
+    | [YamlToken](YamlToken.md)           |             |
+    | [YamlTokenType](YamlTokenType.md)   |             |
 
 
 === "Classes"
 
-    | Class                     | Description |
-    |---------------------------|-------------|
-    | [YamlToken](YamlToken.md) |             |
+    | Class                               | Description |
+    |-------------------------------------|-------------|
+    | [YamlErrorToken](YamlErrorToken.md) |             |
+    | [YamlToken](YamlToken.md)           |             |
 
 
 === "Enum Classes"

@@ -6,23 +6,23 @@ Language-agnostic Primitive type and TypeDescriptor utilities.
 
 === "All Classes and Interfaces"
 
-    | Class                                                   | Description                                                                |
-    |---------------------------------------------------------|----------------------------------------------------------------------------|
-    | [AbstractScalarDescriptor](AbstractScalarDescriptor.md) |                                                                            |
-    | [AbstractTypeDescriptor](AbstractTypeDescriptor.md)     |                                                                            |
-    | [ByteArrayDescriptor](ByteArrayDescriptor.md)           |                                                                            |
-    | [DateTimeTypeDescriptor](DateTimeTypeDescriptor.md)     |                                                                            |
-    | [InstantTypeDescriptor](InstantTypeDescriptor.md)       |                                                                            |
-    | [PathTypeDescriptor](PathTypeDescriptor.md)             |                                                                            |
-    | [PrimitiveType](PrimitiveType.md)                       | Based on https://json-schema.org/draft-04/json-schema-core#rfc.section.3.5 |
-    | [ScalarDescriptor](ScalarDescriptor.md)                 |                                                                            |
-    | [ScalarValue](ScalarValue.md)                           |                                                                            |
-    | [TypeDescriptor](TypeDescriptor.md)                     |                                                                            |
-    | [TypeDescriptorFactory](TypeDescriptorFactory.md)       |                                                                            |
-    | [TypeReference](TypeReference.md)                       | References a generic type.                                                 |
-    | [TypeSerializer](TypeSerializer.md)                     |                                                                            |
-    | [UriTypeDescriptor](UriTypeDescriptor.md)               |                                                                            |
-    | [UuidTypeDescriptor](UuidTypeDescriptor.md)             |                                                                            |
+    | Class                                                   | Description                                                                                                                      |
+    |---------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+    | [AbstractScalarDescriptor](AbstractScalarDescriptor.md) |                                                                                                                                  |
+    | [AbstractTypeDescriptor](AbstractTypeDescriptor.md)     |                                                                                                                                  |
+    | [ByteArrayDescriptor](ByteArrayDescriptor.md)           |                                                                                                                                  |
+    | [DateTimeTypeDescriptor](DateTimeTypeDescriptor.md)     |                                                                                                                                  |
+    | [InstantTypeDescriptor](InstantTypeDescriptor.md)       |                                                                                                                                  |
+    | [PathTypeDescriptor](PathTypeDescriptor.md)             |                                                                                                                                  |
+    | [PrimitiveType](PrimitiveType.md)                       | Based on [JSON Schema: core definitions and terminology §3.5](https://json-schema.org/draft-04/json-schema-core#rfc.section.3.5) |
+    | [ScalarDescriptor](ScalarDescriptor.md)                 |                                                                                                                                  |
+    | [ScalarValue](ScalarValue.md)                           |                                                                                                                                  |
+    | [TypeDescriptor](TypeDescriptor.md)                     |                                                                                                                                  |
+    | [TypeDescriptorFactory](TypeDescriptorFactory.md)       |                                                                                                                                  |
+    | [TypeReference](TypeReference.md)                       | References a generic type.                                                                                                       |
+    | [TypeSerializer](TypeSerializer.md)                     |                                                                                                                                  |
+    | [UriTypeDescriptor](UriTypeDescriptor.md)               |                                                                                                                                  |
+    | [UuidTypeDescriptor](UuidTypeDescriptor.md)             |                                                                                                                                  |
 
 
 === "Interfaces"
@@ -59,8 +59,8 @@ Language-agnostic Primitive type and TypeDescriptor utilities.
 
 === "Enum Classes"
 
-    | Class                             | Description                                                                |
-    |-----------------------------------|----------------------------------------------------------------------------|
-    | [PrimitiveType](PrimitiveType.md) | Based on https://json-schema.org/draft-04/json-schema-core#rfc.section.3.5 |
+    | Class                             | Description                                                                                                                      |
+    |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+    | [PrimitiveType](PrimitiveType.md) | Based on [JSON Schema: core definitions and terminology §3.5](https://json-schema.org/draft-04/json-schema-core#rfc.section.3.5) |
 
 

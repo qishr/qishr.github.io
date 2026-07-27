@@ -7,6 +7,9 @@ Package [io.github.qishr.cascara.lang.yaml.token](index.md)
 All Implemented Interfaces:<br/>
     [Token](../../../cascara.common/lang/token/Token.md)
 
+Direct Known Subtypes:<br/>
+    [YamlErrorToken](YamlErrorToken.md)
+
 
 ----
 
@@ -15,9 +18,10 @@ All Implemented Interfaces:<br/>
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                                                         | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| YamlToken(int line, int column, int startOffset, [YamlTokenType](YamlTokenType.md) type, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) lexeme, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) content) |             |
+| Constructor                                                                                                                                                                                                                                                                                                                                           | Description      |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
+| YamlToken(int line, int column, int startOffset, [YamlTokenType](YamlTokenType.md) type)                                                                                                                                                                                                                                                              | Structural Token |
+| YamlToken(int line, int column, int startOffset, [YamlTokenType](YamlTokenType.md) type, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) lexeme, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) content, [ScalarStyle](../ast/ScalarStyle.md) scalarStyle) |                  |
 
 
 
@@ -25,18 +29,58 @@ All Implemented Interfaces:<br/>
 
 | Modifier and Type                                                                                   | Method                                                      | Description |
 |-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------|-------------|
+| public int                                                                                          | [getStartLine](#getstartline)()                             |             |
+| public int                                                                                          | [getStartColumn](#getstartcolumn)()                         |             |
+| public int                                                                                          | [getOffset](#getoffset)()                                   |             |
 | public [YamlTokenType](YamlTokenType.md)                                                            | [getType](#gettype)()                                       |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getLexeme](#getlexeme)()                                   |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getContent](#getcontent)()                                 |             |
-| public int                                                                                          | [getOffset](#getoffset)()                                   |             |
-| public int                                                                                          | [getStartLine](#getstartline)()                             |             |
-| public int                                                                                          | [getStartColumn](#getstartcolumn)()                         |             |
+| public [ScalarStyle](../ast/ScalarStyle.md)                                                         | [getScalarStyle](#getscalarstyle)()                         |             |
 | public void                                                                                         | [setType](#settype)([YamlTokenType](YamlTokenType.md) type) |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toString](#tostring)()                                     |             |
 
 
 
 ## Method Details
+
+### getStartLine
+
+<span style="font-family: monospace; font-size: 80%;">public int __getStartLine__()</span>
+
+
+
+**Specified By:**
+
+[Token](../../../cascara.common/lang/token/Token.md)
+
+
+---
+
+### getStartColumn
+
+<span style="font-family: monospace; font-size: 80%;">public int __getStartColumn__()</span>
+
+
+
+**Specified By:**
+
+[Token](../../../cascara.common/lang/token/Token.md)
+
+
+---
+
+### getOffset
+
+<span style="font-family: monospace; font-size: 80%;">public int __getOffset__()</span>
+
+
+
+**Specified By:**
+
+[Token](../../../cascara.common/lang/token/Token.md)
+
+
+---
 
 ### getType
 
@@ -77,41 +121,11 @@ All Implemented Interfaces:<br/>
 
 ---
 
-### getOffset
+### getScalarStyle
 
-<span style="font-family: monospace; font-size: 80%;">public int __getOffset__()</span>
-
-
-
-**Specified By:**
-
-[Token](../../../cascara.common/lang/token/Token.md)
+<span style="font-family: monospace; font-size: 80%;">public [ScalarStyle](../ast/ScalarStyle.md) __getScalarStyle__()</span>
 
 
----
-
-### getStartLine
-
-<span style="font-family: monospace; font-size: 80%;">public int __getStartLine__()</span>
-
-
-
-**Specified By:**
-
-[Token](../../../cascara.common/lang/token/Token.md)
-
-
----
-
-### getStartColumn
-
-<span style="font-family: monospace; font-size: 80%;">public int __getStartColumn__()</span>
-
-
-
-**Specified By:**
-
-[Token](../../../cascara.common/lang/token/Token.md)
 
 
 ---

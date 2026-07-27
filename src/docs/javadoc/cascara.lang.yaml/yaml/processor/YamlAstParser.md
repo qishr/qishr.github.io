@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.lang.yaml.processor](index.md)
                 io.github.qishr.cascara.lang.yaml.processor.YamlAstParser<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [AstParser](../../../cascara.common/lang/processor/AstParser.md)<[YamlNode](../ast/YamlNode.md), [YamlToken](../token/YamlToken.md)>
+    [AstParser](../../../cascara.common/lang/processor/AstParser.md)<[YamlNode](../ast/YamlNode.md), [YamlToken](../token/YamlToken.md), [YamlTokenizer](YamlTokenizer.md)>
 
 
 ----
@@ -27,9 +27,9 @@ comments, indentation styles, and quote styles for round-tripping.
 
 ## Constructor Summary
 
-| Constructor     | Description                        |
-|-----------------|------------------------------------|
-| YamlAstParser() | Empty default constructor for SPI. |
+| Constructor     | Description                  |
+|-----------------|------------------------------|
+| YamlAstParser() | Default constructor for SPI. |
 
 
 
@@ -40,18 +40,21 @@ comments, indentation styles, and quote styles for round-tripping.
 | protected [YamlAstParser](YamlAstParser.md)                                                                                         | [self](#self)()                                                                                                                                      |                                                                            |
 | public [YamlAstParser](YamlAstParser.md)                                                                                            | [setOptions](#setoptions)([YamlOptions](../util/YamlOptions.md) options)                                                                             |                                                                            |
 | public [YamlNode](../ast/YamlNode.md)                                                                                               | [parse](#parse)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                   | Entry point for parsing a full YAML source string.                         |
+| public [YamlNode](../ast/YamlNode.md)                                                                                               | [parse](#parse)(byte[] data)                                                                                                                         |                                                                            |
 | public [YamlNode](../ast/YamlNode.md)                                                                                               | [parse](#parse)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)                                   |                                                                            |
 | public [YamlNode](../ast/YamlNode.md)                                                                                               | [parse](#parse)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)                             | Entry point for parsing an InputStream.                                    |
 | public io.github.qishr.cascara.lang.yaml.ast.@io.github.qishr.cascara.common.lang.annotation.Experimental YamlStreamNode            | [parseMulti](#parsemulti)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                         | Type-safe method specifically for multi-document scenarios.                |
+| public io.github.qishr.cascara.lang.yaml.ast.@io.github.qishr.cascara.common.lang.annotation.Experimental YamlStreamNode            | [parseMulti](#parsemulti)(byte[] data)                                                                                                               |                                                                            |
 | public io.github.qishr.cascara.lang.yaml.ast.@io.github.qishr.cascara.common.lang.annotation.Experimental YamlStreamNode            | [parseMulti](#parsemulti)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)                   | Type-safe method specifically for multi-document scenarios.                |
-| public [YamlNode](../ast/YamlNode.md)                                                                                               | [parse](#parse)([Tokenizer](../../../cascara.common/lang/processor/Tokenizer.md)<[YamlToken](../token/YamlToken.md)> tokenizer)                      | Primary parsing core driven directly by the Tokenizer interface structure. |
+| public [YamlNode](../ast/YamlNode.md)                                                                                               | [parse](#parse)([YamlTokenizer](YamlTokenizer.md) tokenizer)                                                                                         | Primary parsing core driven directly by the Tokenizer interface structure. |
 | public [YamlNode](../ast/YamlNode.md)                                                                                               | [parse](#parse)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlToken](../token/YamlToken.md)> tokens) | Entry point for parsing a list of tokens.                                  |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlToken](../token/YamlToken.md)> | [getTokens](#gettokens)()                                                                                                                            |                                                                            |
+| public [YamlTokenizer](YamlTokenizer.md)                                                                                            | [getTokenizer](#gettokenizer)()                                                                                                                      |                                                                            |
 
 
 ### Methods inherited from [AbstractYamlProcessor](AbstractYamlProcessor.md)
 
-setReporter, getOptions, getContentType, getServiceProperties, getReporter, [setOptions](#setoptions)
+setReporter, getOptions, getContentType, getServiceProperties, getVersion, getReporter, [setOptions](#setoptions)
 
 
 ## Method Details
@@ -87,6 +90,15 @@ Entry point for parsing a full YAML source string.
 **Specified By:**
 
 [AstParser](../../../cascara.common/lang/processor/AstParser.md)
+
+
+---
+
+### parse
+
+<span style="font-family: monospace; font-size: 80%;">public [YamlNode](../ast/YamlNode.md) __parse__(byte[] data)</span>
+
+
 
 
 ---
@@ -130,6 +142,16 @@ Type-safe method specifically for multi-document scenarios.
 ### parseMulti
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Experimental<br/>
+public io.github.qishr.cascara.lang.yaml.ast.@io.github.qishr.cascara.common.lang.annotation.Experimental YamlStreamNode __parseMulti__(byte[] data)</span>
+
+
+
+
+---
+
+### parseMulti
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Experimental<br/>
 public io.github.qishr.cascara.lang.yaml.ast.@io.github.qishr.cascara.common.lang.annotation.Experimental YamlStreamNode __parseMulti__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)</span>
 
 Type-safe method specifically for multi-document scenarios.
@@ -139,13 +161,9 @@ Type-safe method specifically for multi-document scenarios.
 
 ### parse
 
-<span style="font-family: monospace; font-size: 80%;">public [YamlNode](../ast/YamlNode.md) __parse__([Tokenizer](../../../cascara.common/lang/processor/Tokenizer.md)<[YamlToken](../token/YamlToken.md)> tokenizer)</span>
+<span style="font-family: monospace; font-size: 80%;">public [YamlNode](../ast/YamlNode.md) __parse__([YamlTokenizer](YamlTokenizer.md) tokenizer)</span>
 
 Primary parsing core driven directly by the Tokenizer interface structure.
-
-**Specified By:**
-
-[AstParser](../../../cascara.common/lang/processor/AstParser.md)
 
 
 ---
@@ -168,6 +186,23 @@ Entry point for parsing a list of tokens.
 <span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlToken](../token/YamlToken.md)> __getTokens__()</span>
 
 
+
+**Specified By:**
+
+[AstParser](../../../cascara.common/lang/processor/AstParser.md)
+
+
+---
+
+### getTokenizer
+
+<span style="font-family: monospace; font-size: 80%;">public [YamlTokenizer](YamlTokenizer.md) __getTokenizer__()</span>
+
+
+
+**Specified By:**
+
+[AstParser](../../../cascara.common/lang/processor/AstParser.md)
 
 
 ---

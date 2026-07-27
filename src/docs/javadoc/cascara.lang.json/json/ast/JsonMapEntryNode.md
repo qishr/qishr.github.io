@@ -28,18 +28,20 @@ Represents the structural pairing of a key and a value in a JSON object.
 
 ## Method Summary
 
-| Modifier and Type                                                                                                        | Method                                               | Description |
-|--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|-------------|
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                      | [getKey](#getkey)()                                  |             |
-| public [JsonNode](JsonNode.md)                                                                                           | [getValue](#getvalue)()                              |             |
-| public [JsonMapEntryNode](JsonMapEntryNode.md)                                                                           | [setRaw](#setraw)([JsonNode](JsonNode.md) value)     |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](JsonNode.md)> | [getChildren](#getchildren)()                        |             |
-| public [JsonMapEntryNode](JsonMapEntryNode.md)                                                                           | [setValue](#setvalue)([JsonNode](JsonNode.md) value) |             |
+| Modifier and Type                                                                                                        | Method                                                                                                            | Description |
+|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------|
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                      | [getKey](#getkey)()                                                                                               |             |
+| public [JsonNode](JsonNode.md)                                                                                           | [getValue](#getvalue)()                                                                                           |             |
+| public [JsonMapEntryNode](JsonMapEntryNode.md)                                                                           | [setRaw](#setraw)([JsonNode](JsonNode.md) value)                                                                  |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](JsonNode.md)> | [getChildren](#getchildren)()                                                                                     |             |
+| public [JsonMapEntryNode](JsonMapEntryNode.md)                                                                           | [setValue](#setvalue)([JsonNode](JsonNode.md) value)                                                              |             |
+| public boolean                                                                                                           | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o) |             |
+| public int                                                                                                               | [hashCode](#hashcode)()                                                                                           |             |
 
 
 ### Methods inherited from [JsonNode](JsonNode.md)
 
-getEndColumn, getEndLine, getComments, getStartColumn, getToken, setToken, equals, addComment, getStartLine, hashCode
+getEndColumn, getEndLine, getComments, getStartColumn, getToken, setToken, addComment, getStartLine
 
 
 ## Method Details
@@ -101,6 +103,32 @@ getEndColumn, getEndLine, getComments, getStartColumn, getToken, setToken, equal
 <span style="font-family: monospace; font-size: 80%;">public [JsonMapEntryNode](JsonMapEntryNode.md) __setValue__([JsonNode](JsonNode.md) value)</span>
 
 
+
+
+---
+
+### equals
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __equals__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)</span>
+
+
+
+**Overrides:**
+
+[JsonNode](../cascara.lang.json/json/ast/JsonNode.md#equals)
+
+
+---
+
+### hashCode
+
+<span style="font-family: monospace; font-size: 80%;">public int __hashCode__()</span>
+
+
+
+**Overrides:**
+
+[JsonNode](../cascara.lang.json/json/ast/JsonNode.md#hashcode)
 
 
 ---

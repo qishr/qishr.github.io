@@ -9,7 +9,7 @@ The types used to store structure and documentation information of the API.
     | Class                                     | Description                                                                        |
     |-------------------------------------------|------------------------------------------------------------------------------------|
     | [ChompingStyle](ChompingStyle.md)         |                                                                                    |
-    | [CollectionStyle](CollectionStyle.md)     |                                                                                    |
+    | [NodeStyle](NodeStyle.md)                 | The presentation style of a YAML node.                                             |
     | [ScalarStyle](ScalarStyle.md)             |                                                                                    |
     | [YamlAliasNode](YamlAliasNode.md)         |                                                                                    |
     | [YamlAnchorNode](YamlAnchorNode.md)       |                                                                                    |
@@ -51,10 +51,10 @@ The types used to store structure and documentation information of the API.
 
 === "Enum Classes"
 
-    | Class                                 | Description |
-    |---------------------------------------|-------------|
-    | [ChompingStyle](ChompingStyle.md)     |             |
-    | [CollectionStyle](CollectionStyle.md) |             |
-    | [ScalarStyle](ScalarStyle.md)         |             |
+    | Class                             | Description                            |
+    |-----------------------------------|----------------------------------------|
+    | [ChompingStyle](ChompingStyle.md) |                                        |
+    | [NodeStyle](NodeStyle.md)         | The presentation style of a YAML node. |
+    | [ScalarStyle](ScalarStyle.md)     |                                        |
 
 
