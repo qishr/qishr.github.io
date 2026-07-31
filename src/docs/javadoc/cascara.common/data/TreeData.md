@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.data](index.md)
         io.github.qishr.cascara.common.data.TreeData<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [TreeNode](TreeNode.md)<T>, [TableData](TableData.md)
+    [TreeNode](TreeNode.md)<T>, [TabularData](TabularData.md)
 
 All Known Implementing Classes:<br/>
     [ReferenceTreeData](reference/ReferenceTreeData.md), [AstTreeData](../lang/util/AstTreeData.md), [ObservableTreeData](../../cascara.ui/api/data/ObservableTreeData.md)

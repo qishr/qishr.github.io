@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
         io.github.qishr.cascara.common.util.Properties<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [TableData](../data/TableData.md), [Duplicable](Duplicable.md)<[Properties](Properties.md)>
+    [TabularData](../data/TabularData.md), [Duplicable](Duplicable.md)<[Properties](Properties.md)>
 
 Direct Known Subtypes:<br/>
     [JarManifest](JarManifest.md)
@@ -73,7 +73,7 @@ Direct Known Subtypes:<br/>
 
 **Specified By:**
 
-[TableData](../data/TableData.md)
+[TabularData](../data/TabularData.md)
 
 
 ---
@@ -95,7 +95,7 @@ Direct Known Subtypes:<br/>
 
 **Specified By:**
 
-[TableData](../data/TableData.md)
+[TabularData](../data/TabularData.md)
 
 
 ---
@@ -216,7 +216,7 @@ Direct Known Subtypes:<br/>
 
 **Specified By:**
 
-[TableData](../data/TableData.md)
+[TabularData](../data/TabularData.md)
 
 
 ---

@@ -34,9 +34,12 @@ All Implemented Interfaces:<br/>
 | [INCONSISTENT_INDENTATION](#inconsistent_indentation)                   |             |
 | [EXPECTED_INDENTATION_BLOCK_SCALAR](#expected_indentation_block_scalar) |             |
 | [EXPECTED_DEDENT_BLOCK_COMMENT](#expected_dedent_block_comment)         |             |
+| [UNEXPECTED_EMPTY_LEXEME](#unexpected_empty_lexeme)                     |             |
+| [UNEXPECTED_END_OF_BUFFER](#unexpected_end_of_buffer)                   |             |
 | [DEPTH_LIMIT](#depth_limit)                                             |             |
 | [DUPLICATE_KEY](#duplicate_key)                                         |             |
 | [UNKNOWN_DIRECTIVE](#unknown_directive)                                 |             |
+| [EXPECTED_DEDENT](#expected_dedent)                                     |             |
 
 
 
@@ -188,6 +191,24 @@ public static final  EXPECTED_DEDENT_BLOCK_COMMENT
 
 ---
 
+### UNEXPECTED_EMPTY_LEXEME
+
+public static final  UNEXPECTED_EMPTY_LEXEME
+
+
+
+
+---
+
+### UNEXPECTED_END_OF_BUFFER
+
+public static final  UNEXPECTED_END_OF_BUFFER
+
+
+
+
+---
+
 ### DEPTH_LIMIT
 
 public static final  DEPTH_LIMIT
@@ -209,6 +230,15 @@ public static final  DUPLICATE_KEY
 ### UNKNOWN_DIRECTIVE
 
 public static final  UNKNOWN_DIRECTIVE
+
+
+
+
+---
+
+### EXPECTED_DEDENT
+
+public static final  EXPECTED_DEDENT
 
 
 

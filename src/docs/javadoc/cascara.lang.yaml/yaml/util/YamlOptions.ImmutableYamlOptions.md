@@ -43,13 +43,13 @@ Enclosing Class:<br/>
 | public [YamlOptions](YamlOptions.md) | [setNormalizeScalarFormatting](#setnormalizescalarformatting)(boolean val) |             |
 
 
-### Methods inherited from [YamlOptions](YamlOptions.md)
-
-isAllowUnicode, stripTags, isExpandedStyle, isStrict, setDepthLimit, isExplicitStart, getDepthLimit, isMultiDocument, isIncludeComments, duplicate, stripComments, sortKeys, normalizeIndent, stripAnchors, normalizeScalarFormatting
-
 ### Methods inherited from [LanguageOptions](../../../cascara.common/lang/util/LanguageOptions.md)
 
 setIndentSize, getIndentSize
+
+### Methods inherited from [YamlOptions](YamlOptions.md)
+
+isAllowUnicode, stripTags, isExpandedStyle, isStrict, setDepthLimit, isExplicitStart, getDepthLimit, isMultiDocument, isIncludeComments, duplicate, stripComments, sortKeys, normalizeIndent, stripAnchors, normalizeScalarFormatting
 
 
 ## Method Details

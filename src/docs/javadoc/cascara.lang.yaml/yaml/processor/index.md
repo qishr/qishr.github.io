@@ -10,11 +10,9 @@
     |-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
     | [AbstractYamlProcessor](AbstractYamlProcessor.md)           |                                                                                                                                       |
     | [AbstractYamlTypeSerializer](AbstractYamlTypeSerializer.md) |                                                                                                                                       |
-    | [Util](Util.md)                                             |                                                                                                                                       |
     | [YamlAstParser](YamlAstParser.md)                           | A recursive descent parser that transforms a stream of [YamlToken](../token/YamlToken.md)s into a [YamlNode](../ast/YamlNode.md) AST. |
     | [YamlConverter](YamlConverter.md)                           |                                                                                                                                       |
     | [YamlEmitter](YamlEmitter.md)                               | Responsible for converting a [YamlNode](../ast/YamlNode.md) AST back into a valid YAML string.                                        |
-    | [YamlNodeFactory](YamlNodeFactory.md)                       |                                                                                                                                       |
     | [YamlNormalizer](YamlNormalizer.md)                         |                                                                                                                                       |
     | [YamlPullParser](YamlPullParser.md)                         |                                                                                                                                       |
     | [YamlPushParser](YamlPushParser.md)                         |                                                                                                                                       |
@@ -28,11 +26,9 @@
     |-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
     | [AbstractYamlProcessor](AbstractYamlProcessor.md)           |                                                                                                                                       |
     | [AbstractYamlTypeSerializer](AbstractYamlTypeSerializer.md) |                                                                                                                                       |
-    | [Util](Util.md)                                             |                                                                                                                                       |
     | [YamlAstParser](YamlAstParser.md)                           | A recursive descent parser that transforms a stream of [YamlToken](../token/YamlToken.md)s into a [YamlNode](../ast/YamlNode.md) AST. |
     | [YamlConverter](YamlConverter.md)                           |                                                                                                                                       |
     | [YamlEmitter](YamlEmitter.md)                               | Responsible for converting a [YamlNode](../ast/YamlNode.md) AST back into a valid YAML string.                                        |
-    | [YamlNodeFactory](YamlNodeFactory.md)                       |                                                                                                                                       |
     | [YamlNormalizer](YamlNormalizer.md)                         |                                                                                                                                       |
     | [YamlPullParser](YamlPullParser.md)                         |                                                                                                                                       |
     | [YamlPushParser](YamlPushParser.md)                         |                                                                                                                                       |

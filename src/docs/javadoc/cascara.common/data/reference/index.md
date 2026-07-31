@@ -6,17 +6,17 @@ A reference implementation of the data API
 
 === "All Classes and Interfaces"
 
-    | Class                                       | Description                             |
-    |---------------------------------------------|-----------------------------------------|
-    | [ReferenceTableData](ReferenceTableData.md) | A reference implementation of TableData |
-    | [ReferenceTreeData](ReferenceTreeData.md)   | A reference implementation of TreeData  |
+    | Class                                           | Description                               |
+    |-------------------------------------------------|-------------------------------------------|
+    | [ReferenceTabularData](ReferenceTabularData.md) | A reference implementation of TabularData |
+    | [ReferenceTreeData](ReferenceTreeData.md)       | A reference implementation of TreeData    |
 
 
 === "Classes"
 
-    | Class                                       | Description                             |
-    |---------------------------------------------|-----------------------------------------|
-    | [ReferenceTableData](ReferenceTableData.md) | A reference implementation of TableData |
-    | [ReferenceTreeData](ReferenceTreeData.md)   | A reference implementation of TreeData  |
+    | Class                                           | Description                               |
+    |-------------------------------------------------|-------------------------------------------|
+    | [ReferenceTabularData](ReferenceTabularData.md) | A reference implementation of TabularData |
+    | [ReferenceTreeData](ReferenceTreeData.md)       | A reference implementation of TreeData    |
 
 

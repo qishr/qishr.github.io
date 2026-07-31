@@ -14,18 +14,18 @@ Defines a visitor pattern interface for traversing the Cascara YAML AST hierarch
 
 ## Method Summary
 
-| Modifier and Type    | Method                                                          | Description |
-|----------------------|-----------------------------------------------------------------|-------------|
-| public abstract void | [visit](#visit)([YamlStreamNode](YamlStreamNode.md) node)       |             |
-| public abstract void | [visit](#visit)([YamlDocumentNode](YamlDocumentNode.md) node)   |             |
-| public abstract void | [visit](#visit)([YamlDirectiveNode](YamlDirectiveNode.md) node) |             |
-| public abstract void | [visit](#visit)([YamlMapNode](YamlMapNode.md) node)             |             |
-| public abstract void | [visit](#visit)([YamlMapEntryNode](YamlMapEntryNode.md) node)   |             |
-| public abstract void | [visit](#visit)([YamlSequenceNode](YamlSequenceNode.md) node)   |             |
-| public abstract void | [visit](#visit)([YamlScalarNode](YamlScalarNode.md) node)       |             |
-| public abstract void | [visit](#visit)([YamlAliasNode](YamlAliasNode.md) node)         |             |
-| public abstract void | [visit](#visit)([YamlCommentNode](YamlCommentNode.md) node)     |             |
-| public abstract void | [visit](#visit)([YamlAnchorNode](YamlAnchorNode.md) node)       |             |
+| Modifier and Type    | Method                                                  | Description |
+|----------------------|---------------------------------------------------------|-------------|
+| public abstract void | [visit](#visit)([YamlStream](YamlStream.md) node)       |             |
+| public abstract void | [visit](#visit)([YamlDocument](YamlDocument.md) node)   |             |
+| public abstract void | [visit](#visit)([YamlDirective](YamlDirective.md) node) |             |
+| public abstract void | [visit](#visit)([YamlMap](YamlMap.md) node)             |             |
+| public abstract void | [visit](#visit)([YamlMapEntry](YamlMapEntry.md) node)   |             |
+| public abstract void | [visit](#visit)([YamlSequence](YamlSequence.md) node)   |             |
+| public abstract void | [visit](#visit)([YamlScalar](YamlScalar.md) node)       |             |
+| public abstract void | [visit](#visit)([YamlAlias](YamlAlias.md) node)         |             |
+| public abstract void | [visit](#visit)([YamlComment](YamlComment.md) node)     |             |
+| public abstract void | [visit](#visit)([YamlAnchor](YamlAnchor.md) node)       |             |
 
 
 
@@ -33,7 +33,7 @@ Defines a visitor pattern interface for traversing the Cascara YAML AST hierarch
 
 ### visit
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlStreamNode](YamlStreamNode.md) node)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlStream](YamlStream.md) node)</span>
 
 
 
@@ -42,7 +42,7 @@ Defines a visitor pattern interface for traversing the Cascara YAML AST hierarch
 
 ### visit
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlDocumentNode](YamlDocumentNode.md) node)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlDocument](YamlDocument.md) node)</span>
 
 
 
@@ -51,7 +51,7 @@ Defines a visitor pattern interface for traversing the Cascara YAML AST hierarch
 
 ### visit
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlDirectiveNode](YamlDirectiveNode.md) node)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlDirective](YamlDirective.md) node)</span>
 
 
 
@@ -60,7 +60,7 @@ Defines a visitor pattern interface for traversing the Cascara YAML AST hierarch
 
 ### visit
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlMapNode](YamlMapNode.md) node)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlMap](YamlMap.md) node)</span>
 
 
 
@@ -69,7 +69,7 @@ Defines a visitor pattern interface for traversing the Cascara YAML AST hierarch
 
 ### visit
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlMapEntryNode](YamlMapEntryNode.md) node)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlMapEntry](YamlMapEntry.md) node)</span>
 
 
 
@@ -78,7 +78,7 @@ Defines a visitor pattern interface for traversing the Cascara YAML AST hierarch
 
 ### visit
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlSequenceNode](YamlSequenceNode.md) node)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlSequence](YamlSequence.md) node)</span>
 
 
 
@@ -87,7 +87,7 @@ Defines a visitor pattern interface for traversing the Cascara YAML AST hierarch
 
 ### visit
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlScalarNode](YamlScalarNode.md) node)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlScalar](YamlScalar.md) node)</span>
 
 
 
@@ -96,7 +96,7 @@ Defines a visitor pattern interface for traversing the Cascara YAML AST hierarch
 
 ### visit
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlAliasNode](YamlAliasNode.md) node)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlAlias](YamlAlias.md) node)</span>
 
 
 
@@ -105,7 +105,7 @@ Defines a visitor pattern interface for traversing the Cascara YAML AST hierarch
 
 ### visit
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlCommentNode](YamlCommentNode.md) node)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlComment](YamlComment.md) node)</span>
 
 
 
@@ -114,7 +114,7 @@ Defines a visitor pattern interface for traversing the Cascara YAML AST hierarch
 
 ### visit
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlAnchorNode](YamlAnchorNode.md) node)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __visit__([YamlAnchor](YamlAnchor.md) node)</span>
 
 
 

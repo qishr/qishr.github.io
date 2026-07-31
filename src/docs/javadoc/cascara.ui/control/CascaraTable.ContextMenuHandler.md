@@ -15,9 +15,9 @@ Enclosing Class:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                   | Method                                                                                                                                                                                                                       | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public abstract [ContextMenu](https://docs.oracle.com/en/java/java-components/javafx/25/docs/javafx.controls/javafx/scene/control/ContextMenu.html) | [requestMenu](#requestmenu)([TableData](../../cascara.common/data/TableData.md) data, [MouseEvent](https://docs.oracle.com/en/java/java-components/javafx/25/docs/javafx.graphics/javafx/scene/input/MouseEvent.html) event) |             |
+| Modifier and Type                                                                                                                                   | Method                                                                                                                                                                                                                           | Description |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public abstract [ContextMenu](https://docs.oracle.com/en/java/java-components/javafx/25/docs/javafx.controls/javafx/scene/control/ContextMenu.html) | [requestMenu](#requestmenu)([TabularData](../../cascara.common/data/TabularData.md) data, [MouseEvent](https://docs.oracle.com/en/java/java-components/javafx/25/docs/javafx.graphics/javafx/scene/input/MouseEvent.html) event) |             |
 
 
 
@@ -25,7 +25,7 @@ Enclosing Class:<br/>
 
 ### requestMenu
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [ContextMenu](https://docs.oracle.com/en/java/java-components/javafx/25/docs/javafx.controls/javafx/scene/control/ContextMenu.html) __requestMenu__([TableData](../../cascara.common/data/TableData.md) data, [MouseEvent](https://docs.oracle.com/en/java/java-components/javafx/25/docs/javafx.graphics/javafx/scene/input/MouseEvent.html) event)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [ContextMenu](https://docs.oracle.com/en/java/java-components/javafx/25/docs/javafx.controls/javafx/scene/control/ContextMenu.html) __requestMenu__([TabularData](../../cascara.common/data/TabularData.md) data, [MouseEvent](https://docs.oracle.com/en/java/java-components/javafx/25/docs/javafx.graphics/javafx/scene/input/MouseEvent.html) event)</span>
 
 
 

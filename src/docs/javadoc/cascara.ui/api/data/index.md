@@ -11,7 +11,7 @@
     | [DataProvider](DataProvider.md)               |             |
     | [ObservableTableData](ObservableTableData.md) |             |
     | [ObservableTreeData](ObservableTreeData.md)   |             |
-    | [TableDataProvider](TableDataProvider.md)     |             |
+    | [TabularDataProvider](TabularDataProvider.md) |             |
     | [TreeDataProvider](TreeDataProvider.md)       |             |
 
 
@@ -22,7 +22,7 @@
     | [DataProvider](DataProvider.md)               |             |
     | [ObservableTableData](ObservableTableData.md) |             |
     | [ObservableTreeData](ObservableTreeData.md)   |             |
-    | [TableDataProvider](TableDataProvider.md)     |             |
+    | [TabularDataProvider](TabularDataProvider.md) |             |
     | [TreeDataProvider](TreeDataProvider.md)       |             |
 
 

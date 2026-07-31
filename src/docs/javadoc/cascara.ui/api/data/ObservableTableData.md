@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.ui.api.data](index.md)
         io.github.qishr.cascara.ui.api.data.ObservableTableData<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [TableData](../../../cascara.common/data/TableData.md)
+    [TabularData](../../../cascara.common/data/TabularData.md)
 
 All Known Implementing Classes:<br/>
     [ObservableTreeData](ObservableTreeData.md)

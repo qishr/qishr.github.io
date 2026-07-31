@@ -2,13 +2,13 @@ Package [io.github.qishr.cascara.lang.yaml.processor](index.md)
 
 # Class YamlSerializer
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [io.github.qishr.cascara.common.lang.processor.AbstractSerializer](../../../cascara.common/lang/processor/AbstractSerializer.md)<[io.github.qishr.cascara.lang.yaml.processor.YamlSerializer](YamlSerializer.md), [io.github.qishr.cascara.lang.yaml.ast.YamlNode](../ast/YamlNode.md), [io.github.qishr.cascara.lang.yaml.ast.YamlScalarNode](../ast/YamlScalarNode.md), [io.github.qishr.cascara.lang.yaml.ast.YamlSequenceNode](../ast/YamlSequenceNode.md), [io.github.qishr.cascara.lang.yaml.ast.YamlMapNode](../ast/YamlMapNode.md), [io.github.qishr.cascara.lang.yaml.ast.YamlMapEntryNode](../ast/YamlMapEntryNode.md), [io.github.qishr.cascara.lang.yaml.ast.YamlNode](../ast/YamlNode.md)><br/>
+        [io.github.qishr.cascara.common.lang.processor.AbstractSerializer](../../../cascara.common/lang/processor/AbstractSerializer.md)<[io.github.qishr.cascara.lang.yaml.processor.YamlSerializer](YamlSerializer.md), [io.github.qishr.cascara.lang.yaml.ast.YamlNode](../ast/YamlNode.md), [io.github.qishr.cascara.lang.yaml.ast.YamlScalar](../ast/YamlScalar.md), [io.github.qishr.cascara.lang.yaml.ast.YamlSequence](../ast/YamlSequence.md), [io.github.qishr.cascara.lang.yaml.ast.YamlMap](../ast/YamlMap.md), [io.github.qishr.cascara.lang.yaml.ast.YamlMapEntry](../ast/YamlMapEntry.md), [io.github.qishr.cascara.lang.yaml.ast.YamlNode](../ast/YamlNode.md)><br/>
                 io.github.qishr.cascara.lang.yaml.processor.YamlSerializer<br/>
 <br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __YamlSerializer__<br/>extends [AbstractSerializer](../../../cascara.common/lang/processor/AbstractSerializer.md)<[YamlSerializer](YamlSerializer.md), [YamlNode](../ast/YamlNode.md), [YamlScalarNode](../ast/YamlScalarNode.md), [YamlSequenceNode](../ast/YamlSequenceNode.md), [YamlMapNode](../ast/YamlMapNode.md), [YamlMapEntryNode](../ast/YamlMapEntryNode.md), [YamlNode](../ast/YamlNode.md)>
+<span style="font-family: monospace; font-size: 80%;">public class __YamlSerializer__<br/>extends [AbstractSerializer](../../../cascara.common/lang/processor/AbstractSerializer.md)<[YamlSerializer](YamlSerializer.md), [YamlNode](../ast/YamlNode.md), [YamlScalar](../ast/YamlScalar.md), [YamlSequence](../ast/YamlSequence.md), [YamlMap](../ast/YamlMap.md), [YamlMapEntry](../ast/YamlMapEntry.md), [YamlNode](../ast/YamlNode.md)>
 </span>
 
 Standard implementation for YAML serialization.

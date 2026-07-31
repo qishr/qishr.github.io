@@ -73,7 +73,7 @@ Deserializes an AST node into a strongly-typed Java object.
 
 **Parameters:**
 
-`node` - The structural AST node being parsed (e.g., YamlScalarNode, YamlMapNode).
+`node` - The structural AST node being parsed (e.g., YamlScalarNode, YamlMap).
 
 **Returns:**
 

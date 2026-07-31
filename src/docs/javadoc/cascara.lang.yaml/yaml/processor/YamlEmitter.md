@@ -222,7 +222,7 @@ Primary entry point for emitting a full document or a multi-document stream.
 
 **Parameters:**
 
-`root` - AST root (can be a YamlStreamNode, YamlMapNode, YamlSequenceNode, or YamlScalarNode).
+`root` - AST root (can be a YamlStreamNode, YamlMap, YamlSequenceNode, or YamlScalarNode).
 
 **Returns:**
 

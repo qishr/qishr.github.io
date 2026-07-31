@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.lang.streaming](index.md)
         io.github.qishr.cascara.common.lang.streaming.StreamingEvent<br/>
 <br/>
 All Known Implementing Classes:<br/>
-    [JsonStreamingEvent](../../../cascara.lang.json/json/streaming/JsonStreamingEvent.md)
+    [JsonStreamingEvent](../../../cascara.lang.json/streaming/JsonStreamingEvent.md)
 
 
 ----

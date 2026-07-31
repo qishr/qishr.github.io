@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
         io.github.qishr.cascara.common.util.Property<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [TableData](../data/TableData.md)
+    [TabularData](../data/TabularData.md)
 
 
 ----
@@ -232,7 +232,7 @@ All Implemented Interfaces:<br/>
 
 **Specified By:**
 
-[TableData](../data/TableData.md)
+[TabularData](../data/TabularData.md)
 
 
 ---
@@ -245,7 +245,7 @@ All Implemented Interfaces:<br/>
 
 **Specified By:**
 
-[TableData](../data/TableData.md)
+[TabularData](../data/TabularData.md)
 
 
 ---
@@ -258,7 +258,7 @@ All Implemented Interfaces:<br/>
 
 **Specified By:**
 
-[TableData](../data/TableData.md)
+[TabularData](../data/TabularData.md)
 
 
 ---

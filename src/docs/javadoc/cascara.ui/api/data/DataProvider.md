@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.ui.api.data](index.md)
         io.github.qishr.cascara.ui.api.data.DataProvider<br/>
 <br/>
 All Known Implementing Classes:<br/>
-    [TreeDataProvider](TreeDataProvider.md), [TableDataProvider](TableDataProvider.md)
+    [TabularDataProvider](TabularDataProvider.md), [TreeDataProvider](TreeDataProvider.md)
 
 
 ----
