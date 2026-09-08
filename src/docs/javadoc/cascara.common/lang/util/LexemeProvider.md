@@ -5,12 +5,12 @@ Package [io.github.qishr.cascara.common.lang.util](index.md)
         io.github.qishr.cascara.common.lang.util.LexemeProvider<br/>
 <br/>
 All Known Implementing Classes:<br/>
-    [SourceStringBuffer](SourceStringBuffer.md), [JsonSourceByteBuffer](../../../cascara.lang.json/token/JsonSourceByteBuffer.md)
+    [SourceStringBuffer](SourceStringBuffer.md)
 
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Experimental<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
 public interface __LexemeProvider__</span>
 
 

@@ -20,9 +20,9 @@ Package [io.github.qishr.cascara.ui.theme](index.md)
 
 ## Method Summary
 
-| Modifier and Type                       | Method                                                                                                                                         | Description |
-|-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public static [Variation](Variation.md) | [load](#load)([YamlMap](../../cascara.lang.yaml/yaml/ast/YamlMap.md) variationNode, [ThemeVariationFactory](ThemeVariationFactory.md) factory) |             |
+| Modifier and Type                       | Method                                                                                                                                    | Description |
+|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public static [Variation](Variation.md) | [load](#load)([YamlMap](../../cascara.lang.yaml/ast/YamlMap.md) variationNode, [ThemeVariationFactory](ThemeVariationFactory.md) factory) |             |
 
 
 
@@ -30,7 +30,7 @@ Package [io.github.qishr.cascara.ui.theme](index.md)
 
 ### load
 
-<span style="font-family: monospace; font-size: 80%;">public static [Variation](Variation.md) __load__([YamlMap](../../cascara.lang.yaml/yaml/ast/YamlMap.md) variationNode, [ThemeVariationFactory](ThemeVariationFactory.md) factory)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [Variation](Variation.md) __load__([YamlMap](../../cascara.lang.yaml/ast/YamlMap.md) variationNode, [ThemeVariationFactory](ThemeVariationFactory.md) factory)</span>
 
 
 

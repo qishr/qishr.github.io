@@ -15,39 +15,55 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                            | Method                                                                                                                                                                                                                                                                                                                         | Description                                                                                  |
-|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| public abstract [Reporter](Reporter.md)      | [setLevel](#setlevel)([Level](Diagnostic.Level.md) level)                                                                                                                                                                                                                                                                      | Sets the level of output when logging directly to the console.                               |
-| public abstract [Reporter](Reporter.md)      | [setDiagnosticCollector](#setdiagnosticcollector)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)                                                                                                                            | Registers a collector to receive all diagnostics processed by this reporter.                 |
-| public abstract [Reporter](Reporter.md)      | [setProblemCollector](#setproblemcollector)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)                                                                                                                                  | Registers a specialized collector to receive only problem-level diagnostics.                 |
-| public abstract boolean                      | [collectsProblems](#collectsproblems)()                                                                                                                                                                                                                                                                                        | Checks whether any active listener or collector is tracking problems.                        |
-| public abstract [Level](Diagnostic.Level.md) | [getLevel](#getlevel)()                                                                                                                                                                                                                                                                                                        |                                                                                              |
-| public abstract boolean                      | [isSilent](#issilent)()                                                                                                                                                                                                                                                                                                        |                                                                                              |
-| public abstract void                         | [trace](#trace)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                   | Reports a trace message through the reporter.                                                |
-| public abstract void                         | [debug](#debug)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                   | Reports a debug message through the reporter.                                                |
-| public abstract void                         | [info](#info)([DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                           | Reports an informational message through the reporter.                                       |
-| public abstract void                         | [warn](#warn)([DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                           | Reports a warning message including location information.                                    |
-| public abstract void                         | [error](#error)([DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                         | Reports an error message including location information.                                     |
-| public abstract void                         | [error](#error)([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                               | Reports an error message including location information.                                     |
-| public abstract void                         | [infoAt](#infoat)(int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                 | Reports an informational message anchored to a resource location by line and column.         |
-| public abstract void                         | [warnAt](#warnat)(int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                 | Reports a warning anchored to a resource location by line and column.                        |
-| public abstract void                         | [errorAt](#errorat)(int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                               | Reports an error anchored to a resource location by line and column.                         |
-| public abstract void                         | [errorAt](#errorat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                    |                                                                                              |
-| public abstract void                         | [errorAt](#errorat)(int line, int column, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                     | Reports an error anchored to a resource location by line and column.                         |
-| public abstract void                         | [infoAt](#infoat)(int line, int column, int start, int end, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                             | Reports an informational message anchored to a precise character span within a resource.     |
-| public abstract void                         | [warnAt](#warnat)(int line, int column, int start, int end, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                             | Reports a warning anchored to a precise character span within a resource.                    |
-| public abstract void                         | [errorAt](#errorat)(int line, int column, int start, int end, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           | Reports an error anchored to a precise character span within a resource.                     |
-| public abstract void                         | [errorAt](#errorat)(int line, int column, int start, int end, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) | Reports an error anchored to a precise character span within a resource.                     |
-| public abstract void                         | [infoAt](#infoat)([Token](../lang/token/Token.md) token, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                | Reports an informational message derived from the location attributes of a structural token. |
-| public abstract void                         | [warnAt](#warnat)([Token](../lang/token/Token.md) token, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                | Reports a warning derived from the location attributes of a structural token.                |
-| public abstract void                         | [errorAt](#errorat)([Token](../lang/token/Token.md) token, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                              | Reports an error derived from the location attributes of a structural token.                 |
-| public abstract void                         | [errorAt](#errorat)([Token](../lang/token/Token.md) token, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)    | Reports an error derived from the location attributes of a structural token.                 |
-| public abstract void                         | [error](#error)([LocalizableException](LocalizableException.md) exception)                                                                                                                                                                                                                                                     | Reports a [LocalizableException](LocalizableException.md)                                    |
-| public abstract void                         | [error](#error)([LocalizableRuntimeException](LocalizableRuntimeException.md) exception)                                                                                                                                                                                                                                       | Reports a [LocalizableRuntimeException](LocalizableRuntimeException.md)                      |
+| Modifier and Type                               | Method                                                                                                                                                                                                                                                                                                                                                                                                             | Description                                                                                  |
+|-------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| public abstract [Reporter](Reporter.md)         | [setLineConsumer](#setlineconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> logger)                                                                                                                                                                |                                                                                              |
+| public abstract [Reporter](Reporter.md)         | [setLevel](#setlevel)([Level](Diagnostic.Level.md) level)                                                                                                                                                                                                                                                                                                                                                          | Sets the level of output when logging directly to the console.                               |
+| public abstract [Reporter](Reporter.md)         | [setDiagnosticConsumer](#setdiagnosticconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)                                                                                                                                                                                                                  | Registers a collector to receive all diagnostics processed by this reporter.                 |
+| public abstract [Reporter](Reporter.md)         | [setProblemConsumer](#setproblemconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)                                                                                                                                                                                                                        | Registers a specialized collector to receive only problem-level diagnostics.                 |
+| public abstract boolean                         | [collectsProblems](#collectsproblems)()                                                                                                                                                                                                                                                                                                                                                                            | Checks whether any active listener or collector is tracking problems.                        |
+| public abstract [Level](Diagnostic.Level.md)    | [getLevel](#getlevel)()                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                              |
+| public abstract boolean                         | [isSilent](#issilent)()                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                              |
+| public abstract [ReportWriter](ReportWriter.md) | [getWriter](#getwriter)([Level](Diagnostic.Level.md) level)                                                                                                                                                                                                                                                                                                                                                        |                                                                                              |
+| public abstract void                            | [error](#error)([Exception](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Exception.html) exception)                                                                                                                                                                                                                                                                                      | Reports an Exception                                                                         |
+| public abstract void                            | [trace](#trace)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                       | Reports a trace message through the reporter.                                                |
+| public abstract void                            | [debug](#debug)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                       | Reports a debug message through the reporter.                                                |
+| public abstract void                            | [info](#info)([DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                               | Reports an informational message through the reporter.                                       |
+| public abstract void                            | [warn](#warn)([DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                               | Reports a warning message including location information.                                    |
+| public abstract void                            | [error](#error)([DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                             | Reports an error message including location information.                                     |
+| public abstract void                            | [error](#error)([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                   | Reports an error message including location information.                                     |
+| public abstract void                            | [infoAt](#infoat)(int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                     | Reports an informational message anchored to a resource location by line and column.         |
+| public abstract void                            | [warnAt](#warnat)(int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                     | Reports a warning anchored to a resource location by line and column.                        |
+| public abstract void                            | [errorAt](#errorat)(int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                   | Reports an error anchored to a resource location by line and column.                         |
+| public abstract void                            | [errorAt](#errorat)(int line, int column, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                         | Reports an error anchored to a resource location by line and column.                         |
+| public abstract void                            | [infoAt](#infoat)(int line, int column, int start, int end, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                 | Reports an informational message anchored to a precise character span within a resource.     |
+| public abstract void                            | [warnAt](#warnat)(int line, int column, int start, int end, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                 | Reports a warning anchored to a precise character span within a resource.                    |
+| public abstract void                            | [errorAt](#errorat)(int line, int column, int start, int end, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                               | Reports an error anchored to a precise character span within a resource.                     |
+| public abstract void                            | [errorAt](#errorat)(int line, int column, int start, int end, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                     | Reports an error anchored to a precise character span within a resource.                     |
+| public abstract void                            | [infoAt](#infoat)([Token](../lang/token/Token.md) token, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                    | Reports an informational message derived from the location attributes of a structural token. |
+| public abstract void                            | [warnAt](#warnat)([Token](../lang/token/Token.md) token, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                    | Reports a warning derived from the location attributes of a structural token.                |
+| public abstract void                            | [errorAt](#errorat)([Token](../lang/token/Token.md) token, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                  | Reports an error derived from the location attributes of a structural token.                 |
+| public abstract void                            | [errorAt](#errorat)([Token](../lang/token/Token.md) token, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                        | Reports an error derived from the location attributes of a structural token.                 |
+| public abstract void                            | [warnAt](#warnat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                          |                                                                                              |
+| public abstract void                            | [errorAt](#errorat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                        |                                                                                              |
+| public abstract void                            | [warnAt](#warnat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../lang/token/Token.md) token, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                         |                                                                                              |
+| public abstract void                            | [errorAt](#errorat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../lang/token/Token.md) token, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                       |                                                                                              |
+| public abstract void                            | [errorAt](#errorat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../lang/token/Token.md) token, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |                                                                                              |
+| public abstract boolean                         | [reportsDebug](#reportsdebug)()                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                              |
+| public abstract boolean                         | [reportsTrace](#reportstrace)()                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                              |
 
 
 
 ## Method Details
+
+### setLineConsumer
+
+<span style="font-family: monospace; font-size: 80%;">public abstract [Reporter](Reporter.md) __setLineConsumer__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> logger)</span>
+
+
+
+
+---
 
 ### setLevel
 
@@ -58,9 +74,9 @@ Sets the level of output when logging directly to the console.
 
 ---
 
-### setDiagnosticCollector
+### setDiagnosticConsumer
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [Reporter](Reporter.md) __setDiagnosticCollector__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Reporter](Reporter.md) __setDiagnosticConsumer__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)</span>
 
 Registers a collector to receive all diagnostics processed by this reporter.This includes debugging info, trace states, warnings, and error diagnostics.
 
@@ -71,9 +87,9 @@ Registers a collector to receive all diagnostics processed by this reporter.This
 
 ---
 
-### setProblemCollector
+### setProblemConsumer
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [Reporter](Reporter.md) __setProblemCollector__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Reporter](Reporter.md) __setProblemConsumer__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)</span>
 
 Registers a specialized collector to receive only problem-level diagnostics.This collector is filtered to intercept only `Level.WARN` and `Level.ERROR` items.
 
@@ -113,6 +129,28 @@ is actively listening for error diagnostics.
 <span style="font-family: monospace; font-size: 80%;">public abstract boolean __isSilent__()</span>
 
 
+
+
+---
+
+### getWriter
+
+<span style="font-family: monospace; font-size: 80%;">public abstract [ReportWriter](ReportWriter.md) __getWriter__([Level](Diagnostic.Level.md) level)</span>
+
+
+
+
+---
+
+### error
+
+<span style="font-family: monospace; font-size: 80%;">public abstract void __error__([Exception](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Exception.html) exception)</span>
+
+Reports an Exception
+
+**Parameters:**
+
+`exception` - The exception to report.
 
 
 ---
@@ -262,16 +300,6 @@ Reports an error anchored to a resource location by line and column.Useful when 
 `code` - The semantic classification code for this error.
 
 `details` - Arguments referenced by the format specifiers in the [DiagnosticCode](code/DiagnosticCode.md)'s localized format string.
-
-
----
-
-### errorAt
-
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Experimental<br/>
-public abstract void __errorAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
-
-
 
 
 ---
@@ -461,28 +489,70 @@ Reports an error derived from the location attributes of a structural token.
 
 ---
 
-### error
+### warnAt
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __error__([LocalizableException](LocalizableException.md) exception)</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public abstract void __warnAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
-Reports a [LocalizableException](LocalizableException.md)
 
-**Parameters:**
-
-`exception` - The exception to report.
 
 
 ---
 
-### error
+### errorAt
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __error__([LocalizableRuntimeException](LocalizableRuntimeException.md) exception)</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public abstract void __errorAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
-Reports a [LocalizableRuntimeException](LocalizableRuntimeException.md)
 
-**Parameters:**
 
-`exception` - The exception to report.
+
+---
+
+### warnAt
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public abstract void __warnAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../lang/token/Token.md) token, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+
+
+
+
+---
+
+### errorAt
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public abstract void __errorAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../lang/token/Token.md) token, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+
+
+
+
+---
+
+### errorAt
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public abstract void __errorAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../lang/token/Token.md) token, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+
+
+
+
+---
+
+### reportsDebug
+
+<span style="font-family: monospace; font-size: 80%;">public abstract boolean __reportsDebug__()</span>
+
+
+
+
+---
+
+### reportsTrace
+
+<span style="font-family: monospace; font-size: 80%;">public abstract boolean __reportsTrace__()</span>
+
+
 
 
 ---

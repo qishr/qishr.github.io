@@ -24,7 +24,7 @@ Package [io.github.qishr.cascara.ui.vsix](index.md)
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|-------------|
 | public [Properties](../../cascara.common/util/Properties.md)                                                                                                                                  | [getProperties](#getproperties)()   |             |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getCategories](#getcategories)()   |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[VsixThemeInfo](VsixThemeInfo.md)>                                                            | [getThemes](#getthemes)()           |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<VsixThemeInfo>                                                                                | [getThemes](#getthemes)()           |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getName](#getname)()               |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getDisplayName](#getdisplayname)() |             |
 | public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)                                                                                           | [getPath](#getpath)()               |             |
@@ -53,7 +53,7 @@ Package [io.github.qishr.cascara.ui.vsix](index.md)
 
 ### getThemes
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[VsixThemeInfo](VsixThemeInfo.md)> __getThemes__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<VsixThemeInfo> __getThemes__()</span>
 
 
 

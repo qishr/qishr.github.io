@@ -81,7 +81,7 @@ setReporter, getOptions, getServiceProperties, getVersion, getReporter, setOptio
 
 ### fromAst
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Nullable<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
 public [JsonNode](../ast/JsonNode.md) __fromAst__([AstNode](../../cascara.common/lang/ast/AstNode.md) from)</span>
 
 

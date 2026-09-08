@@ -39,7 +39,7 @@ Package [io.github.qishr.cascara.common.content.type](index.md)
 
 ### records
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.DataField<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.DataField<br/>
 public List<ContentType> __records__</span>
 
 

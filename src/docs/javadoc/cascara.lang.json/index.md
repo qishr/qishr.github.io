@@ -5,13 +5,14 @@
 
 === "Exports"
 
-    | Package                                                           | Description |
-    |-------------------------------------------------------------------|-------------|
-    | [io.github.qishr.cascara.lang.json.ast](ast/index.md)             |             |
-    | [io.github.qishr.cascara.lang.json.processor](processor/index.md) |             |
-    | [io.github.qishr.cascara.lang.json.streaming](streaming/index.md) |             |
-    | [io.github.qishr.cascara.lang.json.token](token/index.md)         |             |
-    | [io.github.qishr.cascara.lang.json.util](util/index.md)           |             |
+    | Package                                                             | Description |
+    |---------------------------------------------------------------------|-------------|
+    | [io.github.qishr.cascara.lang.json.ast](ast/index.md)               |             |
+    | [io.github.qishr.cascara.lang.json.diagnostic](diagnostic/index.md) |             |
+    | [io.github.qishr.cascara.lang.json.processor](processor/index.md)   |             |
+    | [io.github.qishr.cascara.lang.json.streaming](streaming/index.md)   |             |
+    | [io.github.qishr.cascara.lang.json.token](token/index.md)           |             |
+    | [io.github.qishr.cascara.lang.json.util](util/index.md)             |             |
 
 
 === "Requires"
@@ -20,7 +21,6 @@
     |-----------------------------------------------------------------------------------------------|-------------|
     | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html) |             |
     | [cascara.common](../cascara.common/index.md)                                                  |             |
-    |                                                                                               |             |
 
 
 === "Opens"

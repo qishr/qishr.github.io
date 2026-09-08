@@ -26,9 +26,10 @@
 
 === "Opens"
 
-    | Package                                                    | Description |
-    |------------------------------------------------------------|-------------|
-    | [io.github.qishr.cascara.common.content](content/index.md) |             |
+    | Package                                                              | Description |
+    |----------------------------------------------------------------------|-------------|
+    | [io.github.qishr.cascara.common.content](content/index.md)           |             |
+    | [io.github.qishr.cascara.common.content.type](content/type/index.md) |             |
 
 
 === "Uses"

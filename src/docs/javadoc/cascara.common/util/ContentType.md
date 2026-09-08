@@ -69,7 +69,7 @@ user preferences should reference ContentType.
 
 ### canonicalId
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.DataField<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.DataField<br/>
 protected String __canonicalId__</span>
 
 
@@ -79,7 +79,7 @@ protected String __canonicalId__</span>
 
 ### mimeTypes
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.DataField<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.DataField<br/>
 protected List<String> __mimeTypes__</span>
 
 
@@ -89,7 +89,7 @@ protected List<String> __mimeTypes__</span>
 
 ### name
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.DataField<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.DataField<br/>
 protected String __name__</span>
 
 
@@ -99,7 +99,7 @@ protected String __name__</span>
 
 ### suffixes
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.DataField<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.DataField<br/>
 protected List<String> __suffixes__</span>
 
 

@@ -32,22 +32,23 @@ Standard implementation for JSON serialization.
 | public [JsonSerializer](JsonSerializer.md)                                                             | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter)                                                                                                                                             |             |
 | public [JsonSerializer](JsonSerializer.md)                                                             | [setOptions](#setoptions)([LanguageOptions](../../cascara.common/lang/util/LanguageOptions.md)<?> options)                                                                                                                                |             |
 | public [JsonSerializer](JsonSerializer.md)                                                             | [setParser](#setparser)([AstParser](../../cascara.common/lang/processor/AstParser.md)<[JsonNode](../ast/JsonNode.md), ?, ?> parser)                                                                                                       |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)    | [toText](#totext)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                               |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)    | [toString](#tostring)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                           |             |
 | public [JsonNode](../ast/JsonNode.md)                                                                  | [toAst](#toast)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                                 |             |
 | public void                                                                                            | [toWriter](#towriter)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance, [Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html) writer)        |             |
-| public C                                                                                               | [fromText](#fromtext)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)           |             |
-| public C                                                                                               | [fromText](#fromtext)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [TypeReference](../../cascara.common/lang/type/TypeReference.md)<C> typeRef)                                     |             |
+| public C                                                                                               | [fromString](#fromstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)       |             |
+| public C                                                                                               | [fromString](#fromstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [TypeReference](../../cascara.common/lang/type/TypeReference.md)<C> typeRef)                                 |             |
 | public C                                                                                               | [fromReader](#fromreader)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)       |             |
 | public C                                                                                               | [fromReader](#fromreader)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader, [TypeReference](../../cascara.common/lang/type/TypeReference.md)<C> typeRef)                                 |             |
 | public C                                                                                               | [fromStream](#fromstream)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType) |             |
 | public C                                                                                               | [fromStream](#fromstream)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [TypeReference](../../cascara.common/lang/type/TypeReference.md)<C> typeRef)                           |             |
 | public C                                                                                               | [fromAst](#fromast)([JsonNode](../ast/JsonNode.md) astNode, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)                                                                        |             |
 | public C                                                                                               | [fromAst](#fromast)([JsonNode](../ast/JsonNode.md) astNode, [TypeReference](../../cascara.common/lang/type/TypeReference.md)<C> typeRef)                                                                                                  |             |
+| protected void                                                                                         | [setupSerializer](#setupserializer)()                                                                                                                                                                                                     |             |
 
 
 ### Methods inherited from [AbstractSerializer](../../cascara.common/lang/processor/AbstractSerializer.md)
 
-serializeObject, serializeList, getAllMethods, error, serialize, serializeMap, getTypeDescriptor, deserialize, getAllFields, getServiceProperties, registerTypeDescriptor, deserialize
+serializeObject, warn, trace, getAllMethods, error, serialize, serializeMap, getTypeDescriptor, debug, serializeList, warnInaccessible, deserialize, getAllFields, getServiceProperties, report, deserialize, registerTypeDescriptor, warnInaccessible
 
 
 ## Method Details
@@ -118,9 +119,9 @@ serializeObject, serializeList, getAllMethods, error, serialize, serializeMap, g
 
 ---
 
-### toText
+### toString
 
-<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toText__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)</span>
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toString__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)</span>
 
 
 
@@ -149,18 +150,18 @@ serializeObject, serializeList, getAllMethods, error, serialize, serializeMap, g
 
 ---
 
-### fromText
+### fromString
 
-<span style="font-family: monospace; font-size: 80%;">public C __fromText__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)</span>
+<span style="font-family: monospace; font-size: 80%;">public C __fromString__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)</span>
 
 
 
 
 ---
 
-### fromText
+### fromString
 
-<span style="font-family: monospace; font-size: 80%;">public C __fromText__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [TypeReference](../../cascara.common/lang/type/TypeReference.md)<C> typeRef)</span>
+<span style="font-family: monospace; font-size: 80%;">public C __fromString__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [TypeReference](../../cascara.common/lang/type/TypeReference.md)<C> typeRef)</span>
 
 
 
@@ -215,6 +216,15 @@ serializeObject, serializeList, getAllMethods, error, serialize, serializeMap, g
 ### fromAst
 
 <span style="font-family: monospace; font-size: 80%;">public C __fromAst__([JsonNode](../ast/JsonNode.md) astNode, [TypeReference](../../cascara.common/lang/type/TypeReference.md)<C> typeRef)</span>
+
+
+
+
+---
+
+### setupSerializer
+
+<span style="font-family: monospace; font-size: 80%;">protected void __setupSerializer__()</span>
 
 
 

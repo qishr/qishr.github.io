@@ -9,7 +9,7 @@ All Implemented Interfaces:<br/>
     [ScalarDescriptor](ScalarDescriptor.md)<T>
 
 Direct Known Subtypes:<br/>
-    [UuidTypeDescriptor](UuidTypeDescriptor.md), [UriTypeDescriptor](UriTypeDescriptor.md), [PathTypeDescriptor](PathTypeDescriptor.md), [DateTimeTypeDescriptor](DateTimeTypeDescriptor.md), [InstantTypeDescriptor](InstantTypeDescriptor.md), [ByteArrayDescriptor](ByteArrayDescriptor.md)
+    [UuidTypeDescriptor](UuidTypeDescriptor.md), [UriTypeDescriptor](UriTypeDescriptor.md), [LocalDateTimeTypeDescriptor](LocalDateTimeTypeDescriptor.md), [PathTypeDescriptor](PathTypeDescriptor.md), [DateTimeTypeDescriptor](DateTimeTypeDescriptor.md), [InstantTypeDescriptor](InstantTypeDescriptor.md), [ByteArrayDescriptor](ByteArrayDescriptor.md)
 
 
 ----
@@ -31,6 +31,7 @@ Direct Known Subtypes:<br/>
 
 | Constructor                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Description |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| AbstractScalarDescriptor([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> jvmType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) schemaType)                                                                                                                                                                                                                    |             |
 | AbstractScalarDescriptor([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> jvmType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) schemaType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format)                                                                                                               |             |
 | AbstractScalarDescriptor([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> jvmType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) schemaType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentEncoding) |             |
 

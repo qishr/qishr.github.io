@@ -28,10 +28,11 @@ Direct Known Subtypes:<br/>
 
 ## Field Summary
 
-| Modifier and Type                                                                                                                   | Field             | Description |
-|-------------------------------------------------------------------------------------------------------------------------------------|-------------------|-------------|
-| public static final io.github.qishr.cascara.lang.json.util.@io.github.qishr.cascara.common.lang.annotation.Experimental JsonOptions | [JSON5](#json5)   |             |
-| public static final JsonOptions                                                                                                     | [STRICT](#strict) |             |
+| Modifier and Type                                                                                                              | Field                     | Description |
+|--------------------------------------------------------------------------------------------------------------------------------|---------------------------|-------------|
+| public static final io.github.qishr.cascara.lang.json.util.@io.github.qishr.cascara.common.annotation.Experimental JsonOptions | [JSON5](#json5)           |             |
+| public static final JsonOptions                                                                                                | [STRICT](#strict)         |             |
+| protected int                                                                                                                  | [indentSize](#indentsize) |             |
 
 
 
@@ -61,6 +62,8 @@ Direct Known Subtypes:<br/>
 | public boolean                       | [useSimd](#usesimd)()                                                    |                                                         |
 | public boolean                       | [validateUnicode](#validateunicode)()                                    |                                                         |
 | public boolean                       | [trackPosition](#trackposition)()                                        |                                                         |
+| public [JsonOptions](JsonOptions.md) | [setIndentSize](#setindentsize)(int size)                                |                                                         |
+| public int                           | [getIndentSize](#getindentsize)()                                        |                                                         |
 | public int                           | [getDepthLimit](#getdepthlimit)()                                        |                                                         |
 | public [JsonOptions](JsonOptions.md) | [setDepthLimit](#setdepthlimit)(int limit)                               |                                                         |
 | public [JsonOptions](JsonOptions.md) | [setAllowBooleanKeys](#setallowbooleankeys)(boolean val)                 |                                                         |
@@ -80,17 +83,13 @@ Direct Known Subtypes:<br/>
 | public [JsonOptions](JsonOptions.md) | [duplicate](#duplicate)()                                                |                                                         |
 
 
-### Methods inherited from [LanguageOptions](../../cascara.common/lang/util/LanguageOptions.md)
-
-setIndentSize, getIndentSize
-
 
 ## Field Details
 
 ### JSON5
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Experimental<br/>
-public static final io.github.qishr.cascara.lang.json.util.@io.github.qishr.cascara.common.lang.annotation.Experimental JsonOptions __JSON5__</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public static final io.github.qishr.cascara.lang.json.util.@io.github.qishr.cascara.common.annotation.Experimental JsonOptions __JSON5__</span>
 
 
 
@@ -100,6 +99,15 @@ public static final io.github.qishr.cascara.lang.json.util.@io.github.qishr.casc
 ### STRICT
 
 <span style="font-family: monospace; font-size: 80%;">public static final JsonOptions __STRICT__</span>
+
+
+
+
+---
+
+### indentSize
+
+<span style="font-family: monospace; font-size: 80%;">protected int __indentSize__</span>
 
 
 
@@ -220,6 +228,24 @@ public static final io.github.qishr.cascara.lang.json.util.@io.github.qishr.casc
 ### trackPosition
 
 <span style="font-family: monospace; font-size: 80%;">public boolean __trackPosition__()</span>
+
+
+
+
+---
+
+### setIndentSize
+
+<span style="font-family: monospace; font-size: 80%;">public [JsonOptions](JsonOptions.md) __setIndentSize__(int size)</span>
+
+
+
+
+---
+
+### getIndentSize
+
+<span style="font-family: monospace; font-size: 80%;">public int __getIndentSize__()</span>
 
 
 

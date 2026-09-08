@@ -47,7 +47,7 @@ Package [io.github.qishr.cascara.schema.util](index.md)
 
 **Throws:**
 
-[SchemaException](../exception/SchemaException.md)
+[SchemaException](../diagnostic/SchemaException.md)
 
 
 ---

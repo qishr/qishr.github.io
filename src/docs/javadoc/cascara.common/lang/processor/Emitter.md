@@ -8,12 +8,13 @@ All Implemented Interfaces:<br/>
     [Processor](Processor.md)
 
 All Known Implementing Classes:<br/>
-    [JsonEmitter](../../../cascara.lang.json/processor/JsonEmitter.md), [YamlEmitter](../../../cascara.lang.yaml/yaml/processor/YamlEmitter.md)
+    [JsonEmitter](../../../cascara.lang.json/processor/JsonEmitter.md)
 
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public interface __Emitter__</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public interface __Emitter__</span>
 
 A generic interface for emitting structured text.
 

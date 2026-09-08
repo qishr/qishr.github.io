@@ -3,14 +3,14 @@ public class SimplePullParse {
         InputStream is = SimplePullParse.class.getResourceAsStream("subject.yaml");
         try (YamlPullParser parser = new YamlPullParser(is)) {
             while (parser.hasNext()) {
-                StreamingEvent event = parser.next();
-                if (event.getType() == StreamingEventType.FIELD_NAME) {
+                YamlStreamingEvent event = parser.next();
+                if (event.getType() == YamlStreamingEventType.KEY) {
                     String fieldName = event.getContent();
                     if ("name".equals(fieldName)) {
                         while (parser.hasNext()) {
-                            StreamingEvent subEvent = parser.next();
-                            if (subEvent.getType() == StreamingEventType.END_OBJECT) break;
-                            if (subEvent.getType() == StreamingEventType.VALUE_SCALAR) {
+                            YamlStreamingEvent subEvent = parser.next();
+                            if (subEvent.getType() == YamlStreamingEventType.END_MAP) break;
+                            if (subEvent.getType() == YamlStreamingEventType.VALUE_SCALAR) {
                                 System.out.println(subEvent.getContent());
                             }
                         }

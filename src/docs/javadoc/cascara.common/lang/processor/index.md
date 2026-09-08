@@ -14,7 +14,6 @@
     | [Emitter](Emitter.md)                       | A generic interface for emitting structured text.                                       |
     | [PathEvaluator](PathEvaluator.md)           |                                                                                         |
     | [Processor](Processor.md)                   |                                                                                         |
-    | [ProcessorFactory](ProcessorFactory.md)     |                                                                                         |
     | [PullParser](PullParser.md)                 |                                                                                         |
     | [PushParser](PushParser.md)                 |                                                                                         |
     | [Serializer](Serializer.md)                 | Handles the transformation between Java Objects (POJOs) and the AST or textual formats. |
@@ -41,6 +40,5 @@
     | Class                                       | Description |
     |---------------------------------------------|-------------|
     | [AbstractSerializer](AbstractSerializer.md) |             |
-    | [ProcessorFactory](ProcessorFactory.md)     |             |
 
 

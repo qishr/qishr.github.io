@@ -23,13 +23,13 @@ Package [io.github.qishr.cascara.common.util](index.md)
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                         | [getModuleName](#getmodulename)()                                                                                   |             |
 | public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getPackages](#getpackages)()                                                                                       |             |
 | public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getClassNames](#getclassnames)()                                                                                   |             |
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                  | [getClassName](#getclassname)([FileInfo](ArchiveFile.FileInfo.md) fileInfo)                                         |             |
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                  | [getPackageName](#getpackagename)([FileInfo](ArchiveFile.FileInfo.md) fileInfo)                                     |             |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                  | [getClassName](#getclassname)([EntryInfo](ArchiveFile.EntryInfo.md) fileInfo)                                       |             |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                  | [getPackageName](#getpackagename)([EntryInfo](ArchiveFile.EntryInfo.md) fileInfo)                                   |             |
 
 
 ### Methods inherited from [ArchiveFile](ArchiveFile.md)
 
-listFiles, extractFile, getInputStream, listFiles, extractFile, listFiles
+listFiles, extractFile, addDirectory, create, getInputStream, addFile, listFiles, addFile, extractFile, listFiles, close, addDirectory
 
 
 ## Method Details
@@ -103,7 +103,7 @@ listFiles, extractFile, getInputStream, listFiles, extractFile, listFiles
 
 ### getClassName
 
-<span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getClassName__([FileInfo](ArchiveFile.FileInfo.md) fileInfo)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getClassName__([EntryInfo](ArchiveFile.EntryInfo.md) fileInfo)</span>
 
 
 
@@ -112,7 +112,7 @@ listFiles, extractFile, getInputStream, listFiles, extractFile, listFiles
 
 ### getPackageName
 
-<span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getPackageName__([FileInfo](ArchiveFile.FileInfo.md) fileInfo)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getPackageName__([EntryInfo](ArchiveFile.EntryInfo.md) fileInfo)</span>
 
 
 

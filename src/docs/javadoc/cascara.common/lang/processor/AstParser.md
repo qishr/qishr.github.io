@@ -8,12 +8,12 @@ All Implemented Interfaces:<br/>
     [Processor](Processor.md)
 
 All Known Implementing Classes:<br/>
-    [JsonAstParser](../../../cascara.lang.json/processor/JsonAstParser.md), [XmlAstParser](../../../cascara.lang.xml/processor/XmlAstParser.md), [YamlAstParser](../../../cascara.lang.yaml/yaml/processor/YamlAstParser.md)
+    [JsonAstParser](../../../cascara.lang.json/processor/JsonAstParser.md), [XmlAstParser](../../../cascara.lang.xml/processor/XmlAstParser.md), [YamlAstParser](../../../cascara.lang.yaml/processor/YamlAstParser.md)
 
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Beta<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Beta<br/>
 public interface __AstParser__</span>
 
 

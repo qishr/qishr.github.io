@@ -28,10 +28,6 @@ Package [io.github.qishr.cascara.lang.xml.util](index.md)
 | public boolean                     | [isStrict](#isstrict)()              |                                                                |
 
 
-### Methods inherited from [LanguageOptions](../../cascara.common/lang/util/LanguageOptions.md)
-
-setIndentSize, getIndentSize
-
 
 ## Method Details
 

@@ -20,7 +20,7 @@ Direct Known Subtypes:<br/>
 
 | Constructor                                                                                                                      | Description |
 |----------------------------------------------------------------------------------------------------------------------------------|-------------|
-| AbstractResourceProvider([UriScheme](../UriScheme.md) uriScheme)                                                                 |             |
+| AbstractResourceProvider([UriScheme](../../../cascara.common/util/UriScheme.md) uriScheme)                                       |             |
 | AbstractResourceProvider([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) uriScheme) |             |
 
 

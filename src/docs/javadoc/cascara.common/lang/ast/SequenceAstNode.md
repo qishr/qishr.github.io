@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [AstNode](AstNode.md), [Iterable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Iterable.html)<T>
 
 All Known Implementing Classes:<br/>
-    [ReferenceSequenceNode](../reference/ReferenceSequenceNode.md), [JsonArray](../../../cascara.lang.json/ast/JsonArray.md), [YamlSequence](../../../cascara.lang.yaml/yaml/ast/YamlSequence.md)
+    [PlainSequenceNode](../plain/PlainSequenceNode.md), [JsonArray](../../../cascara.lang.json/ast/JsonArray.md), [YamlSequence](../../../cascara.lang.yaml/ast/YamlSequence.md)
 
 
 ----

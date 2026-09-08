@@ -8,7 +8,7 @@ Package [io.github.qishr.cascara.common.service](index.md)
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Beta<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Beta<br/>
 public class __ServiceProviderFactory__<br/>extends [AbstractServiceProviderFactory](AbstractServiceProviderFactory.md)
 </span>
 
@@ -26,6 +26,7 @@ public class __ServiceProviderFactory__<br/>extends [AbstractServiceProviderFact
 
 | Modifier and Type                                           | Method                                                                                                                                               | Description |
 |-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [SourceBuffer](../lang/util/SourceBuffer.md)         | [createSourceBuffer](#createsourcebuffer)([SourceBufferOptions](../lang/util/SourceBufferOptions.md) options)                                        |             |
 | public [AstParser](../lang/processor/AstParser.md)<?, ?, ?> | [createParser](#createparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)              |             |
 | public [TypeDescriptor](../lang/type/TypeDescriptor.md)<?>  | [createTypeDescriptor](#createtypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType) |             |
 
@@ -36,6 +37,19 @@ createServiceProvider
 
 
 ## Method Details
+
+### createSourceBuffer
+
+<span style="font-family: monospace; font-size: 80%;">public [SourceBuffer](../lang/util/SourceBuffer.md) __createSourceBuffer__([SourceBufferOptions](../lang/util/SourceBufferOptions.md) options)</span>
+
+
+
+**Throws:**
+
+[ServiceException](ServiceException.md)
+
+
+---
 
 ### createParser
 

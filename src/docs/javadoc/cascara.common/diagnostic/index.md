@@ -18,9 +18,11 @@
     | [LocalizableRuntimeException](LocalizableRuntimeException.md)   |                                                                                                                            |
     | [LocatableException](LocatableException.md)                     |                                                                                                                            |
     | [NoOpReporter](NoOpReporter.md)                                 |                                                                                                                            |
+    | [ReportWriter](ReportWriter.md)                                 |                                                                                                                            |
     | [Reporter](Reporter.md)                                         |                                                                                                                            |
     | [SilentCollectingReporter](SilentCollectingReporter.md)         |                                                                                                                            |
     | [StandardReporter](StandardReporter.md)                         |                                                                                                                            |
+    | [UnimplementedMethodException](UnimplementedMethodException.md) |                                                                                                                            |
 
 
 === "Interfaces"
@@ -44,7 +46,9 @@
     | [LocalizableRuntimeException](LocalizableRuntimeException.md)   |                                                                                                                            |
     | [LocatableException](LocatableException.md)                     |                                                                                                                            |
     | [NoOpReporter](NoOpReporter.md)                                 |                                                                                                                            |
+    | [ReportWriter](ReportWriter.md)                                 |                                                                                                                            |
     | [SilentCollectingReporter](SilentCollectingReporter.md)         |                                                                                                                            |
     | [StandardReporter](StandardReporter.md)                         |                                                                                                                            |
+    | [UnimplementedMethodException](UnimplementedMethodException.md) |                                                                                                                            |
 
 

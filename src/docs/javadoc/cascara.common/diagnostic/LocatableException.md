@@ -9,7 +9,7 @@ Package [io.github.qishr.cascara.common.diagnostic](index.md)
                                         io.github.qishr.cascara.common.diagnostic.LocatableException<br/>
 <br/>
 Direct Known Subtypes:<br/>
-    [ParserException](../lang/exception/ParserException.md), [TokenizerException](../lang/exception/TokenizerException.md), [SerializerException](../lang/exception/SerializerException.md), [SchemaException](../../cascara.schema/schema/exception/SchemaException.md), [YamlEmitterException](../../cascara.lang.yaml/yaml/exception/YamlEmitterException.md)
+    [ParserException](../lang/exception/ParserException.md), [TokenizerException](../lang/exception/TokenizerException.md), [SerializerException](../lang/exception/SerializerException.md), [SchemaException](../../cascara.schema/schema/diagnostic/SchemaException.md), [YamlEmitterException](../cascara.lang.yaml/YamlEmitterException.md)
 
 
 ----
@@ -30,14 +30,15 @@ Direct Known Subtypes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                   | Method                                        | Description |
-|-----------------------------------------------------------------------------------------------------|-----------------------------------------------|-------------|
-| public int                                                                                          | [getLine](#getline)()                         |             |
-| public int                                                                                          | [getColumn](#getcolumn)()                     |             |
-| public [URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html)        | [getUri](#geturi)()                           |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getRawMessage](#getrawmessage)()             |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getMessage](#getmessage)()                   |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getLocalizedMessage](#getlocalizedmessage)() |             |
+| Modifier and Type                                                                                   | Method                                                                                                       | Description |
+|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|-------------|
+| public int                                                                                          | [getLine](#getline)()                                                                                        |             |
+| public int                                                                                          | [getColumn](#getcolumn)()                                                                                    |             |
+| public [URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html)        | [getUri](#geturi)()                                                                                          |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getRawMessage](#getrawmessage)()                                                                            |             |
+| public void                                                                                         | [setUri](#seturi)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri) |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getMessage](#getmessage)()                                                                                  |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getLocalizedMessage](#getlocalizedmessage)()                                                                |             |
 
 
 ### Methods inherited from [LocalizableRuntimeException](LocalizableRuntimeException.md)
@@ -77,6 +78,15 @@ getCode, getDetails
 ### getRawMessage
 
 <span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getRawMessage__()</span>
+
+
+
+
+---
+
+### setUri
+
+<span style="font-family: monospace; font-size: 80%;">public void __setUri__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri)</span>
 
 
 

@@ -7,15 +7,15 @@ Package [io.github.qishr.cascara.common.lang.streaming](index.md)
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Experimental<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
 public interface __StreamHandler__</span>
 
 
 ## Method Summary
 
-| Modifier and Type    | Method                                                         | Description |
-|----------------------|----------------------------------------------------------------|-------------|
-| public abstract void | [onEvent](#onevent)([StreamingEvent](StreamingEvent.md) event) |             |
+| Modifier and Type    | Method                       | Description |
+|----------------------|------------------------------|-------------|
+| public abstract void | [onEvent](#onevent)(E event) |             |
 
 
 
@@ -23,7 +23,7 @@ public interface __StreamHandler__</span>
 
 ### onEvent
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __onEvent__([StreamingEvent](StreamingEvent.md) event)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __onEvent__(E event)</span>
 
 
 

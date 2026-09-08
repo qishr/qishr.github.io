@@ -50,6 +50,7 @@ an optional underlying exception cause.
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)               | [getThread](#getthread)()                                                                                    | Returns the name of the execution thread that instantiated this diagnostic instance.          |
 | public [LocalDateTime](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/LocalDateTime.html) | [getTimestamp](#gettimestamp)()                                                                              | Returns the exact timestamp indicating when this diagnostic was instantiated.                 |
 | public void                                                                                                       | [setUri](#seturi)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri) | Sets the URI of the source resource associated with this diagnostic.                          |
+| public void                                                                                                       | [setLine](#setline)(int line)                                                                                | Sets the URI of the source resource associated with this diagnostic.                          |
 
 
 
@@ -193,6 +194,15 @@ Returns the exact timestamp indicating when this diagnostic was instantiated.
 ### setUri
 
 <span style="font-family: monospace; font-size: 80%;">public void __setUri__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri)</span>
+
+Sets the URI of the source resource associated with this diagnostic.
+
+
+---
+
+### setLine
+
+<span style="font-family: monospace; font-size: 80%;">public void __setLine__(int line)</span>
 
 Sets the URI of the source resource associated with this diagnostic.
 

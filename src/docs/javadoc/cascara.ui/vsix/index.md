@@ -8,19 +8,17 @@
 
     | Class                                   | Description |
     |-----------------------------------------|-------------|
-    | [VsixPackage](VsixPackage.md)           |             |
     | [VsixPackageInfo](VsixPackageInfo.md)   |             |
     | [VsixPackageStore](VsixPackageStore.md) |             |
-    | [VsixThemeInfo](VsixThemeInfo.md)       |             |
+    | [VsixPreview](VsixPreview.md)           |             |
 
 
 === "Classes"
 
     | Class                                   | Description |
     |-----------------------------------------|-------------|
-    | [VsixPackage](VsixPackage.md)           |             |
     | [VsixPackageInfo](VsixPackageInfo.md)   |             |
     | [VsixPackageStore](VsixPackageStore.md) |             |
-    | [VsixThemeInfo](VsixThemeInfo.md)       |             |
+    | [VsixPreview](VsixPreview.md)           |             |
 
 

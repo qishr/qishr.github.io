@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [AstNode](AstNode.md), [Iterable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Iterable.html)<E>
 
 All Known Implementing Classes:<br/>
-    [ReferenceMapNode](../reference/ReferenceMapNode.md), [JsonObject](../../../cascara.lang.json/ast/JsonObject.md), [YamlMap](../../../cascara.lang.yaml/yaml/ast/YamlMap.md)
+    [PlainMapNode](../plain/PlainMapNode.md), [JsonObject](../../../cascara.lang.json/ast/JsonObject.md), [YamlMap](../../../cascara.lang.yaml/ast/YamlMap.md)
 
 
 ----
@@ -18,38 +18,37 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                           | Method                                                                                                                                                                                                                                                       | Description |
-|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public abstract int                                                                                         | [size](#size)()                                                                                                                                                                                                                                              |             |
-| public abstract boolean                                                                                     | [isEmpty](#isempty)()                                                                                                                                                                                                                                        |             |
-| public abstract boolean                                                                                     | [containsKey](#containskey)(K key)                                                                                                                                                                                                                           |             |
-| public abstract V                                                                                           | [get](#get)(K key)                                                                                                                                                                                                                                           |             |
-| public abstract E                                                                                           | [getEntry](#getentry)(K key)                                                                                                                                                                                                                                 |             |
-| public abstract E                                                                                           | [getEntry](#getentry)(int i)                                                                                                                                                                                                                                 |             |
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<E> | [getEntries](#getentries)()                                                                                                                                                                                                                                  |             |
-| public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<E>   | [entrySet](#entryset)()                                                                                                                                                                                                                                      |             |
-| public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<K>   | [keySet](#keyset)()                                                                                                                                                                                                                                          |             |
-| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [put](#put)(K key, V value)                                                                                                                                                                                                                                  |             |
-| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [remove](#remove)(K key)                                                                                                                                                                                                                                     |             |
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<V> | [values](#values)()                                                                                                                                                                                                                                          |             |
-| public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<E>  | [getChildren](#getchildren)()                                                                                                                                                                                                                                |             |
-| public abstract boolean                                                                                     | [containsKey](#containskey)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                |             |
-| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, V value)                                                                                                                                       |             |
-| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value)                                            |             |
-| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [remove](#remove)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                          |             |
-| public abstract V                                                                                           | [get](#get)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                                |             |
-| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [getMap](#getmap)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                          |             |
-| public abstract [SequenceAstNode](SequenceAstNode.md)<V>                                                    | [getSequence](#getsequence)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                |             |
-| public abstract [ScalarAstNode](ScalarAstNode.md)<V>                                                        | [getScalar](#getscalar)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                    |             |
-| public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getString](#getstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                    |             |
-| public default int                                                                                          | [getInteger](#getinteger)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, int defaultValue)                                                                                                                |             |
-| public default double                                                                                       | [getDouble](#getdouble)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, double defaultValue)                                                                                                               |             |
-| public default boolean                                                                                      | [getBoolean](#getboolean)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, boolean defaultValue)                                                                                                            |             |
-| public default int                                                                                          | [getInteger](#getinteger)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                  |             |
-| public default double                                                                                       | [getDouble](#getdouble)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                    |             |
-| public default boolean                                                                                      | [getBoolean](#getboolean)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                                  |             |
-| public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getString](#getstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) defaultValue)                         |             |
-| public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getAttributeOrDefault](#getattributeordefault)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) defaultValue) |             |
+| Modifier and Type                                                                                           | Method                                                                                                                                                                                                                                     | Description |
+|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public abstract int                                                                                         | [size](#size)()                                                                                                                                                                                                                            |             |
+| public abstract boolean                                                                                     | [isEmpty](#isempty)()                                                                                                                                                                                                                      |             |
+| public abstract boolean                                                                                     | [containsKey](#containskey)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                              |             |
+| public abstract V                                                                                           | [get](#get)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                                              |             |
+| public abstract E                                                                                           | [getEntry](#getentry)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                                    |             |
+| public abstract E                                                                                           | [getEntry](#getentry)(int i)                                                                                                                                                                                                               |             |
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<E> | [getEntries](#getentries)()                                                                                                                                                                                                                |             |
+| public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<E>   | [entrySet](#entryset)()                                                                                                                                                                                                                    |             |
+| public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<K>   | [keySet](#keyset)()                                                                                                                                                                                                                        |             |
+| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [put](#put)(K key, V value)                                                                                                                                                                                                                |             |
+| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [remove](#remove)(K key)                                                                                                                                                                                                                   |             |
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<V> | [values](#values)()                                                                                                                                                                                                                        |             |
+| public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<E>  | [getChildren](#getchildren)()                                                                                                                                                                                                              |             |
+| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, V value)                                                                                                                     |             |
+| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value)                          |             |
+| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [remove](#remove)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                        |             |
+| public abstract [MapAstNode](MapAstNode.md)<K, V, E>                                                        | [getMap](#getmap)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                                        |             |
+| public abstract [SequenceAstNode](SequenceAstNode.md)<V>                                                    | [getSequence](#getsequence)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                              |             |
+| public abstract [ScalarAstNode](ScalarAstNode.md)<V>                                                        | [getScalar](#getscalar)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                                  |             |
+| public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getString](#getstring)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                                  |             |
+| public default int                                                                                          | [getInteger](#getinteger)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key, int defaultValue)                                                                                              |             |
+| public default double                                                                                       | [getDouble](#getdouble)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key, double defaultValue)                                                                                             |             |
+| public default boolean                                                                                      | [getBoolean](#getboolean)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key, boolean defaultValue)                                                                                          |             |
+| public default int                                                                                          | [getInteger](#getinteger)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                                |             |
+| public default double                                                                                       | [getDouble](#getdouble)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                                  |             |
+| public default boolean                                                                                      | [getBoolean](#getboolean)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                                |             |
+| public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getString](#getstring)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) defaultValue)       |             |
+| public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getAttribute](#getattribute)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                            |             |
+| public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getAttribute](#getattribute)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) defaultValue) |             |
 
 
 
@@ -75,7 +74,7 @@ All Known Implementing Classes:<br/>
 
 ### containsKey
 
-<span style="font-family: monospace; font-size: 80%;">public abstract boolean __containsKey__(K key)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract boolean __containsKey__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 
@@ -84,7 +83,7 @@ All Known Implementing Classes:<br/>
 
 ### get
 
-<span style="font-family: monospace; font-size: 80%;">public abstract V __get__(K key)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract V __get__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 
@@ -93,7 +92,7 @@ All Known Implementing Classes:<br/>
 
 ### getEntry
 
-<span style="font-family: monospace; font-size: 80%;">public abstract E __getEntry__(K key)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract E __getEntry__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 
@@ -176,15 +175,6 @@ All Known Implementing Classes:<br/>
 
 ---
 
-### containsKey
-
-<span style="font-family: monospace; font-size: 80%;">public abstract boolean __containsKey__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
-
-
-
-
----
-
 ### put
 
 <span style="font-family: monospace; font-size: 80%;">public abstract [MapAstNode](MapAstNode.md)<K, V, E> __put__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, V value)</span>
@@ -212,18 +202,9 @@ All Known Implementing Classes:<br/>
 
 ---
 
-### get
-
-<span style="font-family: monospace; font-size: 80%;">public abstract V __get__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
-
-
-
-
----
-
 ### getMap
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [MapAstNode](MapAstNode.md)<K, V, E> __getMap__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [MapAstNode](MapAstNode.md)<K, V, E> __getMap__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 
@@ -232,7 +213,7 @@ All Known Implementing Classes:<br/>
 
 ### getSequence
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [SequenceAstNode](SequenceAstNode.md)<V> __getSequence__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [SequenceAstNode](SequenceAstNode.md)<V> __getSequence__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 
@@ -241,7 +222,7 @@ All Known Implementing Classes:<br/>
 
 ### getScalar
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [ScalarAstNode](ScalarAstNode.md)<V> __getScalar__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [ScalarAstNode](ScalarAstNode.md)<V> __getScalar__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 
@@ -250,7 +231,7 @@ All Known Implementing Classes:<br/>
 
 ### getString
 
-<span style="font-family: monospace; font-size: 80%;">public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getString__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getString__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 
@@ -263,7 +244,7 @@ Returns the string value of the map entry, or null if it doesn't exist.
 
 ### getInteger
 
-<span style="font-family: monospace; font-size: 80%;">public default int __getInteger__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, int defaultValue)</span>
+<span style="font-family: monospace; font-size: 80%;">public default int __getInteger__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key, int defaultValue)</span>
 
 
 
@@ -272,7 +253,7 @@ Returns the string value of the map entry, or null if it doesn't exist.
 
 ### getDouble
 
-<span style="font-family: monospace; font-size: 80%;">public default double __getDouble__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, double defaultValue)</span>
+<span style="font-family: monospace; font-size: 80%;">public default double __getDouble__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key, double defaultValue)</span>
 
 
 
@@ -281,7 +262,7 @@ Returns the string value of the map entry, or null if it doesn't exist.
 
 ### getBoolean
 
-<span style="font-family: monospace; font-size: 80%;">public default boolean __getBoolean__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, boolean defaultValue)</span>
+<span style="font-family: monospace; font-size: 80%;">public default boolean __getBoolean__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key, boolean defaultValue)</span>
 
 
 
@@ -290,7 +271,7 @@ Returns the string value of the map entry, or null if it doesn't exist.
 
 ### getInteger
 
-<span style="font-family: monospace; font-size: 80%;">public default int __getInteger__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">public default int __getInteger__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 
@@ -299,7 +280,7 @@ Returns the string value of the map entry, or null if it doesn't exist.
 
 ### getDouble
 
-<span style="font-family: monospace; font-size: 80%;">public default double __getDouble__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">public default double __getDouble__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 
@@ -308,7 +289,7 @@ Returns the string value of the map entry, or null if it doesn't exist.
 
 ### getBoolean
 
-<span style="font-family: monospace; font-size: 80%;">public default boolean __getBoolean__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">public default boolean __getBoolean__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 
@@ -317,16 +298,25 @@ Returns the string value of the map entry, or null if it doesn't exist.
 
 ### getString
 
-<span style="font-family: monospace; font-size: 80%;">public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getString__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) defaultValue)</span>
+<span style="font-family: monospace; font-size: 80%;">public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getString__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) defaultValue)</span>
 
 
 
 
 ---
 
-### getAttributeOrDefault
+### getAttribute
 
-<span style="font-family: monospace; font-size: 80%;">public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getAttributeOrDefault__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) defaultValue)</span>
+<span style="font-family: monospace; font-size: 80%;">public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getAttribute__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
+
+
+
+
+---
+
+### getAttribute
+
+<span style="font-family: monospace; font-size: 80%;">public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getAttribute__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) defaultValue)</span>
 
 
 

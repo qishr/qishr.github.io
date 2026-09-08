@@ -7,7 +7,8 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __ModulePath__</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public class __ModulePath__</span>
 
 
 ## Constructor Summary

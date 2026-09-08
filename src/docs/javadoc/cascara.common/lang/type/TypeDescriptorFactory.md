@@ -8,7 +8,7 @@ Package [io.github.qishr.cascara.common.lang.type](index.md)
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Beta<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Beta<br/>
 public class __TypeDescriptorFactory__<br/>extends [AbstractServiceProviderFactory](../../service/AbstractServiceProviderFactory.md)
 </span>
 

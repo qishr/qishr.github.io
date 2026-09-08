@@ -10,14 +10,15 @@ All Implemented Interfaces:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public interface __PathEvaluator__</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public interface __PathEvaluator__</span>
 
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                      | Method                                                                                                       | Description |
-|----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|-------------|
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[AstNode](../ast/AstNode.md)> | [evaluate](#evaluate)([AstNode](../ast/AstNode.md) root, [PathExpression](../ast/PathExpression.md)<?> expr) |             |
+| Modifier and Type                                                                                                                      | Method                                                                                                        | Description |
+|----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|-------------|
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[AstNode](../ast/AstNode.md)> | [evaluate](#evaluate)([AstNode](../ast/AstNode.md) root, [PathExpression](../util/PathExpression.md)<?> expr) |             |
 
 
 
@@ -25,7 +26,7 @@ All Implemented Interfaces:<br/>
 
 ### evaluate
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[AstNode](../ast/AstNode.md)> __evaluate__([AstNode](../ast/AstNode.md) root, [PathExpression](../ast/PathExpression.md)<?> expr)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[AstNode](../ast/AstNode.md)> __evaluate__([AstNode](../ast/AstNode.md) root, [PathExpression](../util/PathExpression.md)<?> expr)</span>
 
 
 

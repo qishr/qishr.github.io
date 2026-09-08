@@ -5,53 +5,118 @@ Package [io.github.qishr.cascara.common.lang.util](index.md)
         io.github.qishr.cascara.common.lang.util.SourceStringBuffer<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [SimdCapableBuffer](SimdCapableBuffer.md), [LexemeProvider](LexemeProvider.md), [CharSequence](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/CharSequence.html)
+    [SourceBuffer](SourceBuffer.md), [LexemeProvider](LexemeProvider.md), [CharSequence](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/CharSequence.html)
 
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Experimental<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
 public class __SourceStringBuffer__</span>
 
 
 ## Constructor Summary
 
-| Constructor                                                                                                             | Description |
-|-------------------------------------------------------------------------------------------------------------------------|-------------|
-| SourceStringBuffer([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source) |             |
+| Constructor          | Description |
+|----------------------|-------------|
+| SourceStringBuffer() |             |
 
 
 
 ## Method Summary
 
-| Modifier and Type                                                                                               | Method                                          | Description |
-|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------|-------------|
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)             | [slice](#slice)(int startOffset, int endOffset) |             |
-| public int                                                                                                      | [length](#length)()                             |             |
-| public char                                                                                                     | [charAt](#charat)(int index)                    |             |
-| public [CharSequence](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/CharSequence.html) | [subSequence](#subsequence)(int start, int end) |             |
-| public char                                                                                                     | [advance](#advance)()                           |             |
-| public char                                                                                                     | [peekAhead](#peekahead)(int steps)              |             |
-| public char                                                                                                     | [peek](#peek)()                                 |             |
-| public char                                                                                                     | [peekNext](#peeknext)()                         |             |
-| public void                                                                                                     | [backup](#backup)()                             |             |
-| public boolean                                                                                                  | [isAtEnd](#isatend)()                           |             |
-| public int                                                                                                      | [line](#line)()                                 |             |
-| public int                                                                                                      | [column](#column)()                             |             |
-| public int                                                                                                      | [offset](#offset)()                             |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)             | [getTokenWindowLexeme](#gettokenwindowlexeme)() |             |
-| public void                                                                                                     | [startTokenWindow](#starttokenwindow)()         |             |
-| public int                                                                                                      | [windowStartOffset](#windowstartoffset)()       |             |
-| public int                                                                                                      | [windowStartLine](#windowstartline)()           |             |
-| public int                                                                                                      | [windowStartColumn](#windowstartcolumn)()       |             |
-| public void                                                                                                     | [skipWhitespaceSimd](#skipwhitespacesimd)()     |             |
-| public int                                                                                                      | [scanDigitsSimd](#scandigitssimd)(int pos)      |             |
-| public void                                                                                                     | [setOffset](#setoffset)(int newOffset)          |             |
-| public void                                                                                                     | [advanceBy](#advanceby)(int n)                  |             |
+| Modifier and Type                                                                                               | Method                                                                                                                 | Description |
+|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [Properties](../../util/Properties.md)                                                                   | [getServiceProperties](#getserviceproperties)()                                                                        |             |
+| public [SourceStringBuffer](SourceStringBuffer.md)                                                              | [open](#open)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source)     |             |
+| public [SourceStringBuffer](SourceStringBuffer.md)                                                              | [open](#open)(byte[] data)                                                                                             |             |
+| public [SourceStringBuffer](SourceStringBuffer.md)                                                              | [open](#open)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)       |             |
+| public [SourceStringBuffer](SourceStringBuffer.md)                                                              | [open](#open)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is) |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)             | [slice](#slice)(int startOffset, int endOffset)                                                                        |             |
+| public int                                                                                                      | [length](#length)()                                                                                                    |             |
+| public char                                                                                                     | [charAt](#charat)(int index)                                                                                           |             |
+| public [CharSequence](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/CharSequence.html) | [subSequence](#subsequence)(int start, int end)                                                                        |             |
+| public char                                                                                                     | [advance](#advance)()                                                                                                  |             |
+| public char                                                                                                     | [peekAhead](#peekahead)(int steps)                                                                                     |             |
+| public char                                                                                                     | [peek](#peek)()                                                                                                        |             |
+| public char                                                                                                     | [peekNext](#peeknext)()                                                                                                |             |
+| public char                                                                                                     | [previous](#previous)()                                                                                                |             |
+| public void                                                                                                     | [backup](#backup)()                                                                                                    |             |
+| public boolean                                                                                                  | [isAtEnd](#isatend)()                                                                                                  |             |
+| public int                                                                                                      | [line](#line)()                                                                                                        |             |
+| public int                                                                                                      | [column](#column)()                                                                                                    |             |
+| public int                                                                                                      | [offset](#offset)()                                                                                                    |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)             | [getTokenWindowLexeme](#gettokenwindowlexeme)()                                                                        |             |
+| public void                                                                                                     | [startTokenWindow](#starttokenwindow)()                                                                                |             |
+| public int                                                                                                      | [windowStartOffset](#windowstartoffset)()                                                                              |             |
+| public int                                                                                                      | [windowStartLine](#windowstartline)()                                                                                  |             |
+| public int                                                                                                      | [windowStartColumn](#windowstartcolumn)()                                                                              |             |
+| public void                                                                                                     | [setOffset](#setoffset)(int newOffset)                                                                                 |             |
+| public void                                                                                                     | [advanceBy](#advanceby)(int n)                                                                                         |             |
 
 
 
 ## Method Details
+
+### getServiceProperties
+
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../../util/Properties.md) __getServiceProperties__()</span>
+
+
+
+
+---
+
+### open
+
+<span style="font-family: monospace; font-size: 80%;">public [SourceStringBuffer](SourceStringBuffer.md) __open__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source)</span>
+
+
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
+
+---
+
+### open
+
+<span style="font-family: monospace; font-size: 80%;">public [SourceStringBuffer](SourceStringBuffer.md) __open__(byte[] data)</span>
+
+
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
+
+---
+
+### open
+
+<span style="font-family: monospace; font-size: 80%;">public [SourceStringBuffer](SourceStringBuffer.md) __open__([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)</span>
+
+
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
+
+---
+
+### open
+
+<span style="font-family: monospace; font-size: 80%;">public [SourceStringBuffer](SourceStringBuffer.md) __open__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)</span>
+
+
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
+
+---
 
 ### slice
 
@@ -85,6 +150,10 @@ public class __SourceStringBuffer__</span>
 
 
 
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
 
 ---
 
@@ -93,6 +162,10 @@ public class __SourceStringBuffer__</span>
 <span style="font-family: monospace; font-size: 80%;">public [CharSequence](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/CharSequence.html) __subSequence__(int start, int end)</span>
 
 
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
 
 
 ---
@@ -103,6 +176,10 @@ public class __SourceStringBuffer__</span>
 
 
 
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
 
 ---
 
@@ -111,6 +188,10 @@ public class __SourceStringBuffer__</span>
 <span style="font-family: monospace; font-size: 80%;">public char __peekAhead__(int steps)</span>
 
 
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
 
 
 ---
@@ -121,6 +202,10 @@ public class __SourceStringBuffer__</span>
 
 
 
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
 
 ---
 
@@ -129,6 +214,23 @@ public class __SourceStringBuffer__</span>
 <span style="font-family: monospace; font-size: 80%;">public char __peekNext__()</span>
 
 
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
+
+---
+
+### previous
+
+<span style="font-family: monospace; font-size: 80%;">public char __previous__()</span>
+
+
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
 
 
 ---
@@ -139,6 +241,10 @@ public class __SourceStringBuffer__</span>
 
 
 
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
 
 ---
 
@@ -147,6 +253,10 @@ public class __SourceStringBuffer__</span>
 <span style="font-family: monospace; font-size: 80%;">public boolean __isAtEnd__()</span>
 
 
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
 
 
 ---
@@ -157,6 +267,10 @@ public class __SourceStringBuffer__</span>
 
 
 
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
 
 ---
 
@@ -165,6 +279,10 @@ public class __SourceStringBuffer__</span>
 <span style="font-family: monospace; font-size: 80%;">public int __column__()</span>
 
 
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
 
 
 ---
@@ -175,6 +293,10 @@ public class __SourceStringBuffer__</span>
 
 
 
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
 
 ---
 
@@ -183,6 +305,10 @@ public class __SourceStringBuffer__</span>
 <span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getTokenWindowLexeme__()</span>
 
 
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
 
 
 ---
@@ -193,6 +319,10 @@ public class __SourceStringBuffer__</span>
 
 
 
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
 
 ---
 
@@ -201,6 +331,10 @@ public class __SourceStringBuffer__</span>
 <span style="font-family: monospace; font-size: 80%;">public int __windowStartOffset__()</span>
 
 
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
 
 
 ---
@@ -211,6 +345,10 @@ public class __SourceStringBuffer__</span>
 
 
 
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
 
 ---
 
@@ -220,31 +358,9 @@ public class __SourceStringBuffer__</span>
 
 
 
-
----
-
-### skipWhitespaceSimd
-
-<span style="font-family: monospace; font-size: 80%;">public void __skipWhitespaceSimd__()</span>
-
-
-
 **Specified By:**
 
-[SimdCapableBuffer](SimdCapableBuffer.md)
-
-
----
-
-### scanDigitsSimd
-
-<span style="font-family: monospace; font-size: 80%;">public int __scanDigitsSimd__(int pos)</span>
-
-
-
-**Specified By:**
-
-[SimdCapableBuffer](SimdCapableBuffer.md)
+[SourceBuffer](SourceBuffer.md)
 
 
 ---
@@ -254,6 +370,10 @@ public class __SourceStringBuffer__</span>
 <span style="font-family: monospace; font-size: 80%;">public void __setOffset__(int newOffset)</span>
 
 
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
 
 
 ---

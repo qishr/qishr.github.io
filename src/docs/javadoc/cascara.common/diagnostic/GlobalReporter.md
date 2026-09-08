@@ -14,29 +14,29 @@ Package [io.github.qishr.cascara.common.diagnostic](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                 | Method                                                                                                                                                                                              | Description |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| protected [GlobalReporter](GlobalReporter.md)                                                                                                                                                                     | [self](#self)()                                                                                                                                                                                     |             |
-| public static [GlobalReporter](GlobalReporter.md)                                                                                                                                                                 | [globalInstance](#globalinstance)()                                                                                                                                                                 |             |
-| public static [GlobalReporter](GlobalReporter.md)                                                                                                                                                                 | [forClass](#forclass)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)                                                                          |             |
-| public static [GlobalReporter](GlobalReporter.md)                                                                                                                                                                 | [forSource](#forsource)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source)                                                                        |             |
-| public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setLevel](#setlevel)([Level](Diagnostic.Level.md) level)                                                                                                                                           |             |
-| public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setDiagnosticCollector](#setdiagnosticcollector)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector) |             |
-| public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setProblemCollector](#setproblemcollector)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)       |             |
-| public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setSystemOutputEnabled](#setsystemoutputenabled)(boolean b)                                                                                                                                        |             |
-| public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setFlushEnabled](#setflushenabled)(boolean b)                                                                                                                                                      |             |
-| protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)>                                                                  | [getDiagnosticCollector](#getdiagnosticcollector)()                                                                                                                                                 |             |
-| protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)>                                                                  | [getProblemCollector](#getproblemcollector)()                                                                                                                                                       |             |
-| protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getStringWriter](#getstringwriter)()                                                                                                                                                               |             |
-| protected boolean                                                                                                                                                                                                 | [isSystemOutputEnabled](#issystemoutputenabled)()                                                                                                                                                   |             |
-| protected boolean                                                                                                                                                                                                 | [isFlushEnabled](#isflushenabled)()                                                                                                                                                                 |             |
-| protected boolean                                                                                                                                                                                                 | [isStackTraceEnabled](#isstacktraceenabled)()                                                                                                                                                       |             |
-| protected void                                                                                                                                                                                                    | [writeString](#writestring)([Diagnostic](Diagnostic.md) diagnostic)                                                                                                                                 |             |
+| Modifier and Type                                                                                                                                                                                                 | Method                                                                                                                                                                                                              | Description |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| protected [GlobalReporter](GlobalReporter.md)                                                                                                                                                                     | [self](#self)()                                                                                                                                                                                                     |             |
+| public static [GlobalReporter](GlobalReporter.md)                                                                                                                                                                 | [globalInstance](#globalinstance)()                                                                                                                                                                                 |             |
+| public static [GlobalReporter](GlobalReporter.md)                                                                                                                                                                 | [forClass](#forclass)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)                                                                                          |             |
+| public static [GlobalReporter](GlobalReporter.md)                                                                                                                                                                 | [forSource](#forsource)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source)                                                                                        |             |
+| public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setLevel](#setlevel)([Level](Diagnostic.Level.md) level)                                                                                                                                                           |             |
+| public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setDiagnosticConsumer](#setdiagnosticconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)                   |             |
+| public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setProblemConsumer](#setproblemconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)                         |             |
+| public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setSystemOutputEnabled](#setsystemoutputenabled)(boolean b)                                                                                                                                                        |             |
+| public [GlobalReporter](GlobalReporter.md)                                                                                                                                                                        | [setFlushEnabled](#setflushenabled)(boolean b)                                                                                                                                                                      |             |
+| protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)>                                                                  | [getDiagnosticConsumer](#getdiagnosticconsumer)()                                                                                                                                                                   |             |
+| protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)>                                                                  | [getProblemConsumer](#getproblemconsumer)()                                                                                                                                                                         |             |
+| protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getLineConsumer](#getlineconsumer)()                                                                                                                                                                               |             |
+| protected boolean                                                                                                                                                                                                 | [isSystemOutputEnabled](#issystemoutputenabled)()                                                                                                                                                                   |             |
+| protected boolean                                                                                                                                                                                                 | [isFlushEnabled](#isflushenabled)()                                                                                                                                                                                 |             |
+| protected boolean                                                                                                                                                                                                 | [isStackTraceEnabled](#isstacktraceenabled)()                                                                                                                                                                       |             |
+| protected [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                            | [formatMessage](#formatmessage)([Diagnostic](Diagnostic.md) diagnostic, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, int messageLine, boolean useColoring) |             |
 
 
 ### Methods inherited from [AbstractReporter](AbstractReporter.md)
 
-errorAt, trace, setStackTraceEnabled, debug, buildDiagnostic, warnAt, errorAt, infoAt, collectsProblems, setSystemErrorEnabled, infoAt, isProblem, errorAt, infoAt, [writeString](#writestring), errorAt, warnAt, error, warnAt, outputToConsole, warn, error, buildDiagnostic, buildDiagnostic, errorAt, errorAt, errorAt, report, info, getLevel, isSilent, error, error, buildDiagnostic
+errorAt, trace, setStackTraceEnabled, setPrefixEveryLine, setShowProblemCodes, reportsDebug, debug, buildDiagnostic, warnAt, errorAt, reportsTrace, infoAt, collectsProblems, setSystemErrorEnabled, infoAt, isProblem, errorAt, error, infoAt, errorAt, warnAt, errorAt, error, warnAt, setLineConsumer, warn, displayLine, setAnsiColoringEnabled, logLine, warnAt, buildDiagnostic, buildDiagnostic, errorAt, errorAt, warnAt, errorAt, writeString, report, info, getWriter, getLevel, isSilent, error, buildDiagnostic, errorAt
 
 
 ## Method Details
@@ -94,28 +94,28 @@ errorAt, trace, setStackTraceEnabled, debug, buildDiagnostic, warnAt, errorAt, i
 
 ---
 
-### setDiagnosticCollector
+### setDiagnosticConsumer
 
-<span style="font-family: monospace; font-size: 80%;">public [GlobalReporter](GlobalReporter.md) __setDiagnosticCollector__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)</span>
+<span style="font-family: monospace; font-size: 80%;">public [GlobalReporter](GlobalReporter.md) __setDiagnosticConsumer__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)</span>
 
 
 
 **Overrides:**
 
-[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#setdiagnosticcollector)
+[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#setdiagnosticconsumer)
 
 
 ---
 
-### setProblemCollector
+### setProblemConsumer
 
-<span style="font-family: monospace; font-size: 80%;">public [GlobalReporter](GlobalReporter.md) __setProblemCollector__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)</span>
+<span style="font-family: monospace; font-size: 80%;">public [GlobalReporter](GlobalReporter.md) __setProblemConsumer__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)</span>
 
 
 
 **Overrides:**
 
-[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#setproblemcollector)
+[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#setproblemconsumer)
 
 
 ---
@@ -138,41 +138,41 @@ errorAt, trace, setStackTraceEnabled, debug, buildDiagnostic, warnAt, errorAt, i
 
 ---
 
-### getDiagnosticCollector
+### getDiagnosticConsumer
 
-<span style="font-family: monospace; font-size: 80%;">protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> __getDiagnosticCollector__()</span>
+<span style="font-family: monospace; font-size: 80%;">protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> __getDiagnosticConsumer__()</span>
 
 
 
 **Overrides:**
 
-[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#getdiagnosticcollector)
+[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#getdiagnosticconsumer)
 
 
 ---
 
-### getProblemCollector
+### getProblemConsumer
 
-<span style="font-family: monospace; font-size: 80%;">protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> __getProblemCollector__()</span>
+<span style="font-family: monospace; font-size: 80%;">protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> __getProblemConsumer__()</span>
 
 
 
 **Overrides:**
 
-[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#getproblemcollector)
+[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#getproblemconsumer)
 
 
 ---
 
-### getStringWriter
+### getLineConsumer
 
-<span style="font-family: monospace; font-size: 80%;">protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> __getStringWriter__()</span>
+<span style="font-family: monospace; font-size: 80%;">protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> __getLineConsumer__()</span>
 
 
 
 **Overrides:**
 
-[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#getstringwriter)
+[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#getlineconsumer)
 
 
 ---
@@ -216,15 +216,15 @@ errorAt, trace, setStackTraceEnabled, debug, buildDiagnostic, warnAt, errorAt, i
 
 ---
 
-### writeString
+### formatMessage
 
-<span style="font-family: monospace; font-size: 80%;">protected void __writeString__([Diagnostic](Diagnostic.md) diagnostic)</span>
+<span style="font-family: monospace; font-size: 80%;">protected [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __formatMessage__([Diagnostic](Diagnostic.md) diagnostic, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, int messageLine, boolean useColoring)</span>
 
 
 
 **Overrides:**
 
-[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#writestring)
+[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#formatmessage)
 
 
 ---

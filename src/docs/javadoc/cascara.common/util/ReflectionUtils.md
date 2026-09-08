@@ -20,11 +20,15 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                           | Method                                                                                                                                                            | Description |
-|-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public static [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> | [getGenericTypeOfListField](#getgenerictypeoflistfield)([Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html) field) |             |
-| public static [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> | [getGenericTypeOfMapKey](#getgenerictypeofmapkey)([Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html) field)       |             |
-| public static [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> | [getGenericTypeOfMapValue](#getgenerictypeofmapvalue)([Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html) field)   |             |
+| Modifier and Type                                                                                                  | Method                                                                                                                                                            | Description |
+|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public static [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?>        | [getGenericTypeOfListField](#getgenerictypeoflistfield)([Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html) field) |             |
+| public static [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?>        | [getGenericTypeOfMapKey](#getgenerictypeofmapkey)([Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html) field)       |             |
+| public static [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?>        | [getGenericTypeOfMapValue](#getgenerictypeofmapvalue)([Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html) field)   |             |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)         | [getTestName](#gettestname)()                                                                                                                                     |             |
+| public static [Method](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Method.html) | [getTestMethod](#gettestmethod)()                                                                                                                                 |             |
+| public static io.github.qishr.cascara.common.util.Pair<java.lang.Class<?>                                          | [getCaller](#getcaller)()                                                                                                                                         |             |
+| public static io.github.qishr.cascara.common.util.Pair<java.lang.Class<?>                                          | [getCaller](#getcaller)(boolean ignoreQueryingClass)                                                                                                              |             |
 
 
 
@@ -32,7 +36,8 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 ### getGenericTypeOfListField
 
-<span style="font-family: monospace; font-size: 80%;">public static [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> __getGenericTypeOfListField__([Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html) field)</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+public static [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> __getGenericTypeOfListField__([Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html) field)</span>
 
 
 
@@ -51,6 +56,46 @@ Package [io.github.qishr.cascara.common.util](index.md)
 ### getGenericTypeOfMapValue
 
 <span style="font-family: monospace; font-size: 80%;">public static [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> __getGenericTypeOfMapValue__([Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html) field)</span>
+
+
+
+
+---
+
+### getTestName
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getTestName__()</span>
+
+
+
+
+---
+
+### getTestMethod
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+public static [Method](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Method.html) __getTestMethod__()</span>
+
+
+
+
+---
+
+### getCaller
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+public static io.github.qishr.cascara.common.util.Pair<java.lang.Class<?> __getCaller__()</span>
+
+
+
+
+---
+
+### getCaller
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+public static io.github.qishr.cascara.common.util.Pair<java.lang.Class<?> __getCaller__(boolean ignoreQueryingClass)</span>
 
 
 

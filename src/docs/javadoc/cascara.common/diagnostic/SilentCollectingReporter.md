@@ -22,19 +22,20 @@ Package [io.github.qishr.cascara.common.diagnostic](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                 | Method                                                              | Description |
-|-------------------------------------------------------------------|---------------------------------------------------------------------|-------------|
-| public boolean                                                    | [hasErrors](#haserrors)()                                           |             |
-| protected [SilentCollectingReporter](SilentCollectingReporter.md) | [self](#self)()                                                     |             |
-| public boolean                                                    | [collectsProblems](#collectsproblems)()                             |             |
-| public boolean                                                    | [isSilent](#issilent)()                                             |             |
-| protected void                                                    | [report](#report)([Diagnostic](Diagnostic.md) diagnostic)           |             |
-| protected void                                                    | [writeString](#writestring)([Diagnostic](Diagnostic.md) diagnostic) |             |
+| Modifier and Type                                                                                      | Method                                                                                                                                                                                                          | Description |
+|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public boolean                                                                                         | [hasErrors](#haserrors)()                                                                                                                                                                                       |             |
+| protected [SilentCollectingReporter](SilentCollectingReporter.md)                                      | [self](#self)()                                                                                                                                                                                                 |             |
+| public boolean                                                                                         | [collectsProblems](#collectsproblems)()                                                                                                                                                                         |             |
+| public boolean                                                                                         | [isSilent](#issilent)()                                                                                                                                                                                         |             |
+| protected void                                                                                         | [report](#report)([Diagnostic](Diagnostic.md) diagnostic)                                                                                                                                                       |             |
+| protected void                                                                                         | [writeString](#writestring)([Diagnostic](Diagnostic.md) diagnostic)                                                                                                                                             |             |
+| protected [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [formatMessage](#formatmessage)([Diagnostic](Diagnostic.md) diagnostic, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) line, int lineNumber, boolean useColoring) |             |
 
 
 ### Methods inherited from [AbstractReporter](AbstractReporter.md)
 
-errorAt, isSystemOutputEnabled, getProblemCollector, trace, setStackTraceEnabled, debug, getDiagnosticCollector, buildDiagnostic, warnAt, errorAt, infoAt, setSystemErrorEnabled, infoAt, isProblem, errorAt, infoAt, [writeString](#writestring), errorAt, warnAt, error, setDiagnosticCollector, warnAt, outputToConsole, setFlushEnabled, warn, error, setSystemOutputEnabled, buildDiagnostic, buildDiagnostic, setProblemCollector, errorAt, errorAt, isStackTraceEnabled, errorAt, info, isFlushEnabled, getLevel, error, error, buildDiagnostic, setLevel, getStringWriter
+errorAt, setStackTraceEnabled, setPrefixEveryLine, reportsDebug, buildDiagnostic, reportsTrace, infoAt, isProblem, errorAt, error, errorAt, warnAt, warnAt, setFlushEnabled, warn, displayLine, logLine, buildDiagnostic, errorAt, warnAt, isStackTraceEnabled, errorAt, setDiagnosticConsumer, info, getLevel, isSystemOutputEnabled, trace, setShowProblemCodes, debug, warnAt, errorAt, infoAt, setSystemErrorEnabled, infoAt, errorAt, setProblemConsumer, error, getLineConsumer, setLineConsumer, setAnsiColoringEnabled, warnAt, getProblemConsumer, setSystemOutputEnabled, buildDiagnostic, errorAt, isFlushEnabled, getWriter, getDiagnosticConsumer, error, buildDiagnostic, errorAt, setLevel
 
 
 ## Method Details
@@ -109,6 +110,19 @@ errorAt, isSystemOutputEnabled, getProblemCollector, trace, setStackTraceEnabled
 **Overrides:**
 
 [AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#writestring)
+
+
+---
+
+### formatMessage
+
+<span style="font-family: monospace; font-size: 80%;">protected [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __formatMessage__([Diagnostic](Diagnostic.md) diagnostic, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) line, int lineNumber, boolean useColoring)</span>
+
+
+
+**Overrides:**
+
+[AbstractReporter](../cascara.common/diagnostic/AbstractReporter.md#formatmessage)
 
 
 ---

@@ -14,8 +14,6 @@
     | [JsonLexemeBackedToken](JsonLexemeBackedToken.md) |             |
     | [JsonLiteral](JsonLiteral.md)                     |             |
     | [JsonNumberToken](JsonNumberToken.md)             |             |
-    | [JsonSimdCapableBuffer](JsonSimdCapableBuffer.md) |             |
-    | [JsonSourceByteBuffer](JsonSourceByteBuffer.md)   |             |
     | [JsonStructuralToken](JsonStructuralToken.md)     |             |
     | [JsonToken](JsonToken.md)                         |             |
     | [JsonTokenType](JsonTokenType.md)                 |             |
@@ -24,10 +22,9 @@
 
 === "Interfaces"
 
-    | Class                                             | Description |
-    |---------------------------------------------------|-------------|
-    | [JsonSimdCapableBuffer](JsonSimdCapableBuffer.md) |             |
-    | [JsonToken](JsonToken.md)                         |             |
+    | Class                     | Description |
+    |---------------------------|-------------|
+    | [JsonToken](JsonToken.md) |             |
 
 
 === "Classes"
@@ -39,7 +36,6 @@
     | [JsonErrorToken](JsonErrorToken.md)               |             |
     | [JsonLexemeBackedToken](JsonLexemeBackedToken.md) |             |
     | [JsonNumberToken](JsonNumberToken.md)             |             |
-    | [JsonSourceByteBuffer](JsonSourceByteBuffer.md)   |             |
     | [JsonStructuralToken](JsonStructuralToken.md)     |             |
     | [ScannedNumber](ScannedNumber.md)                 |             |
 

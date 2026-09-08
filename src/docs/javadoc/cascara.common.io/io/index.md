@@ -12,7 +12,6 @@
     | [IOUtils](IOUtils.md)               |             |
     | [ResourceStream](ResourceStream.md) |             |
     | [StreamLoader](StreamLoader.md)     |             |
-    | [UriScheme](UriScheme.md)           |             |
 
 
 === "Interfaces"
@@ -29,12 +28,5 @@
     |-------------------------------------|-------------|
     | [IOUtils](IOUtils.md)               |             |
     | [ResourceStream](ResourceStream.md) |             |
-
-
-=== "Enum Classes"
-
-    | Class                     | Description |
-    |---------------------------|-------------|
-    | [UriScheme](UriScheme.md) |             |
 
 

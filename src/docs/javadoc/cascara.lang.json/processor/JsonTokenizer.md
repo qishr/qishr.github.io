@@ -36,6 +36,7 @@ All Implemented Interfaces:<br/>
 | public void                                                                                                                               | [open](#open)(byte[] data)                                                                                                 |             |
 | public void                                                                                                                               | [open](#open)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)           |             |
 | public void                                                                                                                               | [open](#open)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) stream) |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonToken](../token/JsonToken.md)>       | [tokenize](#tokenize)(byte[] data)                                                                                         |             |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonToken](../token/JsonToken.md)>       | [tokenize](#tokenize)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source) |             |
 | public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[JsonTokenType](../token/JsonTokenType.md)> | [getTokenTypes](#gettokentypes)()                                                                                          |             |
 | public [JsonToken](../token/JsonToken.md)                                                                                                 | [nextToken](#nexttoken)()                                                                                                  |             |
@@ -143,6 +144,19 @@ setReporter, getOptions, getContentType, getServiceProperties, getVersion, getRe
 ### open
 
 <span style="font-family: monospace; font-size: 80%;">public void __open__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) stream)</span>
+
+
+
+**Specified By:**
+
+[Tokenizer](../../cascara.common/lang/processor/Tokenizer.md)
+
+
+---
+
+### tokenize
+
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonToken](../token/JsonToken.md)> __tokenize__(byte[] data)</span>
 
 
 

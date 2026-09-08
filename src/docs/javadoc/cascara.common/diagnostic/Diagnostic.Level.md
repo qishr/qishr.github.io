@@ -40,6 +40,7 @@ Defines the severity hierarchy classifications available for diagnostic tracking
 | public int                                                                                          | [getLevel](#getlevel)()                                                                                                | Returns the raw integer ordinal configuration weight assigned to this severity tier level. |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getLogPrefix](#getlogprefix)()                                                                                        |                                                                                            |
 | public boolean                                                                                      | [includes](#includes)([Level](Diagnostic.Level.md) level)                                                              |                                                                                            |
+| public boolean                                                                                      | [isProblem](#isproblem)()                                                                                              |                                                                                            |
 
 
 
@@ -150,6 +151,15 @@ Returns the raw integer ordinal configuration weight assigned to this severity t
 ### includes
 
 <span style="font-family: monospace; font-size: 80%;">public boolean __includes__([Level](Diagnostic.Level.md) level)</span>
+
+
+
+
+---
+
+### isProblem
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __isProblem__()</span>
 
 
 

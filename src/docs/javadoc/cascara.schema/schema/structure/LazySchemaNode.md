@@ -91,7 +91,7 @@ setType, getTitle, setExtension, addAllOf, getDescriptionKey, addDefinition, get
 
 **Throws:**
 
-[SchemaException](../exception/SchemaException.md)
+[SchemaException](../diagnostic/SchemaException.md)
 
 
 ---

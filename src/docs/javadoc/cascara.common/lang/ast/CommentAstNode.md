@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [AstNode](AstNode.md)
 
 All Known Implementing Classes:<br/>
-    [JsonComment](../../../cascara.lang.json/ast/JsonComment.md), [YamlComment](../../../cascara.lang.yaml/yaml/ast/YamlComment.md)
+    [JsonComment](../../../cascara.lang.json/ast/JsonComment.md), [YamlComment](../../../cascara.lang.yaml/ast/YamlComment.md)
 
 
 ----

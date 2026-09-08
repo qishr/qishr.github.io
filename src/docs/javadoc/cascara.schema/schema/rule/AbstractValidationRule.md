@@ -23,10 +23,10 @@ Direct Known Subtypes:<br/>
 
 ## Method Summary
 
-| Modifier and Type | Method                                                                                                                                                                                                                                                                                                                                                                                                                                  | Description |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| protected void    | [error](#error)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fragmentPath, [AstNode](../../../cascara.common/lang/ast/AstNode.md) node, [Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter, [SchemaDiagnosticCode](../exception/SchemaDiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
-| protected void    | [error](#error)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fragmentPath, int line, int column, [Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter, [SchemaDiagnosticCode](../exception/SchemaDiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                        |             |
+| Modifier and Type | Method                                                                                                                                                                                                                                                                                                                                                                                                                                   | Description |
+|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| protected void    | [error](#error)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fragmentPath, [AstNode](../../../cascara.common/lang/ast/AstNode.md) node, [Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter, [SchemaDiagnosticCode](../diagnostic/SchemaDiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
+| protected void    | [error](#error)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fragmentPath, int line, int column, [Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter, [SchemaDiagnosticCode](../diagnostic/SchemaDiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                        |             |
 
 
 
@@ -34,7 +34,7 @@ Direct Known Subtypes:<br/>
 
 ### error
 
-<span style="font-family: monospace; font-size: 80%;">protected void __error__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fragmentPath, [AstNode](../../../cascara.common/lang/ast/AstNode.md) node, [Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter, [SchemaDiagnosticCode](../exception/SchemaDiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">protected void __error__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fragmentPath, [AstNode](../../../cascara.common/lang/ast/AstNode.md) node, [Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter, [SchemaDiagnosticCode](../diagnostic/SchemaDiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 
 
@@ -43,7 +43,7 @@ Direct Known Subtypes:<br/>
 
 ### error
 
-<span style="font-family: monospace; font-size: 80%;">protected void __error__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fragmentPath, int line, int column, [Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter, [SchemaDiagnosticCode](../exception/SchemaDiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">protected void __error__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fragmentPath, int line, int column, [Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter, [SchemaDiagnosticCode](../diagnostic/SchemaDiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 
 

@@ -23,15 +23,17 @@ It automatically calculates column widths to align the table content.
 
 ## Method Summary
 
-| Modifier and Type                      | Method                                                                                                                           | Description                                                                  |
-|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| public void                            | [setShowHeaders](#setshowheaders)(boolean v)                                                                                     |                                                                              |
-| public void                            | [setStyle](#setstyle)([Style](TextualTable.Style.md) style)                                                                      |                                                                              |
-| public [TextualTable](TextualTable.md) | [addColumn](#addcolumn)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) heading)    | Adds a column with the specified heading to the table.                       |
-| public [TextualTable](TextualTable.md) | [addRow](#addrow)([TabularData](TabularData.md) row)                                                                             |                                                                              |
-| public [TextualTable](TextualTable.md) | [addRow](#addrow)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)[] valueStrings)   | Adds a row of data to the table.                                             |
-| public void                            | [render](#render)([Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html) writer)             | Renders the table as text without any indentation.                           |
-| public void                            | [render](#render)([Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html) writer, int indent) | Renders the table as text with a given indentation level (number of spaces). |
+| Modifier and Type                                                                                               | Method                                                                                                                            | Description                                                                  |
+|-----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| public [TextualTable](TextualTable.md)                                                                          | [setShowHeaders](#setshowheaders)(boolean v)                                                                                      |                                                                              |
+| public [TextualTable](TextualTable.md)                                                                          | [setStyle](#setstyle)([Style](TextualTable.Style.md) style)                                                                       |                                                                              |
+| public [TextualTable](TextualTable.md)                                                                          | [setMaxColumnWidth](#setmaxcolumnwidth)(int n)                                                                                    |                                                                              |
+| public io.github.qishr.cascara.common.data.@io.github.qishr.cascara.common.annotation.Experimental TextualTable | [setBorderColor](#setbordercolor)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) s) |                                                                              |
+| public [TextualTable](TextualTable.md)                                                                          | [addColumn](#addcolumn)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) headerText)  | Adds a column with the specified heading to the table.                       |
+| public [TextualTable](TextualTable.md)                                                                          | [addRow](#addrow)([TabularData](TabularData.md) row)                                                                              |                                                                              |
+| public [TextualTable](TextualTable.md)                                                                          | [addRow](#addrow)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)[] valueStrings)    | Adds a row of data to the table.                                             |
+| public [TextualTable](TextualTable.md)                                                                          | [render](#render)([Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html) writer)              | Renders the table as text without any indentation.                           |
+| public [TextualTable](TextualTable.md)                                                                          | [render](#render)([Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html) writer, int indent)  | Renders the table as text with a given indentation level (number of spaces). |
 
 
 
@@ -39,31 +41,66 @@ It automatically calculates column widths to align the table content.
 
 ### setShowHeaders
 
-<span style="font-family: monospace; font-size: 80%;">public void __setShowHeaders__(boolean v)</span>
+<span style="font-family: monospace; font-size: 80%;">public [TextualTable](TextualTable.md) __setShowHeaders__(boolean v)</span>
 
 
+
+**Returns:**
+
+The table (this) to allow method chaining.
 
 
 ---
 
 ### setStyle
 
-<span style="font-family: monospace; font-size: 80%;">public void __setStyle__([Style](TextualTable.Style.md) style)</span>
+<span style="font-family: monospace; font-size: 80%;">public [TextualTable](TextualTable.md) __setStyle__([Style](TextualTable.Style.md) style)</span>
 
 
+
+**Returns:**
+
+The table (this) to allow method chaining.
+
+
+---
+
+### setMaxColumnWidth
+
+<span style="font-family: monospace; font-size: 80%;">public [TextualTable](TextualTable.md) __setMaxColumnWidth__(int n)</span>
+
+
+
+**Returns:**
+
+The table (this) to allow method chaining.
+
+
+---
+
+### setBorderColor
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public io.github.qishr.cascara.common.data.@io.github.qishr.cascara.common.annotation.Experimental TextualTable __setBorderColor__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) s)</span>
+
+
+
+**Returns:**
+
+The table (this) to allow method chaining.
 
 
 ---
 
 ### addColumn
 
-<span style="font-family: monospace; font-size: 80%;">public [TextualTable](TextualTable.md) __addColumn__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) heading)</span>
+<span style="font-family: monospace; font-size: 80%;">public [TextualTable](TextualTable.md) __addColumn__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) headerText)</span>
 
 Adds a column with the specified heading to the table.
 
 **Parameters:**
 
-`heading` - String to be used as the column heading.
+`headerText` - String to be used as the column heading.
 
 **Returns:**
 
@@ -77,6 +114,10 @@ The table (this) to allow method chaining.
 <span style="font-family: monospace; font-size: 80%;">public [TextualTable](TextualTable.md) __addRow__([TabularData](TabularData.md) row)</span>
 
 
+
+**Returns:**
+
+The table (this) to allow method chaining.
 
 
 ---
@@ -100,7 +141,7 @@ The table (this) to allow method chaining.
 
 ### render
 
-<span style="font-family: monospace; font-size: 80%;">public void __render__([Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html) writer)</span>
+<span style="font-family: monospace; font-size: 80%;">public [TextualTable](TextualTable.md) __render__([Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html) writer)</span>
 
 Renders the table as text without any indentation.
 
@@ -108,12 +149,16 @@ Renders the table as text without any indentation.
 
 `writer` - The Writer to output text to.
 
+**Returns:**
+
+The table (this) to allow method chaining.
+
 
 ---
 
 ### render
 
-<span style="font-family: monospace; font-size: 80%;">public void __render__([Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html) writer, int indent)</span>
+<span style="font-family: monospace; font-size: 80%;">public [TextualTable](TextualTable.md) __render__([Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html) writer, int indent)</span>
 
 Renders the table as text with a given indentation level (number of spaces).
 

@@ -8,12 +8,12 @@ All Implemented Interfaces:<br/>
     [Processor](Processor.md)
 
 All Known Implementing Classes:<br/>
-    [JsonPushParser](../../../cascara.lang.json/processor/JsonPushParser.md), [YamlPushParser](../../../cascara.lang.yaml/yaml/processor/YamlPushParser.md)
+    [JsonPushParser](../../../cascara.lang.json/processor/JsonPushParser.md), [YamlPushParser](../../../cascara.lang.yaml/processor/YamlPushParser.md)
 
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Beta<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Beta<br/>
 public interface __PushParser__</span>
 
 

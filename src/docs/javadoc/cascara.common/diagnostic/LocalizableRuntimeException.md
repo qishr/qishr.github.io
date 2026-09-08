@@ -11,7 +11,7 @@ All Implemented Interfaces:<br/>
     [LocalizableException](LocalizableException.md)
 
 Direct Known Subtypes:<br/>
-    [LocatableException](LocatableException.md), [ServiceException](../service/ServiceException.md), [ContentTypeException](../../cascara.common.io/content/type/ContentTypeException.md), [YamlConverterException](../../cascara.lang.yaml/yaml/exception/YamlConverterException.md), [UiException](../../cascara.ui/api/UiException.md)
+    [ColorException](../color/ColorException.md), [UnimplementedMethodException](UnimplementedMethodException.md), [LocatableException](LocatableException.md), [ServiceException](../service/ServiceException.md), [ContentTypeException](../../cascara.common.io/content/type/ContentTypeException.md), [JsonConverterException](../cascara.lang.json/JsonConverterException.md), [YamlConverterException](../cascara.lang.yaml/YamlConverterException.md), [UiException](../../cascara.ui/api/UiException.md)
 
 
 ----

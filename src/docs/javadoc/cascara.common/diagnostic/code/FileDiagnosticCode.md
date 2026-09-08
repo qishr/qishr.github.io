@@ -22,6 +22,8 @@ All Implemented Interfaces:<br/>
 | [FILE_NOT_FOUND](#file_not_found) |             |
 | [ACCESS_DENIED](#access_denied)   |             |
 | [DISK_FULL](#disk_full)           |             |
+| [READ_ERROR](#read_error)         |             |
+| [WRITE_ERROR](#write_error)       |             |
 
 
 
@@ -59,6 +61,24 @@ public static final  ACCESS_DENIED
 ### DISK_FULL
 
 public static final  DISK_FULL
+
+
+
+
+---
+
+### READ_ERROR
+
+public static final  READ_ERROR
+
+
+
+
+---
+
+### WRITE_ERROR
+
+public static final  WRITE_ERROR
 
 
 

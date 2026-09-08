@@ -10,7 +10,7 @@ All Implemented Interfaces:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Experimental<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
 public class __AstTreeData__</span>
 
 

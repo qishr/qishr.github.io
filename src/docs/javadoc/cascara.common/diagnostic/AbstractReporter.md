@@ -18,17 +18,23 @@ Direct Known Subtypes:<br/>
 
 ## Field Summary
 
-| Modifier and Type              | Field                                       | Description                                                                                                |
-|--------------------------------|---------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| protected Consumer<Diagnostic> | [diagnosticCollector](#diagnosticcollector) | Consumes diagnostics included in the current Level or more important, with ERROR being the most important. |
-| protected boolean              | [flushEnabled](#flushenabled)               |                                                                                                            |
-| protected Level                | [level](#level)                             |                                                                                                            |
-| protected Consumer<Diagnostic> | [problemCollector](#problemcollector)       | Consumes ERROR, WARN, and INFO diagnostics.                                                                |
-| protected String               | [source](#source)                           | The simple name of the class that made the report                                                          |
-| protected boolean              | [stackTraceEnabled](#stacktraceenabled)     |                                                                                                            |
-| protected Consumer<String>     | [stringWriter](#stringwriter)               |                                                                                                            |
-| protected boolean              | [systemErrorEnabled](#systemerrorenabled)   |                                                                                                            |
-| protected boolean              | [systemOutputEnabled](#systemoutputenabled) |                                                                                                            |
+| Modifier and Type               | Field                                           | Description                                                                                                |
+|---------------------------------|-------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| protected static final boolean  | [CAN_USE_ANSI_COLORING](#can_use_ansi_coloring) |                                                                                                            |
+| protected boolean               | [ansiColoringEnabled](#ansicoloringenabled)     |                                                                                                            |
+| protected Consumer<Diagnostic>  | [diagnosticConsumer](#diagnosticconsumer)       | Consumes diagnostics included in the current Level or more important, with ERROR being the most important. |
+| protected boolean               | [flushEnabled](#flushenabled)                   |                                                                                                            |
+| protected Level                 | [level](#level)                                 |                                                                                                            |
+| protected static final String[] | [levelColors](#levelcolors)                     |                                                                                                            |
+| protected Consumer<String>      | [lineConsumer](#lineconsumer)                   | Consumes every line of diagnostic output as a String.                                                      |
+| protected boolean               | [prefixEveryLine](#prefixeveryline)             |                                                                                                            |
+| protected Consumer<Diagnostic>  | [problemConsumer](#problemconsumer)             | Consumes ERROR, WARN, and INFO diagnostics.                                                                |
+| protected boolean               | [showProblemCodes](#showproblemcodes)           |                                                                                                            |
+| protected String                | [source](#source)                               | The simple name of the class that made the report                                                          |
+| protected boolean               | [stackTraceEnabled](#stacktraceenabled)         |                                                                                                            |
+| protected boolean               | [systemErrorEnabled](#systemerrorenabled)       |                                                                                                            |
+| protected boolean               | [systemOutputEnabled](#systemoutputenabled)     |                                                                                                            |
+| protected ReportWriter[]        | [writers](#writers)                             |                                                                                                            |
 
 
 
@@ -36,8 +42,8 @@ Direct Known Subtypes:<br/>
 
 | Constructor                                                                                                                                                                                                                      | Description |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| AbstractReporter([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> writer) |             |
 | AbstractReporter()                                                                                                                                                                                                               |             |
+| AbstractReporter([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> logger) |             |
 
 
 
@@ -48,16 +54,20 @@ Direct Known Subtypes:<br/>
 | protected abstract T                                                                                                                                                                                              | [self](#self)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                              |
 | public boolean                                                                                                                                                                                                    | [collectsProblems](#collectsproblems)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Checks whether any active listener or collector is tracking problems.                        |
 | public T                                                                                                                                                                                                          | [setLevel](#setlevel)([Level](Diagnostic.Level.md) level)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Sets the level of output when logging directly to the console.                               |
-| public T                                                                                                                                                                                                          | [setDiagnosticCollector](#setdiagnosticcollector)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)                                                                                                                                                                                                                                                                                                                                                                                            | Registers a collector to receive all diagnostics processed by this reporter.                 |
-| public T                                                                                                                                                                                                          | [setProblemCollector](#setproblemcollector)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)                                                                                                                                                                                                                                                                                                                                                                                                  | Registers a specialized collector to receive only problem-level diagnostics.                 |
+| public T                                                                                                                                                                                                          | [setLineConsumer](#setlineconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> logger)                                                                                                                                                                                                                                                                                                                                            |                                                                                              |
+| public T                                                                                                                                                                                                          | [setDiagnosticConsumer](#setdiagnosticconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)                                                                                                                                                                                                                                                                                                                                                                                              | Registers a collector to receive all diagnostics processed by this reporter.                 |
+| public T                                                                                                                                                                                                          | [setProblemConsumer](#setproblemconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)                                                                                                                                                                                                                                                                                                                                                                                                    | Registers a specialized collector to receive only problem-level diagnostics.                 |
 | public T                                                                                                                                                                                                          | [setSystemOutputEnabled](#setsystemoutputenabled)(boolean b)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |                                                                                              |
 | public T                                                                                                                                                                                                          | [setFlushEnabled](#setflushenabled)(boolean b)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                                                                                              |
 | public T                                                                                                                                                                                                          | [setStackTraceEnabled](#setstacktraceenabled)(boolean b)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                              |
 | public T                                                                                                                                                                                                          | [setSystemErrorEnabled](#setsystemerrorenabled)(boolean b)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                              |
+| public T                                                                                                                                                                                                          | [setAnsiColoringEnabled](#setansicoloringenabled)(boolean b)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |                                                                                              |
+| public T                                                                                                                                                                                                          | [setPrefixEveryLine](#setprefixeveryline)(boolean b)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                              |
+| public T                                                                                                                                                                                                          | [setShowProblemCodes](#setshowproblemcodes)(boolean b)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                              |
 | public [Level](Diagnostic.Level.md)                                                                                                                                                                               | [getLevel](#getlevel)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                              |
 | public boolean                                                                                                                                                                                                    | [isSilent](#issilent)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                              |
-| public void                                                                                                                                                                                                       | [error](#error)([LocalizableException](LocalizableException.md) e)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Reports a [LocalizableException](LocalizableException.md)                                    |
-| public void                                                                                                                                                                                                       | [error](#error)([LocalizableRuntimeException](LocalizableRuntimeException.md) e)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Reports a [LocalizableRuntimeException](LocalizableRuntimeException.md)                      |
+| public [ReportWriter](ReportWriter.md)                                                                                                                                                                            | [getWriter](#getwriter)([Level](Diagnostic.Level.md) level)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                              |
+| public void                                                                                                                                                                                                       | [error](#error)([Exception](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Exception.html) e)                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Reports an Exception                                                                         |
 | public void                                                                                                                                                                                                       | [trace](#trace)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                                                                  | Reports a trace message through the reporter.                                                |
 | public void                                                                                                                                                                                                       | [debug](#debug)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                                                                  | Reports a debug message through the reporter.                                                |
 | public void                                                                                                                                                                                                       | [info](#info)([DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                                                                                                                           | Reports an informational message through the reporter.                                       |
@@ -67,7 +77,6 @@ Direct Known Subtypes:<br/>
 | public void                                                                                                                                                                                                       | [infoAt](#infoat)(int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                                                                                                 | Reports an informational message anchored to a resource location by line and column.         |
 | public void                                                                                                                                                                                                       | [warnAt](#warnat)(int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                                                                                                 | Reports a warning anchored to a resource location by line and column.                        |
 | public void                                                                                                                                                                                                       | [errorAt](#errorat)(int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                                                                                               | Reports an error anchored to a resource location by line and column.                         |
-| public void                                                                                                                                                                                                       | [errorAt](#errorat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                    |                                                                                              |
 | public void                                                                                                                                                                                                       | [errorAt](#errorat)(int line, int column, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                     | Reports an error anchored to a resource location by line and column.                         |
 | public void                                                                                                                                                                                                       | [infoAt](#infoat)(int line, int column, int startOffset, int endOffset, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                                                                 | Reports an informational message anchored to a precise character span within a resource.     |
 | public void                                                                                                                                                                                                       | [warnAt](#warnat)(int line, int column, int startOffset, int endOffset, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                                                                 | Reports a warning anchored to a precise character span within a resource.                    |
@@ -77,29 +86,55 @@ Direct Known Subtypes:<br/>
 | public void                                                                                                                                                                                                       | [warnAt](#warnat)([Token](../lang/token/Token.md) token, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                                                                                | Reports a warning derived from the location attributes of a structural token.                |
 | public void                                                                                                                                                                                                       | [errorAt](#errorat)([Token](../lang/token/Token.md) token, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                                                                              | Reports an error derived from the location attributes of a structural token.                 |
 | public void                                                                                                                                                                                                       | [errorAt](#errorat)([Token](../lang/token/Token.md) token, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                    | Reports an error derived from the location attributes of a structural token.                 |
-| protected abstract void                                                                                                                                                                                           | [writeString](#writestring)([Diagnostic](Diagnostic.md) diagnostic)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                              |
-| protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)>                                                                  | [getDiagnosticCollector](#getdiagnosticcollector)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                              |
-| protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)>                                                                  | [getProblemCollector](#getproblemcollector)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                              |
-| protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getStringWriter](#getstringwriter)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                                              |
+| public void                                                                                                                                                                                                       | [warnAt](#warnat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                      |                                                                                              |
+| public void                                                                                                                                                                                                       | [errorAt](#errorat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                    |                                                                                              |
+| public void                                                                                                                                                                                                       | [warnAt](#warnat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../lang/token/Token.md) token, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                     |                                                                                              |
+| public void                                                                                                                                                                                                       | [errorAt](#errorat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../lang/token/Token.md) token, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                   |                                                                                              |
+| public void                                                                                                                                                                                                       | [errorAt](#errorat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../lang/token/Token.md) token, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                             |                                                                                              |
+| protected abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                   | [formatMessage](#formatmessage)([Diagnostic](Diagnostic.md) diagnostic, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) line, int lineNumber, boolean ansiColoring)                                                                                                                                                                                                                                                                                                                                                                               |                                                                                              |
+| protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)>                                                                  | [getDiagnosticConsumer](#getdiagnosticconsumer)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                              |
+| protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)>                                                                  | [getProblemConsumer](#getproblemconsumer)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                              |
+| protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getLineConsumer](#getlineconsumer)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                                              |
 | protected boolean                                                                                                                                                                                                 | [isSystemOutputEnabled](#issystemoutputenabled)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                              |
 | protected boolean                                                                                                                                                                                                 | [isFlushEnabled](#isflushenabled)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                              |
 | protected boolean                                                                                                                                                                                                 | [isStackTraceEnabled](#isstacktraceenabled)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                              |
 | protected void                                                                                                                                                                                                    | [report](#report)([Diagnostic](Diagnostic.md) diagnostic)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                                              |
-| protected void                                                                                                                                                                                                    | [writeString](#writestring)([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [Level](Diagnostic.Level.md) level, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message)                                                                                                                                                                                                                                                                                                                |                                                                                              |
-| protected void                                                                                                                                                                                                    | [outputToConsole](#outputtoconsole)([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [Level](Diagnostic.Level.md) level, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message)                                                                                                                                                                                                                                                                                                        |                                                                                              |
+| protected void                                                                                                                                                                                                    | [writeString](#writestring)([Diagnostic](Diagnostic.md) diagnostic)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                              |
+| protected void                                                                                                                                                                                                    | [logLine](#logline)([Level](Diagnostic.Level.md) level, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) msgLine, int msgLineNumber)                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                              |
+| protected void                                                                                                                                                                                                    | [displayLine](#displayline)([Level](Diagnostic.Level.md) diagnosticLevel, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) msgLine, int msgLineNumber)                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                              |
 | protected [Diagnostic](Diagnostic.md)                                                                                                                                                                             | [buildDiagnostic](#builddiagnostic)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source, [Level](Diagnostic.Level.md) level, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                     | With message string                                                                          |
 | protected [Diagnostic](Diagnostic.md)                                                                                                                                                                             | [buildDiagnostic](#builddiagnostic)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source, [Level](Diagnostic.Level.md) level, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                  | With diagnostic code, and cause                                                              |
 | protected [Diagnostic](Diagnostic.md)                                                                                                                                                                             | [buildDiagnostic](#builddiagnostic)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, int startOffset, int endOffset, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source, [Level](Diagnostic.Level.md) level, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) | With diagnostic code, location, and cause                                                    |
 | protected [Diagnostic](Diagnostic.md)                                                                                                                                                                             | [buildDiagnostic](#builddiagnostic)([Token](../lang/token/Token.md) token, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source, [Level](Diagnostic.Level.md) level, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           | With diagnostic code, token, and cause                                                       |
 | protected boolean                                                                                                                                                                                                 | [isProblem](#isproblem)([Level](Diagnostic.Level.md) level)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                              |
+| public boolean                                                                                                                                                                                                    | [reportsDebug](#reportsdebug)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                              |
+| public boolean                                                                                                                                                                                                    | [reportsTrace](#reportstrace)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                              |
 
 
 
 ## Field Details
 
-### diagnosticCollector
+### CAN_USE_ANSI_COLORING
 
-<span style="font-family: monospace; font-size: 80%;">protected Consumer<Diagnostic> __diagnosticCollector__</span>
+<span style="font-family: monospace; font-size: 80%;">protected static final boolean __CAN_USE_ANSI_COLORING__</span>
+
+
+
+
+---
+
+### ansiColoringEnabled
+
+<span style="font-family: monospace; font-size: 80%;">protected boolean __ansiColoringEnabled__</span>
+
+
+
+
+---
+
+### diagnosticConsumer
+
+<span style="font-family: monospace; font-size: 80%;">protected Consumer<Diagnostic> __diagnosticConsumer__</span>
 
 Consumes diagnostics included in the current Level or more
 important, with ERROR being the most important.
@@ -125,11 +160,47 @@ important, with ERROR being the most important.
 
 ---
 
-### problemCollector
+### levelColors
 
-<span style="font-family: monospace; font-size: 80%;">protected Consumer<Diagnostic> __problemCollector__</span>
+<span style="font-family: monospace; font-size: 80%;">protected static final String[] __levelColors__</span>
+
+
+
+
+---
+
+### lineConsumer
+
+<span style="font-family: monospace; font-size: 80%;">protected Consumer<String> __lineConsumer__</span>
+
+Consumes every line of diagnostic output as a String.
+
+
+---
+
+### prefixEveryLine
+
+<span style="font-family: monospace; font-size: 80%;">protected boolean __prefixEveryLine__</span>
+
+
+
+
+---
+
+### problemConsumer
+
+<span style="font-family: monospace; font-size: 80%;">protected Consumer<Diagnostic> __problemConsumer__</span>
 
 Consumes ERROR, WARN, and INFO diagnostics.
+
+
+---
+
+### showProblemCodes
+
+<span style="font-family: monospace; font-size: 80%;">protected boolean __showProblemCodes__</span>
+
+
 
 
 ---
@@ -152,15 +223,6 @@ The simple name of the class that made the report
 
 ---
 
-### stringWriter
-
-<span style="font-family: monospace; font-size: 80%;">protected Consumer<String> __stringWriter__</span>
-
-
-
-
----
-
 ### systemErrorEnabled
 
 <span style="font-family: monospace; font-size: 80%;">protected boolean __systemErrorEnabled__</span>
@@ -173,6 +235,15 @@ The simple name of the class that made the report
 ### systemOutputEnabled
 
 <span style="font-family: monospace; font-size: 80%;">protected boolean __systemOutputEnabled__</span>
+
+
+
+
+---
+
+### writers
+
+<span style="font-family: monospace; font-size: 80%;">protected ReportWriter[] __writers__</span>
 
 
 
@@ -217,9 +288,22 @@ Sets the level of output when logging directly to the console.
 
 ---
 
-### setDiagnosticCollector
+### setLineConsumer
 
-<span style="font-family: monospace; font-size: 80%;">public T __setDiagnosticCollector__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)</span>
+<span style="font-family: monospace; font-size: 80%;">public T __setLineConsumer__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> logger)</span>
+
+
+
+**Specified By:**
+
+[Reporter](Reporter.md)
+
+
+---
+
+### setDiagnosticConsumer
+
+<span style="font-family: monospace; font-size: 80%;">public T __setDiagnosticConsumer__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)</span>
 
 Registers a collector to receive all diagnostics processed by this reporter.
 
@@ -230,9 +314,9 @@ Registers a collector to receive all diagnostics processed by this reporter.
 
 ---
 
-### setProblemCollector
+### setProblemConsumer
 
-<span style="font-family: monospace; font-size: 80%;">public T __setProblemCollector__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)</span>
+<span style="font-family: monospace; font-size: 80%;">public T __setProblemConsumer__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> collector)</span>
 
 Registers a specialized collector to receive only problem-level diagnostics.
 
@@ -279,6 +363,34 @@ Registers a specialized collector to receive only problem-level diagnostics.
 
 ---
 
+### setAnsiColoringEnabled
+
+<span style="font-family: monospace; font-size: 80%;">public T __setAnsiColoringEnabled__(boolean b)</span>
+
+
+
+
+---
+
+### setPrefixEveryLine
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public T __setPrefixEveryLine__(boolean b)</span>
+
+
+
+
+---
+
+### setShowProblemCodes
+
+<span style="font-family: monospace; font-size: 80%;">public T __setShowProblemCodes__(boolean b)</span>
+
+
+
+
+---
+
 ### getLevel
 
 <span style="font-family: monospace; font-size: 80%;">public [Level](Diagnostic.Level.md) __getLevel__()</span>
@@ -305,11 +417,11 @@ Registers a specialized collector to receive only problem-level diagnostics.
 
 ---
 
-### error
+### getWriter
 
-<span style="font-family: monospace; font-size: 80%;">public void __error__([LocalizableException](LocalizableException.md) e)</span>
+<span style="font-family: monospace; font-size: 80%;">public [ReportWriter](ReportWriter.md) __getWriter__([Level](Diagnostic.Level.md) level)</span>
 
-Reports a [LocalizableException](LocalizableException.md)
+
 
 **Specified By:**
 
@@ -320,9 +432,9 @@ Reports a [LocalizableException](LocalizableException.md)
 
 ### error
 
-<span style="font-family: monospace; font-size: 80%;">public void __error__([LocalizableRuntimeException](LocalizableRuntimeException.md) e)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __error__([Exception](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Exception.html) e)</span>
 
-Reports a [LocalizableRuntimeException](LocalizableRuntimeException.md)
+Reports an Exception
 
 **Specified By:**
 
@@ -450,19 +562,6 @@ Reports an error anchored to a resource location by line and column.
 
 ### errorAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __errorAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
-
-
-
-**Specified By:**
-
-[Reporter](Reporter.md)
-
-
----
-
-### errorAt
-
 <span style="font-family: monospace; font-size: 80%;">public void __errorAt__(int line, int column, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports an error anchored to a resource location by line and column.
@@ -578,36 +677,101 @@ Reports an error derived from the location attributes of a structural token.
 
 ---
 
-### writeString
+### warnAt
 
-<span style="font-family: monospace; font-size: 80%;">protected abstract void __writeString__([Diagnostic](Diagnostic.md) diagnostic)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __warnAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+
+
+
+**Specified By:**
+
+[Reporter](Reporter.md)
+
+
+---
+
+### errorAt
+
+<span style="font-family: monospace; font-size: 80%;">public void __errorAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+
+
+
+**Specified By:**
+
+[Reporter](Reporter.md)
+
+
+---
+
+### warnAt
+
+<span style="font-family: monospace; font-size: 80%;">public void __warnAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../lang/token/Token.md) token, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+
+
+
+**Specified By:**
+
+[Reporter](Reporter.md)
+
+
+---
+
+### errorAt
+
+<span style="font-family: monospace; font-size: 80%;">public void __errorAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../lang/token/Token.md) token, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+
+
+
+**Specified By:**
+
+[Reporter](Reporter.md)
+
+
+---
+
+### errorAt
+
+<span style="font-family: monospace; font-size: 80%;">public void __errorAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../lang/token/Token.md) token, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t, [DiagnosticCode](code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+
+
+
+**Specified By:**
+
+[Reporter](Reporter.md)
+
+
+---
+
+### formatMessage
+
+<span style="font-family: monospace; font-size: 80%;">protected abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __formatMessage__([Diagnostic](Diagnostic.md) diagnostic, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) line, int lineNumber, boolean ansiColoring)</span>
 
 
 
 
 ---
 
-### getDiagnosticCollector
+### getDiagnosticConsumer
 
-<span style="font-family: monospace; font-size: 80%;">protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> __getDiagnosticCollector__()</span>
-
-
-
-
----
-
-### getProblemCollector
-
-<span style="font-family: monospace; font-size: 80%;">protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> __getProblemCollector__()</span>
+<span style="font-family: monospace; font-size: 80%;">protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> __getDiagnosticConsumer__()</span>
 
 
 
 
 ---
 
-### getStringWriter
+### getProblemConsumer
 
-<span style="font-family: monospace; font-size: 80%;">protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> __getStringWriter__()</span>
+<span style="font-family: monospace; font-size: 80%;">protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](Diagnostic.md)> __getProblemConsumer__()</span>
+
+
+
+
+---
+
+### getLineConsumer
+
+<span style="font-family: monospace; font-size: 80%;">protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> __getLineConsumer__()</span>
 
 
 
@@ -652,16 +816,25 @@ Reports an error derived from the location attributes of a structural token.
 
 ### writeString
 
-<span style="font-family: monospace; font-size: 80%;">protected void __writeString__([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [Level](Diagnostic.Level.md) level, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message)</span>
+<span style="font-family: monospace; font-size: 80%;">protected void __writeString__([Diagnostic](Diagnostic.md) diagnostic)</span>
 
 
 
 
 ---
 
-### outputToConsole
+### logLine
 
-<span style="font-family: monospace; font-size: 80%;">protected void __outputToConsole__([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [Level](Diagnostic.Level.md) level, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message)</span>
+<span style="font-family: monospace; font-size: 80%;">protected void __logLine__([Level](Diagnostic.Level.md) level, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) msgLine, int msgLineNumber)</span>
+
+
+
+
+---
+
+### displayLine
+
+<span style="font-family: monospace; font-size: 80%;">protected void __displayLine__([Level](Diagnostic.Level.md) diagnosticLevel, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) msgLine, int msgLineNumber)</span>
 
 
 
@@ -709,6 +882,32 @@ With diagnostic code, token, and cause
 <span style="font-family: monospace; font-size: 80%;">protected boolean __isProblem__([Level](Diagnostic.Level.md) level)</span>
 
 
+
+
+---
+
+### reportsDebug
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __reportsDebug__()</span>
+
+
+
+**Specified By:**
+
+[Reporter](Reporter.md)
+
+
+---
+
+### reportsTrace
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __reportsTrace__()</span>
+
+
+
+**Specified By:**
+
+[Reporter](Reporter.md)
 
 
 ---

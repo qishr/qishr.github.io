@@ -1,4 +1,4 @@
-public class SimplePushParse implements StreamHandler {
+public class SimplePushParse implements StreamHandler<YamlStreamingEvent> {
     public static void main(String args[]) {
         SimplePushParse handler = new SimplePushParse();
         InputStream is = SimplePushParse.class.getResourceAsStream("subject.yaml");
@@ -9,10 +9,10 @@ public class SimplePushParse implements StreamHandler {
     }
 
     @Override
-    public void onEvent(StreamingEvent event) {
+    public void onEvent(YamlStreamingEvent event) {
         if (event != null) {
             switch(event.getType()) {
-                case FIELD_NAME:
+                case KEY:
                     System.out.println("Name: " + event.getContent());
                     break;
                 case VALUE_SCALAR:

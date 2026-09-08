@@ -45,7 +45,7 @@ otherwise it will be compiled and returned.
 
 **Throws:**
 
-[SchemaException](../exception/SchemaException.md)
+[SchemaException](../diagnostic/SchemaException.md)
 
 
 ---
@@ -58,7 +58,7 @@ otherwise it will be compiled and returned.
 
 **Throws:**
 
-[SchemaException](../exception/SchemaException.md)
+[SchemaException](../diagnostic/SchemaException.md)
 
 
 ---
@@ -116,7 +116,7 @@ otherwise it will be compiled and returned.
 
 **Throws:**
 
-[SchemaException](../exception/SchemaException.md)
+[SchemaException](../diagnostic/SchemaException.md)
 
 
 ---

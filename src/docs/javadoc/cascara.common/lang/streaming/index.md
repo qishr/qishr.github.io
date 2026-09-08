@@ -15,16 +15,10 @@
 
 === "Interfaces"
 
-    | Class                               | Description |
-    |-------------------------------------|-------------|
-    | [StreamHandler](StreamHandler.md)   |             |
-    | [StreamingEvent](StreamingEvent.md) |             |
-
-
-=== "Enum Classes"
-
     | Class                                       | Description |
     |---------------------------------------------|-------------|
+    | [StreamHandler](StreamHandler.md)           |             |
+    | [StreamingEvent](StreamingEvent.md)         |             |
     | [StreamingEventType](StreamingEventType.md) |             |
 
 

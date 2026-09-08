@@ -36,15 +36,16 @@
     | Module                                                                                        | Description |
     |-----------------------------------------------------------------------------------------------|-------------|
     | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html) |             |
-    | [cascara.common](../cascara.common/index.md)                                                  |             |
-    | [cascara.common.io](../cascara.common.io/index.md)                                            |             |
     | [cascara.lang.json](../cascara.lang.json/index.md)                                            |             |
     | [cascara.lang.xml](../cascara.lang.xml/index.md)                                              |             |
+    | [javafx.base](../javafx.baseindex.md)                                                         |             |
+    | [javafx.graphics](../javafx.graphicsindex.md)                                                 |             |
+    | [cascara.common](../cascara.common/index.md)                                                  |             |
+    | [cascara.common.io](../cascara.common.io/index.md)                                            |             |
+    |                                                                                               |             |
     | [cascara.lang.yaml](../cascara.lang.yaml/index.md)                                            |             |
     | [cascara.schema](../cascara.schema/index.md)                                                  |             |
-    | [javafx.base](../javafx.baseindex.md)                                                         |             |
     | [javafx.controls](../javafx.controlsindex.md)                                                 |             |
-    | [javafx.graphics](../javafx.graphicsindex.md)                                                 |             |
 
 
 === "Opens"

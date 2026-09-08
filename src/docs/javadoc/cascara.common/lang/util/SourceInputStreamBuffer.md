@@ -10,45 +10,111 @@ All Implemented Interfaces:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.lang.annotation.Experimental<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
 public class __SourceInputStreamBuffer__</span>
 
 
 ## Constructor Summary
 
-| Constructor                                                                                                                      | Description |
-|----------------------------------------------------------------------------------------------------------------------------------|-------------|
-| SourceInputStreamBuffer([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is) |             |
-| SourceInputStreamBuffer([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)       |             |
+| Constructor               | Description |
+|---------------------------|-------------|
+| SourceInputStreamBuffer() |             |
 
 
 
 ## Method Summary
 
-| Modifier and Type                                                                                               | Method                                          | Description |
-|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------|-------------|
-| public int                                                                                                      | [length](#length)()                             |             |
-| public char                                                                                                     | [charAt](#charat)(int index)                    |             |
-| public [CharSequence](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/CharSequence.html) | [subSequence](#subsequence)(int start, int end) |             |
-| public char                                                                                                     | [advance](#advance)()                           |             |
-| public char                                                                                                     | [peek](#peek)()                                 |             |
-| public char                                                                                                     | [peekNext](#peeknext)()                         |             |
-| public void                                                                                                     | [backup](#backup)()                             |             |
-| public boolean                                                                                                  | [isAtEnd](#isatend)()                           |             |
-| public int                                                                                                      | [line](#line)()                                 |             |
-| public int                                                                                                      | [column](#column)()                             |             |
-| public int                                                                                                      | [offset](#offset)()                             |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)             | [getTokenWindowLexeme](#gettokenwindowlexeme)() |             |
-| public char                                                                                                     | [peekAhead](#peekahead)(int steps)              |             |
-| public void                                                                                                     | [startTokenWindow](#starttokenwindow)()         |             |
-| public int                                                                                                      | [windowStartOffset](#windowstartoffset)()       |             |
-| public int                                                                                                      | [windowStartLine](#windowstartline)()           |             |
-| public int                                                                                                      | [windowStartColumn](#windowstartcolumn)()       |             |
-| public void                                                                                                     | [setOffset](#setoffset)(int newOffset)          |             |
+| Modifier and Type                                                                                               | Method                                                                                                                 | Description |
+|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [SourceInputStreamBuffer](SourceInputStreamBuffer.md)                                                    | [open](#open)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)       |             |
+| public [SourceInputStreamBuffer](SourceInputStreamBuffer.md)                                                    | [open](#open)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is) |             |
+| public [SourceInputStreamBuffer](SourceInputStreamBuffer.md)                                                    | [open](#open)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)     |             |
+| public [SourceInputStreamBuffer](SourceInputStreamBuffer.md)                                                    | [open](#open)(byte[] data)                                                                                             |             |
+| public [Properties](../../util/Properties.md)                                                                   | [getServiceProperties](#getserviceproperties)()                                                                        |             |
+| public int                                                                                                      | [length](#length)()                                                                                                    |             |
+| public char                                                                                                     | [charAt](#charat)(int index)                                                                                           |             |
+| public [CharSequence](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/CharSequence.html) | [subSequence](#subsequence)(int start, int end)                                                                        |             |
+| public char                                                                                                     | [advance](#advance)()                                                                                                  |             |
+| public char                                                                                                     | [peek](#peek)()                                                                                                        |             |
+| public char                                                                                                     | [peekNext](#peeknext)()                                                                                                |             |
+| public char                                                                                                     | [previous](#previous)()                                                                                                |             |
+| public void                                                                                                     | [backup](#backup)()                                                                                                    |             |
+| public boolean                                                                                                  | [isAtEnd](#isatend)()                                                                                                  |             |
+| public int                                                                                                      | [line](#line)()                                                                                                        |             |
+| public int                                                                                                      | [column](#column)()                                                                                                    |             |
+| public int                                                                                                      | [offset](#offset)()                                                                                                    |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)             | [getTokenWindowLexeme](#gettokenwindowlexeme)()                                                                        |             |
+| public char                                                                                                     | [peekAhead](#peekahead)(int steps)                                                                                     |             |
+| public void                                                                                                     | [startTokenWindow](#starttokenwindow)()                                                                                |             |
+| public int                                                                                                      | [windowStartOffset](#windowstartoffset)()                                                                              |             |
+| public int                                                                                                      | [windowStartLine](#windowstartline)()                                                                                  |             |
+| public int                                                                                                      | [windowStartColumn](#windowstartcolumn)()                                                                              |             |
+| public void                                                                                                     | [setOffset](#setoffset)(int newOffset)                                                                                 |             |
 
 
 
 ## Method Details
+
+### open
+
+<span style="font-family: monospace; font-size: 80%;">public [SourceInputStreamBuffer](SourceInputStreamBuffer.md) __open__([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)</span>
+
+
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
+
+---
+
+### open
+
+<span style="font-family: monospace; font-size: 80%;">public [SourceInputStreamBuffer](SourceInputStreamBuffer.md) __open__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)</span>
+
+
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
+
+---
+
+### open
+
+<span style="font-family: monospace; font-size: 80%;">public [SourceInputStreamBuffer](SourceInputStreamBuffer.md) __open__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)</span>
+
+
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
+
+---
+
+### open
+
+<span style="font-family: monospace; font-size: 80%;">public [SourceInputStreamBuffer](SourceInputStreamBuffer.md) __open__(byte[] data)</span>
+
+
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
+
+---
+
+### getServiceProperties
+
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../../util/Properties.md) __getServiceProperties__()</span>
+
+
+
+
+---
 
 ### length
 
@@ -118,6 +184,19 @@ public class __SourceInputStreamBuffer__</span>
 ### peekNext
 
 <span style="font-family: monospace; font-size: 80%;">public char __peekNext__()</span>
+
+
+
+**Specified By:**
+
+[SourceBuffer](SourceBuffer.md)
+
+
+---
+
+### previous
+
+<span style="font-family: monospace; font-size: 80%;">public char __previous__()</span>
 
 
 

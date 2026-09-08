@@ -20,9 +20,9 @@ Package [io.github.qishr.cascara.schema.util](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                     | Method                                                   | Description |
-|---------------------------------------------------------------------------------------|----------------------------------------------------------|-------------|
-| public [ReferenceMapNode](../../../cascara.common/lang/reference/ReferenceMapNode.md) | [decompile](#decompile)([Schema](../Schema.md) compiled) |             |
+| Modifier and Type                                                         | Method                                                   | Description |
+|---------------------------------------------------------------------------|----------------------------------------------------------|-------------|
+| public [PlainMapNode](../../../cascara.common/lang/plain/PlainMapNode.md) | [decompile](#decompile)([Schema](../Schema.md) compiled) |             |
 
 
 
@@ -30,7 +30,7 @@ Package [io.github.qishr.cascara.schema.util](index.md)
 
 ### decompile
 
-<span style="font-family: monospace; font-size: 80%;">public [ReferenceMapNode](../../../cascara.common/lang/reference/ReferenceMapNode.md) __decompile__([Schema](../Schema.md) compiled)</span>
+<span style="font-family: monospace; font-size: 80%;">public [PlainMapNode](../../../cascara.common/lang/plain/PlainMapNode.md) __decompile__([Schema](../Schema.md) compiled)</span>
 
 
 

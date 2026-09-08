@@ -25,13 +25,6 @@ All Implemented Interfaces:<br/>
 | [UNKNOWN_NODE_TYPE](#unknown_node_type)                     |             |
 | [FAILED_TO_MAP_TYPE](#failed_to_map_type)                   |             |
 | [FAILED_TO_MAP_AST](#failed_to_map_ast)                     |             |
-| [CLASS_NOT_SERIALIZABLE](#class_not_serializable)           |             |
-| [NO_SUCH_METHOD](#no_such_method)                           |             |
-| [FIELD_NOT_ACCESSIBLE](#field_not_accessible)               |             |
-| [INVOCATION_TARGET_EXCEPTION](#invocation_target_exception) |             |
-| [ILLEGAL_ARGUMENT_EXCEPTION](#illegal_argument_exception)   |             |
-| [INSTANTIATION_EXCEPTION](#instantiation_exception)         |             |
-| [EXCEPTION_IN_INITIALIZER](#exception_in_initializer)       |             |
 | [EXPECTED_MAP_STRUCTURE](#expected_map_structure)           |             |
 | [FAILED_SERIALIZE](#failed_serialize)                       |             |
 | [FAILED_DESERIALIZE](#failed_deserialize)                   |             |
@@ -40,6 +33,15 @@ All Implemented Interfaces:<br/>
 | [FAILED_DESERIALIZE_SCALAR](#failed_deserialize_scalar)     |             |
 | [UNSUPPORTED_TYPE](#unsupported_type)                       |             |
 | [EXPECTED_SEQUENCE](#expected_sequence)                     |             |
+| [FIELD_NOT_ACCESSIBLE_REASON](#field_not_accessible_reason) |             |
+| [CLASS_NOT_SERIALIZABLE](#class_not_serializable)           |             |
+| [NO_SUCH_METHOD](#no_such_method)                           |             |
+| [NO_SUCH_CONSTRUCTOR](#no_such_constructor)                 |             |
+| [FIELD_NOT_ACCESSIBLE](#field_not_accessible)               |             |
+| [INVOCATION_TARGET_EXCEPTION](#invocation_target_exception) |             |
+| [ILLEGAL_ARGUMENT_EXCEPTION](#illegal_argument_exception)   |             |
+| [INSTANTIATION_EXCEPTION](#instantiation_exception)         |             |
+| [EXCEPTION_IN_INITIALIZER](#exception_in_initializer)       |             |
 | [NOT_ARRAY_OR_OBJECT](#not_array_or_object)                 |             |
 | [OUT_OF_BOUNDS](#out_of_bounds)                             |             |
 | [ERROR_READING_VALUE_AT](#error_reading_value_at)           |             |
@@ -114,69 +116,6 @@ public static final  FAILED_TO_MAP_AST
 
 ---
 
-### CLASS_NOT_SERIALIZABLE
-
-public static final  CLASS_NOT_SERIALIZABLE
-
-
-
-
----
-
-### NO_SUCH_METHOD
-
-public static final  NO_SUCH_METHOD
-
-
-
-
----
-
-### FIELD_NOT_ACCESSIBLE
-
-public static final  FIELD_NOT_ACCESSIBLE
-
-
-
-
----
-
-### INVOCATION_TARGET_EXCEPTION
-
-public static final  INVOCATION_TARGET_EXCEPTION
-
-
-
-
----
-
-### ILLEGAL_ARGUMENT_EXCEPTION
-
-public static final  ILLEGAL_ARGUMENT_EXCEPTION
-
-
-
-
----
-
-### INSTANTIATION_EXCEPTION
-
-public static final  INSTANTIATION_EXCEPTION
-
-
-
-
----
-
-### EXCEPTION_IN_INITIALIZER
-
-public static final  EXCEPTION_IN_INITIALIZER
-
-
-
-
----
-
 ### EXPECTED_MAP_STRUCTURE
 
 public static final  EXPECTED_MAP_STRUCTURE
@@ -243,6 +182,87 @@ public static final  UNSUPPORTED_TYPE
 ### EXPECTED_SEQUENCE
 
 public static final  EXPECTED_SEQUENCE
+
+
+
+
+---
+
+### FIELD_NOT_ACCESSIBLE_REASON
+
+public static final  FIELD_NOT_ACCESSIBLE_REASON
+
+
+
+
+---
+
+### CLASS_NOT_SERIALIZABLE
+
+public static final  CLASS_NOT_SERIALIZABLE
+
+
+
+
+---
+
+### NO_SUCH_METHOD
+
+public static final  NO_SUCH_METHOD
+
+
+
+
+---
+
+### NO_SUCH_CONSTRUCTOR
+
+public static final  NO_SUCH_CONSTRUCTOR
+
+
+
+
+---
+
+### FIELD_NOT_ACCESSIBLE
+
+public static final  FIELD_NOT_ACCESSIBLE
+
+
+
+
+---
+
+### INVOCATION_TARGET_EXCEPTION
+
+public static final  INVOCATION_TARGET_EXCEPTION
+
+
+
+
+---
+
+### ILLEGAL_ARGUMENT_EXCEPTION
+
+public static final  ILLEGAL_ARGUMENT_EXCEPTION
+
+
+
+
+---
+
+### INSTANTIATION_EXCEPTION
+
+public static final  INSTANTIATION_EXCEPTION
+
+
+
+
+---
+
+### EXCEPTION_IN_INITIALIZER
+
+public static final  EXCEPTION_IN_INITIALIZER
 
 
 

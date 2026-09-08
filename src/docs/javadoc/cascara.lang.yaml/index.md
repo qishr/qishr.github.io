@@ -5,15 +5,14 @@
 
 === "Exports"
 
-    | Package                                                                  | Description                                                                 |
-    |--------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-    | [io.github.qishr.cascara.lang.yaml](yaml/index.md)                       |                                                                             |
-    | [io.github.qishr.cascara.lang.yaml.annotation](yaml/annotation/index.md) |                                                                             |
-    | [io.github.qishr.cascara.lang.yaml.ast](yaml/ast/index.md)               | The types used to store structure and documentation information of the API. |
-    | [io.github.qishr.cascara.lang.yaml.exception](yaml/exception/index.md)   |                                                                             |
-    | [io.github.qishr.cascara.lang.yaml.processor](yaml/processor/index.md)   |                                                                             |
-    | [io.github.qishr.cascara.lang.yaml.token](yaml/token/index.md)           |                                                                             |
-    | [io.github.qishr.cascara.lang.yaml.util](yaml/util/index.md)             |                                                                             |
+    | Package                                                             | Description                                                                 |
+    |---------------------------------------------------------------------|-----------------------------------------------------------------------------|
+    | [io.github.qishr.cascara.lang.yaml.ast](ast/index.md)               | The types used to store structure and documentation information of the API. |
+    | [io.github.qishr.cascara.lang.yaml.diagnostic](diagnostic/index.md) |                                                                             |
+    | [io.github.qishr.cascara.lang.yaml.processor](processor/index.md)   |                                                                             |
+    | [io.github.qishr.cascara.lang.yaml.streaming](streaming/index.md)   |                                                                             |
+    | [io.github.qishr.cascara.lang.yaml.token](token/index.md)           |                                                                             |
+    | [io.github.qishr.cascara.lang.yaml.util](util/index.md)             |                                                                             |
 
 
 === "Requires"
@@ -22,26 +21,24 @@
     |-----------------------------------------------------------------------------------------------|-------------|
     | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html) |             |
     | [cascara.common](../cascara.common/index.md)                                                  |             |
-    | [javafx.graphics](../javafx.graphicsindex.md)                                                 |             |
 
 
 === "Opens"
 
-    | Package                                                                  | Description                                                                 |
-    |--------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-    | [io.github.qishr.cascara.lang.yaml.annotation](yaml/annotation/index.md) |                                                                             |
-    | [io.github.qishr.cascara.lang.yaml.ast](yaml/ast/index.md)               | The types used to store structure and documentation information of the API. |
-    | [io.github.qishr.cascara.lang.yaml.exception](yaml/exception/index.md)   |                                                                             |
-    | [io.github.qishr.cascara.lang.yaml.processor](yaml/processor/index.md)   |                                                                             |
-    | [io.github.qishr.cascara.lang.yaml.token](yaml/token/index.md)           |                                                                             |
-    | [io.github.qishr.cascara.lang.yaml.util](yaml/util/index.md)             |                                                                             |
+    | Package                                                             | Description                                                                 |
+    |---------------------------------------------------------------------|-----------------------------------------------------------------------------|
+    | [io.github.qishr.cascara.lang.yaml.ast](ast/index.md)               | The types used to store structure and documentation information of the API. |
+    | [io.github.qishr.cascara.lang.yaml.diagnostic](diagnostic/index.md) |                                                                             |
+    | [io.github.qishr.cascara.lang.yaml.processor](processor/index.md)   |                                                                             |
+    | [io.github.qishr.cascara.lang.yaml.token](token/index.md)           |                                                                             |
+    | [io.github.qishr.cascara.lang.yaml.util](util/index.md)             |                                                                             |
 
 
 
 === "Provides"
 
-    | Interface                                                                                              | Implementations                                                                                                                                                                                                                                                                                                                                                        |
-    |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | [io.github.qishr.cascara.common.service.ServiceProvider](../cascara.common/service/ServiceProvider.md) | [io.github.qishr.cascara.lang.yaml.processor.YamlConverter](yaml/processor/YamlConverter), [io.github.qishr.cascara.lang.yaml.processor.YamlEmitter](yaml/processor/YamlEmitter), [io.github.qishr.cascara.lang.yaml.processor.YamlAstParser](yaml/processor/YamlAstParser), [io.github.qishr.cascara.lang.yaml.processor.YamlTokenizer](yaml/processor/YamlTokenizer) |
+    | Interface                                                                                              | Implementations                                                                                                                                                                                                                                                  |
+    |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | [io.github.qishr.cascara.common.service.ServiceProvider](../cascara.common/service/ServiceProvider.md) | [io.github.qishr.cascara.lang.yaml.processor.YamlConverter](processor/YamlConverter), [io.github.qishr.cascara.lang.yaml.processor.YamlAstParser](processor/YamlAstParser), [io.github.qishr.cascara.lang.yaml.processor.YamlTokenizer](processor/YamlTokenizer) |
 
 

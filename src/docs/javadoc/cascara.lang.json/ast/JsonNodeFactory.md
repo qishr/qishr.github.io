@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.lang.json.ast](index.md)
         io.github.qishr.cascara.lang.json.ast.JsonNodeFactory<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [AstNodeFactory](../../cascara.common/lang/ast/AstNodeFactory.md)<[JsonNode](JsonNode.md), [JsonScalar](JsonScalar.md), [JsonArray](JsonArray.md), [JsonObject](JsonObject.md), [JsonProperty](JsonProperty.md), [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)>
+    [AstNodeFactory](../../cascara.common/lang/util/AstNodeFactory.md)<[JsonNode](JsonNode.md), [JsonScalar](JsonScalar.md), [JsonArray](JsonArray.md), [JsonObject](JsonObject.md), [JsonProperty](JsonProperty.md), [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)>
 
 
 ----
@@ -44,7 +44,7 @@ All Implemented Interfaces:<br/>
 
 **Specified By:**
 
-[AstNodeFactory](../../cascara.common/lang/ast/AstNodeFactory.md)
+[AstNodeFactory](../../cascara.common/lang/util/AstNodeFactory.md)
 
 
 ---
@@ -57,7 +57,7 @@ All Implemented Interfaces:<br/>
 
 **Specified By:**
 
-[AstNodeFactory](../../cascara.common/lang/ast/AstNodeFactory.md)
+[AstNodeFactory](../../cascara.common/lang/util/AstNodeFactory.md)
 
 
 ---
@@ -70,7 +70,7 @@ All Implemented Interfaces:<br/>
 
 **Specified By:**
 
-[AstNodeFactory](../../cascara.common/lang/ast/AstNodeFactory.md)
+[AstNodeFactory](../../cascara.common/lang/util/AstNodeFactory.md)
 
 
 ---
@@ -83,7 +83,7 @@ All Implemented Interfaces:<br/>
 
 **Specified By:**
 
-[AstNodeFactory](../../cascara.common/lang/ast/AstNodeFactory.md)
+[AstNodeFactory](../../cascara.common/lang/util/AstNodeFactory.md)
 
 
 ---
@@ -96,7 +96,7 @@ All Implemented Interfaces:<br/>
 
 **Specified By:**
 
-[AstNodeFactory](../../cascara.common/lang/ast/AstNodeFactory.md)
+[AstNodeFactory](../../cascara.common/lang/util/AstNodeFactory.md)
 
 
 ---
@@ -109,7 +109,7 @@ All Implemented Interfaces:<br/>
 
 **Specified By:**
 
-[AstNodeFactory](../../cascara.common/lang/ast/AstNodeFactory.md)
+[AstNodeFactory](../../cascara.common/lang/util/AstNodeFactory.md)
 
 
 ---
