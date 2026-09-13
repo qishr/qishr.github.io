@@ -929,6 +929,78 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#literal-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literal Values
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Literal Values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#literal-rgba-hex-colors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literal RGBA hex colors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#literal-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literal strings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#literal-collections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literal collections
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#literal-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literal templates
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method Calls
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -23425,6 +23497,78 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#literal-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literal Values
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Literal Values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#literal-rgba-hex-colors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literal RGBA hex colors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#literal-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literal strings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#literal-collections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literal collections
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#literal-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Literal templates
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Method Calls
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -23465,15 +23609,45 @@
 <h3 id="assigning-values-to-variables">Assigning Values to Variables</h3>
 <p>Values can be assigned to variables using the assignment operator (<code>=</code>). The value being assigned can be one of:</p>
 <ul>
-<li>A hex color value</li>
-<li>A String</li>
-<li>Another variable</li>
-<li>A collection</li>
+<li>A <a href="#literal-values">literal value</a></li>
+<li>A <a href="#method-calls">method call</a></li>
 <li>A member of a collection</li>
-<li>A method call</li>
+<li>Another variable</li>
 </ul>
 <p>Example of assigning a value to a variable:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>green = rgba(0,255,0,1);
+</span></code></pre></div>
+<h3 id="literal-values">Literal Values</h3>
+<h4 id="literal-rgba-hex-colors">Literal RGBA hex colors</h4>
+<p>Example:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>#00FF00
+</span></code></pre></div></p>
+<h4 id="literal-strings">Literal strings</h4>
+<p>String literals are any text enclosed in double quotes.
+A double quote character can be included in a string by escaping it with a backslash.</p>
+<p>Example:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>"a string"
+</span></code></pre></div></p>
+<h4 id="literal-collections">Literal collections</h4>
+<p>Collections start with <code>{</code> and end with <code>}</code>.</p>
+<p>Example:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>{
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    name = "value";
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    color = #00FF00;
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>}
+</span></code></pre></div></p>
+<h4 id="literal-templates">Literal templates</h4>
+<p>Templates start with <code>{{{</code> and end with <code>}}}</code></p>
+<p>Example:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>{{{
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>"name": %value%
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>}}}
+</span></code></pre></div></p>
+<h3 id="method-calls">Method Calls</h3>
+<p>The return value of static methods defined in Java classes can be assigned to a variable.
+The method must be <a href="../keywords/#import">imported</a> before it can be called.</p>
+<p>Example:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>rgba(0,255,0,1)
 </span></code></pre></div>
 
 
