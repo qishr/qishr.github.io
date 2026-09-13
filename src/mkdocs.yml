@@ -97,6 +97,10 @@ nav:
       - Cascara JSON: cascara/language-processors/json/index.md
       - Cascara CT:
           - Overview: cascara/language-processors/ct/index.md
+          - Language Reference:
+              - Overview: cascara/language-processors/ct/language-reference.md
+              - Keywords: cascara/language-processors/ct/keywords.md
+              - Types: cascara/language-processors/ct/types.md
           - Gradle Plugin: cascara/language-processors/ct/gradle-plugin.md
       - Extensible Design: cascara/language-processors/extensible-design/type-descriptors.md
   - Cascara Schema: cascara/schema/index.md
