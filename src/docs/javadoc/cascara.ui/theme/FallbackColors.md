@@ -20,9 +20,9 @@ Package [io.github.qishr.cascara.ui.theme](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                   | Method                                                                                                                                                                                  | Description |
-|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [resolve](#resolve)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) missing, [Properties](../../cascara.common/util/Properties.md) colors) |             |
+| Modifier and Type                                                                                   | Method                                                                                                                                                                                      | Description |
+|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [resolve](#resolve)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) missing, [Properties](../../cascara.common/property/Properties.md) colors) |             |
 
 
 
@@ -30,7 +30,7 @@ Package [io.github.qishr.cascara.ui.theme](index.md)
 
 ### resolve
 
-<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __resolve__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) missing, [Properties](../../cascara.common/util/Properties.md) colors)</span>
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __resolve__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) missing, [Properties](../../cascara.common/property/Properties.md) colors)</span>
 
 
 

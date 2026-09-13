@@ -22,7 +22,7 @@ Package [io.github.qishr.cascara.ui.vsix](index.md)
 
 | Modifier and Type                                                                                                                                                                             | Method                              | Description |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|-------------|
-| public [Properties](../../cascara.common/util/Properties.md)                                                                                                                                  | [getProperties](#getproperties)()   |             |
+| public [Properties](../../cascara.common/property/Properties.md)                                                                                                                              | [getProperties](#getproperties)()   |             |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getCategories](#getcategories)()   |             |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<VsixThemeInfo>                                                                                | [getThemes](#getthemes)()           |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getName](#getname)()               |             |
@@ -35,7 +35,7 @@ Package [io.github.qishr.cascara.ui.vsix](index.md)
 
 ### getProperties
 
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../cascara.common/util/Properties.md) __getProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../../cascara.common/property/Properties.md) __getProperties__()</span>
 
 
 

@@ -1,5 +1,5 @@
 
-# Package io.github.qishr.cascara.common.lang.exception
+# Package io.github.qishr.cascara.common.lang.diagnostic
 
 
 
@@ -9,6 +9,7 @@
     | Class                                           | Description |
     |-------------------------------------------------|-------------|
     | [JsonPointerException](JsonPointerException.md) |             |
+    | [LangDiagnosticCode](LangDiagnosticCode.md)     |             |
     | [ParserException](ParserException.md)           |             |
     | [SerializerException](SerializerException.md)   |             |
     | [TokenizerException](TokenizerException.md)     |             |
@@ -22,5 +23,12 @@
     | [ParserException](ParserException.md)           |             |
     | [SerializerException](SerializerException.md)   |             |
     | [TokenizerException](TokenizerException.md)     |             |
+
+
+=== "Enum Classes"
+
+    | Class                                       | Description |
+    |---------------------------------------------|-------------|
+    | [LangDiagnosticCode](LangDiagnosticCode.md) |             |
 
 

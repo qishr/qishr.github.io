@@ -197,7 +197,7 @@ YAML indicators and scalars.
 
 **Throws:**
 
-[ParserException](../../cascara.common/lang/exception/ParserException.md)
+[ParserException](../../cascara.common/lang/diagnostic/ParserException.md)
 
 
 ---

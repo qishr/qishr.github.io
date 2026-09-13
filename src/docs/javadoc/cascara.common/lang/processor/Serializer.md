@@ -58,7 +58,7 @@ The formatted string (e.g., YAML or JSON).
 
 **Throws:**
 
-[SerializerException](../exception/SerializerException.md)
+[SerializerException](../diagnostic/SerializerException.md)
 
 
 ---
@@ -111,7 +111,7 @@ A populated instance of the requested class.
 
 **Throws:**
 
-[SerializerException](../exception/SerializerException.md)
+[SerializerException](../diagnostic/SerializerException.md)
 
 
 ---
@@ -124,7 +124,7 @@ A populated instance of the requested class.
 
 **Throws:**
 
-[SerializerException](../exception/SerializerException.md)
+[SerializerException](../diagnostic/SerializerException.md)
 
 
 ---
@@ -137,7 +137,7 @@ A populated instance of the requested class.
 
 **Throws:**
 
-[SerializerException](../exception/SerializerException.md)
+[SerializerException](../diagnostic/SerializerException.md)
 
 
 ---
@@ -150,7 +150,7 @@ A populated instance of the requested class.
 
 **Throws:**
 
-[SerializerException](../exception/SerializerException.md)
+[SerializerException](../diagnostic/SerializerException.md)
 
 
 ---
@@ -163,7 +163,7 @@ A populated instance of the requested class.
 
 **Throws:**
 
-[SerializerException](../exception/SerializerException.md)
+[SerializerException](../diagnostic/SerializerException.md)
 
 
 ---
@@ -176,7 +176,7 @@ A populated instance of the requested class.
 
 **Throws:**
 
-[SerializerException](../exception/SerializerException.md)
+[SerializerException](../diagnostic/SerializerException.md)
 
 
 ---

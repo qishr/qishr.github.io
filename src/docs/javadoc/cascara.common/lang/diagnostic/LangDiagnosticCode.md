@@ -1,12 +1,12 @@
-Package [io.github.qishr.cascara.common.diagnostic.code](index.md)
+Package [io.github.qishr.cascara.common.lang.diagnostic](index.md)
 
 # Enum LangDiagnosticCode
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [java.lang.Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<[io.github.qishr.cascara.common.diagnostic.code.LangDiagnosticCode](LangDiagnosticCode.md)><br/>
-                io.github.qishr.cascara.common.diagnostic.code.LangDiagnosticCode<br/>
+        [java.lang.Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<[io.github.qishr.cascara.common.lang.diagnostic.LangDiagnosticCode](LangDiagnosticCode.md)><br/>
+                io.github.qishr.cascara.common.lang.diagnostic.LangDiagnosticCode<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [DiagnosticCode](DiagnosticCode.md)
+    [DiagnosticCode](../../diagnostic/code/DiagnosticCode.md)
 
 
 ----
@@ -334,7 +334,7 @@ public static final  NOT_AN_ARRAY_INDEX
 
 **Specified By:**
 
-[DiagnosticCode](DiagnosticCode.md)
+[DiagnosticCode](../../diagnostic/code/DiagnosticCode.md)
 
 
 ---
@@ -347,7 +347,7 @@ public static final  NOT_AN_ARRAY_INDEX
 
 **Specified By:**
 
-[DiagnosticCode](DiagnosticCode.md)
+[DiagnosticCode](../../diagnostic/code/DiagnosticCode.md)
 
 
 ---

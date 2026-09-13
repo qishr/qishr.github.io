@@ -30,13 +30,13 @@ Package [io.github.qishr.cascara.common.lang.type](index.md)
 | public boolean                                                                                      | [validate](#validate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector) |             |
 
 
-### Methods inherited from [AbstractTypeDescriptor](AbstractTypeDescriptor.md)
-
-getSchemaType, getServiceProperties, getJvmType
-
 ### Methods inherited from [AbstractScalarDescriptor](AbstractScalarDescriptor.md)
 
 getFormat, populateSchema, getContentEncoding, formatError
+
+### Methods inherited from [AbstractTypeDescriptor](AbstractTypeDescriptor.md)
+
+getSchemaType, getServiceProperties, getJvmType
 
 
 ## Method Details

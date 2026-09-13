@@ -10,7 +10,7 @@ All Implemented Interfaces:<br/>
     [LocalizableException](LocalizableException.md)
 
 Direct Known Subtypes:<br/>
-    [JsonPointerException](../lang/exception/JsonPointerException.md)
+    [JsonPointerException](../lang/diagnostic/JsonPointerException.md)
 
 
 ----

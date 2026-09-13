@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "Cascara Retro Amber on Bright Beige",
+    "workbench.colorCustomizations": {
+        // #6d89cc
+        "titleBar.activeBackground": "#41606b",
+        "titleBar.inactiveBackground": "#41606b",
+        "statusBar.background": "#41606b",
+        "statusBar.debuggingBackground": "#41606b",
+        "statusBar.noFolderBackground": "#41606b",
+    }
+}

@@ -1,4 +1,4 @@
-Package [io.github.qishr.cascara.common.lang.exception](index.md)
+Package [io.github.qishr.cascara.common.lang.diagnostic](index.md)
 
 # Class ParserException
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
@@ -7,7 +7,7 @@ Package [io.github.qishr.cascara.common.lang.exception](index.md)
                         [java.lang.RuntimeException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/RuntimeException.html)<br/>
                                 [io.github.qishr.cascara.common.diagnostic.LocalizableRuntimeException](../../diagnostic/LocalizableRuntimeException.md)<br/>
                                         [io.github.qishr.cascara.common.diagnostic.LocatableException](../../diagnostic/LocatableException.md)<br/>
-                                                io.github.qishr.cascara.common.lang.exception.ParserException<br/>
+                                                io.github.qishr.cascara.common.lang.diagnostic.ParserException<br/>
 <br/>
 Direct Known Subtypes:<br/>
     [YamlParserException](../../../cascara.lang.yaml/diagnostic/YamlParserException.md)
@@ -29,11 +29,11 @@ Direct Known Subtypes:<br/>
 | ParserException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](../../diagnostic/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) | Constructor for I/O or Stream failures.                |
 
 
-### Methods inherited from [LocatableException](../../diagnostic/LocatableException.md)
-
-getRawMessage, getUri, getLine, setUri, getLocalizedMessage, getMessage, getColumn
-
 ### Methods inherited from [LocalizableRuntimeException](../../diagnostic/LocalizableRuntimeException.md)
 
 getCode, getDetails
+
+### Methods inherited from [LocatableException](../../diagnostic/LocatableException.md)
+
+getRawMessage, getUri, getLine, setUri, getLocalizedMessage, getMessage, getColumn
 

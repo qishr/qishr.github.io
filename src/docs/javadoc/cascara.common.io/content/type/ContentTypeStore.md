@@ -17,7 +17,7 @@ All Implemented Interfaces:<br/>
 
 | Modifier and Type                                                                                                                                           | Method                                                                                                                                                                                                                     | Description |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [Properties](../../../cascara.common/util/Properties.md)                                                                                             | [getServiceProperties](#getserviceproperties)()                                                                                                                                                                            |             |
+| public [Properties](../../../cascara.common/property/Properties.md)                                                                                         | [getServiceProperties](#getserviceproperties)()                                                                                                                                                                            |             |
 | public static [ContentTypeStore](ContentTypeStore.md)                                                                                                       | [instance](#instance)()                                                                                                                                                                                                    |             |
 | public void                                                                                                                                                 | [setReporter](#setreporter)([Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter)                                                                                                                           |             |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ContentType](../../../cascara.common/util/ContentType.md)> | [getAll](#getall)()                                                                                                                                                                                                        |             |
@@ -33,7 +33,7 @@ All Implemented Interfaces:<br/>
 
 ### getServiceProperties
 
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../../cascara.common/util/Properties.md) __getServiceProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../../../cascara.common/property/Properties.md) __getServiceProperties__()</span>
 
 
 

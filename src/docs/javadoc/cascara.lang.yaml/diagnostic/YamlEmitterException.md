@@ -24,11 +24,11 @@ Package [io.github.qishr.cascara.lang.yaml.diagnostic](index.md)
 | YamlEmitterException([DiagnosticCode](../cascara.common/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           |             |
 
 
-### Methods inherited from [LocatableException](../cascara.common/LocatableException.md)
-
-getRawMessage, getUri, getLine, setUri, getLocalizedMessage, getMessage, getColumn
-
 ### Methods inherited from [LocalizableRuntimeException](../cascara.common/LocalizableRuntimeException.md)
 
 getCode, getDetails
+
+### Methods inherited from [LocatableException](../cascara.common/LocatableException.md)
+
+getRawMessage, getUri, getLine, setUri, getLocalizedMessage, getMessage, getColumn
 

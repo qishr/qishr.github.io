@@ -30,7 +30,7 @@ public class __SourceInputStreamBuffer__</span>
 | public [SourceInputStreamBuffer](SourceInputStreamBuffer.md)                                                    | [open](#open)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is) |             |
 | public [SourceInputStreamBuffer](SourceInputStreamBuffer.md)                                                    | [open](#open)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)     |             |
 | public [SourceInputStreamBuffer](SourceInputStreamBuffer.md)                                                    | [open](#open)(byte[] data)                                                                                             |             |
-| public [Properties](../../util/Properties.md)                                                                   | [getServiceProperties](#getserviceproperties)()                                                                        |             |
+| public [Properties](../../property/Properties.md)                                                               | [getServiceProperties](#getserviceproperties)()                                                                        |             |
 | public int                                                                                                      | [length](#length)()                                                                                                    |             |
 | public char                                                                                                     | [charAt](#charat)(int index)                                                                                           |             |
 | public [CharSequence](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/CharSequence.html) | [subSequence](#subsequence)(int start, int end)                                                                        |             |
@@ -109,7 +109,7 @@ public class __SourceInputStreamBuffer__</span>
 
 ### getServiceProperties
 
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../util/Properties.md) __getServiceProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../../property/Properties.md) __getServiceProperties__()</span>
 
 
 

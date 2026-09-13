@@ -1,4 +1,4 @@
-Package [io.github.qishr.cascara.common.lang.exception](index.md)
+Package [io.github.qishr.cascara.common.lang.diagnostic](index.md)
 
 # Class SerializerException
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
@@ -7,7 +7,7 @@ Package [io.github.qishr.cascara.common.lang.exception](index.md)
                         [java.lang.RuntimeException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/RuntimeException.html)<br/>
                                 [io.github.qishr.cascara.common.diagnostic.LocalizableRuntimeException](../../diagnostic/LocalizableRuntimeException.md)<br/>
                                         [io.github.qishr.cascara.common.diagnostic.LocatableException](../../diagnostic/LocatableException.md)<br/>
-                                                io.github.qishr.cascara.common.lang.exception.SerializerException<br/>
+                                                io.github.qishr.cascara.common.lang.diagnostic.SerializerException<br/>
 <br/>
 
 ----

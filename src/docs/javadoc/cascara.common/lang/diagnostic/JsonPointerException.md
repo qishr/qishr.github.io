@@ -1,11 +1,11 @@
-Package [io.github.qishr.cascara.common.lang.exception](index.md)
+Package [io.github.qishr.cascara.common.lang.diagnostic](index.md)
 
 # Class JsonPointerException
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
         [java.lang.Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html)<br/>
                 [java.lang.Exception](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Exception.html)<br/>
                         [io.github.qishr.cascara.common.diagnostic.AbstractLocalizableException](../../diagnostic/AbstractLocalizableException.md)<br/>
-                                io.github.qishr.cascara.common.lang.exception.JsonPointerException<br/>
+                                io.github.qishr.cascara.common.lang.diagnostic.JsonPointerException<br/>
 <br/>
 
 ----

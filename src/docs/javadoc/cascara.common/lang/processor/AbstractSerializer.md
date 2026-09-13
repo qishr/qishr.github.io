@@ -51,9 +51,9 @@ Direct Known Subtypes:<br/>
 | protected [TypeDescriptor](../type/TypeDescriptor.md)<?>                                                                                                                                                 | [getTypeDescriptor](#gettypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)                                                                                                                                                                                                                  |                                                                                              |
 | protected void                                                                                                                                                                                           | [setupSerializer](#setupserializer)()                                                                                                                                                                                                                                                                                                                           |                                                                                              |
 | public T                                                                                                                                                                                                 | [setOptions](#setoptions)([LanguageOptions](../util/LanguageOptions.md)<?> options)                                                                                                                                                                                                                                                                             |                                                                                              |
-| public [Properties](../../util/Properties.md)                                                                                                                                                            | [getServiceProperties](#getserviceproperties)()                                                                                                                                                                                                                                                                                                                 |                                                                                              |
+| public [Properties](../../property/Properties.md)                                                                                                                                                        | [getServiceProperties](#getserviceproperties)()                                                                                                                                                                                                                                                                                                                 |                                                                                              |
 | public T                                                                                                                                                                                                 | [registerTypeDescriptor](#registertypedescriptor)([TypeDescriptor](../type/TypeDescriptor.md)<?> typeDescriptor)                                                                                                                                                                                                                                                |                                                                                              |
-| protected [SerializerException](../exception/SerializerException.md)                                                                                                                                     | [error](#error)([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                   |                                                                                              |
+| protected [SerializerException](../diagnostic/SerializerException.md)                                                                                                                                    | [error](#error)([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                   |                                                                                              |
 | protected void                                                                                                                                                                                           | [warn](#warn)([DiagnosticCode](../../diagnostic/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                           |                                                                                              |
 | protected void                                                                                                                                                                                           | [warnInaccessible](#warninaccessible)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType, [Method](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Method.html) method, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t) |                                                                                              |
 | protected void                                                                                                                                                                                           | [warnInaccessible](#warninaccessible)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType, [Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html) field, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t)    |                                                                                              |
@@ -157,7 +157,7 @@ Converts an AST structure back into a Java object of the generic type referenced
 
 **Throws:**
 
-[SerializerException](../exception/SerializerException.md)
+[SerializerException](../diagnostic/SerializerException.md)
 
 
 ---
@@ -170,7 +170,7 @@ Converts an AST structure back into a Java object of the specified type.
 
 **Throws:**
 
-[SerializerException](../exception/SerializerException.md)
+[SerializerException](../diagnostic/SerializerException.md)
 
 
 ---
@@ -222,7 +222,7 @@ Retrieves all declared fields for a class and all its superclasses (excluding Ob
 
 ### getServiceProperties
 
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../util/Properties.md) __getServiceProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../../property/Properties.md) __getServiceProperties__()</span>
 
 
 
@@ -244,7 +244,7 @@ Retrieves all declared fields for a class and all its superclasses (excluding Ob
 
 ### error
 
-<span style="font-family: monospace; font-size: 80%;">protected [SerializerException](../exception/SerializerException.md) __error__([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">protected [SerializerException](../diagnostic/SerializerException.md) __error__([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 
 

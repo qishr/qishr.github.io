@@ -36,7 +36,7 @@ Direct Known Subtypes:<br/>
 
 | Modifier and Type                                                                                   | Method                                                                                                                                       | Description |
 |-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [Properties](../../cascara.common/util/Properties.md)                                        | [getServiceProperties](#getserviceproperties)()                                                                                              |             |
+| public [Properties](../../cascara.common/property/Properties.md)                                    | [getServiceProperties](#getserviceproperties)()                                                                                              |             |
 | public void                                                                                         | [initialize](#initialize)()                                                                                                                  |             |
 | public void                                                                                         | [addListener](#addlistener)([Runnable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Runnable.html) listener)       |             |
 | public void                                                                                         | [removeListener](#removelistener)([Runnable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Runnable.html) listener) |             |
@@ -64,7 +64,7 @@ Direct Known Subtypes:<br/>
 
 ### getServiceProperties
 
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../cascara.common/util/Properties.md) __getServiceProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../../cascara.common/property/Properties.md) __getServiceProperties__()</span>
 
 
 

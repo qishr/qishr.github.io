@@ -184,9 +184,9 @@ Package [io.github.qishr.cascara.ui.theme](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                   | Method                                                  | Description |
-|---------------------------------------------------------------------|---------------------------------------------------------|-------------|
-| public static [Properties](../../cascara.common/util/Properties.md) | [getDefaultPaletteMapping](#getdefaultpalettemapping)() |             |
+| Modifier and Type                                                       | Method                                                  | Description |
+|-------------------------------------------------------------------------|---------------------------------------------------------|-------------|
+| public static [Properties](../../cascara.common/property/Properties.md) | [getDefaultPaletteMapping](#getdefaultpalettemapping)() |             |
 
 
 
@@ -2660,7 +2660,7 @@ Package [io.github.qishr.cascara.ui.theme](index.md)
 
 ### getDefaultPaletteMapping
 
-<span style="font-family: monospace; font-size: 80%;">public static [Properties](../../cascara.common/util/Properties.md) __getDefaultPaletteMapping__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static [Properties](../../cascara.common/property/Properties.md) __getDefaultPaletteMapping__()</span>
 
 
 

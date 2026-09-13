@@ -62,7 +62,7 @@ Direct Known Subtypes:<br/>
 
 ### Methods inherited from [ObservableObject](ObservableObject.md)
 
-displayStringProperty, getInteger, getObservablesMap, getPropertyMetadata, getValues, getObjectProperty, getObjectSchema, getObservables, getPropertyNames, getLong, getUserData, setObjectSchema, removeListener, getUri, addListener, putUserData, getString, createObservableProperty, getObservableList, set, getPath, objectSchemaProperty, getContentType, getObservable, get, getValuesMap, getBoolean
+displayStringProperty, getInteger, getObservablesMap, getPropertyMetadata, getValues, getObjectProperty, getObjectSchema, getObservables, getPropertyNames, getLong, getUserData, setObjectSchema, getValue, removeListener, getUri, addListener, putUserData, getString, createObservableProperty, getObservableList, set, getPath, objectSchemaProperty, getContentType, getObservable, getValuesMap, getBoolean
 
 
 ## Method Details

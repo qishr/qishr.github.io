@@ -19,8 +19,8 @@ Package [io.github.qishr.cascara.ui.vsix](index.md)
 | public [URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html)                                                                                                  | [getPreviewUri](#getpreviewuri)()                                                                                              |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getName](#getname)()                                                                                                          |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getDescription](#getdescription)()                                                                                            |             |
-| public [Properties](../../cascara.common/util/Properties.md)                                                                                                                                  | [getProperties](#getproperties)()                                                                                              |             |
-| public [Properties](../../cascara.common/util/Properties.md)                                                                                                                                  | [getManifest](#getmanifest)()                                                                                                  |             |
+| public [Properties](../../cascara.common/property/Properties.md)                                                                                                                              | [getProperties](#getproperties)()                                                                                              |             |
+| public [Properties](../../cascara.common/property/Properties.md)                                                                                                                              | [getManifest](#getmanifest)()                                                                                                  |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getIconUri](#geticonuri)()                                                                                                    |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getDisplayName](#getdisplayname)()                                                                                            |             |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getCategories](#getcategories)()                                                                                              |             |
@@ -77,7 +77,7 @@ Package [io.github.qishr.cascara.ui.vsix](index.md)
 
 ### getProperties
 
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../cascara.common/util/Properties.md) __getProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../../cascara.common/property/Properties.md) __getProperties__()</span>
 
 
 
@@ -86,7 +86,7 @@ Package [io.github.qishr.cascara.ui.vsix](index.md)
 
 ### getManifest
 
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../cascara.common/util/Properties.md) __getManifest__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../../cascara.common/property/Properties.md) __getManifest__()</span>
 
 
 

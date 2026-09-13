@@ -21,9 +21,11 @@ All Implemented Interfaces:<br/>
 |-----------------------------------|-------------|
 | [FILE_NOT_FOUND](#file_not_found) |             |
 | [ACCESS_DENIED](#access_denied)   |             |
+| [IS_DIRECTORY](#is_directory)     |             |
 | [DISK_FULL](#disk_full)           |             |
 | [READ_ERROR](#read_error)         |             |
 | [WRITE_ERROR](#write_error)       |             |
+| [DELETE_ERROR](#delete_error)     |             |
 
 
 
@@ -58,6 +60,15 @@ public static final  ACCESS_DENIED
 
 ---
 
+### IS_DIRECTORY
+
+public static final  IS_DIRECTORY
+
+
+
+
+---
+
 ### DISK_FULL
 
 public static final  DISK_FULL
@@ -79,6 +90,15 @@ public static final  READ_ERROR
 ### WRITE_ERROR
 
 public static final  WRITE_ERROR
+
+
+
+
+---
+
+### DELETE_ERROR
+
+public static final  DELETE_ERROR
 
 
 

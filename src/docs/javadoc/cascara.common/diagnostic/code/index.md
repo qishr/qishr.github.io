@@ -14,7 +14,6 @@
     | [GenericDiagnosticCode](GenericDiagnosticCode.md) |             |
     | [HttpDiagnosticCode](HttpDiagnosticCode.md)       |             |
     | [InetDiagnosticCode](InetDiagnosticCode.md)       |             |
-    | [LangDiagnosticCode](LangDiagnosticCode.md)       |             |
     | [ServiceDiagnosticCode](ServiceDiagnosticCode.md) |             |
 
 
@@ -34,7 +33,6 @@
     | [GenericDiagnosticCode](GenericDiagnosticCode.md) |             |
     | [HttpDiagnosticCode](HttpDiagnosticCode.md)       |             |
     | [InetDiagnosticCode](InetDiagnosticCode.md)       |             |
-    | [LangDiagnosticCode](LangDiagnosticCode.md)       |             |
     | [ServiceDiagnosticCode](ServiceDiagnosticCode.md) |             |
 
 

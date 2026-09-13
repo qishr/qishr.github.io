@@ -14,12 +14,12 @@ Package [io.github.qishr.cascara.ui.data](index.md)
 
 ## Constructor Summary
 
-| Constructor                                                                    | Description |
-|--------------------------------------------------------------------------------|-------------|
-| ObservableProperty([Property](../../cascara.common/util/Property.md) property) |             |
+| Constructor                                                                        | Description |
+|------------------------------------------------------------------------------------|-------------|
+| ObservableProperty([Property](../../cascara.common/property/Property.md) property) |             |
 
 
 ### Methods inherited from [ObservableObject](ObservableObject.md)
 
-displayStringProperty, getInteger, getObservablesMap, getPropertyMetadata, getValues, getObjectProperty, getObjectSchema, getObservables, getPropertyNames, getLong, getUserData, setObjectSchema, removeListener, getUri, addListener, putUserData, getString, createObservableProperty, getObservableList, set, getPath, getDataContext, objectSchemaProperty, getContentType, getObservable, get, getValuesMap, getBoolean
+displayStringProperty, getInteger, getObservablesMap, getPropertyMetadata, getValues, getObjectProperty, getObjectSchema, getObservables, getPropertyNames, getLong, getUserData, setObjectSchema, getValue, removeListener, getUri, addListener, putUserData, getString, createObservableProperty, getObservableList, set, getPath, getDataContext, objectSchemaProperty, getContentType, getObservable, getValuesMap, getBoolean
 

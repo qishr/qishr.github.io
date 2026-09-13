@@ -44,7 +44,7 @@ The matching structural AstNode graph.
 
 **Throws:**
 
-[SerializerException](../exception/SerializerException.md)
+[SerializerException](../diagnostic/SerializerException.md)
 
 
 ---
@@ -65,7 +65,7 @@ The fully constructed Java object instance.
 
 **Throws:**
 
-[SerializerException](../exception/SerializerException.md)
+[SerializerException](../diagnostic/SerializerException.md)
 
 
 ---

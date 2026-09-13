@@ -58,7 +58,7 @@ Package [io.github.qishr.cascara.ui.menu](index.md)
 
 ### Methods inherited from [ObservableObject](../data/ObservableObject.md)
 
-displayStringProperty, getInteger, getObjectProperty, getObservables, getPropertyNames, getUserData, setObjectSchema, removeListener, getUri, putUserData, getObservableList, set, getPath, getContentType, getObservablesMap, getPropertyMetadata, getValues, getObjectSchema, getLong, addListener, getString, createObservableProperty, objectSchemaProperty, getObservable, get, getValuesMap, getBoolean
+displayStringProperty, getInteger, getObjectProperty, getObservables, getPropertyNames, getUserData, setObjectSchema, getValue, removeListener, getUri, putUserData, getObservableList, set, getPath, getContentType, getObservablesMap, getPropertyMetadata, getValues, getObjectSchema, getLong, addListener, getString, createObservableProperty, objectSchemaProperty, getObservable, getValuesMap, getBoolean
 
 ### Methods inherited from [ObservableTreeNode](../data/ObservableTreeNode.md)
 

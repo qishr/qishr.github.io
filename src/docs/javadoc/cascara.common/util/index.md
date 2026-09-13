@@ -19,8 +19,6 @@
     | [JreUtils](JreUtils.md)                       |                                                                                                                                              |
     | [ModulePath](ModulePath.md)                   |                                                                                                                                              |
     | [Pair](Pair.md)                               |                                                                                                                                              |
-    | [Properties](Properties.md)                   |                                                                                                                                              |
-    | [Property](Property.md)                       |                                                                                                                                              |
     | [ReflectionUtils](ReflectionUtils.md)         |                                                                                                                                              |
     | [StringUtils](StringUtils.md)                 |                                                                                                                                              |
     | [TermUtils](TermUtils.md)                     |                                                                                                                                              |
@@ -48,8 +46,6 @@
     | [JreUtils](JreUtils.md)               |                                                                                                                                              |
     | [ModulePath](ModulePath.md)           |                                                                                                                                              |
     | [Pair](Pair.md)                       |                                                                                                                                              |
-    | [Properties](Properties.md)           |                                                                                                                                              |
-    | [Property](Property.md)               |                                                                                                                                              |
     | [ReflectionUtils](ReflectionUtils.md) |                                                                                                                                              |
     | [StringUtils](StringUtils.md)         |                                                                                                                                              |
     | [TermUtils](TermUtils.md)             |                                                                                                                                              |

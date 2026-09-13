@@ -29,13 +29,13 @@ Package [io.github.qishr.cascara.lang.yaml.ast](index.md)
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getValue](#getvalue)() |             |
 
 
-### Methods inherited from [YamlDirective](YamlDirective.md)
-
-getType, getContent, getChildren, accept
-
 ### Methods inherited from [YamlNode](YamlNode.md)
 
 isPreceededByNewLine, getOptions, setFileEndsWithNewLine, getTag, setAnchor, addComments, getStartLine, hashCode, fileEndsWithNewLine, getEndColumn, setTag, addComment, setPreceededByNewLine, getResolvedTag, getToken, getAnchor, getNodeStyle, toString, setNodeStyle, getStartColumn, getSemanticColumn, getEndLine, getComments, getProperties, equals, setResolvedTag, setSemanticColumn
+
+### Methods inherited from [YamlDirective](YamlDirective.md)
+
+getType, getContent, getChildren, accept
 
 
 ## Method Details

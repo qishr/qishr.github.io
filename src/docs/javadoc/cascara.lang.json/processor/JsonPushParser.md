@@ -46,7 +46,7 @@ setReporter, getOptions, getContentType, getServiceProperties, getVersion, getRe
 
 **Throws:**
 
-[ParserException](../../cascara.common/lang/exception/ParserException.md)
+[ParserException](../../cascara.common/lang/diagnostic/ParserException.md)
 
 **Specified By:**
 

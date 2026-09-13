@@ -25,7 +25,7 @@ All Implemented Interfaces:<br/>
 
 | Modifier and Type                                                        | Method                                                                                                                                         | Description                                         |
 |--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| public [Properties](../../cascara.common/util/Properties.md)             | [getServiceProperties](#getserviceproperties)()                                                                                                |                                                     |
+| public [Properties](../../cascara.common/property/Properties.md)         | [getServiceProperties](#getserviceproperties)()                                                                                                |                                                     |
 | public void                                                              | [setOnAbout](#setonabout)([Runnable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Runnable.html) handler)            |                                                     |
 | public void                                                              | [onAbout](#onabout)()                                                                                                                          |                                                     |
 | public void                                                              | [setOnSettings](#setonsettings)([Runnable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Runnable.html) handler)      |                                                     |
@@ -43,7 +43,7 @@ All Implemented Interfaces:<br/>
 
 ### getServiceProperties
 
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../cascara.common/util/Properties.md) __getServiceProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../../cascara.common/property/Properties.md) __getServiceProperties__()</span>
 
 
 

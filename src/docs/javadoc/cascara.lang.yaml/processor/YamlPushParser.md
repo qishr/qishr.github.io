@@ -53,7 +53,7 @@ All Implemented Interfaces:<br/>
 
 **Throws:**
 
-[ParserException](../../cascara.common/lang/exception/ParserException.md)
+[ParserException](../../cascara.common/lang/diagnostic/ParserException.md)
 
 **Specified By:**
 

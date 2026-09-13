@@ -25,12 +25,12 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                   | Method                                                                       | Description |
-|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------|
-| protected [YamlConverter](YamlConverter.md)                                                         | [self](#self)()                                                              |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toText](#totext)([AstNode](../../cascara.common/lang/ast/AstNode.md) ast)   |             |
-| public [YamlNode](../ast/YamlNode.md)                                                               | [fromAst](#fromast)([AstNode](../../cascara.common/lang/ast/AstNode.md) ast) |             |
-| public [PlainNode](../../cascara.common/lang/plain/PlainNode.md)                                    | [toPlainAst](#toplainast)([YamlNode](../ast/YamlNode.md) yaml)               |             |
+| Modifier and Type                                                                                   | Method                                                                         | Description |
+|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-------------|
+| protected [YamlConverter](YamlConverter.md)                                                         | [self](#self)()                                                                |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toString](#tostring)([AstNode](../../cascara.common/lang/ast/AstNode.md) ast) |             |
+| public [YamlNode](../ast/YamlNode.md)                                                               | [fromAst](#fromast)([AstNode](../../cascara.common/lang/ast/AstNode.md) ast)   |             |
+| public [PlainNode](../../cascara.common/lang/plain/PlainNode.md)                                    | [toPlainAst](#toplainast)([YamlNode](../ast/YamlNode.md) yaml)                 |             |
 
 
 
@@ -45,9 +45,9 @@ All Implemented Interfaces:<br/>
 
 ---
 
-### toText
+### toString
 
-<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toText__([AstNode](../../cascara.common/lang/ast/AstNode.md) ast)</span>
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toString__([AstNode](../../cascara.common/lang/ast/AstNode.md) ast)</span>
 
 
 

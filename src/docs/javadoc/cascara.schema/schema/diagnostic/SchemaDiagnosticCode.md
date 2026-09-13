@@ -35,8 +35,8 @@ All Implemented Interfaces:<br/>
 | [FAILED_TO_STORE](#failed_to_store)                         |             |
 | [DYNAMIC_NOT_ALLOWED](#dynamic_not_allowed)                 |             |
 | [NOT_FOUND](#not_found)                                     |             |
-| [RESOLVER](#resolver)                                       |             |
 | [RESOLUTION_FAILED](#resolution_failed)                     |             |
+| [RESOLUTION_FAILED_REASON](#resolution_failed_reason)       |             |
 | [LOCAL_RESOLUTION_FAILED](#local_resolution_failed)         |             |
 | [NODE_NOT_FOUND](#node_not_found)                           |             |
 | [META_INITIALIZATION_FAILURE](#meta_initialization_failure) |             |
@@ -218,18 +218,18 @@ public static final  NOT_FOUND
 
 ---
 
-### RESOLVER
+### RESOLUTION_FAILED
 
-public static final  RESOLVER
+public static final  RESOLUTION_FAILED
 
 
 
 
 ---
 
-### RESOLUTION_FAILED
+### RESOLUTION_FAILED_REASON
 
-public static final  RESOLUTION_FAILED
+public static final  RESOLUTION_FAILED_REASON
 
 
 

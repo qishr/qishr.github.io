@@ -5,25 +5,30 @@
 
 === "Exports"
 
-    | Package                                                                    | Description                                                                |
-    |----------------------------------------------------------------------------|----------------------------------------------------------------------------|
-    | [io.github.qishr.cascara.common.annotation](annotation/index.md)           |                                                                            |
-    | [io.github.qishr.cascara.common.color](color/index.md)                     |                                                                            |
-    | [io.github.qishr.cascara.common.data](data/index.md)                       |                                                                            |
-    | [io.github.qishr.cascara.common.diagnostic](diagnostic/index.md)           |                                                                            |
-    | [io.github.qishr.cascara.common.diagnostic.code](diagnostic/code/index.md) |                                                                            |
-    | [io.github.qishr.cascara.common.lang.plain](lang/plain/index.md)           | A intermediate implementation of the AST API                               |
-    | [io.github.qishr.cascara.common.lang.ast](lang/ast/index.md)               |                                                                            |
-    | [io.github.qishr.cascara.common.lang.streaming](lang/streaming/index.md)   |                                                                            |
-    | [io.github.qishr.cascara.common.lang.exception](lang/exception/index.md)   |                                                                            |
-    | [io.github.qishr.cascara.common.lang.processor](lang/processor/index.md)   |                                                                            |
-    | [io.github.qishr.cascara.common.lang.semantic](lang/semantic/index.md)     |                                                                            |
-    | [io.github.qishr.cascara.common.lang.token](lang/token/index.md)           |                                                                            |
-    | [io.github.qishr.cascara.common.lang.type](lang/type/index.md)             | Language-agnostic Primitive type and TypeDescriptor utilities.             |
-    | [io.github.qishr.cascara.common.lang.util](lang/util/index.md)             | Language-agnostic lexing, parsing, emitting, serializing, and schema APIs. |
-    | [io.github.qishr.cascara.common.semver](semver/index.md)                   |                                                                            |
-    | [io.github.qishr.cascara.common.service](service/index.md)                 | Cascara Service Provider Layer                                             |
-    | [io.github.qishr.cascara.common.util](util/index.md)                       |                                                                            |
+    | Package                                                                              | Description                                                                |
+    |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+    | [io.github.qishr.cascara.common.annotation](annotation/index.md)                     |                                                                            |
+    | [io.github.qishr.cascara.common.color](color/index.md)                               |                                                                            |
+    | [io.github.qishr.cascara.common.data](data/index.md)                                 |                                                                            |
+    | [io.github.qishr.cascara.common.diagnostic](diagnostic/index.md)                     |                                                                            |
+    | [io.github.qishr.cascara.common.diagnostic.code](diagnostic/code/index.md)           |                                                                            |
+    | [io.github.qishr.cascara.common.lang.plain](lang/plain/index.md)                     | A intermediate implementation of the AST API                               |
+    | [io.github.qishr.cascara.common.lang.ast](lang/ast/index.md)                         |                                                                            |
+    | [io.github.qishr.cascara.common.lang.streaming](lang/streaming/index.md)             |                                                                            |
+    | [io.github.qishr.cascara.common.lang.diagnostic](lang/diagnostic/index.md)           |                                                                            |
+    | [io.github.qishr.cascara.common.lang.processor](lang/processor/index.md)             |                                                                            |
+    | [io.github.qishr.cascara.common.lang.semantic](lang/semantic/index.md)               |                                                                            |
+    | [io.github.qishr.cascara.common.lang.token](lang/token/index.md)                     |                                                                            |
+    | [io.github.qishr.cascara.common.lang.type](lang/type/index.md)                       | Language-agnostic Primitive type and TypeDescriptor utilities.             |
+    | [io.github.qishr.cascara.common.lang.util](lang/util/index.md)                       | Language-agnostic lexing, parsing, emitting, serializing, and schema APIs. |
+    | [io.github.qishr.cascara.common.property](property/index.md)                         |                                                                            |
+    | [io.github.qishr.cascara.common.semver](semver/index.md)                             |                                                                            |
+    | [io.github.qishr.cascara.common.service](service/index.md)                           | Cascara Service Provider Layer                                             |
+    | [io.github.qishr.cascara.common.trackable](trackable/index.md)                       |                                                                            |
+    | [io.github.qishr.cascara.common.trackable.diagnostic](trackable/diagnostic/index.md) |                                                                            |
+    | [io.github.qishr.cascara.common.trackable.property](trackable/property/index.md)     |                                                                            |
+    | [io.github.qishr.cascara.common.trackable.tracker](trackable/tracker/index.md)       |                                                                            |
+    | [io.github.qishr.cascara.common.util](util/index.md)                                 |                                                                            |
 
 
 === "Requires"

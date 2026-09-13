@@ -12,10 +12,10 @@ Package [io.github.qishr.cascara.common.service](index.md)
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                          | Description |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| ServiceMetadata([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](ServiceProvider.md)> type, [Properties](../util/Properties.md) properties)                                                    |             |
-| ServiceMetadata([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](ServiceProvider.md)> type, [Properties](../util/Properties.md) properties, [ContentType](../util/ContentType.md) contentType) |             |
+| Constructor                                                                                                                                                                                                                                                              | Description |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| ServiceMetadata([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](ServiceProvider.md)> type, [Properties](../property/Properties.md) properties)                                                    |             |
+| ServiceMetadata([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](ServiceProvider.md)> type, [Properties](../property/Properties.md) properties, [ContentType](../util/ContentType.md) contentType) |             |
 
 
 
@@ -28,7 +28,7 @@ Package [io.github.qishr.cascara.common.service](index.md)
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                | [getTypeName](#gettypename)()                                                                                                                       |             |
 | public [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](ServiceProvider.md)> | [getType](#gettype)()                                                                                                                               |             |
 | public [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?>                                               | [getCapabilityType](#getcapabilitytype)()                                                                                                           |             |
-| public [Properties](../util/Properties.md)                                                                                                         | [getProperties](#getproperties)()                                                                                                                   |             |
+| public [Properties](../property/Properties.md)                                                                                                     | [getProperties](#getproperties)()                                                                                                                   |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                | [getProperty](#getproperty)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                      |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                | [getJarPath](#getjarpath)()                                                                                                                         |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                | [getTitle](#gettitle)()                                                                                                                             |             |
@@ -88,7 +88,7 @@ Package [io.github.qishr.cascara.common.service](index.md)
 
 ### getProperties
 
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../util/Properties.md) __getProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../property/Properties.md) __getProperties__()</span>
 
 
 

@@ -26,7 +26,7 @@ public class __SourceStringBuffer__</span>
 
 | Modifier and Type                                                                                               | Method                                                                                                                 | Description |
 |-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [Properties](../../util/Properties.md)                                                                   | [getServiceProperties](#getserviceproperties)()                                                                        |             |
+| public [Properties](../../property/Properties.md)                                                               | [getServiceProperties](#getserviceproperties)()                                                                        |             |
 | public [SourceStringBuffer](SourceStringBuffer.md)                                                              | [open](#open)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source)     |             |
 | public [SourceStringBuffer](SourceStringBuffer.md)                                                              | [open](#open)(byte[] data)                                                                                             |             |
 | public [SourceStringBuffer](SourceStringBuffer.md)                                                              | [open](#open)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)       |             |
@@ -59,7 +59,7 @@ public class __SourceStringBuffer__</span>
 
 ### getServiceProperties
 
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../util/Properties.md) __getServiceProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../../property/Properties.md) __getServiceProperties__()</span>
 
 
 

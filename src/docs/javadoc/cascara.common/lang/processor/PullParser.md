@@ -36,7 +36,7 @@ Advances to the next event in the stream and returns it.Returns null (or an END_
 
 **Throws:**
 
-[ParserException](../exception/ParserException.md)
+[ParserException](../diagnostic/ParserException.md)
 
 **Specified By:**
 
@@ -53,7 +53,7 @@ Checks if the parser can continue advancing.
 
 **Throws:**
 
-[ParserException](../exception/ParserException.md)
+[ParserException](../diagnostic/ParserException.md)
 
 **Specified By:**
 

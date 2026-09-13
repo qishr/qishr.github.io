@@ -15,9 +15,9 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                   | Method                                          | Description |
-|-----------------------------------------------------|-------------------------------------------------|-------------|
-| public abstract [Properties](../util/Properties.md) | [getServiceProperties](#getserviceproperties)() |             |
+| Modifier and Type                                       | Method                                          | Description |
+|---------------------------------------------------------|-------------------------------------------------|-------------|
+| public abstract [Properties](../property/Properties.md) | [getServiceProperties](#getserviceproperties)() |             |
 
 
 
@@ -25,7 +25,7 @@ All Known Implementing Classes:<br/>
 
 ### getServiceProperties
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [Properties](../util/Properties.md) __getServiceProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Properties](../property/Properties.md) __getServiceProperties__()</span>
 
 
 

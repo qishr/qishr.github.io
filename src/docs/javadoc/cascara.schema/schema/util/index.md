@@ -14,10 +14,12 @@
     | [SchemaCompiler](SchemaCompiler.md)     |             |
     | [SchemaDecompiler](SchemaDecompiler.md) |             |
     | [SchemaGenerator](SchemaGenerator.md)   |             |
+    | [SchemaKeyword](SchemaKeyword.md)       |             |
     | [SchemaResolver](SchemaResolver.md)     |             |
     | [SchemaStore](SchemaStore.md)           |             |
     | [SchemaValidator](SchemaValidator.md)   |             |
     | [Schemas](Schemas.md)                   |             |
+    | [SchematicObject](SchematicObject.md)   |             |
     | [TypeAnalyzer](TypeAnalyzer.md)         |             |
 
 
@@ -42,5 +44,13 @@
     | [SchemaStore](SchemaStore.md)           |             |
     | [SchemaValidator](SchemaValidator.md)   |             |
     | [Schemas](Schemas.md)                   |             |
+    | [SchematicObject](SchematicObject.md)   |             |
+
+
+=== "Enum Classes"
+
+    | Class                             | Description |
+    |-----------------------------------|-------------|
+    | [SchemaKeyword](SchemaKeyword.md) |             |
 
 

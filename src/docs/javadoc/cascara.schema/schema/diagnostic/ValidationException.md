@@ -30,11 +30,11 @@ Package [io.github.qishr.cascara.schema.diagnostic](index.md)
 
 getType, getSchemaPath
 
-### Methods inherited from [LocalizableRuntimeException](../../../cascara.common/diagnostic/LocalizableRuntimeException.md)
-
-getCode, getDetails
-
 ### Methods inherited from [LocatableException](../../../cascara.common/diagnostic/LocatableException.md)
 
 getRawMessage, getUri, getLine, setUri, getLocalizedMessage, getMessage, getColumn
+
+### Methods inherited from [LocalizableRuntimeException](../../../cascara.common/diagnostic/LocalizableRuntimeException.md)
+
+getCode, getDetails
 

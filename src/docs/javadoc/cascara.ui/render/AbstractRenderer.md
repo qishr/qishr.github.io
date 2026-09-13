@@ -28,7 +28,7 @@ Direct Known Subtypes:<br/>
 
 | Modifier and Type                                                                                   | Method                                          | Description |
 |-----------------------------------------------------------------------------------------------------|-------------------------------------------------|-------------|
-| public [Properties](../../cascara.common/util/Properties.md)                                        | [getServiceProperties](#getserviceproperties)() |             |
+| public [Properties](../../cascara.common/property/Properties.md)                                    | [getServiceProperties](#getserviceproperties)() |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getContentType](#getcontenttype)()             |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getSchemaType](#getschematype)()               |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getSchemaFormat](#getschemaformat)()           |             |
@@ -39,7 +39,7 @@ Direct Known Subtypes:<br/>
 
 ### getServiceProperties
 
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../cascara.common/util/Properties.md) __getServiceProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../../cascara.common/property/Properties.md) __getServiceProperties__()</span>
 
 
 

@@ -3,8 +3,6 @@ public class SimplePushParse implements StreamHandler<YamlStreamingEvent> {
         SimplePushParse handler = new SimplePushParse();
         InputStream is = SimplePushParse.class.getResourceAsStream("subject.yaml");
         YamlPushParser parser = new YamlPushParser();
-            // .setReporter(new StandardReporter().setLevel(Level.TRACE));
-
         parser.parse(is, handler);
     }
 

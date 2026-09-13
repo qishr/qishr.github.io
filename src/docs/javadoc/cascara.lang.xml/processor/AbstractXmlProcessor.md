@@ -36,13 +36,13 @@ Direct Known Subtypes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                              | Method                                                                                                     | Description                                                              |
-|----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| protected abstract P                                           | [self](#self)()                                                                                            |                                                                          |
-| public [Properties](../../cascara.common/util/Properties.md)   | [getServiceProperties](#getserviceproperties)()                                                            |                                                                          |
-| public [ContentType](../../cascara.common/util/ContentType.md) | [getContentType](#getcontenttype)()                                                                        |                                                                          |
-| public P                                                       | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter)              | Sets the reporter for communicating warnings or errors.                  |
-| public P                                                       | [setOptions](#setoptions)([LanguageOptions](../../cascara.common/lang/util/LanguageOptions.md)<?> options) | Sets the language-specific options (e.g., indentation, Unicode support). |
+| Modifier and Type                                                | Method                                                                                                     | Description                                                              |
+|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| protected abstract P                                             | [self](#self)()                                                                                            |                                                                          |
+| public [Properties](../../cascara.common/property/Properties.md) | [getServiceProperties](#getserviceproperties)()                                                            |                                                                          |
+| public [ContentType](../../cascara.common/util/ContentType.md)   | [getContentType](#getcontenttype)()                                                                        |                                                                          |
+| public P                                                         | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter)              | Sets the reporter for communicating warnings or errors.                  |
+| public P                                                         | [setOptions](#setoptions)([LanguageOptions](../../cascara.common/lang/util/LanguageOptions.md)<?> options) | Sets the language-specific options (e.g., indentation, Unicode support). |
 
 
 
@@ -89,7 +89,7 @@ Direct Known Subtypes:<br/>
 
 ### getServiceProperties
 
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../cascara.common/util/Properties.md) __getServiceProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../../cascara.common/property/Properties.md) __getServiceProperties__()</span>
 
 
 

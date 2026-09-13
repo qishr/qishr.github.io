@@ -18,8 +18,8 @@ Package [io.github.qishr.cascara.common.util](index.md)
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|-------------|
 | public static [JarFile](JarFile.md)                                                                                                                                                         | [load](#load)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) jarPath) |             |
 | public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)                                                                                         | [getPath](#getpath)()                                                                                               |             |
-| public [Properties](Properties.md)                                                                                                                                                          | [getManifestProperties](#getmanifestproperties)()                                                                   |             |
-| public [Properties](Properties.md)                                                                                                                                                          | [getMavenProperties](#getmavenproperties)()                                                                         |             |
+| public [Properties](../property/Properties.md)                                                                                                                                              | [getManifestProperties](#getmanifestproperties)()                                                                   |             |
+| public [Properties](../property/Properties.md)                                                                                                                                              | [getMavenProperties](#getmavenproperties)()                                                                         |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                         | [getModuleName](#getmodulename)()                                                                                   |             |
 | public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getPackages](#getpackages)()                                                                                       |             |
 | public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getClassNames](#getclassnames)()                                                                                   |             |
@@ -29,7 +29,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 ### Methods inherited from [ArchiveFile](ArchiveFile.md)
 
-listFiles, extractFile, addDirectory, create, getInputStream, addFile, listFiles, addFile, extractFile, listFiles, close, addDirectory
+create, open, getInputStream, addFile, addFile, listFiles, addDirectory, listFiles, walk, extractFile, addDirectory, listFiles, extractFile, close
 
 
 ## Method Details
@@ -58,7 +58,7 @@ listFiles, extractFile, addDirectory, create, getInputStream, addFile, listFiles
 
 ### getManifestProperties
 
-<span style="font-family: monospace; font-size: 80%;">public [Properties](Properties.md) __getManifestProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../property/Properties.md) __getManifestProperties__()</span>
 
 
 
@@ -67,7 +67,7 @@ listFiles, extractFile, addDirectory, create, getInputStream, addFile, listFiles
 
 ### getMavenProperties
 
-<span style="font-family: monospace; font-size: 80%;">public [Properties](Properties.md) __getMavenProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../property/Properties.md) __getMavenProperties__()</span>
 
 
 

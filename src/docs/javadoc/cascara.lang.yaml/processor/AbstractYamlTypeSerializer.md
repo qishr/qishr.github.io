@@ -56,7 +56,7 @@ The matching structural AstNode graph.
 
 **Throws:**
 
-[SerializerException](../../cascara.common/lang/exception/SerializerException.md)
+[SerializerException](../../cascara.common/lang/diagnostic/SerializerException.md)
 
 **Specified By:**
 
@@ -81,7 +81,7 @@ The fully constructed Java object instance.
 
 **Throws:**
 
-[SerializerException](../../cascara.common/lang/exception/SerializerException.md)
+[SerializerException](../../cascara.common/lang/diagnostic/SerializerException.md)
 
 
 ---
@@ -94,7 +94,7 @@ This explicitly overrides the top-level multi-format interface contract
 
 **Throws:**
 
-[SerializerException](../../cascara.common/lang/exception/SerializerException.md)
+[SerializerException](../../cascara.common/lang/diagnostic/SerializerException.md)
 
 **Specified By:**
 

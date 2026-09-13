@@ -36,13 +36,13 @@ Package [io.github.qishr.cascara.lang.yaml.ast](index.md)
 | public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)               | [extractAnchorName](#extractanchorname)([YamlToken](../token/YamlToken.md) anchorToken)                           |                                                            |
 
 
-### Methods inherited from [YamlNodeProperty](YamlNodeProperty.md)
-
-accept
-
 ### Methods inherited from [YamlNode](YamlNode.md)
 
 isPreceededByNewLine, getOptions, setFileEndsWithNewLine, getTag, setAnchor, addComments, getStartLine, fileEndsWithNewLine, getEndColumn, setTag, addComment, setPreceededByNewLine, getResolvedTag, getToken, getAnchor, getNodeStyle, setNodeStyle, getStartColumn, getSemanticColumn, getEndLine, getComments, getProperties, setResolvedTag, setSemanticColumn
+
+### Methods inherited from [YamlNodeProperty](YamlNodeProperty.md)
+
+accept
 
 
 ## Method Details

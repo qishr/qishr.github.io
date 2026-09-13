@@ -18,18 +18,18 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                            | Method                                                | Description |
-|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|-------------|
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toText](#totext)([AstNode](../ast/AstNode.md) ast)   |             |
-| public abstract T                                                                                            | [fromAst](#fromast)([AstNode](../ast/AstNode.md) ast) |             |
+| Modifier and Type                                                                                            | Method                                                  | Description |
+|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|-------------|
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toString](#tostring)([AstNode](../ast/AstNode.md) ast) |             |
+| public abstract T                                                                                            | [fromAst](#fromast)([AstNode](../ast/AstNode.md) ast)   |             |
 
 
 
 ## Method Details
 
-### toText
+### toString
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toText__([AstNode](../ast/AstNode.md) ast)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toString__([AstNode](../ast/AstNode.md) ast)</span>
 
 
 

@@ -2,13 +2,13 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 # Class JarManifest
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [io.github.qishr.cascara.common.util.Properties](Properties.md)<br/>
+        [io.github.qishr.cascara.common.property.Properties](../property/Properties.md)<br/>
                 io.github.qishr.cascara.common.util.JarManifest<br/>
 <br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __JarManifest__<br/>extends [Properties](Properties.md)
+<span style="font-family: monospace; font-size: 80%;">public class __JarManifest__<br/>extends [Properties](../property/Properties.md)
 </span>
 
 
@@ -21,9 +21,9 @@ Package [io.github.qishr.cascara.common.util](index.md)
 | public [SemVer](../semver/SemVer.md)        | [getVersion](#getversion)()                                                                                            |                                                                                                                                  |
 
 
-### Methods inherited from [Properties](Properties.md)
+### Methods inherited from [Properties](../property/Properties.md)
 
-set, isEmpty, set, toString, add, getBoolean, getString, addAll, remove, set, getString, duplicate, remove, containsKey, getValues, getLong, getInt, set, getDouble, asList, get, getValuesMap, clear
+set, isEmpty, getValue, toString, getBoolean, getString, remove, set, getString, duplicate, set, containsKey, addAll, remove, getValues, getLong, add, getInt, set, getDouble, asList, getValuesMap, clear
 
 
 ## Method Details

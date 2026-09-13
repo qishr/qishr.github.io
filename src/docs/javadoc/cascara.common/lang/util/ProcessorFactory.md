@@ -38,8 +38,8 @@ public class __ProcessorFactory__<br/>extends [AbstractServiceProviderFactory](.
 | public [Tokenizer](../processor/Tokenizer.md)<?>       | [createTokenizer](#createtokenizer)([ContentType](../../util/ContentType.md) contentType)                                                       |             |
 | public [AstParser](../processor/AstParser.md)<?, ?, ?> | [createAstParser](#createastparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)   |             |
 | public [AstParser](../processor/AstParser.md)<?, ?, ?> | [createAstParser](#createastparser)([ContentType](../../util/ContentType.md) contentType)                                                       |             |
-| public [PullParser](../processor/PullParser.md)        | [createPullParser](#createpullparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType) |             |
-| public [PullParser](../processor/PullParser.md)        | [createPullParser](#createpullparser)([ContentType](../../util/ContentType.md) contentType)                                                     |             |
+| public [PullParser](../processor/PullParser.md)<?>     | [createPullParser](#createpullparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType) |             |
+| public [PullParser](../processor/PullParser.md)<?>     | [createPullParser](#createpullparser)([ContentType](../../util/ContentType.md) contentType)                                                     |             |
 | public [PushParser](../processor/PushParser.md)        | [createPushParser](#createpushparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType) |             |
 | public [PushParser](../processor/PushParser.md)        | [createPushParser](#createpushparser)([ContentType](../../util/ContentType.md) contentType)                                                     |             |
 | public [Serializer](../processor/Serializer.md)<?>     | [createSerializer](#createserializer)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType) |             |
@@ -125,7 +125,7 @@ createServiceProvider
 
 ### createPullParser
 
-<span style="font-family: monospace; font-size: 80%;">public [PullParser](../processor/PullParser.md) __createPullParser__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [PullParser](../processor/PullParser.md)<?> __createPullParser__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)</span>
 
 
 
@@ -138,7 +138,7 @@ createServiceProvider
 
 ### createPullParser
 
-<span style="font-family: monospace; font-size: 80%;">public [PullParser](../processor/PullParser.md) __createPullParser__([ContentType](../../util/ContentType.md) contentType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [PullParser](../processor/PullParser.md)<?> __createPullParser__([ContentType](../../util/ContentType.md) contentType)</span>
 
 
 

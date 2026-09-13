@@ -25,12 +25,12 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                   | Method                                                                        | Description |
-|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|-------------|
-| protected [JsonConverter](JsonConverter.md)                                                         | [self](#self)()                                                               |             |
-| public [ContentType](../../cascara.common/util/ContentType.md)                                      | [getContentType](#getcontenttype)()                                           |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toText](#totext)([AstNode](../../cascara.common/lang/ast/AstNode.md) ast)    |             |
-| public [JsonNode](../ast/JsonNode.md)                                                               | [fromAst](#fromast)([AstNode](../../cascara.common/lang/ast/AstNode.md) from) |             |
+| Modifier and Type                                                                                   | Method                                                                         | Description |
+|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-------------|
+| protected [JsonConverter](JsonConverter.md)                                                         | [self](#self)()                                                                |             |
+| public [ContentType](../../cascara.common/util/ContentType.md)                                      | [getContentType](#getcontenttype)()                                            |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toString](#tostring)([AstNode](../../cascara.common/lang/ast/AstNode.md) ast) |             |
+| public [JsonNode](../ast/JsonNode.md)                                                               | [fromAst](#fromast)([AstNode](../../cascara.common/lang/ast/AstNode.md) from)  |             |
 
 
 ### Methods inherited from [AbstractJsonProcessor](AbstractJsonProcessor.md)
@@ -66,9 +66,9 @@ setReporter, getOptions, getServiceProperties, getVersion, getReporter, setOptio
 
 ---
 
-### toText
+### toString
 
-<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toText__([AstNode](../../cascara.common/lang/ast/AstNode.md) ast)</span>
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toString__([AstNode](../../cascara.common/lang/ast/AstNode.md) ast)</span>
 
 
 

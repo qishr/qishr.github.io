@@ -95,6 +95,9 @@ nav:
           - Overview: cascara/language-processors/yaml/index.md
           - Performance Comparison: cascara/language-processors/yaml/performance-comparison.md
       - Cascara JSON: cascara/language-processors/json/index.md
+      - Cascara CT:
+          - Overview: cascara/language-processors/ct/index.md
+          - Gradle Plugin: cascara/language-processors/ct/gradle-plugin.md
       - Extensible Design: cascara/language-processors/extensible-design/type-descriptors.md
   - Cascara Schema: cascara/schema/index.md
   - Cascara UI:
