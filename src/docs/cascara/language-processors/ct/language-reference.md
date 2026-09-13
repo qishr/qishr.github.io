@@ -26,7 +26,7 @@ Values can be assigned to variables using the assignment operator (`=`). The val
 
 - A [literal value](#literal-values)
 - A [method call](#method-calls)
-- A member of a collection
+- A [member of a collection](#member-of-a-collection)
 - Another variable
 
 Example of assigning a value to a variable:
@@ -39,9 +39,14 @@ green = rgba(0,255,0,1);
 
 #### Literal RGBA hex colors
 
+Literal hex colors are written as a hash (`#`) followed by either:
+
+- 6 hex digits for RGB
+- 8 hex digits for RGBA
+
 Example:
 ```
-#00FF00
+#00FF00;
 ```
 
 #### Literal strings
@@ -62,7 +67,7 @@ Example:
 ```
 {
     name = "value";
-    color = #00FF00;
+    green = #00FF00;
 }
 ```
 
@@ -86,4 +91,11 @@ Example:
 
 ```
 rgba(0,255,0,1)
+```
+
+### Member of a Collection
+
+Example:
+```
+primary.green
 ```

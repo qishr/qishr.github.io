@@ -18,6 +18,16 @@ import io.github.qishr.cascara.lang.ct.util.ColorTransform.rgba;
 
 ## include
 
+The `include` keyword is similar to `#include` in C - the file being included is essentially treated as if its contents appeared inline in the the file including it.
+
+Any URI schemes supportted by Cascara may be used to specify the file being included.
+
+Example:
+
+```
+include "res://ghosty.tc";
+```
+
 ## insert
 
 ## iterate

@@ -1,11 +1,11 @@
 # CT Types
 
-- Color
-- Format
-- Palette
-- Properties
-- String
-- Template
+- [Color](#color)
+- [Format](#format)
+- [Palette](#palette)
+- [Properties](#properties)
+- [String](#string)
+- [Template](#template)
 
 ## Color
 
@@ -39,3 +39,12 @@ Format ghostty = {
     ```
     include "res://ghostty.tc";
     ```
+
+## Palette
+
+## Properties
+
+## String
+
+## Template
+
