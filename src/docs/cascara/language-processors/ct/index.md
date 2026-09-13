@@ -2,9 +2,11 @@
 
 *Pairing the science of color with the art of code*
 
-## CT Module
+The CT DSLis a domain-specific language designed for authoring, transforming, and compiling color schemes across arbitrary target formats.
 
-The CT DSLis a domain-specific language designed for authoring, transforming, and compiling color schemes across arbitrary target formats. It supports:
+For a fully working example, see cascara-retro-theme's [CT source code](https://github.com/sandydunlop/cascara-retro-theme/tree/master/src/main/ct).
+
+CT supports:
 
 * **Dynamic Color Transformations**
 
@@ -23,19 +25,6 @@ The CT DSLis a domain-specific language designed for authoring, transforming, an
   Target definition parsing to emit theme configurations for VS Code, Ghostty, iTerm2, and other application formats from a single source pipeline.
 
 
-## Gradle Commands
-
-Build and install locally:
-
-```bash
-./gradlew build nativeCompile publishToMavenLocal
-```
-
-Run CLI runner directly with -V (version):
-
-```bash
-./gradlew :ct-command:run
-```
 
 ## License
 

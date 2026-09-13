@@ -24,12 +24,10 @@ Color green = #00FF00;
 
 Values can be assigned to variables using the assignment operator (`=`). The value being assigned can be one of:
 
-- A hex color value
-- A String
-- Another variable
-- A collection
+- A [literal value](#literal-values)
+- A [method call](#method-calls)
 - A member of a collection
-- A method call
+- Another variable
 
 Example of assigning a value to a variable:
 
@@ -37,3 +35,55 @@ Example of assigning a value to a variable:
 green = rgba(0,255,0,1);
 ```
 
+### Literal Values
+
+#### Literal RGBA hex colors
+
+Example:
+```
+#00FF00
+```
+
+#### Literal strings
+
+String literals are any text enclosed in double quotes.
+A double quote character can be included in a string by escaping it with a backslash.
+
+Example:
+```
+"a string"
+```
+
+#### Literal collections
+
+Collections start with `{` and end with `}`.
+
+Example:
+```
+{
+    name = "value";
+    color = #00FF00;
+}
+```
+
+#### Literal templates
+
+Templates start with `{{{` and end with `}}}`
+
+Example:
+```
+{{{
+"name": %value%
+}}}
+```
+
+### Method Calls
+
+The return value of static methods defined in Java classes can be assigned to a variable.
+The method must be [imported](keywords.md#import) before it can be called.
+
+Example:
+
+```
+rgba(0,255,0,1)
+```
