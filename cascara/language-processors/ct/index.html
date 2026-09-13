@@ -23304,6 +23304,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#using-ct" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using CT
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using CT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gradle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gradle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-from-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Building from Source
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#license" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -23334,7 +23373,7 @@
 <h1 id="color-transformation-language">Color Transformation Language</h1>
 <p><em>Pairing the science of color with the art of code</em></p>
 <p>The CT DSLis a domain-specific language designed for authoring, transforming, and compiling color schemes across arbitrary target formats.</p>
-<p>For a fully working example, see cascara-retro-theme's <a href="https://github.com/sandydunlop/cascara-retro-theme/tree/master/src/main/ct">CT source code</a>.</p>
+<p>For a fully working example, see cascara-retro-theme's <a href="https://github.com/sandydunlop/cascara-retro-theme/tree/master/src/main/ct">source code</a>.</p>
 <p>CT supports:</p>
 <ul>
 <li><strong>Dynamic Color Transformations</strong></li>
@@ -23352,6 +23391,26 @@
 <li><strong>Format-Agnostic Outputs</strong></li>
 </ul>
 <p>Target definition parsing to emit theme configurations for VS Code, Ghostty, iTerm2, and other application formats from a single source pipeline.</p>
+<h2 id="using-ct">Using CT</h2>
+<h3 id="gradle">Gradle</h3>
+<div class="language-groovy highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">dependencies</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">implementation</span><span class="w"> </span><span class="s2">"io.github.qishr:cascara-common:1.1.13"</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">implementation</span><span class="w"> </span><span class="s2">"io.github.qishr:cascara-lang-ct:0.10.0"</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="o">}</span>
+</span></code></pre></div>
+<h3 id="building-from-source">Building from Source</h3>
+<p>The source code is on <a href="https://github.com/qishr/cascara-lang-ct">Github</a>.</p>
+<p>Once you've cloned the repository, run the following command to build CT:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>./gradlew<span class="w"> </span>build<span class="w"> </span>nativeCompile<span class="w"> </span>publishToMavenLocal
+</span></code></pre></div>
+<p>This will bukld the CT module, publish it to your local maven repository, and build the ct command. The command will be placed in <code>ct-command/build/native/nativeCompile/ct</code>.</p>
+<p>Running the command with <code>-h</code> or <code>--help</code> will cause it to display its usage information:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>./ct-command/build/native/nativeCompile/ct<span class="w"> </span>--help
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Usage:<span class="w"> </span>ct<span class="w"> </span><span class="o">[</span>-hV<span class="o">]</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Executes<span class="w"> </span>a<span class="w"> </span>CT<span class="w"> </span>script,<span class="w"> </span>sending<span class="w"> </span>output<span class="w"> </span>to<span class="w"> </span>STDOUT<span class="w"> </span>or<span class="w"> </span>a<span class="w"> </span>specified<span class="w"> </span>file.
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>-h,<span class="w"> </span>--help<span class="w">      </span>Show<span class="w"> </span>this<span class="w"> </span><span class="nb">help</span><span class="w"> </span>message<span class="w"> </span>and<span class="w"> </span>exit.
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span>-V,<span class="w"> </span>--version<span class="w">   </span>Print<span class="w"> </span>version<span class="w"> </span>information<span class="w"> </span>and<span class="w"> </span>exit.
+</span></code></pre></div>
 <h2 id="license">License</h2>
 <p><a href="https://github.com/qishr/cascara-lang-ct/blob/main/LICENSE">MIT</a></p>
 
