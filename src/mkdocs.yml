@@ -88,6 +88,17 @@ plugins:
 
 nav:
   - Home: index.md
+  - Overview:
+      - Overview: cascara/overview/index.md
+      - File Formats:
+          - Overview: cascara/file-formats/index.md
+          - CT: cascara/language-processors/ct/index.md
+          - JSON: cascara/language-processors/json/index.md
+          - VSIX:
+              - Overview: cascara/file-formats/vsix/index.md
+              - Gradle Plugin: cascara/file-formats/vsix/gradle-plugin.md
+          - YAML: cascara/language-processors/yaml/index.md
+      - Diagnostics: cascara/diagnostics/index.md
   - Getting Started: cascara/getting-started/index.md
   - Language Processors Collection:
       - Overview: cascara/language-processors/index.md
@@ -109,7 +120,6 @@ nav:
       - Theme Engine: cascara/ui/theme-engine/index.md
       - Localizable Menus: cascara/ui/localizable-menus/index.md
       - Schema-Driven Controls: cascara/ui/schema-driven-controls/index.md
-  - Diagnostics: cascara/diagnostics/index.md
   - Javadoc: javadoc/
 
 watch:

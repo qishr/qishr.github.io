@@ -6,11 +6,11 @@ The CT Gradle plugin (`io.github.qishr.cascara-gradle-plugins.ct`) provides firs
 
 This example is based on the code in [cascara-retro-theme](https://github.com/sandydunlop/cascara-retro-theme/blob/master/build.gradle).
 
-### build.gradle
+### Build File
 
 The relevant parts of cascara-retro-theme's `build.gradle` are:
 
-**Thesee lines from the `plugins` block:**
+**These lines from the `plugins` block:**
 
 ```groovy
 plugins {
