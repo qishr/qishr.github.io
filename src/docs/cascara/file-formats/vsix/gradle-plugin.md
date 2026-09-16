@@ -34,7 +34,7 @@ The relevant parts of cascara-retro-theme's `build.gradle` are:
 ```groovy
 plugins {
     id 'base'
-    id 'io.github.qishr.cascara-gradle-plugins.vsix' version '0.1.0'
+    id 'io.github.qishr.cascara-gradle-plugins.vsix' version '0.2.2'
 }
 ```
 
