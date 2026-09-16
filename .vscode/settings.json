@@ -1,11 +1,11 @@
 {
     "workbench.colorTheme": "Cascara Retro Amber on Bright Beige",
     "workbench.colorCustomizations": {
-        // #6d89cc
-        "titleBar.activeBackground": "#41606b",
-        "titleBar.inactiveBackground": "#41606b",
-        "statusBar.background": "#41606b",
-        "statusBar.debuggingBackground": "#41606b",
-        "statusBar.noFolderBackground": "#41606b",
+        // #6d89cc, #41606b, #30454d, #24353bs, #2c3639
+        "titleBar.activeBackground": "#2c3639",
+        "titleBar.inactiveBackground": "#2c3639",
+        "statusBar.background": "#2c3639",
+        "statusBar.debuggingBackground": "#2c3639",
+        "statusBar.noFolderBackground": "#2c3639",
     }
 }
