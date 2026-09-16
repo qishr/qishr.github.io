@@ -25,6 +25,8 @@ CT supports:
 
   Target definition parsing to emit theme configurations for VS Code, Ghostty, iTerm2, and other application formats from a single source pipeline.
 
+![](https://sandydunlop.github.io/assets/images/ct-example-apps.png)
+
 ## Using CT
 
 ### Gradle

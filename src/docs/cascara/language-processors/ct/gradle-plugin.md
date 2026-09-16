@@ -2,6 +2,8 @@
 
 The CT Gradle plugin (`io.github.qishr.cascara-gradle-plugins.ct`) provides first-class support for compiling `.ct` files as part of standard Gradle build routines.
 
+The plugin is available on the [Gradle Plugins Portal](https://plugins.gradle.org/plugin/io.github.qishr.cascara-gradle-plugins.vsix).
+
 ## Configuration Example
 
 This example is based on the code in [cascara-retro-theme](https://github.com/sandydunlop/cascara-retro-theme/blob/master/build.gradle).
