@@ -40,9 +40,14 @@
 
 === "Opens"
 
-    | Package                                              | Description |
-    |------------------------------------------------------|-------------|
-    | [io.github.qishr.cascara.common.util](util/index.md) |             |
+    | Package                                                          | Description                                  |
+    |------------------------------------------------------------------|----------------------------------------------|
+    | [io.github.qishr.cascara.common.data](data/index.md)             |                                              |
+    | [io.github.qishr.cascara.common.diagnostic](diagnostic/index.md) |                                              |
+    | [io.github.qishr.cascara.common.lang.plain](lang/plain/index.md) | A intermediate implementation of the AST API |
+    | [io.github.qishr.cascara.common.property](property/index.md)     |                                              |
+    | [io.github.qishr.cascara.common.trackable](trackable/index.md)   |                                              |
+    | [io.github.qishr.cascara.common.util](util/index.md)             |                                              |
 
 
 === "Uses"

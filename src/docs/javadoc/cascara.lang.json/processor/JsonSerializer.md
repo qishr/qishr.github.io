@@ -48,7 +48,7 @@ Standard implementation for JSON serialization.
 
 ### Methods inherited from [AbstractSerializer](../../cascara.common/lang/processor/AbstractSerializer.md)
 
-serializeObject, warn, trace, getAllMethods, error, serialize, serializeMap, getTypeDescriptor, debug, serializeList, warnInaccessible, deserialize, getAllFields, getServiceProperties, report, deserialize, registerTypeDescriptor, warnInaccessible
+serializeObject, warn, trace, getAllMethods, error, serialize, serializeMap, getTypeDescriptor, getTypeDescriptor, debug, getAllSerializableFields, deserialize, serializeList, warnInaccessible, deserialize, getServiceProperties, report, registerTypeDescriptor, warnInaccessible
 
 
 ## Method Details

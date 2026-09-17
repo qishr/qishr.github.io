@@ -29,13 +29,13 @@ public class __TrackableBooleanProperty__<br/>extends [TrackableProperty](Tracka
 | public void       | [setValue](#setvalue)([Boolean](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Boolean.html) v) |             |
 
 
-### Methods inherited from [Property](../../property/Property.md)
-
-asBoolean, asString, getName, getValues, asDouble, setPrimitiveType, asLong, asInteger, asDouble, asBoolean, asInteger, isEmpty, getValue, getValue, asLong, getPrimitiveType, getValuesMap
-
 ### Methods inherited from [TrackableProperty](TrackableProperty.md)
 
 getOwner, setOwner, setDeclaredProperty, addTracker, [setValue](#setvalue), isDeclaredProperty, invalidate, removeTracker, setMediaType, setName, getMediaType
+
+### Methods inherited from [Property](../../property/Property.md)
+
+asLong, asBoolean, asString, getName, getValues, asDouble, setPrimitiveType, asInteger, asDouble, asBoolean, asInteger, isEmpty, getValue, getValue, getString, asLong, getPrimitiveType, getValuesMap
 
 
 ## Method Details

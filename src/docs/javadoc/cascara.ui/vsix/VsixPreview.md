@@ -24,7 +24,7 @@ Package [io.github.qishr.cascara.ui.vsix](index.md)
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getIconUri](#geticonuri)()                                                                                                    |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getDisplayName](#getdisplayname)()                                                                                            |             |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getCategories](#getcategories)()                                                                                              |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<VsixThemeInfo>                                                                                | [getThemes](#getthemes)()                                                                                                      |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<ThemeContribution>                                                                            | [getThemes](#getthemes)()                                                                                                      |             |
 
 
 
@@ -122,7 +122,7 @@ Package [io.github.qishr.cascara.ui.vsix](index.md)
 
 ### getThemes
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<VsixThemeInfo> __getThemes__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<ThemeContribution> __getThemes__()</span>
 
 
 

@@ -31,7 +31,7 @@ Package [io.github.qishr.cascara.common.property](index.md)
 
 ### Methods inherited from [Property](Property.md)
 
-asInteger, isEmpty, getValue, getValue, asBoolean, [setValue](#setvalue), asString, asLong, getPrimitiveType, getName, getValues, asDouble, setPrimitiveType, asLong, setName, asInteger, asDouble, asBoolean, getValuesMap
+asInteger, asLong, isEmpty, getValue, getValue, asBoolean, [setValue](#setvalue), getString, asString, asLong, getPrimitiveType, getName, getValues, asDouble, setPrimitiveType, setName, asInteger, asDouble, asBoolean, getValuesMap
 
 
 ## Method Details

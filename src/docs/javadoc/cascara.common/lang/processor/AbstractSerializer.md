@@ -45,9 +45,10 @@ Direct Known Subtypes:<br/>
 | protected L                                                                                                                                                                                              | [serializeList](#serializelist)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<?> list)                                                                                                                                                                                                                               | Serializes a List into a YamlSequence.                                                       |
 | protected M                                                                                                                                                                                              | [serializeMap](#serializemap)([Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<?, ?> map)                                                                                                                                                                                                                                 |                                                                                              |
 | protected C                                                                                                                                                                                              | [deserialize](#deserialize)([AstNode](../ast/AstNode.md) node, [TypeReference](../type/TypeReference.md)<C> typeRef)                                                                                                                                                                                                                                            | Converts an AST structure back into a Java object of the generic type referenced by typeRef. |
-| protected C                                                                                                                                                                                              | [deserialize](#deserialize)([AstNode](../ast/AstNode.md) node, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)                                                                                                                                                                                           | Converts an AST structure back into a Java object of the specified type.                     |
-| protected [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html)>   | [getAllFields](#getallfields)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)                                                                                                                                                                                                                            | Retrieves all declared fields for a class and all its superclasses (excluding Object).       |
+| protected C                                                                                                                                                                                              | [deserialize](#deserialize)([AstNode](../ast/AstNode.md) node, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) jvmType)                                                                                                                                                                                        | Converts an AST structure back into a Java object of the specified type.                     |
+| protected [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html)>   | [getAllSerializableFields](#getallserializablefields)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)                                                                                                                                                                                                    | Retrieves all declared fields for a class and all its superclasses (excluding Object).       |
 | protected [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Method](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Method.html)> | [getAllMethods](#getallmethods)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)                                                                                                                                                                                                                          |                                                                                              |
+| protected [TypeDescriptor](../type/TypeDescriptor.md)<?>                                                                                                                                                 | [getTypeDescriptor](#gettypedescriptor)([Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) jvmType)                                                                                                                                                                                                               |                                                                                              |
 | protected [TypeDescriptor](../type/TypeDescriptor.md)<?>                                                                                                                                                 | [getTypeDescriptor](#gettypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)                                                                                                                                                                                                                  |                                                                                              |
 | protected void                                                                                                                                                                                           | [setupSerializer](#setupserializer)()                                                                                                                                                                                                                                                                                                                           |                                                                                              |
 | public T                                                                                                                                                                                                 | [setOptions](#setoptions)([LanguageOptions](../util/LanguageOptions.md)<?> options)                                                                                                                                                                                                                                                                             |                                                                                              |
@@ -164,7 +165,7 @@ Converts an AST structure back into a Java object of the generic type referenced
 
 ### deserialize
 
-<span style="font-family: monospace; font-size: 80%;">protected C __deserialize__([AstNode](../ast/AstNode.md) node, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)</span>
+<span style="font-family: monospace; font-size: 80%;">protected C __deserialize__([AstNode](../ast/AstNode.md) node, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) jvmType)</span>
 
 Converts an AST structure back into a Java object of the specified type.
 
@@ -175,9 +176,9 @@ Converts an AST structure back into a Java object of the specified type.
 
 ---
 
-### getAllFields
+### getAllSerializableFields
 
-<span style="font-family: monospace; font-size: 80%;">protected [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html)> __getAllFields__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
+<span style="font-family: monospace; font-size: 80%;">protected [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html)> __getAllSerializableFields__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
 
 Retrieves all declared fields for a class and all its superclasses (excluding Object).
 
@@ -195,7 +196,18 @@ Retrieves all declared fields for a class and all its superclasses (excluding Ob
 
 ### getTypeDescriptor
 
-<span style="font-family: monospace; font-size: 80%;">protected [TypeDescriptor](../type/TypeDescriptor.md)<?> __getTypeDescriptor__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+protected [TypeDescriptor](../type/TypeDescriptor.md)<?> __getTypeDescriptor__([Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) jvmType)</span>
+
+
+
+
+---
+
+### getTypeDescriptor
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+protected [TypeDescriptor](../type/TypeDescriptor.md)<?> __getTypeDescriptor__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
 
 
 

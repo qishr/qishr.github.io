@@ -1,17 +1,15 @@
 Package [io.github.qishr.cascara.common.diagnostic](index.md)
 
-# Class ReportWriter
+# Class NoOpReportWriter
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
         [java.io.Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html)<br/>
-                io.github.qishr.cascara.common.diagnostic.ReportWriter<br/>
+                [io.github.qishr.cascara.common.diagnostic.ReportWriter](ReportWriter.md)<br/>
+                        io.github.qishr.cascara.common.diagnostic.NoOpReportWriter<br/>
 <br/>
-Direct Known Subtypes:<br/>
-    [NoOpReportWriter](NoOpReportWriter.md)
-
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __ReportWriter__<br/>extends [Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html)
+<span style="font-family: monospace; font-size: 80%;">public class __NoOpReportWriter__<br/>extends [ReportWriter](ReportWriter.md)
 </span>
 
 
@@ -45,7 +43,7 @@ Direct Known Subtypes:<br/>
 
 **Overrides:**
 
-[Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html#write)
+[ReportWriter](../cascara.common/diagnostic/ReportWriter.md#write)
 
 
 ---
@@ -58,7 +56,7 @@ Direct Known Subtypes:<br/>
 
 **Overrides:**
 
-[Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html#flush)
+[ReportWriter](../cascara.common/diagnostic/ReportWriter.md#flush)
 
 
 ---
@@ -71,7 +69,7 @@ Direct Known Subtypes:<br/>
 
 **Overrides:**
 
-[Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html#close)
+[ReportWriter](../cascara.common/diagnostic/ReportWriter.md#close)
 
 
 ---

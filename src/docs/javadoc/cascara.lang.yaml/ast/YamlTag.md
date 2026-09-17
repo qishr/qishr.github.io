@@ -39,13 +39,13 @@ Package [io.github.qishr.cascara.lang.yaml.ast](index.md)
 | public int                                                                                          | [hashCode](#hashcode)()                                                                                                                      | Generates a hash code based on the node's logical content. |
 
 
-### Methods inherited from [YamlNode](YamlNode.md)
-
-isPreceededByNewLine, getOptions, setFileEndsWithNewLine, getTag, setAnchor, addComments, getStartLine, fileEndsWithNewLine, getEndColumn, setTag, addComment, setPreceededByNewLine, getResolvedTag, getToken, getAnchor, getNodeStyle, setNodeStyle, getStartColumn, getSemanticColumn, getEndLine, getComments, getProperties, setResolvedTag, setSemanticColumn
-
 ### Methods inherited from [YamlNodeProperty](YamlNodeProperty.md)
 
 getChildren, accept
+
+### Methods inherited from [YamlNode](YamlNode.md)
+
+isPreceededByNewLine, getOptions, setFileEndsWithNewLine, getTag, setAnchor, addComments, getStartLine, fileEndsWithNewLine, getEndColumn, setTag, addComment, setPreceededByNewLine, getResolvedTag, getToken, getAnchor, getNodeStyle, setNodeStyle, getStartColumn, getSemanticColumn, getEndLine, getComments, getProperties, setResolvedTag, setSemanticColumn
 
 
 ## Method Details

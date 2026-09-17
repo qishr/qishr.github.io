@@ -35,7 +35,7 @@ getOwner, setOwner, setDeclaredProperty, addTracker, [setValue](#setvalue), isDe
 
 ### Methods inherited from [Property](../../property/Property.md)
 
-asBoolean, asString, getName, getValues, asDouble, setPrimitiveType, asLong, asInteger, asDouble, asBoolean, asInteger, isEmpty, getValue, getValue, asLong, getPrimitiveType, getValuesMap
+asLong, asBoolean, asString, getName, getValues, asDouble, setPrimitiveType, asInteger, asDouble, asBoolean, asInteger, isEmpty, getValue, getValue, getString, asLong, getPrimitiveType, getValuesMap
 
 
 ## Method Details

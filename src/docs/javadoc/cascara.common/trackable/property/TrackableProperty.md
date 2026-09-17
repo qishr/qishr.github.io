@@ -50,7 +50,7 @@ public class __TrackableProperty__<br/>extends [Property](../../property/Propert
 
 ### Methods inherited from [Property](../../property/Property.md)
 
-asInteger, isEmpty, getValue, getValue, asBoolean, asString, asLong, getPrimitiveType, getName, getValues, asDouble, setPrimitiveType, asLong, asInteger, asDouble, asBoolean, getValuesMap
+asInteger, asLong, isEmpty, getValue, getValue, asBoolean, getString, asString, asLong, getPrimitiveType, getName, getValues, asDouble, setPrimitiveType, asInteger, asDouble, asBoolean, getValuesMap
 
 
 ## Method Details

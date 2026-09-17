@@ -53,7 +53,7 @@ Standard implementation for YAML serialization.
 
 ### Methods inherited from [AbstractSerializer](../../cascara.common/lang/processor/AbstractSerializer.md)
 
-serializeObject, [warn](#warn), trace, getAllMethods, [error](#error), serialize, serializeMap, getTypeDescriptor, debug, serializeList, warnInaccessible, deserialize, getAllFields, getServiceProperties, deserialize, registerTypeDescriptor, warnInaccessible
+serializeObject, [warn](#warn), trace, getAllMethods, [error](#error), serialize, serializeMap, getTypeDescriptor, getTypeDescriptor, debug, getAllSerializableFields, deserialize, serializeList, warnInaccessible, deserialize, getServiceProperties, registerTypeDescriptor, warnInaccessible
 
 
 ## Method Details
