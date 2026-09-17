@@ -2773,6 +2773,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3086,6 +3092,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../diagnostic/NoOpReportWriter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NoOpReportWriter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../diagnostic/NoOpReporter/" class="md-nav__link">
         
   
@@ -3206,6 +3240,62 @@
     
   
     StandardReporter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagnostic/UnexpectedNullParameterException/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UnexpectedNullParameterException
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagnostic/UnexpectedNullReturnException/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UnexpectedNullReturnException
   
 
     
@@ -6434,10 +6524,32 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getproperty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getProperty
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getvalue" class="md-nav__link">
     <span class="md-ellipsis">
       
         getValue
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get
       
     </span>
   </a>
@@ -6493,6 +6605,28 @@
     <span class="md-ellipsis">
       
         getDouble
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getNumber
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getinteger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getInteger
       
     </span>
   </a>
@@ -24067,10 +24201,32 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getproperty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getProperty
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#getvalue" class="md-nav__link">
     <span class="md-ellipsis">
       
         getValue
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get
       
     </span>
   </a>
@@ -24126,6 +24282,28 @@
     <span class="md-ellipsis">
       
         getDouble
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getnumber" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getNumber
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getinteger" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getInteger
       
     </span>
   </a>
@@ -24360,8 +24538,18 @@ All Implemented Interfaces:<br/>
 <td></td>
 </tr>
 <tr>
-<td>public <a href="../Property/">Property</a>&lt;?&gt;</td>
+<td>public <a href="../Property/">Property</a><T></td>
+<td><a href="#getproperty">getProperty</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
+<td></td>
+</tr>
+<tr>
+<td>public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a></td>
 <td><a href="#getvalue">getValue</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
+<td></td>
+</tr>
+<tr>
+<td>public T</td>
+<td><a href="#get">get</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</td>
 <td></td>
 </tr>
 <tr>
@@ -24381,13 +24569,23 @@ All Implemented Interfaces:<br/>
 </tr>
 <tr>
 <td>public long</td>
-<td><a href="#getlong">getLong</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name, int defaultValue)</td>
+<td><a href="#getlong">getLong</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name, long defaultValue)</td>
 <td></td>
 </tr>
 <tr>
 <td>public double</td>
 <td><a href="#getdouble">getDouble</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name, double defaultValue)</td>
 <td></td>
+</tr>
+<tr>
+<td>public double</td>
+<td><a href="#getnumber">getNumber</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name, double defaultValue)</td>
+<td>For consistency with JSONSchema</td>
+</tr>
+<tr>
+<td>public long</td>
+<td><a href="#getinteger">getInteger</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name, long defaultValue)</td>
+<td>For consistency with JSONSchema</td>
 </tr>
 <tr>
 <td>public boolean</td>
@@ -24473,13 +24671,24 @@ All Implemented Interfaces:<br/>
 <h3 id="aslist">asList</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public java.util.List&lt;io.github.qishr.cascara.common.property.Property&lt;?&gt; <strong>asList</strong>()</span></p>
 <hr />
+<h3 id="getproperty">getProperty</h3>
+<p><span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+public <a href="../Property/">Property</a><T> <strong>getProperty</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</span></p>
+<hr />
 <h3 id="getvalue">getValue</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="../Property/">Property</a>&lt;?&gt; <strong>getValue</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a> <strong>getValue</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</span></p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../../data/TabularData/">TabularData</a></p>
 <hr />
+<h3 id="get">get</h3>
+<p><span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+public T <strong>get</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</span></p>
+<hr />
 <h3 id="getstring">getString</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getString</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getString</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name)</span></p>
+<p><strong>Specified By:</strong></p>
+<p><a href="../../data/TabularData/">TabularData</a></p>
 <hr />
 <h3 id="getstring_1">getString</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getString</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> defaultValue)</span></p>
@@ -24488,10 +24697,18 @@ All Implemented Interfaces:<br/>
 <p><span style="font-family: monospace; font-size: 80%;">public int <strong>getInt</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name, int defaultValue)</span></p>
 <hr />
 <h3 id="getlong">getLong</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public long <strong>getLong</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name, int defaultValue)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public long <strong>getLong</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name, long defaultValue)</span></p>
 <hr />
 <h3 id="getdouble">getDouble</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public double <strong>getDouble</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name, double defaultValue)</span></p>
+<hr />
+<h3 id="getnumber">getNumber</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public double <strong>getNumber</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name, double defaultValue)</span></p>
+<p>For consistency with JSONSchema</p>
+<hr />
+<h3 id="getinteger">getInteger</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public long <strong>getInteger</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name, long defaultValue)</span></p>
+<p>For consistency with JSONSchema</p>
 <hr />
 <h3 id="getboolean">getBoolean</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public boolean <strong>getBoolean</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> name, boolean defaultValue)</span></p>

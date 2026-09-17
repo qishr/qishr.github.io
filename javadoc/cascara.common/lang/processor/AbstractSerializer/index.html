@@ -2773,6 +2773,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3086,6 +3092,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../diagnostic/NoOpReportWriter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NoOpReportWriter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../diagnostic/NoOpReporter/" class="md-nav__link">
         
   
@@ -3206,6 +3240,62 @@
     
   
     StandardReporter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../diagnostic/UnexpectedNullParameterException/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UnexpectedNullParameterException
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../diagnostic/UnexpectedNullReturnException/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UnexpectedNullReturnException
   
 
     
@@ -4809,10 +4899,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getallfields" class="md-nav__link">
+  <a href="#getallserializablefields" class="md-nav__link">
     <span class="md-ellipsis">
       
-        getAllFields
+        getAllSerializableFields
       
     </span>
   </a>
@@ -4832,6 +4922,17 @@
         
           <li class="md-nav__item">
   <a href="#gettypedescriptor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTypeDescriptor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettypedescriptor_1" class="md-nav__link">
     <span class="md-ellipsis">
       
         getTypeDescriptor
@@ -24233,10 +24334,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getallfields" class="md-nav__link">
+  <a href="#getallserializablefields" class="md-nav__link">
     <span class="md-ellipsis">
       
-        getAllFields
+        getAllSerializableFields
       
     </span>
   </a>
@@ -24256,6 +24357,17 @@
         
           <li class="md-nav__item">
   <a href="#gettypedescriptor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTypeDescriptor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettypedescriptor_1" class="md-nav__link">
     <span class="md-ellipsis">
       
         getTypeDescriptor
@@ -24508,17 +24620,22 @@ All Implemented Interfaces:<br/>
 </tr>
 <tr>
 <td>protected C</td>
-<td><a href="#deserialize">deserialize</a>(<a href="../../ast/AstNode/">AstNode</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a><C> jvmType)</td>
+<td><a href="#deserialize">deserialize</a>(<a href="../../ast/AstNode/">AstNode</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html">Type</a> jvmType)</td>
 <td>Converts an AST structure back into a Java object of the specified type.</td>
 </tr>
 <tr>
 <td>protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html">Field</a>&gt;</td>
-<td><a href="#getallfields">getAllFields</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a>&lt;?&gt; jvmType)</td>
+<td><a href="#getallserializablefields">getAllSerializableFields</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a>&lt;?&gt; jvmType)</td>
 <td>Retrieves all declared fields for a class and all its superclasses (excluding Object).</td>
 </tr>
 <tr>
 <td>protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Method.html">Method</a>&gt;</td>
 <td><a href="#getallmethods">getAllMethods</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a>&lt;?&gt; jvmType)</td>
+<td></td>
+</tr>
+<tr>
+<td>protected <a href="../../type/TypeDescriptor/">TypeDescriptor</a>&lt;?&gt;</td>
+<td><a href="#gettypedescriptor">getTypeDescriptor</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html">Type</a> jvmType)</td>
 <td></td>
 </tr>
 <tr>
@@ -24621,20 +24738,25 @@ All Implemented Interfaces:<br/>
 <p><a href="../../diagnostic/SerializerException/">SerializerException</a></p>
 <hr />
 <h3 id="deserialize_1">deserialize</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected C <strong>deserialize</strong>(<a href="../../ast/AstNode/">AstNode</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a><C> jvmType)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">protected C <strong>deserialize</strong>(<a href="../../ast/AstNode/">AstNode</a> node, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html">Type</a> jvmType)</span></p>
 <p>Converts an AST structure back into a Java object of the specified type.</p>
 <p><strong>Throws:</strong></p>
 <p><a href="../../diagnostic/SerializerException/">SerializerException</a></p>
 <hr />
-<h3 id="getallfields">getAllFields</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html">Field</a>&gt; <strong>getAllFields</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a>&lt;?&gt; jvmType)</span></p>
+<h3 id="getallserializablefields">getAllSerializableFields</h3>
+<p><span style="font-family: monospace; font-size: 80%;">protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html">Field</a>&gt; <strong>getAllSerializableFields</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a>&lt;?&gt; jvmType)</span></p>
 <p>Retrieves all declared fields for a class and all its superclasses (excluding Object).</p>
 <hr />
 <h3 id="getallmethods">getAllMethods</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html">List</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Method.html">Method</a>&gt; <strong>getAllMethods</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a>&lt;?&gt; jvmType)</span></p>
 <hr />
 <h3 id="gettypedescriptor">getTypeDescriptor</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected <a href="../../type/TypeDescriptor/">TypeDescriptor</a>&lt;?&gt; <strong>getTypeDescriptor</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a>&lt;?&gt; jvmType)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+protected <a href="../../type/TypeDescriptor/">TypeDescriptor</a>&lt;?&gt; <strong>getTypeDescriptor</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html">Type</a> jvmType)</span></p>
+<hr />
+<h3 id="gettypedescriptor_1">getTypeDescriptor</h3>
+<p><span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+protected <a href="../../type/TypeDescriptor/">TypeDescriptor</a>&lt;?&gt; <strong>getTypeDescriptor</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a>&lt;?&gt; jvmType)</span></p>
 <hr />
 <h3 id="setupserializer">setupSerializer</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected void <strong>setupSerializer</strong>()</span></p>

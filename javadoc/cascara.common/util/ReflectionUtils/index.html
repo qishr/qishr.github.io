@@ -2773,6 +2773,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3086,6 +3092,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../diagnostic/NoOpReportWriter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NoOpReportWriter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../diagnostic/NoOpReporter/" class="md-nav__link">
         
   
@@ -3206,6 +3240,62 @@
     
   
     StandardReporter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagnostic/UnexpectedNullParameterException/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UnexpectedNullParameterException
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../diagnostic/UnexpectedNullReturnException/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UnexpectedNullReturnException
   
 
     
@@ -8188,10 +8278,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#getgenerictypeoflistfield" class="md-nav__link">
+  <a href="#isinstance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        getGenericTypeOfListField
+        isInstance
       
     </span>
   </a>
@@ -8199,10 +8289,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getgenerictypeofmapkey" class="md-nav__link">
+  <a href="#canassign" class="md-nav__link">
     <span class="md-ellipsis">
       
-        getGenericTypeOfMapKey
+        canAssign
       
     </span>
   </a>
@@ -8210,10 +8300,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getgenerictypeofmapvalue" class="md-nav__link">
+  <a href="#getrawclass" class="md-nav__link">
     <span class="md-ellipsis">
       
-        getGenericTypeOfMapValue
+        getRawClass
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettypename" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTypeName
       
     </span>
   </a>
@@ -23858,10 +23959,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#getgenerictypeoflistfield" class="md-nav__link">
+  <a href="#isinstance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        getGenericTypeOfListField
+        isInstance
       
     </span>
   </a>
@@ -23869,10 +23970,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getgenerictypeofmapkey" class="md-nav__link">
+  <a href="#canassign" class="md-nav__link">
     <span class="md-ellipsis">
       
-        getGenericTypeOfMapKey
+        canAssign
       
     </span>
   </a>
@@ -23880,10 +23981,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getgenerictypeofmapvalue" class="md-nav__link">
+  <a href="#getrawclass" class="md-nav__link">
     <span class="md-ellipsis">
       
-        getGenericTypeOfMapValue
+        getRawClass
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettypename" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getTypeName
       
     </span>
   </a>
@@ -23989,18 +24101,23 @@
 </thead>
 <tbody>
 <tr>
-<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a>&lt;?&gt;</td>
-<td><a href="#getgenerictypeoflistfield">getGenericTypeOfListField</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html">Field</a> field)</td>
+<td>public static boolean</td>
+<td><a href="#isinstance">isInstance</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a> thisInstance, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html">Type</a> thatType)</td>
 <td></td>
 </tr>
 <tr>
-<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a>&lt;?&gt;</td>
-<td><a href="#getgenerictypeofmapkey">getGenericTypeOfMapKey</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html">Field</a> field)</td>
+<td>public static boolean</td>
+<td><a href="#canassign">canAssign</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html">Type</a> fromThis, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a>&lt;?&gt; toThat)</td>
 <td></td>
 </tr>
 <tr>
-<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a>&lt;?&gt;</td>
-<td><a href="#getgenerictypeofmapvalue">getGenericTypeOfMapValue</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html">Field</a> field)</td>
+<td>public static C</td>
+<td><a href="#getrawclass">getRawClass</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html">Type</a> jvmType)</td>
+<td></td>
+</tr>
+<tr>
+<td>public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></td>
+<td><a href="#gettypename">getTypeName</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html">Type</a> jvmType)</td>
 <td></td>
 </tr>
 <tr>
@@ -24026,15 +24143,17 @@
 </tbody>
 </table>
 <h2 id="method-details">Method Details</h2>
-<h3 id="getgenerictypeoflistfield">getGenericTypeOfListField</h3>
-<p><span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a>&lt;?&gt; <strong>getGenericTypeOfListField</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html">Field</a> field)</span></p>
+<h3 id="isinstance">isInstance</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public static boolean <strong>isInstance</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a> thisInstance, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html">Type</a> thatType)</span></p>
 <hr />
-<h3 id="getgenerictypeofmapkey">getGenericTypeOfMapKey</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a>&lt;?&gt; <strong>getGenericTypeOfMapKey</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html">Field</a> field)</span></p>
+<h3 id="canassign">canAssign</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public static boolean <strong>canAssign</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html">Type</a> fromThis, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a>&lt;?&gt; toThat)</span></p>
 <hr />
-<h3 id="getgenerictypeofmapvalue">getGenericTypeOfMapValue</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html">Class</a>&lt;?&gt; <strong>getGenericTypeOfMapValue</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html">Field</a> field)</span></p>
+<h3 id="getrawclass">getRawClass</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public static C <strong>getRawClass</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html">Type</a> jvmType)</span></p>
+<hr />
+<h3 id="gettypename">getTypeName</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public static <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> <strong>getTypeName</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html">Type</a> jvmType)</span></p>
 <hr />
 <h3 id="gettestname">getTestName</h3>
 <p><span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
