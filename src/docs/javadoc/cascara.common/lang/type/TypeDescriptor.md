@@ -21,7 +21,7 @@ All Known Implementing Classes:<br/>
 | Modifier and Type                                                                                             | Method                                                                                                                                                                       | Description                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | public abstract [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> | [getJvmType](#getjvmtype)()                                                                                                                                                  | Returns the JVM type handled by this TypeDescriptor.                                                                       |
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)  | [getSchemaType](#getschematype)()                                                                                                                                            | Returns the JSON Schema type handled by this TypeDescriptor.                                                               |
+| public abstract [PrimitiveType](PrimitiveType.md)                                                             | [getSchemaType](#getschematype)()                                                                                                                                            | Returns the JSON Schema primitive type handled by this TypeDescriptor.                                                     |
 | public abstract void                                                                                          | [populateSchema](#populateschema)([MapAstNode](../ast/MapAstNode.md)<?, ?, ?> schema)                                                                                        | Adds JSON Schema keywords and values to a map representing a JSON schema for the JSON type handled by this TypeDescriptor. |
 | public abstract boolean                                                                                       | [validate](#validate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector) |                                                                                                                            |
 
@@ -40,9 +40,9 @@ Returns the JVM type handled by this TypeDescriptor.
 
 ### getSchemaType
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getSchemaType__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [PrimitiveType](PrimitiveType.md) __getSchemaType__()</span>
 
-Returns the JSON Schema type handled by this TypeDescriptor.
+Returns the JSON Schema primitive type handled by this TypeDescriptor.
 
 
 ---

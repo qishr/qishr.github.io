@@ -1,8 +1,8 @@
-Package [io.github.qishr.cascara.common.io.filewatcher](index.md)
+Package [io.github.qishr.cascara.common.filewatcher](index.md)
 
 # Interface FileChangeHandler
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        io.github.qishr.cascara.common.io.filewatcher.FileChangeHandler<br/>
+        io.github.qishr.cascara.common.filewatcher.FileChangeHandler<br/>
 <br/>
 All Known Implementing Classes:<br/>
     [FilteredFileHandler](FilteredFileHandler.md)

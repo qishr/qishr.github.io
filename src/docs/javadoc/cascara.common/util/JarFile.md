@@ -16,27 +16,28 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 | Modifier and Type                                                                                                                                                                           | Method                                                                                                              | Description |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|-------------|
-| public static [JarFile](JarFile.md)                                                                                                                                                         | [load](#load)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) jarPath) |             |
+| public static [JarFile](JarFile.md)                                                                                                                                                         | [open](#open)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) jarPath) |             |
 | public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)                                                                                         | [getPath](#getpath)()                                                                                               |             |
-| public [Properties](../property/Properties.md)                                                                                                                                              | [getManifestProperties](#getmanifestproperties)()                                                                   |             |
+| public [JarManifest](JarManifest.md)                                                                                                                                                        | [getManifest](#getmanifest)()                                                                                       |             |
 | public [Properties](../property/Properties.md)                                                                                                                                              | [getMavenProperties](#getmavenproperties)()                                                                         |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                         | [getModuleName](#getmodulename)()                                                                                   |             |
 | public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getPackages](#getpackages)()                                                                                       |             |
 | public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getClassNames](#getclassnames)()                                                                                   |             |
+| public java.lang.@io.github.qishr.cascara.common.annotation.Experimental String                                                                                                             | [guessoduleName](#guessodulename)()                                                                                 |             |
 | public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                  | [getClassName](#getclassname)([EntryInfo](ArchiveFile.EntryInfo.md) fileInfo)                                       |             |
 | public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                  | [getPackageName](#getpackagename)([EntryInfo](ArchiveFile.EntryInfo.md) fileInfo)                                   |             |
 
 
 ### Methods inherited from [ArchiveFile](ArchiveFile.md)
 
-create, open, getInputStream, addFile, addFile, listFiles, addDirectory, listFiles, walk, extractFile, addDirectory, listFiles, extractFile, close
+create, getInputStream, addFile, addFile, listFiles, addDirectory, listFiles, walk, extractFile, addDirectory, listFiles, extractFile, close
 
 
 ## Method Details
 
-### load
+### open
 
-<span style="font-family: monospace; font-size: 80%;">public static [JarFile](JarFile.md) __load__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) jarPath)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [JarFile](JarFile.md) __open__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) jarPath)</span>
 
 
 
@@ -56,9 +57,9 @@ create, open, getInputStream, addFile, addFile, listFiles, addDirectory, listFil
 
 ---
 
-### getManifestProperties
+### getManifest
 
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../property/Properties.md) __getManifestProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [JarManifest](JarManifest.md) __getManifest__()</span>
 
 
 
@@ -95,6 +96,16 @@ create, open, getInputStream, addFile, addFile, listFiles, addDirectory, listFil
 ### getClassNames
 
 <span style="font-family: monospace; font-size: 80%;">public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> __getClassNames__()</span>
+
+
+
+
+---
+
+### guessoduleName
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public java.lang.@io.github.qishr.cascara.common.annotation.Experimental String __guessoduleName__()</span>
 
 
 

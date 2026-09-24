@@ -124,6 +124,10 @@ Direct Known Subtypes:<br/>
 
 
 
+**Throws:**
+
+[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+
 
 ---
 
@@ -133,6 +137,10 @@ Direct Known Subtypes:<br/>
 
 
 
+**Throws:**
+
+[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+
 
 ---
 
@@ -141,6 +149,10 @@ Direct Known Subtypes:<br/>
 <span style="font-family: monospace; font-size: 80%;">protected static byte[] __extractFile__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) archivePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) filePath)</span>
 
 
+
+**Throws:**
+
+[LocalizableIOException](../diagnostic/LocalizableIOException.md)
 
 
 ---

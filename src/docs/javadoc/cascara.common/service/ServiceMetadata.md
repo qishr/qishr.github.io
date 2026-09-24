@@ -12,10 +12,9 @@ Package [io.github.qishr.cascara.common.service](index.md)
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                              | Description |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| ServiceMetadata([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](ServiceProvider.md)> type, [Properties](../property/Properties.md) properties)                                                    |             |
-| ServiceMetadata([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](ServiceProvider.md)> type, [Properties](../property/Properties.md) properties, [ContentType](../util/ContentType.md) contentType) |             |
+| Constructor                                                                                                                                                                                                                                                                                                                                          | Description |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| ServiceMetadata([ServiceProviderLayer](ServiceProviderLayer.md) layer, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](ServiceProvider.md)> type, [Properties](../property/Properties.md) properties, [ContentType](../util/ContentType.md) contentType, boolean isSingleton) |             |
 
 
 
@@ -23,6 +22,8 @@ Package [io.github.qishr.cascara.common.service](index.md)
 
 | Modifier and Type                                                                                                                                  | Method                                                                                                                                              | Description |
 |----------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [ServiceProviderLayer](ServiceProviderLayer.md)                                                                                             | [getLayer](#getlayer)()                                                                                                                             |             |
+| public boolean                                                                                                                                     | [isSingleton](#issingleton)()                                                                                                                       |             |
 | public boolean                                                                                                                                     | [getBooleanCapability](#getbooleancapability)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) capName) |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                | [getModuleName](#getmodulename)()                                                                                                                   |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                | [getTypeName](#gettypename)()                                                                                                                       |             |
@@ -40,6 +41,24 @@ Package [io.github.qishr.cascara.common.service](index.md)
 
 
 ## Method Details
+
+### getLayer
+
+<span style="font-family: monospace; font-size: 80%;">public [ServiceProviderLayer](ServiceProviderLayer.md) __getLayer__()</span>
+
+
+
+
+---
+
+### isSingleton
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __isSingleton__()</span>
+
+
+
+
+---
 
 ### getBooleanCapability
 

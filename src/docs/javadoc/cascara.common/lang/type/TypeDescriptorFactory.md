@@ -33,7 +33,7 @@ public class __TypeDescriptorFactory__<br/>extends [AbstractServiceProviderFacto
 
 ### Methods inherited from [AbstractServiceProviderFactory](../../service/AbstractServiceProviderFactory.md)
 
-createServiceProvider
+createServiceProvider, createServiceProvider
 
 
 ## Method Details

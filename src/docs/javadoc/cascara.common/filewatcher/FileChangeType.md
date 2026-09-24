@@ -1,9 +1,9 @@
-Package [io.github.qishr.cascara.common.io.filewatcher](index.md)
+Package [io.github.qishr.cascara.common.filewatcher](index.md)
 
 # Enum FileChangeType
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [java.lang.Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<[io.github.qishr.cascara.common.io.filewatcher.FileChangeType](FileChangeType.md)><br/>
-                io.github.qishr.cascara.common.io.filewatcher.FileChangeType<br/>
+        [java.lang.Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<[io.github.qishr.cascara.common.filewatcher.FileChangeType](FileChangeType.md)><br/>
+                io.github.qishr.cascara.common.filewatcher.FileChangeType<br/>
 <br/>
 
 ----

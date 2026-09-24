@@ -1,12 +1,12 @@
-Package [io.github.qishr.cascara.common.trackable.diagnostic](index.md)
+Package [io.github.qishr.cascara.common.trackable](index.md)
 
 # Enum TrackingDiagnosticCode
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [java.lang.Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<[io.github.qishr.cascara.common.trackable.diagnostic.TrackingDiagnosticCode](TrackingDiagnosticCode.md)><br/>
-                io.github.qishr.cascara.common.trackable.diagnostic.TrackingDiagnosticCode<br/>
+        [java.lang.Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<[io.github.qishr.cascara.common.trackable.TrackingDiagnosticCode](TrackingDiagnosticCode.md)><br/>
+                io.github.qishr.cascara.common.trackable.TrackingDiagnosticCode<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [DiagnosticCode](../../diagnostic/code/DiagnosticCode.md)
+    [DiagnosticCode](../diagnostic/code/DiagnosticCode.md)
 
 
 ----
@@ -154,7 +154,7 @@ public static final  OPTION_PROVIDER_INIT_ERROR
 
 **Specified By:**
 
-[DiagnosticCode](../../diagnostic/code/DiagnosticCode.md)
+[DiagnosticCode](../diagnostic/code/DiagnosticCode.md)
 
 
 ---
@@ -167,7 +167,7 @@ public static final  OPTION_PROVIDER_INIT_ERROR
 
 **Specified By:**
 
-[DiagnosticCode](../../diagnostic/code/DiagnosticCode.md)
+[DiagnosticCode](../diagnostic/code/DiagnosticCode.md)
 
 
 ---

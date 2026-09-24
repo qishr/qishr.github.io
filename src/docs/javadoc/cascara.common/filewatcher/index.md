@@ -1,5 +1,5 @@
 
-# Package io.github.qishr.cascara.common.io.filewatcher
+# Package io.github.qishr.cascara.common.filewatcher
 
 
 

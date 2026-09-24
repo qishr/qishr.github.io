@@ -14,7 +14,7 @@ including its canonical ID, canonical name, and the full set of MIME
 types and filename suffixes associated with it.
 
 ContentType instances are loaded from and saved to the
-canonical-content-types.yaml registry file. They provide stable,
+content-types.yaml registry file. They provide stable,
 user\u2011facing identifiers that remain consistent across application runs,
 module changes, and plugin installations.
 

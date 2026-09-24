@@ -30,6 +30,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 | public static [Method](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Method.html) | [getTestMethod](#gettestmethod)()                                                                                                                                                                                                               |             |
 | public static io.github.qishr.cascara.common.util.Pair<java.lang.Class<?>                                          | [getCaller](#getcaller)()                                                                                                                                                                                                                       |             |
 | public static io.github.qishr.cascara.common.util.Pair<java.lang.Class<?>                                          | [getCaller](#getcaller)(boolean ignoreQueryingClass)                                                                                                                                                                                            |             |
+| public static io.github.qishr.cascara.common.util.Pair<java.lang.Class<?>                                          | [getCaller](#getcaller)(boolean ignoreQueryingClass, boolean ignoreQueryingModule)                                                                                                                                                              |             |
 
 
 
@@ -105,6 +106,16 @@ public static io.github.qishr.cascara.common.util.Pair<java.lang.Class<?> __getC
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
 public static io.github.qishr.cascara.common.util.Pair<java.lang.Class<?> __getCaller__(boolean ignoreQueryingClass)</span>
+
+
+
+
+---
+
+### getCaller
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+public static io.github.qishr.cascara.common.util.Pair<java.lang.Class<?> __getCaller__(boolean ignoreQueryingClass, boolean ignoreQueryingModule)</span>
 
 
 

@@ -24,16 +24,17 @@ public class __ServiceProviderFactory__<br/>extends [AbstractServiceProviderFact
 
 ## Method Summary
 
-| Modifier and Type                                           | Method                                                                                                                                               | Description |
-|-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [SourceBuffer](../lang/util/SourceBuffer.md)         | [createSourceBuffer](#createsourcebuffer)([SourceBufferOptions](../lang/util/SourceBufferOptions.md) options)                                        |             |
-| public [AstParser](../lang/processor/AstParser.md)<?, ?, ?> | [createParser](#createparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)              |             |
-| public [TypeDescriptor](../lang/type/TypeDescriptor.md)<?>  | [createTypeDescriptor](#createtypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType) |             |
+| Modifier and Type                                            | Method                                                                                                                                               | Description |
+|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [SourceBuffer](../lang/util/SourceBuffer.md)          | [createSourceBuffer](#createsourcebuffer)([SourceBufferOptions](../lang/util/SourceBufferOptions.md) options)                                        |             |
+| public [AstParser](../lang/processor/AstParser.md)<?, ?, ?>  | [createParser](#createparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)              |             |
+| public [TypeDescriptor](../lang/type/TypeDescriptor.md)<?>   | [createTypeDescriptor](#createtypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType) |             |
+| public [ContentTypeResolver](../util/ContentTypeResolver.md) | [createContentTypeResolver](#createcontenttyperesolver)()                                                                                            |             |
 
 
 ### Methods inherited from [AbstractServiceProviderFactory](AbstractServiceProviderFactory.md)
 
-createServiceProvider
+createServiceProvider, createServiceProvider
 
 
 ## Method Details
@@ -67,6 +68,19 @@ createServiceProvider
 ### createTypeDescriptor
 
 <span style="font-family: monospace; font-size: 80%;">public [TypeDescriptor](../lang/type/TypeDescriptor.md)<?> __createTypeDescriptor__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
+
+
+
+**Throws:**
+
+[ServiceException](ServiceException.md)
+
+
+---
+
+### createContentTypeResolver
+
+<span style="font-family: monospace; font-size: 80%;">public [ContentTypeResolver](../util/ContentTypeResolver.md) __createContentTypeResolver__()</span>
 
 
 

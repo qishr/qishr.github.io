@@ -31,13 +31,13 @@ All Implemented Interfaces:<br/>
 | public [Node](https://docs.oracle.com/en/java/java-components/javafx/25/docs/javafx.graphics/javafx/scene/Node.html) | [render](#render)([Labeled](https://docs.oracle.com/en/java/java-components/javafx/25/docs/javafx.controls/javafx/scene/control/Labeled.html) view, [Observable](https://docs.oracle.com/en/java/java-components/javafx/25/docs/javafx.base/javafx/beans/Observable.html) data, [DataProvider](../../api/data/DataProvider.md) dataProvider, [FieldMetadata](../../form/FieldMetadata.md) meta) |             |
 
 
-### Methods inherited from [AbstractScalarRenderer](../AbstractScalarRenderer.md)
-
-extractString, extractString
-
 ### Methods inherited from [AbstractRenderer](../AbstractRenderer.md)
 
 getSchemaType, getSchemaFormat, getContentType, getServiceProperties
+
+### Methods inherited from [AbstractScalarRenderer](../AbstractScalarRenderer.md)
+
+extractString, extractString
 
 
 ## Method Details

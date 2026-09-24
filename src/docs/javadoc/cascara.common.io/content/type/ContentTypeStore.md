@@ -13,6 +13,14 @@ All Implemented Interfaces:<br/>
 <span style="font-family: monospace; font-size: 80%;">public class __ContentTypeStore__</span>
 
 
+## Constructor Summary
+
+| Constructor        | Description |
+|--------------------|-------------|
+| ContentTypeStore() |             |
+
+
+
 ## Method Summary
 
 | Modifier and Type                                                                                                                                           | Method                                                                                                                                                                                                                     | Description |
@@ -77,6 +85,10 @@ All Implemented Interfaces:<br/>
 
 
 
+**Specified By:**
+
+[ContentTypeResolver](../../../cascara.common/util/ContentTypeResolver.md)
+
 
 ---
 
@@ -85,6 +97,10 @@ All Implemented Interfaces:<br/>
 <span style="font-family: monospace; font-size: 80%;">public void __add__([ContentType](../../../cascara.common/util/ContentType.md) contentType)</span>
 
 
+
+**Specified By:**
+
+[ContentTypeResolver](../../../cascara.common/util/ContentTypeResolver.md)
 
 
 ---

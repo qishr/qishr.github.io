@@ -14,7 +14,6 @@
     | [GenericDiagnosticCode](GenericDiagnosticCode.md) |             |
     | [HttpDiagnosticCode](HttpDiagnosticCode.md)       |             |
     | [InetDiagnosticCode](InetDiagnosticCode.md)       |             |
-    | [ServiceDiagnosticCode](ServiceDiagnosticCode.md) |             |
 
 
 === "Interfaces"
@@ -33,6 +32,5 @@
     | [GenericDiagnosticCode](GenericDiagnosticCode.md) |             |
     | [HttpDiagnosticCode](HttpDiagnosticCode.md)       |             |
     | [InetDiagnosticCode](InetDiagnosticCode.md)       |             |
-    | [ServiceDiagnosticCode](ServiceDiagnosticCode.md) |             |
 
 

@@ -1,12 +1,12 @@
-Package [io.github.qishr.cascara.common.diagnostic.code](index.md)
+Package [io.github.qishr.cascara.common.service](index.md)
 
 # Enum ServiceDiagnosticCode
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [java.lang.Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<[io.github.qishr.cascara.common.diagnostic.code.ServiceDiagnosticCode](ServiceDiagnosticCode.md)><br/>
-                io.github.qishr.cascara.common.diagnostic.code.ServiceDiagnosticCode<br/>
+        [java.lang.Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<[io.github.qishr.cascara.common.service.ServiceDiagnosticCode](ServiceDiagnosticCode.md)><br/>
+                io.github.qishr.cascara.common.service.ServiceDiagnosticCode<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [DiagnosticCode](DiagnosticCode.md)
+    [DiagnosticCode](../diagnostic/code/DiagnosticCode.md)
 
 
 ----
@@ -17,19 +17,21 @@ All Implemented Interfaces:<br/>
 
 ##Enum Constants
 
-| Enum Constant                                               | Description |
-|-------------------------------------------------------------|-------------|
-| [CONFIGURATION_ERROR](#configuration_error)                 |             |
-| [NOT_A_SERVICE](#not_a_service)                             |             |
-| [NOT_A_SERVICE_PROVIDER](#not_a_service_provider)           |             |
-| [FAILED_TO_REGISTER_MODULE](#failed_to_register_module)     |             |
-| [NOARGS_CONSTRUCTOR_REQUIRED](#noargs_constructor_required) |             |
-| [FAILED_TO_INSTANTIATE_CLASS](#failed_to_instantiate_class) |             |
-| [FAILED_TO_LOAD_CLASS](#failed_to_load_class)               |             |
-| [FAILED_TO_READ_JAR](#failed_to_read_jar)                   |             |
-| [NON_MODULAR_JAR](#non_modular_jar)                         |             |
-| [NO_PROVIDER_REGISTERED](#no_provider_registered)           |             |
-| [NO_PROVIDER_REGISTERED_FOR](#no_provider_registered_for)   |             |
+| Enum Constant                                                   | Description |
+|-----------------------------------------------------------------|-------------|
+| [CONFIGURATION_ERROR](#configuration_error)                     |             |
+| [NOT_A_SERVICE_PROVIDER](#not_a_service_provider)               |             |
+| [FAILED_TO_REGISTER_MODULE](#failed_to_register_module)         |             |
+| [NOARGS_CONSTRUCTOR_REQUIRED](#noargs_constructor_required)     |             |
+| [FAILED_TO_INSTANTIATE_CLASS](#failed_to_instantiate_class)     |             |
+| [FAILED_TO_LOAD_CLASS](#failed_to_load_class)                   |             |
+| [FAILED_TO_READ_JAR](#failed_to_read_jar)                       |             |
+| [NON_MODULAR_JAR](#non_modular_jar)                             |             |
+| [INCOMPATIBLE_MODULE_VERSION](#incompatible_module_version)     |             |
+| [NO_PROVIDER_REGISTERED](#no_provider_registered)               |             |
+| [NO_PROVIDER_REGISTERED_FOR](#no_provider_registered_for)       |             |
+| [NO_SINGLETON_METHOD](#no_singleton_method)                     |             |
+| [INVALID_SINGLETON_INITIALIZER](#invalid_singleton_initializer) |             |
 
 
 
@@ -49,15 +51,6 @@ All Implemented Interfaces:<br/>
 ### CONFIGURATION_ERROR
 
 public static final  CONFIGURATION_ERROR
-
-
-
-
----
-
-### NOT_A_SERVICE
-
-public static final  NOT_A_SERVICE
 
 
 
@@ -127,6 +120,15 @@ public static final  NON_MODULAR_JAR
 
 ---
 
+### INCOMPATIBLE_MODULE_VERSION
+
+public static final  INCOMPATIBLE_MODULE_VERSION
+
+
+
+
+---
+
 ### NO_PROVIDER_REGISTERED
 
 public static final  NO_PROVIDER_REGISTERED
@@ -139,6 +141,24 @@ public static final  NO_PROVIDER_REGISTERED
 ### NO_PROVIDER_REGISTERED_FOR
 
 public static final  NO_PROVIDER_REGISTERED_FOR
+
+
+
+
+---
+
+### NO_SINGLETON_METHOD
+
+public static final  NO_SINGLETON_METHOD
+
+
+
+
+---
+
+### INVALID_SINGLETON_INITIALIZER
+
+public static final  INVALID_SINGLETON_INITIALIZER
 
 
 
@@ -174,7 +194,7 @@ public static final  NO_PROVIDER_REGISTERED_FOR
 
 **Specified By:**
 
-[DiagnosticCode](DiagnosticCode.md)
+[DiagnosticCode](../diagnostic/code/DiagnosticCode.md)
 
 
 ---
@@ -187,7 +207,7 @@ public static final  NO_PROVIDER_REGISTERED_FOR
 
 **Specified By:**
 
-[DiagnosticCode](DiagnosticCode.md)
+[DiagnosticCode](../diagnostic/code/DiagnosticCode.md)
 
 
 ---

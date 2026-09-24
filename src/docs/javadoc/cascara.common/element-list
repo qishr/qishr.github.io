@@ -4,6 +4,7 @@ io.github.qishr.cascara.common.color
 io.github.qishr.cascara.common.data
 io.github.qishr.cascara.common.diagnostic
 io.github.qishr.cascara.common.diagnostic.code
+io.github.qishr.cascara.common.filewatcher
 io.github.qishr.cascara.common.lang.plain
 io.github.qishr.cascara.common.lang.ast
 io.github.qishr.cascara.common.lang.streaming
@@ -17,7 +18,6 @@ io.github.qishr.cascara.common.property
 io.github.qishr.cascara.common.semver
 io.github.qishr.cascara.common.service
 io.github.qishr.cascara.common.trackable
-io.github.qishr.cascara.common.trackable.diagnostic
 io.github.qishr.cascara.common.trackable.property
 io.github.qishr.cascara.common.trackable.tracker
 io.github.qishr.cascara.common.util

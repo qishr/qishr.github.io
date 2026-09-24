@@ -23,7 +23,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 ### Methods inherited from [Properties](../property/Properties.md)
 
-set, duplicate, containsKey, addAll, remove, getValues, getInteger, getInt, set, asList, clear, set, isEmpty, getValue, toString, getBoolean, getString, remove, getString, getLong, set, getProperty, add, getDouble, get, getNumber, getValuesMap
+set, duplicate, containsKey, addAll, remove, getValues, getInteger, getInt, set, asList, clear, load, set, isEmpty, getValue, toString, getBoolean, getString, remove, getString, getLong, set, getProperty, add, getDouble, get, getNumber, getValuesMap
 
 
 ## Method Details

@@ -29,11 +29,11 @@ Direct Known Subtypes:<br/>
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Description |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| AbstractScalarDescriptor([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> jvmType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) schemaType)                                                                                                                                                                                                                    |             |
-| AbstractScalarDescriptor([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> jvmType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) schemaType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format)                                                                                                               |             |
-| AbstractScalarDescriptor([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> jvmType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) schemaType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentEncoding) |             |
+| Constructor                                                                                                                                                                                                                                                                                                                                                                                      | Description |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| AbstractScalarDescriptor([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> jvmType, [PrimitiveType](PrimitiveType.md) schemaType)                                                                                                                                                                                                                    |             |
+| AbstractScalarDescriptor([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> jvmType, [PrimitiveType](PrimitiveType.md) schemaType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format)                                                                                                               |             |
+| AbstractScalarDescriptor([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> jvmType, [PrimitiveType](PrimitiveType.md) schemaType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentEncoding) |             |
 
 
 
@@ -63,7 +63,7 @@ getSchemaType, getServiceProperties, getJvmType
 **See Also:**
 
 
-[Constant Field Values](../../../../../../../constant-values.md)
+[Constant Field Values](../../constant-values.md)
 
 
 
@@ -78,7 +78,7 @@ getSchemaType, getServiceProperties, getJvmType
 **See Also:**
 
 
-[Constant Field Values](../../../../../../../constant-values.md)
+[Constant Field Values](../../constant-values.md)
 
 
 

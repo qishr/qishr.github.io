@@ -18,9 +18,11 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                             | Method                                                                                                                 | Description |
-|-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------|-------------|
-| public abstract [ContentType](ContentType.md) | [resolve](#resolve)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) type) |             |
+| Modifier and Type                             | Method                                                                                                                                                            | Description |
+|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public abstract [ContentType](ContentType.md) | [resolve](#resolve)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) type)                                            |             |
+| public abstract void                          | [add](#add)([ContentType](ContentType.md) contentType)                                                                                                            |             |
+| public abstract void                          | [addAll](#addall)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [ContentType](ContentType.md)> contentTypes) |             |
 
 
 
@@ -29,6 +31,24 @@ All Known Implementing Classes:<br/>
 ### resolve
 
 <span style="font-family: monospace; font-size: 80%;">public abstract [ContentType](ContentType.md) __resolve__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) type)</span>
+
+
+
+
+---
+
+### add
+
+<span style="font-family: monospace; font-size: 80%;">public abstract void __add__([ContentType](ContentType.md) contentType)</span>
+
+
+
+
+---
+
+### addAll
+
+<span style="font-family: monospace; font-size: 80%;">public abstract void __addAll__([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [ContentType](ContentType.md)> contentTypes)</span>
 
 
 

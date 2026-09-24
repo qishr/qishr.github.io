@@ -28,9 +28,9 @@ Direct Known Subtypes:<br/>
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                            | Description |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| AbstractTypeDescriptor([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> jvmType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) schemaType) |             |
+| Constructor                                                                                                                                                                 | Description |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| AbstractTypeDescriptor([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> jvmType, [PrimitiveType](PrimitiveType.md) schemaType) |             |
 
 
 
@@ -40,7 +40,7 @@ Direct Known Subtypes:<br/>
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|-------------|
 | public [Properties](../../property/Properties.md)                                                    | [getServiceProperties](#getserviceproperties)()                                     |             |
 | public [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> | [getJvmType](#getjvmtype)()                                                         |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)  | [getSchemaType](#getschematype)()                                                   |             |
+| public [PrimitiveType](PrimitiveType.md)                                                             | [getSchemaType](#getschematype)()                                                   |             |
 | public void                                                                                          | [populateSchema](#populateschema)([MapAstNode](../ast/MapAstNode.md)<?, ?, ?> node) |             |
 
 
@@ -56,7 +56,7 @@ Direct Known Subtypes:<br/>
 **See Also:**
 
 
-[Constant Field Values](../../../../../../../constant-values.md)
+[Constant Field Values](../../constant-values.md)
 
 
 
@@ -71,7 +71,7 @@ Direct Known Subtypes:<br/>
 **See Also:**
 
 
-[Constant Field Values](../../../../../../../constant-values.md)
+[Constant Field Values](../../constant-values.md)
 
 
 
@@ -113,7 +113,7 @@ Direct Known Subtypes:<br/>
 
 ### getSchemaType
 
-<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getSchemaType__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [PrimitiveType](PrimitiveType.md) __getSchemaType__()</span>
 
 
 

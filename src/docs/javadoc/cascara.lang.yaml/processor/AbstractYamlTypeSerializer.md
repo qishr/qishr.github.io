@@ -17,10 +17,10 @@ All Implemented Interfaces:<br/>
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                 | Description |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| AbstractYamlTypeSerializer([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> javaType)                                                                                                          |             |
-| AbstractYamlTypeSerializer([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> javaType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) schemaType) |             |
+| Constructor                                                                                                                                                                                                     | Description |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| AbstractYamlTypeSerializer([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> javaType)                                                                              |             |
+| AbstractYamlTypeSerializer([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> javaType, [PrimitiveType](../../cascara.common/lang/type/PrimitiveType.md) schemaType) |             |
 
 
 

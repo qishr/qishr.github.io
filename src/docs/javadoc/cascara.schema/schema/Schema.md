@@ -108,6 +108,11 @@ Package [io.github.qishr.cascara.schema](index.md)
 
 Validates an AST against this schema.
 
+**Parameters:**
+
+`root` - an `AstNode` representing a document or part of a
+            structured document (such as JSON or YAML) to validate.
+
 
 ---
 
@@ -118,6 +123,9 @@ Validates an AST against this schema.
 Validates an AST against this schema.
 
 **Parameters:**
+
+`root` - an `AstNode` representing a document or part of a
+            structured document (such as JSON or YAML) to validate.
 
 `reporter` - a reporter for collecting problem diagnostics.
 

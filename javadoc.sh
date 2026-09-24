@@ -11,9 +11,9 @@
 -link https://docs.oracle.com/en/java/java-components/javafx/25/docs/ \
 --module-path /Users/sandy/git/cascara/ecosystem/studio/cascara-studio-dev/cascara-studio/build/modulepath \
 --module cascara.common,cascara.common.io,cascara.schema,cascara.lang.json,cascara.lang.xml,cascara.lang.yaml,cascara.macos.files,cascara.macos.menus,cascara.ui \
---module-source-path cascara.common=/Users/sandy/git/cascara/ecosystem/core/cascara-common/src/main/java \
---module-source-path cascara.common.io=/Users/sandy/git/cascara/ecosystem/core/cascara-common-io/src/main/java \
---module-source-path cascara.schema=/Users/sandy/git/cascara/ecosystem/core/cascara-schema/src/main/java \
+--module-source-path cascara.common=/Users/sandy/git/cascara/ecosystem/core/cascara-common/cascara-common/src/main/java \
+--module-source-path cascara.common.io=/Users/sandy/git/cascara/ecosystem/core/cascara-common-io/cascara-common-io/src/main/java \
+--module-source-path cascara.schema=/Users/sandy/git/cascara/ecosystem/core/cascara-schema/cascara-schema/src/main/java \
 --module-source-path cascara.lang.ct=/Users/sandy/git/cascara/ecosystem/core/cascara-lang-ct/ct-dsl/src/main/java \
 --module-source-path cascara.lang.json=/Users/sandy/git/cascara/ecosystem/core/cascara-lang-json/src/main/java \
 --module-source-path cascara.lang.xml=/Users/sandy/git/cascara/ecosystem/core/cascara-lang-xml/src/main/java \

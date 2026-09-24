@@ -26,11 +26,22 @@ Direct Known Subtypes:<br/>
 
 | Modifier and Type | Method                                                                                                                                                                                                                                                                                                                             | Description |
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| protected T       | [createServiceProvider](#createserviceprovider)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> serviceType)                                                                                                                                                                         |             |
 | protected T       | [createServiceProvider](#createserviceprovider)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> serviceType, [Predicate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Predicate.html)<[ServiceMetadata](ServiceMetadata.md)> capabilityPredicate) |             |
 
 
 
 ## Method Details
+
+### createServiceProvider
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+protected T __createServiceProvider__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> serviceType)</span>
+
+
+
+
+---
 
 ### createServiceProvider
 

@@ -16,6 +16,14 @@ Direct Known Subtypes:<br/>
 <span style="font-family: monospace; font-size: 80%;">public class __Properties__</span>
 
 
+## Nested Class Summary
+
+| Modifier and Type | Class                                                                                             | Description |
+|-------------------|---------------------------------------------------------------------------------------------------|-------------|
+| public static     | [io.github.qishr.cascara.common.property.Properties.PropertyParser](Properties.PropertyParser.md) |             |
+
+
+
 ## Constructor Summary
 
 | Constructor  | Description |
@@ -55,6 +63,8 @@ Direct Known Subtypes:<br/>
 | public boolean                                                                                                                                                                                                                                                                            | [isEmpty](#isempty)()                                                                                                                                                                                                                 |                                 |
 | public [Properties](Properties.md)                                                                                                                                                                                                                                                        | [duplicate](#duplicate)()                                                                                                                                                                                                             |                                 |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [toString](#tostring)()                                                                                                                                                                                                               |                                 |
+| public static [Properties](Properties.md)                                                                                                                                                                                                                                                 | [parse](#parse)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                                                                                                    |                                 |
+| public static [Properties](Properties.md)                                                                                                                                                                                                                                                 | [load](#load)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) path)                                                                                                                      |                                 |
 
 
 
@@ -326,6 +336,28 @@ For consistency with JSONSchema
 **Overrides:**
 
 [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#tostring)
+
+
+---
+
+### parse
+
+<span style="font-family: monospace; font-size: 80%;">public static [Properties](Properties.md) __parse__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)</span>
+
+
+
+
+---
+
+### load
+
+<span style="font-family: monospace; font-size: 80%;">public static [Properties](Properties.md) __load__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) path)</span>
+
+
+
+**Throws:**
+
+[LocalizableIOException](../diagnostic/LocalizableIOException.md)
 
 
 ---

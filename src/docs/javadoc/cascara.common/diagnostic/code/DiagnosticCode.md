@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.diagnostic.code](index.md)
         io.github.qishr.cascara.common.diagnostic.code.DiagnosticCode<br/>
 <br/>
 All Known Implementing Classes:<br/>
-    [ColorDiagnosticCode](../../color/ColorDiagnosticCode.md), [FileDiagnosticCode](FileDiagnosticCode.md), [HttpDiagnosticCode](HttpDiagnosticCode.md), [GenericDiagnosticCode](GenericDiagnosticCode.md), [DnsDiagnosticCode](DnsDiagnosticCode.md), [InetDiagnosticCode](InetDiagnosticCode.md), [ServiceDiagnosticCode](ServiceDiagnosticCode.md), [LangDiagnosticCode](../../lang/diagnostic/LangDiagnosticCode.md), [TrackingDiagnosticCode](../../trackable/diagnostic/TrackingDiagnosticCode.md), [ContentTypeDiagnosticCode](../../../cascara.common.io/content/type/ContentTypeDiagnosticCode.md), [SchemaDiagnosticCode](../../../cascara.schema/schema/diagnostic/SchemaDiagnosticCode.md), [JsonDiagnosticCode](../../cascara.lang.json/JsonDiagnosticCode.md), [YamlDiagnosticCode](../../cascara.lang.yaml/YamlDiagnosticCode.md), [UiDiagnosticCode](../../../cascara.ui/api/UiDiagnosticCode.md)
+    [ColorDiagnosticCode](../../color/ColorDiagnosticCode.md), [FileDiagnosticCode](FileDiagnosticCode.md), [HttpDiagnosticCode](HttpDiagnosticCode.md), [GenericDiagnosticCode](GenericDiagnosticCode.md), [DnsDiagnosticCode](DnsDiagnosticCode.md), [InetDiagnosticCode](InetDiagnosticCode.md), [LangDiagnosticCode](../../lang/diagnostic/LangDiagnosticCode.md), [ServiceDiagnosticCode](../../service/ServiceDiagnosticCode.md), [TrackingDiagnosticCode](../../trackable/TrackingDiagnosticCode.md), [ContentTypeDiagnosticCode](../../../cascara.common.io/content/type/ContentTypeDiagnosticCode.md), [SchemaDiagnosticCode](../../../cascara.schema/schema/diagnostic/SchemaDiagnosticCode.md), [JsonDiagnosticCode](../../cascara.lang.json/JsonDiagnosticCode.md), [YamlDiagnosticCode](../../cascara.lang.yaml/YamlDiagnosticCode.md), [UiDiagnosticCode](../../../cascara.ui/api/UiDiagnosticCode.md)
 
 
 ----
@@ -15,10 +15,11 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                            | Method                      | Description |
-|--------------------------------------------------------------------------------------------------------------|-----------------------------|-------------|
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getCode](#getcode)()       |             |
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getMessage](#getmessage)() |             |
+| Modifier and Type                                                                                            | Method                                                                                                                              | Description |
+|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getCode](#getcode)()                                                                                                               |             |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getMessage](#getmessage)()                                                                                                         |             |
+| public static [DiagnosticCode](DiagnosticCode.md)                                                            | [forException](#forexception)([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t) |             |
 
 
 
@@ -36,6 +37,15 @@ All Known Implementing Classes:<br/>
 ### getMessage
 
 <span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getMessage__()</span>
+
+
+
+
+---
+
+### forException
+
+<span style="font-family: monospace; font-size: 80%;">public static [DiagnosticCode](DiagnosticCode.md) __forException__([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t)</span>
 
 
 

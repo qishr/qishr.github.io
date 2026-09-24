@@ -13,19 +13,39 @@ All Known Implementing Classes:<br/>
 <span style="font-family: monospace; font-size: 80%;">public interface __ServiceProvider__</span>
 
 
+## Field Summary
+
+| Modifier and Type              | Field                                 | Description |
+|--------------------------------|---------------------------------------|-------------|
+| public static final Properties | [EMPTY_PROPERTIES](#empty_properties) |             |
+
+
+
 ## Method Summary
 
-| Modifier and Type                                       | Method                                          | Description |
-|---------------------------------------------------------|-------------------------------------------------|-------------|
-| public abstract [Properties](../property/Properties.md) | [getServiceProperties](#getserviceproperties)() |             |
+| Modifier and Type                                      | Method                                          | Description |
+|--------------------------------------------------------|-------------------------------------------------|-------------|
+| public default [Properties](../property/Properties.md) | [getServiceProperties](#getserviceproperties)() |             |
 
+
+
+## Field Details
+
+### EMPTY_PROPERTIES
+
+<span style="font-family: monospace; font-size: 80%;">public static final Properties __EMPTY_PROPERTIES__</span>
+
+
+
+
+---
 
 
 ## Method Details
 
 ### getServiceProperties
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [Properties](../property/Properties.md) __getServiceProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public default [Properties](../property/Properties.md) __getServiceProperties__()</span>
 
 
 

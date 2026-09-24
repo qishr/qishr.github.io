@@ -9,6 +9,8 @@
     | Class                                         | Description                                                                                                                                  |
     |-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
     | [ArchiveFile](ArchiveFile.md)                 |                                                                                                                                              |
+    | [Cascara](Cascara.md)                         |                                                                                                                                              |
+    | [ClassHierarchy](ClassHierarchy.md)           |                                                                                                                                              |
     | [CommandLine](CommandLine.md)                 |    CommandLine interpreter that uses reflection to initialize an annotated user object with values obtained from the command line arguments. |
     | [ContentType](ContentType.md)                 | A stable, persisted canonical content type used throughout Cascara.                                                                          |
     | [ContentTypeResolver](ContentTypeResolver.md) |                                                                                                                                              |
@@ -38,6 +40,8 @@
     | Class                                 | Description                                                                                                                                  |
     |---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
     | [ArchiveFile](ArchiveFile.md)         |                                                                                                                                              |
+    | [Cascara](Cascara.md)                 |                                                                                                                                              |
+    | [ClassHierarchy](ClassHierarchy.md)   |                                                                                                                                              |
     | [CommandLine](CommandLine.md)         |    CommandLine interpreter that uses reflection to initialize an annotated user object with values obtained from the command line arguments. |
     | [ContentType](ContentType.md)         | A stable, persisted canonical content type used throughout Cascara.                                                                          |
     | [ContentTypes](ContentTypes.md)       |                                                                                                                                              |

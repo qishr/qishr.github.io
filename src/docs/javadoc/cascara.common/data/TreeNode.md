@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.data](index.md)
         io.github.qishr.cascara.common.data.TreeNode<br/>
 <br/>
 All Known Implementing Classes:<br/>
-    [TreeData](TreeData.md)
+    [TreeData](TreeData.md), [ServiceProviderLayer](../service/ServiceProviderLayer.md)
 
 
 ----
@@ -15,11 +15,10 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                           | Method                            | Description |
-|-------------------------------------------------------------------------------------------------------------|-----------------------------------|-------------|
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> | [getChildren](#getchildren)()     |             |
-| public abstract T                                                                                           | [getParent](#getparent)()         |             |
-| public abstract void                                                                                        | [setParent](#setparent)(T parent) |             |
+| Modifier and Type                                                                                           | Method                        | Description |
+|-------------------------------------------------------------------------------------------------------------|-------------------------------|-------------|
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> | [getChildren](#getchildren)() |             |
+| public abstract T                                                                                           | [getParent](#getparent)()     |             |
 
 
 
@@ -37,15 +36,6 @@ All Known Implementing Classes:<br/>
 ### getParent
 
 <span style="font-family: monospace; font-size: 80%;">public abstract T __getParent__()</span>
-
-
-
-
----
-
-### setParent
-
-<span style="font-family: monospace; font-size: 80%;">public abstract void __setParent__(T parent)</span>
 
 
 

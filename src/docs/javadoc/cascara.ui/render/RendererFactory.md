@@ -35,7 +35,7 @@ Package [io.github.qishr.cascara.ui.render](index.md)
 
 ### Methods inherited from [AbstractServiceProviderFactory](../../cascara.common/service/AbstractServiceProviderFactory.md)
 
-createServiceProvider
+createServiceProvider, createServiceProvider
 
 
 ## Method Details
