@@ -1,5 +1,4 @@
 module:cascara.schema
-io.github.qishr.cascara.schema
 io.github.qishr.cascara.schema.annotation
 io.github.qishr.cascara.schema.diagnostic
 io.github.qishr.cascara.schema.structure
