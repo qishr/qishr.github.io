@@ -7,6 +7,7 @@
 -tabs \
 -d /Users/sandy/git/cascara/ecosystem/other/qishr.github.io/src/docs/javadoc/latest \
 --show-module-contents all \
+-link https://openjfx.io/javadoc/25/ \
 -link https://docs.oracle.com/en/java/java-components/javafx/25/docs/ \
 --module-path /Users/sandy/git/cascara/ecosystem/studio/cascara-studio-dev/cascara-studio/build/modulepath \
 --module cascara.common,cascara.common.io,cascara.schema,cascara.lang.json,cascara.lang.xml,cascara.lang.yaml,cascara.macos.files,cascara.macos.menus,cascara.ui \
