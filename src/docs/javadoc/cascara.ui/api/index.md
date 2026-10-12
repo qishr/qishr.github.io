@@ -17,7 +17,7 @@
     | [SyntaxHighlighter](SyntaxHighlighter.md)     |             |
     | [TextEditor](TextEditor.md)                   |             |
     | [ToolTipProvider](ToolTipProvider.md)         |             |
-    | [UiDiagnosticCode](UiDiagnosticCode.md)       |             |
+    | [UiDiagnosticMessage](UiDiagnosticMessage.md) |             |
     | [UiException](UiException.md)                 |             |
 
 
@@ -47,6 +47,6 @@
     | Class                                         | Description |
     |-----------------------------------------------|-------------|
     | [ServicePropertyName](ServicePropertyName.md) |             |
-    | [UiDiagnosticCode](UiDiagnosticCode.md)       |             |
+    | [UiDiagnosticMessage](UiDiagnosticMessage.md) |             |
 
 

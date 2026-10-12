@@ -7,7 +7,7 @@ Package [io.github.qishr.cascara.lang.yaml.processor](index.md)
                         io.github.qishr.cascara.lang.yaml.processor.YamlPushParser<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [PushParser](../../cascara.common/lang/processor/PushParser.md)
+    [PushParser](../../cascara.common/lang/processor/PushParser.md)<[YamlStreamingEventType](../streaming/YamlStreamingEventType.md), [YamlStreamingEvent](../streaming/YamlStreamingEvent.md)>
 
 
 ----
@@ -26,11 +26,11 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                             | Method                                                                                                                                                                                                     | Description |
-|-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| protected [YamlPushParser](YamlPushParser.md) | [self](#self)()                                                                                                                                                                                            |             |
-| public void                                   | [parse](#parse)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) input, [StreamHandler](../../cascara.common/lang/streaming/StreamHandler.md) handler) |             |
-| protected void                                | [handleEvent](#handleevent)([YamlStreamingEvent](../streaming/YamlStreamingEvent.md) event)                                                                                                                |             |
+| Modifier and Type                             | Method                                                                                                                                                                                                                                                               | Description |
+|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| protected [YamlPushParser](YamlPushParser.md) | [self](#self)()                                                                                                                                                                                                                                                      |             |
+| public void                                   | [parse](#parse)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) input, [StreamHandler](../../cascara.common/lang/streaming/StreamHandler.md)<[YamlStreamingEvent](../streaming/YamlStreamingEvent.md)> handler) |             |
+| protected void                                | [handleEvent](#handleevent)([YamlStreamingEvent](../streaming/YamlStreamingEvent.md) event)                                                                                                                                                                          |             |
 
 
 
@@ -47,7 +47,7 @@ All Implemented Interfaces:<br/>
 
 ### parse
 
-<span style="font-family: monospace; font-size: 80%;">public void __parse__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) input, [StreamHandler](../../cascara.common/lang/streaming/StreamHandler.md) handler)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __parse__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) input, [StreamHandler](../../cascara.common/lang/streaming/StreamHandler.md)<[YamlStreamingEvent](../streaming/YamlStreamingEvent.md)> handler)</span>
 
 
 

@@ -28,7 +28,7 @@ Standard implementation for YAML serialization.
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | public [YamlSerializer](YamlSerializer.md)                                                             | [self](#self)()                                                                                                                                                                                                                                                                                     |             |
 | public [ContentType](../../cascara.common/util/ContentType.md)                                         | [getContentType](#getcontenttype)()                                                                                                                                                                                                                                                                 |             |
-| public [YamlSerializer](YamlSerializer.md)                                                             | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter)                                                                                                                                                                                                       |             |
+| public [YamlSerializer](YamlSerializer.md)                                                             | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/report/Reporter.md) reporter)                                                                                                                                                                                                |             |
 | public [YamlSerializer](YamlSerializer.md)                                                             | [setOptions](#setoptions)([LanguageOptions](../../cascara.common/lang/util/LanguageOptions.md)<?> options)                                                                                                                                                                                          |             |
 | public [YamlSerializer](YamlSerializer.md)                                                             | [setParser](#setparser)([AstParser](../../cascara.common/lang/processor/AstParser.md)<[YamlNode](../ast/YamlNode.md), ?, ?> parser)                                                                                                                                                                 |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)    | [toString](#tostring)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                                                                                     |             |
@@ -44,8 +44,8 @@ Standard implementation for YAML serialization.
 | public C                                                                                               | [fromAst](#fromast)([YamlNode](../ast/YamlNode.md) astNode, [TypeReference](../../cascara.common/lang/type/TypeReference.md)<C> typeRef)                                                                                                                                                            |             |
 | protected [YamlNode](../ast/YamlNode.md)                                                               | [serializeKey](#serializekey)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                                                                                     |             |
 | protected void                                                                                         | [setupSerializer](#setupserializer)()                                                                                                                                                                                                                                                               |             |
-| protected void                                                                                         | [error](#error)([YamlNode](../ast/YamlNode.md) node, [DiagnosticCode](../../cascara.common/diagnostic/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                         |             |
-| protected void                                                                                         | [warn](#warn)([YamlToken](../token/YamlToken.md) token, [DiagnosticCode](../../cascara.common/diagnostic/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                      |             |
+| protected void                                                                                         | [error](#error)([YamlNode](../ast/YamlNode.md) node, [DiagnosticMessage](../../cascara.common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                |             |
+| protected void                                                                                         | [warn](#warn)([YamlToken](../token/YamlToken.md) token, [DiagnosticMessage](../../cascara.common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                             |             |
 | protected [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [debugNode](#debugnode)([YamlNode](../ast/YamlNode.md) node)                                                                                                                                                                                                                                        |             |
 | protected void                                                                                         | [debugStringBuilder](#debugstringbuilder)()                                                                                                                                                                                                                                                         |             |
 | protected void                                                                                         | [report](#report)([Level](../../cascara.common/diagnostic/Diagnostic.Level.md) level, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
@@ -53,7 +53,7 @@ Standard implementation for YAML serialization.
 
 ### Methods inherited from [AbstractSerializer](../../cascara.common/lang/processor/AbstractSerializer.md)
 
-serializeObject, [warn](#warn), trace, [error](#error), serialize, serializeMap, getTypeDescriptor, getTypeDescriptor, debug, getAllSerializableFields, deserialize, serializeList, warnInaccessible, deserialize, getServiceProperties, registerTypeDescriptor, warnInaccessible
+serializeObject, [warn](#warn), serializeArray, trace, [error](#error), serialize, serializeMap, getTypeDescriptor, getTypeDescriptor, debug, getAllSerializableFields, deserialize, setUseProviderFactory, serializeList, warnInaccessible, deserialize, getServiceProperties, registerTypeDescriptor, warnInaccessible
 
 
 ## Method Details
@@ -82,7 +82,7 @@ serializeObject, [warn](#warn), trace, [error](#error), serialize, serializeMap,
 
 ### setReporter
 
-<span style="font-family: monospace; font-size: 80%;">public [YamlSerializer](YamlSerializer.md) __setReporter__([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter)</span>
+<span style="font-family: monospace; font-size: 80%;">public [YamlSerializer](YamlSerializer.md) __setReporter__([Reporter](../../cascara.common/diagnostic/report/Reporter.md) reporter)</span>
 
 
 
@@ -238,7 +238,7 @@ serializeObject, [warn](#warn), trace, [error](#error), serialize, serializeMap,
 
 ### error
 
-<span style="font-family: monospace; font-size: 80%;">protected void __error__([YamlNode](../ast/YamlNode.md) node, [DiagnosticCode](../../cascara.common/diagnostic/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">protected void __error__([YamlNode](../ast/YamlNode.md) node, [DiagnosticMessage](../../cascara.common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 
 
@@ -247,7 +247,7 @@ serializeObject, [warn](#warn), trace, [error](#error), serialize, serializeMap,
 
 ### warn
 
-<span style="font-family: monospace; font-size: 80%;">protected void __warn__([YamlToken](../token/YamlToken.md) token, [DiagnosticCode](../../cascara.common/diagnostic/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">protected void __warn__([YamlToken](../token/YamlToken.md) token, [DiagnosticMessage](../../cascara.common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 
 

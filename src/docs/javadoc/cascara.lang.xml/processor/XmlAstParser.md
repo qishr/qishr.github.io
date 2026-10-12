@@ -39,7 +39,7 @@ All Implemented Interfaces:<br/>
 
 ### Methods inherited from [AbstractXmlProcessor](AbstractXmlProcessor.md)
 
-setReporter, getContentType, getServiceProperties, setOptions
+getContentType, getServiceProperties, setReporter, setOptions
 
 
 ## Method Details

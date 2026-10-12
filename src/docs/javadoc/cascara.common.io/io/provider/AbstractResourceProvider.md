@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [ResourceProvider](ResourceProvider.md)
 
 Direct Known Subtypes:<br/>
-    [CascaraResourceProvider](CascaraResourceProvider.md), [FileResourceProvider](FileResourceProvider.md), [ResResourceProvider](ResResourceProvider.md), [HttpResourceProvider](HttpResourceProvider.md)
+    [CascaraResourceProvider](CascaraResourceProvider.md), [FileResourceProvider](FileResourceProvider.md), [ResResourceProvider](ResResourceProvider.md), [HttpResourceProvider](HttpResourceProvider.md), [CascaraSchemaResourceProvider](../../../cascara.schema/util/CascaraSchemaResourceProvider.md)
 
 
 ----

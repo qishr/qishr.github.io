@@ -12,14 +12,14 @@ Package [io.github.qishr.cascara.ui.schema](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                                                          | Method                                                                                                                                                                                            | Description |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public static [TypeAnalyzers](TypeAnalyzers.md)                                                                                                                                                                                                            | [instance](#instance)()                                                                                                                                                                           |             |
-| public static [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [TypeAnalyzer](../cascara.schema/util/TypeAnalyzer.md)> | [getAnalyzers](#getanalyzers)()                                                                                                                                                                   |             |
-| public static void                                                                                                                                                                                                                                         | [register](#register)([TypeAnalyzer](../cascara.schema/util/TypeAnalyzer.md) analyazer)                                                                                                           |             |
-| public static boolean                                                                                                                                                                                                                                      | [isRegistered](#isregistered)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [TypeAnalyzer](../cascara.schema/util/TypeAnalyzer.md)> clazz) |             |
-| public static [SchemaResolver](../cascara.schema/util/SchemaResolver.md)                                                                                                                                                                                   | [getSchemaResolver](#getschemaresolver)()                                                                                                                                                         |             |
-| public static void                                                                                                                                                                                                                                         | [setSchemaResolver](#setschemaresolver)([SchemaResolver](../cascara.schema/util/SchemaResolver.md) resolver)                                                                                      |             |
+| Modifier and Type                                                                                                                                                                                                                                             | Method                                                                                                                                                                                               | Description |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public static [TypeAnalyzers](TypeAnalyzers.md)                                                                                                                                                                                                               | [instance](#instance)()                                                                                                                                                                              |             |
+| public static [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [TypeAnalyzer](../../cascara.schema/util/TypeAnalyzer.md)> | [getAnalyzers](#getanalyzers)()                                                                                                                                                                      |             |
+| public static void                                                                                                                                                                                                                                            | [register](#register)([TypeAnalyzer](../../cascara.schema/util/TypeAnalyzer.md) analyazer)                                                                                                           |             |
+| public static boolean                                                                                                                                                                                                                                         | [isRegistered](#isregistered)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [TypeAnalyzer](../../cascara.schema/util/TypeAnalyzer.md)> clazz) |             |
+| public static [SchemaResolver](../../cascara.schema/util/SchemaResolver.md)                                                                                                                                                                                   | [getSchemaResolver](#getschemaresolver)()                                                                                                                                                            |             |
+| public static void                                                                                                                                                                                                                                            | [setSchemaResolver](#setschemaresolver)([SchemaResolver](../../cascara.schema/util/SchemaResolver.md) resolver)                                                                                      |             |
 
 
 
@@ -36,7 +36,7 @@ Package [io.github.qishr.cascara.ui.schema](index.md)
 
 ### getAnalyzers
 
-<span style="font-family: monospace; font-size: 80%;">public static [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [TypeAnalyzer](../cascara.schema/util/TypeAnalyzer.md)> __getAnalyzers__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [TypeAnalyzer](../../cascara.schema/util/TypeAnalyzer.md)> __getAnalyzers__()</span>
 
 
 
@@ -45,7 +45,7 @@ Package [io.github.qishr.cascara.ui.schema](index.md)
 
 ### register
 
-<span style="font-family: monospace; font-size: 80%;">public static void __register__([TypeAnalyzer](../cascara.schema/util/TypeAnalyzer.md) analyazer)</span>
+<span style="font-family: monospace; font-size: 80%;">public static void __register__([TypeAnalyzer](../../cascara.schema/util/TypeAnalyzer.md) analyazer)</span>
 
 
 
@@ -54,7 +54,7 @@ Package [io.github.qishr.cascara.ui.schema](index.md)
 
 ### isRegistered
 
-<span style="font-family: monospace; font-size: 80%;">public static boolean __isRegistered__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [TypeAnalyzer](../cascara.schema/util/TypeAnalyzer.md)> clazz)</span>
+<span style="font-family: monospace; font-size: 80%;">public static boolean __isRegistered__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [TypeAnalyzer](../../cascara.schema/util/TypeAnalyzer.md)> clazz)</span>
 
 
 
@@ -63,7 +63,7 @@ Package [io.github.qishr.cascara.ui.schema](index.md)
 
 ### getSchemaResolver
 
-<span style="font-family: monospace; font-size: 80%;">public static [SchemaResolver](../cascara.schema/util/SchemaResolver.md) __getSchemaResolver__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static [SchemaResolver](../../cascara.schema/util/SchemaResolver.md) __getSchemaResolver__()</span>
 
 
 
@@ -72,7 +72,7 @@ Package [io.github.qishr.cascara.ui.schema](index.md)
 
 ### setSchemaResolver
 
-<span style="font-family: monospace; font-size: 80%;">public static void __setSchemaResolver__([SchemaResolver](../cascara.schema/util/SchemaResolver.md) resolver)</span>
+<span style="font-family: monospace; font-size: 80%;">public static void __setSchemaResolver__([SchemaResolver](../../cascara.schema/util/SchemaResolver.md) resolver)</span>
 
 
 

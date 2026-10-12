@@ -9,7 +9,7 @@ All Implemented Interfaces:<br/>
     [TrackableTabularData](TrackableTabularData.md)
 
 Direct Known Subtypes:<br/>
-    [SchematicObject](../../cascara.schema/schema/util/SchematicObject.md)
+    [SchematicObject](../../cascara.schema/util/SchematicObject.md)
 
 
 ----
@@ -41,7 +41,7 @@ public class __TrackableObject__<br/>extends [AbstractTrackable](AbstractTrackab
 | public final [Trackable](Trackable.md)                                                                                                                                                                                                                                                          | [getTrackable](#gettrackable)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                   |             |
 | public final [TrackableArray](TrackableArray.md)<?>                                                                                                                                                                                                                                             | [getTrackableArray](#gettrackablearray)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                         |             |
 | public final [AbstractTrackable](AbstractTrackable.md)                                                                                                                                                                                                                                          | [getObjectProperty](#getobjectproperty)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                         |             |
-| public java.util.Map                                                                                                                                                                                                                                                                            | [getDataContext](#getdatacontext)()                                                                                                                                                                                               |             |
+| public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [TrackableProperty](property/TrackableProperty.md)<?>>                                              | [getDataContext](#getdatacontext)()                                                                                                                                                                                               |             |
 | public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)                                                                                                                                                                                             | [get](#get)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                                     |             |
 | public final [Boolean](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Boolean.html)                                                                                                                                                                                     | [getBoolean](#getboolean)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                       |             |
 | public final [Integer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html)                                                                                                                                                                                     | [getInteger](#getinteger)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                                       |             |
@@ -164,7 +164,7 @@ invalidate, removeTracker, addTracker
 
 ### getDataContext
 
-<span style="font-family: monospace; font-size: 80%;">public java.util.Map __getDataContext__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [TrackableProperty](property/TrackableProperty.md)<?>> __getDataContext__()</span>
 
 
 

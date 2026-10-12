@@ -6,12 +6,13 @@
 
 === "All Classes and Interfaces"
 
-    | Class                               | Description |
-    |-------------------------------------|-------------|
-    | [ContentLoader](ContentLoader.md)   |             |
-    | [IOUtils](IOUtils.md)               |             |
-    | [ResourceStream](ResourceStream.md) |             |
-    | [StreamLoader](StreamLoader.md)     |             |
+    | Class                                                 | Description |
+    |-------------------------------------------------------|-------------|
+    | [ContentLoader](ContentLoader.md)                     |             |
+    | [IOUtils](IOUtils.md)                                 |             |
+    | [ResourceProviderFactory](ResourceProviderFactory.md) |             |
+    | [ResourceStream](ResourceStream.md)                   |             |
+    | [StreamLoader](StreamLoader.md)                       |             |
 
 
 === "Interfaces"
@@ -24,9 +25,10 @@
 
 === "Classes"
 
-    | Class                               | Description |
-    |-------------------------------------|-------------|
-    | [IOUtils](IOUtils.md)               |             |
-    | [ResourceStream](ResourceStream.md) |             |
+    | Class                                                 | Description |
+    |-------------------------------------------------------|-------------|
+    | [IOUtils](IOUtils.md)                                 |             |
+    | [ResourceProviderFactory](ResourceProviderFactory.md) |             |
+    | [ResourceStream](ResourceStream.md)                   |             |
 
 

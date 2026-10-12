@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [TabularData](../data/TabularData.md)
 
 Direct Known Subtypes:<br/>
-    [BooleanProperty](BooleanProperty.md), [IntegerProperty](IntegerProperty.md), [NumberProperty](NumberProperty.md), [StringProperty](StringProperty.md), [TrackableProperty](../trackable/property/TrackableProperty.md)
+    [BooleanProperty](BooleanProperty.md), [IntegerProperty](IntegerProperty.md), [NumberProperty](NumberProperty.md), [StringProperty](StringProperty.md), [ArrayProperty](ArrayProperty.md), [TrackableProperty](../trackable/property/TrackableProperty.md)
 
 
 ----

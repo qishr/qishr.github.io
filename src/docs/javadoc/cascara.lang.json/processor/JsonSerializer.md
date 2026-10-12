@@ -29,7 +29,7 @@ Standard implementation for JSON serialization.
 | protected [JsonSerializer](JsonSerializer.md)                                                          | [self](#self)()                                                                                                                                                                                                                           |             |
 | protected [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [serializeKey](#serializekey)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                           |             |
 | public [ContentType](../../cascara.common/util/ContentType.md)                                         | [getContentType](#getcontenttype)()                                                                                                                                                                                                       |             |
-| public [JsonSerializer](JsonSerializer.md)                                                             | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter)                                                                                                                                             |             |
+| public [JsonSerializer](JsonSerializer.md)                                                             | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/report/Reporter.md) reporter)                                                                                                                                      |             |
 | public [JsonSerializer](JsonSerializer.md)                                                             | [setOptions](#setoptions)([LanguageOptions](../../cascara.common/lang/util/LanguageOptions.md)<?> options)                                                                                                                                |             |
 | public [JsonSerializer](JsonSerializer.md)                                                             | [setParser](#setparser)([AstParser](../../cascara.common/lang/processor/AstParser.md)<[JsonNode](../ast/JsonNode.md), ?, ?> parser)                                                                                                       |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)    | [toString](#tostring)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                           |             |
@@ -48,7 +48,7 @@ Standard implementation for JSON serialization.
 
 ### Methods inherited from [AbstractSerializer](../../cascara.common/lang/processor/AbstractSerializer.md)
 
-serializeObject, warn, trace, error, serialize, serializeMap, getTypeDescriptor, getTypeDescriptor, debug, getAllSerializableFields, deserialize, serializeList, warnInaccessible, deserialize, getServiceProperties, report, registerTypeDescriptor, warnInaccessible
+serializeObject, warn, serializeArray, trace, error, serialize, serializeMap, getTypeDescriptor, getTypeDescriptor, debug, getAllSerializableFields, deserialize, setUseProviderFactory, serializeList, warnInaccessible, deserialize, getServiceProperties, report, registerTypeDescriptor, warnInaccessible
 
 
 ## Method Details
@@ -90,7 +90,7 @@ serializeObject, warn, trace, error, serialize, serializeMap, getTypeDescriptor,
 
 ### setReporter
 
-<span style="font-family: monospace; font-size: 80%;">public [JsonSerializer](JsonSerializer.md) __setReporter__([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter)</span>
+<span style="font-family: monospace; font-size: 80%;">public [JsonSerializer](JsonSerializer.md) __setReporter__([Reporter](../../cascara.common/diagnostic/report/Reporter.md) reporter)</span>
 
 
 

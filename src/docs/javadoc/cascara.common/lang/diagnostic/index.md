@@ -9,7 +9,7 @@
     | Class                                           | Description |
     |-------------------------------------------------|-------------|
     | [JsonPointerException](JsonPointerException.md) |             |
-    | [LangDiagnosticCode](LangDiagnosticCode.md)     |             |
+    | [LangMessage](LangMessage.md)                   |             |
     | [ParserException](ParserException.md)           |             |
     | [SerializerException](SerializerException.md)   |             |
     | [TokenizerException](TokenizerException.md)     |             |
@@ -27,8 +27,8 @@
 
 === "Enum Classes"
 
-    | Class                                       | Description |
-    |---------------------------------------------|-------------|
-    | [LangDiagnosticCode](LangDiagnosticCode.md) |             |
+    | Class                         | Description |
+    |-------------------------------|-------------|
+    | [LangMessage](LangMessage.md) |             |
 
 

@@ -15,10 +15,10 @@ public class __TypeDescriptorFactory__<br/>extends [AbstractServiceProviderFacto
 
 ## Constructor Summary
 
-| Constructor                                                                                | Description |
-|--------------------------------------------------------------------------------------------|-------------|
-| TypeDescriptorFactory()                                                                    |             |
-| TypeDescriptorFactory([ServiceProviderLayer](../../service/ServiceProviderLayer.md) layer) |             |
+| Constructor                                              | Description |
+|----------------------------------------------------------|-------------|
+| TypeDescriptorFactory()                                  |             |
+| TypeDescriptorFactory([SPL](../../service/SPL.md) layer) |             |
 
 
 

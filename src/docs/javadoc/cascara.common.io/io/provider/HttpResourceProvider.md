@@ -42,7 +42,7 @@ getServiceProperties
 
 **Throws:**
 
-[LocalizableIOException](../../../cascara.common/diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../../../cascara.common/diagnostic/exception/LocalizableIOException.md)
 
 
 ---

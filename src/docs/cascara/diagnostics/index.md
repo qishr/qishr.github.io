@@ -4,21 +4,21 @@ Cascara uses a unified diagnostic system throughout its architecture — from th
 
 ### Diagnostic Codes
 
-Every problem Cascara can report has a [`DiagnosticCode`](/javadoc/cascara.common/diagnostic/code/DiagnosticCode) — a stable, typed identifier that carries both a machine-readable code string and a human-readable message template. Codes are organised by subsystem:
+Every problem Cascara can report has a [`DiagnosticMessage`](/javadoc/cascara.common/diagnostic/code/DiagnosticMessage) — a stable, typed identifier that carries both a machine-readable code string and a human-readable message template. Codes are organised by subsystem:
 
-- `LangDiagnosticCode` — parser and tokenizer problems
-- `ServiceDiagnosticCode` — service provider layer problems
-- `FileDiagnosticCode`, `HttpDiagnosticCode`, `DnsDiagnosticCode`, `InetDiagnosticCode` — I/O problems
-- `GenericDiagnosticCode` — general-purpose codes
+- `LangMessage` — parser and tokenizer problems
+- `ServiceDiagnosticMessage` — service provider layer problems
+- `FileDiagnosticMessage`, `HttpDiagnosticMessage`, `DnsDiagnosticMessage`, `InetDiagnosticMessage` — I/O problems
+- `GenericMessage` — general-purpose codes
 
-Because codes are typed rather than free-form strings, they can be used for localization, filtering, and documentation lookup without string matching. You can define your own codes for custom modules by implementing `DiagnosticCode`.
+Because codes are typed rather than free-form strings, they can be used for localization, filtering, and documentation lookup without string matching. You can define your own codes for custom modules by implementing `DiagnosticMessage`.
 
 ### Diagnostic
 
 A `Diagnostic` is the unit of information produced when something noteworthy happens. It captures:
 
 - The severity level (`ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`)
-- A formatted message, resolved from the `DiagnosticCode` and any detail arguments
+- A formatted message, resolved from the `DiagnosticMessage` and any detail arguments
 - Source location, when available — URI, line, column, and character offsets
 - The subsystem that produced it
 - The thread name and timestamp at the moment it was created
@@ -34,7 +34,7 @@ Cascara provides four implementations out of the box:
 
 **`NoOpReporter`** silently discards all diagnostics. Useful as a default when you don't care about internal events, or as a placeholder during testing.
 
-**`StandardReporter`** writes formatted diagnostics to `System.out` / `System.err`, with source location included when available. Suitable for command-line tools and simple applications.
+**`LocalReporter`** writes formatted diagnostics to `System.out` / `System.err`, with source location included when available. Suitable for command-line tools and simple applications.
 
 **`GlobalReporter`** is a singleton reporter with per-class instances that all delegate to a single global configuration. Useful when you want consistent diagnostic output across a large application without threading a `Reporter` instance through every call site:
 
@@ -54,7 +54,7 @@ reporter.setDiagnosticCollector(diagnostic -> {
 
 ### Localizable Exceptions
 
-When a component has no reporter and encounters a fatal problem, it throws a `LocalizableException` (checked) or `LocalizableRuntimeException` (unchecked). Both carry a `DiagnosticCode` rather than a raw string, so their messages can be localized. Error messages are formatted in English by default — to provide localized messages, implement [`DiagnosticLocalizer`](/javadoc/cascara.common/diagnostic/DiagnosticLocalizer) and install it via `LocalizableException.setLocalizer()` and `LocalizableRuntimeException.setLocalizer()`.
+When a component has no reporter and encounters a fatal problem, it throws a `LocalizableException` (checked) or `LocalizableRuntimeException` (unchecked). Both carry a `DiagnosticMessage` rather than a raw string, so their messages can be localized. Error messages are formatted in English by default — to provide localized messages, implement [`DiagnosticLocalizer`](/javadoc/cascara.common/diagnostic/DiagnosticLocalizer) and install it via `LocalizableException.setLocalizer()` and `LocalizableRuntimeException.setLocalizer()`.
 
 `LocatableException` extends `LocalizableRuntimeException` for parser errors that can be pinpointed to a specific line and column in the source input.
 

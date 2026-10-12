@@ -43,7 +43,7 @@ create, getInputStream, addFile, addFile, listFiles, addDirectory, listFiles, wa
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---

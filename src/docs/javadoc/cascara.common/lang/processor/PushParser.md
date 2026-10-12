@@ -21,7 +21,7 @@ public interface __PushParser__</span>
 
 | Modifier and Type    | Method                                                                                                                                                                                 | Description                                                                                                                   |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| public abstract void | [parse](#parse)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) input, [StreamHandler](../streaming/StreamHandler.md)<?> handler) | Eagerly drives the input stream to completion, passing every structural event encountered directly to the registered handler. |
+| public abstract void | [parse](#parse)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) input, [StreamHandler](../streaming/StreamHandler.md)<E> handler) | Eagerly drives the input stream to completion, passing every structural event encountered directly to the registered handler. |
 
 
 
@@ -29,7 +29,7 @@ public interface __PushParser__</span>
 
 ### parse
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __parse__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) input, [StreamHandler](../streaming/StreamHandler.md)<?> handler)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __parse__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) input, [StreamHandler](../streaming/StreamHandler.md)<E> handler)</span>
 
 Eagerly drives the input stream to completion, passing every
 structural event encountered directly to the registered handler.

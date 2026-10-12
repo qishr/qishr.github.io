@@ -20,11 +20,11 @@ Package [io.github.qishr.cascara.lang.yaml.util](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                | Method                                                                                        | Description                                                                                                                        |
-|--------------------------------------------------|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| public [YamlAliasResolver](YamlAliasResolver.md) | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter) |                                                                                                                                    |
-| public [YamlNode](../ast/YamlNode.md)            | [resolve](#resolve)([YamlNode](../ast/YamlNode.md) root)                                      | Traverses the document to collect all anchors, then replaces all YamlAlias nodes with their dereferenced target nodes.             |
-| public [YamlStream](../ast/YamlStream.md)        | [resolve](#resolve)([YamlStream](../ast/YamlStream.md) stream)                                | Resolves aliases across all documents in a stream, maintaining a single anchor mapping table across document boundaries if needed. |
+| Modifier and Type                                | Method                                                                                               | Description                                                                                                                        |
+|--------------------------------------------------|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| public [YamlAliasResolver](YamlAliasResolver.md) | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/report/Reporter.md) reporter) |                                                                                                                                    |
+| public [YamlNode](../ast/YamlNode.md)            | [resolve](#resolve)([YamlNode](../ast/YamlNode.md) root)                                             | Traverses the document to collect all anchors, then replaces all YamlAlias nodes with their dereferenced target nodes.             |
+| public [YamlStream](../ast/YamlStream.md)        | [resolve](#resolve)([YamlStream](../ast/YamlStream.md) stream)                                       | Resolves aliases across all documents in a stream, maintaining a single anchor mapping table across document boundaries if needed. |
 
 
 
@@ -32,7 +32,7 @@ Package [io.github.qishr.cascara.lang.yaml.util](index.md)
 
 ### setReporter
 
-<span style="font-family: monospace; font-size: 80%;">public [YamlAliasResolver](YamlAliasResolver.md) __setReporter__([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter)</span>
+<span style="font-family: monospace; font-size: 80%;">public [YamlAliasResolver](YamlAliasResolver.md) __setReporter__([Reporter](../../cascara.common/diagnostic/report/Reporter.md) reporter)</span>
 
 
 

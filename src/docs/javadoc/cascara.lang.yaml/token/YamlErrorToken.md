@@ -14,9 +14,9 @@ Package [io.github.qishr.cascara.lang.yaml.token](index.md)
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                             | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| YamlErrorToken(int line, int column, int offset, [DiagnosticCode](../../cascara.common/diagnostic/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
+| Constructor                                                                                                                                                                                                                                      | Description |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| YamlErrorToken(int line, int column, int offset, [DiagnosticMessage](../../cascara.common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
 
 
 
@@ -24,7 +24,7 @@ Package [io.github.qishr.cascara.lang.yaml.token](index.md)
 
 | Modifier and Type                                                                                     | Method                      | Description |
 |-------------------------------------------------------------------------------------------------------|-----------------------------|-------------|
-| public [DiagnosticCode](../../cascara.common/diagnostic/code/DiagnosticCode.md)                       | [getCode](#getcode)()       |             |
+| public [DiagnosticMessage](../../cascara.common/diagnostic/message/DiagnosticMessage.md)              | [getCode](#getcode)()       |             |
 | public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] | [getDetails](#getdetails)() |             |
 | public [YamlTokenType](YamlTokenType.md)                                                              | [getType](#gettype)()       |             |
 
@@ -38,7 +38,7 @@ getOffset, setFollowedByTab, getLexeme, toString, setHasPreceedingNewLine, getSt
 
 ### getCode
 
-<span style="font-family: monospace; font-size: 80%;">public [DiagnosticCode](../../cascara.common/diagnostic/code/DiagnosticCode.md) __getCode__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [DiagnosticMessage](../../cascara.common/diagnostic/message/DiagnosticMessage.md) __getCode__()</span>
 
 
 

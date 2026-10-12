@@ -40,6 +40,7 @@ All Implemented Interfaces:<br/>
 | public [PlainMapNode](PlainMapNode.md)                                                                                                             | [put](#put)([PlainNode](PlainNode.md) key, [PlainNode](PlainNode.md) value)                                                                                                                                       |                           |
 | public [PlainMapNode](PlainMapNode.md)                                                                                                             | [remove](#remove)([PlainNode](PlainNode.md) key)                                                                                                                                                                  |                           |
 | public [PlainMapNode](PlainMapNode.md)                                                                                                             | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value) |                           |
+| public [PlainMapNode](PlainMapNode.md)                                                                                                             | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [Number](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Number.html) value) |                           |
 | public [PlainMapNode](PlainMapNode.md)                                                                                                             | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [PlainNode](PlainNode.md) value)                                                                    |                           |
 | public [PlainMapNode](PlainMapNode.md)                                                                                                             | [remove](#remove)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                               |                           |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[PlainMapEntryNode](PlainMapEntryNode.md)>         | [getChildren](#getchildren)()                                                                                                                                                                                     |                           |
@@ -220,6 +221,15 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 
 ### put
 
+<span style="font-family: monospace; font-size: 80%;">public [PlainMapNode](PlainMapNode.md) __put__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [Number](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Number.html) value)</span>
+
+
+
+
+---
+
+### put
+
 <span style="font-family: monospace; font-size: 80%;">public [PlainMapNode](PlainMapNode.md) __put__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [PlainNode](PlainNode.md) value)</span>
 
 
@@ -264,7 +274,8 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 
 ### getMap
 
-<span style="font-family: monospace; font-size: 80%;">public [PlainMapNode](PlainMapNode.md) __getMap__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+public [PlainMapNode](PlainMapNode.md) __getMap__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 
@@ -277,7 +288,8 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 
 ### getSequence
 
-<span style="font-family: monospace; font-size: 80%;">public [PlainSequenceNode](PlainSequenceNode.md) __getSequence__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+public [PlainSequenceNode](PlainSequenceNode.md) __getSequence__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 

@@ -24,12 +24,13 @@ user preferences should reference ContentType.
 
 ## Field Summary
 
-| Modifier and Type      | Field                       | Description |
-|------------------------|-----------------------------|-------------|
-| protected String       | [canonicalId](#canonicalid) |             |
-| protected List<String> | [mimeTypes](#mimetypes)     |             |
-| protected String       | [name](#name)               |             |
-| protected List<String> | [suffixes](#suffixes)       |             |
+| Modifier and Type                                                                                                | Field                       | Description                        |
+|------------------------------------------------------------------------------------------------------------------|-----------------------------|------------------------------------|
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [SCHEMA](#schema)           |                                    |
+| protected String                                                                                                 | [canonicalId](#canonicalid) | Unique ID, used for menu items etc |
+| protected List<String>                                                                                           | [mimeTypes](#mimetypes)     |                                    |
+| protected String                                                                                                 | [name](#name)               |                                    |
+| protected List<String>                                                                                           | [suffixes](#suffixes)       |                                    |
 
 
 
@@ -67,20 +68,33 @@ user preferences should reference ContentType.
 
 ## Field Details
 
+### SCHEMA
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __SCHEMA__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../constant-values.md)
+
+
+
+---
+
 ### canonicalId
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.DataField<br/>
-protected String __canonicalId__</span>
+<span style="font-family: monospace; font-size: 80%;">protected String __canonicalId__</span>
 
-
+Unique ID, used for menu items etc
 
 
 ---
 
 ### mimeTypes
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.DataField<br/>
-protected List<String> __mimeTypes__</span>
+<span style="font-family: monospace; font-size: 80%;">protected List<String> __mimeTypes__</span>
 
 
 
@@ -89,8 +103,7 @@ protected List<String> __mimeTypes__</span>
 
 ### name
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.DataField<br/>
-protected String __name__</span>
+<span style="font-family: monospace; font-size: 80%;">protected String __name__</span>
 
 
 
@@ -99,8 +112,7 @@ protected String __name__</span>
 
 ### suffixes
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.DataField<br/>
-protected List<String> __suffixes__</span>
+<span style="font-family: monospace; font-size: 80%;">protected List<String> __suffixes__</span>
 
 
 

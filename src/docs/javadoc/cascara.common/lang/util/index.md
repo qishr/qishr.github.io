@@ -8,13 +8,11 @@ Language-agnostic lexing, parsing, emitting, serializing, and schema APIs.
 
     | Class                                                 | Description                                                                   |
     |-------------------------------------------------------|-------------------------------------------------------------------------------|
-    | [AstNodeFactory](AstNodeFactory.md)                   |                                                                               |
     | [AstTreeData](AstTreeData.md)                         |                                                                               |
     | [AstVisitor](AstVisitor.md)                           | Defines a visitor pattern interface for traversing the Cascara AST hierarchy. |
     | [LanguageOptions](LanguageOptions.md)                 | Base class for all language-specific configuration.                           |
     | [LexemeProvider](LexemeProvider.md)                   |                                                                               |
     | [PathExpression](PathExpression.md)                   |                                                                               |
-    | [ProcessorFactory](ProcessorFactory.md)               |                                                                               |
     | [QuoteStyle](QuoteStyle.md)                           |                                                                               |
     | [SemanticDiff](SemanticDiff.md)                       |                                                                               |
     | [SourceBuffer](SourceBuffer.md)                       |                                                                               |
@@ -27,7 +25,6 @@ Language-agnostic lexing, parsing, emitting, serializing, and schema APIs.
 
     | Class                               | Description                                                                   |
     |-------------------------------------|-------------------------------------------------------------------------------|
-    | [AstNodeFactory](AstNodeFactory.md) |                                                                               |
     | [AstVisitor](AstVisitor.md)         | Defines a visitor pattern interface for traversing the Cascara AST hierarchy. |
     | [LexemeProvider](LexemeProvider.md) |                                                                               |
     | [PathExpression](PathExpression.md) |                                                                               |
@@ -40,7 +37,6 @@ Language-agnostic lexing, parsing, emitting, serializing, and schema APIs.
     |-------------------------------------------------------|-----------------------------------------------------|
     | [AstTreeData](AstTreeData.md)                         |                                                     |
     | [LanguageOptions](LanguageOptions.md)                 | Base class for all language-specific configuration. |
-    | [ProcessorFactory](ProcessorFactory.md)               |                                                     |
     | [SemanticDiff](SemanticDiff.md)                       |                                                     |
     | [SourceBufferOptions](SourceBufferOptions.md)         |                                                     |
     | [SourceInputStreamBuffer](SourceInputStreamBuffer.md) |                                                     |

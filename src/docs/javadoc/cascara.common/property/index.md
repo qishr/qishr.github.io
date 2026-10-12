@@ -8,6 +8,7 @@
 
     | Class                                 | Description |
     |---------------------------------------|-------------|
+    | [ArrayProperty](ArrayProperty.md)     |             |
     | [BooleanProperty](BooleanProperty.md) |             |
     | [IntegerProperty](IntegerProperty.md) |             |
     | [NumberProperty](NumberProperty.md)   |             |
@@ -20,6 +21,7 @@
 
     | Class                                 | Description |
     |---------------------------------------|-------------|
+    | [ArrayProperty](ArrayProperty.md)     |             |
     | [BooleanProperty](BooleanProperty.md) |             |
     | [IntegerProperty](IntegerProperty.md) |             |
     | [NumberProperty](NumberProperty.md)   |             |

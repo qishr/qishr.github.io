@@ -15,14 +15,14 @@ up to date examples
 
 The `ServiceProviderLayer` (SPL) architecture facilitates service discovery mirroring the natural hierarchy an application. It provides a Scoped Dependency Injection framework that respects module boundaries while allowing for global defaults.
 
-## Discovery 
+## Discovery
 
-`ServiceProviderLayer`'s `findProviders` method starts at the caller's layer and works its way outward, a module can provide its own specialized service providers for a specific content type or schema type. 
+`ServiceProviderLayer`'s `findProviders` method starts at the caller's layer and works its way outward, a module can provide its own specialized service providers for a specific content type or schema type.
 
 ### Most Relevant Providers
 
-- If the module has a custom renderer for `text/markdown`, it will find that first. 
-- It only falls back to the root layer, and defaults like `cascara.ui`, if it doesn't find a local specialty. 
+- If the module has a custom renderer for `text/markdown`, it will find that first.
+- It only falls back to the root layer, and defaults like `cascara.ui`, if it doesn't find a local specialty.
 
 This allows for local specialization without the need for complex configuration files or global "if-else" logic.
 
@@ -36,8 +36,8 @@ Layers support private/public encapsulation, allowing for modules to load their 
 
 In *Cascara Studio*, automatic removal of layers when a module is unloaded prevent discovery of services that no longer exist.
 
-- Initially, there is the root layer. 
-- Each *Cascara Studio* extension module gets a layer created for it as it is loaded. 
+- Initially, there is the root layer.
+- Each *Cascara Studio* extension module gets a layer created for it as it is loaded.
 - Layers created for extension modules are removed if the module is unloaded.
 - A layer is also created for `cascara.ui`, which contains a set of default providers for UI rendering.
 - These layers are public, allowing any code to use the services provided.
@@ -73,18 +73,6 @@ The `ServiceProviderFactory` class provides convenient methods to insantiate pro
 Example usage:
 
 ```java
-public class Importer {
-    public void importData(String text) {
-
-        ServiceProviderFactory spf = new ServiceProviderFactory();
-
-        Parser<?,?> parser = spf.createParser("text/yaml");
-
-        if (parser.parse(text) instanceof SequenceAstNode seq) {
-            for (AstNode node : seq.getChildren()) {
-                System.out.println(node.toString());
-            }
-        }
-    }
-}
+--8<-- "examples/spl/NeoSingletonFromFactory.java"
 ```
+

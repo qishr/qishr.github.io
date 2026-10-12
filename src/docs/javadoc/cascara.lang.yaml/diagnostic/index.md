@@ -9,7 +9,7 @@
     | Class                                               | Description |
     |-----------------------------------------------------|-------------|
     | [YamlConverterException](YamlConverterException.md) |             |
-    | [YamlDiagnosticCode](YamlDiagnosticCode.md)         |             |
+    | [YamlDiagnosticMessage](YamlDiagnosticMessage.md)   |             |
     | [YamlEmitterException](YamlEmitterException.md)     |             |
     | [YamlParserException](YamlParserException.md)       |             |
 
@@ -25,8 +25,8 @@
 
 === "Enum Classes"
 
-    | Class                                       | Description |
-    |---------------------------------------------|-------------|
-    | [YamlDiagnosticCode](YamlDiagnosticCode.md) |             |
+    | Class                                             | Description |
+    |---------------------------------------------------|-------------|
+    | [YamlDiagnosticMessage](YamlDiagnosticMessage.md) |             |
 
 

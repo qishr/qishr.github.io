@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.ui.schema](index.md)
         io.github.qishr.cascara.ui.schema.UiTypeAnalyzer<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [TypeAnalyzer](../cascara.schema/util/TypeAnalyzer.md)
+    [TypeAnalyzer](../../cascara.schema/util/TypeAnalyzer.md)
 
 
 ----
@@ -40,7 +40,7 @@ All Implemented Interfaces:<br/>
 
 **Specified By:**
 
-[TypeAnalyzer](../cascara.schema/util/TypeAnalyzer.md)
+[TypeAnalyzer](../../cascara.schema/util/TypeAnalyzer.md)
 
 
 ---
@@ -53,7 +53,7 @@ All Implemented Interfaces:<br/>
 
 **Specified By:**
 
-[TypeAnalyzer](../cascara.schema/util/TypeAnalyzer.md)
+[TypeAnalyzer](../../cascara.schema/util/TypeAnalyzer.md)
 
 
 ---

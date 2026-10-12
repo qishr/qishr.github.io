@@ -2,7 +2,7 @@ Package [io.github.qishr.cascara.lang.json.processor](index.md)
 
 # Class JsonConverter
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [io.github.qishr.cascara.lang.json.processor.AbstractJsonProcessor](AbstractJsonProcessor.md)<[io.github.qishr.cascara.lang.json.processor.JsonConverter](JsonConverter.md)><br/>
+        [io.github.qishr.cascara.lang.json.internal.AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html)<[io.github.qishr.cascara.lang.json.processor.JsonConverter](JsonConverter.md)><br/>
                 io.github.qishr.cascara.lang.json.processor.JsonConverter<br/>
 <br/>
 All Implemented Interfaces:<br/>
@@ -11,7 +11,7 @@ All Implemented Interfaces:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __JsonConverter__<br/>extends [AbstractJsonProcessor](AbstractJsonProcessor.md)<[JsonConverter](JsonConverter.md)>
+<span style="font-family: monospace; font-size: 80%;">public class __JsonConverter__<br/>extends [AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html)<[JsonConverter](JsonConverter.md)>
 </span>
 
 
@@ -33,10 +33,6 @@ All Implemented Interfaces:<br/>
 | public [JsonNode](../ast/JsonNode.md)                                                               | [fromAst](#fromast)([AstNode](../../cascara.common/lang/ast/AstNode.md) from)  |             |
 
 
-### Methods inherited from [AbstractJsonProcessor](AbstractJsonProcessor.md)
-
-setReporter, getOptions, getServiceProperties, getVersion, getReporter, setOptions, getTextResource
-
 
 ## Method Details
 
@@ -45,10 +41,6 @@ setReporter, getOptions, getServiceProperties, getVersion, getReporter, setOptio
 <span style="font-family: monospace; font-size: 80%;">protected [JsonConverter](JsonConverter.md) __self__()</span>
 
 
-
-**Overrides:**
-
-[AbstractJsonProcessor](../cascara.lang.json/processor/AbstractJsonProcessor.md#self)
 
 
 ---
@@ -61,7 +53,7 @@ setReporter, getOptions, getServiceProperties, getVersion, getReporter, setOptio
 
 **Overrides:**
 
-[AbstractJsonProcessor](../cascara.lang.json/processor/AbstractJsonProcessor.md#getcontenttype)
+[AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html#getcontenttype)
 
 
 ---

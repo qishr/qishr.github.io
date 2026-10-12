@@ -5,22 +5,22 @@ Package [io.github.qishr.cascara.common.content.type](index.md)
         [java.lang.Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html)<br/>
                 [java.lang.Exception](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Exception.html)<br/>
                         [java.lang.RuntimeException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/RuntimeException.html)<br/>
-                                [io.github.qishr.cascara.common.diagnostic.LocalizableRuntimeException](../../../cascara.common/diagnostic/LocalizableRuntimeException.md)<br/>
+                                [io.github.qishr.cascara.common.diagnostic.exception.LocalizableRuntimeException](../../../cascara.common/diagnostic/exception/LocalizableRuntimeException.md)<br/>
                                         io.github.qishr.cascara.common.content.type.ContentTypeException<br/>
 <br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __ContentTypeException__<br/>extends [LocalizableRuntimeException](../../../cascara.common/diagnostic/LocalizableRuntimeException.md)
+<span style="font-family: monospace; font-size: 80%;">public class __ContentTypeException__<br/>extends [LocalizableRuntimeException](../../../cascara.common/diagnostic/exception/LocalizableRuntimeException.md)
 </span>
 
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                                                                              | Description |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| ContentTypeException([DiagnosticCode](../../../cascara.common/diagnostic/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           |             |
-| ContentTypeException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](../../../cascara.common/diagnostic/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
+| Constructor                                                                                                                                                                                                                                                                                                                       | Description |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| ContentTypeException([DiagnosticMessage](../../../cascara.common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           |             |
+| ContentTypeException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticMessage](../../../cascara.common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
 
 
 
@@ -31,9 +31,9 @@ Package [io.github.qishr.cascara.common.content.type](index.md)
 | public [ContentType](../../../cascara.common/util/ContentType.md) | [getContentType](#getcontenttype)() |             |
 
 
-### Methods inherited from [LocalizableRuntimeException](../../../cascara.common/diagnostic/LocalizableRuntimeException.md)
+### Methods inherited from [LocalizableRuntimeException](../../../cascara.common/diagnostic/exception/LocalizableRuntimeException.md)
 
-getCode, getLocalizedMessage, getDetails
+getDiagnosticMessage, getLocalizedMessage, getDetails
 
 
 ## Method Details

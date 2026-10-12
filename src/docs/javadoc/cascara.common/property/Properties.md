@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.property](index.md)
         io.github.qishr.cascara.common.property.Properties<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [TabularData](../data/TabularData.md), [Duplicable](../util/Duplicable.md)<[Properties](Properties.md)>
+    [TabularData](../data/TabularData.md), [Duplicable](../util/Duplicable.md)<[Properties](Properties.md)>, [Iterable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Iterable.html)<[Property](Property.md)<?>>
 
 Direct Known Subtypes:<br/>
     [JarManifest](../util/JarManifest.md)
@@ -38,7 +38,7 @@ Direct Known Subtypes:<br/>
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | public boolean                                                                                                                                                                                                                                                                            | [containsKey](#containskey)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) k)                                                                                                           |                                 |
 | public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)> | [getValuesMap](#getvaluesmap)()                                                                                                                                                                                                       |                                 |
-| public java.util.List<io.github.qishr.cascara.common.property.Property<?>                                                                                                                                                                                                                 | [asList](#aslist)()                                                                                                                                                                                                                   |                                 |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Property](Property.md)<?>>                                                                                                                                                               | [asList](#aslist)()                                                                                                                                                                                                                   |                                 |
 | public [Property](Property.md)<T>                                                                                                                                                                                                                                                         | [getProperty](#getproperty)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                        |                                 |
 | public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)                                                                                                                                                                                       | [getValue](#getvalue)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                              |                                 |
 | public T                                                                                                                                                                                                                                                                                  | [get](#get)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                                        |                                 |
@@ -54,8 +54,9 @@ Direct Known Subtypes:<br/>
 | public [Properties](Properties.md)                                                                                                                                                                                                                                                        | [set](#set)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) k, double v)                                                                                                                 |                                 |
 | public [Properties](Properties.md)                                                                                                                                                                                                                                                        | [set](#set)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) k, int v)                                                                                                                    |                                 |
 | public [Properties](Properties.md)                                                                                                                                                                                                                                                        | [set](#set)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) k, boolean v)                                                                                                                |                                 |
-| public void                                                                                                                                                                                                                                                                               | [addAll](#addall)([Properties](Properties.md) properties)                                                                                                                                                                             |                                 |
-| public void                                                                                                                                                                                                                                                                               | [add](#add)([Property](Property.md)<?> property)                                                                                                                                                                                      |                                 |
+| public [Properties](Properties.md)                                                                                                                                                                                                                                                        | [addAll](#addall)([Properties](Properties.md) properties)                                                                                                                                                                             |                                 |
+| public [Properties](Properties.md)                                                                                                                                                                                                                                                        | [add](#add)([Property](Property.md)<?> property)                                                                                                                                                                                      |                                 |
+| public [Properties](Properties.md)                                                                                                                                                                                                                                                        | [add](#add)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value)                    |                                 |
 | public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]                                                                                                                                                                                     | [getValues](#getvalues)()                                                                                                                                                                                                             |                                 |
 | public void                                                                                                                                                                                                                                                                               | [remove](#remove)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) k)                                                                                                                     |                                 |
 | public void                                                                                                                                                                                                                                                                               | [remove](#remove)([Property](Property.md)<?> property)                                                                                                                                                                                |                                 |
@@ -63,6 +64,8 @@ Direct Known Subtypes:<br/>
 | public boolean                                                                                                                                                                                                                                                                            | [isEmpty](#isempty)()                                                                                                                                                                                                                 |                                 |
 | public [Properties](Properties.md)                                                                                                                                                                                                                                                        | [duplicate](#duplicate)()                                                                                                                                                                                                             |                                 |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [toString](#tostring)()                                                                                                                                                                                                               |                                 |
+| public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<[Property](Property.md)<?>>                                                                                                                                                       | [iterator](#iterator)()                                                                                                                                                                                                               | Returns Iterator instance       |
+| public static [Properties](Properties.md)                                                                                                                                                                                                                                                 | [fromSystemProperties](#fromsystemproperties)()                                                                                                                                                                                       |                                 |
 | public static [Properties](Properties.md)                                                                                                                                                                                                                                                 | [parse](#parse)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                                                                                                    |                                 |
 | public static [Properties](Properties.md)                                                                                                                                                                                                                                                 | [load](#load)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) path)                                                                                                                      |                                 |
 
@@ -94,7 +97,7 @@ Direct Known Subtypes:<br/>
 
 ### asList
 
-<span style="font-family: monospace; font-size: 80%;">public java.util.List<io.github.qishr.cascara.common.property.Property<?> __asList__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Property](Property.md)<?>> __asList__()</span>
 
 
 
@@ -249,7 +252,7 @@ For consistency with JSONSchema
 
 ### addAll
 
-<span style="font-family: monospace; font-size: 80%;">public void __addAll__([Properties](Properties.md) properties)</span>
+<span style="font-family: monospace; font-size: 80%;">public [Properties](Properties.md) __addAll__([Properties](Properties.md) properties)</span>
 
 
 
@@ -258,7 +261,16 @@ For consistency with JSONSchema
 
 ### add
 
-<span style="font-family: monospace; font-size: 80%;">public void __add__([Property](Property.md)<?> property)</span>
+<span style="font-family: monospace; font-size: 80%;">public [Properties](Properties.md) __add__([Property](Property.md)<?> property)</span>
+
+
+
+
+---
+
+### add
+
+<span style="font-family: monospace; font-size: 80%;">public [Properties](Properties.md) __add__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value)</span>
 
 
 
@@ -340,6 +352,28 @@ For consistency with JSONSchema
 
 ---
 
+### iterator
+
+<span style="font-family: monospace; font-size: 80%;">public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<[Property](Property.md)<?>> __iterator__()</span>
+
+Returns Iterator instance
+
+**Specified By:**
+
+[Iterable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Iterable.html)
+
+
+---
+
+### fromSystemProperties
+
+<span style="font-family: monospace; font-size: 80%;">public static [Properties](Properties.md) __fromSystemProperties__()</span>
+
+
+
+
+---
+
 ### parse
 
 <span style="font-family: monospace; font-size: 80%;">public static [Properties](Properties.md) __parse__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)</span>
@@ -357,7 +391,7 @@ For consistency with JSONSchema
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---

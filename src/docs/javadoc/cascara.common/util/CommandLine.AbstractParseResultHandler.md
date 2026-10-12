@@ -2,7 +2,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 # Class AbstractParseResultHandler
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        io.github.qishr.cascara.common.util.CommandLine.AbstractHandler<br/>
+        [io.github.qishr.cascara.common.util.CommandLine.AbstractHandler](CommandLine.AbstractHandler.md)<R, [io.github.qishr.cascara.common.util.CommandLine.AbstractParseResultHandler](CommandLine.AbstractParseResultHandler.md)<R>><br/>
                 io.github.qishr.cascara.common.util.CommandLine.AbstractParseResultHandler<br/>
 <br/>
 All Implemented Interfaces:<br/>
@@ -11,10 +11,13 @@ All Implemented Interfaces:<br/>
 Enclosing Class:<br/>
     [io.github.qishr.cascara.common.util.CommandLine](CommandLine.md)
 
+Direct Known Subtypes:<br/>
+    [RunFirst](CommandLine.RunFirst.md), [RunLast](CommandLine.RunLast.md), [RunAll](CommandLine.RunAll.md)
+
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public static abstract class __AbstractParseResultHandler__<br/>extends io.github.qishr.cascara.common.util.CommandLine.AbstractHandler
+<span style="font-family: monospace; font-size: 80%;">public static abstract class __AbstractParseResultHandler__<br/>extends [AbstractHandler](CommandLine.AbstractHandler.md)<R, [AbstractParseResultHandler](CommandLine.AbstractParseResultHandler.md)<R>>
 </span>
 
 Command line parse result handler that returns a value.This handler prints help if requested, and otherwise calls

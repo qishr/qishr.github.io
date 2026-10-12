@@ -20,10 +20,10 @@ Package [io.github.qishr.cascara.lang.yaml.processor](index.md)
 
 ## Method Summary
 
-| Modifier and Type                          | Method                                                                                        | Description |
-|--------------------------------------------|-----------------------------------------------------------------------------------------------|-------------|
-| public [YamlNormalizer](YamlNormalizer.md) | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter) |             |
-| public [YamlNode](../ast/YamlNode.md)      | [normalize](#normalize)([YamlNode](../ast/YamlNode.md) node)                                  |             |
+| Modifier and Type                          | Method                                                                                               | Description |
+|--------------------------------------------|------------------------------------------------------------------------------------------------------|-------------|
+| public [YamlNormalizer](YamlNormalizer.md) | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/report/Reporter.md) reporter) |             |
+| public [YamlNode](../ast/YamlNode.md)      | [normalize](#normalize)([YamlNode](../ast/YamlNode.md) node)                                         |             |
 
 
 
@@ -31,7 +31,7 @@ Package [io.github.qishr.cascara.lang.yaml.processor](index.md)
 
 ### setReporter
 
-<span style="font-family: monospace; font-size: 80%;">public [YamlNormalizer](YamlNormalizer.md) __setReporter__([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter)</span>
+<span style="font-family: monospace; font-size: 80%;">public [YamlNormalizer](YamlNormalizer.md) __setReporter__([Reporter](../../cascara.common/diagnostic/report/Reporter.md) reporter)</span>
 
 
 

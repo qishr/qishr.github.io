@@ -13,25 +13,15 @@ All Implemented Interfaces:<br/>
 <span style="font-family: monospace; font-size: 80%;">public class __ContentTypeStore__</span>
 
 
-## Constructor Summary
-
-| Constructor        | Description |
-|--------------------|-------------|
-| ContentTypeStore() |             |
-
-
-
 ## Method Summary
 
 | Modifier and Type                                                                                                                                           | Method                                                                                                                                                                                                                     | Description |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [Properties](../../../cascara.common/property/Properties.md)                                                                                         | [getServiceProperties](#getserviceproperties)()                                                                                                                                                                            |             |
-| public static [ContentTypeStore](ContentTypeStore.md)                                                                                                       | [instance](#instance)()                                                                                                                                                                                                    |             |
-| public void                                                                                                                                                 | [setReporter](#setreporter)([Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter)                                                                                                                           |             |
+| public void                                                                                                                                                 | [setReporter](#setreporter)([Reporter](../../../cascara.common/diagnostic/report/Reporter.md) reporter)                                                                                                                    |             |
+| public [ContentType](../../../cascara.common/util/ContentType.md)                                                                                           | [resolve](#resolve)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) type)                                                                                                     |             |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ContentType](../../../cascara.common/util/ContentType.md)> | [getAll](#getall)()                                                                                                                                                                                                        |             |
 | public void                                                                                                                                                 | [addAll](#addall)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [ContentType](../../../cascara.common/util/ContentType.md)> contentTypes)                             |             |
 | public void                                                                                                                                                 | [add](#add)([ContentType](../../../cascara.common/util/ContentType.md) contentType)                                                                                                                                        |             |
-| public [ContentType](../../../cascara.common/util/ContentType.md)                                                                                           | [resolve](#resolve)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) type)                                                                                                     |             |
 | public void                                                                                                                                                 | [reconcile](#reconcile)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[MergedContentType](MergedContentType.md)> types, [ContentTypeRegistry](ContentTypeRegistry.md) registry) |             |
 | public void                                                                                                                                                 | [debugOutputTypes](#debugoutputtypes)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ContentType](../../../cascara.common/util/ContentType.md)> types)                          |             |
 
@@ -39,29 +29,24 @@ All Implemented Interfaces:<br/>
 
 ## Method Details
 
-### getServiceProperties
-
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../../cascara.common/property/Properties.md) __getServiceProperties__()</span>
-
-
-
-
----
-
-### instance
-
-<span style="font-family: monospace; font-size: 80%;">public static [ContentTypeStore](ContentTypeStore.md) __instance__()</span>
-
-
-
-
----
-
 ### setReporter
 
-<span style="font-family: monospace; font-size: 80%;">public void __setReporter__([Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __setReporter__([Reporter](../../../cascara.common/diagnostic/report/Reporter.md) reporter)</span>
 
 
+
+
+---
+
+### resolve
+
+<span style="font-family: monospace; font-size: 80%;">public [ContentType](../../../cascara.common/util/ContentType.md) __resolve__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) type)</span>
+
+
+
+**Specified By:**
+
+[ContentTypeResolver](../../../cascara.common/util/ContentTypeResolver.md)
 
 
 ---
@@ -72,9 +57,9 @@ All Implemented Interfaces:<br/>
 
 
 
-**Throws:**
+**Specified By:**
 
-[ContentTypeException](ContentTypeException.md)
+[ContentTypeResolver](../../../cascara.common/util/ContentTypeResolver.md)
 
 
 ---
@@ -95,19 +80,6 @@ All Implemented Interfaces:<br/>
 ### add
 
 <span style="font-family: monospace; font-size: 80%;">public void __add__([ContentType](../../../cascara.common/util/ContentType.md) contentType)</span>
-
-
-
-**Specified By:**
-
-[ContentTypeResolver](../../../cascara.common/util/ContentTypeResolver.md)
-
-
----
-
-### resolve
-
-<span style="font-family: monospace; font-size: 80%;">public [ContentType](../../../cascara.common/util/ContentType.md) __resolve__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) type)</span>
 
 
 

@@ -16,6 +16,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | public static boolean                                                                                                                                                                                | [isFileTimeSupported](#isfiletimesupported)()                                                                                  |                                                                                                                                                                                                                                                 |
 | public static [SemVer](../semver/SemVer.md)                                                                                                                                                          | [getVersion](#getversion)()                                                                                                    |                                                                                                                                                                                                                                                 |
+| public static [SemVer](../semver/SemVer.md)                                                                                                                                                          | [getCommonVersion](#getcommonversion)()                                                                                        |                                                                                                                                                                                                                                                 |
 | public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getHomeEnvVar](#gethomeenvvar)()                                                                                              |                                                                                                                                                                                                                                                 |
 | public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)                                                                                           | [getHomePath](#gethomepath)()                                                                                                  |                                                                                                                                                                                                                                                 |
 | public static void                                                                                                                                                                                   | [setHomePath](#sethomepath)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) path) |                                                                                                                                                                                                                                                 |
@@ -26,7 +27,6 @@ Package [io.github.qishr.cascara.common.util](index.md)
 | public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getInstalledVersions](#getinstalledversions)()                                                                                |                                                                                                                                                                                                                                                 |
 | public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)                                                                                           | [getActiveVersionPath](#getactiveversionpath)()                                                                                |                                                                                                                                                                                                                                                 |
 | public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getActiveVersionString](#getactiveversionstring)()                                                                            |                                                                                                                                                                                                                                                 |
-| public static [SemVer](../semver/SemVer.md)                                                                                                                                                          | [toSemVer](#tosemver)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) version)    |                                                                                                                                                                                                                                                 |
 | public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)                                                                                           | [getSharedPath](#getsharedpath)()                                                                                              |                                                                                                                                                                                                                                                 |
 
 
@@ -45,6 +45,15 @@ Package [io.github.qishr.cascara.common.util](index.md)
 ### getVersion
 
 <span style="font-family: monospace; font-size: 80%;">public static [SemVer](../semver/SemVer.md) __getVersion__()</span>
+
+
+
+
+---
+
+### getCommonVersion
+
+<span style="font-family: monospace; font-size: 80%;">public static [SemVer](../semver/SemVer.md) __getCommonVersion__()</span>
 
 
 
@@ -140,15 +149,6 @@ public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.bas
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
 public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getActiveVersionString__()</span>
-
-
-
-
----
-
-### toSemVer
-
-<span style="font-family: monospace; font-size: 80%;">public static [SemVer](../semver/SemVer.md) __toSemVer__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) version)</span>
 
 
 

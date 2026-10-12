@@ -22,21 +22,21 @@ Package [io.github.qishr.cascara.ui.option](index.md)
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                   | Description |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| EnumOptionProvider([SchemaNode](../../cascara.schema/schema/structure/SchemaNode.md) schema, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) initialStringValue) |             |
-| EnumOptionProvider([SchemaNode](../../cascara.schema/schema/structure/SchemaNode.md) schema, [Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<?> initialValue)        |             |
+| Constructor                                                                                                                                                                                            | Description |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| EnumOptionProvider([SchemaNode](../../cascara.schema/structure/SchemaNode.md) schema, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) initialStringValue) |             |
+| EnumOptionProvider([SchemaNode](../../cascara.schema/structure/SchemaNode.md) schema, [Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<?> initialValue)        |             |
 
 
 
 ## Method Summary
 
-| Modifier and Type                                                                                                    | Method                                                                                                                                                                                                                                                                                                                                                        | Description |
-|----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [Option](Option.md)                                                                                           | [getOption](#getoption)([Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<?> enumValue)                                                                                                                                                                                                                                |             |
-| public static [Option](Option.md)                                                                                    | [populateEnumOptions](#populateenumoptions)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Option](Option.md)> options, [SchemaNode](../../cascara.schema/schema/structure/SchemaNode.md) schema, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) initialValueString) |             |
-| public [Option](Option.md)                                                                                           | [getActiveOption](#getactiveoption)(java.util.Map contextData, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) parameter)                                                                                                                                                                                        |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Option](Option.md)> | [getOptions](#getoptions)(java.util.Map contextData, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) parameter)                                                                                                                                                                                                  |             |
+| Modifier and Type                                                                                                    | Method                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Description |
+|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [Option](Option.md)                                                                                           | [getOption](#getoption)([Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<?> enumValue)                                                                                                                                                                                                                                                                                                                                               |             |
+| public static [Option](Option.md)                                                                                    | [populateEnumOptions](#populateenumoptions)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Option](Option.md)> options, [SchemaNode](../../cascara.schema/structure/SchemaNode.md) schema, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) initialValueString)                                                                                                                       |             |
+| public [Option](Option.md)                                                                                           | [getActiveOption](#getactiveoption)([Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Property](https://docs.oracle.com/en/java/java-components/javafx/25/docs/javafx.base/javafx/beans/property/Property.html)<?>> contextData, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) parameter) |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Option](Option.md)> | [getOptions](#getoptions)([Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Property](https://docs.oracle.com/en/java/java-components/javafx/25/docs/javafx.base/javafx/beans/property/Property.html)<?>> contextData, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) parameter)           |             |
 
 
 ### Methods inherited from [AbstractOptionProvider](AbstractOptionProvider.md)
@@ -75,7 +75,7 @@ addListener, getName, getSchemaType, getSchemaFormat, initialize, removeListener
 
 ### populateEnumOptions
 
-<span style="font-family: monospace; font-size: 80%;">public static [Option](Option.md) __populateEnumOptions__([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Option](Option.md)> options, [SchemaNode](../../cascara.schema/schema/structure/SchemaNode.md) schema, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) initialValueString)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [Option](Option.md) __populateEnumOptions__([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Option](Option.md)> options, [SchemaNode](../../cascara.schema/structure/SchemaNode.md) schema, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) initialValueString)</span>
 
 
 
@@ -84,7 +84,7 @@ addListener, getName, getSchemaType, getSchemaFormat, initialize, removeListener
 
 ### getActiveOption
 
-<span style="font-family: monospace; font-size: 80%;">public [Option](Option.md) __getActiveOption__(java.util.Map contextData, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) parameter)</span>
+<span style="font-family: monospace; font-size: 80%;">public [Option](Option.md) __getActiveOption__([Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Property](https://docs.oracle.com/en/java/java-components/javafx/25/docs/javafx.base/javafx/beans/property/Property.html)<?>> contextData, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) parameter)</span>
 
 
 
@@ -93,7 +93,7 @@ addListener, getName, getSchemaType, getSchemaFormat, initialize, removeListener
 
 ### getOptions
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Option](Option.md)> __getOptions__(java.util.Map contextData, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) parameter)</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Option](Option.md)> __getOptions__([Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Property](https://docs.oracle.com/en/java/java-components/javafx/25/docs/javafx.base/javafx/beans/property/Property.html)<?>> contextData, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) parameter)</span>
 
 
 

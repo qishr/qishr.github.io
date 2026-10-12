@@ -6,14 +6,14 @@
 
 === "All Classes and Interfaces"
 
-    | Class                                                     | Description                                                               |
-    |-----------------------------------------------------------|---------------------------------------------------------------------------|
-    | [ContentTypeDiagnosticCode](ContentTypeDiagnosticCode.md) |                                                                           |
-    | [ContentTypeException](ContentTypeException.md)           |                                                                           |
-    | [ContentTypeNormalizer](ContentTypeNormalizer.md)         |                                                                           |
-    | [ContentTypeRegistry](ContentTypeRegistry.md)             |                                                                           |
-    | [ContentTypeStore](ContentTypeStore.md)                   |                                                                           |
-    | [MergedContentType](MergedContentType.md)                 | A runtime\u2011merged content type produced by the ContentTypeNormalizer. |
+    | Class                                             | Description                                                               |
+    |---------------------------------------------------|---------------------------------------------------------------------------|
+    | [ContentTypeException](ContentTypeException.md)   |                                                                           |
+    | [ContentTypeMessage](ContentTypeMessage.md)       |                                                                           |
+    | [ContentTypeNormalizer](ContentTypeNormalizer.md) |                                                                           |
+    | [ContentTypeRegistry](ContentTypeRegistry.md)     |                                                                           |
+    | [ContentTypeStore](ContentTypeStore.md)           |                                                                           |
+    | [MergedContentType](MergedContentType.md)         | A runtime\u2011merged content type produced by the ContentTypeNormalizer. |
 
 
 === "Classes"
@@ -29,8 +29,8 @@
 
 === "Enum Classes"
 
-    | Class                                                     | Description |
-    |-----------------------------------------------------------|-------------|
-    | [ContentTypeDiagnosticCode](ContentTypeDiagnosticCode.md) |             |
+    | Class                                       | Description |
+    |---------------------------------------------|-------------|
+    | [ContentTypeMessage](ContentTypeMessage.md) |             |
 
 

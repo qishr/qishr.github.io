@@ -2,7 +2,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 # Class DefaultExceptionHandler
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        io.github.qishr.cascara.common.util.CommandLine.AbstractHandler<br/>
+        [io.github.qishr.cascara.common.util.CommandLine.AbstractHandler](CommandLine.AbstractHandler.md)<R, [io.github.qishr.cascara.common.util.CommandLine.DefaultExceptionHandler](CommandLine.DefaultExceptionHandler.md)<R>><br/>
                 io.github.qishr.cascara.common.util.CommandLine.DefaultExceptionHandler<br/>
 <br/>
 All Implemented Interfaces:<br/>
@@ -14,7 +14,7 @@ Enclosing Class:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public static class __DefaultExceptionHandler__<br/>extends io.github.qishr.cascara.common.util.CommandLine.AbstractHandler
+<span style="font-family: monospace; font-size: 80%;">public static class __DefaultExceptionHandler__<br/>extends [AbstractHandler](CommandLine.AbstractHandler.md)<R, [DefaultExceptionHandler](CommandLine.DefaultExceptionHandler.md)<R>>
 </span>
 
 Default exception handler that handles invalid user input by printing the exception message, followed by the usage

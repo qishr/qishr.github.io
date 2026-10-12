@@ -9,6 +9,7 @@
     | Class                                   | Description                                                      |
     |-----------------------------------------|------------------------------------------------------------------|
     | [AstNode](AstNode.md)                   |                                                                  |
+    | [AstNodeFactory](AstNodeFactory.md)     |                                                                  |
     | [CommentAstNode](CommentAstNode.md)     |                                                                  |
     | [MapAstNode](MapAstNode.md)             |                                                                  |
     | [MapEntryAstNode](MapEntryAstNode.md)   | Represents the structural pairing of a key and a value in a Map. |
@@ -22,6 +23,7 @@
     | Class                                   | Description                                                      |
     |-----------------------------------------|------------------------------------------------------------------|
     | [AstNode](AstNode.md)                   |                                                                  |
+    | [AstNodeFactory](AstNodeFactory.md)     |                                                                  |
     | [CommentAstNode](CommentAstNode.md)     |                                                                  |
     | [MapAstNode](MapAstNode.md)             |                                                                  |
     | [MapEntryAstNode](MapEntryAstNode.md)   | Represents the structural pairing of a key and a value in a Map. |

@@ -1,0 +1,70 @@
+Package [io.github.qishr.cascara.common.lang.type](index.md)
+
+# Class PathDescriptor
+[java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
+        [io.github.qishr.cascara.common.lang.type.AbstractTypeDescriptor](AbstractTypeDescriptor.md)<[java.nio.file.Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)><br/>
+                [io.github.qishr.cascara.common.lang.type.AbstractScalarDescriptor](AbstractScalarDescriptor.md)<[java.nio.file.Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)><br/>
+                        io.github.qishr.cascara.common.lang.type.PathDescriptor<br/>
+<br/>
+
+----
+
+<span style="font-family: monospace; font-size: 80%;">public class __PathDescriptor__<br/>extends [AbstractScalarDescriptor](AbstractScalarDescriptor.md)<[Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)>
+</span>
+
+
+## Constructor Summary
+
+| Constructor      | Description |
+|------------------|-------------|
+| PathDescriptor() |             |
+
+
+
+## Method Summary
+
+| Modifier and Type                                                                                   | Method                                                                                                                                                                              | Description |
+|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) | [toJvmType](#tojvmtype)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                                          |             |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) | [toPrimitive](#toprimitive)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) jvmInstance)                                               |             |
+| public boolean                                                                                      | [validate](#validate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/report/Reporter.md) collector) |             |
+
+
+### Methods inherited from [AbstractScalarDescriptor](AbstractScalarDescriptor.md)
+
+getFormat, formatError, populateSchema, getContentEncoding
+
+### Methods inherited from [AbstractTypeDescriptor](AbstractTypeDescriptor.md)
+
+getSchemaType, getServiceProperties, getJvmType
+
+
+## Method Details
+
+### toJvmType
+
+<span style="font-family: monospace; font-size: 80%;">public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __toJvmType__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)</span>
+
+
+
+
+---
+
+### toPrimitive
+
+<span style="font-family: monospace; font-size: 80%;">public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) __toPrimitive__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) jvmInstance)</span>
+
+
+
+
+---
+
+### validate
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __validate__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/report/Reporter.md) collector)</span>
+
+
+
+
+---
+

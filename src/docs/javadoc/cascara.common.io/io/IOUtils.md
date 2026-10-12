@@ -53,7 +53,7 @@ Package [io.github.qishr.cascara.common.io](index.md)
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../../cascara.common/diagnostic/exception/LocalizableIOException.md)
 
 
 ---
@@ -66,7 +66,7 @@ Package [io.github.qishr.cascara.common.io](index.md)
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../../cascara.common/diagnostic/exception/LocalizableIOException.md)
 
 
 ---
@@ -79,7 +79,7 @@ Package [io.github.qishr.cascara.common.io](index.md)
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../../cascara.common/diagnostic/exception/LocalizableIOException.md)
 
 
 ---
@@ -92,7 +92,7 @@ Package [io.github.qishr.cascara.common.io](index.md)
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../../cascara.common/diagnostic/exception/LocalizableIOException.md)
 
 
 ---
@@ -105,7 +105,7 @@ Package [io.github.qishr.cascara.common.io](index.md)
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../../cascara.common/diagnostic/exception/LocalizableIOException.md)
 
 
 ---
@@ -118,7 +118,7 @@ Package [io.github.qishr.cascara.common.io](index.md)
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../../cascara.common/diagnostic/exception/LocalizableIOException.md)
 
 
 ---
@@ -131,7 +131,7 @@ Package [io.github.qishr.cascara.common.io](index.md)
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../../cascara.common/diagnostic/exception/LocalizableIOException.md)
 
 
 ---
@@ -144,7 +144,7 @@ Package [io.github.qishr.cascara.common.io](index.md)
 
 **Throws:**
 
-[LocalizableIOException](../../cascara.common/diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../../cascara.common/diagnostic/exception/LocalizableIOException.md)
 
 
 ---

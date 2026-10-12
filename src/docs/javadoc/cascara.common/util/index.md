@@ -6,25 +6,27 @@
 
 === "All Classes and Interfaces"
 
-    | Class                                         | Description                                                                                                                                  |
-    |-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-    | [ArchiveFile](ArchiveFile.md)                 |                                                                                                                                              |
-    | [Cascara](Cascara.md)                         |                                                                                                                                              |
-    | [ClassHierarchy](ClassHierarchy.md)           |                                                                                                                                              |
-    | [CommandLine](CommandLine.md)                 |    CommandLine interpreter that uses reflection to initialize an annotated user object with values obtained from the command line arguments. |
-    | [ContentType](ContentType.md)                 | A stable, persisted canonical content type used throughout Cascara.                                                                          |
-    | [ContentTypeResolver](ContentTypeResolver.md) |                                                                                                                                              |
-    | [ContentTypes](ContentTypes.md)               |                                                                                                                                              |
-    | [Duplicable](Duplicable.md)                   |                                                                                                                                              |
-    | [JarFile](JarFile.md)                         |                                                                                                                                              |
-    | [JarManifest](JarManifest.md)                 |                                                                                                                                              |
-    | [JreUtils](JreUtils.md)                       |                                                                                                                                              |
-    | [ModulePath](ModulePath.md)                   |                                                                                                                                              |
-    | [Pair](Pair.md)                               |                                                                                                                                              |
-    | [ReflectionUtils](ReflectionUtils.md)         |                                                                                                                                              |
-    | [StringUtils](StringUtils.md)                 |                                                                                                                                              |
-    | [TermUtils](TermUtils.md)                     |                                                                                                                                              |
-    | [UriScheme](UriScheme.md)                     |                                                                                                                                              |
+    | Class                                               | Description                                                                                                                                  |
+    |-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+    | [AbstractLibraryScanner](AbstractLibraryScanner.md) |                                                                                                                                              |
+    | [ArchiveFile](ArchiveFile.md)                       |                                                                                                                                              |
+    | [Cascara](Cascara.md)                               |                                                                                                                                              |
+    | [ClassHierarchy](ClassHierarchy.md)                 |                                                                                                                                              |
+    | [ClassPath](ClassPath.md)                           |                                                                                                                                              |
+    | [CommandLine](CommandLine.md)                       |    CommandLine interpreter that uses reflection to initialize an annotated user object with values obtained from the command line arguments. |
+    | [ContentType](ContentType.md)                       | A stable, persisted canonical content type used throughout Cascara.                                                                          |
+    | [ContentTypeResolver](ContentTypeResolver.md)       |                                                                                                                                              |
+    | [ContentTypes](ContentTypes.md)                     |                                                                                                                                              |
+    | [Duplicable](Duplicable.md)                         |                                                                                                                                              |
+    | [JarFile](JarFile.md)                               |                                                                                                                                              |
+    | [JarManifest](JarManifest.md)                       |                                                                                                                                              |
+    | [JreUtils](JreUtils.md)                             |                                                                                                                                              |
+    | [ModulePath](ModulePath.md)                         |                                                                                                                                              |
+    | [Pair](Pair.md)                                     |                                                                                                                                              |
+    | [ReflectionUtils](ReflectionUtils.md)               |                                                                                                                                              |
+    | [StringUtils](StringUtils.md)                       |                                                                                                                                              |
+    | [TermUtils](TermUtils.md)                           |                                                                                                                                              |
+    | [UriScheme](UriScheme.md)                           |                                                                                                                                              |
 
 
 === "Interfaces"
@@ -37,22 +39,24 @@
 
 === "Classes"
 
-    | Class                                 | Description                                                                                                                                  |
-    |---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-    | [ArchiveFile](ArchiveFile.md)         |                                                                                                                                              |
-    | [Cascara](Cascara.md)                 |                                                                                                                                              |
-    | [ClassHierarchy](ClassHierarchy.md)   |                                                                                                                                              |
-    | [CommandLine](CommandLine.md)         |    CommandLine interpreter that uses reflection to initialize an annotated user object with values obtained from the command line arguments. |
-    | [ContentType](ContentType.md)         | A stable, persisted canonical content type used throughout Cascara.                                                                          |
-    | [ContentTypes](ContentTypes.md)       |                                                                                                                                              |
-    | [JarFile](JarFile.md)                 |                                                                                                                                              |
-    | [JarManifest](JarManifest.md)         |                                                                                                                                              |
-    | [JreUtils](JreUtils.md)               |                                                                                                                                              |
-    | [ModulePath](ModulePath.md)           |                                                                                                                                              |
-    | [Pair](Pair.md)                       |                                                                                                                                              |
-    | [ReflectionUtils](ReflectionUtils.md) |                                                                                                                                              |
-    | [StringUtils](StringUtils.md)         |                                                                                                                                              |
-    | [TermUtils](TermUtils.md)             |                                                                                                                                              |
+    | Class                                               | Description                                                                                                                                  |
+    |-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+    | [AbstractLibraryScanner](AbstractLibraryScanner.md) |                                                                                                                                              |
+    | [ArchiveFile](ArchiveFile.md)                       |                                                                                                                                              |
+    | [Cascara](Cascara.md)                               |                                                                                                                                              |
+    | [ClassHierarchy](ClassHierarchy.md)                 |                                                                                                                                              |
+    | [ClassPath](ClassPath.md)                           |                                                                                                                                              |
+    | [CommandLine](CommandLine.md)                       |    CommandLine interpreter that uses reflection to initialize an annotated user object with values obtained from the command line arguments. |
+    | [ContentType](ContentType.md)                       | A stable, persisted canonical content type used throughout Cascara.                                                                          |
+    | [ContentTypes](ContentTypes.md)                     |                                                                                                                                              |
+    | [JarFile](JarFile.md)                               |                                                                                                                                              |
+    | [JarManifest](JarManifest.md)                       |                                                                                                                                              |
+    | [JreUtils](JreUtils.md)                             |                                                                                                                                              |
+    | [ModulePath](ModulePath.md)                         |                                                                                                                                              |
+    | [Pair](Pair.md)                                     |                                                                                                                                              |
+    | [ReflectionUtils](ReflectionUtils.md)               |                                                                                                                                              |
+    | [StringUtils](StringUtils.md)                       |                                                                                                                                              |
+    | [TermUtils](TermUtils.md)                           |                                                                                                                                              |
 
 
 === "Enum Classes"

@@ -2,7 +2,7 @@ Package [io.github.qishr.cascara.lang.json.processor](index.md)
 
 # Class JsonAstParser
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [io.github.qishr.cascara.lang.json.processor.AbstractJsonProcessor](AbstractJsonProcessor.md)<[io.github.qishr.cascara.lang.json.processor.JsonAstParser](JsonAstParser.md)><br/>
+        [io.github.qishr.cascara.lang.json.internal.AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html)<[io.github.qishr.cascara.lang.json.processor.JsonAstParser](JsonAstParser.md)><br/>
                 io.github.qishr.cascara.lang.json.processor.JsonAstParser<br/>
 <br/>
 All Implemented Interfaces:<br/>
@@ -11,7 +11,7 @@ All Implemented Interfaces:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __JsonAstParser__<br/>extends [AbstractJsonProcessor](AbstractJsonProcessor.md)<[JsonAstParser](JsonAstParser.md)>
+<span style="font-family: monospace; font-size: 80%;">public class __JsonAstParser__<br/>extends [AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html)<[JsonAstParser](JsonAstParser.md)>
 </span>
 
 A recursive descent parser for JSON/JSON5.
@@ -41,10 +41,6 @@ A recursive descent parser for JSON/JSON5.
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonToken](../token/JsonToken.md)> | [getTokens](#gettokens)()                                                                                                                            |                                                   |
 
 
-### Methods inherited from [AbstractJsonProcessor](AbstractJsonProcessor.md)
-
-setReporter, getOptions, getContentType, getServiceProperties, getVersion, getReporter, [setOptions](#setoptions), getTextResource
-
 
 ## Method Details
 
@@ -62,10 +58,6 @@ setReporter, getOptions, getContentType, getServiceProperties, getVersion, getRe
 <span style="font-family: monospace; font-size: 80%;">protected [JsonAstParser](JsonAstParser.md) __self__()</span>
 
 
-
-**Overrides:**
-
-[AbstractJsonProcessor](../cascara.lang.json/processor/AbstractJsonProcessor.md#self)
 
 
 ---

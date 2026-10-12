@@ -2,7 +2,7 @@ Package [io.github.qishr.cascara.lang.json.processor](index.md)
 
 # Class JsonEmitter
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [io.github.qishr.cascara.lang.json.processor.AbstractJsonProcessor](AbstractJsonProcessor.md)<[io.github.qishr.cascara.lang.json.processor.JsonEmitter](JsonEmitter.md)><br/>
+        [io.github.qishr.cascara.lang.json.internal.AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html)<[io.github.qishr.cascara.lang.json.processor.JsonEmitter](JsonEmitter.md)><br/>
                 io.github.qishr.cascara.lang.json.processor.JsonEmitter<br/>
 <br/>
 All Implemented Interfaces:<br/>
@@ -11,7 +11,7 @@ All Implemented Interfaces:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __JsonEmitter__<br/>extends [AbstractJsonProcessor](AbstractJsonProcessor.md)<[JsonEmitter](JsonEmitter.md)>
+<span style="font-family: monospace; font-size: 80%;">public class __JsonEmitter__<br/>extends [AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html)<[JsonEmitter](JsonEmitter.md)>
 </span>
 
 
@@ -42,12 +42,8 @@ All Implemented Interfaces:<br/>
 | public void                                                                                         | [dedent](#dedent)()                                                                                                           |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getOutput](#getoutput)()                                                                                                     |             |
 | public [JsonEmitter](JsonEmitter.md)                                                                | [setOptions](#setoptions)([LanguageOptions](../../cascara.common/lang/util/LanguageOptions.md)<?> options)                    |             |
-| public [JsonEmitter](JsonEmitter.md)                                                                | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter)                                 |             |
+| public [JsonEmitter](JsonEmitter.md)                                                                | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/report/Reporter.md) reporter)                          |             |
 
-
-### Methods inherited from [AbstractJsonProcessor](AbstractJsonProcessor.md)
-
-getOptions, getServiceProperties, getVersion, getReporter, getTextResource
 
 
 ## Method Details
@@ -57,10 +53,6 @@ getOptions, getServiceProperties, getVersion, getReporter, getTextResource
 <span style="font-family: monospace; font-size: 80%;">protected [JsonEmitter](JsonEmitter.md) __self__()</span>
 
 
-
-**Overrides:**
-
-[AbstractJsonProcessor](../cascara.lang.json/processor/AbstractJsonProcessor.md#self)
 
 
 ---
@@ -77,7 +69,7 @@ getOptions, getServiceProperties, getVersion, getReporter, getTextResource
 
 **Overrides:**
 
-[AbstractJsonProcessor](../cascara.lang.json/processor/AbstractJsonProcessor.md#getcontenttype)
+[AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html#getcontenttype)
 
 
 ---
@@ -242,20 +234,20 @@ getOptions, getServiceProperties, getVersion, getReporter, getTextResource
 
 **Overrides:**
 
-[AbstractJsonProcessor](../cascara.lang.json/processor/AbstractJsonProcessor.md#setoptions)
+[AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html#setoptions)
 
 
 ---
 
 ### setReporter
 
-<span style="font-family: monospace; font-size: 80%;">public [JsonEmitter](JsonEmitter.md) __setReporter__([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter)</span>
+<span style="font-family: monospace; font-size: 80%;">public [JsonEmitter](JsonEmitter.md) __setReporter__([Reporter](../../cascara.common/diagnostic/report/Reporter.md) reporter)</span>
 
 
 
 **Overrides:**
 
-[AbstractJsonProcessor](../cascara.lang.json/processor/AbstractJsonProcessor.md#setreporter)
+[AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html#setreporter)
 
 
 ---

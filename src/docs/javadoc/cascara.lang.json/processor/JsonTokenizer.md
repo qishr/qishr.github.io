@@ -2,7 +2,7 @@ Package [io.github.qishr.cascara.lang.json.processor](index.md)
 
 # Class JsonTokenizer
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [io.github.qishr.cascara.lang.json.processor.AbstractJsonProcessor](AbstractJsonProcessor.md)<[io.github.qishr.cascara.lang.json.processor.JsonTokenizer](JsonTokenizer.md)><br/>
+        [io.github.qishr.cascara.lang.json.internal.AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html)<[io.github.qishr.cascara.lang.json.processor.JsonTokenizer](JsonTokenizer.md)><br/>
                 io.github.qishr.cascara.lang.json.processor.JsonTokenizer<br/>
 <br/>
 All Implemented Interfaces:<br/>
@@ -11,7 +11,7 @@ All Implemented Interfaces:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __JsonTokenizer__<br/>extends [AbstractJsonProcessor](AbstractJsonProcessor.md)<[JsonTokenizer](JsonTokenizer.md)>
+<span style="font-family: monospace; font-size: 80%;">public class __JsonTokenizer__<br/>extends [AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html)<[JsonTokenizer](JsonTokenizer.md)>
 </span>
 
 
@@ -41,10 +41,6 @@ All Implemented Interfaces:<br/>
 | public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[JsonTokenType](../token/JsonTokenType.md)> | [getTokenTypes](#gettokentypes)()                                                                                          |             |
 | public [JsonToken](../token/JsonToken.md)                                                                                                 | [nextToken](#nexttoken)()                                                                                                  |             |
 
-
-### Methods inherited from [AbstractJsonProcessor](AbstractJsonProcessor.md)
-
-setReporter, getOptions, getContentType, getServiceProperties, getVersion, getReporter, getTextResource
 
 
 ## Method Details
@@ -88,7 +84,7 @@ setReporter, getOptions, getContentType, getServiceProperties, getVersion, getRe
 
 **Overrides:**
 
-[AbstractJsonProcessor](../cascara.lang.json/processor/AbstractJsonProcessor.md#setoptions)
+[AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html#setoptions)
 
 
 ---
@@ -98,10 +94,6 @@ setReporter, getOptions, getContentType, getServiceProperties, getVersion, getRe
 <span style="font-family: monospace; font-size: 80%;">protected [JsonTokenizer](JsonTokenizer.md) __self__()</span>
 
 
-
-**Overrides:**
-
-[AbstractJsonProcessor](../cascara.lang.json/processor/AbstractJsonProcessor.md#self)
 
 
 ---

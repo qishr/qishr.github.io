@@ -57,7 +57,7 @@ Package [io.github.qishr.cascara.common.data](index.md)
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---
@@ -70,7 +70,7 @@ Package [io.github.qishr.cascara.common.data](index.md)
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---

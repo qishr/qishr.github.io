@@ -12,9 +12,10 @@ Package [io.github.qishr.cascara.common.content.type](index.md)
 
 ## Field Summary
 
-| Modifier and Type        | Field               | Description |
-|--------------------------|---------------------|-------------|
-| public List<ContentType> | [records](#records) |             |
+| Modifier and Type                                                                                                | Field               | Description |
+|------------------------------------------------------------------------------------------------------------------|---------------------|-------------|
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [SCHEMA](#schema)   |             |
+| public List<ContentType>                                                                                         | [records](#records) |             |
 
 
 
@@ -37,10 +38,25 @@ Package [io.github.qishr.cascara.common.content.type](index.md)
 
 ## Field Details
 
-### records
+### SCHEMA
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.DataField<br/>
-public List<ContentType> __records__</span>
+public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __SCHEMA__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../constant-values.md)
+
+
+
+---
+
+### records
+
+<span style="font-family: monospace; font-size: 80%;">public List<ContentType> __records__</span>
 
 
 

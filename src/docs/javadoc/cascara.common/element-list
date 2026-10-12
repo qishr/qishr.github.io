@@ -3,7 +3,13 @@ io.github.qishr.cascara.common.annotation
 io.github.qishr.cascara.common.color
 io.github.qishr.cascara.common.data
 io.github.qishr.cascara.common.diagnostic
-io.github.qishr.cascara.common.diagnostic.code
+io.github.qishr.cascara.common.diagnostic.exception
+io.github.qishr.cascara.common.diagnostic.format
+io.github.qishr.cascara.common.diagnostic.log
+io.github.qishr.cascara.common.diagnostic.message
+io.github.qishr.cascara.common.diagnostic.report
+io.github.qishr.cascara.common.exec
+io.github.qishr.cascara.common.exec.ipc
 io.github.qishr.cascara.common.filewatcher
 io.github.qishr.cascara.common.lang.plain
 io.github.qishr.cascara.common.lang.ast

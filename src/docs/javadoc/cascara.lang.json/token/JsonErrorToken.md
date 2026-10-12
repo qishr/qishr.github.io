@@ -15,9 +15,9 @@ All Implemented Interfaces:<br/>
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                             | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| JsonErrorToken(int line, int column, int offset, [DiagnosticCode](../../cascara.common/diagnostic/code/DiagnosticCode.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
+| Constructor                                                                                                                                                                                                                                      | Description |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| JsonErrorToken(int line, int column, int offset, [DiagnosticMessage](../../cascara.common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
 
 
 
@@ -25,7 +25,7 @@ All Implemented Interfaces:<br/>
 
 | Modifier and Type                                                                                                              | Method                                                                                                                                                          | Description |
 |--------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [DiagnosticCode](../../cascara.common/diagnostic/code/DiagnosticCode.md)                                                | [getCode](#getcode)()                                                                                                                                           |             |
+| public [DiagnosticMessage](../../cascara.common/diagnostic/message/DiagnosticMessage.md)                                       | [getCode](#getcode)()                                                                                                                                           |             |
 | public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]                          | [getDetails](#getdetails)()                                                                                                                                     |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                            | [getLexeme](#getlexeme)()                                                                                                                                       |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                            | [getContent](#getcontent)()                                                                                                                                     |             |
@@ -44,7 +44,7 @@ All Implemented Interfaces:<br/>
 
 ### getCode
 
-<span style="font-family: monospace; font-size: 80%;">public [DiagnosticCode](../../cascara.common/diagnostic/code/DiagnosticCode.md) __getCode__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [DiagnosticMessage](../../cascara.common/diagnostic/message/DiagnosticMessage.md) __getCode__()</span>
 
 
 

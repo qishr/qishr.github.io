@@ -2,16 +2,16 @@ Package [io.github.qishr.cascara.lang.json.processor](index.md)
 
 # Class JsonPullParser
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [io.github.qishr.cascara.lang.json.processor.AbstractJsonProcessor](AbstractJsonProcessor.md)<[io.github.qishr.cascara.lang.json.processor.JsonPullParser](JsonPullParser.md)><br/>
+        [io.github.qishr.cascara.lang.json.internal.AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html)<[io.github.qishr.cascara.lang.json.processor.JsonPullParser](JsonPullParser.md)><br/>
                 io.github.qishr.cascara.lang.json.processor.JsonPullParser<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [PullParser](../../cascara.common/lang/processor/PullParser.md)
+    [PullParser](../../cascara.common/lang/processor/PullParser.md)<[JsonStreamingEvent](../streaming/JsonStreamingEvent.md)>
 
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __JsonPullParser__<br/>extends [AbstractJsonProcessor](AbstractJsonProcessor.md)<[JsonPullParser](JsonPullParser.md)>
+<span style="font-family: monospace; font-size: 80%;">public class __JsonPullParser__<br/>extends [AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html)<[JsonPullParser](JsonPullParser.md)>
 </span>
 
 
@@ -26,17 +26,13 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                              | Method                | Description |
-|--------------------------------------------------------------------------------|-----------------------|-------------|
-| protected [JsonPullParser](JsonPullParser.md)                                  | [self](#self)()       |             |
-| public boolean                                                                 | [hasNext](#hasnext)() |             |
-| public [StreamingEvent](../../cascara.common/lang/streaming/StreamingEvent.md) | [next](#next)()       |             |
-| public void                                                                    | [close](#close)()     |             |
+| Modifier and Type                                               | Method                | Description |
+|-----------------------------------------------------------------|-----------------------|-------------|
+| protected [JsonPullParser](JsonPullParser.md)                   | [self](#self)()       |             |
+| public boolean                                                  | [hasNext](#hasnext)() |             |
+| public [JsonStreamingEvent](../streaming/JsonStreamingEvent.md) | [next](#next)()       |             |
+| public void                                                     | [close](#close)()     |             |
 
-
-### Methods inherited from [AbstractJsonProcessor](AbstractJsonProcessor.md)
-
-setReporter, getOptions, getContentType, getServiceProperties, getVersion, getReporter, setOptions, getTextResource
 
 
 ## Method Details
@@ -46,10 +42,6 @@ setReporter, getOptions, getContentType, getServiceProperties, getVersion, getRe
 <span style="font-family: monospace; font-size: 80%;">protected [JsonPullParser](JsonPullParser.md) __self__()</span>
 
 
-
-**Overrides:**
-
-[AbstractJsonProcessor](../cascara.lang.json/processor/AbstractJsonProcessor.md#self)
 
 
 ---
@@ -69,7 +61,7 @@ setReporter, getOptions, getContentType, getServiceProperties, getVersion, getRe
 
 ### next
 
-<span style="font-family: monospace; font-size: 80%;">public [StreamingEvent](../../cascara.common/lang/streaming/StreamingEvent.md) __next__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [JsonStreamingEvent](../streaming/JsonStreamingEvent.md) __next__()</span>
 
 
 

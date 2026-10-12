@@ -23,11 +23,11 @@ Package [io.github.qishr.cascara.common.lang.type](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                   | Method                                                                                                                                                                       | Description |
-|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public byte[]                                                                                       | [toJvmType](#tojvmtype)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                                   |             |
-| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) | [toPrimitive](#toprimitive)(byte[] jvmInstance)                                                                                                                              |             |
-| public boolean                                                                                      | [validate](#validate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector) |             |
+| Modifier and Type                                                                                   | Method                                                                                                                                                                              | Description |
+|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public byte[]                                                                                       | [toJvmType](#tojvmtype)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                                          |             |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) | [toPrimitive](#toprimitive)(byte[] jvmInstance)                                                                                                                                     |             |
+| public boolean                                                                                      | [validate](#validate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/report/Reporter.md) collector) |             |
 
 
 ### Methods inherited from [AbstractTypeDescriptor](AbstractTypeDescriptor.md)
@@ -36,7 +36,7 @@ getSchemaType, getServiceProperties, getJvmType
 
 ### Methods inherited from [AbstractScalarDescriptor](AbstractScalarDescriptor.md)
 
-getFormat, populateSchema, getContentEncoding, formatError
+getFormat, formatError, populateSchema, getContentEncoding
 
 
 ## Method Details
@@ -61,7 +61,7 @@ getFormat, populateSchema, getContentEncoding, formatError
 
 ### validate
 
-<span style="font-family: monospace; font-size: 80%;">public boolean __validate__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector)</span>
+<span style="font-family: monospace; font-size: 80%;">public boolean __validate__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/report/Reporter.md) collector)</span>
 
 
 

@@ -25,32 +25,34 @@ an optional underlying exception cause.
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Description                                                                                                                               |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Diagnostic([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, int startOffset, int endOffset, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source, [Level](Diagnostic.Level.md) level, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) | Constructs a fully qualified [Diagnostic](Diagnostic.md) entry with absolute location indicators.                                         |
-| Diagnostic([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../lang/token/Token.md) token, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source, [Level](Diagnostic.Level.md) level, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticCode](code/DiagnosticCode.md) code, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                | Constructs a [Diagnostic](Diagnostic.md) entry by resolving positioning metadata directly from a parsing [Token](../lang/token/Token.md). |
+| Constructor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Description                                                                                                                               |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| Diagnostic([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, int startOffset, int endOffset, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source, [Level](Diagnostic.Level.md) level, [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] stackTrace, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticMessage](message/DiagnosticMessage.md) message, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) | Constructs a fully qualified [Diagnostic](Diagnostic.md) entry with absolute location indicators.                                         |
+| Diagnostic([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../lang/token/Token.md) token, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source, [Level](Diagnostic.Level.md) level, [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] stackTrace, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticMessage](message/DiagnosticMessage.md) message, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                | Constructs a [Diagnostic](Diagnostic.md) entry by resolving positioning metadata directly from a parsing [Token](../lang/token/Token.md). |
 
 
 
 ## Method Summary
 
-| Modifier and Type                                                                                                 | Method                                                                                                       | Description                                                                                   |
-|-------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| public [URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html)                      | [getUri](#geturi)()                                                                                          | Returns the URI of the source resource associated with this diagnostic.                       |
-| public int                                                                                                        | [getLine](#getline)()                                                                                        | Returns the 1-based line number of this diagnostic.                                           |
-| public int                                                                                                        | [getColumn](#getcolumn)()                                                                                    | Returns the 1-based column number of this diagnostic.                                         |
-| public int                                                                                                        | [getStartOffset](#getstartoffset)()                                                                          | Returns the 0-based absolute starting character offset of this diagnostic.                    |
-| public int                                                                                                        | [getEndOffset](#getendoffset)()                                                                              | Returns the 0-based absolute ending character offset (exclusive) of this diagnostic.          |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)               | [getSource](#getsource)()                                                                                    | Returns the identifier string of the subsystem that produced this diagnostic.                 |
-| public [Level](Diagnostic.Level.md)                                                                               | [getLevel](#getlevel)()                                                                                      | Returns the severity [Level](Diagnostic.Level.md) classification of this diagnostic.          |
-| public [DiagnosticCode](code/DiagnosticCode.md)                                                                   | [getCode](#getcode)()                                                                                        | Returns the stable classification code, suitable for localization and system filtering.       |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)               | [getMessage](#getmessage)()                                                                                  | Returns the formatted descriptive text message of this diagnostic.                            |
-| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]             | [getDetails](#getdetails)()                                                                                  | Returns the arguments for the message format placeholders.                                    |
-| public [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html)         | [getCause](#getcause)()                                                                                      | Returns the underlying exception that caused this diagnostic, or `null` if none was provided. |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)               | [getThread](#getthread)()                                                                                    | Returns the name of the execution thread that instantiated this diagnostic instance.          |
-| public [LocalDateTime](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/LocalDateTime.html) | [getTimestamp](#gettimestamp)()                                                                              | Returns the exact timestamp indicating when this diagnostic was instantiated.                 |
-| public void                                                                                                       | [setUri](#seturi)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri) | Sets the URI of the source resource associated with this diagnostic.                          |
-| public void                                                                                                       | [setLine](#setline)(int line)                                                                                | Sets the URI of the source resource associated with this diagnostic.                          |
+| Modifier and Type                                                                                                           | Method                                                                                                       | Description                                                                                   |
+|-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| public [URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html)                                | [getUri](#geturi)()                                                                                          | Returns the URI of the source resource associated with this diagnostic.                       |
+| public int                                                                                                                  | [getLine](#getline)()                                                                                        | Returns the 1-based line number of this diagnostic.                                           |
+| public int                                                                                                                  | [getColumn](#getcolumn)()                                                                                    | Returns the 1-based column number of this diagnostic.                                         |
+| public int                                                                                                                  | [getStartOffset](#getstartoffset)()                                                                          | Returns the 0-based absolute starting character offset of this diagnostic.                    |
+| public int                                                                                                                  | [getEndOffset](#getendoffset)()                                                                              | Returns the 0-based absolute ending character offset (exclusive) of this diagnostic.          |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                         | [getSource](#getsource)()                                                                                    | Returns the identifier string of the subsystem that produced this diagnostic.                 |
+| public [Level](Diagnostic.Level.md)                                                                                         | [getLevel](#getlevel)()                                                                                      | Returns the severity [Level](Diagnostic.Level.md) classification of this diagnostic.          |
+| public [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] | [getStackTrace](#getstacktrace)()                                                                            |                                                                                               |
+| public [DiagnosticMessage](message/DiagnosticMessage.md)                                                                    | [getMessage](#getmessage)()                                                                                  | Returns the stable classification code, suitable for localization and system filtering.       |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                         | [getFormattedMessage](#getformattedmessage)()                                                                | Returns the formatted descriptive text message of this diagnostic.                            |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]                       | [getDetails](#getdetails)()                                                                                  | Returns the arguments for the message format placeholders.                                    |
+| public [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html)                   | [getCause](#getcause)()                                                                                      | Returns the underlying exception that caused this diagnostic, or `null` if none was provided. |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                         | [getThread](#getthread)()                                                                                    | Returns the name of the execution thread that instantiated this diagnostic instance.          |
+| public long                                                                                                                 | [getProcessId](#getprocessid)()                                                                              |                                                                                               |
+| public [Instant](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Instant.html)                       | [getTimestamp](#gettimestamp)()                                                                              | Returns the exact timestamp indicating when this diagnostic was instantiated.                 |
+| public void                                                                                                                 | [setUri](#seturi)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri) | Sets the URI of the source resource associated with this diagnostic.                          |
+| public void                                                                                                                 | [setLine](#setline)(int line)                                                                                | Sets the URI of the source resource associated with this diagnostic.                          |
 
 
 
@@ -123,7 +125,7 @@ Returns the 0-based absolute ending character offset (exclusive) of this diagnos
 
 <span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getSource__()</span>
 
-Returns the identifier string of the subsystem that produced this diagnostic.
+Returns the identifier string of the subsystem that produced this diagnostic.This is usually the FQCN of the class creating the diagnostic report.
 
 
 ---
@@ -137,18 +139,27 @@ Returns the severity [Level](Diagnostic.Level.md) classification of this diagnos
 
 ---
 
-### getCode
+### getStackTrace
 
-<span style="font-family: monospace; font-size: 80%;">public [DiagnosticCode](code/DiagnosticCode.md) __getCode__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] __getStackTrace__()</span>
 
-Returns the stable classification code, suitable for localization and system filtering.
+
 
 
 ---
 
 ### getMessage
 
-<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getMessage__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [DiagnosticMessage](message/DiagnosticMessage.md) __getMessage__()</span>
+
+Returns the stable classification code, suitable for localization and system filtering.
+
+
+---
+
+### getFormattedMessage
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getFormattedMessage__()</span>
 
 Returns the formatted descriptive text message of this diagnostic.
 
@@ -182,9 +193,18 @@ Returns the name of the execution thread that instantiated this diagnostic insta
 
 ---
 
+### getProcessId
+
+<span style="font-family: monospace; font-size: 80%;">public long __getProcessId__()</span>
+
+
+
+
+---
+
 ### getTimestamp
 
-<span style="font-family: monospace; font-size: 80%;">public [LocalDateTime](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/LocalDateTime.html) __getTimestamp__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Instant](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Instant.html) __getTimestamp__()</span>
 
 Returns the exact timestamp indicating when this diagnostic was instantiated.
 

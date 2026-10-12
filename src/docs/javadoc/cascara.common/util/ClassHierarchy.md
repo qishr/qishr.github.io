@@ -13,20 +13,19 @@ public class __ClassHierarchy__</span>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                    | Method                                                                                                                                  | Description |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public static [ClassLoader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/ClassLoader.html)                                                                                 | [getEffectiveClassLoader](#geteffectiveclassloader)()                                                                                   |             |
-| public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getSubclasses](#getsubclasses)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) className) |             |
-| public static java.util.Map                                                                                                                                                                          | [getAll](#getall)()                                                                                                                     |             |
-| public static void                                                                                                                                                                                   | [invalidate](#invalidate)()                                                                                                             |             |
+| Modifier and Type                                                                                                                                                                                                                                                                                                                                                                        | Method                                                                                                                                  | Description |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public static void                                                                                                                                                                                                                                                                                                                                                                       | [invalidate](#invalidate)()                                                                                                             |             |
+| public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)>                                                                                                                                                                                     | [getSubclasses](#getsubclasses)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) className) |             |
+| public static [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)>> | [getAll](#getall)()                                                                                                                     |             |
 
 
 
 ## Method Details
 
-### getEffectiveClassLoader
+### invalidate
 
-<span style="font-family: monospace; font-size: 80%;">public static [ClassLoader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/ClassLoader.html) __getEffectiveClassLoader__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static void __invalidate__()</span>
 
 
 
@@ -45,16 +44,7 @@ public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.bas
 
 ### getAll
 
-<span style="font-family: monospace; font-size: 80%;">public static java.util.Map __getAll__()</span>
-
-
-
-
----
-
-### invalidate
-
-<span style="font-family: monospace; font-size: 80%;">public static void __invalidate__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)>> __getAll__()</span>
 
 
 

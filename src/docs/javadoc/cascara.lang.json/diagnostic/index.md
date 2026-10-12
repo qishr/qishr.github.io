@@ -9,7 +9,7 @@
     | Class                                               | Description |
     |-----------------------------------------------------|-------------|
     | [JsonConverterException](JsonConverterException.md) |             |
-    | [JsonDiagnosticCode](JsonDiagnosticCode.md)         |             |
+    | [JsonDiagnosticMessage](JsonDiagnosticMessage.md)   |             |
 
 
 === "Classes"
@@ -21,8 +21,8 @@
 
 === "Enum Classes"
 
-    | Class                                       | Description |
-    |---------------------------------------------|-------------|
-    | [JsonDiagnosticCode](JsonDiagnosticCode.md) |             |
+    | Class                                             | Description |
+    |---------------------------------------------------|-------------|
+    | [JsonDiagnosticMessage](JsonDiagnosticMessage.md) |             |
 
 

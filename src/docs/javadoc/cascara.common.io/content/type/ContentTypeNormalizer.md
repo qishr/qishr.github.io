@@ -22,7 +22,7 @@ Package [io.github.qishr.cascara.common.content.type](index.md)
 
 | Modifier and Type                                                                                                                          | Method                                                                                                                                                                            | Description |
 |--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public void                                                                                                                                | [setReporter](#setreporter)([Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter)                                                                                  |             |
+| public void                                                                                                                                | [setReporter](#setreporter)([Reporter](../../../cascara.common/diagnostic/report/Reporter.md) reporter)                                                                           |             |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[MergedContentType](MergedContentType.md)> | [normalize](#normalize)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ContentType](../../../cascara.common/util/ContentType.md)> all) |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                        | [normalizeMime](#normalizemime)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) mime)                                                |             |
 | public boolean                                                                                                                             | [isTextual](#istextual)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) mime)                                                        |             |
@@ -34,7 +34,7 @@ Package [io.github.qishr.cascara.common.content.type](index.md)
 
 ### setReporter
 
-<span style="font-family: monospace; font-size: 80%;">public void __setReporter__([Reporter](../../../cascara.common/diagnostic/Reporter.md) reporter)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __setReporter__([Reporter](../../../cascara.common/diagnostic/report/Reporter.md) reporter)</span>
 
 
 

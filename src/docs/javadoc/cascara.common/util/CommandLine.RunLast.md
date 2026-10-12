@@ -2,8 +2,8 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 # Class RunLast
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        io.github.qishr.cascara.common.util.CommandLine.AbstractHandler<java.util.List<[java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)><br/>
-                io.github.qishr.cascara.common.util.CommandLine.AbstractParseResultHandler<java.util.List<[java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)><br/>
+        [io.github.qishr.cascara.common.util.CommandLine.AbstractHandler](CommandLine.AbstractHandler.md)<[java.util.List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)>, [io.github.qishr.cascara.common.util.CommandLine.AbstractParseResultHandler](CommandLine.AbstractParseResultHandler.md)<[java.util.List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)>>><br/>
+                [io.github.qishr.cascara.common.util.CommandLine.AbstractParseResultHandler](CommandLine.AbstractParseResultHandler.md)<[java.util.List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)>><br/>
                         io.github.qishr.cascara.common.util.CommandLine.RunLast<br/>
 <br/>
 All Implemented Interfaces:<br/>
@@ -15,7 +15,7 @@ Enclosing Class:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public static class __RunLast__<br/>extends io.github.qishr.cascara.common.util.CommandLine.AbstractParseResultHandler<java.util.List<[Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)>
+<span style="font-family: monospace; font-size: 80%;">public static class __RunLast__<br/>extends [AbstractParseResultHandler](CommandLine.AbstractParseResultHandler.md)<[List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)>>
 </span>
 
 Command line [IExecutionStrategy](CommandLine.IExecutionStrategy.md) that prints help if requested, and otherwise executes the most specific
@@ -76,6 +76,14 @@ and #call(Callable, PrintStream, PrintStream, Help.Ansi, String...) convenience 
 | protected [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[IExitCodeGenerator](CommandLine.IExitCodeGenerator.md)>                                      | [extractExitCodeGenerators](#extractexitcodegenerators)([ParseResult](CommandLine.ParseResult.md) parseResult)                                                                                                                                                                                                                   |                                                                                                         |
 | protected [RunLast](CommandLine.RunLast.md)                                                                                                                                                      | [self](#self)()                                                                                                                                                                                                                                                                                                                  |                                                                                                         |
 
+
+### Methods inherited from [AbstractHandler](CommandLine.AbstractHandler.md)
+
+err, andExit, returnResultOrExit, colorScheme, ansi, useAnsi, throwOrExit, hasExitCode, exit, useOut, exitCode, out, useErr
+
+### Methods inherited from [AbstractParseResultHandler](CommandLine.AbstractParseResultHandler.md)
+
+[handleParseResult](#handleparseresult)
 
 
 ## Method Details

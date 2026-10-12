@@ -41,7 +41,7 @@ Direct Known Subtypes:<br/>
 | protected abstract P                                             | [self](#self)()                                                                                            |                                                                          |
 | public [Properties](../../cascara.common/property/Properties.md) | [getServiceProperties](#getserviceproperties)()                                                            |                                                                          |
 | public [ContentType](../../cascara.common/util/ContentType.md)   | [getContentType](#getcontenttype)()                                                                        |                                                                          |
-| public P                                                         | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter)              | Sets the reporter for communicating warnings or errors.                  |
+| public P                                                         | [setReporter](#setreporter)([Reporter](../../cascara.common/diagnostic/report/Reporter.md) reporter)       | Sets the reporter for communicating warnings or errors.                  |
 | public P                                                         | [setOptions](#setoptions)([LanguageOptions](../../cascara.common/lang/util/LanguageOptions.md)<?> options) | Sets the language-specific options (e.g., indentation, Unicode support). |
 
 
@@ -107,7 +107,7 @@ Direct Known Subtypes:<br/>
 
 ### setReporter
 
-<span style="font-family: monospace; font-size: 80%;">public P __setReporter__([Reporter](../../cascara.common/diagnostic/Reporter.md) reporter)</span>
+<span style="font-family: monospace; font-size: 80%;">public P __setReporter__([Reporter](../../cascara.common/diagnostic/report/Reporter.md) reporter)</span>
 
 Sets the reporter for communicating warnings or errors.
 

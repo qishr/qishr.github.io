@@ -9,7 +9,7 @@ All Implemented Interfaces:<br/>
     [ScalarDescriptor](ScalarDescriptor.md)<T>
 
 Direct Known Subtypes:<br/>
-    [UuidTypeDescriptor](UuidTypeDescriptor.md), [UriTypeDescriptor](UriTypeDescriptor.md), [LocalDateTimeTypeDescriptor](LocalDateTimeTypeDescriptor.md), [PathTypeDescriptor](PathTypeDescriptor.md), [DateTimeTypeDescriptor](DateTimeTypeDescriptor.md), [InstantTypeDescriptor](InstantTypeDescriptor.md), [ByteArrayDescriptor](ByteArrayDescriptor.md)
+    [ZonedDateTimeDescriptor](ZonedDateTimeDescriptor.md), [InstantDescriptor](InstantDescriptor.md), [LocalDateTimeDescriptor](LocalDateTimeDescriptor.md), [DiagnosticMessageDescriptor](DiagnosticMessageDescriptor.md), [UriDescriptor](UriDescriptor.md), [PathDescriptor](PathDescriptor.md), [UuidDescriptor](UuidDescriptor.md), [ByteArrayDescriptor](ByteArrayDescriptor.md)
 
 
 ----
@@ -39,12 +39,12 @@ Direct Known Subtypes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                   | Method                                                                                                                                                                             | Description |
-|-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getFormat](#getformat)()                                                                                                                                                          |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getContentEncoding](#getcontentencoding)()                                                                                                                                        |             |
-| public void                                                                                         | [populateSchema](#populateschema)([MapAstNode](../ast/MapAstNode.md)<?, ?, ?> schema)                                                                                              |             |
-| protected void                                                                                      | [formatError](#formaterror)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector) |             |
+| Modifier and Type                                                                                   | Method                                                                                                                                                                                    | Description |
+|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getFormat](#getformat)()                                                                                                                                                                 |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getContentEncoding](#getcontentencoding)()                                                                                                                                               |             |
+| public void                                                                                         | [populateSchema](#populateschema)([MapAstNode](../ast/MapAstNode.md)<?, ?, ?> schema)                                                                                                     |             |
+| protected void                                                                                      | [formatError](#formaterror)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/report/Reporter.md) collector) |             |
 
 
 ### Methods inherited from [AbstractTypeDescriptor](AbstractTypeDescriptor.md)
@@ -132,7 +132,7 @@ getSchemaType, getServiceProperties, getJvmType
 
 ### formatError
 
-<span style="font-family: monospace; font-size: 80%;">protected void __formatError__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/Reporter.md) collector)</span>
+<span style="font-family: monospace; font-size: 80%;">protected void __formatError__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../diagnostic/report/Reporter.md) collector)</span>
 
 
 

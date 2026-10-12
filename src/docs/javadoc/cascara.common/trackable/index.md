@@ -6,15 +6,15 @@
 
 === "All Classes and Interfaces"
 
-    | Class                                               | Description |
-    |-----------------------------------------------------|-------------|
-    | [AbstractTrackable](AbstractTrackable.md)           |             |
-    | [Trackable](Trackable.md)                           |             |
-    | [TrackableArray](TrackableArray.md)                 |             |
-    | [TrackableObject](TrackableObject.md)               |             |
-    | [TrackableTabularData](TrackableTabularData.md)     |             |
-    | [TrackingDiagnosticCode](TrackingDiagnosticCode.md) |             |
-    | [TrackingException](TrackingException.md)           |             |
+    | Class                                           | Description |
+    |-------------------------------------------------|-------------|
+    | [AbstractTrackable](AbstractTrackable.md)       |             |
+    | [Trackable](Trackable.md)                       |             |
+    | [TrackableArray](TrackableArray.md)             |             |
+    | [TrackableObject](TrackableObject.md)           |             |
+    | [TrackableTabularData](TrackableTabularData.md) |             |
+    | [TrackingException](TrackingException.md)       |             |
+    | [TrackingMessage](TrackingMessage.md)           |             |
 
 
 === "Interfaces"
@@ -37,8 +37,8 @@
 
 === "Enum Classes"
 
-    | Class                                               | Description |
-    |-----------------------------------------------------|-------------|
-    | [TrackingDiagnosticCode](TrackingDiagnosticCode.md) |             |
+    | Class                                 | Description |
+    |---------------------------------------|-------------|
+    | [TrackingMessage](TrackingMessage.md) |             |
 
 

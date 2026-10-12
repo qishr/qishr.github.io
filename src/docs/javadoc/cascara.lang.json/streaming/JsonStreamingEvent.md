@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.lang.json.streaming](index.md)
         io.github.qishr.cascara.lang.json.streaming.JsonStreamingEvent<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [StreamingEvent](../../cascara.common/lang/streaming/StreamingEvent.md)
+    [StreamingEvent](../../cascara.common/lang/streaming/StreamingEvent.md)<[JsonStreamingEventType](JsonStreamingEventType.md)>
 
 
 ----
@@ -15,9 +15,9 @@ All Implemented Interfaces:<br/>
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                          | Description |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| JsonStreamingEvent(int line, int column, [StreamingEventType](../../cascara.common/lang/streaming/StreamingEventType.md) type, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) content) |             |
+| Constructor                                                                                                                                                                                              | Description |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| JsonStreamingEvent(int line, int column, [JsonStreamingEventType](JsonStreamingEventType.md) type, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) content) |             |
 
 
 
@@ -25,7 +25,7 @@ All Implemented Interfaces:<br/>
 
 | Modifier and Type                                                                                   | Method                                | Description |
 |-----------------------------------------------------------------------------------------------------|---------------------------------------|-------------|
-| public [StreamingEventType](../../cascara.common/lang/streaming/StreamingEventType.md)              | [getType](#gettype)()                 |             |
+| public [JsonStreamingEventType](JsonStreamingEventType.md)                                          | [getType](#gettype)()                 |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getContent](#getcontent)()           |             |
 | public long                                                                                         | [getLineNumber](#getlinenumber)()     |             |
 | public long                                                                                         | [getColumnNumber](#getcolumnnumber)() |             |
@@ -36,7 +36,7 @@ All Implemented Interfaces:<br/>
 
 ### getType
 
-<span style="font-family: monospace; font-size: 80%;">public [StreamingEventType](../../cascara.common/lang/streaming/StreamingEventType.md) __getType__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [JsonStreamingEventType](JsonStreamingEventType.md) __getType__()</span>
 
 
 

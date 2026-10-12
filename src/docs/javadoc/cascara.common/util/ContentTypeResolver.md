@@ -18,11 +18,12 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                             | Method                                                                                                                                                            | Description |
-|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public abstract [ContentType](ContentType.md) | [resolve](#resolve)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) type)                                            |             |
-| public abstract void                          | [add](#add)([ContentType](ContentType.md) contentType)                                                                                                            |             |
-| public abstract void                          | [addAll](#addall)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [ContentType](ContentType.md)> contentTypes) |             |
+| Modifier and Type                                                                                                                       | Method                                                                                                                                                            | Description |
+|-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public abstract [ContentType](ContentType.md)                                                                                           | [resolve](#resolve)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) type)                                            |             |
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ContentType](ContentType.md)> | [getAll](#getall)()                                                                                                                                               |             |
+| public abstract void                                                                                                                    | [add](#add)([ContentType](ContentType.md) contentType)                                                                                                            |             |
+| public abstract void                                                                                                                    | [addAll](#addall)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [ContentType](ContentType.md)> contentTypes) |             |
 
 
 
@@ -31,6 +32,15 @@ All Known Implementing Classes:<br/>
 ### resolve
 
 <span style="font-family: monospace; font-size: 80%;">public abstract [ContentType](ContentType.md) __resolve__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) type)</span>
+
+
+
+
+---
+
+### getAll
+
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ContentType](ContentType.md)> __getAll__()</span>
 
 
 

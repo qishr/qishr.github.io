@@ -29,13 +29,13 @@ Package [io.github.qishr.cascara.ui.language](index.md)
 | public [Locale](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Locale.html) | [getLocale](#getlocale)() |             |
 
 
-### Methods inherited from [AbstractOption](../option/AbstractOption.md)
-
-equals, getOptionId, hashCode
-
 ### Methods inherited from [SimpleStringOption](../option/SimpleStringOption.md)
 
 setOptionText, getOptionText, optionTextProperty, getOptionTranslationKey
+
+### Methods inherited from [AbstractOption](../option/AbstractOption.md)
+
+equals, getOptionId, hashCode
 
 
 ## Method Details

@@ -42,22 +42,22 @@ Direct Known Subtypes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                | Method                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Description |
-|--------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public static [ArchiveFile](ArchiveFile.md)                                                                                                      | [open](#open)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) archivePath)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |             |
-| public static [ArchiveFile](ArchiveFile.md)                                                                                                      | [create](#create)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) archivePath)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |             |
-| public void                                                                                                                                      | [close](#close)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |             |
-| public [InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html)                                      | [getInputStream](#getinputstream)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) filePath)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |             |
-| public byte[]                                                                                                                                    | [extractFile](#extractfile)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) filePath)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |             |
-| protected static byte[]                                                                                                                          | [extractFile](#extractfile)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) archivePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) filePath)                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[EntryInfo](ArchiveFile.EntryInfo.md)>           | [listFiles](#listfiles)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[EntryInfo](ArchiveFile.EntryInfo.md)>           | [listFiles](#listfiles)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) dirPath)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |             |
-| public void                                                                                                                                      | [addDirectory](#adddirectory)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) dirPath)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |             |
-| public void                                                                                                                                      | [addDirectory](#adddirectory)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) sourcePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |             |
-| protected void                                                                                                                                   | [walk](#walk)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) sourcePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName, [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[LocalizableIOException](../diagnostic/LocalizableIOException.md)> exceptions, [BiConsumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/BiConsumer.html)<[Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html), [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)> run) |             |
-| public void                                                                                                                                      | [addFile](#addfile)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) sourcePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |             |
-| public void                                                                                                                                      | [addFile](#addfile)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) content, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |             |
-| protected static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[EntryInfo](ArchiveFile.EntryInfo.md)> | [listFiles](#listfiles)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) archivePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) dirPath)                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |             |
+| Modifier and Type                                                                                                                                | Method                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Description |
+|--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public static [ArchiveFile](ArchiveFile.md)                                                                                                      | [open](#open)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) archivePath)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |             |
+| public static [ArchiveFile](ArchiveFile.md)                                                                                                      | [create](#create)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) archivePath)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |             |
+| public void                                                                                                                                      | [close](#close)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |             |
+| public [InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html)                                      | [getInputStream](#getinputstream)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |             |
+| public byte[]                                                                                                                                    | [extractFile](#extractfile)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |             |
+| protected static byte[]                                                                                                                          | [extractFile](#extractfile)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) archivePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[EntryInfo](ArchiveFile.EntryInfo.md)>           | [listFiles](#listfiles)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[EntryInfo](ArchiveFile.EntryInfo.md)>           | [listFiles](#listfiles)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |             |
+| public void                                                                                                                                      | [addDirectory](#adddirectory)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) entryName)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |             |
+| public void                                                                                                                                      | [addDirectory](#adddirectory)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) sourcePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |             |
+| protected void                                                                                                                                   | [walk](#walk)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) sourcePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName, [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)> exceptions, [BiConsumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/BiConsumer.html)<[Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html), [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)> run) |             |
+| public void                                                                                                                                      | [addFile](#addfile)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) sourcePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |             |
+| public void                                                                                                                                      | [addFile](#addfile)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) content, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |             |
+| protected static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[EntryInfo](ArchiveFile.EntryInfo.md)> | [listFiles](#listfiles)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) archivePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |             |
 
 
 
@@ -83,7 +83,7 @@ Direct Known Subtypes:<br/>
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---
@@ -96,7 +96,7 @@ Direct Known Subtypes:<br/>
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---
@@ -120,39 +120,39 @@ Direct Known Subtypes:<br/>
 
 ### getInputStream
 
-<span style="font-family: monospace; font-size: 80%;">public [InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) __getInputStream__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) filePath)</span>
+<span style="font-family: monospace; font-size: 80%;">public [InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) __getInputStream__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)</span>
 
 
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---
 
 ### extractFile
 
-<span style="font-family: monospace; font-size: 80%;">public byte[] __extractFile__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) filePath)</span>
+<span style="font-family: monospace; font-size: 80%;">public byte[] __extractFile__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)</span>
 
 
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---
 
 ### extractFile
 
-<span style="font-family: monospace; font-size: 80%;">protected static byte[] __extractFile__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) archivePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) filePath)</span>
+<span style="font-family: monospace; font-size: 80%;">protected static byte[] __extractFile__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) archivePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)</span>
 
 
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---
@@ -165,33 +165,33 @@ Direct Known Subtypes:<br/>
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---
 
 ### listFiles
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[EntryInfo](ArchiveFile.EntryInfo.md)> __listFiles__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) dirPath)</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[EntryInfo](ArchiveFile.EntryInfo.md)> __listFiles__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)</span>
 
 
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---
 
 ### addDirectory
 
-<span style="font-family: monospace; font-size: 80%;">public void __addDirectory__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) dirPath)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __addDirectory__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) entryName)</span>
 
 
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---
@@ -204,20 +204,20 @@ Direct Known Subtypes:<br/>
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---
 
 ### walk
 
-<span style="font-family: monospace; font-size: 80%;">protected void __walk__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) sourcePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName, [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[LocalizableIOException](../diagnostic/LocalizableIOException.md)> exceptions, [BiConsumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/BiConsumer.html)<[Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html), [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)> run)</span>
+<span style="font-family: monospace; font-size: 80%;">protected void __walk__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) sourcePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName, [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)> exceptions, [BiConsumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/BiConsumer.html)<[Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html), [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)> run)</span>
 
 
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---
@@ -230,7 +230,7 @@ Direct Known Subtypes:<br/>
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---
@@ -243,20 +243,20 @@ Direct Known Subtypes:<br/>
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---
 
 ### listFiles
 
-<span style="font-family: monospace; font-size: 80%;">protected static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[EntryInfo](ArchiveFile.EntryInfo.md)> __listFiles__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) archivePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) dirPath)</span>
+<span style="font-family: monospace; font-size: 80%;">protected static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[EntryInfo](ArchiveFile.EntryInfo.md)> __listFiles__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) archivePath, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)</span>
 
 
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---

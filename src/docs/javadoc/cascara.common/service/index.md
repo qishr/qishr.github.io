@@ -4,7 +4,7 @@
 
 Cascara Service Provider Layer (SPL)Method names
 
-Methods in the [ServiceProviderLayer](ServiceProviderLayer.md) and [ServiceProviderRoot](ServiceProviderRoot.md) interfaces
+Methods in the ServiceProviderLayer and ServiceProviderRoot interfaces
 are split into categories:
 
 **Find in All Layers**
@@ -52,45 +52,43 @@ A convenience method for instantiating provider classes.
 
 === "All Classes and Interfaces"
 
-    | Class                                                               | Description |
-    |---------------------------------------------------------------------|-------------|
-    | [AbstractServiceProviderFactory](AbstractServiceProviderFactory.md) |             |
-    | [CapabilityQueries](CapabilityQueries.md)                           |             |
-    | [ContentTypeProvider](ContentTypeProvider.md)                       |             |
-    | [ServiceDiagnosticCode](ServiceDiagnosticCode.md)                   |             |
-    | [ServiceException](ServiceException.md)                             |             |
-    | [ServiceMetadata](ServiceMetadata.md)                               |             |
-    | [ServiceProvider](ServiceProvider.md)                               |             |
-    | [ServiceProviderFactory](ServiceProviderFactory.md)                 |             |
-    | [ServiceProviderLayer](ServiceProviderLayer.md)                     |             |
-    | [ServiceProviderRoot](ServiceProviderRoot.md)                       |             |
+    | Class                                                               | Description                                                                                   |
+    |---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+    | [AbstractServiceProviderFactory](AbstractServiceProviderFactory.md) |                                                                                               |
+    | [CapabilityQueries](CapabilityQueries.md)                           |                                                                                               |
+    | [ContentTypeProvider](ContentTypeProvider.md)                       |                                                                                               |
+    | [SPL](SPL.md)                                                       |                                                                                               |
+    | [ServiceException](ServiceException.md)                             |                                                                                               |
+    | [ServiceMessage](ServiceMessage.md)                                 |                                                                                               |
+    | [ServiceMetadata](ServiceMetadata.md)                               |                                                                                               |
+    | [ServiceProvider](ServiceProvider.md)                               |                                                                                               |
+    | [ServiceProviderFactory](ServiceProviderFactory.md)                 |  Note: For language processors, use io.github.qishr.cascara.common.lang.util.ProcessorFactory |
 
 
 === "Interfaces"
 
-    | Class                                           | Description |
-    |-------------------------------------------------|-------------|
-    | [ContentTypeProvider](ContentTypeProvider.md)   |             |
-    | [ServiceProvider](ServiceProvider.md)           |             |
-    | [ServiceProviderLayer](ServiceProviderLayer.md) |             |
-    | [ServiceProviderRoot](ServiceProviderRoot.md)   |             |
+    | Class                                         | Description |
+    |-----------------------------------------------|-------------|
+    | [ContentTypeProvider](ContentTypeProvider.md) |             |
+    | [SPL](SPL.md)                                 |             |
+    | [ServiceProvider](ServiceProvider.md)         |             |
 
 
 === "Classes"
 
-    | Class                                                               | Description |
-    |---------------------------------------------------------------------|-------------|
-    | [AbstractServiceProviderFactory](AbstractServiceProviderFactory.md) |             |
-    | [CapabilityQueries](CapabilityQueries.md)                           |             |
-    | [ServiceException](ServiceException.md)                             |             |
-    | [ServiceMetadata](ServiceMetadata.md)                               |             |
-    | [ServiceProviderFactory](ServiceProviderFactory.md)                 |             |
+    | Class                                                               | Description                                                                                   |
+    |---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+    | [AbstractServiceProviderFactory](AbstractServiceProviderFactory.md) |                                                                                               |
+    | [CapabilityQueries](CapabilityQueries.md)                           |                                                                                               |
+    | [ServiceException](ServiceException.md)                             |                                                                                               |
+    | [ServiceMetadata](ServiceMetadata.md)                               |                                                                                               |
+    | [ServiceProviderFactory](ServiceProviderFactory.md)                 |  Note: For language processors, use io.github.qishr.cascara.common.lang.util.ProcessorFactory |
 
 
 === "Enum Classes"
 
-    | Class                                             | Description |
-    |---------------------------------------------------|-------------|
-    | [ServiceDiagnosticCode](ServiceDiagnosticCode.md) |             |
+    | Class                               | Description |
+    |-------------------------------------|-------------|
+    | [ServiceMessage](ServiceMessage.md) |             |
 
 

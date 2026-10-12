@@ -7,6 +7,9 @@ Package [io.github.qishr.cascara.common.util](index.md)
 Enclosing Class:<br/>
     [io.github.qishr.cascara.common.util.CommandLine](CommandLine.md)
 
+Direct Known Subtypes:<br/>
+    [DefaultExceptionHandler](CommandLine.DefaultExceptionHandler.md), [AbstractParseResultHandler](CommandLine.AbstractParseResultHandler.md)
+
 
 ----
 

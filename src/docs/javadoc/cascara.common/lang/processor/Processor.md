@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [ServiceProvider](../../service/ServiceProvider.md), [ContentTypeProvider](../../service/ContentTypeProvider.md)
 
 All Known Implementing Classes:<br/>
-    [PullParser](PullParser.md), [AstConverter](AstConverter.md), [Tokenizer](Tokenizer.md), [AstParser](AstParser.md), [PushParser](PushParser.md), [Serializer](Serializer.md), [PathEvaluator](PathEvaluator.md), [Emitter](Emitter.md), [AbstractJsonProcessor](../../../cascara.lang.json/processor/AbstractJsonProcessor.md), [AbstractXmlProcessor](../../../cascara.lang.xml/processor/AbstractXmlProcessor.md)
+    [PullParser](PullParser.md), [AstConverter](AstConverter.md), [Tokenizer](Tokenizer.md), [AstParser](AstParser.md), [PushParser](PushParser.md), [Serializer](Serializer.md), [PathEvaluator](PathEvaluator.md), [Emitter](Emitter.md), [AbstractXmlProcessor](../../../cascara.lang.xml/processor/AbstractXmlProcessor.md)
 
 
 ----
@@ -18,10 +18,10 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                         | Method                                                                              | Description                                                              |
-|-------------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| public abstract [Processor](Processor.md) | [setReporter](#setreporter)([Reporter](../../diagnostic/Reporter.md) reporter)      | Sets the reporter for communicating warnings or errors.                  |
-| public abstract [Processor](Processor.md) | [setOptions](#setoptions)([LanguageOptions](../util/LanguageOptions.md)<?> options) | Sets the language-specific options (e.g., indentation, Unicode support). |
+| Modifier and Type                         | Method                                                                                | Description                                                              |
+|-------------------------------------------|---------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| public abstract [Processor](Processor.md) | [setReporter](#setreporter)([Reporter](../../diagnostic/report/Reporter.md) reporter) | Sets the reporter for communicating warnings or errors.                  |
+| public abstract [Processor](Processor.md) | [setOptions](#setoptions)([LanguageOptions](../util/LanguageOptions.md)<?> options)   | Sets the language-specific options (e.g., indentation, Unicode support). |
 
 
 
@@ -29,7 +29,7 @@ All Known Implementing Classes:<br/>
 
 ### setReporter
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [Processor](Processor.md) __setReporter__([Reporter](../../diagnostic/Reporter.md) reporter)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Processor](Processor.md) __setReporter__([Reporter](../../diagnostic/report/Reporter.md) reporter)</span>
 
 Sets the reporter for communicating warnings or errors.
 

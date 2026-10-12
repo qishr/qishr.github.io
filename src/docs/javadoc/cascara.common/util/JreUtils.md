@@ -20,20 +20,19 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                            | Method                                                                                                                                                                                                                                              | Description                                  |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                   | [getResourceAsString](#getresourceasstring)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path) |                                              |
-| public static [InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html)                                                                                           | [getResourceAsStream](#getresourceasstream)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path) | Returns an `InputStream` for a JRE resource. |
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                   | [getPackageNameFromResourcePath](#getpackagenamefromresourcepath)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path)                                                                                |                                              |
-| public static [ProcessHandle](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/ProcessHandle.html)                                                                                     | [parentProcess](#parentprocess)()                                                                                                                                                                                                                   |                                              |
-| public static boolean                                                                                                                                                                                        | [isRunningInTerminal](#isrunninginterminal)()                                                                                                                                                                                                       |                                              |
-| public static boolean                                                                                                                                                                                        | [isRunningViaGradle](#isrunningviagradle)()                                                                                                                                                                                                         |                                              |
-| public static boolean                                                                                                                                                                                        | [isRunningViaEclipse](#isrunningviaeclipse)()                                                                                                                                                                                                       |                                              |
-| public static boolean                                                                                                                                                                                        | [isJpmsEnabled](#isjpmsenabled)()                                                                                                                                                                                                                   |                                              |
-| public static [Module](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Module.html)                                                                                                   | [getUnnamedModule](#getunnamedmodule)()                                                                                                                                                                                                             |                                              |
-| public static [Module](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Module.html)                                                                                                   | [getModule](#getmodule)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) moduleName)                                                                                                                    |                                              |
-| public static [ClassLoader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/ClassLoader.html)                                                                                         | [getEffectiveClassLoader](#geteffectiveclassloader)()                                                                                                                                                                                               |                                              |
-| public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Method](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Method.html)> | [getAllMethods](#getallmethods)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)                                                                                                              |                                              |
+| Modifier and Type                                                                                                        | Method                                                                                                                                                                                                                                              | Description                                  |
+|--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)               | [getResourceAsString](#getresourceasstring)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path) |                                              |
+| public static [InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html)       | [getResourceAsStream](#getresourceasstream)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path) | Returns an `InputStream` for a JRE resource. |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)               | [getPackageNameFromResourcePath](#getpackagenamefromresourcepath)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path)                                                                                |                                              |
+| public static boolean                                                                                                    | [isJpmsEnabled](#isjpmsenabled)()                                                                                                                                                                                                                   |                                              |
+| public static [Module](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Module.html)               | [getUnnamedModule](#getunnamedmodule)()                                                                                                                                                                                                             |                                              |
+| public static [Module](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Module.html)               | [getModule](#getmodule)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) moduleName)                                                                                                                    |                                              |
+| public static [ProcessHandle](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/ProcessHandle.html) | [parentProcess](#parentprocess)()                                                                                                                                                                                                                   |                                              |
+| public static java.lang.@io.github.qishr.cascara.common.annotation.Experimental ClassLoader                              | [getEffectiveClassLoader](#geteffectiveclassloader)()                                                                                                                                                                                               |                                              |
+| public static @io.github.qishr.cascara.common.annotation.Experimental boolean                                            | [isRunningInTerminal](#isrunninginterminal)()                                                                                                                                                                                                       |                                              |
+| public static @io.github.qishr.cascara.common.annotation.Experimental boolean                                            | [isRunningViaGradle](#isrunningviagradle)()                                                                                                                                                                                                         |                                              |
+| public static @io.github.qishr.cascara.common.annotation.Experimental boolean                                            | [isRunningViaEclipse](#isrunningviaeclipse)()                                                                                                                                                                                                       |                                              |
 
 
 
@@ -47,7 +46,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---
@@ -65,7 +64,7 @@ The `InputStream` returned by `Class.getResourceAsStream`.
 
 **Throws:**
 
-[LocalizableIOException](../diagnostic/LocalizableIOException.md)
+[LocalizableIOException](../diagnostic/exception/LocalizableIOException.md)
 
 
 ---
@@ -73,42 +72,6 @@ The `InputStream` returned by `Class.getResourceAsStream`.
 ### getPackageNameFromResourcePath
 
 <span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getPackageNameFromResourcePath__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path)</span>
-
-
-
-
----
-
-### parentProcess
-
-<span style="font-family: monospace; font-size: 80%;">public static [ProcessHandle](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/ProcessHandle.html) __parentProcess__()</span>
-
-
-
-
----
-
-### isRunningInTerminal
-
-<span style="font-family: monospace; font-size: 80%;">public static boolean __isRunningInTerminal__()</span>
-
-
-
-
----
-
-### isRunningViaGradle
-
-<span style="font-family: monospace; font-size: 80%;">public static boolean __isRunningViaGradle__()</span>
-
-
-
-
----
-
-### isRunningViaEclipse
-
-<span style="font-family: monospace; font-size: 80%;">public static boolean __isRunningViaEclipse__()</span>
 
 
 
@@ -143,18 +106,49 @@ public static [Module](https://docs.oracle.com/en/java/javase/24/docs/api/java.b
 
 ---
 
-### getEffectiveClassLoader
+### parentProcess
 
-<span style="font-family: monospace; font-size: 80%;">public static [ClassLoader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/ClassLoader.html) __getEffectiveClassLoader__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static [ProcessHandle](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/ProcessHandle.html) __parentProcess__()</span>
 
 
 
 
 ---
 
-### getAllMethods
+### getEffectiveClassLoader
 
-<span style="font-family: monospace; font-size: 80%;">public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Method](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Method.html)> __getAllMethods__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public static java.lang.@io.github.qishr.cascara.common.annotation.Experimental ClassLoader __getEffectiveClassLoader__()</span>
+
+
+
+
+---
+
+### isRunningInTerminal
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public static @io.github.qishr.cascara.common.annotation.Experimental boolean __isRunningInTerminal__()</span>
+
+
+
+
+---
+
+### isRunningViaGradle
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public static @io.github.qishr.cascara.common.annotation.Experimental boolean __isRunningViaGradle__()</span>
+
+
+
+
+---
+
+### isRunningViaEclipse
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public static @io.github.qishr.cascara.common.annotation.Experimental boolean __isRunningViaEclipse__()</span>
 
 
 
