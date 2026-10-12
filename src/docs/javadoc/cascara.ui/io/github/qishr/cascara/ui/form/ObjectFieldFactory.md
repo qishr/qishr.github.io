@@ -1,0 +1,78 @@
+Package [io.github.qishr.cascara.ui.form](index.md)
+
+# Class ObjectFieldFactory
+[java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
+        [io.github.qishr.cascara.ui.form.AbstractFieldFactory](../../../../../../io/github/qishr/cascara/ui/form/AbstractFieldFactory.md)<br/>
+                io.github.qishr.cascara.ui.form.ObjectFieldFactory<br/>
+<br/>
+
+----
+
+<span style="font-family: monospace; font-size: 80%;">public class __ObjectFieldFactory__<br/>extends [AbstractFieldFactory](../../../../../../io/github/qishr/cascara/ui/form/AbstractFieldFactory.md)
+</span>
+
+
+## Constructor Summary
+
+| Constructor                                                                                                                                                                                                                                                                                                                                           | Description |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| ObjectFieldFactory([ObservableObject](../../../../../../io/github/qishr/cascara/ui/data/ObservableObject.md) object)                                                                                                                                                                                                                                  |             |
+| ObjectFieldFactory([ObservableObject](../../../../../../io/github/qishr/cascara/ui/data/ObservableObject.md) object, [SPL](../../../../../../../cascara.common/io/github/qishr/cascara/common/service/SPL.md) moduleLayer)                                                                                                                            |             |
+| ObjectFieldFactory([ObservableTableData](../../../../../../io/github/qishr/cascara/ui/api/data/ObservableTableData.md) object, [Schema](../../../../../../../cascara.schema/io/github/qishr/cascara/schema/util/Schema.md) schema)                                                                                                                    |             |
+| ObjectFieldFactory([ObservableTableData](../../../../../../io/github/qishr/cascara/ui/api/data/ObservableTableData.md) object, [SchemaNode](../../../../../../../cascara.schema/io/github/qishr/cascara/schema/structure/SchemaNode.md) schema)                                                                                                       |             |
+| ObjectFieldFactory([ObservableTableData](../../../../../../io/github/qishr/cascara/ui/api/data/ObservableTableData.md) object, [Schema](../../../../../../../cascara.schema/io/github/qishr/cascara/schema/util/Schema.md) schema, [SPL](../../../../../../../cascara.common/io/github/qishr/cascara/common/service/SPL.md) moduleLayer)              |             |
+| ObjectFieldFactory([ObservableTableData](../../../../../../io/github/qishr/cascara/ui/api/data/ObservableTableData.md) object, [SchemaNode](../../../../../../../cascara.schema/io/github/qishr/cascara/schema/structure/SchemaNode.md) schema, [SPL](../../../../../../../cascara.common/io/github/qishr/cascara/common/service/SPL.md) moduleLayer) |             |
+
+
+
+## Method Summary
+
+| Modifier and Type                                                          | Method                                                                                                                                            | Description |
+|----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public void                                                                | [setObject](#setobject)([ObservableTableData](../../../../../../io/github/qishr/cascara/ui/api/data/ObservableTableData.md) object)               |             |
+| public [Field](../../../../../../io/github/qishr/cascara/ui/form/Field.md) | [createLabeledField](#createlabeledfield)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fieldName) |             |
+| public [Field](../../../../../../io/github/qishr/cascara/ui/form/Field.md) | [createField](#createfield)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fieldName)               |             |
+
+
+### Methods inherited from [AbstractFieldFactory](../../../../../../io/github/qishr/cascara/ui/form/AbstractFieldFactory.md)
+
+createControl, notifyDocumentChanged, getUri, setOnChangeFieldValue, setDataProvider, setOnRefreshForm, setUri
+
+
+## Method Details
+
+### setObject
+
+<span style="font-family: monospace; font-size: 80%;">public void __setObject__([ObservableTableData](../../../../../../io/github/qishr/cascara/ui/api/data/ObservableTableData.md) object)</span>
+
+
+
+
+---
+
+### createLabeledField
+
+<span style="font-family: monospace; font-size: 80%;">public [Field](../../../../../../io/github/qishr/cascara/ui/form/Field.md) __createLabeledField__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fieldName)</span>
+
+
+
+**Throws:**
+
+[UiDataException](../../../../../../io/github/qishr/cascara/ui/data/UiDataException.md)
+
+
+---
+
+### createField
+
+<span style="font-family: monospace; font-size: 80%;">public [Field](../../../../../../io/github/qishr/cascara/ui/form/Field.md) __createField__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fieldName)</span>
+
+
+
+**Throws:**
+
+[UiDataException](../../../../../../io/github/qishr/cascara/ui/data/UiDataException.md)
+
+
+---
+

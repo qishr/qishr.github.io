@@ -4,7 +4,7 @@
 
 Once data exposes its structural DNA via a schema definition, desktop UI presentation ceases to be a manual layout chore; it becomes a deterministic science.
 
-When building an entry form, the framework routes the class properties through [`ObjectFieldFactory`](/javadoc/cascara.ui/form/ObjectFieldFactory/). This factory generates a reactive, self-contained JavaFX control wrapper called a `Field`.
+When building an entry form, the framework routes the class properties through [`ObjectFieldFactory`](../../../javadoc/cascara.ui/io/github/qishr/cascara/ui/form/ObjectFieldFactory.md). This factory generates a reactive, self-contained JavaFX control wrapper called a `Field`.
 
 The layout presentation rules adapt automatically based on the field constraints:
 
@@ -16,7 +16,7 @@ The developer writes zero manual UI layout or data-binding code. You simply dese
 
 ### Handling Discrete Sets: Enums and Option Providers
 
-What happens if the underlying type is a Java `Enum`? Reflection assigns the correct structural enum constant during deserialization, and [`ObjectFieldFactory`](/javadoc/cascara.ui/form/ObjectFieldFactory/) automatically generates a drop-down list control. The selection items populate dynamically using one of three hierarchical strategies:
+What happens if the underlying type is a Java `Enum`? Reflection assigns the correct structural enum constant during deserialization, and [`ObjectFieldFactory`](../../../javadoc/cascara.ui/io/github/qishr/cascara/ui/form/ObjectFieldFactory.md) automatically generates a drop-down list control. The selection items populate dynamically using one of three hierarchical strategies:
 
 ```
 1. Reflective Constants  --->  Reads declared Java Enum values
@@ -24,7 +24,7 @@ What happens if the underlying type is a Java `Enum`? Reflection assigns the cor
 3. Option Providers     --->  Queries dynamic runtime directories or contexts
 ```
 
-While the first two approaches provide fixed option lists, the third hooks directly into Cascara's open [`OptionProvider`](/javadoc/cascara.ui/option/OptionProvider/) architecture:
+While the first two approaches provide fixed option lists, the third hooks directly into Cascara's open [`OptionProvider`](../../../javadoc/cascara.ui/io/github/qishr/cascara/ui/option/OptionProvider.md) architecture:
 
 ```java
 public interface OptionProvider extends ServiceProvider {
@@ -33,7 +33,7 @@ public interface OptionProvider extends ServiceProvider {
 }
 ```
 
-By pairing an [`@OptionConstraint`](/javadoc/cascara.ui/schema/OptionConstraint/) annotation on a class field with a custom `OptionProvider`, the generated drop-down list becomes contextually alive:
+By pairing an [`@OptionConstraint`](../../../javadoc/cascara.ui/io/github/qishr/cascara/ui/schema/OptionConstraint.md) annotation on a class field with a custom `OptionProvider`, the generated drop-down list becomes contextually alive:
 
 ```java
 @Retention(RetentionPolicy.RUNTIME)
@@ -44,7 +44,7 @@ public @interface OptionConstraint {
 }
 ```
 
-This capability is vividly showcased in the [*Cascara UI Demo* application](/features/theme-engine/)'s **Theme Drop-down**. The list of options doesn't rely on a hardcoded array; it dynamically tracks the filesystem contents of your `~/.cascara/themes` and `~/.cascara/packages` directories.
+This capability is vividly showcased in the [*Cascara UI Demo* application](../theme-engine/index.md)'s **Theme Drop-down**. The list of options doesn't rely on a hardcoded array; it dynamically tracks the filesystem contents of your `~/.cascara/themes` and `~/.cascara/packages` directories.
 
 If you drop a new VS Code theme file straight into the packages directory while the application is running, the `OptionProvider` catches the system event, triggers its listeners, and the drop-down instantly mutates on screen without requiring an application restart.
 

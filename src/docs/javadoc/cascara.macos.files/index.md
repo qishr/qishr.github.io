@@ -5,9 +5,9 @@ A clean, modular, JNA-powered bridge for handling macOS FileOpen events in JavaF
 
 === "Exports"
 
-    | Package                                               | Description                                                                                  |
-    |-------------------------------------------------------|----------------------------------------------------------------------------------------------|
-    | [io.github.qishr.cascara.macos.files](files/index.md) | A clean, modular, JNA-powered bridge for handling macOS FileOpen events in JavaFX and Swing. |
+    | Package                                                                             | Description                                                                                  |
+    |-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+    | [io.github.qishr.cascara.macos.files](io/github/qishr/cascara/macos/files/index.md) | A clean, modular, JNA-powered bridge for handling macOS FileOpen events in JavaFX and Swing. |
 
 
 === "Requires"
@@ -22,8 +22,8 @@ A clean, modular, JNA-powered bridge for handling macOS FileOpen events in JavaF
 
 === "Opens"
 
-    | Package                                               | Description                                                                                  |
-    |-------------------------------------------------------|----------------------------------------------------------------------------------------------|
-    | [io.github.qishr.cascara.macos.files](files/index.md) | A clean, modular, JNA-powered bridge for handling macOS FileOpen events in JavaFX and Swing. |
+    | Package                                                                             | Description                                                                                  |
+    |-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+    | [io.github.qishr.cascara.macos.files](io/github/qishr/cascara/macos/files/index.md) | A clean, modular, JNA-powered bridge for handling macOS FileOpen events in JavaFX and Swing. |
 
 

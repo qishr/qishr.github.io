@@ -1,0 +1,231 @@
+Package [io.github.qishr.cascara.common.diagnostic](index.md)
+
+# Class Diagnostic
+[java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
+        io.github.qishr.cascara.common.diagnostic.Diagnostic<br/>
+<br/>
+
+----
+
+<span style="font-family: monospace; font-size: 80%;">public class __Diagnostic__</span>
+
+Represents a discrete event, log entry, or syntax/semantic problem identified
+during system runtime or source compilation.Each diagnostic encapsulates precise positioning boundaries, metadata strings,
+structural tracking indicators like thread name and execution timestamps, and
+an optional underlying exception cause.
+
+
+## Field Summary
+
+| Modifier and Type       | Field                           | Description |
+|-------------------------|---------------------------------|-------------|
+| public static final int | [UNKNOWN_COORD](#unknown_coord) |             |
+
+
+
+## Constructor Summary
+
+| Constructor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Description                                                                                                                                                                                                                                         |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Diagnostic([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, int startOffset, int endOffset, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source, [Level](../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level, [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] stackTrace, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) message, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                | Constructs a fully qualified [Diagnostic](../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) entry with absolute location indicators.                                                                                       |
+| Diagnostic([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source, [Level](../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level, [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] stackTrace, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) message, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) | Constructs a [Diagnostic](../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) entry by resolving positioning metadata directly from a parsing [Token](../../../../../../io/github/qishr/cascara/common/lang/token/Token.md). |
+
+
+
+## Method Summary
+
+| Modifier and Type                                                                                                           | Method                                                                                                       | Description                                                                                                                                      |
+|-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| public [URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html)                                | [getUri](#geturi)()                                                                                          | Returns the URI of the source resource associated with this diagnostic.                                                                          |
+| public int                                                                                                                  | [getLine](#getline)()                                                                                        | Returns the 1-based line number of this diagnostic.                                                                                              |
+| public int                                                                                                                  | [getColumn](#getcolumn)()                                                                                    | Returns the 1-based column number of this diagnostic.                                                                                            |
+| public int                                                                                                                  | [getStartOffset](#getstartoffset)()                                                                          | Returns the 0-based absolute starting character offset of this diagnostic.                                                                       |
+| public int                                                                                                                  | [getEndOffset](#getendoffset)()                                                                              | Returns the 0-based absolute ending character offset (exclusive) of this diagnostic.                                                             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                         | [getSource](#getsource)()                                                                                    | Returns the identifier string of the subsystem that produced this diagnostic.                                                                    |
+| public [Level](../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md)                             | [getLevel](#getlevel)()                                                                                      | Returns the severity [Level](../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) classification of this diagnostic. |
+| public [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] | [getStackTrace](#getstacktrace)()                                                                            |                                                                                                                                                  |
+| public [DiagnosticMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)        | [getMessage](#getmessage)()                                                                                  | Returns the stable classification code, suitable for localization and system filtering.                                                          |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                         | [getFormattedMessage](#getformattedmessage)()                                                                | Returns the formatted descriptive text message of this diagnostic.                                                                               |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]                       | [getDetails](#getdetails)()                                                                                  | Returns the arguments for the message format placeholders.                                                                                       |
+| public [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html)                   | [getCause](#getcause)()                                                                                      | Returns the underlying exception that caused this diagnostic, or `null` if none was provided.                                                    |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                         | [getThread](#getthread)()                                                                                    | Returns the name of the execution thread that instantiated this diagnostic instance.                                                             |
+| public long                                                                                                                 | [getProcessId](#getprocessid)()                                                                              |                                                                                                                                                  |
+| public [Instant](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Instant.html)                       | [getTimestamp](#gettimestamp)()                                                                              | Returns the exact timestamp indicating when this diagnostic was instantiated.                                                                    |
+| public void                                                                                                                 | [setUri](#seturi)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri) | Sets the URI of the source resource associated with this diagnostic.                                                                             |
+| public void                                                                                                                 | [setLine](#setline)(int line)                                                                                | Sets the URI of the source resource associated with this diagnostic.                                                                             |
+
+
+
+## Field Details
+
+### UNKNOWN_COORD
+
+<span style="font-family: monospace; font-size: 80%;">public static final int __UNKNOWN_COORD__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../constant-values.md)
+
+
+
+---
+
+
+## Method Details
+
+### getUri
+
+<span style="font-family: monospace; font-size: 80%;">public [URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) __getUri__()</span>
+
+Returns the URI of the source resource associated with this diagnostic.
+
+
+---
+
+### getLine
+
+<span style="font-family: monospace; font-size: 80%;">public int __getLine__()</span>
+
+Returns the 1-based line number of this diagnostic.
+
+
+---
+
+### getColumn
+
+<span style="font-family: monospace; font-size: 80%;">public int __getColumn__()</span>
+
+Returns the 1-based column number of this diagnostic.
+
+
+---
+
+### getStartOffset
+
+<span style="font-family: monospace; font-size: 80%;">public int __getStartOffset__()</span>
+
+Returns the 0-based absolute starting character offset of this diagnostic.
+
+
+---
+
+### getEndOffset
+
+<span style="font-family: monospace; font-size: 80%;">public int __getEndOffset__()</span>
+
+Returns the 0-based absolute ending character offset (exclusive) of this diagnostic.
+
+
+---
+
+### getSource
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getSource__()</span>
+
+Returns the identifier string of the subsystem that produced this diagnostic.This is usually the FQCN of the class creating the diagnostic report.
+
+
+---
+
+### getLevel
+
+<span style="font-family: monospace; font-size: 80%;">public [Level](../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) __getLevel__()</span>
+
+Returns the severity [Level](../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) classification of this diagnostic.
+
+
+---
+
+### getStackTrace
+
+<span style="font-family: monospace; font-size: 80%;">public [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] __getStackTrace__()</span>
+
+
+
+
+---
+
+### getMessage
+
+<span style="font-family: monospace; font-size: 80%;">public [DiagnosticMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) __getMessage__()</span>
+
+Returns the stable classification code, suitable for localization and system filtering.
+
+
+---
+
+### getFormattedMessage
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getFormattedMessage__()</span>
+
+Returns the formatted descriptive text message of this diagnostic.
+
+
+---
+
+### getDetails
+
+<span style="font-family: monospace; font-size: 80%;">public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] __getDetails__()</span>
+
+Returns the arguments for the message format placeholders.
+
+
+---
+
+### getCause
+
+<span style="font-family: monospace; font-size: 80%;">public [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) __getCause__()</span>
+
+Returns the underlying exception that caused this diagnostic, or `null` if none was provided.
+
+
+---
+
+### getThread
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getThread__()</span>
+
+Returns the name of the execution thread that instantiated this diagnostic instance.
+
+
+---
+
+### getProcessId
+
+<span style="font-family: monospace; font-size: 80%;">public long __getProcessId__()</span>
+
+
+
+
+---
+
+### getTimestamp
+
+<span style="font-family: monospace; font-size: 80%;">public [Instant](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Instant.html) __getTimestamp__()</span>
+
+Returns the exact timestamp indicating when this diagnostic was instantiated.
+
+
+---
+
+### setUri
+
+<span style="font-family: monospace; font-size: 80%;">public void __setUri__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri)</span>
+
+Sets the URI of the source resource associated with this diagnostic.
+
+
+---
+
+### setLine
+
+<span style="font-family: monospace; font-size: 80%;">public void __setLine__(int line)</span>
+
+Sets the URI of the source resource associated with this diagnostic.
+
+
+---
+

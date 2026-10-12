@@ -5,14 +5,14 @@
 
 === "Exports"
 
-    | Package                                                             | Description |
-    |---------------------------------------------------------------------|-------------|
-    | [io.github.qishr.cascara.lang.json.ast](ast/index.md)               |             |
-    | [io.github.qishr.cascara.lang.json.diagnostic](diagnostic/index.md) |             |
-    | [io.github.qishr.cascara.lang.json.processor](processor/index.md)   |             |
-    | [io.github.qishr.cascara.lang.json.streaming](streaming/index.md)   |             |
-    | [io.github.qishr.cascara.lang.json.token](token/index.md)           |             |
-    | [io.github.qishr.cascara.lang.json.util](util/index.md)             |             |
+    | Package                                                                                               | Description |
+    |-------------------------------------------------------------------------------------------------------|-------------|
+    | [io.github.qishr.cascara.lang.json.ast](io/github/qishr/cascara/lang/json/ast/index.md)               |             |
+    | [io.github.qishr.cascara.lang.json.diagnostic](io/github/qishr/cascara/lang/json/diagnostic/index.md) |             |
+    | [io.github.qishr.cascara.lang.json.processor](io/github/qishr/cascara/lang/json/processor/index.md)   |             |
+    | [io.github.qishr.cascara.lang.json.streaming](io/github/qishr/cascara/lang/json/streaming/index.md)   |             |
+    | [io.github.qishr.cascara.lang.json.token](io/github/qishr/cascara/lang/json/token/index.md)           |             |
+    | [io.github.qishr.cascara.lang.json.util](io/github/qishr/cascara/lang/json/util/index.md)             |             |
 
 
 === "Requires"
@@ -25,16 +25,16 @@
 
 === "Opens"
 
-    | Package                                                           | Description |
-    |-------------------------------------------------------------------|-------------|
-    | [io.github.qishr.cascara.lang.json.processor](processor/index.md) |             |
+    | Package                                                                                             | Description |
+    |-----------------------------------------------------------------------------------------------------|-------------|
+    | [io.github.qishr.cascara.lang.json.processor](io/github/qishr/cascara/lang/json/processor/index.md) |             |
 
 
 
 === "Provides"
 
-    | Interface                                                                                              | Implementations                                                                                                                                                                                                                                                                                                                                                                                                                            |
-    |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | [io.github.qishr.cascara.common.service.ServiceProvider](../cascara.common/service/ServiceProvider.md) | [io.github.qishr.cascara.lang.json.processor.JsonConverter](processor/JsonConverter), [io.github.qishr.cascara.lang.json.processor.JsonEmitter](processor/JsonEmitter), [io.github.qishr.cascara.lang.json.processor.JsonAstParser](processor/JsonAstParser), [io.github.qishr.cascara.lang.json.processor.JsonTokenizer](processor/JsonTokenizer), [io.github.qishr.cascara.lang.json.processor.JsonSerializer](processor/JsonSerializer) |
+    | Interface                                                                                                                             | Implementations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+    |---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | [io.github.qishr.cascara.common.service.ServiceProvider](../cascara.common/io/github/qishr/cascara/common/service/ServiceProvider.md) | [io.github.qishr.cascara.lang.json.processor.JsonConverter](io/github/qishr/cascara/lang/json/processor/JsonConverter.md), [io.github.qishr.cascara.lang.json.processor.JsonEmitter](io/github/qishr/cascara/lang/json/processor/JsonEmitter.md), [io.github.qishr.cascara.lang.json.processor.JsonAstParser](io/github/qishr/cascara/lang/json/processor/JsonAstParser.md), [io.github.qishr.cascara.lang.json.processor.JsonTokenizer](io/github/qishr/cascara/lang/json/processor/JsonTokenizer.md), [io.github.qishr.cascara.lang.json.processor.JsonSerializer](io/github/qishr/cascara/lang/json/processor/JsonSerializer.md) |
 
 

@@ -1,0 +1,341 @@
+Package [io.github.qishr.cascara.ui.data](index.md)
+
+# Class ObservableTreeNode
+[java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
+        [io.github.qishr.cascara.ui.data.ObservableObject](../../../../../../io/github/qishr/cascara/ui/data/ObservableObject.md)<br/>
+                io.github.qishr.cascara.ui.data.ObservableTreeNode<br/>
+<br/>
+All Implemented Interfaces:<br/>
+    [ObservableTreeData](../../../../../../io/github/qishr/cascara/ui/api/data/ObservableTreeData.md)<T, V>
+
+Direct Known Subtypes:<br/>
+    [ObservableMenuItem](../../../../../../io/github/qishr/cascara/ui/menu/ObservableMenuItem.md)
+
+
+----
+
+<span style="font-family: monospace; font-size: 80%;">public abstract class __ObservableTreeNode__<br/>extends [ObservableObject](../../../../../../io/github/qishr/cascara/ui/data/ObservableObject.md)
+</span>
+
+
+## Constructor Summary
+
+| Constructor                                                                                                                         | Description |
+|-------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| ObservableTreeNode(T parent, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) nodeName) |             |
+
+
+
+## Method Summary
+
+| Modifier and Type                                                                                                                                                                                                                                                                         | Method                                                                                                                                                       | Description                                             |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| protected abstract T                                                                                                                                                                                                                                                                      | [self](#self)()                                                                                                                                              |                                                         |
+| public [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)<[PrimitiveType](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/PrimitiveType.md)>                                                              | [schemaTypeProperty](#schematypeproperty)()                                                                                                                  |                                                         |
+| public [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)<[PrimitiveType](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/PrimitiveType.md)>                                                              | [typeProperty](#typeproperty)()                                                                                                                              |                                                         |
+| public [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)<[SchemaNode](../../../../../../../cascara.schema/io/github/qishr/cascara/schema/structure/SchemaNode.md)>                                                                    | [schemaProperty](#schemaproperty)()                                                                                                                          |                                                         |
+| public final [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)>                                                                          | [nodeNameProperty](#nodenameproperty)()                                                                                                                      |                                                         |
+| public final [SimpleObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/SimpleObjectProperty.html)<T>                                                                                                                                                         | [parentProperty](#parentproperty)()                                                                                                                          |                                                         |
+| public [SimpleObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/SimpleObjectProperty.html)<V>                                                                                                                                                               | [payloadProperty](#payloadproperty)()                                                                                                                        |                                                         |
+| public final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                 | [getNodeName](#getnodename)()                                                                                                                                |                                                         |
+| public final void                                                                                                                                                                                                                                                                         | [setNodeName](#setnodename)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) v)                                  |                                                         |
+| public [SchemaNode](../../../../../../../cascara.schema/io/github/qishr/cascara/schema/structure/SchemaNode.md)                                                                                                                                                                           | [getSchema](#getschema)()                                                                                                                                    |                                                         |
+| public void                                                                                                                                                                                                                                                                               | [setSchema](#setschema)([SchemaNode](../../../../../../../cascara.schema/io/github/qishr/cascara/schema/structure/SchemaNode.md) schema)                     |                                                         |
+| public final [PrimitiveType](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/PrimitiveType.md)                                                                                                                                                               | [getSchemaType](#getschematype)()                                                                                                                            |                                                         |
+| protected void                                                                                                                                                                                                                                                                            | [onChildAdded](#onchildadded)(T node)                                                                                                                        | Called when a child is added to this node.              |
+| protected void                                                                                                                                                                                                                                                                            | [onChildRemoved](#onchildremoved)(T node)                                                                                                                    | Called when a child is removed from this node.          |
+| protected void                                                                                                                                                                                                                                                                            | [onValueChanged](#onvaluechanged)(V value)                                                                                                                   | Called when the value held by this node changes.        |
+| public T                                                                                                                                                                                                                                                                                  | [getParent](#getparent)()                                                                                                                                    |                                                         |
+| public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)<T>                                                                                                                                                                              | [getChildren](#getchildren)()                                                                                                                                |                                                         |
+| public final void                                                                                                                                                                                                                                                                         | [setParent](#setparent)(T v)                                                                                                                                 |                                                         |
+| public T                                                                                                                                                                                                                                                                                  | [getChild](#getchild)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                     |                                                         |
+| public boolean                                                                                                                                                                                                                                                                            | [isBranch](#isbranch)()                                                                                                                                      |                                                         |
+| protected boolean                                                                                                                                                                                                                                                                         | [canHaveChildren](#canhavechildren)()                                                                                                                        | Override this only in classes that load data on demand. |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [getTreePathInsertParent](#gettreepathinsertparent)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) parentName) |                                                         |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [getTreePath](#gettreepath)()                                                                                                                                |                                                         |
+| public T                                                                                                                                                                                                                                                                                  | [getByPath](#getbypath)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path)                                   |                                                         |
+| public V                                                                                                                                                                                                                                                                                  | [getPayload](#getpayload)()                                                                                                                                  |                                                         |
+| public void                                                                                                                                                                                                                                                                               | [setPayload](#setpayload)(V v)                                                                                                                               |                                                         |
+| public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Property](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/Property.html)<?>> | [getChildMap](#getchildmap)()                                                                                                                                |                                                         |
+| public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Property](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/Property.html)<?>> | [getDataContext](#getdatacontext)()                                                                                                                          |                                                         |
+
+
+### Methods inherited from [ObservableObject](../../../../../../io/github/qishr/cascara/ui/data/ObservableObject.md)
+
+displayStringProperty, getInteger, getObservablesMap, getPropertyMetadata, getValues, getObjectProperty, getObjectSchema, getObservables, getPropertyNames, getLong, getUserData, setObjectSchema, getValue, removeListener, getUri, addListener, putUserData, getString, createObservableProperty, getObservableList, set, getPath, objectSchemaProperty, getContentType, getObservable, getValuesMap, getBoolean
+
+
+## Method Details
+
+### self
+
+<span style="font-family: monospace; font-size: 80%;">protected abstract T __self__()</span>
+
+
+
+
+---
+
+### schemaTypeProperty
+
+<span style="font-family: monospace; font-size: 80%;">public [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)<[PrimitiveType](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/PrimitiveType.md)> __schemaTypeProperty__()</span>
+
+
+
+
+---
+
+### typeProperty
+
+<span style="font-family: monospace; font-size: 80%;">public [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)<[PrimitiveType](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/PrimitiveType.md)> __typeProperty__()</span>
+
+
+
+
+---
+
+### schemaProperty
+
+<span style="font-family: monospace; font-size: 80%;">public [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)<[SchemaNode](../../../../../../../cascara.schema/io/github/qishr/cascara/schema/structure/SchemaNode.md)> __schemaProperty__()</span>
+
+
+
+
+---
+
+### nodeNameProperty
+
+<span style="font-family: monospace; font-size: 80%;">public final [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> __nodeNameProperty__()</span>
+
+
+
+
+---
+
+### parentProperty
+
+<span style="font-family: monospace; font-size: 80%;">public final [SimpleObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/SimpleObjectProperty.html)<T> __parentProperty__()</span>
+
+
+
+
+---
+
+### payloadProperty
+
+<span style="font-family: monospace; font-size: 80%;">public [SimpleObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/SimpleObjectProperty.html)<V> __payloadProperty__()</span>
+
+
+
+
+---
+
+### getNodeName
+
+<span style="font-family: monospace; font-size: 80%;">public final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getNodeName__()</span>
+
+
+
+**Specified By:**
+
+[ObservableTreeData](../../../../../../io/github/qishr/cascara/ui/api/data/ObservableTreeData.md)
+
+
+---
+
+### setNodeName
+
+<span style="font-family: monospace; font-size: 80%;">public final void __setNodeName__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) v)</span>
+
+
+
+
+---
+
+### getSchema
+
+<span style="font-family: monospace; font-size: 80%;">public [SchemaNode](../../../../../../../cascara.schema/io/github/qishr/cascara/schema/structure/SchemaNode.md) __getSchema__()</span>
+
+
+
+
+---
+
+### setSchema
+
+<span style="font-family: monospace; font-size: 80%;">public void __setSchema__([SchemaNode](../../../../../../../cascara.schema/io/github/qishr/cascara/schema/structure/SchemaNode.md) schema)</span>
+
+
+
+
+---
+
+### getSchemaType
+
+<span style="font-family: monospace; font-size: 80%;">public final [PrimitiveType](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/PrimitiveType.md) __getSchemaType__()</span>
+
+
+
+
+---
+
+### onChildAdded
+
+<span style="font-family: monospace; font-size: 80%;">protected void __onChildAdded__(T node)</span>
+
+Called when a child is added to this node.
+
+
+---
+
+### onChildRemoved
+
+<span style="font-family: monospace; font-size: 80%;">protected void __onChildRemoved__(T node)</span>
+
+Called when a child is removed from this node.
+
+
+---
+
+### onValueChanged
+
+<span style="font-family: monospace; font-size: 80%;">protected void __onValueChanged__(V value)</span>
+
+Called when the value held by this node changes.
+
+
+---
+
+### getParent
+
+<span style="font-family: monospace; font-size: 80%;">public T __getParent__()</span>
+
+
+
+
+---
+
+### getChildren
+
+<span style="font-family: monospace; font-size: 80%;">public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)<T> __getChildren__()</span>
+
+
+
+
+---
+
+### setParent
+
+<span style="font-family: monospace; font-size: 80%;">public final void __setParent__(T v)</span>
+
+
+
+
+---
+
+### getChild
+
+<span style="font-family: monospace; font-size: 80%;">public T __getChild__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)</span>
+
+
+
+
+---
+
+### isBranch
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __isBranch__()</span>
+
+
+
+**Specified By:**
+
+[ObservableTreeData](../../../../../../io/github/qishr/cascara/ui/api/data/ObservableTreeData.md)
+
+
+---
+
+### canHaveChildren
+
+<span style="font-family: monospace; font-size: 80%;">protected boolean __canHaveChildren__()</span>
+
+Override this only in classes that load data on demand.
+
+
+---
+
+### getTreePathInsertParent
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getTreePathInsertParent__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) parentName)</span>
+
+
+
+
+---
+
+### getTreePath
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getTreePath__()</span>
+
+
+
+**Specified By:**
+
+[ObservableTreeData](../../../../../../io/github/qishr/cascara/ui/api/data/ObservableTreeData.md)
+
+
+---
+
+### getByPath
+
+<span style="font-family: monospace; font-size: 80%;">public T __getByPath__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path)</span>
+
+
+
+
+---
+
+### getPayload
+
+<span style="font-family: monospace; font-size: 80%;">public V __getPayload__()</span>
+
+
+
+
+---
+
+### setPayload
+
+<span style="font-family: monospace; font-size: 80%;">public void __setPayload__(V v)</span>
+
+
+
+
+---
+
+### getChildMap
+
+<span style="font-family: monospace; font-size: 80%;">public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Property](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/Property.html)<?>> __getChildMap__()</span>
+
+
+
+
+---
+
+### getDataContext
+
+<span style="font-family: monospace; font-size: 80%;">public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Property](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/Property.html)<?>> __getDataContext__()</span>
+
+
+
+**Specified By:**
+
+[ObservableTreeData](../../../../../../io/github/qishr/cascara/ui/api/data/ObservableTreeData.md)
+
+**Overrides:**
+
+[ObservableObject](../../../../../../../cascara.ui/io/github/qishr/cascara/ui/data/ObservableObject.md#getdatacontext)
+
+
+---
+

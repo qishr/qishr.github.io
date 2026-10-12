@@ -24,10 +24,10 @@ Internationalization is a first-class concern throughout. Languages and themes c
 
 Continue reading...
 
-- [Theme Engine](cascara/ui/theme-engine/)
+- [Theme Engine](cascara/ui/theme-engine/index.md)
 - Renderer
-- [Language Processors Collection](cascara/language-processors/)
-- [Localizable Menus](cascara/ui/localizable-menus)
-- [Service Provider Layer](cascara/service-provider-layer/)
+- [Language Processors Collection](cascara/language-processors/index.md)
+- [Localizable Menus](cascara/ui/localizable-menus/index.md)
+- [Service Provider Layer](cascara/service-provider-layer/index.md)
 - Language-Agnostic JSON Schema
-- [Schema-Driven Controls](cascara/ui/schema-driven-controls)
+- [Schema-Driven Controls](cascara/ui/schema-driven-controls/index.md)

@@ -5,12 +5,12 @@
 
 === "Exports"
 
-    | Package                                                              | Description |
-    |----------------------------------------------------------------------|-------------|
-    | [io.github.qishr.cascara.common.content](content/index.md)           |             |
-    | [io.github.qishr.cascara.common.content.type](content/type/index.md) |             |
-    | [io.github.qishr.cascara.common.io](io/index.md)                     |             |
-    | [io.github.qishr.cascara.common.io.provider](io/provider/index.md)   |             |
+    | Package                                                                                             | Description |
+    |-----------------------------------------------------------------------------------------------------|-------------|
+    | [io.github.qishr.cascara.common.content](io/github/qishr/cascara/common/content/index.md)           |             |
+    | [io.github.qishr.cascara.common.content.type](io/github/qishr/cascara/common/content/type/index.md) |             |
+    | [io.github.qishr.cascara.common.io](io/github/qishr/cascara/common/io/index.md)                     |             |
+    | [io.github.qishr.cascara.common.io.provider](io/github/qishr/cascara/common/io/provider/index.md)   |             |
 
 
 === "Requires"
@@ -25,25 +25,25 @@
 
 === "Opens"
 
-    | Package                                                              | Description |
-    |----------------------------------------------------------------------|-------------|
-    | [io.github.qishr.cascara.common.content](content/index.md)           |             |
-    | [io.github.qishr.cascara.common.content.type](content/type/index.md) |             |
-    | [io.github.qishr.cascara.common.io](io/index.md)                     |             |
+    | Package                                                                                             | Description |
+    |-----------------------------------------------------------------------------------------------------|-------------|
+    | [io.github.qishr.cascara.common.content](io/github/qishr/cascara/common/content/index.md)           |             |
+    | [io.github.qishr.cascara.common.content.type](io/github/qishr/cascara/common/content/type/index.md) |             |
+    | [io.github.qishr.cascara.common.io](io/github/qishr/cascara/common/io/index.md)                     |             |
 
 
 === "Uses"
 
-    | Interface                                                                                              | Description |
-    |--------------------------------------------------------------------------------------------------------|-------------|
-    | [io.github.qishr.cascara.common.service.ServiceProvider](../cascara.common/service/ServiceProvider.md) |             |
+    | Interface                                                                                                                             | Description |
+    |---------------------------------------------------------------------------------------------------------------------------------------|-------------|
+    | [io.github.qishr.cascara.common.service.ServiceProvider](../cascara.common/io/github/qishr/cascara/common/service/ServiceProvider.md) |             |
 
 
 
 === "Provides"
 
-    | Interface                                                                                      | Implementations                                                                                                                                                                                                                                                                                                                                                                                                        |
-    |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | [io.github.qishr.cascara.common.io.provider.ResourceProvider](io/provider/ResourceProvider.md) | [io.github.qishr.cascara.common.io.provider.CascaraResourceProvider](io/provider/CascaraResourceProvider), [io.github.qishr.cascara.common.io.provider.FileResourceProvider](io/provider/FileResourceProvider), [io.github.qishr.cascara.common.io.provider.HttpResourceProvider](io/provider/HttpResourceProvider), [io.github.qishr.cascara.common.io.provider.ResResourceProvider](io/provider/ResResourceProvider) |
+    | Interface                                                                                                                     | Implementations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+    |-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | [io.github.qishr.cascara.common.io.provider.ResourceProvider](io/github/qishr/cascara/common/io/provider/ResourceProvider.md) | [io.github.qishr.cascara.common.io.provider.CascaraResourceProvider](io/github/qishr/cascara/common/io/provider/CascaraResourceProvider.md), [io.github.qishr.cascara.common.io.provider.FileResourceProvider](io/github/qishr/cascara/common/io/provider/FileResourceProvider.md), [io.github.qishr.cascara.common.io.provider.HttpResourceProvider](io/github/qishr/cascara/common/io/provider/HttpResourceProvider.md), [io.github.qishr.cascara.common.io.provider.ResResourceProvider](io/github/qishr/cascara/common/io/provider/ResResourceProvider.md) |
 
 

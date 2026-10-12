@@ -1,11 +1,11 @@
 # File Formats
 
 - CSS
-- [CT](../language-processors/ct)
+- [CT](../language-processors/ct/index.md)
 - JAR
-- [JSON](../language-processors/json)
+- [JSON](../language-processors/json/index.md)
 - MD
-- [VSIX](vsix)
+- [VSIX](vsix/index.md)
 - XML
-- [YAML](../language-processors/yaml)
+- [YAML](../language-processors/yaml/index.md)
 - ZIP

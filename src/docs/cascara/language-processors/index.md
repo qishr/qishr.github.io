@@ -1,6 +1,6 @@
 # Cascara Language Processors Collection
 
-The Cascara language processors collection is a set of modules that provide [high performance](/cascara/language-processors/yaml/performance-comparison/) and [extensible](/cascara/language-processors/extensible-design/type-descriptors/) language tools.
+The Cascara language processors collection is a set of modules that provide [high performance](yaml/performance-comparison.md) and [extensible](extensible-design/type-descriptors.md) language tools.
 
 The collection is currently under development, with YAML being the most mature implementation.
 
@@ -16,7 +16,7 @@ The collection is currently under development, with YAML being the most mature i
 
 *Cascara Language Processors* and *Cascara Common* are available in the [Maven Central](https://mvnrepository.com/artifact/io.github.qishr) repository.
 
-For installation, see [Getting Started](/cascara/getting-started/).
+For installation, see [Getting Started](../getting-started/index.md).
 
 ## Examples
 

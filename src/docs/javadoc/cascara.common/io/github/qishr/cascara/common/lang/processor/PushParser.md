@@ -1,0 +1,43 @@
+Package [io.github.qishr.cascara.common.lang.processor](index.md)
+
+# Interface PushParser
+[java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
+        io.github.qishr.cascara.common.lang.processor.PushParser<br/>
+<br/>
+All Implemented Interfaces:<br/>
+    [Processor](../../../../../../../io/github/qishr/cascara/common/lang/processor/Processor.md)
+
+All Known Implementing Classes:<br/>
+    [JsonPushParser](../../../../../../../../cascara.lang.json/io/github/qishr/cascara/lang/json/processor/JsonPushParser.md), [YamlPushParser](../../../../../../../../cascara.lang.yaml/io/github/qishr/cascara/lang/yaml/processor/YamlPushParser.md)
+
+
+----
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Beta<br/>
+public interface __PushParser__</span>
+
+
+## Method Summary
+
+| Modifier and Type    | Method                                                                                                                                                                                                                                       | Description                                                                                                                   |
+|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| public abstract void | [parse](#parse)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) input, [StreamHandler](../../../../../../../io/github/qishr/cascara/common/lang/streaming/StreamHandler.md)<E> handler) | Eagerly drives the input stream to completion, passing every structural event encountered directly to the registered handler. |
+
+
+
+## Method Details
+
+### parse
+
+<span style="font-family: monospace; font-size: 80%;">public abstract void __parse__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) input, [StreamHandler](../../../../../../../io/github/qishr/cascara/common/lang/streaming/StreamHandler.md)<E> handler)</span>
+
+Eagerly drives the input stream to completion, passing every
+structural event encountered directly to the registered handler.
+
+**Throws:**
+
+[ParserException](../../../../../../../io/github/qishr/cascara/common/lang/diagnostic/ParserException.md)
+
+
+---
+

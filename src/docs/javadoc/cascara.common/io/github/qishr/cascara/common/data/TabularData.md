@@ -1,0 +1,66 @@
+Package [io.github.qishr.cascara.common.data](index.md)
+
+# Interface TabularData
+[java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
+        io.github.qishr.cascara.common.data.TabularData<br/>
+<br/>
+All Known Implementing Classes:<br/>
+    [TreeData](../../../../../../io/github/qishr/cascara/common/data/TreeData.md), [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md), [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md), [ObservableTableData](../../../../../../../cascara.ui/io/github/qishr/cascara/ui/api/data/ObservableTableData.md)
+
+
+----
+
+<span style="font-family: monospace; font-size: 80%;">public interface __TabularData__</span>
+
+Data that can represent a row within a table
+
+
+## Method Summary
+
+| Modifier and Type                                                                                                                                                                                                                                                                                  | Method                                                                                                                    | Description |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|-------------|
+| public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]                                                                                                                                                                                     | [getValues](#getvalues)()                                                                                                 |             |
+| public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)> | [getValuesMap](#getvaluesmap)()                                                                                           |             |
+| public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)                                                                                                                                                                                       | [getValue](#getvalue)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)   |             |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [getString](#getstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key) |             |
+
+
+
+## Method Details
+
+### getValues
+
+<span style="font-family: monospace; font-size: 80%;">public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] __getValues__()</span>
+
+
+
+
+---
+
+### getValuesMap
+
+<span style="font-family: monospace; font-size: 80%;">public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)> __getValuesMap__()</span>
+
+
+
+
+---
+
+### getValue
+
+<span style="font-family: monospace; font-size: 80%;">public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) __getValue__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+
+
+
+
+---
+
+### getString
+
+<span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getString__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)</span>
+
+
+
+
+---
+

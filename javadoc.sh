@@ -5,7 +5,6 @@
 -doclet io.github.sandydunlop.markista.doclet.MarkdownDoclet \
 -docletpath /Users/sandy/git/markista/markista/markista/build/classes/java/main \
 -tabs \
---flatten-packages \
 -d /Users/sandy/git/cascara/ecosystem/other/qishr.github.io/src/docs/javadoc \
 --show-module-contents all \
 -link https://docs.oracle.com/en/java/java-components/javafx/25/docs/ \
@@ -24,3 +23,4 @@
 
 #--module-path /Users/sandy/git/cascara/ecosystem/core/cascara-ui/cascara-ui/build/modulepath:/Users/sandy/git/cascara/ecosystem/studio/cascara-macos-files/build/modulepath/cascara-macos-files-1.1.1.jar:/Users/sandy/git/cascara/ecosystem/studio/cascara-macos-menus/build/modulepath/cascara-macos-menus-0.2.1.jar \
 
+# --flatten-packages \

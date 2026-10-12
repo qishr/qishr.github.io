@@ -5,12 +5,12 @@
 
 === "Exports"
 
-    | Package                                                          | Description |
-    |------------------------------------------------------------------|-------------|
-    | [io.github.qishr.cascara.lang.xml.ast](ast/index.md)             |             |
-    | [io.github.qishr.cascara.lang.xml.processor](processor/index.md) |             |
-    | [io.github.qishr.cascara.lang.xml.token](token/index.md)         |             |
-    | [io.github.qishr.cascara.lang.xml.util](util/index.md)           |             |
+    | Package                                                                                           | Description |
+    |---------------------------------------------------------------------------------------------------|-------------|
+    | [io.github.qishr.cascara.lang.xml.ast](io/github/qishr/cascara/lang/xml/ast/index.md)             |             |
+    | [io.github.qishr.cascara.lang.xml.processor](io/github/qishr/cascara/lang/xml/processor/index.md) |             |
+    | [io.github.qishr.cascara.lang.xml.token](io/github/qishr/cascara/lang/xml/token/index.md)         |             |
+    | [io.github.qishr.cascara.lang.xml.util](io/github/qishr/cascara/lang/xml/util/index.md)           |             |
 
 
 === "Requires"

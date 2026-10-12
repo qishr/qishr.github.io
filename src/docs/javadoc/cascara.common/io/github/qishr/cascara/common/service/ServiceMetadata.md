@@ -1,0 +1,201 @@
+Package [io.github.qishr.cascara.common.service](index.md)
+
+# Class ServiceMetadata
+[java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
+        io.github.qishr.cascara.common.service.ServiceMetadata<br/>
+<br/>
+
+----
+
+<span style="font-family: monospace; font-size: 80%;">public class __ServiceMetadata__</span>
+
+
+## Constructor Summary
+
+| Constructor                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Description |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| ServiceMetadata([SPL](../../../../../../io/github/qishr/cascara/common/service/SPL.md) layer, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> type, [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) properties, [ContentType](../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType, boolean isSingleton, int priority) |             |
+
+
+
+## Method Summary
+
+| Modifier and Type                                                                                                                                                                                           | Method                                                                                                                                              | Description |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [SPL](../../../../../../io/github/qishr/cascara/common/service/SPL.md)                                                                                                                               | [getLayer](#getlayer)()                                                                                                                             |             |
+| public boolean                                                                                                                                                                                              | [isSingleton](#issingleton)()                                                                                                                       |             |
+| public int                                                                                                                                                                                                  | [getPriority](#getpriority)()                                                                                                                       |             |
+| public boolean                                                                                                                                                                                              | [getBooleanCapability](#getbooleancapability)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) capName) |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                         | [getModuleName](#getmodulename)()                                                                                                                   |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                         | [getTypeName](#gettypename)()                                                                                                                       |             |
+| public [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> | [getType](#gettype)()                                                                                                                               |             |
+| public [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?>                                                                                                        | [getCapabilityType](#getcapabilitytype)()                                                                                                           |             |
+| public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)                                                                                                                | [getProperties](#getproperties)()                                                                                                                   |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                         | [getProperty](#getproperty)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                      |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                         | [getJarPath](#getjarpath)()                                                                                                                         |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                         | [getTitle](#gettitle)()                                                                                                                             |             |
+| public [ContentType](../../../../../../io/github/qishr/cascara/common/util/ContentType.md)                                                                                                                  | [getContentType](#getcontenttype)()                                                                                                                 |             |
+| public boolean                                                                                                                                                                                              | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                                   |             |
+| public int                                                                                                                                                                                                  | [hashCode](#hashcode)()                                                                                                                             |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                         | [toString](#tostring)()                                                                                                                             |             |
+
+
+
+## Method Details
+
+### getLayer
+
+<span style="font-family: monospace; font-size: 80%;">public [SPL](../../../../../../io/github/qishr/cascara/common/service/SPL.md) __getLayer__()</span>
+
+
+
+
+---
+
+### isSingleton
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __isSingleton__()</span>
+
+
+
+
+---
+
+### getPriority
+
+<span style="font-family: monospace; font-size: 80%;">public int __getPriority__()</span>
+
+
+
+
+---
+
+### getBooleanCapability
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __getBooleanCapability__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) capName)</span>
+
+
+
+
+---
+
+### getModuleName
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getModuleName__()</span>
+
+
+
+
+---
+
+### getTypeName
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getTypeName__()</span>
+
+
+
+
+---
+
+### getType
+
+<span style="font-family: monospace; font-size: 80%;">public [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> __getType__()</span>
+
+
+
+
+---
+
+### getCapabilityType
+
+<span style="font-family: monospace; font-size: 80%;">public [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> __getCapabilityType__()</span>
+
+
+
+
+---
+
+### getProperties
+
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) __getProperties__()</span>
+
+
+
+
+---
+
+### getProperty
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getProperty__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)</span>
+
+
+
+
+---
+
+### getJarPath
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getJarPath__()</span>
+
+
+
+
+---
+
+### getTitle
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getTitle__()</span>
+
+
+
+
+---
+
+### getContentType
+
+<span style="font-family: monospace; font-size: 80%;">public [ContentType](../../../../../../io/github/qishr/cascara/common/util/ContentType.md) __getContentType__()</span>
+
+
+
+
+---
+
+### equals
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __equals__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)</span>
+
+
+
+**Overrides:**
+
+[Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#equals)
+
+
+---
+
+### hashCode
+
+<span style="font-family: monospace; font-size: 80%;">public int __hashCode__()</span>
+
+
+
+**Overrides:**
+
+[Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#hashcode)
+
+
+---
+
+### toString
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toString__()</span>
+
+
+
+**Overrides:**
+
+[Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#tostring)
+
+
+---
+

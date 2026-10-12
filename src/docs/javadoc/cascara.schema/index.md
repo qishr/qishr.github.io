@@ -5,14 +5,14 @@
 
 === "Exports"
 
-    | Package                                                          | Description                                                                  |
-    |------------------------------------------------------------------|------------------------------------------------------------------------------|
-    | [io.github.qishr.cascara.schema.annotation](annotation/index.md) |                                                                              |
-    | [io.github.qishr.cascara.schema.diagnostic](diagnostic/index.md) |                                                                              |
-    | [io.github.qishr.cascara.schema.structure](structure/index.md)   |                                                                              |
-    | [io.github.qishr.cascara.schema.constraint](constraint/index.md) | Constraints are applied to members variables in classes.                     |
-    | [io.github.qishr.cascara.schema.rule](rule/index.md)             | Rules are created by the Schema Compiler when a rule keyword is encountered. |
-    | [io.github.qishr.cascara.schema.util](util/index.md)             |                                                                              |
+    | Package                                                                                         | Description                                                                  |
+    |-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+    | [io.github.qishr.cascara.schema.annotation](io/github/qishr/cascara/schema/annotation/index.md) |                                                                              |
+    | [io.github.qishr.cascara.schema.diagnostic](io/github/qishr/cascara/schema/diagnostic/index.md) |                                                                              |
+    | [io.github.qishr.cascara.schema.structure](io/github/qishr/cascara/schema/structure/index.md)   |                                                                              |
+    | [io.github.qishr.cascara.schema.constraint](io/github/qishr/cascara/schema/constraint/index.md) | Constraints are applied to members variables in classes.                     |
+    | [io.github.qishr.cascara.schema.rule](io/github/qishr/cascara/schema/rule/index.md)             | Rules are created by the Schema Compiler when a rule keyword is encountered. |
+    | [io.github.qishr.cascara.schema.util](io/github/qishr/cascara/schema/util/index.md)             |                                                                              |
 
 
 === "Requires"
@@ -27,23 +27,23 @@
 
 === "Opens"
 
-    | Package                                              | Description |
-    |------------------------------------------------------|-------------|
-    | [io.github.qishr.cascara.schema.util](util/index.md) |             |
+    | Package                                                                             | Description |
+    |-------------------------------------------------------------------------------------|-------------|
+    | [io.github.qishr.cascara.schema.util](io/github/qishr/cascara/schema/util/index.md) |             |
 
 
 === "Uses"
 
-    | Interface                                                                                              | Description |
-    |--------------------------------------------------------------------------------------------------------|-------------|
-    | [io.github.qishr.cascara.common.service.ServiceProvider](../cascara.common/service/ServiceProvider.md) |             |
+    | Interface                                                                                                                             | Description |
+    |---------------------------------------------------------------------------------------------------------------------------------------|-------------|
+    | [io.github.qishr.cascara.common.service.ServiceProvider](../cascara.common/io/github/qishr/cascara/common/service/ServiceProvider.md) |             |
 
 
 
 === "Provides"
 
-    | Interface                                                                                              | Implementations                                                                                         |
-    |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-    | [io.github.qishr.cascara.common.service.ServiceProvider](../cascara.common/service/ServiceProvider.md) | [io.github.qishr.cascara.schema.util.CascaraSchemaResourceProvider](util/CascaraSchemaResourceProvider) |
+    | Interface                                                                                                                             | Implementations                                                                                                                           |
+    |---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+    | [io.github.qishr.cascara.common.service.ServiceProvider](../cascara.common/io/github/qishr/cascara/common/service/ServiceProvider.md) | [io.github.qishr.cascara.schema.util.CascaraSchemaResourceProvider](io/github/qishr/cascara/schema/util/CascaraSchemaResourceProvider.md) |
 
 
