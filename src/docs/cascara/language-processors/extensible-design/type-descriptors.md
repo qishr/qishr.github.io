@@ -57,7 +57,7 @@ The delegate acts as the serializer’s specific POV. It determines exactly what
 
 Things get interesting when we cross the boundary from structural syntax back into the strongly typed world of the JVM. When an AST node is deserialized, it transitions into an instance of a live JVM class (referred to as `jvmInstance` across the Cascara codebase).
 
-This mapping is governed by the [`TypeSerializer<T>`](../../../javadoc/cascara.common/io/github/qishr/cascara/common/lang/type/TypeSerializer.md) and [`TypeDescriptor<T>`](../../../javadoc/cascara.common/io/github/qishr/cascara/common/lang/type/TypeDescriptor.md) interfaces:
+This mapping is governed by the [`TypeSerializer<T>`](../../../javadoc/latest/cascara.common/io/github/qishr/cascara/common/lang/type/TypeSerializer.md) and [`TypeDescriptor<T>`](../../../javadoc/latest/cascara.common/io/github/qishr/cascara/common/lang/type/TypeDescriptor.md) interfaces:
 
 ```java
 public interface TypeSerializer<T> extends TypeDescriptor<T> {
@@ -66,16 +66,16 @@ public interface TypeSerializer<T> extends TypeDescriptor<T> {
 }
 ```
 
-When a format deserializer (such as [`JsonSerializer`](../../../javadoc/cascara.lang.json/io/github/qishr/cascara/lang/json/processor/JsonSerializer.md)) processes a field that expects a `java.net.URI`, it recognizes that `URI` isn’t a base primitive natively specified by JSON Schema. To resolve this, it runs through an structured lookup pipeline:
+When a format deserializer (such as [`JsonSerializer`](../../../javadoc/latest/cascara.lang.json/io/github/qishr/cascara/lang/json/processor/JsonSerializer.md)) processes a field that expects a `java.net.URI`, it recognizes that `URI` isn’t a base primitive natively specified by JSON Schema. To resolve this, it runs through an structured lookup pipeline:
 
 1. It searches the local registry for a registered `TypeDescriptor<URI>`.
 
-2. If absent, it queries Cascara's extensibility architecture via the [`SPL`](../../../javadoc/cascara.common/io/github/qishr/cascara/common/service/SPL.md).
+2. If absent, it queries Cascara's extensibility architecture via the [`SPL`](../../../javadoc/latest/cascara.common/io/github/qishr/cascara/common/service/SPL.md).
 
-3. It obtains (and caches) a native [`UriDescriptor`](../../../javadoc/cascara.common/io/github/qishr/cascara/common/lang/type/UriDescriptor.md).
+3. It obtains (and caches) a native [`UriDescriptor`](../../../javadoc/latest/cascara.common/io/github/qishr/cascara/common/lang/type/UriDescriptor.md).
 
 By default, all Java equivalents of the classic *Apple Core Foundation* types (including `URI`, `Date`, and `UUID`) are handled natively out of the box by `cascara.common`. The assigned `UriDescriptor` exposes methods to convert the types and declares the underlying schema characteristics—explicitly telling the ecosystem that the property is structurally a `string` with a `format` constraint of `"uri"`.
 
-And the best part? Cascara’s [`TypeDescriptor`](../../../javadoc/cascara.common/io/github/qishr/cascara/common/lang/type/TypeDescriptor.md)s and [`TypeSerializer`](../../../javadoc/cascara.common/io/github/qishr/cascara/common/lang/type/TypeSerializer.md)s support everything modern serialization engines can do, while clocking in up to **3x faster than SnakeYAML**—and that’s *before* unleashing our upcoming streaming performance enhancements.
+And the best part? Cascara’s [`TypeDescriptor`](../../../javadoc/latest/cascara.common/io/github/qishr/cascara/common/lang/type/TypeDescriptor.md)s and [`TypeSerializer`](../../../javadoc/latest/cascara.common/io/github/qishr/cascara/common/lang/type/TypeSerializer.md)s support everything modern serialization engines can do, while clocking in up to **3x faster than SnakeYAML**—and that’s *before* unleashing our upcoming streaming performance enhancements.
 
 See: [Performance Comparisons](../../language-processors/yaml/performance-comparison.md).

@@ -5,7 +5,7 @@
 -doclet io.github.sandydunlop.markista.doclet.MarkdownDoclet \
 -docletpath /Users/sandy/git/markista/markista/markista/build/classes/java/main \
 -tabs \
--d /Users/sandy/git/cascara/ecosystem/other/qishr.github.io/src/docs/javadoc \
+-d /Users/sandy/git/cascara/ecosystem/other/qishr.github.io/src/docs/javadoc/latest \
 --show-module-contents all \
 -link https://docs.oracle.com/en/java/java-components/javafx/25/docs/ \
 --module-path /Users/sandy/git/cascara/ecosystem/studio/cascara-studio-dev/cascara-studio/build/modulepath \

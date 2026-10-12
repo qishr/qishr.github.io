@@ -4,7 +4,7 @@ Cascara uses a unified diagnostic system throughout its architecture — from th
 
 ### Diagnostic Codes
 
-Every problem Cascara can report has a [`DiagnosticMessage`](../../javadoc/cascara.common/io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) — a stable, typed identifier that carries both a machine-readable code string and a human-readable message template. Codes are organised by subsystem:
+Every problem Cascara can report has a [`DiagnosticMessage`](../../javadoc/latest/cascara.common/io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) — a stable, typed identifier that carries both a machine-readable code string and a human-readable message template. Codes are organised by subsystem:
 
 - `LangMessage` — parser and tokenizer problems
 - `ServiceDiagnosticMessage` — service provider layer problems
@@ -54,7 +54,7 @@ reporter.setDiagnosticCollector(diagnostic -> {
 
 ### Localizable Exceptions
 
-When a component has no reporter and encounters a fatal problem, it throws a `LocalizableException` (checked) or `LocalizableRuntimeException` (unchecked). Both carry a `DiagnosticMessage` rather than a raw string, so their messages can be localized. Error messages are formatted in English by default — to provide localized messages, implement [`DiagnosticLocalizer`](../../javadoc/cascara.common/io/github/qishr/cascara/common/diagnostic/DiagnosticLocalizer.md) and install it via `LocalizableException.setLocalizer()` and `LocalizableRuntimeException.setLocalizer()`.
+When a component has no reporter and encounters a fatal problem, it throws a `LocalizableException` (checked) or `LocalizableRuntimeException` (unchecked). Both carry a `DiagnosticMessage` rather than a raw string, so their messages can be localized. Error messages are formatted in English by default — to provide localized messages, implement [`DiagnosticLocalizer`](../../javadoc/latest/cascara.common/io/github/qishr/cascara/common/diagnostic/DiagnosticLocalizer.md) and install it via `LocalizableException.setLocalizer()` and `LocalizableRuntimeException.setLocalizer()`.
 
 `LocatableException` extends `LocalizableRuntimeException` for parser errors that can be pinpointed to a specific line and column in the source input.
 

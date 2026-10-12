@@ -120,7 +120,7 @@ nav:
       - Theme Engine: cascara/ui/theme-engine/index.md
       - Localizable Menus: cascara/ui/localizable-menus/index.md
       - Schema-Driven Controls: cascara/ui/schema-driven-controls/index.md
-  - Javadoc: javadoc/
+  - Javadoc: javadoc/latest/
 
 watch:
   - docs
