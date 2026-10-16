@@ -24,11 +24,11 @@ Package [io.github.qishr.cascara.common.lang.diagnostic](index.md)
 | TokenizerException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) | Constructor for I/O or Stream failures.                   |
 
 
-### Methods inherited from [LocalizableRuntimeException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)
-
-getDiagnosticMessage, getDetails
-
 ### Methods inherited from [LocatableException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocatableException.md)
 
 getRawMessage, getUri, getLine, setUri, getLocalizedMessage, getMessage, getColumn
+
+### Methods inherited from [LocalizableRuntimeException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)
+
+getDiagnosticMessage, getDetails
 

@@ -1,7 +1,7 @@
 # Module cascara.lang.yaml
 
 
-
+Cascara YAML parsers, tokenizer, serializer, and converter.
 
 === "Exports"
 
@@ -17,10 +17,10 @@
 
 === "Requires"
 
-    | Module                                                                                        | Description |
-    |-----------------------------------------------------------------------------------------------|-------------|
-    | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html) |             |
-    | [cascara.common](../cascara.common/index.md)                                                  |             |
+    | Module                                                                                        | Description                        |
+    |-----------------------------------------------------------------------------------------------|------------------------------------|
+    | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html) |                                    |
+    | [cascara.common](../cascara.common/index.md)                                                  | Cascara common APIs and utilities. |
 
 
 === "Opens"

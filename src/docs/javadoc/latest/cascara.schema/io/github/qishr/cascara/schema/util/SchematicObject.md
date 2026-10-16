@@ -35,13 +35,13 @@ Package [io.github.qishr.cascara.schema.util](index.md)
 | public final [TrackableProperty](../../../../../../../cascara.common/io/github/qishr/cascara/common/trackable/property/TrackableProperty.md)<[SchemaNode](../../../../../../io/github/qishr/cascara/schema/structure/SchemaNode.md)>       | [objectSchemaProperty](#objectschemaproperty)()                                                                                                                                                                                                                |             |
 
 
-### Methods inherited from [AbstractTrackable](../../../../../../../cascara.common/io/github/qishr/cascara/common/trackable/AbstractTrackable.md)
-
-addTracker, invalidate, removeTracker
-
 ### Methods inherited from [TrackableObject](../../../../../../../cascara.common/io/github/qishr/cascara/common/trackable/TrackableObject.md)
 
 setAdditionalPropertiesAllowed, getTrackableArray, getUri, putUserData, getString, getTrackable, getTrackables, getInteger, getPath, getValues, getObjectProperty, getDataContext, getLong, getTrackablesMap, get, getUserData, additionalPropertiesAllowed, getValuesMap, getBoolean
+
+### Methods inherited from [AbstractTrackable](../../../../../../../cascara.common/io/github/qishr/cascara/common/trackable/AbstractTrackable.md)
+
+addTracker, invalidate, removeTracker
 
 
 ## Method Details

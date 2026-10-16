@@ -1,7 +1,7 @@
 # Module cascara.common.io
 
 
-
+Cascara common IO and content type utilities
 
 === "Exports"
 
@@ -15,12 +15,12 @@
 
 === "Requires"
 
-    | Module                                                                                                | Description |
-    |-------------------------------------------------------------------------------------------------------|-------------|
-    | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html)         |             |
-    | [java.net.http](https://docs.oracle.com/en/java/javase/24/docs/api/java.net.http/module-summary.html) |             |
-    | [cascara.common](../cascara.common/index.md)                                                          |             |
-    | [cascara.lang.yaml](../cascara.lang.yaml/index.md)                                                    |             |
+    | Module                                                                                                | Description                                                 |
+    |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+    | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html)         |                                                             |
+    | [java.net.http](https://docs.oracle.com/en/java/javase/24/docs/api/java.net.http/module-summary.html) |                                                             |
+    | [cascara.common](../cascara.common/index.md)                                                          | Cascara common APIs and utilities.                          |
+    | [cascara.lang.yaml](../cascara.lang.yaml/index.md)                                                    | Cascara YAML parsers, tokenizer, serializer, and converter. |
 
 
 === "Opens"

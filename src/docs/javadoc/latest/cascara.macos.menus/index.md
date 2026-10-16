@@ -12,15 +12,15 @@
 
 === "Requires"
 
-    | Module                                                                                        | Description |
-    |-----------------------------------------------------------------------------------------------|-------------|
-    | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html) |             |
-    | [javafx.base](https://openjfx.io/javadoc/25/javafx.base/)                                     |             |
-    | [javafx.controls](https://openjfx.io/javadoc/25/javafx.controls/)                             |             |
-    | [javafx.graphics](https://openjfx.io/javadoc/25/javafx.graphics/)                             |             |
-    |                                                                                               |             |
-    | [cascara.ui](../cascara.ui/index.md)                                                          |             |
-    | [cascara.common](../cascara.common/index.md)                                                  |             |
+    | Module                                                                                        | Description                                                                               |
+    |-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+    | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html) |                                                                                           |
+    | [javafx.base](https://openjfx.io/javadoc/25/javafx.base/)                                     |                                                                                           |
+    | [javafx.controls](https://openjfx.io/javadoc/25/javafx.controls/)                             |                                                                                           |
+    | [javafx.graphics](https://openjfx.io/javadoc/25/javafx.graphics/)                             |                                                                                           |
+    |                                                                                               |                                                                                           |
+    | [cascara.ui](../cascara.ui/index.md)                                                          | JavaFX schema-driven controls, theme engine, and styling with support for VS Code themes. |
+    | [cascara.common](../cascara.common/index.md)                                                  | Cascara common APIs and utilities.                                                        |
 
 
 

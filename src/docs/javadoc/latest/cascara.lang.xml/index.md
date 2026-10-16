@@ -1,7 +1,7 @@
 # Module cascara.lang.xml
 
 
-
+Cascara XML language processors.
 
 === "Exports"
 
@@ -15,10 +15,10 @@
 
 === "Requires"
 
-    | Module                                                                                        | Description |
-    |-----------------------------------------------------------------------------------------------|-------------|
-    | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html) |             |
-    | [cascara.common](../cascara.common/index.md)                                                  |             |
-    | [java.xml](https://docs.oracle.com/en/java/javase/24/docs/api/java.xml/module-summary.html)   |             |
+    | Module                                                                                        | Description                        |
+    |-----------------------------------------------------------------------------------------------|------------------------------------|
+    | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html) |                                    |
+    | [cascara.common](../cascara.common/index.md)                                                  | Cascara common APIs and utilities. |
+    | [java.xml](https://docs.oracle.com/en/java/javase/24/docs/api/java.xml/module-summary.html)   |                                    |
 
 

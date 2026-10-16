@@ -1,7 +1,7 @@
 # Module cascara.schema
 
 
-
+JSON Schema compatible schema validator, resolver, generator, compiler, decompiler, and store.
 
 === "Exports"
 
@@ -17,12 +17,12 @@
 
 === "Requires"
 
-    | Module                                                                                        | Description |
-    |-----------------------------------------------------------------------------------------------|-------------|
-    | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html) |             |
-    | [cascara.common](../cascara.common/index.md)                                                  |             |
-    | [cascara.common.io](../cascara.common.io/index.md)                                            |             |
-    | [cascara.lang.json](../cascara.lang.json/index.md)                                            |             |
+    | Module                                                                                        | Description                                                 |
+    |-----------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+    | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html) |                                                             |
+    | [cascara.common](../cascara.common/index.md)                                                  | Cascara common APIs and utilities.                          |
+    | [cascara.common.io](../cascara.common.io/index.md)                                            | Cascara common IO and content type utilities                |
+    | [cascara.lang.json](../cascara.lang.json/index.md)                                            | Cascara JSON parsers, tokenizer, serializer, and converter. |
 
 
 === "Opens"

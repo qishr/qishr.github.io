@@ -1,7 +1,7 @@
 # Module cascara.ui
 
 
-
+JavaFX schema-driven controls, theme engine, and styling with support for VS Code themes.
 
 === "Exports"
 
@@ -33,19 +33,19 @@
 
 === "Requires"
 
-    | Module                                                                                        | Description |
-    |-----------------------------------------------------------------------------------------------|-------------|
-    | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html) |             |
-    | [cascara.lang.json](../cascara.lang.json/index.md)                                            |             |
-    | [cascara.lang.xml](../cascara.lang.xml/index.md)                                              |             |
-    | [javafx.base](https://openjfx.io/javadoc/25/javafx.base/)                                     |             |
-    | [javafx.graphics](https://openjfx.io/javadoc/25/javafx.graphics/)                             |             |
-    | [cascara.common](../cascara.common/index.md)                                                  |             |
-    | [cascara.common.io](../cascara.common.io/index.md)                                            |             |
-    |                                                                                               |             |
-    | [cascara.lang.yaml](../cascara.lang.yaml/index.md)                                            |             |
-    | [cascara.schema](../cascara.schema/index.md)                                                  |             |
-    | [javafx.controls](https://openjfx.io/javadoc/25/javafx.controls/)                             |             |
+    | Module                                                                                        | Description                                                                                    |
+    |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+    | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html) |                                                                                                |
+    | [cascara.lang.json](../cascara.lang.json/index.md)                                            | Cascara JSON parsers, tokenizer, serializer, and converter.                                    |
+    | [cascara.lang.xml](../cascara.lang.xml/index.md)                                              | Cascara XML language processors.                                                               |
+    | [javafx.base](https://openjfx.io/javadoc/25/javafx.base/)                                     |                                                                                                |
+    | [javafx.graphics](https://openjfx.io/javadoc/25/javafx.graphics/)                             |                                                                                                |
+    | [cascara.common](../cascara.common/index.md)                                                  | Cascara common APIs and utilities.                                                             |
+    | [cascara.common.io](../cascara.common.io/index.md)                                            | Cascara common IO and content type utilities                                                   |
+    |                                                                                               |                                                                                                |
+    | [cascara.lang.yaml](../cascara.lang.yaml/index.md)                                            | Cascara YAML parsers, tokenizer, serializer, and converter.                                    |
+    | [cascara.schema](../cascara.schema/index.md)                                                  | JSON Schema compatible schema validator, resolver, generator, compiler, decompiler, and store. |
+    | [javafx.controls](https://openjfx.io/javadoc/25/javafx.controls/)                             |                                                                                                |
 
 
 === "Opens"

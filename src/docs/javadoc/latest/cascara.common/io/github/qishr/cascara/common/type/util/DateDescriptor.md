@@ -32,13 +32,13 @@ java.util.Date Descriptor (mapping to ISO-8601 string or epoch millis\u2014let's
 | public boolean                                                                                      | [validate](#validate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md) collector) |             |
 
 
-### Methods inherited from [AbstractTypeDescriptor](../../../../../../../io/github/qishr/cascara/common/type/AbstractTypeDescriptor.md)
-
-getSchemaType, getServiceProperties, getJvmType
-
 ### Methods inherited from [AbstractScalarDescriptor](../../../../../../../io/github/qishr/cascara/common/type/AbstractScalarDescriptor.md)
 
 getFormat, formatError, populateSchema, getContentEncoding
+
+### Methods inherited from [AbstractTypeDescriptor](../../../../../../../io/github/qishr/cascara/common/type/AbstractTypeDescriptor.md)
+
+getSchemaType, getServiceProperties, getJvmType
 
 
 ## Method Details
