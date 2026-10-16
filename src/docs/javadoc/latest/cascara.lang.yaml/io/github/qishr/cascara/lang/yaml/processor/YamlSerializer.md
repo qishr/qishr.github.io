@@ -35,13 +35,13 @@ Standard implementation for YAML serialization.
 | public void                                                                                                     | [toWriter](#towriter)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance, [Writer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Writer.html) writer)                                                                                                                           |             |
 | public [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)                       | [toAst](#toast)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                                                                                                                                                    |             |
 | public C                                                                                                        | [fromString](#fromstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)                                                                                                                          |             |
-| public C                                                                                                        | [fromString](#fromstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/TypeReference.md)<C> typeRef)                                                                                                   |             |
+| public C                                                                                                        | [fromString](#fromstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)                                                                                                        |             |
 | public C                                                                                                        | [fromReader](#fromreader)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)                                                                                                                          |             |
-| public C                                                                                                        | [fromReader](#fromreader)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/TypeReference.md)<C> typeRef)                                                                                                   |             |
+| public C                                                                                                        | [fromReader](#fromreader)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)                                                                                                        |             |
 | public C                                                                                                        | [fromStream](#fromstream)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)                                                                                                                    |             |
-| public C                                                                                                        | [fromStream](#fromstream)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/TypeReference.md)<C> typeRef)                                                                                             |             |
-| public C                                                                                                        | [fromAst](#fromast)([YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) astNode, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)                                                                                                                                       |             |
-| public C                                                                                                        | [fromAst](#fromast)([YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) astNode, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/TypeReference.md)<C> typeRef)                                                                                                                |             |
+| public C                                                                                                        | [fromStream](#fromstream)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)                                                                                                  |             |
+| public C                                                                                                        | [fromAst](#fromast)([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)                                                                                                                     |             |
+| public C                                                                                                        | [fromAst](#fromast)([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)                                                                                                   |             |
 | protected [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)                    | [serializeKey](#serializekey)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                                                                                                                                              |             |
 | protected void                                                                                                  | [setupSerializer](#setupserializer)()                                                                                                                                                                                                                                                                                                                        |             |
 | protected void                                                                                                  | [error](#error)([YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) node, [DiagnosticMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)    |             |
@@ -53,7 +53,7 @@ Standard implementation for YAML serialization.
 
 ### Methods inherited from [AbstractSerializer](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/processor/AbstractSerializer.md)
 
-serializeObject, warn, serializeArray, trace, error, serialize, serializeMap, getTypeDescriptor, getTypeDescriptor, debug, getAllSerializableFields, deserialize, setUseProviderFactory, serializeList, warnInaccessible, deserialize, getServiceProperties, registerTypeDescriptor, warnInaccessible
+warn, trace, error, serialize, debug, registerTypeDescriptor, deserialize, warnInaccessible, setProviderFactoryEnabled, setHeuristicMatchEnabled, getServiceProperties, deserialize, warnInaccessible
 
 
 ## Method Details
@@ -153,7 +153,7 @@ serializeObject, warn, serializeArray, trace, error, serialize, serializeMap, ge
 
 ### fromString
 
-<span style="font-family: monospace; font-size: 80%;">public C __fromString__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/TypeReference.md)<C> typeRef)</span>
+<span style="font-family: monospace; font-size: 80%;">public C __fromString__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)</span>
 
 
 
@@ -171,7 +171,7 @@ serializeObject, warn, serializeArray, trace, error, serialize, serializeMap, ge
 
 ### fromReader
 
-<span style="font-family: monospace; font-size: 80%;">public C __fromReader__([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/TypeReference.md)<C> typeRef)</span>
+<span style="font-family: monospace; font-size: 80%;">public C __fromReader__([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)</span>
 
 
 
@@ -189,7 +189,7 @@ serializeObject, warn, serializeArray, trace, error, serialize, serializeMap, ge
 
 ### fromStream
 
-<span style="font-family: monospace; font-size: 80%;">public C __fromStream__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/TypeReference.md)<C> typeRef)</span>
+<span style="font-family: monospace; font-size: 80%;">public C __fromStream__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)</span>
 
 
 
@@ -198,7 +198,7 @@ serializeObject, warn, serializeArray, trace, error, serialize, serializeMap, ge
 
 ### fromAst
 
-<span style="font-family: monospace; font-size: 80%;">public C __fromAst__([YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) astNode, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)</span>
+<span style="font-family: monospace; font-size: 80%;">public C __fromAst__([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)</span>
 
 
 
@@ -207,7 +207,7 @@ serializeObject, warn, serializeArray, trace, error, serialize, serializeMap, ge
 
 ### fromAst
 
-<span style="font-family: monospace; font-size: 80%;">public C __fromAst__([YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) astNode, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/TypeReference.md)<C> typeRef)</span>
+<span style="font-family: monospace; font-size: 80%;">public C __fromAst__([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)</span>
 
 
 

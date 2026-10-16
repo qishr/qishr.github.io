@@ -21,13 +21,13 @@ public class __TrackableProperty__<br/>extends [Property](../../../../../../../i
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                          | Description |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| TrackableProperty()                                                                                                                                                                                                                                                  |             |
-| TrackableProperty([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                                                                 |             |
-| TrackableProperty([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, T value)                                                                                                                                        |             |
-| TrackableProperty([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) owner, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, T value)                                    |             |
-| TrackableProperty([PrimitiveType](../../../../../../../io/github/qishr/cascara/common/lang/type/PrimitiveType.md) primitiveType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) mediaType, boolean isDeclaredProperty) |             |
+| Constructor                                                                                                                                                                                                                                                     | Description |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| TrackableProperty()                                                                                                                                                                                                                                             |             |
+| TrackableProperty([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                                                            |             |
+| TrackableProperty([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, T value)                                                                                                                                   |             |
+| TrackableProperty([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) owner, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, T value)                               |             |
+| TrackableProperty([PrimitiveType](../../../../../../../io/github/qishr/cascara/common/type/PrimitiveType.md) primitiveType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) mediaType, boolean isDeclaredProperty) |             |
 
 
 
@@ -50,7 +50,7 @@ public class __TrackableProperty__<br/>extends [Property](../../../../../../../i
 
 ### Methods inherited from [Property](../../../../../../../io/github/qishr/cascara/common/property/Property.md)
 
-asInteger, asLong, isEmpty, getValue, getValue, asBoolean, getString, asString, asLong, getPrimitiveType, getName, getValues, asDouble, setPrimitiveType, asInteger, asDouble, asBoolean, getValuesMap
+asInteger, asLong, isEmpty, getValue, getValue, asBoolean, setPrimitiveType, getString, asString, asLong, getPrimitiveType, getName, getValues, asDouble, asInteger, asDouble, asBoolean, getValuesMap
 
 
 ## Method Details

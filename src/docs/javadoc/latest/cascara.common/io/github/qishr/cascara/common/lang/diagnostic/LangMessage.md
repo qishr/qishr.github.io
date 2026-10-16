@@ -17,43 +17,48 @@ All Implemented Interfaces:<br/>
 
 ##Enum Constants
 
-| Enum Constant                                                                       | Description |
-|-------------------------------------------------------------------------------------|-------------|
-| [EXPECTED_STREAM_START](#expected_stream_start)                                     |             |
-| [EXPECTED_STREAM_END](#expected_stream_end)                                         |             |
-| [UNEXPECTED_STREAM_END](#unexpected_stream_end)                                     |             |
-| [UNKNOWN_NODE_TYPE](#unknown_node_type)                                             |             |
-| [FAILED_TO_MAP_TYPE](#failed_to_map_type)                                           |             |
-| [FAILED_TO_MAP_AST](#failed_to_map_ast)                                             |             |
-| [EXPECTED_MAP_STRUCTURE](#expected_map_structure)                                   |             |
-| [FAILED_SERIALIZE](#failed_serialize)                                               |             |
-| [FAILED_DESERIALIZE](#failed_deserialize)                                           |             |
-| [WRONG_FORMAT](#wrong_format)                                                       |             |
-| [INCOMPATIBLE_TYPES](#incompatible_types)                                           |             |
-| [FAILED_DESERIALIZE_SCALAR](#failed_deserialize_scalar)                             |             |
-| [FAILED_DESERIALIZE_SCALAR_TO_NON_SCALAR](#failed_deserialize_scalar_to_non_scalar) |             |
-| [UNSUPPORTED_TYPE](#unsupported_type)                                               |             |
-| [EXPECTED_SEQUENCE](#expected_sequence)                                             |             |
-| [EXPECTED_SCALAR](#expected_scalar)                                                 |             |
-| [FIELD_NOT_ACCESSIBLE_REASON](#field_not_accessible_reason)                         |             |
-| [CLASS_NOT_SERIALIZABLE](#class_not_serializable)                                   |             |
-| [NO_SUCH_METHOD](#no_such_method)                                                   |             |
-| [NO_SUCH_CONSTRUCTOR](#no_such_constructor)                                         |             |
-| [FIELD_NOT_ACCESSIBLE](#field_not_accessible)                                       |             |
-| [INVOCATION_TARGET_EXCEPTION](#invocation_target_exception)                         |             |
-| [ILLEGAL_ARGUMENT_EXCEPTION](#illegal_argument_exception)                           |             |
-| [INSTANTIATION_EXCEPTION](#instantiation_exception)                                 |             |
-| [EXCEPTION_IN_INITIALIZER](#exception_in_initializer)                               |             |
-| [ABSTRACT_METHOD_ERROR](#abstract_method_error)                                     |             |
-| [NO_CLASS_DEF_FOUND_ERROR](#no_class_def_found_error)                               |             |
-| [SERVICE_CONFIG_ERROR](#service_config_error)                                       |             |
-| [SECURITY_EXCEPTION](#security_exception)                                           |             |
-| [ILLEGAL_ACCESS_EXCEPTION](#illegal_access_exception)                               |             |
-| [UNKNOWN_GENERIC_TYPE](#unknown_generic_type)                                       |             |
-| [NOT_ARRAY_OR_OBJECT](#not_array_or_object)                                         |             |
-| [OUT_OF_BOUNDS](#out_of_bounds)                                                     |             |
-| [ERROR_READING_VALUE_AT](#error_reading_value_at)                                   |             |
-| [NOT_AN_ARRAY_INDEX](#not_an_array_index)                                           |             |
+| Enum Constant                                                                                   | Description |
+|-------------------------------------------------------------------------------------------------|-------------|
+| [EXPECTED_STREAM_START](#expected_stream_start)                                                 |             |
+| [EXPECTED_STREAM_END](#expected_stream_end)                                                     |             |
+| [UNEXPECTED_STREAM_END](#unexpected_stream_end)                                                 |             |
+| [UNKNOWN_NODE_TYPE](#unknown_node_type)                                                         |             |
+| [FAILED_TO_MAP_TYPE](#failed_to_map_type)                                                       |             |
+| [FAILED_TO_MAP_AST](#failed_to_map_ast)                                                         |             |
+| [EXPECTED_MAP_STRUCTURE](#expected_map_structure)                                               |             |
+| [FAILED_SERIALIZE](#failed_serialize)                                                           |             |
+| [FAILED_DESERIALIZE](#failed_deserialize)                                                       |             |
+| [WRONG_FORMAT](#wrong_format)                                                                   |             |
+| [INCOMPATIBLE_TYPES](#incompatible_types)                                                       |             |
+| [FAILED_DESERIALIZE_SCALAR](#failed_deserialize_scalar)                                         |             |
+| [FAILED_DESERIALIZE_SCALAR_TO_NON_SCALAR](#failed_deserialize_scalar_to_non_scalar)             |             |
+| [FAILED_DESERIALIZE_SCALAR_TO_NON_SCALAR_NAMED](#failed_deserialize_scalar_to_non_scalar_named) |             |
+| [UNSUPPORTED_TYPE](#unsupported_type)                                                           |             |
+| [EXPECTED_SEQUENCE](#expected_sequence)                                                         |             |
+| [EXPECTED_SCALAR](#expected_scalar)                                                             |             |
+| [EXPECTED_SCALAR_NAMED](#expected_scalar_named)                                                 |             |
+| [FIELD_NOT_ACCESSIBLE_REASON](#field_not_accessible_reason)                                     |             |
+| [AMBIGUOUS_POLYMORPHIC](#ambiguous_polymorphic)                                                 |             |
+| [NON_SCALAR_KEY](#non_scalar_key)                                                               |             |
+| [AST_FACTORY_FAIL_SCALAR](#ast_factory_fail_scalar)                                             |             |
+| [AST_FACTORY_FAIL_MAP](#ast_factory_fail_map)                                                   |             |
+| [AST_FACTORY_FAIL_SEQUENCE](#ast_factory_fail_sequence)                                         |             |
+| [AST_FACTORY_FAIL_KEY](#ast_factory_fail_key)                                                   |             |
+| [CLASS_NOT_SERIALIZABLE](#class_not_serializable)                                               |             |
+| [NO_SUCH_METHOD](#no_such_method)                                                               |             |
+| [NO_SUCH_CONSTRUCTOR](#no_such_constructor)                                                     |             |
+| [FIELD_NOT_ACCESSIBLE](#field_not_accessible)                                                   |             |
+| [INVOCATION_TARGET_EXCEPTION](#invocation_target_exception)                                     |             |
+| [ILLEGAL_ARGUMENT_EXCEPTION](#illegal_argument_exception)                                       |             |
+| [INSTANTIATION_EXCEPTION](#instantiation_exception)                                             |             |
+| [EXCEPTION_IN_INITIALIZER](#exception_in_initializer)                                           |             |
+| [ABSTRACT_METHOD_ERROR](#abstract_method_error)                                                 |             |
+| [NO_CLASS_DEF_FOUND_ERROR](#no_class_def_found_error)                                           |             |
+| [SERVICE_CONFIG_ERROR](#service_config_error)                                                   |             |
+| [SECURITY_EXCEPTION](#security_exception)                                                       |             |
+| [ILLEGAL_ACCESS_EXCEPTION](#illegal_access_exception)                                           |             |
+| [CLASS_CAST_EXCEPTION](#class_cast_exception)                                                   |             |
+| [UNKNOWN_GENERIC_TYPE](#unknown_generic_type)                                                   |             |
 
 
 
@@ -187,6 +192,15 @@ public static final  FAILED_DESERIALIZE_SCALAR_TO_NON_SCALAR
 
 ---
 
+### FAILED_DESERIALIZE_SCALAR_TO_NON_SCALAR_NAMED
+
+public static final  FAILED_DESERIALIZE_SCALAR_TO_NON_SCALAR_NAMED
+
+
+
+
+---
+
 ### UNSUPPORTED_TYPE
 
 public static final  UNSUPPORTED_TYPE
@@ -214,9 +228,72 @@ public static final  EXPECTED_SCALAR
 
 ---
 
+### EXPECTED_SCALAR_NAMED
+
+public static final  EXPECTED_SCALAR_NAMED
+
+
+
+
+---
+
 ### FIELD_NOT_ACCESSIBLE_REASON
 
 public static final  FIELD_NOT_ACCESSIBLE_REASON
+
+
+
+
+---
+
+### AMBIGUOUS_POLYMORPHIC
+
+public static final  AMBIGUOUS_POLYMORPHIC
+
+
+
+
+---
+
+### NON_SCALAR_KEY
+
+public static final  NON_SCALAR_KEY
+
+
+
+
+---
+
+### AST_FACTORY_FAIL_SCALAR
+
+public static final  AST_FACTORY_FAIL_SCALAR
+
+
+
+
+---
+
+### AST_FACTORY_FAIL_MAP
+
+public static final  AST_FACTORY_FAIL_MAP
+
+
+
+
+---
+
+### AST_FACTORY_FAIL_SEQUENCE
+
+public static final  AST_FACTORY_FAIL_SEQUENCE
+
+
+
+
+---
+
+### AST_FACTORY_FAIL_KEY
+
+public static final  AST_FACTORY_FAIL_KEY
 
 
 
@@ -340,45 +417,18 @@ public static final  ILLEGAL_ACCESS_EXCEPTION
 
 ---
 
+### CLASS_CAST_EXCEPTION
+
+public static final  CLASS_CAST_EXCEPTION
+
+
+
+
+---
+
 ### UNKNOWN_GENERIC_TYPE
 
 public static final  UNKNOWN_GENERIC_TYPE
-
-
-
-
----
-
-### NOT_ARRAY_OR_OBJECT
-
-public static final  NOT_ARRAY_OR_OBJECT
-
-
-
-
----
-
-### OUT_OF_BOUNDS
-
-public static final  OUT_OF_BOUNDS
-
-
-
-
----
-
-### ERROR_READING_VALUE_AT
-
-public static final  ERROR_READING_VALUE_AT
-
-
-
-
----
-
-### NOT_AN_ARRAY_INDEX
-
-public static final  NOT_AN_ARRAY_INDEX
 
 
 

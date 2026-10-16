@@ -18,7 +18,6 @@ io.github.qishr.cascara.common.lang.diagnostic
 io.github.qishr.cascara.common.lang.processor
 io.github.qishr.cascara.common.lang.semantic
 io.github.qishr.cascara.common.lang.token
-io.github.qishr.cascara.common.lang.type
 io.github.qishr.cascara.common.lang.util
 io.github.qishr.cascara.common.property
 io.github.qishr.cascara.common.semver
@@ -26,4 +25,11 @@ io.github.qishr.cascara.common.service
 io.github.qishr.cascara.common.trackable
 io.github.qishr.cascara.common.trackable.property
 io.github.qishr.cascara.common.trackable.tracker
+io.github.qishr.cascara.common.type
+io.github.qishr.cascara.common.type.cascara
+io.github.qishr.cascara.common.type.lang
+io.github.qishr.cascara.common.type.net
+io.github.qishr.cascara.common.type.nio
+io.github.qishr.cascara.common.type.time
+io.github.qishr.cascara.common.type.util
 io.github.qishr.cascara.common.util

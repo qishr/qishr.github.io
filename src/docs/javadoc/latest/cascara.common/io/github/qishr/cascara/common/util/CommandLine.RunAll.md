@@ -41,13 +41,13 @@ all subcommands as `Runnable`, `Callable` or `Method`.For use by the execute met
 | protected [RunAll](../../../../../../io/github/qishr/cascara/common/util/CommandLine.RunAll.md)                                                                                                                   | [self](#self)()                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                    |
 
 
-### Methods inherited from [AbstractParseResultHandler](../../../../../../io/github/qishr/cascara/common/util/CommandLine.AbstractParseResultHandler.md)
-
-handleParseResult
-
 ### Methods inherited from [AbstractHandler](../../../../../../io/github/qishr/cascara/common/util/CommandLine.AbstractHandler.md)
 
 err, andExit, returnResultOrExit, colorScheme, ansi, useAnsi, throwOrExit, hasExitCode, exit, useOut, exitCode, out, useErr
+
+### Methods inherited from [AbstractParseResultHandler](../../../../../../io/github/qishr/cascara/common/util/CommandLine.AbstractParseResultHandler.md)
+
+handleParseResult
 
 
 ## Method Details

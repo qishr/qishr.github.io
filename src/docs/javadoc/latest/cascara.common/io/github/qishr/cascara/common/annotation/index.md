@@ -16,9 +16,12 @@
     | [Example](Example.md)                           | A marker annotation for documentation examples                                                                            |
     | [Experimental](Experimental.md)                 | This element has an experimental maturity.                                                                                |
     | [NoAutoRegistration](NoAutoRegistration.md)     | Prevents SPL from automatically registering this service provider class during automatic classpath/modulepath boot scans. |
+    | [NonNull](NonNull.md)                           |                                                                                                                           |
     | [Nullable](Nullable.md)                         |                                                                                                                           |
+    | [PolymorphicType](PolymorphicType.md)           |                                                                                                                           |
     | [Priority](Priority.md)                         |                                                                                                                           |
     | [SingletonInitializer](SingletonInitializer.md) |                                                                                                                           |
+    | [SubType](SubType.md)                           |                                                                                                                           |
     | [Unimplemented](Unimplemented.md)               | This element has not been implemented yet.                                                                                |
 
 
@@ -34,9 +37,12 @@
     | [Example](Example.md)                           | A marker annotation for documentation examples                                                                            |
     | [Experimental](Experimental.md)                 | This element has an experimental maturity.                                                                                |
     | [NoAutoRegistration](NoAutoRegistration.md)     | Prevents SPL from automatically registering this service provider class during automatic classpath/modulepath boot scans. |
+    | [NonNull](NonNull.md)                           |                                                                                                                           |
     | [Nullable](Nullable.md)                         |                                                                                                                           |
+    | [PolymorphicType](PolymorphicType.md)           |                                                                                                                           |
     | [Priority](Priority.md)                         |                                                                                                                           |
     | [SingletonInitializer](SingletonInitializer.md) |                                                                                                                           |
+    | [SubType](SubType.md)                           |                                                                                                                           |
     | [Unimplemented](Unimplemented.md)               | This element has not been implemented yet.                                                                                |
 
 

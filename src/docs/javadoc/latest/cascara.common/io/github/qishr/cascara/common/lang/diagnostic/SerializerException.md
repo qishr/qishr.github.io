@@ -26,11 +26,11 @@ Package [io.github.qishr.cascara.common.lang.diagnostic](index.md)
 | SerializerException([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) node, [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           |                                                              |
 
 
-### Methods inherited from [LocalizableRuntimeException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)
-
-getDiagnosticMessage, getDetails
-
 ### Methods inherited from [LocatableException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocatableException.md)
 
 getRawMessage, getUri, getLine, setUri, getLocalizedMessage, getMessage, getColumn
+
+### Methods inherited from [LocalizableRuntimeException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)
+
+getDiagnosticMessage, getDetails
 

@@ -31,7 +31,7 @@ Note: For language processors, use io.github.qishr.cascara.common.lang.util.Proc
 |-------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | public static io.github.qishr.cascara.common.service.@io.github.qishr.cascara.common.annotation.Experimental ServiceProviderFactory | [system](#system)()                                                                                                                                         |             |
 | public [SourceBuffer](../../../../../../io/github/qishr/cascara/common/lang/util/SourceBuffer.md)                                   | [createSourceBuffer](#createsourcebuffer)([SourceBufferOptions](../../../../../../io/github/qishr/cascara/common/lang/util/SourceBufferOptions.md) options) |             |
-| public [TypeDescriptor](../../../../../../io/github/qishr/cascara/common/lang/type/TypeDescriptor.md)<?>                            | [createTypeDescriptor](#createtypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)        |             |
+| public [TypeDescriptor](../../../../../../io/github/qishr/cascara/common/type/TypeDescriptor.md)<?>                                 | [createTypeDescriptor](#createtypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)        |             |
 | public [ContentTypeResolver](../../../../../../io/github/qishr/cascara/common/util/ContentTypeResolver.md)                          | [getContentTypeResolver](#getcontenttyperesolver)()                                                                                                         |             |
 
 
@@ -67,7 +67,7 @@ public static io.github.qishr.cascara.common.service.@io.github.qishr.cascara.co
 
 ### createTypeDescriptor
 
-<span style="font-family: monospace; font-size: 80%;">public [TypeDescriptor](../../../../../../io/github/qishr/cascara/common/lang/type/TypeDescriptor.md)<?> __createTypeDescriptor__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [TypeDescriptor](../../../../../../io/github/qishr/cascara/common/type/TypeDescriptor.md)<?> __createTypeDescriptor__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
 
 
 

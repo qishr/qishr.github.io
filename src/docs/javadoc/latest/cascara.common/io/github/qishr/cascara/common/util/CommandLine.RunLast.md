@@ -77,13 +77,13 @@ and #call(Callable, PrintStream, PrintStream, Help.Ansi, String...) convenience 
 | protected [RunLast](../../../../../../io/github/qishr/cascara/common/util/CommandLine.RunLast.md)                                                                                                                 | [self](#self)()                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                         |
 
 
-### Methods inherited from [AbstractParseResultHandler](../../../../../../io/github/qishr/cascara/common/util/CommandLine.AbstractParseResultHandler.md)
-
-handleParseResult
-
 ### Methods inherited from [AbstractHandler](../../../../../../io/github/qishr/cascara/common/util/CommandLine.AbstractHandler.md)
 
 err, andExit, returnResultOrExit, colorScheme, ansi, useAnsi, throwOrExit, hasExitCode, exit, useOut, exitCode, out, useErr
+
+### Methods inherited from [AbstractParseResultHandler](../../../../../../io/github/qishr/cascara/common/util/CommandLine.AbstractParseResultHandler.md)
+
+handleParseResult
 
 
 ## Method Details

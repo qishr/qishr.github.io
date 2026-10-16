@@ -17,21 +17,21 @@ All Implemented Interfaces:<br/>
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                          | Description |
-|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| FormatRule([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format)                                      |             |
-| FormatRule([ScalarDescriptor](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/ScalarDescriptor.md)<?> scalarDescriptor) |             |
+| Constructor                                                                                                                                     | Description |
+|-------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| FormatRule([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format)                                 |             |
+| FormatRule([ScalarDescriptor](../../../../../../../cascara.common/io/github/qishr/cascara/common/type/ScalarDescriptor.md)<?> scalarDescriptor) |             |
 
 
 
 ## Method Summary
 
-| Modifier and Type                                                                                                              | Method                                                                                                                                                                                                                                                                                                                                                        | Description |
-|--------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public boolean                                                                                                                 | [validate](#validate)([AstNode](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) node, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [Reporter](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/report/Reporter.md) reporter)       |             |
-| public boolean                                                                                                                 | [validateValue](#validatevalue)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [Reporter](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/report/Reporter.md) reporter) |             |
-| public [ScalarDescriptor](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/ScalarDescriptor.md)<?> | [getScalarDescriptor](#getscalardescriptor)()                                                                                                                                                                                                                                                                                                                 |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                            | [getFormat](#getformat)()                                                                                                                                                                                                                                                                                                                                     |             |
+| Modifier and Type                                                                                                         | Method                                                                                                                                                                                                                                                                                                                                                        | Description |
+|---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public boolean                                                                                                            | [validate](#validate)([AstNode](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) node, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [Reporter](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/report/Reporter.md) reporter)       |             |
+| public boolean                                                                                                            | [validateValue](#validatevalue)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path, [Reporter](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/report/Reporter.md) reporter) |             |
+| public [ScalarDescriptor](../../../../../../../cascara.common/io/github/qishr/cascara/common/type/ScalarDescriptor.md)<?> | [getScalarDescriptor](#getscalardescriptor)()                                                                                                                                                                                                                                                                                                                 |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                       | [getFormat](#getformat)()                                                                                                                                                                                                                                                                                                                                     |             |
 
 
 ### Methods inherited from [AbstractValidationRule](../../../../../../io/github/qishr/cascara/schema/rule/AbstractValidationRule.md)
@@ -69,7 +69,7 @@ error, error
 
 ### getScalarDescriptor
 
-<span style="font-family: monospace; font-size: 80%;">public [ScalarDescriptor](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/ScalarDescriptor.md)<?> __getScalarDescriptor__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [ScalarDescriptor](../../../../../../../cascara.common/io/github/qishr/cascara/common/type/ScalarDescriptor.md)<?> __getScalarDescriptor__()</span>
 
 
 

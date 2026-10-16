@@ -56,13 +56,13 @@ Package [io.github.qishr.cascara.ui.menu](index.md)
 | protected void                                                                                                                                                                                                             | [onChildRemoved](#onchildremoved)([ObservableMenuItem](../../../../../../io/github/qishr/cascara/ui/menu/ObservableMenuItem.md) child)                                                                                                                                                                                                 |             |
 
 
-### Methods inherited from [ObservableTreeNode](../../../../../../io/github/qishr/cascara/ui/data/ObservableTreeNode.md)
-
-schemaProperty, getTreePathInsertParent, getNodeName, typeProperty, schemaTypeProperty, getChildMap, getSchema, setPayload, parentProperty, getTreePath, getDataContext, payloadProperty, nodeNameProperty, getChildren, setNodeName, getParent, getChild, canHaveChildren, onChildRemoved, getPayload, isBranch, getSchemaType, onValueChanged, setParent, getByPath, onChildAdded, setSchema
-
 ### Methods inherited from [ObservableObject](../../../../../../io/github/qishr/cascara/ui/data/ObservableObject.md)
 
 displayStringProperty, getInteger, getObjectProperty, getObservables, getPropertyNames, getUserData, setObjectSchema, getValue, removeListener, getUri, putUserData, getObservableList, set, getPath, getContentType, getObservablesMap, getPropertyMetadata, getValues, getObjectSchema, getLong, addListener, getString, createObservableProperty, objectSchemaProperty, getObservable, getValuesMap, getBoolean
+
+### Methods inherited from [ObservableTreeNode](../../../../../../io/github/qishr/cascara/ui/data/ObservableTreeNode.md)
+
+schemaProperty, getTreePathInsertParent, getNodeName, typeProperty, schemaTypeProperty, getChildMap, getSchema, setPayload, parentProperty, getTreePath, getDataContext, payloadProperty, nodeNameProperty, getChildren, setNodeName, getParent, getChild, canHaveChildren, onChildRemoved, getPayload, isBranch, getSchemaType, onValueChanged, setParent, getByPath, onChildAdded, setSchema
 
 
 ## Field Details

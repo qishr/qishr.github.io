@@ -44,7 +44,7 @@ All Implemented Interfaces:<br/>
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                               | [getContent](#getcontent)()                                                                                                          |             |
 | public boolean                                                                                                                                                                                    | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                    |             |
 | public int                                                                                                                                                                                        | [hashCode](#hashcode)()                                                                                                              |             |
-| public [PrimitiveType](../../../../../../../io/github/qishr/cascara/common/lang/type/PrimitiveType.md)                                                                                            | [getPrimitiveType](#getprimitivetype)()                                                                                              |             |
+| public [PrimitiveType](../../../../../../../io/github/qishr/cascara/common/type/PrimitiveType.md)                                                                                                 | [getPrimitiveType](#getprimitivetype)()                                                                                              |             |
 | public [ScalarAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/ScalarAstNode.md)<[PlainNode](../../../../../../../io/github/qishr/cascara/common/lang/plain/PlainNode.md)>   | [setPrimitive](#setprimitive)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue) |             |
 
 
@@ -259,7 +259,7 @@ public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/jav
 
 ### getPrimitiveType
 
-<span style="font-family: monospace; font-size: 80%;">public [PrimitiveType](../../../../../../../io/github/qishr/cascara/common/lang/type/PrimitiveType.md) __getPrimitiveType__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [PrimitiveType](../../../../../../../io/github/qishr/cascara/common/type/PrimitiveType.md) __getPrimitiveType__()</span>
 
 
 

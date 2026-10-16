@@ -32,7 +32,7 @@ Package [io.github.qishr.cascara.schema.util](index.md)
 
 | Modifier and Type                                                                                | Method                                                                                                                                                                                                                       | Description |
 |--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public void                                                                                      | [registerTypeDescriptor](#registertypedescriptor)([ScalarDescriptor](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/ScalarDescriptor.md)<?> typeDescriptor)                                    |             |
+| public void                                                                                      | [registerTypeDescriptor](#registertypedescriptor)([ScalarDescriptor](../../../../../../../cascara.common/io/github/qishr/cascara/common/type/ScalarDescriptor.md)<?> typeDescriptor)                                         |             |
 | public [SchemaCompiler](../../../../../../io/github/qishr/cascara/schema/util/SchemaCompiler.md) | [setReporter](#setreporter)([Reporter](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/report/Reporter.md) reporter)                                                                           |             |
 | public [SchemaCompiler](../../../../../../io/github/qishr/cascara/schema/util/SchemaCompiler.md) | [setResolver](#setresolver)([SchemaResolver](../../../../../../io/github/qishr/cascara/schema/util/SchemaResolver.md) resolver)                                                                                              |             |
 | public [Schema](../../../../../../io/github/qishr/cascara/schema/util/Schema.md)                 | [compile](#compile)([AstNode](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) root)                                                                                                  |             |
@@ -62,7 +62,7 @@ Package [io.github.qishr.cascara.schema.util](index.md)
 
 ### registerTypeDescriptor
 
-<span style="font-family: monospace; font-size: 80%;">public void __registerTypeDescriptor__([ScalarDescriptor](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/ScalarDescriptor.md)<?> typeDescriptor)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __registerTypeDescriptor__([ScalarDescriptor](../../../../../../../cascara.common/io/github/qishr/cascara/common/type/ScalarDescriptor.md)<?> typeDescriptor)</span>
 
 
 

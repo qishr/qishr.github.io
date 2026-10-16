@@ -14,9 +14,9 @@ Package [io.github.qishr.cascara.schema.structure](index.md)
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                              | Description |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| ScalarSchemaNode([PrimitiveType](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/PrimitiveType.md) type, [SchemaNode](../../../../../../io/github/qishr/cascara/schema/structure/SchemaNode.md) metaSchema) |             |
+| Constructor                                                                                                                                                                                                                         | Description |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| ScalarSchemaNode([PrimitiveType](../../../../../../../cascara.common/io/github/qishr/cascara/common/type/PrimitiveType.md) type, [SchemaNode](../../../../../../io/github/qishr/cascara/schema/structure/SchemaNode.md) metaSchema) |             |
 
 
 
@@ -32,7 +32,7 @@ Package [io.github.qishr.cascara.schema.structure](index.md)
 
 ### Methods inherited from [AbstractSchemaNode](../../../../../../io/github/qishr/cascara/schema/structure/AbstractSchemaNode.md)
 
-setType, getDescription, getDescriptionKey, getOriginAst, getRef, getEndColumn, isRef, validate, getPropertySchema, getRules, setRef, getExtensions, toString, setOriginUri, getFormat, setDynamicAnchor, getEndLine, getComments, getDefinition, getMetaSchema, setFormatOption, setDescription, getChildren, setOriginAst, setReadOnly, getDefinitions, getTitle, getExtension, getFormatOption, setExtension, addAllOf, addDefinition, getStartLine, getAllOf, getOriginUri, setDefaultValue, getType, isReadOnly, getContentMediaType, getStartColumn, getDynamicAnchor, addRule, setDescriptionKey, getTitleKey, getProperty, setFormat, setTitle, setTitleKey, getDefaultValue, setContentMediaType
+getDescription, getDescriptionKey, getOriginAst, getRef, getEndColumn, isRef, validate, getPropertySchema, getRules, setRef, getExtensions, toString, setOriginUri, getFormat, setDynamicAnchor, getEndLine, getComments, getDefinition, getMetaSchema, setFormatOption, setDescription, getChildren, setOriginAst, setReadOnly, getDefinitions, getTitle, getExtension, getFormatOption, setExtension, addAllOf, addDefinition, getStartLine, getAllOf, getOriginUri, setDefaultValue, getType, isReadOnly, getContentMediaType, getStartColumn, getDynamicAnchor, addRule, setDescriptionKey, getTitleKey, getProperty, setFormat, setType, setTitle, setTitleKey, getDefaultValue, setContentMediaType
 
 
 ## Method Details

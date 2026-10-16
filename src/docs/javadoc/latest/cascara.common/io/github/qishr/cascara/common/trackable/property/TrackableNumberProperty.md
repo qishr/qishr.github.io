@@ -35,7 +35,7 @@ getOwner, setOwner, setDeclaredProperty, addTracker, setValue, isDeclaredPropert
 
 ### Methods inherited from [Property](../../../../../../../io/github/qishr/cascara/common/property/Property.md)
 
-asLong, asBoolean, asString, getName, getValues, asDouble, setPrimitiveType, asInteger, asDouble, asBoolean, asInteger, isEmpty, getValue, getValue, getString, asLong, getPrimitiveType, getValuesMap
+asLong, asBoolean, asString, getName, getValues, asDouble, asInteger, asDouble, asBoolean, asInteger, isEmpty, getValue, getValue, setPrimitiveType, getString, asLong, getPrimitiveType, getValuesMap
 
 
 ## Method Details

@@ -43,13 +43,13 @@ Direct Known Subtypes:<br/>
 | public [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> | [getType](#gettype)()             |             |
 
 
-### Methods inherited from [LocatableException](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocatableException.md)
-
-getRawMessage, getUri, getLine, setUri, getLocalizedMessage, getMessage, getColumn
-
 ### Methods inherited from [LocalizableRuntimeException](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)
 
 getDiagnosticMessage, getDetails
+
+### Methods inherited from [LocatableException](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocatableException.md)
+
+getRawMessage, getUri, getLine, setUri, getLocalizedMessage, getMessage, getColumn
 
 
 ## Method Details

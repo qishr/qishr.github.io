@@ -41,7 +41,7 @@ Package [io.github.qishr.cascara.schema.structure](index.md)
 
 ### Methods inherited from [AbstractSchemaNode](../../../../../../io/github/qishr/cascara/schema/structure/AbstractSchemaNode.md)
 
-setType, getTitle, getDescription, getExtension, getFormatOption, setExtension, addAllOf, getDescriptionKey, addDefinition, getOriginAst, getRef, getStartLine, getAllOf, getEndColumn, isRef, getOriginUri, setDefaultValue, getType, isReadOnly, getRules, setRef, getContentMediaType, getExtensions, toString, setOriginUri, getStartColumn, getDynamicAnchor, addRule, getFormat, setDescriptionKey, getTitleKey, getProperty, setDynamicAnchor, getEndLine, getComments, setFormat, setTitle, getDefinition, getMetaSchema, setTitleKey, setFormatOption, setDescription, getDefaultValue, getChildren, setOriginAst, setReadOnly, getDefinitions, setContentMediaType
+getTitle, getDescription, getExtension, getFormatOption, setExtension, addAllOf, getDescriptionKey, addDefinition, getOriginAst, getRef, getStartLine, getAllOf, getEndColumn, isRef, getOriginUri, setDefaultValue, getType, isReadOnly, getRules, setRef, getContentMediaType, getExtensions, toString, setOriginUri, getStartColumn, getDynamicAnchor, addRule, getFormat, setDescriptionKey, getTitleKey, getProperty, setDynamicAnchor, getEndLine, getComments, setFormat, setType, setTitle, getDefinition, getMetaSchema, setTitleKey, setFormatOption, setDescription, getDefaultValue, getChildren, setOriginAst, setReadOnly, getDefinitions, setContentMediaType
 
 
 ## Method Details

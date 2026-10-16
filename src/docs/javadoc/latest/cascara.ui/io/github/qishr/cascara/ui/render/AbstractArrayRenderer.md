@@ -17,9 +17,9 @@ Direct Known Subtypes:<br/>
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                                                                                                                     | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| AbstractArrayRenderer([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType, [PrimitiveType](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/PrimitiveType.md) schemaType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format) |             |
+| Constructor                                                                                                                                                                                                                                                                                                                                                | Description |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| AbstractArrayRenderer([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType, [PrimitiveType](../../../../../../../cascara.common/io/github/qishr/cascara/common/type/PrimitiveType.md) schemaType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) format) |             |
 
 
 ### Methods inherited from [AbstractRenderer](../../../../../../io/github/qishr/cascara/ui/render/AbstractRenderer.md)

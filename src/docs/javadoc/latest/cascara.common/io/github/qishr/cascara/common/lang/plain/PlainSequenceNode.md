@@ -40,7 +40,7 @@ All Implemented Interfaces:<br/>
 | public [PlainSequenceNode](../../../../../../../io/github/qishr/cascara/common/lang/plain/PlainSequenceNode.md)                                                                                   | [getSequence](#getsequence)(int i)                                                                               |                           |
 | public [PlainScalarNode](../../../../../../../io/github/qishr/cascara/common/lang/plain/PlainScalarNode.md)                                                                                       | [getScalar](#getscalar)(int i)                                                                                   |                           |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[PlainNode](../../../../../../../io/github/qishr/cascara/common/lang/plain/PlainNode.md)>         | [getElements](#getelements)()                                                                                    |                           |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)>     | [getChildren](#getchildren)()                                                                                    |                           |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[PlainNode](../../../../../../../io/github/qishr/cascara/common/lang/plain/PlainNode.md)>         | [getChildren](#getchildren)()                                                                                    |                           |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/CommentAstNode.md)> | [getComments](#getcomments)()                                                                                    |                           |
 | public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<[PlainNode](../../../../../../../io/github/qishr/cascara/common/lang/plain/PlainNode.md)> | [iterator](#iterator)()                                                                                          | Returns Iterator instance |
 
@@ -203,7 +203,7 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[PlainNode](../../../../../../../io/github/qishr/cascara/common/lang/plain/PlainNode.md)> __getChildren__()</span>
 
 
 

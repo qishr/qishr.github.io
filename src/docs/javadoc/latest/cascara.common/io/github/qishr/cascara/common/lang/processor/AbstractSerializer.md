@@ -37,32 +37,26 @@ Direct Known Subtypes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                      | Method                                                                                                                                                                                                                                                                                                                                                          | Description                                                                                  |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| public T                                                                                                                                                                                               | [setUseProviderFactory](#setuseproviderfactory)(boolean b)                                                                                                                                                                                                                                                                                                      |                                                                                              |
-| protected abstract T                                                                                                                                                                                   | [self](#self)()                                                                                                                                                                                                                                                                                                                                                 |                                                                                              |
-| protected abstract K                                                                                                                                                                                   | [serializeKey](#serializekey)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                                                                                                                                                 |                                                                                              |
-| protected N                                                                                                                                                                                            | [serialize](#serialize)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                                                                                                                                               | Creates the appropriate AstNode (Scalar, Sequence, or Map) based on the Java value type.     |
-| protected M                                                                                                                                                                                            | [serializeObject](#serializeobject)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                                                                                                                                   |                                                                                              |
-| protected L                                                                                                                                                                                            | [serializeArray](#serializearray)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                                                                                                                                     |                                                                                              |
-| protected L                                                                                                                                                                                            | [serializeList](#serializelist)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<?> list)                                                                                                                                                                                                                               | Serializes a List into a Sequence.                                                           |
-| protected M                                                                                                                                                                                            | [serializeMap](#serializemap)([Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<?, ?> map)                                                                                                                                                                                                                                 |                                                                                              |
-| protected C                                                                                                                                                                                            | [deserialize](#deserialize)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) node, [TypeReference](../../../../../../../io/github/qishr/cascara/common/lang/type/TypeReference.md)<C> typeRef)                                                                                                                                | Converts an AST structure back into a Java object of the generic type referenced by typeRef. |
-| protected C                                                                                                                                                                                            | [deserialize](#deserialize)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) node, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) targetType)                                                                                                                               | Converts an AST structure back into a Java object of the specified type.                     |
-| protected [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html)> | [getAllSerializableFields](#getallserializablefields)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)                                                                                                                                                                                                    | Retrieves all declared fields for a class and all its superclasses (excluding Object).       |
-| protected [TypeDescriptor](../../../../../../../io/github/qishr/cascara/common/lang/type/TypeDescriptor.md)<?>                                                                                         | [getTypeDescriptor](#gettypedescriptor)([Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) jvmType)                                                                                                                                                                                                               |                                                                                              |
-| protected [TypeDescriptor](../../../../../../../io/github/qishr/cascara/common/lang/type/TypeDescriptor.md)<?>                                                                                         | [getTypeDescriptor](#gettypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)                                                                                                                                                                                                                  |                                                                                              |
-| protected void                                                                                                                                                                                         | [setupSerializer](#setupserializer)()                                                                                                                                                                                                                                                                                                                           |                                                                                              |
-| public T                                                                                                                                                                                               | [setOptions](#setoptions)([LanguageOptions](../../../../../../../io/github/qishr/cascara/common/lang/util/LanguageOptions.md)<?> options)                                                                                                                                                                                                                       |                                                                                              |
-| public [Properties](../../../../../../../io/github/qishr/cascara/common/property/Properties.md)                                                                                                        | [getServiceProperties](#getserviceproperties)()                                                                                                                                                                                                                                                                                                                 |                                                                                              |
-| public T                                                                                                                                                                                               | [registerTypeDescriptor](#registertypedescriptor)([TypeDescriptor](../../../../../../../io/github/qishr/cascara/common/lang/type/TypeDescriptor.md)<?> typeDescriptor)                                                                                                                                                                                          |                                                                                              |
-| protected [SerializerException](../../../../../../../io/github/qishr/cascara/common/lang/diagnostic/SerializerException.md)                                                                            | [error](#error)([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                   |                                                                                              |
-| protected void                                                                                                                                                                                         | [warn](#warn)([DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                    |                                                                                              |
-| protected void                                                                                                                                                                                         | [warnInaccessible](#warninaccessible)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType, [Method](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Method.html) method, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t) |                                                                                              |
-| protected void                                                                                                                                                                                         | [warnInaccessible](#warninaccessible)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType, [Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html) field, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t)    |                                                                                              |
-| protected void                                                                                                                                                                                         | [debug](#debug)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                   |                                                                                              |
-| protected void                                                                                                                                                                                         | [trace](#trace)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                   |                                                                                              |
-| protected void                                                                                                                                                                                         | [report](#report)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                              |                                                                                              |
+| Modifier and Type                                                                                                           | Method                                                                                                                                                                                                                                                                                                                                                          | Description                                                                                  |
+|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| protected abstract T                                                                                                        | [self](#self)()                                                                                                                                                                                                                                                                                                                                                 |                                                                                              |
+| protected abstract K                                                                                                        | [serializeKey](#serializekey)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                                                                                                                                                 |                                                                                              |
+| public T                                                                                                                    | [setProviderFactoryEnabled](#setproviderfactoryenabled)(boolean b)                                                                                                                                                                                                                                                                                              |                                                                                              |
+| public T                                                                                                                    | [setHeuristicMatchEnabled](#setheuristicmatchenabled)(boolean b)                                                                                                                                                                                                                                                                                                |                                                                                              |
+| protected N                                                                                                                 | [serialize](#serialize)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                                                                                                                                               | Creates the appropriate AstNode (Scalar, Sequence, or Map) based on the Java value type.     |
+| protected C                                                                                                                 | [deserialize](#deserialize)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) node, [TypeReference](../../../../../../../io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)                                                                                                                                     | Converts an AST structure back into a Java object of the generic type referenced by typeRef. |
+| protected C                                                                                                                 | [deserialize](#deserialize)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) node, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) targetType)                                                                                                                               | Converts an AST structure back into a Java object of the specified type.                     |
+| protected void                                                                                                              | [setupSerializer](#setupserializer)()                                                                                                                                                                                                                                                                                                                           |                                                                                              |
+| public T                                                                                                                    | [setOptions](#setoptions)([LanguageOptions](../../../../../../../io/github/qishr/cascara/common/lang/util/LanguageOptions.md)<?> options)                                                                                                                                                                                                                       |                                                                                              |
+| public [Properties](../../../../../../../io/github/qishr/cascara/common/property/Properties.md)                             | [getServiceProperties](#getserviceproperties)()                                                                                                                                                                                                                                                                                                                 |                                                                                              |
+| public T                                                                                                                    | [registerTypeDescriptor](#registertypedescriptor)([TypeDescriptor](../../../../../../../io/github/qishr/cascara/common/type/TypeDescriptor.md)<?> typeDescriptor)                                                                                                                                                                                               |                                                                                              |
+| protected [SerializerException](../../../../../../../io/github/qishr/cascara/common/lang/diagnostic/SerializerException.md) | [error](#error)([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                   |                                                                                              |
+| protected void                                                                                                              | [warn](#warn)([DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                    |                                                                                              |
+| protected void                                                                                                              | [warnInaccessible](#warninaccessible)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType, [Method](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Method.html) method, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t) |                                                                                              |
+| protected void                                                                                                              | [warnInaccessible](#warninaccessible)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType, [Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html) field, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t)    |                                                                                              |
+| protected void                                                                                                              | [debug](#debug)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                   |                                                                                              |
+| protected void                                                                                                              | [trace](#trace)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                   |                                                                                              |
+| protected void                                                                                                              | [report](#report)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                              |                                                                                              |
 
 
 
@@ -98,19 +92,6 @@ Direct Known Subtypes:<br/>
 
 ## Method Details
 
-### setUseProviderFactory
-
-<span style="font-family: monospace; font-size: 80%;">public T __setUseProviderFactory__(boolean b)</span>
-
-
-
-**Specified By:**
-
-[Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)
-
-
----
-
 ### self
 
 <span style="font-family: monospace; font-size: 80%;">protected abstract T __self__()</span>
@@ -129,67 +110,58 @@ Direct Known Subtypes:<br/>
 
 ---
 
+### setProviderFactoryEnabled
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
+public T __setProviderFactoryEnabled__(boolean b)</span>
+
+
+
+**Specified By:**
+
+[Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)
+
+
+---
+
+### setHeuristicMatchEnabled
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
+public T __setHeuristicMatchEnabled__(boolean b)</span>
+
+
+
+**Specified By:**
+
+[Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)
+
+
+---
+
 ### serialize
 
-<span style="font-family: monospace; font-size: 80%;">protected N __serialize__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
+protected N __serialize__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)</span>
 
 Creates the appropriate AstNode (Scalar, Sequence, or Map) based on the Java value type.
 
 
 ---
 
-### serializeObject
-
-<span style="font-family: monospace; font-size: 80%;">protected M __serializeObject__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)</span>
-
-
-
-
----
-
-### serializeArray
-
-<span style="font-family: monospace; font-size: 80%;">protected L __serializeArray__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)</span>
-
-
-
-
----
-
-### serializeList
-
-<span style="font-family: monospace; font-size: 80%;">protected L __serializeList__([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<?> list)</span>
-
-Serializes a List into a Sequence.
-
-
----
-
-### serializeMap
-
-<span style="font-family: monospace; font-size: 80%;">protected M __serializeMap__([Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<?, ?> map)</span>
-
-
-
-
----
-
 ### deserialize
 
-<span style="font-family: monospace; font-size: 80%;">protected C __deserialize__([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) node, [TypeReference](../../../../../../../io/github/qishr/cascara/common/lang/type/TypeReference.md)<C> typeRef)</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+protected C __deserialize__([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) node, [TypeReference](../../../../../../../io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)</span>
 
 Converts an AST structure back into a Java object of the generic type referenced by typeRef.
 
-**Throws:**
-
-[SerializerException](../../../../../../../io/github/qishr/cascara/common/lang/diagnostic/SerializerException.md)
-
 
 ---
 
 ### deserialize
 
-<span style="font-family: monospace; font-size: 80%;">protected C __deserialize__([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) node, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) targetType)</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
+protected C __deserialize__([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) node, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) targetType)</span>
 
 Converts an AST structure back into a Java object of the specified type.
 
@@ -198,39 +170,6 @@ Converts an AST structure back into a Java object of the specified type.
 `node` - The AST node to convert.
 
 `targetType` - The class type to convert to.
-
-**Throws:**
-
-[SerializerException](../../../../../../../io/github/qishr/cascara/common/lang/diagnostic/SerializerException.md)
-
-
----
-
-### getAllSerializableFields
-
-<span style="font-family: monospace; font-size: 80%;">protected [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html)> __getAllSerializableFields__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
-
-Retrieves all declared fields for a class and all its superclasses (excluding Object).
-
-
----
-
-### getTypeDescriptor
-
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-protected [TypeDescriptor](../../../../../../../io/github/qishr/cascara/common/lang/type/TypeDescriptor.md)<?> __getTypeDescriptor__([Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) jvmType)</span>
-
-
-
-
----
-
-### getTypeDescriptor
-
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-protected [TypeDescriptor](../../../../../../../io/github/qishr/cascara/common/lang/type/TypeDescriptor.md)<?> __getTypeDescriptor__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
-
-
 
 
 ---
@@ -246,7 +185,8 @@ protected [TypeDescriptor](../../../../../../../io/github/qishr/cascara/common/l
 
 ### setOptions
 
-<span style="font-family: monospace; font-size: 80%;">public T __setOptions__([LanguageOptions](../../../../../../../io/github/qishr/cascara/common/lang/util/LanguageOptions.md)<?> options)</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
+public T __setOptions__([LanguageOptions](../../../../../../../io/github/qishr/cascara/common/lang/util/LanguageOptions.md)<?> options)</span>
 
 
 
@@ -255,7 +195,8 @@ protected [TypeDescriptor](../../../../../../../io/github/qishr/cascara/common/l
 
 ### getServiceProperties
 
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../../../../../../io/github/qishr/cascara/common/property/Properties.md) __getServiceProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
+public [Properties](../../../../../../../io/github/qishr/cascara/common/property/Properties.md) __getServiceProperties__()</span>
 
 
 
@@ -264,7 +205,8 @@ protected [TypeDescriptor](../../../../../../../io/github/qishr/cascara/common/l
 
 ### registerTypeDescriptor
 
-<span style="font-family: monospace; font-size: 80%;">public T __registerTypeDescriptor__([TypeDescriptor](../../../../../../../io/github/qishr/cascara/common/lang/type/TypeDescriptor.md)<?> typeDescriptor)</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
+public T __registerTypeDescriptor__([TypeDescriptor](../../../../../../../io/github/qishr/cascara/common/type/TypeDescriptor.md)<?> typeDescriptor)</span>
 
 
 

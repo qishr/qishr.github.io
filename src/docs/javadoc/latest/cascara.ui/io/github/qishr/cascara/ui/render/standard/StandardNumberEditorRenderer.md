@@ -31,13 +31,13 @@ All Implemented Interfaces:<br/>
 | public [Node](https://openjfx.io/javadoc/25/javafx.graphics/javafx/scene/Node.html) | [render](#render)([Labeled](https://openjfx.io/javadoc/25/javafx.controls/javafx/scene/control/Labeled.html) view, [Observable](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/Observable.html) data, [DataProvider](../../../../../../../io/github/qishr/cascara/ui/api/data/DataProvider.md) dataProvider, [FieldMetadata](../../../../../../../io/github/qishr/cascara/ui/form/FieldMetadata.md) meta) |             |
 
 
-### Methods inherited from [AbstractScalarRenderer](../../../../../../../io/github/qishr/cascara/ui/render/AbstractScalarRenderer.md)
-
-extractString, extractString
-
 ### Methods inherited from [AbstractRenderer](../../../../../../../io/github/qishr/cascara/ui/render/AbstractRenderer.md)
 
 getSchemaType, getSchemaFormat, getContentType, getServiceProperties
+
+### Methods inherited from [AbstractScalarRenderer](../../../../../../../io/github/qishr/cascara/ui/render/AbstractScalarRenderer.md)
+
+extractString, extractString
 
 
 ## Method Details

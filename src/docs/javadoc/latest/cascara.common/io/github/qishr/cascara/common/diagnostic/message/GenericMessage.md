@@ -21,8 +21,8 @@ All Implemented Interfaces:<br/>
 |-------------------------------------------------------------|-------------|
 | [INFO](#info)                                               |             |
 | [WARN](#warn)                                               |             |
-| [UNIMPLEMENTED_METHOD](#unimplemented_method)               |             |
 | [ERROR](#error)                                             |             |
+| [UNIMPLEMENTED_METHOD](#unimplemented_method)               |             |
 | [UNEXPECTED_NULL_PARAMETER](#unexpected_null_parameter)     |             |
 | [UNEXPECTED_NULL_RETURN](#unexpected_null_return)           |             |
 | [MANIFEST_NOT_FOUND](#manifest_not_found)                   |             |
@@ -76,18 +76,18 @@ public static final  WARN
 
 ---
 
-### UNIMPLEMENTED_METHOD
+### ERROR
 
-public static final  UNIMPLEMENTED_METHOD
+public static final  ERROR
 
 
 
 
 ---
 
-### ERROR
+### UNIMPLEMENTED_METHOD
 
-public static final  ERROR
+public static final  UNIMPLEMENTED_METHOD
 
 
 

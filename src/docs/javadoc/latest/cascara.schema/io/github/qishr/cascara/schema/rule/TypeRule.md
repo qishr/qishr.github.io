@@ -17,9 +17,9 @@ All Implemented Interfaces:<br/>
 
 ## Constructor Summary
 
-| Constructor                                                                                                                           | Description |
-|---------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| TypeRule([PrimitiveType](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/type/PrimitiveType.md) expectedType) |             |
+| Constructor                                                                                                                      | Description |
+|----------------------------------------------------------------------------------------------------------------------------------|-------------|
+| TypeRule([PrimitiveType](../../../../../../../cascara.common/io/github/qishr/cascara/common/type/PrimitiveType.md) expectedType) |             |
 
 
 
