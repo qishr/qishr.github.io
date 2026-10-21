@@ -281,17 +281,20 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../../../../../../../../../../../cascara/getting-started/" class="md-tabs__link">
-        
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../../../../../../../cascara/getting-started/" class="md-tabs__link">
+          
   
   
     
   
   Getting Started
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -837,9 +840,34 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../../../../../../../cascara/getting-started/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../../../../../../../../cascara/getting-started/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -853,7 +881,59 @@
   
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../../../../../../cascara/getting-started/building-from-source/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Building from Source
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3524,14 +3604,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../format/LocalLogFormatter/" class="md-nav__link">
+      <a href="../../format/FormatOptions/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    LocalLogFormatter
+    FormatOptions
   
 
     
@@ -4358,6 +4438,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#formatoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        formatOptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#level" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4391,17 +4482,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#prefixeveryline" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        prefixEveryLine
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#problemconsumer" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4424,32 +4504,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#showproblemcodes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        showProblemCodes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#source" class="md-nav__link">
     <span class="md-ellipsis">
       
         source
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stacktraceenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        stackTraceEnabled
       
     </span>
   </a>
@@ -4518,6 +4576,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#defaultformatoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        defaultFormatOptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#addlogger" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4529,10 +4598,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#collectsproblems" class="md-nav__link">
+  <a href="#getlevel" class="md-nav__link">
     <span class="md-ellipsis">
       
-        collectsProblems
+        getLevel
       
     </span>
   </a>
@@ -4562,10 +4631,32 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getdiagnosticconsumer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getDiagnosticConsumer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#setdiagnosticconsumer" class="md-nav__link">
     <span class="md-ellipsis">
       
         setDiagnosticConsumer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getproblemconsumer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getProblemConsumer
       
     </span>
   </a>
@@ -4584,21 +4675,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#setsystemoutputenabled" class="md-nav__link">
+  <a href="#collectsproblems" class="md-nav__link">
     <span class="md-ellipsis">
       
-        setSystemOutputEnabled
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setflushenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        setFlushEnabled
+        collectsProblems
       
     </span>
   </a>
@@ -4610,28 +4690,6 @@
     <span class="md-ellipsis">
       
         setStackTraceEnabled
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setsystemerrorenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        setSystemErrorEnabled
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setansicoloringenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        setAnsiColoringEnabled
       
     </span>
   </a>
@@ -4661,10 +4719,65 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getlevel" class="md-nav__link">
+  <a href="#issystemoutputenabled" class="md-nav__link">
     <span class="md-ellipsis">
       
-        getLevel
+        isSystemOutputEnabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setsystemoutputenabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setSystemOutputEnabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isimmediateflushenabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isImmediateFlushEnabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setimmediateflushenabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setImmediateFlushEnabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setsystemerrorenabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setSystemErrorEnabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setansicoloringenabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setAnsiColoringEnabled
       
     </span>
   </a>
@@ -4980,72 +5093,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getdiagnosticconsumer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        getDiagnosticConsumer
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getproblemconsumer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        getProblemConsumer
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#issystemoutputenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        isSystemOutputEnabled
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#isflushenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        isFlushEnabled
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#isstacktraceenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        isStackTraceEnabled
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#isproblem" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        isProblem
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#report" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5083,6 +5130,17 @@
     <span class="md-ellipsis">
       
         logLine
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isproblem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isProblem
       
     </span>
   </a>
@@ -5609,6 +5667,8 @@
       
         
       
+        
+      
     
     
     
@@ -5678,6 +5738,34 @@
     
   
     IpcClient
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../exec/ipc/IpcConfig/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IpcConfig
   
 
     
@@ -5966,14 +6054,14 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../lang/plain/" class="md-nav__link ">
+            <a href="../../../lang/generic/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
     
   
-    common.lang.plain
+    common.lang.generic
   
 
     
@@ -5995,7 +6083,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    common.lang.plain
+    common.lang.generic
   
 
           </label>
@@ -6010,14 +6098,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lang/plain/PlainAstConverter/" class="md-nav__link">
+      <a href="../../../lang/generic/GenericAstConverter/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    PlainAstConverter
+    GenericAstConverter
   
 
     
@@ -6038,14 +6126,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lang/plain/PlainMapEntryNode/" class="md-nav__link">
+      <a href="../../../lang/generic/GenericAstMap/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    PlainMapEntryNode
+    GenericAstMap
   
 
     
@@ -6066,14 +6154,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lang/plain/PlainMapNode/" class="md-nav__link">
+      <a href="../../../lang/generic/GenericAstMapEntry/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    PlainMapNode
+    GenericAstMapEntry
   
 
     
@@ -6094,14 +6182,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lang/plain/PlainNode/" class="md-nav__link">
+      <a href="../../../lang/generic/GenericAstNode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    PlainNode
+    GenericAstNode
   
 
     
@@ -6122,14 +6210,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lang/plain/PlainNodeFactory/" class="md-nav__link">
+      <a href="../../../lang/generic/GenericAstNodeFactory/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    PlainNodeFactory
+    GenericAstNodeFactory
   
 
     
@@ -6150,14 +6238,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lang/plain/PlainScalarNode/" class="md-nav__link">
+      <a href="../../../lang/generic/GenericAstScalar/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    PlainScalarNode
+    GenericAstScalar
   
 
     
@@ -6178,14 +6266,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lang/plain/PlainSequenceNode/" class="md-nav__link">
+      <a href="../../../lang/generic/GenericAstSequence/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    PlainSequenceNode
+    GenericAstSequence
   
 
     
@@ -27232,6 +27320,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#formatoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        formatOptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#level" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -27265,17 +27364,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#prefixeveryline" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        prefixEveryLine
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#problemconsumer" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -27298,32 +27386,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#showproblemcodes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        showProblemCodes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#source" class="md-nav__link">
     <span class="md-ellipsis">
       
         source
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stacktraceenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        stackTraceEnabled
       
     </span>
   </a>
@@ -27392,6 +27458,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#defaultformatoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        defaultFormatOptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#addlogger" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -27403,10 +27480,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#collectsproblems" class="md-nav__link">
+  <a href="#getlevel" class="md-nav__link">
     <span class="md-ellipsis">
       
-        collectsProblems
+        getLevel
       
     </span>
   </a>
@@ -27436,10 +27513,32 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#getdiagnosticconsumer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getDiagnosticConsumer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#setdiagnosticconsumer" class="md-nav__link">
     <span class="md-ellipsis">
       
         setDiagnosticConsumer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getproblemconsumer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        getProblemConsumer
       
     </span>
   </a>
@@ -27458,21 +27557,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#setsystemoutputenabled" class="md-nav__link">
+  <a href="#collectsproblems" class="md-nav__link">
     <span class="md-ellipsis">
       
-        setSystemOutputEnabled
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setflushenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        setFlushEnabled
+        collectsProblems
       
     </span>
   </a>
@@ -27484,28 +27572,6 @@
     <span class="md-ellipsis">
       
         setStackTraceEnabled
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setsystemerrorenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        setSystemErrorEnabled
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setansicoloringenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        setAnsiColoringEnabled
       
     </span>
   </a>
@@ -27535,10 +27601,65 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getlevel" class="md-nav__link">
+  <a href="#issystemoutputenabled" class="md-nav__link">
     <span class="md-ellipsis">
       
-        getLevel
+        isSystemOutputEnabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setsystemoutputenabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setSystemOutputEnabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isimmediateflushenabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isImmediateFlushEnabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setimmediateflushenabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setImmediateFlushEnabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setsystemerrorenabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setSystemErrorEnabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setansicoloringenabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setAnsiColoringEnabled
       
     </span>
   </a>
@@ -27854,72 +27975,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getdiagnosticconsumer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        getDiagnosticConsumer
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getproblemconsumer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        getProblemConsumer
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#issystemoutputenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        isSystemOutputEnabled
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#isflushenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        isFlushEnabled
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#isstacktraceenabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        isStackTraceEnabled
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#isproblem" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        isProblem
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#report" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -27957,6 +28012,17 @@
     <span class="md-ellipsis">
       
         logLine
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isproblem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        isProblem
       
     </span>
   </a>
@@ -28032,6 +28098,11 @@ All Implemented Interfaces:<br/>
 <td></td>
 </tr>
 <tr>
+<td>protected FormatOptions</td>
+<td><a href="#formatoptions">formatOptions</a></td>
+<td></td>
+</tr>
+<tr>
 <td>protected Level</td>
 <td><a href="#level">level</a></td>
 <td></td>
@@ -28047,11 +28118,6 @@ All Implemented Interfaces:<br/>
 <td></td>
 </tr>
 <tr>
-<td>protected boolean</td>
-<td><a href="#prefixeveryline">prefixEveryLine</a></td>
-<td></td>
-</tr>
-<tr>
 <td>protected Consumer<Diagnostic></td>
 <td><a href="#problemconsumer">problemConsumer</a></td>
 <td>Consumes ERROR, WARN, and INFO diagnostics.</td>
@@ -28062,19 +28128,9 @@ All Implemented Interfaces:<br/>
 <td></td>
 </tr>
 <tr>
-<td>protected boolean</td>
-<td><a href="#showproblemcodes">showProblemCodes</a></td>
-<td></td>
-</tr>
-<tr>
 <td>protected String</td>
 <td><a href="#source">source</a></td>
 <td>The simple name of the class that made the report</td>
-</tr>
-<tr>
-<td>protected boolean</td>
-<td><a href="#stacktraceenabled">stackTraceEnabled</a></td>
-<td></td>
 </tr>
 <tr>
 <td>protected boolean</td>
@@ -28124,14 +28180,19 @@ All Implemented Interfaces:<br/>
 <td></td>
 </tr>
 <tr>
+<td>protected <a href="../../format/FormatOptions/">FormatOptions</a></td>
+<td><a href="#defaultformatoptions">defaultFormatOptions</a>()</td>
+<td>To be overridden by reporters neding specific default options</td>
+</tr>
+<tr>
 <td>public T</td>
 <td><a href="#addlogger">addLogger</a>(<a href="../../../../../../../io/github/qishr/cascara/common/diagnostic/log/Logger.md">Logger</a> logger)</td>
 <td></td>
 </tr>
 <tr>
-<td>public boolean</td>
-<td><a href="#collectsproblems">collectsProblems</a>()</td>
-<td>Checks whether any active listener or collector is tracking problems.</td>
+<td>public <a href="../../Diagnostic.Level/">Level</a></td>
+<td><a href="#getlevel">getLevel</a>()</td>
+<td></td>
 </tr>
 <tr>
 <td>public T</td>
@@ -28144,38 +28205,33 @@ All Implemented Interfaces:<br/>
 <td></td>
 </tr>
 <tr>
+<td>protected java.util.function.@io.github.qishr.cascara.common.annotation.Experimental Consumer&lt;<a href="../../Diagnostic/">Diagnostic</a>&gt;</td>
+<td><a href="#getdiagnosticconsumer">getDiagnosticConsumer</a>()</td>
+<td></td>
+</tr>
+<tr>
 <td>public T</td>
 <td><a href="#setdiagnosticconsumer">setDiagnosticConsumer</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html">Consumer</a>&lt;<a href="../../Diagnostic/">Diagnostic</a>&gt; consumer)</td>
-<td>Registers a collector to receive all diagnostics processed by this reporter.</td>
+<td>Registers a consumer to receive all diagnostics processed by this reporter.</td>
+</tr>
+<tr>
+<td>protected java.util.function.@io.github.qishr.cascara.common.annotation.Experimental Consumer&lt;<a href="../../Diagnostic/">Diagnostic</a>&gt;</td>
+<td><a href="#getproblemconsumer">getProblemConsumer</a>()</td>
+<td></td>
 </tr>
 <tr>
 <td>public T</td>
 <td><a href="#setproblemconsumer">setProblemConsumer</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html">Consumer</a>&lt;<a href="../../Diagnostic/">Diagnostic</a>&gt; consumer)</td>
-<td>Registers a specialized collector to receive only problem-level diagnostics.</td>
+<td>Registers a consumer to receive only problem-level diagnostics.</td>
 </tr>
 <tr>
-<td>public T</td>
-<td><a href="#setsystemoutputenabled">setSystemOutputEnabled</a>(boolean b)</td>
-<td></td>
-</tr>
-<tr>
-<td>public T</td>
-<td><a href="#setflushenabled">setFlushEnabled</a>(boolean b)</td>
-<td></td>
+<td>public @io.github.qishr.cascara.common.annotation.Experimental boolean</td>
+<td><a href="#collectsproblems">collectsProblems</a>()</td>
+<td>Checks whether any active consumer is collecting problems.</td>
 </tr>
 <tr>
 <td>public T</td>
 <td><a href="#setstacktraceenabled">setStackTraceEnabled</a>(boolean b)</td>
-<td></td>
-</tr>
-<tr>
-<td>public T</td>
-<td><a href="#setsystemerrorenabled">setSystemErrorEnabled</a>(boolean b)</td>
-<td></td>
-</tr>
-<tr>
-<td>public T</td>
-<td><a href="#setansicoloringenabled">setAnsiColoringEnabled</a>(boolean b)</td>
 <td></td>
 </tr>
 <tr>
@@ -28189,9 +28245,34 @@ All Implemented Interfaces:<br/>
 <td></td>
 </tr>
 <tr>
-<td>public <a href="../../Diagnostic.Level/">Level</a></td>
-<td><a href="#getlevel">getLevel</a>()</td>
+<td>protected boolean</td>
+<td><a href="#issystemoutputenabled">isSystemOutputEnabled</a>()</td>
 <td></td>
+</tr>
+<tr>
+<td>public T</td>
+<td><a href="#setsystemoutputenabled">setSystemOutputEnabled</a>(boolean b)</td>
+<td>Controls whether diagnostic logging to console is enabled.</td>
+</tr>
+<tr>
+<td>protected boolean</td>
+<td><a href="#isimmediateflushenabled">isImmediateFlushEnabled</a>()</td>
+<td></td>
+</tr>
+<tr>
+<td>public T</td>
+<td><a href="#setimmediateflushenabled">setImmediateFlushEnabled</a>(boolean b)</td>
+<td>Controls whether diagnostics logged to console are flushed immediately.</td>
+</tr>
+<tr>
+<td>public T</td>
+<td><a href="#setsystemerrorenabled">setSystemErrorEnabled</a>(boolean b)</td>
+<td>Controls whether errors logged to console go to System.out or System.err.</td>
+</tr>
+<tr>
+<td>public T</td>
+<td><a href="#setansicoloringenabled">setAnsiColoringEnabled</a>(boolean b)</td>
+<td>Controls whether diagnostics logged to console use ANSI coloring.</td>
 </tr>
 <tr>
 <td>public boolean</td>
@@ -28230,137 +28311,107 @@ All Implemented Interfaces:<br/>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#info">info</a>(<a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#info">info</a>(<a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td>Reports an informational message through the reporter.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#warn">warn</a>(<a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#warn">warn</a>(<a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td>Reports a warning message including location information.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#error">error</a>(<a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#error">error</a>(<a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td>Reports an error message including location information.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#error">error</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#error">error</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td>Reports an error message including location information.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#infoat">infoAt</a>(int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#infoat">infoAt</a>(int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td>Reports an informational message anchored to a resource location by line and column.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#warnat">warnAt</a>(int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#warnat">warnAt</a>(int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td>Reports a warning anchored to a resource location by line and column.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#errorat">errorAt</a>(int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#errorat">errorAt</a>(int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td>Reports an error anchored to a resource location by line and column.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#errorat">errorAt</a>(int line, int column, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#errorat">errorAt</a>(int line, int column, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td>Reports an error anchored to a resource location by line and column.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#infoat">infoAt</a>(int line, int column, int startOffset, int endOffset, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#infoat">infoAt</a>(int line, int column, int startOffset, int endOffset, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td>Reports an informational message anchored to a precise character span within a resource.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#warnat">warnAt</a>(int line, int column, int startOffset, int endOffset, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#warnat">warnAt</a>(int line, int column, int startOffset, int endOffset, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td>Reports a warning anchored to a precise character span within a resource.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#errorat">errorAt</a>(int line, int column, int startOffset, int endOffset, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#errorat">errorAt</a>(int line, int column, int startOffset, int endOffset, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td>Reports an error anchored to a precise character span within a resource.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#errorat">errorAt</a>(int line, int column, int startOffset, int endOffset, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#errorat">errorAt</a>(int line, int column, int startOffset, int endOffset, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td>Reports an error anchored to a precise character span within a resource.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#infoat">infoAt</a>(<a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#infoat">infoAt</a>(<a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td>Reports an informational message derived from the location attributes of a structural token.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#warnat">warnAt</a>(<a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#warnat">warnAt</a>(<a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td>Reports a warning derived from the location attributes of a structural token.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#errorat">errorAt</a>(<a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#errorat">errorAt</a>(<a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td>Reports an error derived from the location attributes of a structural token.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#errorat">errorAt</a>(<a href="../../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#errorat">errorAt</a>(<a href="../../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td>Reports an error derived from the location attributes of a structural token.</td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#warnat">warnAt</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#warnat">warnAt</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td></td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#errorat">errorAt</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#errorat">errorAt</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td></td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#warnat">warnAt</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#warnat">warnAt</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td></td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#errorat">errorAt</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
+<td><a href="#errorat">errorAt</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td></td>
 </tr>
 <tr>
 <td>public void</td>
-<td><a href="#errorat">errorAt</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="../../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
-<td></td>
-</tr>
-<tr>
-<td>protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html">Consumer</a>&lt;<a href="../../Diagnostic/">Diagnostic</a>&gt;</td>
-<td><a href="#getdiagnosticconsumer">getDiagnosticConsumer</a>()</td>
-<td></td>
-</tr>
-<tr>
-<td>protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html">Consumer</a>&lt;<a href="../../Diagnostic/">Diagnostic</a>&gt;</td>
-<td><a href="#getproblemconsumer">getProblemConsumer</a>()</td>
-<td></td>
-</tr>
-<tr>
-<td>protected boolean</td>
-<td><a href="#issystemoutputenabled">isSystemOutputEnabled</a>()</td>
-<td></td>
-</tr>
-<tr>
-<td>protected boolean</td>
-<td><a href="#isflushenabled">isFlushEnabled</a>()</td>
-<td></td>
-</tr>
-<tr>
-<td>protected boolean</td>
-<td><a href="#isstacktraceenabled">isStackTraceEnabled</a>()</td>
-<td></td>
-</tr>
-<tr>
-<td>protected boolean</td>
-<td><a href="#isproblem">isProblem</a>(<a href="../../Diagnostic.Level/">Level</a> level)</td>
+<td><a href="#errorat">errorAt</a>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="../../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</td>
 <td></td>
 </tr>
 <tr>
@@ -28381,6 +28432,11 @@ All Implemented Interfaces:<br/>
 <tr>
 <td>protected void</td>
 <td><a href="#logline">logLine</a>(<a href="../../Diagnostic.Level/">Level</a> level, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> msgLine)</td>
+<td>Used by LogWriter to log lines of text</td>
+</tr>
+<tr>
+<td>protected boolean</td>
+<td><a href="#isproblem">isProblem</a>(<a href="../../Diagnostic.Level/">Level</a> level)</td>
 <td></td>
 </tr>
 </tbody>
@@ -28403,6 +28459,9 @@ important, with ERROR being the most important.</p>
 <h3 id="flushenabled">flushEnabled</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>flushEnabled</strong></span></p>
 <hr />
+<h3 id="formatoptions">formatOptions</h3>
+<p><span style="font-family: monospace; font-size: 80%;">protected FormatOptions <strong>formatOptions</strong></span></p>
+<hr />
 <h3 id="level">level</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected Level <strong>level</strong></span></p>
 <hr />
@@ -28412,9 +28471,6 @@ important, with ERROR being the most important.</p>
 <h3 id="loggers">loggers</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected List<Logger> <strong>loggers</strong></span></p>
 <hr />
-<h3 id="prefixeveryline">prefixEveryLine</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>prefixEveryLine</strong></span></p>
-<hr />
 <h3 id="problemconsumer">problemConsumer</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected Consumer<Diagnostic> <strong>problemConsumer</strong></span></p>
 <p>Consumes ERROR, WARN, and INFO diagnostics.</p>
@@ -28422,15 +28478,9 @@ important, with ERROR being the most important.</p>
 <h3 id="serializer">serializer</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected Serializer&lt;?&gt; <strong>serializer</strong></span></p>
 <hr />
-<h3 id="showproblemcodes">showProblemCodes</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>showProblemCodes</strong></span></p>
-<hr />
 <h3 id="source">source</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected String <strong>source</strong></span></p>
 <p>The simple name of the class that made the report</p>
-<hr />
-<h3 id="stacktraceenabled">stackTraceEnabled</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>stackTraceEnabled</strong></span></p>
 <hr />
 <h3 id="systemerrorenabled">systemErrorEnabled</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>systemErrorEnabled</strong></span></p>
@@ -28445,12 +28495,15 @@ important, with ERROR being the most important.</p>
 <h3 id="self">self</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected abstract T <strong>self</strong>()</span></p>
 <hr />
+<h3 id="defaultformatoptions">defaultFormatOptions</h3>
+<p><span style="font-family: monospace; font-size: 80%;">protected <a href="../../format/FormatOptions/">FormatOptions</a> <strong>defaultFormatOptions</strong>()</span></p>
+<p>To be overridden by reporters neding specific default options</p>
+<hr />
 <h3 id="addlogger">addLogger</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public T <strong>addLogger</strong>(<a href="../../../../../../../io/github/qishr/cascara/common/diagnostic/log/Logger.md">Logger</a> logger)</span></p>
 <hr />
-<h3 id="collectsproblems">collectsProblems</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public boolean <strong>collectsProblems</strong>()</span></p>
-<p>Checks whether any active listener or collector is tracking problems.</p>
+<h3 id="getlevel">getLevel</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public <a href="../../Diagnostic.Level/">Level</a> <strong>getLevel</strong>()</span></p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
@@ -28461,36 +28514,42 @@ important, with ERROR being the most important.</p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="setlineconsumer">setLineConsumer</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public T <strong>setLineConsumer</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html">Consumer</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; consumer)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public T <strong>setLineConsumer</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html">Consumer</a>&lt;<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a>&gt; consumer)</span></p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
+<hr />
+<h3 id="getdiagnosticconsumer">getDiagnosticConsumer</h3>
+<p><span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+protected java.util.function.@io.github.qishr.cascara.common.annotation.Experimental Consumer&lt;<a href="../../Diagnostic/">Diagnostic</a>&gt; <strong>getDiagnosticConsumer</strong>()</span></p>
 <hr />
 <h3 id="setdiagnosticconsumer">setDiagnosticConsumer</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public T <strong>setDiagnosticConsumer</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html">Consumer</a>&lt;<a href="../../Diagnostic/">Diagnostic</a>&gt; consumer)</span></p>
-<p>Registers a collector to receive all diagnostics processed by this reporter.</p>
+<p><span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public T <strong>setDiagnosticConsumer</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html">Consumer</a>&lt;<a href="../../Diagnostic/">Diagnostic</a>&gt; consumer)</span></p>
+<p>Registers a consumer to receive all diagnostics processed by this reporter.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
+<hr />
+<h3 id="getproblemconsumer">getProblemConsumer</h3>
+<p><span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+protected java.util.function.@io.github.qishr.cascara.common.annotation.Experimental Consumer&lt;<a href="../../Diagnostic/">Diagnostic</a>&gt; <strong>getProblemConsumer</strong>()</span></p>
 <hr />
 <h3 id="setproblemconsumer">setProblemConsumer</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public T <strong>setProblemConsumer</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html">Consumer</a>&lt;<a href="../../Diagnostic/">Diagnostic</a>&gt; consumer)</span></p>
-<p>Registers a specialized collector to receive only problem-level diagnostics.</p>
+<p><span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public T <strong>setProblemConsumer</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html">Consumer</a>&lt;<a href="../../Diagnostic/">Diagnostic</a>&gt; consumer)</span></p>
+<p>Registers a consumer to receive only problem-level diagnostics.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
-<h3 id="setsystemoutputenabled">setSystemOutputEnabled</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public T <strong>setSystemOutputEnabled</strong>(boolean b)</span></p>
-<hr />
-<h3 id="setflushenabled">setFlushEnabled</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public T <strong>setFlushEnabled</strong>(boolean b)</span></p>
+<h3 id="collectsproblems">collectsProblems</h3>
+<p><span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public @io.github.qishr.cascara.common.annotation.Experimental boolean <strong>collectsProblems</strong>()</span></p>
+<p>Checks whether any active consumer is collecting problems.</p>
+<p><strong>Specified By:</strong></p>
+<p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="setstacktraceenabled">setStackTraceEnabled</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public T <strong>setStackTraceEnabled</strong>(boolean b)</span></p>
-<hr />
-<h3 id="setsystemerrorenabled">setSystemErrorEnabled</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public T <strong>setSystemErrorEnabled</strong>(boolean b)</span></p>
-<hr />
-<h3 id="setansicoloringenabled">setAnsiColoringEnabled</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public T <strong>setAnsiColoringEnabled</strong>(boolean b)</span></p>
 <hr />
 <h3 id="setprefixeveryline">setPrefixEveryLine</h3>
 <p><span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
@@ -28499,10 +28558,27 @@ public T <strong>setPrefixEveryLine</strong>(boolean b)</span></p>
 <h3 id="setshowproblemcodes">setShowProblemCodes</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public T <strong>setShowProblemCodes</strong>(boolean b)</span></p>
 <hr />
-<h3 id="getlevel">getLevel</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public <a href="../../Diagnostic.Level/">Level</a> <strong>getLevel</strong>()</span></p>
-<p><strong>Specified By:</strong></p>
-<p><a href="../Reporter/">Reporter</a></p>
+<h3 id="issystemoutputenabled">isSystemOutputEnabled</h3>
+<p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>isSystemOutputEnabled</strong>()</span></p>
+<hr />
+<h3 id="setsystemoutputenabled">setSystemOutputEnabled</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public T <strong>setSystemOutputEnabled</strong>(boolean b)</span></p>
+<p>Controls whether diagnostic logging to console is enabled.</p>
+<hr />
+<h3 id="isimmediateflushenabled">isImmediateFlushEnabled</h3>
+<p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>isImmediateFlushEnabled</strong>()</span></p>
+<hr />
+<h3 id="setimmediateflushenabled">setImmediateFlushEnabled</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public T <strong>setImmediateFlushEnabled</strong>(boolean b)</span></p>
+<p>Controls whether diagnostics logged to console are flushed immediately.</p>
+<hr />
+<h3 id="setsystemerrorenabled">setSystemErrorEnabled</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public T <strong>setSystemErrorEnabled</strong>(boolean b)</span></p>
+<p>Controls whether errors logged to console go to System.out or System.err.</p>
+<hr />
+<h3 id="setansicoloringenabled">setAnsiColoringEnabled</h3>
+<p><span style="font-family: monospace; font-size: 80%;">public T <strong>setAnsiColoringEnabled</strong>(boolean b)</span></p>
+<p>Controls whether diagnostics logged to console use ANSI coloring.</p>
 <hr />
 <h3 id="issilent">isSilent</h3>
 <p><span style="font-family: monospace; font-size: 80%;">public boolean <strong>isSilent</strong>()</span></p>
@@ -28543,143 +28619,125 @@ public T <strong>setPrefixEveryLine</strong>(boolean b)</span></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="info">info</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>info</strong>(<a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>info</strong>(<a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p>Reports an informational message through the reporter.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="warn">warn</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>warn</strong>(<a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>warn</strong>(<a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p>Reports a warning message including location information.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="error_1">error</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>error</strong>(<a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>error</strong>(<a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p>Reports an error message including location information.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="error_2">error</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>error</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>error</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p>Reports an error message including location information.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="infoat">infoAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>infoAt</strong>(int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>infoAt</strong>(int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p>Reports an informational message anchored to a resource location by line and column.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="warnat">warnAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>warnAt</strong>(int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>warnAt</strong>(int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p>Reports a warning anchored to a resource location by line and column.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="errorat">errorAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p>Reports an error anchored to a resource location by line and column.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="errorat_1">errorAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(int line, int column, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(int line, int column, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p>Reports an error anchored to a resource location by line and column.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="infoat_1">infoAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>infoAt</strong>(int line, int column, int startOffset, int endOffset, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>infoAt</strong>(int line, int column, int startOffset, int endOffset, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p>Reports an informational message anchored to a precise character span within a resource.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="warnat_1">warnAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>warnAt</strong>(int line, int column, int startOffset, int endOffset, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>warnAt</strong>(int line, int column, int startOffset, int endOffset, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p>Reports a warning anchored to a precise character span within a resource.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="errorat_2">errorAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(int line, int column, int startOffset, int endOffset, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(int line, int column, int startOffset, int endOffset, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p>Reports an error anchored to a precise character span within a resource.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="errorat_3">errorAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(int line, int column, int startOffset, int endOffset, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(int line, int column, int startOffset, int endOffset, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p>Reports an error anchored to a precise character span within a resource.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="infoat_2">infoAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>infoAt</strong>(<a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>infoAt</strong>(<a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p>Reports an informational message derived from the location attributes of a structural token.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="warnat_2">warnAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>warnAt</strong>(<a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>warnAt</strong>(<a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p>Reports a warning derived from the location attributes of a structural token.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="errorat_4">errorAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(<a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(<a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p>Reports an error derived from the location attributes of a structural token.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="errorat_5">errorAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(<a href="../../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(<a href="../../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p>Reports an error derived from the location attributes of a structural token.</p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="warnat_3">warnAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>warnAt</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>warnAt</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="errorat_6">errorAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, int line, int column, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="warnat_4">warnAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>warnAt</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>warnAt</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="errorat_7">errorAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="../../../lang/token/Token/">Token</a> token, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
 <hr />
 <h3 id="errorat_8">errorAt</h3>
-<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="../../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> code, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
+<p><span style="font-family: monospace; font-size: 80%;">public void <strong>errorAt</strong>(<a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html">URI</a> uri, <a href="../../../lang/token/Token/">Token</a> token, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html">Throwable</a> cause, <a href="../../message/DiagnosticMessage/">DiagnosticMessage</a> message, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a>[] details)</span></p>
 <p><strong>Specified By:</strong></p>
 <p><a href="../Reporter/">Reporter</a></p>
-<hr />
-<h3 id="getdiagnosticconsumer">getDiagnosticConsumer</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html">Consumer</a>&lt;<a href="../../Diagnostic/">Diagnostic</a>&gt; <strong>getDiagnosticConsumer</strong>()</span></p>
-<hr />
-<h3 id="getproblemconsumer">getProblemConsumer</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html">Consumer</a>&lt;<a href="../../Diagnostic/">Diagnostic</a>&gt; <strong>getProblemConsumer</strong>()</span></p>
-<hr />
-<h3 id="issystemoutputenabled">isSystemOutputEnabled</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>isSystemOutputEnabled</strong>()</span></p>
-<hr />
-<h3 id="isflushenabled">isFlushEnabled</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>isFlushEnabled</strong>()</span></p>
-<hr />
-<h3 id="isstacktraceenabled">isStackTraceEnabled</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>isStackTraceEnabled</strong>()</span></p>
-<hr />
-<h3 id="isproblem">isProblem</h3>
-<p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>isProblem</strong>(<a href="../../Diagnostic.Level/">Level</a> level)</span></p>
 <hr />
 <h3 id="report">report</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected void <strong>report</strong>(<a href="../../Diagnostic/">Diagnostic</a> diagnostic)</span></p>
@@ -28693,6 +28751,10 @@ public T <strong>setPrefixEveryLine</strong>(boolean b)</span></p>
 <hr />
 <h3 id="logline">logLine</h3>
 <p><span style="font-family: monospace; font-size: 80%;">protected void <strong>logLine</strong>(<a href="../../Diagnostic.Level/">Level</a> level, <a href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a> msgLine)</span></p>
+<p>Used by LogWriter to log lines of text</p>
+<hr />
+<h3 id="isproblem">isProblem</h3>
+<p><span style="font-family: monospace; font-size: 80%;">protected boolean <strong>isProblem</strong>(<a href="../../Diagnostic.Level/">Level</a> level)</span></p>
 <hr />
 
 
