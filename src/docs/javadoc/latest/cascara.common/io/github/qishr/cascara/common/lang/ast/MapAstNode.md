@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md), [Iterable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Iterable.html)<E>
 
 All Known Implementing Classes:<br/>
-    [PlainMapNode](../../../../../../../io/github/qishr/cascara/common/lang/plain/PlainMapNode.md), [JsonObject](../../../../../../../../cascara.lang.json/io/github/qishr/cascara/lang/json/ast/JsonObject.md), [YamlMap](../../../../../../../../cascara.lang.yaml/io/github/qishr/cascara/lang/yaml/ast/YamlMap.md)
+    [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMap.md), [JsonObject](../../../../../../../../cascara.lang.json/io/github/qishr/cascara/lang/json/ast/JsonObject.md), [YamlMap](../../../../../../../../cascara.lang.yaml/io/github/qishr/cascara/lang/yaml/ast/YamlMap.md)
 
 
 ----

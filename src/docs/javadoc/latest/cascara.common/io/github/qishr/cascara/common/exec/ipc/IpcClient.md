@@ -17,38 +17,23 @@ All Implemented Interfaces:<br/>
 
 | Modifier and Type                                                                                                | Field                       | Description |
 |------------------------------------------------------------------------------------------------------------------|-----------------------------|-------------|
-| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [DEBUG_PROP](#debug_prop)   |             |
 | public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [SOCKET_PROP](#socket_prop) |             |
 
 
 
 ## Method Summary
 
-| Modifier and Type                                                                                    | Method                                                                                                                                  | Description |
-|------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public static [IpcClient](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcClient.md) | [tryConnect](#tryconnect)([Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)<?> serializer) |             |
-| public long                                                                                          | [getServerProcessId](#getserverprocessid)()                                                                                             |             |
-| public synchronized void                                                                             | [send](#send)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) message)                     |             |
-| public void                                                                                          | [close](#close)()                                                                                                                       |             |
+| Modifier and Type                                                                                        | Method                                                                                                                                  | Description |
+|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public static [IpcClient](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcClient.md)     | [tryConnect](#tryconnect)([Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)<?> serializer) |             |
+| public long                                                                                              | [getServerProcessId](#getserverprocessid)()                                                                                             |             |
+| public [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)<?> | [getSerializer](#getserializer)()                                                                                                       |             |
+| public synchronized void                                                                                 | [send](#send)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) message)                     |             |
+| public void                                                                                              | [close](#close)()                                                                                                                       |             |
 
 
 
 ## Field Details
-
-### DEBUG_PROP
-
-<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __DEBUG_PROP__</span>
-
-
-
-**See Also:**
-
-
-[Constant Field Values](../../../../../../../constant-values.md)
-
-
-
----
 
 ### SOCKET_PROP
 
@@ -80,6 +65,15 @@ All Implemented Interfaces:<br/>
 ### getServerProcessId
 
 <span style="font-family: monospace; font-size: 80%;">public long __getServerProcessId__()</span>
+
+
+
+
+---
+
+### getSerializer
+
+<span style="font-family: monospace; font-size: 80%;">public [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)<?> __getSerializer__()</span>
 
 
 

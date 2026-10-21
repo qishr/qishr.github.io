@@ -43,6 +43,8 @@ Represents a YAML sequence (a list of items).
 | public [YamlScalar](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlScalar.md)                                                                                               | [getScalar](#getscalar)(int i)                                                                                       |                                                                                                                      |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                         | [getString](#getstring)(int i)                                                                                       |                                                                                                                      |
 | public int                                                                                                                                                                                  | [getInteger](#getinteger)(int i)                                                                                     |                                                                                                                      |
+| public [Number](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Number.html)                                                                                         | [getDouble](#getdouble)(int i)                                                                                       |                                                                                                                      |
+| public boolean                                                                                                                                                                              | [getBoolean](#getboolean)(int i)                                                                                     |                                                                                                                      |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)>         | [getElements](#getelements)()                                                                                        |                                                                                                                      |
 | public [YamlSequence](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlSequence.md)                                                                                           | [remove](#remove)([YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) node)           |                                                                                                                      |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)>         | [getChildren](#getchildren)()                                                                                        |   Implementation-specific nodes must return their constituent children. For example, a Map node returns its entries. |
@@ -165,6 +167,10 @@ Appends an item to the sequence.
 
 
 
+**Specified By:**
+
+[SequenceAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/SequenceAstNode.md)
+
 
 ---
 
@@ -173,6 +179,10 @@ Appends an item to the sequence.
 <span style="font-family: monospace; font-size: 80%;">public [YamlSequence](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlSequence.md) __getSequence__(int i)</span>
 
 
+
+**Specified By:**
+
+[SequenceAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/SequenceAstNode.md)
 
 
 ---
@@ -183,6 +193,10 @@ Appends an item to the sequence.
 
 
 
+**Specified By:**
+
+[SequenceAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/SequenceAstNode.md)
+
 
 ---
 
@@ -192,6 +206,10 @@ Appends an item to the sequence.
 
 
 
+**Specified By:**
+
+[SequenceAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/SequenceAstNode.md)
+
 
 ---
 
@@ -200,6 +218,36 @@ Appends an item to the sequence.
 <span style="font-family: monospace; font-size: 80%;">public int __getInteger__(int i)</span>
 
 
+
+**Specified By:**
+
+[SequenceAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/SequenceAstNode.md)
+
+
+---
+
+### getDouble
+
+<span style="font-family: monospace; font-size: 80%;">public [Number](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Number.html) __getDouble__(int i)</span>
+
+
+
+**Specified By:**
+
+[SequenceAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/SequenceAstNode.md)
+
+
+---
+
+### getBoolean
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __getBoolean__(int i)</span>
+
+
+
+**Specified By:**
+
+[SequenceAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/SequenceAstNode.md)
 
 
 ---

@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)
 
 All Known Implementing Classes:<br/>
-    [PlainScalarNode](../../../../../../../io/github/qishr/cascara/common/lang/plain/PlainScalarNode.md), [JsonComment](../../../../../../../../cascara.lang.json/io/github/qishr/cascara/lang/json/ast/JsonComment.md), [JsonScalar](../../../../../../../../cascara.lang.json/io/github/qishr/cascara/lang/json/ast/JsonScalar.md), [YamlScalar](../../../../../../../../cascara.lang.yaml/io/github/qishr/cascara/lang/yaml/ast/YamlScalar.md)
+    [GenericAstScalar](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstScalar.md), [JsonComment](../../../../../../../../cascara.lang.json/io/github/qishr/cascara/lang/json/ast/JsonComment.md), [JsonScalar](../../../../../../../../cascara.lang.json/io/github/qishr/cascara/lang/json/ast/JsonScalar.md), [YamlScalar](../../../../../../../../cascara.lang.yaml/io/github/qishr/cascara/lang/yaml/ast/YamlScalar.md)
 
 
 ----
@@ -27,13 +27,15 @@ All Known Implementing Classes:<br/>
 | public abstract [ScalarAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/ScalarAstNode.md)<T> | [setPrimitive](#setprimitive)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue) |                                                                                                                                                                  |
 | public abstract [PrimitiveType](../../../../../../../io/github/qishr/cascara/common/type/PrimitiveType.md)        | [getPrimitiveType](#getprimitivetype)()                                                                                              |                                                                                                                                                                  |
 | public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)      | [getContent](#getcontent)()                                                                                                          |                                                                                                                                                                  |
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)      | [asString](#asstring)()                                                                                                              | Returns the string form or the primitive.                                                                                                                        |
-| public abstract int                                                                                               | [asInteger](#asinteger)()                                                                                                            |                                                                                                                                                                  |
-| public abstract int                                                                                               | [asInteger](#asinteger)(int defaultValue)                                                                                            |                                                                                                                                                                  |
-| public abstract double                                                                                            | [asDouble](#asdouble)()                                                                                                              |                                                                                                                                                                  |
-| public abstract double                                                                                            | [asDouble](#asdouble)(double defaultValue)                                                                                           |                                                                                                                                                                  |
-| public abstract boolean                                                                                           | [asBoolean](#asboolean)()                                                                                                            | Returns the boolean value of the scalar, if there is one.                                                                                                        |
-| public abstract boolean                                                                                           | [asBoolean](#asboolean)(boolean defaultValue)                                                                                        | Returns the boolean value of the scalar, if there is one, otherwise the specified default is returned.                                                           |
+| public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)       | [asString](#asstring)()                                                                                                              | Returns the string form or the primitive.                                                                                                                        |
+| public default int                                                                                                | [asInteger](#asinteger)()                                                                                                            |                                                                                                                                                                  |
+| public default int                                                                                                | [asInteger](#asinteger)(int defaultValue)                                                                                            |                                                                                                                                                                  |
+| public default long                                                                                               | [asLong](#aslong)()                                                                                                                  |                                                                                                                                                                  |
+| public default long                                                                                               | [asLong](#aslong)(long defaultValue)                                                                                                 |                                                                                                                                                                  |
+| public default double                                                                                             | [asDouble](#asdouble)()                                                                                                              |                                                                                                                                                                  |
+| public default double                                                                                             | [asDouble](#asdouble)(double defaultValue)                                                                                           |                                                                                                                                                                  |
+| public default boolean                                                                                            | [asBoolean](#asboolean)()                                                                                                            | Returns the boolean value of the scalar, if there is one, otherwise results false.                                                                               |
+| public default boolean                                                                                            | [asBoolean](#asboolean)(boolean defaultValue)                                                                                        | Returns the boolean value of the scalar, if there is one, otherwise the specified default is returned.                                                           |
 
 
 
@@ -107,7 +109,7 @@ public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java
 
 ### asString
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __asString__()</span>
+<span style="font-family: monospace; font-size: 80%;">public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __asString__()</span>
 
 Returns the string form or the primitive.If the primitive is `null`, an empty string is returned.
 
@@ -120,7 +122,7 @@ Returns the string form or the primitive.If the primitive is `null`, an empty st
 
 ### asInteger
 
-<span style="font-family: monospace; font-size: 80%;">public abstract int __asInteger__()</span>
+<span style="font-family: monospace; font-size: 80%;">public default int __asInteger__()</span>
 
 
 
@@ -129,7 +131,25 @@ Returns the string form or the primitive.If the primitive is `null`, an empty st
 
 ### asInteger
 
-<span style="font-family: monospace; font-size: 80%;">public abstract int __asInteger__(int defaultValue)</span>
+<span style="font-family: monospace; font-size: 80%;">public default int __asInteger__(int defaultValue)</span>
+
+
+
+
+---
+
+### asLong
+
+<span style="font-family: monospace; font-size: 80%;">public default long __asLong__()</span>
+
+
+
+
+---
+
+### asLong
+
+<span style="font-family: monospace; font-size: 80%;">public default long __asLong__(long defaultValue)</span>
 
 
 
@@ -138,7 +158,7 @@ Returns the string form or the primitive.If the primitive is `null`, an empty st
 
 ### asDouble
 
-<span style="font-family: monospace; font-size: 80%;">public abstract double __asDouble__()</span>
+<span style="font-family: monospace; font-size: 80%;">public default double __asDouble__()</span>
 
 
 
@@ -147,7 +167,7 @@ Returns the string form or the primitive.If the primitive is `null`, an empty st
 
 ### asDouble
 
-<span style="font-family: monospace; font-size: 80%;">public abstract double __asDouble__(double defaultValue)</span>
+<span style="font-family: monospace; font-size: 80%;">public default double __asDouble__(double defaultValue)</span>
 
 
 
@@ -156,16 +176,16 @@ Returns the string form or the primitive.If the primitive is `null`, an empty st
 
 ### asBoolean
 
-<span style="font-family: monospace; font-size: 80%;">public abstract boolean __asBoolean__()</span>
+<span style="font-family: monospace; font-size: 80%;">public default boolean __asBoolean__()</span>
 
-Returns the boolean value of the scalar, if there is one.
+Returns the boolean value of the scalar, if there is one, otherwise results false.
 
 
 ---
 
 ### asBoolean
 
-<span style="font-family: monospace; font-size: 80%;">public abstract boolean __asBoolean__(boolean defaultValue)</span>
+<span style="font-family: monospace; font-size: 80%;">public default boolean __asBoolean__(boolean defaultValue)</span>
 
 Returns the boolean value of the scalar, if there is one, otherwise the specified default is returned.
 

@@ -9,6 +9,7 @@
     | Class                     | Description |
     |---------------------------|-------------|
     | [IpcClient](IpcClient.md) |             |
+    | [IpcConfig](IpcConfig.md) |             |
     | [IpcServer](IpcServer.md) |             |
 
 
@@ -17,6 +18,7 @@
     | Class                     | Description |
     |---------------------------|-------------|
     | [IpcClient](IpcClient.md) |             |
+    | [IpcConfig](IpcConfig.md) |             |
     | [IpcServer](IpcServer.md) |             |
 
 

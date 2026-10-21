@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.lang.ast](index.md)
         io.github.qishr.cascara.common.lang.ast.AstNodeFactory<br/>
 <br/>
 All Known Implementing Classes:<br/>
-    [PlainNodeFactory](../../../../../../../io/github/qishr/cascara/common/lang/plain/PlainNodeFactory.md), [JsonNodeFactory](../../../../../../../../cascara.lang.json/io/github/qishr/cascara/lang/json/ast/JsonNodeFactory.md), [YamlNodeFactory](../../../../../../../../cascara.lang.yaml/io/github/qishr/cascara/lang/yaml/util/YamlNodeFactory.md)
+    [GenericAstNodeFactory](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstNodeFactory.md), [JsonNodeFactory](../../../../../../../../cascara.lang.json/io/github/qishr/cascara/lang/json/ast/JsonNodeFactory.md), [YamlNodeFactory](../../../../../../../../cascara.lang.yaml/io/github/qishr/cascara/lang/yaml/util/YamlNodeFactory.md)
 
 
 ----

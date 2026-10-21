@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.diagnostic.format](index.md)
         io.github.qishr.cascara.common.diagnostic.format.LogFormatter<br/>
 <br/>
 All Known Implementing Classes:<br/>
-    [LocalLogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LocalLogFormatter.md), [PlainLogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/PlainLogFormatter.md)
+    [PlainLogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/PlainLogFormatter.md)
 
 
 ----
@@ -19,9 +19,10 @@ Formats diagnostic instances into string representations.
 
 | Modifier and Type                                                                                                     | Method                                                                                                                                                                                                                                                                                                                                                                          | Description                                      |
 |-----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)          | [format](#format)([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic, boolean stackTraceEnabled)                                                                                                                                                                                                                             | Formats the given diagnostic into a output line. |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)          | [format](#format)([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic)                                                                                                                                                                                                                                                        | Formats the given diagnostic into a output line. |
 | public abstract [LogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.md) | [withFields](#withfields)([Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[Field](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.Field.md)> fields)                                                                                                                                                  | Configures active fields shown in output.        |
 | public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)          | [formatStackTrace](#formatstacktrace)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level, [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] stackTrace, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t) |                                                  |
+| public abstract [LogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.md) | [setOptions](#setoptions)([FormatOptions](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatOptions.md) formatOptions)                                                                                                                                                                                                                                |                                                  |
 
 
 
@@ -29,7 +30,7 @@ Formats diagnostic instances into string representations.
 
 ### format
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __format__([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic, boolean stackTraceEnabled)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __format__([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic)</span>
 
 Formats the given diagnostic into a output line.
 
@@ -72,6 +73,15 @@ cascara.common-1.0.0
 ### formatStackTrace
 
 <span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __formatStackTrace__([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level, [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] stackTrace, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t)</span>
+
+
+
+
+---
+
+### setOptions
+
+<span style="font-family: monospace; font-size: 80%;">public abstract [LogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.md) __setOptions__([FormatOptions](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatOptions.md) formatOptions)</span>
 
 
 

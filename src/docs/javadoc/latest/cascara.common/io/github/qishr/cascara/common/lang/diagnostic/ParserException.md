@@ -21,19 +21,19 @@ Direct Known Subtypes:<br/>
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                                                                                                              | Description                                            |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| ParserException([DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           | Standard constructor for generic errors.               |
-| ParserException(int line, int column, [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                     | Standard constructor for parser-detected logic errors. |
-| ParserException([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                   | Standard constructor for parser-detected logic errors. |
-| ParserException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) | Constructor for I/O or Stream failures.                |
+| Constructor                                                                                                                                                                                                                                                                                                                                                 | Description                                            |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
+| ParserException([DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           | Standard constructor for generic errors.               |
+| ParserException(int line, int column, [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                     | Standard constructor for parser-detected logic errors. |
+| ParserException([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                   | Standard constructor for parser-detected logic errors. |
+| ParserException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) | Constructor for I/O or Stream failures.                |
 
-
-### Methods inherited from [LocalizableRuntimeException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)
-
-getDiagnosticMessage, getDetails
 
 ### Methods inherited from [LocatableException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocatableException.md)
 
 getRawMessage, getUri, getLine, setUri, getLocalizedMessage, getMessage, getColumn
+
+### Methods inherited from [LocalizableRuntimeException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)
+
+getDiagnosticMessage, getDetails
 

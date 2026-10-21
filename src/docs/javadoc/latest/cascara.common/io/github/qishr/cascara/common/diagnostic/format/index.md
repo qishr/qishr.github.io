@@ -9,7 +9,7 @@
     | Class                                         | Description                                               |
     |-----------------------------------------------|-----------------------------------------------------------|
     | [ColoredLogFormatter](ColoredLogFormatter.md) |                                                           |
-    | [LocalLogFormatter](LocalLogFormatter.md)     |                                                           |
+    | [FormatOptions](FormatOptions.md)             |                                                           |
     | [LogFormatter](LogFormatter.md)               | Formats diagnostic instances into string representations. |
     | [PlainLogFormatter](PlainLogFormatter.md)     |                                                           |
 
@@ -26,7 +26,7 @@
     | Class                                         | Description |
     |-----------------------------------------------|-------------|
     | [ColoredLogFormatter](ColoredLogFormatter.md) |             |
-    | [LocalLogFormatter](LocalLogFormatter.md)     |             |
+    | [FormatOptions](FormatOptions.md)             |             |
     | [PlainLogFormatter](PlainLogFormatter.md)     |             |
 
 

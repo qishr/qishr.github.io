@@ -26,15 +26,15 @@ Package [io.github.qishr.cascara.schema.diagnostic](index.md)
 | ValidationException([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) schemaPath, [AstNode](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) node, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
 
 
-### Methods inherited from [SchemaException](../../../../../../io/github/qishr/cascara/schema/diagnostic/SchemaException.md)
+### Methods inherited from [LocalizableRuntimeException](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)
 
-getType, getSchemaPath
+getDiagnosticMessage, getDetails
 
 ### Methods inherited from [LocatableException](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocatableException.md)
 
 getRawMessage, getUri, getLine, setUri, getLocalizedMessage, getMessage, getColumn
 
-### Methods inherited from [LocalizableRuntimeException](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)
+### Methods inherited from [SchemaException](../../../../../../io/github/qishr/cascara/schema/diagnostic/SchemaException.md)
 
-getDiagnosticMessage, getDetails
+getType, getSchemaPath
 

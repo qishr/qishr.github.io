@@ -29,13 +29,13 @@ public class __TrackableBooleanProperty__<br/>extends [TrackableProperty](../../
 | public void       | [setValue](#setvalue)([Boolean](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Boolean.html) v) |             |
 
 
-### Methods inherited from [TrackableProperty](../../../../../../../io/github/qishr/cascara/common/trackable/property/TrackableProperty.md)
-
-getOwner, setOwner, setDeclaredProperty, addTracker, setValue, isDeclaredProperty, invalidate, removeTracker, setMediaType, setName, getMediaType
-
 ### Methods inherited from [Property](../../../../../../../io/github/qishr/cascara/common/property/Property.md)
 
 asLong, asBoolean, asString, getName, getValues, asDouble, asInteger, asDouble, asBoolean, asInteger, isEmpty, getValue, getValue, setPrimitiveType, getString, asLong, getPrimitiveType, getValuesMap
+
+### Methods inherited from [TrackableProperty](../../../../../../../io/github/qishr/cascara/common/trackable/property/TrackableProperty.md)
+
+getOwner, setOwner, setDeclaredProperty, addTracker, setValue, isDeclaredProperty, invalidate, removeTracker, setMediaType, setName, getMediaType
 
 
 ## Method Details

@@ -32,13 +32,13 @@ java.time.LocalTime Descriptor
 | public boolean                                                                                            | [validate](#validate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md) collector) |             |
 
 
-### Methods inherited from [AbstractScalarDescriptor](../../../../../../../io/github/qishr/cascara/common/type/AbstractScalarDescriptor.md)
-
-getFormat, formatError, populateSchema, getContentEncoding
-
 ### Methods inherited from [AbstractTypeDescriptor](../../../../../../../io/github/qishr/cascara/common/type/AbstractTypeDescriptor.md)
 
 getSchemaType, getServiceProperties, getJvmType
+
+### Methods inherited from [AbstractScalarDescriptor](../../../../../../../io/github/qishr/cascara/common/type/AbstractScalarDescriptor.md)
+
+getFormat, formatError, populateSchema, getContentEncoding
 
 
 ## Method Details

@@ -13,23 +13,50 @@ All Implemented Interfaces:<br/>
 <span style="font-family: monospace; font-size: 80%;">public class __IpcServer__</span>
 
 
+## Field Summary
+
+| Modifier and Type                                                                                                | Field                                         | Description |
+|------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|-------------|
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [SERIALIZATION_FORMAT](#serialization_format) |             |
+
+
+
 ## Method Summary
 
-| Modifier and Type                                                                                    | Method                                                                                                                                                                               | Description |
-|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public static [IpcServer](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcServer.md) | [start](#start)([Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)<?> serializer, boolean diagnosticForwarding, boolean ipcDebugEnabled) |             |
-| public synchronized void                                                                             | [listenAsync](#listenasync)()                                                                                                                                                        |             |
-| public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)  | [getSocketPath](#getsocketpath)()                                                                                                                                                    |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T>   | [getMessages](#getmessages)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> type)                                                      |             |
-| public void                                                                                          | [close](#close)()                                                                                                                                                                    |             |
+| Modifier and Type                                                                                    | Method                                                                                                                          | Description |
+|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public static [IpcServer](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcServer.md) | [start](#start)(boolean diagnosticForwarding, boolean ipcDebugEnabled)                                                          |             |
+| public synchronized void                                                                             | [listenAsync](#listenasync)()                                                                                                   |             |
+| public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)  | [getSocketPath](#getsocketpath)()                                                                                               |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T>   | [getMessages](#getmessages)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> type) |             |
+| public void                                                                                          | [close](#close)()                                                                                                               |             |
 
+
+
+## Field Details
+
+### SERIALIZATION_FORMAT
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __SERIALIZATION_FORMAT__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../../constant-values.md)
+
+
+
+---
 
 
 ## Method Details
 
 ### start
 
-<span style="font-family: monospace; font-size: 80%;">public static [IpcServer](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcServer.md) __start__([Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)<?> serializer, boolean diagnosticForwarding, boolean ipcDebugEnabled)</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
+public static [IpcServer](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcServer.md) __start__(boolean diagnosticForwarding, boolean ipcDebugEnabled)</span>
 
 
 
@@ -51,7 +78,8 @@ All Implemented Interfaces:<br/>
 
 ### getSocketPath
 
-<span style="font-family: monospace; font-size: 80%;">public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getSocketPath__()</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
+public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getSocketPath__()</span>
 
 
 
@@ -60,7 +88,8 @@ All Implemented Interfaces:<br/>
 
 ### getMessages
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> __getMessages__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> type)</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
+public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> __getMessages__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> type)</span>
 
 
 

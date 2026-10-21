@@ -23,10 +23,10 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type | Method                                                                                                                                                                                                                                            | Description |
-|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public void       | [analyze](#analyze)([Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html) field, [PlainMapNode](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/plain/PlainMapNode.md) node) |             |
-| public void       | [analyze](#analyze)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz, [PlainMapNode](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/plain/PlainMapNode.md) node)      |             |
+| Modifier and Type | Method                                                                                                                                                                                                                                                | Description |
+|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public void       | [analyze](#analyze)([Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html) field, [GenericAstMap](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstMap.md) node) |             |
+| public void       | [analyze](#analyze)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz, [GenericAstMap](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstMap.md) node)      |             |
 
 
 
@@ -34,7 +34,7 @@ All Implemented Interfaces:<br/>
 
 ### analyze
 
-<span style="font-family: monospace; font-size: 80%;">public void __analyze__([Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html) field, [PlainMapNode](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/plain/PlainMapNode.md) node)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __analyze__([Field](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Field.html) field, [GenericAstMap](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstMap.md) node)</span>
 
 
 
@@ -47,7 +47,7 @@ All Implemented Interfaces:<br/>
 
 ### analyze
 
-<span style="font-family: monospace; font-size: 80%;">public void __analyze__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz, [PlainMapNode](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/plain/PlainMapNode.md) node)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __analyze__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz, [GenericAstMap](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstMap.md) node)</span>
 
 
 

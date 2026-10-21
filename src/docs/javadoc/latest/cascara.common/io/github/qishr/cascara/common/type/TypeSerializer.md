@@ -18,11 +18,11 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                               | Method                                                                                                                                                                                                                                                                                                                                  | Description                                                                                                                                                                 |
-|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| public abstract [AstNode](../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) | [serialize](#serialize)(T jvmInstance, [Context](../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.Context.md) ctx)                                                                                                                                                                                            | Transforms a concrete Java object into its structural AST representation.                                                                                                   |
-| public abstract T                                                                               | [deserialize](#deserialize)([AstNode](../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) targetType, [Context](../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.Context.md) ctx) | Deserializes an AST node into a strongly-typed Java object.                                                                                                                 |
-| public default boolean                                                                          | [validate](#validate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md) collector)                                                                                                          | Type serializers don't need to validate, but they do everything else a type descriptor does, so we provide a default validate method here so implementations don't need to. |
+| Modifier and Type                                                                               | Method                                                                                                                                                                                                                                                                                                                               | Description                                                                                                                                                                 |
+|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| public abstract [AstNode](../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) | [serialize](#serialize)(T jvmInstance, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) jvmType, [Context](../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.Context.md) ctx)                                                                               | Transforms a concrete Java object into its structural AST representation.                                                                                                   |
+| public abstract T                                                                               | [deserialize](#deserialize)([AstNode](../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) jvmType, [Context](../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.Context.md) ctx) | Deserializes an AST node into a strongly-typed Java object.                                                                                                                 |
+| public default boolean                                                                          | [validate](#validate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md) collector)                                                                                                       | Type serializers don't need to validate, but they do everything else a type descriptor does, so we provide a default validate method here so implementations don't need to. |
 
 
 
@@ -30,13 +30,15 @@ All Known Implementing Classes:<br/>
 
 ### serialize
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [AstNode](../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) __serialize__(T jvmInstance, [Context](../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.Context.md) ctx)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [AstNode](../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) __serialize__(T jvmInstance, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) jvmType, [Context](../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.Context.md) ctx)</span>
 
 Transforms a concrete Java object into its structural AST representation.
 
 **Parameters:**
 
 `jvmInstance` - The live runtime object instance to serialize.
+
+`jvmType` - Type information about the declared type (useful when it's parameterized)
 
 **Returns:**
 
@@ -51,7 +53,7 @@ The matching structural AstNode graph.
 
 ### deserialize
 
-<span style="font-family: monospace; font-size: 80%;">public abstract T __deserialize__([AstNode](../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) targetType, [Context](../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.Context.md) ctx)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract T __deserialize__([AstNode](../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) jvmType, [Context](../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.Context.md) ctx)</span>
 
 Deserializes an AST node into a strongly-typed Java object.
 
@@ -59,7 +61,7 @@ Deserializes an AST node into a strongly-typed Java object.
 
 `astNode` - The structural AST node being parsed (e.g., YamlScalarNode, YamlMapNode).
 
-`targetType` - Type information about the target type (useful when it's parameterized)
+`jvmType` - Type information about the target type (useful when it's parameterized)
 
 **Returns:**
 

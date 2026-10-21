@@ -42,6 +42,7 @@ Standard implementation for YAML serialization.
 | public C                                                                                                        | [fromStream](#fromstream)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)                                                                                                  |             |
 | public C                                                                                                        | [fromAst](#fromast)([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)                                                                                                                     |             |
 | public C                                                                                                        | [fromAst](#fromast)([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)                                                                                                   |             |
+| public [YamlAstParser](../../../../../../../io/github/qishr/cascara/lang/yaml/processor/YamlAstParser.md)       | [getParser](#getparser)()                                                                                                                                                                                                                                                                                                                                    |             |
 | protected [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)                    | [serializeKey](#serializekey)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                                                                                                                                              |             |
 | protected void                                                                                                  | [setupSerializer](#setupserializer)()                                                                                                                                                                                                                                                                                                                        |             |
 | protected void                                                                                                  | [error](#error)([YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) node, [DiagnosticMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)    |             |
@@ -208,6 +209,15 @@ warn, trace, error, serialize, debug, registerTypeDescriptor, deserialize, warnI
 ### fromAst
 
 <span style="font-family: monospace; font-size: 80%;">public C __fromAst__([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)</span>
+
+
+
+
+---
+
+### getParser
+
+<span style="font-family: monospace; font-size: 80%;">public [YamlAstParser](../../../../../../../io/github/qishr/cascara/lang/yaml/processor/YamlAstParser.md) __getParser__()</span>
 
 
 

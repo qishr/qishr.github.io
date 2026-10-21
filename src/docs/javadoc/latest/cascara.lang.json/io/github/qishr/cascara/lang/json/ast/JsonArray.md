@@ -42,6 +42,9 @@ All Implemented Interfaces:<br/>
 | public boolean                                                                                                                                                                              | [isEmpty](#isempty)()                                                                                             |                           |
 | public boolean                                                                                                                                                                              | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o) |                           |
 | public int                                                                                                                                                                                  | [hashCode](#hashcode)()                                                                                           |                           |
+| public [JsonArray](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonArray.md)                                                                                                 | [getSequence](#getsequence)(int i)                                                                                |                           |
+| public [JsonObject](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonObject.md)                                                                                               | [getMap](#getmap)(int i)                                                                                          |                           |
+| public [JsonScalar](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonScalar.md)                                                                                               | [getScalar](#getscalar)(int i)                                                                                    |                           |
 
 
 ### Methods inherited from [JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)
@@ -221,6 +224,45 @@ Returns Iterator instance
 **Overrides:**
 
 [JsonNode](../../../../../../../../cascara.lang.json/io/github/qishr/cascara/lang/json/ast/JsonNode.md#hashcode)
+
+
+---
+
+### getSequence
+
+<span style="font-family: monospace; font-size: 80%;">public [JsonArray](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonArray.md) __getSequence__(int i)</span>
+
+
+
+**Specified By:**
+
+[SequenceAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/SequenceAstNode.md)
+
+
+---
+
+### getMap
+
+<span style="font-family: monospace; font-size: 80%;">public [JsonObject](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonObject.md) __getMap__(int i)</span>
+
+
+
+**Specified By:**
+
+[SequenceAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/SequenceAstNode.md)
+
+
+---
+
+### getScalar
+
+<span style="font-family: monospace; font-size: 80%;">public [JsonScalar](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonScalar.md) __getScalar__(int i)</span>
+
+
+
+**Specified By:**
+
+[SequenceAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/SequenceAstNode.md)
 
 
 ---

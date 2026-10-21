@@ -1,26 +1,26 @@
-Package [io.github.qishr.cascara.common.lang.plain](index.md)
+Package [io.github.qishr.cascara.common.lang.generic](index.md)
 
-# Class PlainNode
+# Class GenericAstNode
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        io.github.qishr.cascara.common.lang.plain.PlainNode<br/>
+        io.github.qishr.cascara.common.lang.generic.GenericAstNode<br/>
 <br/>
 All Implemented Interfaces:<br/>
     [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)
 
 Direct Known Subtypes:<br/>
-    [PlainMapEntryNode](../../../../../../../io/github/qishr/cascara/common/lang/plain/PlainMapEntryNode.md), [PlainScalarNode](../../../../../../../io/github/qishr/cascara/common/lang/plain/PlainScalarNode.md), [PlainSequenceNode](../../../../../../../io/github/qishr/cascara/common/lang/plain/PlainSequenceNode.md), [PlainMapNode](../../../../../../../io/github/qishr/cascara/common/lang/plain/PlainMapNode.md)
+    [GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md), [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMap.md), [GenericAstSequence](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstSequence.md), [GenericAstScalar](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstScalar.md)
 
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public abstract class __PlainNode__</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract class __GenericAstNode__</span>
 
 
 ## Constructor Summary
 
-| Constructor | Description |
-|-------------|-------------|
-| PlainNode() |             |
+| Constructor      | Description |
+|------------------|-------------|
+| GenericAstNode() |             |
 
 
 

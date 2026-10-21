@@ -14,19 +14,18 @@ Package [io.github.qishr.cascara.common.diagnostic.format](index.md)
 
 ## Field Summary
 
-| Modifier and Type               | Field                                           | Description |
-|---------------------------------|-------------------------------------------------|-------------|
-| protected static final boolean  | [CAN_USE_ANSI_COLORING](#can_use_ansi_coloring) |             |
-| protected boolean               | [ansiColoringEnabled](#ansicoloringenabled)     |             |
-| protected static final String[] | [levelColors](#levelcolors)                     |             |
+| Modifier and Type               | Field                                       | Description |
+|---------------------------------|---------------------------------------------|-------------|
+| protected boolean               | [ansiColoringEnabled](#ansicoloringenabled) |             |
+| protected static final String[] | [levelColors](#levelcolors)                 |             |
 
 
 
 ## Constructor Summary
 
-| Constructor           | Description |
-|-----------------------|-------------|
-| ColoredLogFormatter() |             |
+| Constructor                                                                                                                          | Description |
+|--------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| ColoredLogFormatter([FormatOptions](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatOptions.md) options) |             |
 
 
 
@@ -40,19 +39,10 @@ Package [io.github.qishr.cascara.common.diagnostic.format](index.md)
 
 ### Methods inherited from [PlainLogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/PlainLogFormatter.md)
 
-format, setPrefixEveryLine, withFields
+format, withFields, setOptions
 
 
 ## Field Details
-
-### CAN_USE_ANSI_COLORING
-
-<span style="font-family: monospace; font-size: 80%;">protected static final boolean __CAN_USE_ANSI_COLORING__</span>
-
-
-
-
----
 
 ### ansiColoringEnabled
 

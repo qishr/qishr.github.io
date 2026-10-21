@@ -22,6 +22,7 @@ Direct Known Subtypes:<br/>
 | protected static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [MODULE_INFO](#module_info)                   |             |
 | protected Set<String>                                                                                               | [classNames](#classnames)                     |             |
 | protected Set<String>                                                                                               | [excluded](#excluded)                         |             |
+| protected Reporter                                                                                                  | [reporter](#reporter)                         |             |
 | protected Path                                                                                                      | [virtualReferencePath](#virtualreferencepath) |             |
 
 
@@ -112,6 +113,15 @@ Direct Known Subtypes:<br/>
 ### excluded
 
 <span style="font-family: monospace; font-size: 80%;">protected Set<String> __excluded__</span>
+
+
+
+
+---
+
+### reporter
+
+<span style="font-family: monospace; font-size: 80%;">protected Reporter __reporter__</span>
 
 
 

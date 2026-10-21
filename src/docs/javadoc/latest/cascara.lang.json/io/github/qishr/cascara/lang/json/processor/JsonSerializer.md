@@ -43,6 +43,7 @@ Standard implementation for JSON serialization.
 | public C                                                                                                        | [fromStream](#fromstream)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef) |             |
 | public C                                                                                                        | [fromAst](#fromast)([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)                    |             |
 | public C                                                                                                        | [fromAst](#fromast)([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)  |             |
+| public [JsonAstParser](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonAstParser.md)       | [getParser](#getparser)()                                                                                                                                                                                                                                   |             |
 | protected void                                                                                                  | [setupSerializer](#setupserializer)()                                                                                                                                                                                                                       |             |
 
 
@@ -216,6 +217,15 @@ warn, trace, error, serialize, debug, registerTypeDescriptor, deserialize, warnI
 ### fromAst
 
 <span style="font-family: monospace; font-size: 80%;">public C __fromAst__([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [TypeReference](../../../../../../../../cascara.common/io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)</span>
+
+
+
+
+---
+
+### getParser
+
+<span style="font-family: monospace; font-size: 80%;">public [JsonAstParser](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonAstParser.md) __getParser__()</span>
 
 
 

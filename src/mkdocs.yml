@@ -103,7 +103,9 @@ nav:
               - Gradle Plugin: cascara/file-formats/vsix/gradle-plugin.md
           - YAML: cascara/language-processors/yaml/index.md
       - Diagnostics: cascara/diagnostics/index.md
-  - Getting Started: cascara/getting-started/index.md
+  - Getting Started:
+      - Overview: cascara/getting-started/index.md
+      - Building from Source: cascara/getting-started/building-from-source.md
   - Language Processors Collection:
       - Overview: cascara/language-processors/index.md
       - Cascara YAML:

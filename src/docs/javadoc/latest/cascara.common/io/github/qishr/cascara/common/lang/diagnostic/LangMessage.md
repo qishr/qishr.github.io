@@ -39,6 +39,7 @@ All Implemented Interfaces:<br/>
 | [EXPECTED_SCALAR_NAMED](#expected_scalar_named)                                                 |             |
 | [FIELD_NOT_ACCESSIBLE_REASON](#field_not_accessible_reason)                                     |             |
 | [AMBIGUOUS_POLYMORPHIC](#ambiguous_polymorphic)                                                 |             |
+| [AMBIGUOUS_TARGET_TYPE](#ambiguous_target_type)                                                 |             |
 | [NON_SCALAR_KEY](#non_scalar_key)                                                               |             |
 | [AST_FACTORY_FAIL_SCALAR](#ast_factory_fail_scalar)                                             |             |
 | [AST_FACTORY_FAIL_MAP](#ast_factory_fail_map)                                                   |             |
@@ -249,6 +250,15 @@ public static final  FIELD_NOT_ACCESSIBLE_REASON
 ### AMBIGUOUS_POLYMORPHIC
 
 public static final  AMBIGUOUS_POLYMORPHIC
+
+
+
+
+---
+
+### AMBIGUOUS_TARGET_TYPE
+
+public static final  AMBIGUOUS_TARGET_TYPE
 
 
 

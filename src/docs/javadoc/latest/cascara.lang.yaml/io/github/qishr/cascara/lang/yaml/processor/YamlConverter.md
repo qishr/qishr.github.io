@@ -25,12 +25,12 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                 | Method                                                                                                                          | Description |
-|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|-------------|
-| protected [YamlConverter](../../../../../../../io/github/qishr/cascara/lang/yaml/processor/YamlConverter.md)      | [self](#self)()                                                                                                                 |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)               | [toString](#tostring)([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) ast) |             |
-| public [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)                         | [fromAst](#fromast)([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) ast)   |             |
-| public [PlainNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/plain/PlainNode.md) | [toPlainAst](#toplainast)([YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) yaml)              |             |
+| Modifier and Type                                                                                                             | Method                                                                                                                          | Description |
+|-------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|-------------|
+| protected [YamlConverter](../../../../../../../io/github/qishr/cascara/lang/yaml/processor/YamlConverter.md)                  | [self](#self)()                                                                                                                 |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                           | [toString](#tostring)([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) ast) |             |
+| public [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)                                     | [fromAst](#fromast)([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) ast)   |             |
+| public [GenericAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstNode.md) | [toGenericAst](#togenericast)([YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) yaml)          |             |
 
 
 
@@ -72,10 +72,10 @@ public [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/Yam
 
 ---
 
-### toPlainAst
+### toGenericAst
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [PlainNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/plain/PlainNode.md) __toPlainAst__([YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) yaml)</span>
+public [GenericAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstNode.md) __toGenericAst__([YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) yaml)</span>
 
 
 
