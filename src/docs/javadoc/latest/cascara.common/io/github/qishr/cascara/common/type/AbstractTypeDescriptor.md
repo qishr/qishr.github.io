@@ -36,12 +36,12 @@ Direct Known Subtypes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                    | Method                                                                                                                                 | Description |
-|------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)         | [getServiceProperties](#getserviceproperties)()                                                                                        |             |
-| public [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> | [getJvmType](#getjvmtype)()                                                                                                            |             |
-| public [PrimitiveType](../../../../../../io/github/qishr/cascara/common/type/PrimitiveType.md)       | [getSchemaType](#getschematype)()                                                                                                      |             |
-| public void                                                                                          | [populateSchema](#populateschema)([MapAstNode](../../../../../../io/github/qishr/cascara/common/lang/ast/MapAstNode.md)<?, ?, ?> node) |             |
+| Modifier and Type                                                                                 | Method                                                                                                                                 | Description |
+|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)      | [getServiceProperties](#getserviceproperties)()                                                                                        |             |
+| public [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html) | [getJvmType](#getjvmtype)()                                                                                                            |             |
+| public [PrimitiveType](../../../../../../io/github/qishr/cascara/common/type/PrimitiveType.md)    | [getSchemaType](#getschematype)()                                                                                                      |             |
+| public void                                                                                       | [populateSchema](#populateschema)([MapAstNode](../../../../../../io/github/qishr/cascara/common/lang/ast/MapAstNode.md)<?, ?, ?> node) |             |
 
 
 
@@ -85,7 +85,7 @@ Direct Known Subtypes:<br/>
 
 ### getJvmType
 
-<span style="font-family: monospace; font-size: 80%;">public [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> __getJvmType__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html) __getJvmType__()</span>
 
 
 

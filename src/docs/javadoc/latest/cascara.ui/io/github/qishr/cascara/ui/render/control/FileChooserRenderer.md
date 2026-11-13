@@ -32,13 +32,13 @@ All Implemented Interfaces:<br/>
 | protected [Node](https://openjfx.io/javadoc/25/javafx.graphics/javafx/scene/Node.html) | [createPathField](#createpathfield)([ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html) property, [FieldMetadata](../../../../../../../io/github/qishr/cascara/ui/form/FieldMetadata.md) meta)                                                                                                                                                                  |             |
 
 
-### Methods inherited from [AbstractScalarRenderer](../../../../../../../io/github/qishr/cascara/ui/render/AbstractScalarRenderer.md)
-
-extractString, extractString
-
 ### Methods inherited from [AbstractRenderer](../../../../../../../io/github/qishr/cascara/ui/render/AbstractRenderer.md)
 
 getSchemaType, getSchemaFormat, getContentType, getServiceProperties
+
+### Methods inherited from [AbstractScalarRenderer](../../../../../../../io/github/qishr/cascara/ui/render/AbstractScalarRenderer.md)
+
+extractString, extractString
 
 
 ## Method Details

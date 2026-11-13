@@ -20,14 +20,14 @@ Package [io.github.qishr.cascara.ui.control](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                            | Method                                        | Description |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|-------------|
-| public [StringProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/StringProperty.html)                                                                                 | [badgeTextProperty](#badgetextproperty)()     |             |
-| public [SimpleIntegerProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/SimpleIntegerProperty.html)                                                                   | [badgeNumberProperty](#badgenumberproperty)() |             |
-| public [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)<[BadgeType](../../../../../../io/github/qishr/cascara/ui/control/BadgeType.md)> | [badgeTypeProperty](#badgetypeproperty)()     |             |
-| public [BadgeType](../../../../../../io/github/qishr/cascara/ui/control/BadgeType.md)                                                                                                        | [getBadgeType](#getbadgetype)()               |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                          | [getBadgeText](#getbadgetext)()               |             |
-| public [Integer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html)                                                                                        | [getBadgeNumber](#getbadgenumber)()           |             |
+| Modifier and Type                                                                                                          | Method                                        | Description |
+|----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|-------------|
+| public [StringProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/StringProperty.html)               | [badgeTextProperty](#badgetextproperty)()     |             |
+| public [SimpleIntegerProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/SimpleIntegerProperty.html) | [badgeNumberProperty](#badgenumberproperty)() |             |
+| public [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)               | [badgeTypeProperty](#badgetypeproperty)()     |             |
+| public [BadgeType](../../../../../../io/github/qishr/cascara/ui/control/BadgeType.md)                                      | [getBadgeType](#getbadgetype)()               |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                        | [getBadgeText](#getbadgetext)()               |             |
+| public [Integer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Integer.html)                      | [getBadgeNumber](#getbadgenumber)()           |             |
 
 
 
@@ -53,7 +53,7 @@ Package [io.github.qishr.cascara.ui.control](index.md)
 
 ### badgeTypeProperty
 
-<span style="font-family: monospace; font-size: 80%;">public [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)<[BadgeType](../../../../../../io/github/qishr/cascara/ui/control/BadgeType.md)> __badgeTypeProperty__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html) __badgeTypeProperty__()</span>
 
 
 

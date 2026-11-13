@@ -15,8 +15,8 @@
     | [NodeStyle](NodeStyle.md)                 | The presentation style of a YAML node.                                             |
     | [ScalarStyle](ScalarStyle.md)             |                                                                                    |
     | [YamlAliasResolver](YamlAliasResolver.md) |                                                                                    |
+    | [YamlConfig](YamlConfig.md)               |                                                                                    |
     | [YamlNodeFactory](YamlNodeFactory.md)     |                                                                                    |
-    | [YamlOptions](YamlOptions.md)             |                                                                                    |
     | [YamlVisitor](YamlVisitor.md)             | Defines a visitor pattern interface for traversing the Cascara YAML AST hierarchy. |
 
 
@@ -33,8 +33,8 @@
     |-------------------------------------------|-------------|
     | [CascaraYaml](CascaraYaml.md)             |             |
     | [YamlAliasResolver](YamlAliasResolver.md) |             |
+    | [YamlConfig](YamlConfig.md)               |             |
     | [YamlNodeFactory](YamlNodeFactory.md)     |             |
-    | [YamlOptions](YamlOptions.md)             |             |
 
 
 === "Enum Classes"

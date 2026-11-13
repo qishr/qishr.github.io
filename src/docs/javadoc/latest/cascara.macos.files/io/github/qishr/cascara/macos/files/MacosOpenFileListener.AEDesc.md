@@ -34,9 +34,9 @@ Enclosing Class:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                | Method                            | Description |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|-------------|
-| protected [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getFieldOrder](#getfieldorder)() |             |
+| Modifier and Type                                                                                  | Method                            | Description |
+|----------------------------------------------------------------------------------------------------|-----------------------------------|-------------|
+| protected [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) | [getFieldOrder](#getfieldorder)() |             |
 
 
 
@@ -65,7 +65,7 @@ Enclosing Class:<br/>
 
 ### getFieldOrder
 
-<span style="font-family: monospace; font-size: 80%;">protected [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> __getFieldOrder__()</span>
+<span style="font-family: monospace; font-size: 80%;">protected [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getFieldOrder__()</span>
 
 
 

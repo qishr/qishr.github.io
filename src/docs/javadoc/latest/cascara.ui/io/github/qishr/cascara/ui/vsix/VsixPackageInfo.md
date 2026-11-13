@@ -20,14 +20,14 @@ Package [io.github.qishr.cascara.ui.vsix](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                             | Method                              | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|-------------|
-| public [Properties](../../../../../../../cascara.common/io/github/qishr/cascara/common/property/Properties.md)                                                                                | [getProperties](#getproperties)()   |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getCategories](#getcategories)()   |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<ThemeContribution>                                                                            | [getThemes](#getthemes)()           |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getName](#getname)()               |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getDisplayName](#getdisplayname)() |             |
-| public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)                                                                                           | [getPath](#getpath)()               |             |
+| Modifier and Type                                                                                              | Method                              | Description |
+|----------------------------------------------------------------------------------------------------------------|-------------------------------------|-------------|
+| public [Properties](../../../../../../../cascara.common/io/github/qishr/cascara/common/property/Properties.md) | [getProperties](#getproperties)()   |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)                | [getCategories](#getcategories)()   |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)                | [getThemes](#getthemes)()           |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)            | [getName](#getname)()               |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)            | [getDisplayName](#getdisplayname)() |             |
+| public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)            | [getPath](#getpath)()               |             |
 
 
 
@@ -44,7 +44,7 @@ Package [io.github.qishr.cascara.ui.vsix](index.md)
 
 ### getCategories
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> __getCategories__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getCategories__()</span>
 
 
 
@@ -53,7 +53,7 @@ Package [io.github.qishr.cascara.ui.vsix](index.md)
 
 ### getThemes
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<ThemeContribution> __getThemes__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getThemes__()</span>
 
 
 

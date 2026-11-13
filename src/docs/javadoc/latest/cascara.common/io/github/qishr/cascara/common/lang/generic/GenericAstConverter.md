@@ -24,14 +24,14 @@ public class __GenericAstConverter__</span>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                     | Method                                                                                                                                    | Description |
-|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [GenericAstNode](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstNode.md)           | [fromAst](#fromast)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) ast)                               |             |
-| public [GenericAstNode](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstNode.md)           | [toGenericAst](#togenericast)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) node)                    |             |
-| public [GenericAstConverter](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstConverter.md) | [setReporter](#setreporter)([Reporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md) reporter)       |             |
-| public [GenericAstConverter](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstConverter.md) | [setOptions](#setoptions)([LanguageOptions](../../../../../../../io/github/qishr/cascara/common/lang/util/LanguageOptions.md)<?> options) |             |
-| public [ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md)                         | [getContentType](#getcontenttype)()                                                                                                       |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                   | [toString](#tostring)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) ast)                             |             |
+| Modifier and Type                                                                                                     | Method                                                                                                                               | Description |
+|-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [GenericAstNode](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstNode.md)           | [fromAst](#fromast)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) ast)                          |             |
+| public [GenericAstNode](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstNode.md)           | [toGenericAst](#togenericast)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) node)               |             |
+| public [GenericAstConverter](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstConverter.md) | [setReporter](#setreporter)([Reporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md) reporter)  |             |
+| public [GenericAstConverter](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstConverter.md) | [setConfig](#setconfig)([LanguageConfig](../../../../../../../io/github/qishr/cascara/common/lang/util/LanguageConfig.md)<?> config) |             |
+| public [ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md)                         | [getContentType](#getcontenttype)()                                                                                                  |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                   | [toString](#tostring)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) ast)                        |             |
 
 
 
@@ -70,9 +70,9 @@ public [GenericAstNode](../../../../../../../io/github/qishr/cascara/common/lang
 
 ---
 
-### setOptions
+### setConfig
 
-<span style="font-family: monospace; font-size: 80%;">public [GenericAstConverter](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstConverter.md) __setOptions__([LanguageOptions](../../../../../../../io/github/qishr/cascara/common/lang/util/LanguageOptions.md)<?> options)</span>
+<span style="font-family: monospace; font-size: 80%;">public [GenericAstConverter](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstConverter.md) __setConfig__([LanguageConfig](../../../../../../../io/github/qishr/cascara/common/lang/util/LanguageConfig.md)<?> config)</span>
 
 
 

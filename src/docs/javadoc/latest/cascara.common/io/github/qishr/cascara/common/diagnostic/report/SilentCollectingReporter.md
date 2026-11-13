@@ -33,7 +33,7 @@ Package [io.github.qishr.cascara.common.diagnostic.report](index.md)
 
 ### Methods inherited from [AbstractReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/AbstractReporter.md)
 
-warn, setStackTraceEnabled, setPrefixEveryLine, reportsDebug, reportsTrace, isProblem, error, addLogger, isImmediateFlushEnabled, logLine, warnAt, reportAnyLevel, error, infoAt, error, infoAt, warnAt, info, errorAt, warnAt, warnAt, setDiagnosticConsumer, errorAt, getLevel, errorAt, errorAt, errorAt, isSystemOutputEnabled, trace, warnAt, setShowProblemCodes, errorAt, debug, setSystemErrorEnabled, setProblemConsumer, infoAt, setLineConsumer, setImmediateFlushEnabled, errorAt, setAnsiColoringEnabled, getProblemConsumer, setSystemOutputEnabled, defaultFormatOptions, errorAt, getDiagnosticConsumer, getWriter, errorAt, log, setLevel
+setStackTraceEnabled, setPrefixEveryLine, reportsDebug, reportsTrace, error, infoAt, warnAt, isProblem, addLogger, isImmediateFlushEnabled, defaultFormatConfig, errorAt, logLine, reportAnyLevel, warn, warnAt, getDiagnosticConsumers, getLevel, infoAt, isSystemOutputEnabled, errorAt, trace, setShowProblemCodes, removeDiagnosticConsumer, debug, setSystemErrorEnabled, warnAt, info, errorAt, errorAt, setProblemConsumer, infoAt, errorAt, warnAt, setLineConsumer, error, setImmediateFlushEnabled, errorAt, setAnsiColoringEnabled, errorAt, getProblemConsumer, setSystemOutputEnabled, warnAt, warn, errorAt, addDiagnosticConsumer, getWriter, errorAt, log, setLevel, error
 
 
 ## Method Details

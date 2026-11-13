@@ -27,12 +27,13 @@ Note: For language processors, use io.github.qishr.cascara.common.lang.util.Proc
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                   | Method                                                                                                                                                      | Description |
-|-------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public static io.github.qishr.cascara.common.service.@io.github.qishr.cascara.common.annotation.Experimental ServiceProviderFactory | [system](#system)()                                                                                                                                         |             |
-| public [SourceBuffer](../../../../../../io/github/qishr/cascara/common/lang/util/SourceBuffer.md)                                   | [createSourceBuffer](#createsourcebuffer)([SourceBufferOptions](../../../../../../io/github/qishr/cascara/common/lang/util/SourceBufferOptions.md) options) |             |
-| public [TypeDescriptor](../../../../../../io/github/qishr/cascara/common/type/TypeDescriptor.md)<?>                                 | [createTypeDescriptor](#createtypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)        |             |
-| public [ContentTypeResolver](../../../../../../io/github/qishr/cascara/common/util/ContentTypeResolver.md)                          | [getContentTypeResolver](#getcontenttyperesolver)()                                                                                                         |             |
+| Modifier and Type                                                                                                          | Method                                                                                                                                                         | Description |
+|----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public static [ServiceProviderFactory](../../../../../../io/github/qishr/cascara/common/service/ServiceProviderFactory.md) | [system](#system)()                                                                                                                                            |             |
+| public [SourceBuffer](../../../../../../io/github/qishr/cascara/common/lang/util/SourceBuffer.md)                          | [createSourceBuffer](#createsourcebuffer)([SourceBufferConfig](../../../../../../io/github/qishr/cascara/common/lang/util/SourceBufferConfig.md) config)       |             |
+| public [TypeDescriptor](../../../../../../io/github/qishr/cascara/common/type/TypeDescriptor.md)                           | [createTypeDescriptor](#createtypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)           |             |
+| public [TypeDescriptor](../../../../../../io/github/qishr/cascara/common/type/TypeDescriptor.md)                           | [createExactTypeDescriptor](#createexacttypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType) |             |
+| public [ContentTypeResolver](../../../../../../io/github/qishr/cascara/common/util/ContentTypeResolver.md)                 | [getContentTypeResolver](#getcontenttyperesolver)()                                                                                                            |             |
 
 
 ### Methods inherited from [AbstractServiceProviderFactory](../../../../../../io/github/qishr/cascara/common/service/AbstractServiceProviderFactory.md)
@@ -45,7 +46,7 @@ createServiceProvider, createServiceProvider
 ### system
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public static io.github.qishr.cascara.common.service.@io.github.qishr.cascara.common.annotation.Experimental ServiceProviderFactory __system__()</span>
+public static [ServiceProviderFactory](../../../../../../io/github/qishr/cascara/common/service/ServiceProviderFactory.md) __system__()</span>
 
 
 
@@ -54,7 +55,7 @@ public static io.github.qishr.cascara.common.service.@io.github.qishr.cascara.co
 
 ### createSourceBuffer
 
-<span style="font-family: monospace; font-size: 80%;">public [SourceBuffer](../../../../../../io/github/qishr/cascara/common/lang/util/SourceBuffer.md) __createSourceBuffer__([SourceBufferOptions](../../../../../../io/github/qishr/cascara/common/lang/util/SourceBufferOptions.md) options)</span>
+<span style="font-family: monospace; font-size: 80%;">public [SourceBuffer](../../../../../../io/github/qishr/cascara/common/lang/util/SourceBuffer.md) __createSourceBuffer__([SourceBufferConfig](../../../../../../io/github/qishr/cascara/common/lang/util/SourceBufferConfig.md) config)</span>
 
 
 
@@ -67,7 +68,20 @@ public static io.github.qishr.cascara.common.service.@io.github.qishr.cascara.co
 
 ### createTypeDescriptor
 
-<span style="font-family: monospace; font-size: 80%;">public [TypeDescriptor](../../../../../../io/github/qishr/cascara/common/type/TypeDescriptor.md)<?> __createTypeDescriptor__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [TypeDescriptor](../../../../../../io/github/qishr/cascara/common/type/TypeDescriptor.md) __createTypeDescriptor__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
+
+
+
+**Throws:**
+
+[ServiceException](../../../../../../io/github/qishr/cascara/common/service/ServiceException.md)
+
+
+---
+
+### createExactTypeDescriptor
+
+<span style="font-family: monospace; font-size: 80%;">public [TypeDescriptor](../../../../../../io/github/qishr/cascara/common/type/TypeDescriptor.md) __createExactTypeDescriptor__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
 
 
 

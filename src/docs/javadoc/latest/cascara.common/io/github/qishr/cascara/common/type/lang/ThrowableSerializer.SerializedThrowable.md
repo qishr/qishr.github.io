@@ -28,10 +28,11 @@ module layers without triggering ClassNotFoundException on the host classpath.
 
 ## Method Summary
 
-| Modifier and Type                                                                                   | Method                                          | Description |
-|-----------------------------------------------------------------------------------------------------|-------------------------------------------------|-------------|
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getOriginalClassName](#getoriginalclassname)() |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toString](#tostring)()                         |             |
+| Modifier and Type                                                                                         | Method                                          | Description |
+|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------|-------------|
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)       | [getOriginalClassName](#getoriginalclassname)() |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)       | [toString](#tostring)()                         |             |
+| public [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) | [recreateOriginal](#recreateoriginal)()         |             |
 
 
 
@@ -55,6 +56,19 @@ module layers without triggering ClassNotFoundException on the host classpath.
 **Overrides:**
 
 [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html#tostring)
+
+
+---
+
+### recreateOriginal
+
+<span style="font-family: monospace; font-size: 80%;">public [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) __recreateOriginal__()</span>
+
+
+
+**Throws:**
+
+[InstantiationException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/InstantiationException.html)
 
 
 ---

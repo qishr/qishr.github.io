@@ -14,9 +14,11 @@ Package [io.github.qishr.cascara.common.exec.ipc](index.md)
 
 | Modifier and Type                                                                                                | Field                                         | Description |
 |------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|-------------|
-| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [DEBUG_PROP](#debug_prop)                     |             |
-| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [IPC_SERIALIZER](#ipc_serializer)             |             |
-| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [IPC_SERVER_PID](#ipc_server_pid)             |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [HEADER_SEPARATOR](#header_separator)         |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [PAYLOAD_SEPARATOR](#payload_separator)       |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [PROP_DEBUG](#prop_debug)                     |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [PROP_IPC_SERIALIZER](#prop_ipc_serializer)   |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [PROP_IPC_SERVER_PID](#prop_ipc_server_pid)   |             |
 | public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [SERIALIZATION_FORMAT](#serialization_format) |             |
 | public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [SERIALIZER_CLASS](#serializer_class)         |             |
 | public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [VERSION](#version)                           |             |
@@ -33,43 +35,28 @@ Package [io.github.qishr.cascara.common.exec.ipc](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                               | Method                                                                                                                                                                                                            | Description |
-|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public static [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)<?> | [createSerializer](#createserializer)()                                                                                                                                                                           |             |
-| public void                                                                                                     | [set](#set)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) header)                                                                                                  |             |
-| public void                                                                                                     | [set](#set)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value) |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)             | [toString](#tostring)()                                                                                                                                                                                           |             |
-| public [SemVer](../../../../../../../io/github/qishr/cascara/common/semver/SemVer.md)                           | [version](#version)()                                                                                                                                                                                             |             |
-| public void                                                                                                     | [setVersion](#setversion)([SemVer](../../../../../../../io/github/qishr/cascara/common/semver/SemVer.md) v)                                                                                                       |             |
-| public long                                                                                                     | [ipcServerPid](#ipcserverpid)()                                                                                                                                                                                   |             |
-| public void                                                                                                     | [setIpcServerPid](#setipcserverpid)(long v)                                                                                                                                                                       |             |
-| public boolean                                                                                                  | [ipcDebug](#ipcdebug)()                                                                                                                                                                                           |             |
-| public void                                                                                                     | [setIpcDebug](#setipcdebug)(boolean v)                                                                                                                                                                            |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)             | [ipcSerializer](#ipcserializer)()                                                                                                                                                                                 |             |
-| public void                                                                                                     | [setIpcSerializer](#setipcserializer)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) v)                                                                             |             |
+| Modifier and Type                                                                                            | Method                                                                                                                                                                                                            | Description |
+|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public static [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md) | [createSerializer](#createserializer)()                                                                                                                                                                           |             |
+| public void                                                                                                  | [set](#set)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) header)                                                                                                  |             |
+| public void                                                                                                  | [set](#set)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value) |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)          | [toString](#tostring)()                                                                                                                                                                                           |             |
+| public [SemVer](../../../../../../../io/github/qishr/cascara/common/semver/SemVer.md)                        | [version](#version)()                                                                                                                                                                                             |             |
+| public void                                                                                                  | [setVersion](#setversion)([SemVer](../../../../../../../io/github/qishr/cascara/common/semver/SemVer.md) v)                                                                                                       |             |
+| public long                                                                                                  | [ipcServerPid](#ipcserverpid)()                                                                                                                                                                                   |             |
+| public void                                                                                                  | [setIpcServerPid](#setipcserverpid)(long v)                                                                                                                                                                       |             |
+| public boolean                                                                                               | [ipcDebug](#ipcdebug)()                                                                                                                                                                                           |             |
+| public void                                                                                                  | [setIpcDebug](#setipcdebug)(boolean v)                                                                                                                                                                            |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)          | [ipcSerializer](#ipcserializer)()                                                                                                                                                                                 |             |
+| public void                                                                                                  | [setPropIpcSerializer](#setpropipcserializer)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) v)                                                                     |             |
 
 
 
 ## Field Details
 
-### DEBUG_PROP
+### HEADER_SEPARATOR
 
-<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __DEBUG_PROP__</span>
-
-
-
-**See Also:**
-
-
-[Constant Field Values](../../../../../../../constant-values.md)
-
-
-
----
-
-### IPC_SERIALIZER
-
-<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __IPC_SERIALIZER__</span>
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __HEADER_SEPARATOR__</span>
 
 
 
@@ -82,9 +69,54 @@ Package [io.github.qishr.cascara.common.exec.ipc](index.md)
 
 ---
 
-### IPC_SERVER_PID
+### PAYLOAD_SEPARATOR
 
-<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __IPC_SERVER_PID__</span>
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __PAYLOAD_SEPARATOR__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../../constant-values.md)
+
+
+
+---
+
+### PROP_DEBUG
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __PROP_DEBUG__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../../constant-values.md)
+
+
+
+---
+
+### PROP_IPC_SERIALIZER
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __PROP_IPC_SERIALIZER__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../../constant-values.md)
+
+
+
+---
+
+### PROP_IPC_SERVER_PID
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __PROP_IPC_SERVER_PID__</span>
 
 
 
@@ -148,7 +180,7 @@ Package [io.github.qishr.cascara.common.exec.ipc](index.md)
 ### createSerializer
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public static [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)<?> __createSerializer__()</span>
+public static [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md) __createSerializer__()</span>
 
 
 
@@ -245,9 +277,9 @@ public static [Serializer](../../../../../../../io/github/qishr/cascara/common/l
 
 ---
 
-### setIpcSerializer
+### setPropIpcSerializer
 
-<span style="font-family: monospace; font-size: 80%;">public void __setIpcSerializer__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) v)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __setPropIpcSerializer__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) v)</span>
 
 
 

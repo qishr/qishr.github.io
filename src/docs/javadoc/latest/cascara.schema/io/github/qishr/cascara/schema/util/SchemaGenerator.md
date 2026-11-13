@@ -12,11 +12,14 @@ Package [io.github.qishr.cascara.schema.util](index.md)
 
 ## Field Summary
 
-| Modifier and Type                                                                                                | Field                               | Description |
-|------------------------------------------------------------------------------------------------------------------|-------------------------------------|-------------|
-| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [DESCRIPTION_KEY](#description_key) |             |
-| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [ENUM_KEY](#enum_key)               |             |
-| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [TITLE_KEY](#title_key)             |             |
+| Modifier and Type                                                                                                | Field                                 | Description |
+|------------------------------------------------------------------------------------------------------------------|---------------------------------------|-------------|
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [DESCRIPTION_KEY](#description_key)   |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [ENUM_KEY](#enum_key)                 |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [TITLE_KEY](#title_key)               |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [X_CLASS_NAME](#x_class_name)         |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [X_MAVEN_ARTIFACT](#x_maven_artifact) |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [X_MODULE_NAME](#x_module_name)       |             |
 
 
 
@@ -30,16 +33,16 @@ Package [io.github.qishr.cascara.schema.util](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                            | Method                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Description                     |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| public void                                                                                                                                                                                  | [registerTypeAnalyzer](#registertypeanalyzer)([TypeAnalyzer](../../../../../../io/github/qishr/cascara/schema/util/TypeAnalyzer.md) ta)                                                                                                                                                                                                                                                                                                                              |                                 |
-| public void                                                                                                                                                                                  | [registerTypeDescriptor](#registertypedescriptor)([TypeDescriptor](../../../../../../../cascara.common/io/github/qishr/cascara/common/type/TypeDescriptor.md)<?> typeDescriptor)                                                                                                                                                                                                                                                                                     |                                 |
-| public [GenericAstMap](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)                                                                     | [generate](#generate)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) template)                                                                                                                                                                                                                                                                                                                                         |                                 |
-| public [GenericAstMap](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)                                                                     | [generate](#generate)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)                                                                                                                                                                                                                                                                                                                                           | Generates a schema for a class. |
-| public [GenericAstMap](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)                                                                     | [generate](#generate)([GenericAstMap](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstMap.md) parentDoc, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)                                                                                                                                                                                                              |                                 |
-| public [GenericAstMap](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)                                                                     | [generate](#generate)([MapAstNode](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/MapAstNode.md)<?, ?, ?> parentDoc, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fragment, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)                                                                                                        |                                 |
-| public [GenericAstMap](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)                                                                     | [generate](#generate)([MapAstNode](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/MapAstNode.md)<?, ?, ?> parentDoc, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fragment, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) template) |                                 |
-| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?>> | [getReferencedClasses](#getreferencedclasses)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)                                                                                                                                                                                                                                                                                                                   |                                 |
+| Modifier and Type                                                                                                        | Method                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Description                     |
+|--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| public void                                                                                                              | [registerTypeAnalyzer](#registertypeanalyzer)([TypeAnalyzer](../../../../../../io/github/qishr/cascara/schema/util/TypeAnalyzer.md) ta)                                                                                                                                                                                                                                                                                                                              |                                 |
+| public void                                                                                                              | [registerTypeDescriptor](#registertypedescriptor)([TypeDescriptor](../../../../../../../cascara.common/io/github/qishr/cascara/common/type/TypeDescriptor.md)<?> typeDescriptor)                                                                                                                                                                                                                                                                                     |                                 |
+| public [GenericAstMap](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstMap.md) | [generate](#generate)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) template)                                                                                                                                                                                                                                                                                                                                         |                                 |
+| public [GenericAstMap](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstMap.md) | [generate](#generate)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)                                                                                                                                                                                                                                                                                                                                           | Generates a schema for a class. |
+| public [GenericAstMap](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstMap.md) | [generate](#generate)([GenericAstMap](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstMap.md) parentDoc, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)                                                                                                                                                                                                              |                                 |
+| public [GenericAstMap](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstMap.md) | [generate](#generate)([MapAstNode](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/MapAstNode.md)<?, ?, ?> parentDoc, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fragment, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)                                                                                                        |                                 |
+| public [GenericAstMap](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstMap.md) | [generate](#generate)([MapAstNode](../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/MapAstNode.md)<?, ?, ?> parentDoc, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fragment, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) template) |                                 |
+| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)                            | [getReferencedClasses](#getreferencedclasses)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)                                                                                                                                                                                                                                                                                                                   |                                 |
 
 
 
@@ -78,6 +81,51 @@ Package [io.github.qishr.cascara.schema.util](index.md)
 ### TITLE_KEY
 
 <span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __TITLE_KEY__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../constant-values.md)
+
+
+
+---
+
+### X_CLASS_NAME
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __X_CLASS_NAME__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../constant-values.md)
+
+
+
+---
+
+### X_MAVEN_ARTIFACT
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __X_MAVEN_ARTIFACT__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../constant-values.md)
+
+
+
+---
+
+### X_MODULE_NAME
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __X_MODULE_NAME__</span>
 
 
 
@@ -161,7 +209,7 @@ generated schema.
 
 ### getReferencedClasses
 
-<span style="font-family: monospace; font-size: 80%;">public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?>> __getReferencedClasses__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)</span>
+<span style="font-family: monospace; font-size: 80%;">public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html) __getReferencedClasses__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)</span>
 
 
 

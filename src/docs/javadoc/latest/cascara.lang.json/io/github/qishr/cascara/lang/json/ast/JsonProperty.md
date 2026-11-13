@@ -28,15 +28,15 @@ Represents the structural pairing of a key and a value in a JSON object.
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                   | Method                                                                                                            | Description |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------|
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                 | [getKey](#getkey)()                                                                                               |             |
-| public [JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)                                                                                           | [getValue](#getvalue)()                                                                                           |             |
-| public [JsonProperty](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonProperty.md)                                                                                   | [setRaw](#setraw)([JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md) value)       |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)> | [getChildren](#getchildren)()                                                                                     |             |
-| public [JsonProperty](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonProperty.md)                                                                                   | [setValue](#setvalue)([JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md) value)   |             |
-| public boolean                                                                                                                                                                      | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o) |             |
-| public int                                                                                                                                                                          | [hashCode](#hashcode)()                                                                                           |             |
+| Modifier and Type                                                                                   | Method                                                                                                            | Description |
+|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------|
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getKey](#getkey)()                                                                                               |             |
+| public [JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)           | [getValue](#getvalue)()                                                                                           |             |
+| public [JsonProperty](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonProperty.md)   | [setRaw](#setraw)([JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md) value)       |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)     | [getChildren](#getchildren)()                                                                                     |             |
+| public [JsonProperty](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonProperty.md)   | [setValue](#setvalue)([JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md) value)   |             |
+| public boolean                                                                                      | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o) |             |
+| public int                                                                                          | [hashCode](#hashcode)()                                                                                           |             |
 
 
 ### Methods inherited from [JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)
@@ -83,7 +83,7 @@ getEndColumn, getEndLine, getComments, getStartColumn, getToken, setToken, addCo
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getChildren__()</span>
 
 
 

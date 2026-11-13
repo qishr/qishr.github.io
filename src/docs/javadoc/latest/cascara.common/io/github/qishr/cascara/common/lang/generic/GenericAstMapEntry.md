@@ -27,14 +27,14 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                 | Method                                                                                                          | Description |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|-------------|
-| public [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)                                                                                                         | [getKey](#getkey)()                                                                                             |             |
-| public [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)                                                                                                         | [getValue](#getvalue)()                                                                                         |             |
-| public [GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md)                                                                               | [setRaw](#setraw)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) value)     |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)>               | [getChildren](#getchildren)()                                                                                   |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/CommentAstNode.md)> | [getComments](#getcomments)()                                                                                   |             |
-| public [GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md)                                                                               | [setValue](#setvalue)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) value) |             |
+| Modifier and Type                                                                                                   | Method                                                                                                          | Description |
+|---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|-------------|
+| public [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)                           | [getKey](#getkey)()                                                                                             |             |
+| public [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)                           | [getValue](#getvalue)()                                                                                         |             |
+| public [GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md) | [setRaw](#setraw)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) value)     |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)                     | [getChildren](#getchildren)()                                                                                   |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)                     | [getComments](#getcomments)()                                                                                   |             |
+| public [GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md) | [setValue](#setvalue)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) value) |             |
 
 
 ### Methods inherited from [GenericAstNode](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstNode.md)
@@ -81,7 +81,7 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getChildren__()</span>
 
 
 
@@ -94,7 +94,7 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 
 ### getComments
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/CommentAstNode.md)> __getComments__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getComments__()</span>
 
 
 

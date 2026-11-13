@@ -12,48 +12,41 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                    | Method                                                                                                                         | Description                                                                                                                                                                                                                                     |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| public static boolean                                                                                                                                                                                | [isFileTimeSupported](#isfiletimesupported)()                                                                                  |                                                                                                                                                                                                                                                 |
-| public static [SemVer](../../../../../../io/github/qishr/cascara/common/semver/SemVer.md)                                                                                                            | [getVersion](#getversion)()                                                                                                    |                                                                                                                                                                                                                                                 |
-| public static [SemVer](../../../../../../io/github/qishr/cascara/common/semver/SemVer.md)                                                                                                            | [getCommonVersion](#getcommonversion)()                                                                                        |                                                                                                                                                                                                                                                 |
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getHomeEnvVar](#gethomeenvvar)()                                                                                              |                                                                                                                                                                                                                                                 |
-| public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)                                                                                           | [getHomePath](#gethomepath)()                                                                                                  |                                                                                                                                                                                                                                                 |
-| public static void                                                                                                                                                                                   | [setHomePath](#sethomepath)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) path) |                                                                                                                                                                                                                                                 |
-| public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)                                                                                           | [getContentTypesPath](#getcontenttypespath)()                                                                                  | The path of the content types registry file.                                                                                                                                                                                                    |
-| public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)                                                                                           | [getSchemasPath](#getschemaspath)()                                                                                            | The path of the schema store irectory.                                                                                                                                                                                                          |
-| public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)                                                                                           | [getSplPropertiesPath](#getsplpropertiespath)()                                                                                | The path of the properties file containing definitions of default or preferred service providers If this file is empty, or if a service is not listed in it, when a provider is requested the first  matching provider will be returned by SPL. |
-| public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)                                                                                           | [getModulePath](#getmodulepath)()                                                                                              |                                                                                                                                                                                                                                                 |
-| public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getInstalledVersions](#getinstalledversions)()                                                                                |                                                                                                                                                                                                                                                 |
-| public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)                                                                                           | [getActiveVersionPath](#getactiveversionpath)()                                                                                |                                                                                                                                                                                                                                                 |
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getActiveVersionString](#getactiveversionstring)()                                                                            |                                                                                                                                                                                                                                                 |
-| public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)                                                                                           | [getSharedPath](#getsharedpath)()                                                                                              |                                                                                                                                                                                                                                                 |
+| Modifier and Type                                                                                   | Method                                                                                                                         | Description                                                                                                                                                                                                                                     |
+|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| public static [Cascara](../../../../../../io/github/qishr/cascara/common/util/Cascara.md)           | [instance](#instance)()                                                                                                        |                                                                                                                                                                                                                                                 |
+| public static void                                                                                  | [reset](#reset)()                                                                                                              |                                                                                                                                                                                                                                                 |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getHomeEnvVar](#gethomeenvvar)()                                                                                              |                                                                                                                                                                                                                                                 |
+| public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) | [getHomePath](#gethomepath)()                                                                                                  |                                                                                                                                                                                                                                                 |
+| public void                                                                                         | [setHomePath](#sethomepath)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) path) |                                                                                                                                                                                                                                                 |
+| public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) | [getContentTypesPath](#getcontenttypespath)()                                                                                  | The path of the content types registry file.                                                                                                                                                                                                    |
+| public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) | [getSchemasPath](#getschemaspath)()                                                                                            | The path of the schema store irectory.                                                                                                                                                                                                          |
+| public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) | [getSharedPath](#getsharedpath)()                                                                                              |                                                                                                                                                                                                                                                 |
+| public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) | [getSplPropertiesPath](#getsplpropertiespath)()                                                                                | The path of the properties file containing definitions of default or preferred service providers If this file is empty, or if a service is not listed in it, when a provider is requested the first  matching provider will be returned by SPL. |
+| public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) | [getModulePath](#getmodulepath)()                                                                                              |                                                                                                                                                                                                                                                 |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)     | [getInstalledVersions](#getinstalledversions)()                                                                                |                                                                                                                                                                                                                                                 |
+| public [SemVer](../../../../../../io/github/qishr/cascara/common/semver/SemVer.md)                  | [getVersion](#getversion)()                                                                                                    |                                                                                                                                                                                                                                                 |
+| public [SemVer](../../../../../../io/github/qishr/cascara/common/semver/SemVer.md)                  | [getCommonVersion](#getcommonversion)()                                                                                        |                                                                                                                                                                                                                                                 |
+| public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) | [getActiveVersionPath](#getactiveversionpath)()                                                                                |                                                                                                                                                                                                                                                 |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getActiveVersionString](#getactiveversionstring)()                                                                            |                                                                                                                                                                                                                                                 |
+| public boolean                                                                                      | [isFileTimeSupported](#isfiletimesupported)()                                                                                  |                                                                                                                                                                                                                                                 |
 
 
 
 ## Method Details
 
-### isFileTimeSupported
+### instance
 
-<span style="font-family: monospace; font-size: 80%;">public static boolean __isFileTimeSupported__()</span>
-
-
-
-
----
-
-### getVersion
-
-<span style="font-family: monospace; font-size: 80%;">public static [SemVer](../../../../../../io/github/qishr/cascara/common/semver/SemVer.md) __getVersion__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static [Cascara](../../../../../../io/github/qishr/cascara/common/util/Cascara.md) __instance__()</span>
 
 
 
 
 ---
 
-### getCommonVersion
+### reset
 
-<span style="font-family: monospace; font-size: 80%;">public static [SemVer](../../../../../../io/github/qishr/cascara/common/semver/SemVer.md) __getCommonVersion__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static void __reset__()</span>
 
 
 
@@ -62,7 +55,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 ### getHomeEnvVar
 
-<span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getHomeEnvVar__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getHomeEnvVar__()</span>
 
 
 
@@ -71,7 +64,8 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 ### getHomePath
 
-<span style="font-family: monospace; font-size: 80%;">public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getHomePath__()</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
+public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getHomePath__()</span>
 
 
 
@@ -81,7 +75,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 ### setHomePath
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public static void __setHomePath__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) path)</span>
+public void __setHomePath__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) path)</span>
 
 
 
@@ -90,7 +84,7 @@ public static void __setHomePath__([Path](https://docs.oracle.com/en/java/javase
 
 ### getContentTypesPath
 
-<span style="font-family: monospace; font-size: 80%;">public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getContentTypesPath__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getContentTypesPath__()</span>
 
 The path of the content types registry file.
 
@@ -99,16 +93,26 @@ The path of the content types registry file.
 
 ### getSchemasPath
 
-<span style="font-family: monospace; font-size: 80%;">public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getSchemasPath__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getSchemasPath__()</span>
 
 The path of the schema store irectory.
 
 
 ---
 
+### getSharedPath
+
+<span style="font-family: monospace; font-size: 80%;">public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getSharedPath__()</span>
+
+
+
+
+---
+
 ### getSplPropertiesPath
 
-<span style="font-family: monospace; font-size: 80%;">public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getSplPropertiesPath__()</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
+public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getSplPropertiesPath__()</span>
 
 The path of the properties file containing definitions of default or preferred service providers
 If this file is empty, or if a service is not listed in it, when a provider is requested the
@@ -119,7 +123,8 @@ first  matching provider will be returned by SPL.
 
 ### getModulePath
 
-<span style="font-family: monospace; font-size: 80%;">public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getModulePath__()</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
+public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getModulePath__()</span>
 
 
 
@@ -128,7 +133,25 @@ first  matching provider will be returned by SPL.
 
 ### getInstalledVersions
 
-<span style="font-family: monospace; font-size: 80%;">public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> __getInstalledVersions__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getInstalledVersions__()</span>
+
+
+
+
+---
+
+### getVersion
+
+<span style="font-family: monospace; font-size: 80%;">public [SemVer](../../../../../../io/github/qishr/cascara/common/semver/SemVer.md) __getVersion__()</span>
+
+
+
+
+---
+
+### getCommonVersion
+
+<span style="font-family: monospace; font-size: 80%;">public [SemVer](../../../../../../io/github/qishr/cascara/common/semver/SemVer.md) __getCommonVersion__()</span>
 
 
 
@@ -137,8 +160,8 @@ first  matching provider will be returned by SPL.
 
 ### getActiveVersionPath
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getActiveVersionPath__()</span>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
+public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getActiveVersionPath__()</span>
 
 
 
@@ -148,16 +171,16 @@ public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.bas
 ### getActiveVersionString
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getActiveVersionString__()</span>
+public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getActiveVersionString__()</span>
 
 
 
 
 ---
 
-### getSharedPath
+### isFileTimeSupported
 
-<span style="font-family: monospace; font-size: 80%;">public static [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getSharedPath__()</span>
+<span style="font-family: monospace; font-size: 80%;">public boolean __isFileTimeSupported__()</span>
 
 
 

@@ -2,42 +2,48 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 # Class JarManifest
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [io.github.qishr.cascara.common.property.Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)<br/>
+        [java.util.jar.Manifest](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/jar/Manifest.html)<br/>
                 io.github.qishr.cascara.common.util.JarManifest<br/>
 <br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __JarManifest__<br/>extends [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)
+<span style="font-family: monospace; font-size: 80%;">public class __JarManifest__<br/>extends [Manifest](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/jar/Manifest.html)
 </span>
+
+
+## Constructor Summary
+
+| Constructor   | Description |
+|---------------|-------------|
+| JarManifest() |             |
+
 
 
 ## Method Summary
 
-| Modifier and Type                                                                                 | Method                                                                                                                 | Description                                                                                                                      |
-|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| public static [JarManifest](../../../../../../io/github/qishr/cascara/common/util/JarManifest.md) | [parse](#parse)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) manifest) | Parses the content of a MANIFEST.MF file string, handles line continuations, and prints the resulting property names and values. |
-| public static [JarManifest](../../../../../../io/github/qishr/cascara/common/util/JarManifest.md) | [of](#of)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)         |                                                                                                                                  |
-| public [SemVer](../../../../../../io/github/qishr/cascara/common/semver/SemVer.md)                | [getVersion](#getversion)()                                                                                            |                                                                                                                                  |
+| Modifier and Type                                                                                   | Method                                                                                                                                                                                                                                | Description                                                                                                                      |
+|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| public static [JarManifest](../../../../../../io/github/qishr/cascara/common/util/JarManifest.md)   | [parse](#parse)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                                                                                                    | Parses the content of a MANIFEST.MF file string, handles line continuations, and prints the resulting property names and values. |
+| public static [JarManifest](../../../../../../io/github/qishr/cascara/common/util/JarManifest.md)   | [of](#of)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)                                                                                                                        |                                                                                                                                  |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getString](#getstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                            |                                                                                                                                  |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getString](#getstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) defaultValue) |                                                                                                                                  |
+| public [SemVer](../../../../../../io/github/qishr/cascara/common/semver/SemVer.md)                  | [getVersion](#getversion)()                                                                                                                                                                                                           |                                                                                                                                  |
 
-
-### Methods inherited from [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)
-
-set, duplicate, add, containsKey, addAll, remove, getValues, getInteger, fromSystemProperties, getInt, set, asList, clear, load, set, isEmpty, getValue, toString, getBoolean, getString, remove, getString, getLong, set, getProperty, iterator, add, getDouble, get, getNumber, getValuesMap
 
 
 ## Method Details
 
 ### parse
 
-<span style="font-family: monospace; font-size: 80%;">public static [JarManifest](../../../../../../io/github/qishr/cascara/common/util/JarManifest.md) __parse__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) manifest)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [JarManifest](../../../../../../io/github/qishr/cascara/common/util/JarManifest.md) __parse__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)</span>
 
 Parses the content of a MANIFEST.MF file string, handles line continuations,
 and prints the resulting property names and values.
 
 **Parameters:**
 
-`manifest` - The string containing the MANIFEST.MF file content.
+`text` - The string containing the MANIFEST.MF file content.
 
 
 ---
@@ -45,6 +51,24 @@ and prints the resulting property names and values.
 ### of
 
 <span style="font-family: monospace; font-size: 80%;">public static [JarManifest](../../../../../../io/github/qishr/cascara/common/util/JarManifest.md) __of__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)</span>
+
+
+
+
+---
+
+### getString
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getString__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)</span>
+
+
+
+
+---
+
+### getString
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getString__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) defaultValue)</span>
 
 
 

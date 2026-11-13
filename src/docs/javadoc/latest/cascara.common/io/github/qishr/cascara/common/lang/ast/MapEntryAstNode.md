@@ -20,13 +20,13 @@ Represents the structural pairing of a key and a value in a Map.
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                     | Method                          | Description                                                                                   |
-|---------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|-----------------------------------------------------------------------------------------------|
-| public abstract K                                                                                                                     | [getKey](#getkey)()             | Returns the key corresponding to this entry.                                                  |
-| public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                           | [getKeyString](#getkeystring)() |                                                                                               |
-| public abstract V                                                                                                                     | [getValue](#getvalue)()         | Returns the value corresponding to this entry.                                                |
-| public abstract io.github.qishr.cascara.common.lang.ast.@io.github.qishr.cascara.common.annotation.Experimental MapEntryAstNode<K, V> | [setRaw](#setraw)(V value)      | Replaces the value corresponding to this entry with the specified value (optional operation). |
-| public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<V>                            | [getChildren](#getchildren)()   |                                                                                               |
+| Modifier and Type                                                                                                  | Method                          | Description                                                                                   |
+|--------------------------------------------------------------------------------------------------------------------|---------------------------------|-----------------------------------------------------------------------------------------------|
+| public abstract K                                                                                                  | [getKey](#getkey)()             | Returns the key corresponding to this entry.                                                  |
+| public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)        | [getKeyString](#getkeystring)() |                                                                                               |
+| public abstract V                                                                                                  | [getValue](#getvalue)()         | Returns the value corresponding to this entry.                                                |
+| public abstract [MapEntryAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/MapEntryAstNode.md) | [setRaw](#setraw)(V value)      | Replaces the value corresponding to this entry with the specified value (optional operation). |
+| public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)            | [getChildren](#getchildren)()   |                                                                                               |
 
 
 
@@ -62,7 +62,7 @@ Returns the value corresponding to this entry.
 ### setRaw
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public abstract io.github.qishr.cascara.common.lang.ast.@io.github.qishr.cascara.common.annotation.Experimental MapEntryAstNode<K, V> __setRaw__(V value)</span>
+public abstract [MapEntryAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/MapEntryAstNode.md) __setRaw__(V value)</span>
 
 Replaces the value corresponding to this entry with the specified value (optional operation).
 
@@ -71,7 +71,7 @@ Replaces the value corresponding to this entry with the specified value (optiona
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<V> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getChildren__()</span>
 
 
 

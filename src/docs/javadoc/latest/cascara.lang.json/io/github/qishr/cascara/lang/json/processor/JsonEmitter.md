@@ -25,24 +25,24 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                               | Method                                                                                                                                                      | Description |
-|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| protected [JsonEmitter](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonEmitter.md)        | [self](#self)()                                                                                                                                             |             |
-| public [ContentType](../../../../../../../../cascara.common/io/github/qishr/cascara/common/util/ContentType.md) | [getContentType](#getcontenttype)()                                                                                                                         |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)             | [emit](#emit)([JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md) root)                                                      |             |
-| public void                                                                                                     | [emitScalar](#emitscalar)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value)                               |             |
-| public void                                                                                                     | [emitMapStart](#emitmapstart)()                                                                                                                             |             |
-| public void                                                                                                     | [emitMapEnd](#emitmapend)()                                                                                                                                 |             |
-| public void                                                                                                     | [emitSequenceStart](#emitsequencestart)()                                                                                                                   |             |
-| public void                                                                                                     | [emitSequenceEnd](#emitsequenceend)()                                                                                                                       |             |
-| public void                                                                                                     | [emitPropertySeparator](#emitpropertyseparator)()                                                                                                           |             |
-| public void                                                                                                     | [emitItemSeparator](#emititemseparator)()                                                                                                                   |             |
-| public void                                                                                                     | [emitNewLine](#emitnewline)()                                                                                                                               |             |
-| public void                                                                                                     | [indent](#indent)()                                                                                                                                         |             |
-| public void                                                                                                     | [dedent](#dedent)()                                                                                                                                         |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)             | [getOutput](#getoutput)()                                                                                                                                   |             |
-| public [JsonEmitter](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonEmitter.md)           | [setOptions](#setoptions)([LanguageOptions](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/LanguageOptions.md)<?> options) |             |
-| public [JsonEmitter](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonEmitter.md)           | [setReporter](#setreporter)([Reporter](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/report/Reporter.md) reporter)       |             |
+| Modifier and Type                                                                                               | Method                                                                                                                                                  | Description |
+|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| protected [JsonEmitter](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonEmitter.md)        | [self](#self)()                                                                                                                                         |             |
+| public [ContentType](../../../../../../../../cascara.common/io/github/qishr/cascara/common/util/ContentType.md) | [getContentType](#getcontenttype)()                                                                                                                     |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)             | [emit](#emit)([JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md) root)                                                  |             |
+| public void                                                                                                     | [emitScalar](#emitscalar)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value)                           |             |
+| public void                                                                                                     | [emitMapStart](#emitmapstart)()                                                                                                                         |             |
+| public void                                                                                                     | [emitMapEnd](#emitmapend)()                                                                                                                             |             |
+| public void                                                                                                     | [emitSequenceStart](#emitsequencestart)()                                                                                                               |             |
+| public void                                                                                                     | [emitSequenceEnd](#emitsequenceend)()                                                                                                                   |             |
+| public void                                                                                                     | [emitPropertySeparator](#emitpropertyseparator)()                                                                                                       |             |
+| public void                                                                                                     | [emitItemSeparator](#emititemseparator)()                                                                                                               |             |
+| public void                                                                                                     | [emitNewLine](#emitnewline)()                                                                                                                           |             |
+| public void                                                                                                     | [indent](#indent)()                                                                                                                                     |             |
+| public void                                                                                                     | [dedent](#dedent)()                                                                                                                                     |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)             | [getOutput](#getoutput)()                                                                                                                               |             |
+| public [JsonEmitter](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonEmitter.md)           | [setConfig](#setconfig)([LanguageConfig](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/LanguageConfig.md)<?> options) |             |
+| public [JsonEmitter](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonEmitter.md)           | [setReporter](#setreporter)([Reporter](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/report/Reporter.md) reporter)   |             |
 
 
 
@@ -226,15 +226,15 @@ All Implemented Interfaces:<br/>
 
 ---
 
-### setOptions
+### setConfig
 
-<span style="font-family: monospace; font-size: 80%;">public [JsonEmitter](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonEmitter.md) __setOptions__([LanguageOptions](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/LanguageOptions.md)<?> options)</span>
+<span style="font-family: monospace; font-size: 80%;">public [JsonEmitter](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonEmitter.md) __setConfig__([LanguageConfig](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/LanguageConfig.md)<?> options)</span>
 
 
 
 **Overrides:**
 
-[AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html#setoptions)
+[AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html#setconfig)
 
 
 ---

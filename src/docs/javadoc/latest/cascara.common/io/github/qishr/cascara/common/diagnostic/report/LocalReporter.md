@@ -22,15 +22,15 @@ Package [io.github.qishr.cascara.common.diagnostic.report](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                 | Method                                          | Description |
-|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|-------------|
-| protected [LocalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/LocalReporter.md) | [self](#self)()                                 |             |
-| protected [FormatOptions](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatOptions.md) | [defaultFormatOptions](#defaultformatoptions)() |             |
+| Modifier and Type                                                                                                 | Method                                        | Description |
+|-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|-------------|
+| protected [LocalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/LocalReporter.md) | [self](#self)()                               |             |
+| protected [FormatConfig](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatConfig.md)   | [defaultFormatConfig](#defaultformatconfig)() |             |
 
 
 ### Methods inherited from [AbstractReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/AbstractReporter.md)
 
-warn, setStackTraceEnabled, setPrefixEveryLine, reportsDebug, reportsTrace, isProblem, error, addLogger, isImmediateFlushEnabled, logLine, warnAt, reportAnyLevel, error, infoAt, error, infoAt, warnAt, info, errorAt, warnAt, warnAt, report, setDiagnosticConsumer, errorAt, getLevel, isSilent, errorAt, errorAt, errorAt, isSystemOutputEnabled, trace, warnAt, setShowProblemCodes, errorAt, debug, collectsProblems, setSystemErrorEnabled, setProblemConsumer, infoAt, setLineConsumer, setImmediateFlushEnabled, errorAt, setAnsiColoringEnabled, getProblemConsumer, setSystemOutputEnabled, errorAt, getDiagnosticConsumer, getWriter, errorAt, log, setLevel
+setStackTraceEnabled, setPrefixEveryLine, reportsDebug, reportsTrace, error, infoAt, warnAt, isProblem, addLogger, isImmediateFlushEnabled, errorAt, logLine, reportAnyLevel, warn, warnAt, getDiagnosticConsumers, report, getLevel, infoAt, isSilent, isSystemOutputEnabled, errorAt, trace, setShowProblemCodes, removeDiagnosticConsumer, debug, collectsProblems, setSystemErrorEnabled, warnAt, info, errorAt, errorAt, setProblemConsumer, infoAt, errorAt, warnAt, setLineConsumer, error, setImmediateFlushEnabled, errorAt, setAnsiColoringEnabled, errorAt, getProblemConsumer, setSystemOutputEnabled, warnAt, warn, errorAt, addDiagnosticConsumer, getWriter, errorAt, log, setLevel, error
 
 
 ## Method Details
@@ -48,15 +48,15 @@ warn, setStackTraceEnabled, setPrefixEveryLine, reportsDebug, reportsTrace, isPr
 
 ---
 
-### defaultFormatOptions
+### defaultFormatConfig
 
-<span style="font-family: monospace; font-size: 80%;">protected [FormatOptions](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatOptions.md) __defaultFormatOptions__()</span>
+<span style="font-family: monospace; font-size: 80%;">protected [FormatConfig](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatConfig.md) __defaultFormatConfig__()</span>
 
 
 
 **Overrides:**
 
-[AbstractReporter](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/report/AbstractReporter.md#defaultformatoptions)
+[AbstractReporter](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/report/AbstractReporter.md#defaultformatconfig)
 
 
 ---

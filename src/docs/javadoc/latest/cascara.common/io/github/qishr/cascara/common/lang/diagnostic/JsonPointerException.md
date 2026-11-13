@@ -17,13 +17,13 @@ public class __JsonPointerException__<br/>extends [AbstractLocalizableException]
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                                                                                                                      | Description |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| JsonPointerException([DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           |             |
-| JsonPointerException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
+| Constructor                                                                                                                                                                                                                                                                                                                                                        | Description |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| JsonPointerException([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           |             |
+| JsonPointerException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
 
 
 ### Methods inherited from [AbstractLocalizableException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/AbstractLocalizableException.md)
 
-getLocalizer, getDiagnosticMessage, getLocalizedMessage, getMessage, setLocalizer, getDetails
+getLocalizer, getLocalizableMessage, getLocalizedMessage, getMessage, setLocalizer, getDetails
 

@@ -32,19 +32,19 @@ public class __ProcessorFactory__<br/>extends [AbstractServiceProviderFactory](.
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                    | Method                                                                                                                                          | Description |
-|--------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public static io.github.qishr.cascara.common.lang.processor.@io.github.qishr.cascara.common.annotation.Experimental ProcessorFactory | [system](#system)()                                                                                                                             |             |
-| public [Tokenizer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Tokenizer.md)<?>                               | [createTokenizer](#createtokenizer)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)   |             |
-| public [Tokenizer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Tokenizer.md)<?>                               | [createTokenizer](#createtokenizer)([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)         |             |
-| public [AstParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/AstParser.md)<?, ?, ?>                         | [createAstParser](#createastparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)   |             |
-| public [AstParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/AstParser.md)<?, ?, ?>                         | [createAstParser](#createastparser)([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)         |             |
-| public [PullParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/PullParser.md)<?>                             | [createPullParser](#createpullparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType) |             |
-| public [PullParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/PullParser.md)<?>                             | [createPullParser](#createpullparser)([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)       |             |
-| public [PushParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/PushParser.md)<?, ?>                          | [createPushParser](#createpushparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType) |             |
-| public [PushParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/PushParser.md)<?, ?>                          | [createPushParser](#createpushparser)([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)       |             |
-| public [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)<?>                             | [createSerializer](#createserializer)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType) |             |
-| public [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)<?>                             | [createSerializer](#createserializer)([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)       |             |
+| Modifier and Type                                                                                                        | Method                                                                                                                                          | Description |
+|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public static [ProcessorFactory](../../../../../../../io/github/qishr/cascara/common/lang/processor/ProcessorFactory.md) | [system](#system)()                                                                                                                             |             |
+| public [Tokenizer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Tokenizer.md)                      | [createTokenizer](#createtokenizer)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)   |             |
+| public [Tokenizer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Tokenizer.md)                      | [createTokenizer](#createtokenizer)([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)         |             |
+| public [AstParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/AstParser.md)                      | [createAstParser](#createastparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)   |             |
+| public [AstParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/AstParser.md)                      | [createAstParser](#createastparser)([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)         |             |
+| public [PullParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/PullParser.md)                    | [createPullParser](#createpullparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType) |             |
+| public [PullParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/PullParser.md)                    | [createPullParser](#createpullparser)([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)       |             |
+| public [PushParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/PushParser.md)                    | [createPushParser](#createpushparser)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType) |             |
+| public [PushParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/PushParser.md)                    | [createPushParser](#createpushparser)([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)       |             |
+| public [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)                    | [createSerializer](#createserializer)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType) |             |
+| public [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)                    | [createSerializer](#createserializer)([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)       |             |
 
 
 ### Methods inherited from [AbstractServiceProviderFactory](../../../../../../../io/github/qishr/cascara/common/service/AbstractServiceProviderFactory.md)
@@ -75,7 +75,7 @@ createServiceProvider, createServiceProvider
 ### system
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public static io.github.qishr.cascara.common.lang.processor.@io.github.qishr.cascara.common.annotation.Experimental ProcessorFactory __system__()</span>
+public static [ProcessorFactory](../../../../../../../io/github/qishr/cascara/common/lang/processor/ProcessorFactory.md) __system__()</span>
 
 
 
@@ -84,7 +84,7 @@ public static io.github.qishr.cascara.common.lang.processor.@io.github.qishr.cas
 
 ### createTokenizer
 
-<span style="font-family: monospace; font-size: 80%;">public [Tokenizer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Tokenizer.md)<?> __createTokenizer__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [Tokenizer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Tokenizer.md) __createTokenizer__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)</span>
 
 
 
@@ -97,7 +97,7 @@ public static io.github.qishr.cascara.common.lang.processor.@io.github.qishr.cas
 
 ### createTokenizer
 
-<span style="font-family: monospace; font-size: 80%;">public [Tokenizer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Tokenizer.md)<?> __createTokenizer__([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [Tokenizer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Tokenizer.md) __createTokenizer__([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)</span>
 
 
 
@@ -110,7 +110,7 @@ public static io.github.qishr.cascara.common.lang.processor.@io.github.qishr.cas
 
 ### createAstParser
 
-<span style="font-family: monospace; font-size: 80%;">public [AstParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/AstParser.md)<?, ?, ?> __createAstParser__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [AstParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/AstParser.md) __createAstParser__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)</span>
 
 
 
@@ -123,7 +123,7 @@ public static io.github.qishr.cascara.common.lang.processor.@io.github.qishr.cas
 
 ### createAstParser
 
-<span style="font-family: monospace; font-size: 80%;">public [AstParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/AstParser.md)<?, ?, ?> __createAstParser__([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [AstParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/AstParser.md) __createAstParser__([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)</span>
 
 
 
@@ -136,7 +136,7 @@ public static io.github.qishr.cascara.common.lang.processor.@io.github.qishr.cas
 
 ### createPullParser
 
-<span style="font-family: monospace; font-size: 80%;">public [PullParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/PullParser.md)<?> __createPullParser__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [PullParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/PullParser.md) __createPullParser__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)</span>
 
 
 
@@ -149,7 +149,7 @@ public static io.github.qishr.cascara.common.lang.processor.@io.github.qishr.cas
 
 ### createPullParser
 
-<span style="font-family: monospace; font-size: 80%;">public [PullParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/PullParser.md)<?> __createPullParser__([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [PullParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/PullParser.md) __createPullParser__([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)</span>
 
 
 
@@ -162,7 +162,7 @@ public static io.github.qishr.cascara.common.lang.processor.@io.github.qishr.cas
 
 ### createPushParser
 
-<span style="font-family: monospace; font-size: 80%;">public [PushParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/PushParser.md)<?, ?> __createPushParser__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [PushParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/PushParser.md) __createPushParser__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)</span>
 
 
 
@@ -175,7 +175,7 @@ public static io.github.qishr.cascara.common.lang.processor.@io.github.qishr.cas
 
 ### createPushParser
 
-<span style="font-family: monospace; font-size: 80%;">public [PushParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/PushParser.md)<?, ?> __createPushParser__([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [PushParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/PushParser.md) __createPushParser__([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)</span>
 
 
 
@@ -188,7 +188,7 @@ public static io.github.qishr.cascara.common.lang.processor.@io.github.qishr.cas
 
 ### createSerializer
 
-<span style="font-family: monospace; font-size: 80%;">public [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)<?> __createSerializer__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md) __createSerializer__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) contentType)</span>
 
 
 
@@ -201,7 +201,7 @@ public static io.github.qishr.cascara.common.lang.processor.@io.github.qishr.cas
 
 ### createSerializer
 
-<span style="font-family: monospace; font-size: 80%;">public [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)<?> __createSerializer__([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md) __createSerializer__([ContentType](../../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)</span>
 
 
 

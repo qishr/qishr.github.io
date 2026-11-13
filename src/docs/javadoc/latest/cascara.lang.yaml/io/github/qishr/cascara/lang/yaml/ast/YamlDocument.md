@@ -23,20 +23,20 @@ Package [io.github.qishr.cascara.lang.yaml.ast](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                   | Method                                                                                                                                | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public void                                                                                                                                                                                         | [addDirective](#adddirective)([YamlDirective](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlDirective.md) directive) |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlDirective](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlDirective.md)>       | [getDirectives](#getdirectives)()                                                                                                     |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlTagDirective](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlTagDirective.md)> | [getTagsDirectives](#gettagsdirectives)()                                                                                             |             |
-| public [YamlDirective](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlDirective.md)                                                                                                 | [getYamlDirective](#getyamldirective)()                                                                                               |             |
-| public [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)                                                                                                           | [getBody](#getbody)()                                                                                                                 |             |
-| public void                                                                                                                                                                                         | [setBody](#setbody)([YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) body)                          |             |
-| public boolean                                                                                                                                                                                      | [hasEndMarker](#hasendmarker)()                                                                                                       |             |
-| public void                                                                                                                                                                                         | [setHasEndMarker](#sethasendmarker)(boolean b)                                                                                        |             |
-| public boolean                                                                                                                                                                                      | [hasStartMarker](#hasstartmarker)()                                                                                                   |             |
-| public void                                                                                                                                                                                         | [setHasStartMarker](#sethasstartmarker)(boolean b)                                                                                    |             |
-| public void                                                                                                                                                                                         | [accept](#accept)([YamlVisitor](../../../../../../../io/github/qishr/cascara/lang/yaml/util/YamlVisitor.md) visitor)                  |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)>                 | [getChildren](#getchildren)()                                                                                                         |             |
+| Modifier and Type                                                                                   | Method                                                                                                                                | Description |
+|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public void                                                                                         | [addDirective](#adddirective)([YamlDirective](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlDirective.md) directive) |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)     | [getDirectives](#getdirectives)()                                                                                                     |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)     | [getTagsDirectives](#gettagsdirectives)()                                                                                             |             |
+| public [YamlDirective](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlDirective.md) | [getYamlDirective](#getyamldirective)()                                                                                               |             |
+| public [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)           | [getBody](#getbody)()                                                                                                                 |             |
+| public void                                                                                         | [setBody](#setbody)([YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) body)                          |             |
+| public boolean                                                                                      | [hasEndMarker](#hasendmarker)()                                                                                                       |             |
+| public void                                                                                         | [setHasEndMarker](#sethasendmarker)(boolean b)                                                                                        |             |
+| public boolean                                                                                      | [hasStartMarker](#hasstartmarker)()                                                                                                   |             |
+| public void                                                                                         | [setHasStartMarker](#sethasstartmarker)(boolean b)                                                                                    |             |
+| public void                                                                                         | [accept](#accept)([YamlVisitor](../../../../../../../io/github/qishr/cascara/lang/yaml/util/YamlVisitor.md) visitor)                  |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)     | [getChildren](#getchildren)()                                                                                                         |             |
 
 
 ### Methods inherited from [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)
@@ -57,7 +57,7 @@ isPreceededByNewLine, getOptions, setFileEndsWithNewLine, getTag, setAnchor, add
 
 ### getDirectives
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlDirective](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlDirective.md)> __getDirectives__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getDirectives__()</span>
 
 
 
@@ -66,7 +66,7 @@ isPreceededByNewLine, getOptions, setFileEndsWithNewLine, getTag, setAnchor, add
 
 ### getTagsDirectives
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlTagDirective](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlTagDirective.md)> __getTagsDirectives__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getTagsDirectives__()</span>
 
 
 
@@ -151,7 +151,7 @@ isPreceededByNewLine, getOptions, setFileEndsWithNewLine, getTag, setAnchor, add
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getChildren__()</span>
 
 
 

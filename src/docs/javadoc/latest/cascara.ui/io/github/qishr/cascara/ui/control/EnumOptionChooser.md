@@ -31,10 +31,10 @@ Package [io.github.qishr.cascara.ui.control](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                  | Method                                                                                                                               | Description |
-|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public void                                                                                        | [setEnumValue](#setenumvalue)([Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<?> enumValue) |             |
-| public [Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<?> | [getEnumValue](#getenumvalue)()                                                                                                      |             |
+| Modifier and Type                                                                               | Method                                                                                                                               | Description |
+|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public void                                                                                     | [setEnumValue](#setenumvalue)([Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<?> enumValue) |             |
+| public [Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html) | [getEnumValue](#getenumvalue)()                                                                                                      |             |
 
 
 ### Methods inherited from [OptionChooser](../../../../../../io/github/qishr/cascara/ui/control/OptionChooser.md)
@@ -55,7 +55,7 @@ getOptionProvider, setOptionProvider, makeSearchable
 
 ### getEnumValue
 
-<span style="font-family: monospace; font-size: 80%;">public [Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<?> __getEnumValue__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html) __getEnumValue__()</span>
 
 
 

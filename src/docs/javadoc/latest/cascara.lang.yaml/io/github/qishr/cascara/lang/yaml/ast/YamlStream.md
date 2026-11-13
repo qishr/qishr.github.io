@@ -25,14 +25,14 @@ Package [io.github.qishr.cascara.lang.yaml.ast](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                             | Method                                                                                                                           | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public void                                                                                                                                                                                   | [addDocument](#adddocument)([YamlDocument](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlDocument.md) document) |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlDocument](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlDocument.md)>   | [getDocuments](#getdocuments)()                                                                                                  |             |
-| public [YamlDocument](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlDocument.md)                                                                                             | [getDocument](#getdocument)(int i)                                                                                               |             |
-| public boolean                                                                                                                                                                                | [isEmpty](#isempty)()                                                                                                            |             |
-| public void                                                                                                                                                                                   | [accept](#accept)([YamlVisitor](../../../../../../../io/github/qishr/cascara/lang/yaml/util/YamlVisitor.md) visitor)             |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)> | [getChildren](#getchildren)()                                                                                                    |             |
+| Modifier and Type                                                                                 | Method                                                                                                                           | Description |
+|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public void                                                                                       | [addDocument](#adddocument)([YamlDocument](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlDocument.md) document) |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)   | [getDocuments](#getdocuments)()                                                                                                  |             |
+| public [YamlDocument](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlDocument.md) | [getDocument](#getdocument)(int i)                                                                                               |             |
+| public boolean                                                                                    | [isEmpty](#isempty)()                                                                                                            |             |
+| public void                                                                                       | [accept](#accept)([YamlVisitor](../../../../../../../io/github/qishr/cascara/lang/yaml/util/YamlVisitor.md) visitor)             |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)   | [getChildren](#getchildren)()                                                                                                    |             |
 
 
 ### Methods inherited from [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)
@@ -53,7 +53,7 @@ isPreceededByNewLine, getOptions, setFileEndsWithNewLine, getTag, setAnchor, add
 
 ### getDocuments
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[YamlDocument](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlDocument.md)> __getDocuments__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getDocuments__()</span>
 
 
 
@@ -93,7 +93,7 @@ isPreceededByNewLine, getOptions, setFileEndsWithNewLine, getTag, setAnchor, add
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getChildren__()</span>
 
 
 

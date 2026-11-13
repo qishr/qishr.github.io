@@ -15,9 +15,9 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                                                                                                                                                                               | Method                    | Description |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|-------------|
-| public abstract [AstParser](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/processor/AstParser.md)<? extends [AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md), ? extends io.github.qishr.cascara.common.lang.token.Token, ? extends io.github.qishr.cascara.common.lang.processor.Tokenizer<?>> | [getParser](#getparser)() |             |
+| Modifier and Type                                                                                                              | Method                    | Description |
+|--------------------------------------------------------------------------------------------------------------------------------|---------------------------|-------------|
+| public abstract [AstParser](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/processor/AstParser.md) | [getParser](#getparser)() |             |
 
 
 
@@ -25,7 +25,7 @@ All Implemented Interfaces:<br/>
 
 ### getParser
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [AstParser](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/processor/AstParser.md)<? extends [AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md), ? extends io.github.qishr.cascara.common.lang.token.Token, ? extends io.github.qishr.cascara.common.lang.processor.Tokenizer<?>> __getParser__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [AstParser](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/processor/AstParser.md) __getParser__()</span>
 
 
 

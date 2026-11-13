@@ -29,7 +29,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toString](#tostring)()                                                                                               |             |
 | public boolean                                                                                      | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) other) |             |
 | public int                                                                                          | [hashCode](#hashcode)()                                                                                               |             |
-| public static [Pair](../../../../../../io/github/qishr/cascara/common/util/Pair.md)<A, B>           | [of](#of)(A a, B b)                                                                                                   |             |
+| public static [Pair](../../../../../../io/github/qishr/cascara/common/util/Pair.md)                 | [of](#of)(A a, B b)                                                                                                   |             |
 
 
 
@@ -100,7 +100,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 ### of
 
-<span style="font-family: monospace; font-size: 80%;">public static [Pair](../../../../../../io/github/qishr/cascara/common/util/Pair.md)<A, B> __of__(A a, B b)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [Pair](../../../../../../io/github/qishr/cascara/common/util/Pair.md) __of__(A a, B b)</span>
 
 
 

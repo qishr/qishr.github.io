@@ -32,7 +32,7 @@ All Known Implementing Classes:<br/>
 
 ### toJvmType
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
 public abstract T __toJvmType__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)</span>
 
 Converts the `text` into the JVM type specified by this TypeDescriptor.
@@ -42,7 +42,7 @@ Converts the `text` into the JVM type specified by this TypeDescriptor.
 
 ### toPrimitive
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
 public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) __toPrimitive__(T jvmInstance)</span>
 
 Converts the JVM type specified by this TypeDescriptor into a JSON Schema primitive type.

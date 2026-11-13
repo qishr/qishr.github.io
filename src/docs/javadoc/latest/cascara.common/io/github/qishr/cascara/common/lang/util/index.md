@@ -10,13 +10,13 @@ Language-agnostic lexing, parsing, emitting, serializing, and schema APIs.
     |-------------------------------------------------------|-------------------------------------------------------------------------------|
     | [AstTreeData](AstTreeData.md)                         |                                                                               |
     | [AstVisitor](AstVisitor.md)                           | Defines a visitor pattern interface for traversing the Cascara AST hierarchy. |
-    | [LanguageOptions](LanguageOptions.md)                 | Base class for all language-specific configuration.                           |
+    | [LanguageConfig](LanguageConfig.md)                   | Base class for all language-specific configuration.                           |
     | [LexemeProvider](LexemeProvider.md)                   |                                                                               |
     | [PathExpression](PathExpression.md)                   |                                                                               |
     | [QuoteStyle](QuoteStyle.md)                           |                                                                               |
     | [SemanticDiff](SemanticDiff.md)                       |                                                                               |
     | [SourceBuffer](SourceBuffer.md)                       |                                                                               |
-    | [SourceBufferOptions](SourceBufferOptions.md)         |                                                                               |
+    | [SourceBufferConfig](SourceBufferConfig.md)           |                                                                               |
     | [SourceInputStreamBuffer](SourceInputStreamBuffer.md) |                                                                               |
     | [SourceStringBuffer](SourceStringBuffer.md)           |                                                                               |
 
@@ -36,9 +36,9 @@ Language-agnostic lexing, parsing, emitting, serializing, and schema APIs.
     | Class                                                 | Description                                         |
     |-------------------------------------------------------|-----------------------------------------------------|
     | [AstTreeData](AstTreeData.md)                         |                                                     |
-    | [LanguageOptions](LanguageOptions.md)                 | Base class for all language-specific configuration. |
+    | [LanguageConfig](LanguageConfig.md)                   | Base class for all language-specific configuration. |
     | [SemanticDiff](SemanticDiff.md)                       |                                                     |
-    | [SourceBufferOptions](SourceBufferOptions.md)         |                                                     |
+    | [SourceBufferConfig](SourceBufferConfig.md)           |                                                     |
     | [SourceInputStreamBuffer](SourceInputStreamBuffer.md) |                                                     |
     | [SourceStringBuffer](SourceStringBuffer.md)           |                                                     |
 

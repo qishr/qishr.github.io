@@ -26,36 +26,36 @@ public class __TrackableArray__<br/>extends [AbstractTrackable](../../../../../.
 
 ## Method Summary
 
-| Modifier and Type                                                                                                  | Method                                                                                                                                               | Description |
-|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public void                                                                                                        | [addArrayListener](#addarraylistener)([ArrayTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/ArrayTracker.md)<E> l)       |             |
-| public void                                                                                                        | [removeArrayListener](#removearraylistener)([ArrayTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/ArrayTracker.md)<E> l) |             |
-| public int                                                                                                         | [size](#size)()                                                                                                                                      |             |
-| public boolean                                                                                                     | [isEmpty](#isempty)()                                                                                                                                |             |
-| public boolean                                                                                                     | [contains](#contains)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                                |             |
-| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]              | [toArray](#toarray)()                                                                                                                                |             |
-| public T[]                                                                                                         | [toArray](#toarray)(T[] a)                                                                                                                           |             |
-| public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<E>         | [iterator](#iterator)()                                                                                                                              |             |
-| public boolean                                                                                                     | [add](#add)(E e)                                                                                                                                     |             |
-| public void                                                                                                        | [add](#add)(int index, E element)                                                                                                                    |             |
-| public boolean                                                                                                     | [remove](#remove)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                                    |             |
-| public E                                                                                                           | [remove](#remove)(int index)                                                                                                                         |             |
-| public E                                                                                                           | [set](#set)(int index, E element)                                                                                                                    |             |
-| public boolean                                                                                                     | [addAll](#addall)([Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<? extends E> c)               |             |
-| public boolean                                                                                                     | [addAll](#addall)(int index, [Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<? extends E> c)    |             |
-| public void                                                                                                        | [setAll](#setall)([Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<? extends E> c)               |             |
-| public boolean                                                                                                     | [removeAll](#removeall)([Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<?> c)                   |             |
-| public boolean                                                                                                     | [retainAll](#retainall)([Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<?> c)                   |             |
-| public void                                                                                                        | [clear](#clear)()                                                                                                                                    |             |
-| public E                                                                                                           | [get](#get)(int index)                                                                                                                               |             |
-| public int                                                                                                         | [indexOf](#indexof)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                                  |             |
-| public int                                                                                                         | [lastIndexOf](#lastindexof)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                          |             |
-| public [ListIterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/ListIterator.html)<E> | [listIterator](#listiterator)()                                                                                                                      |             |
-| public [ListIterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/ListIterator.html)<E> | [listIterator](#listiterator)(int index)                                                                                                             |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<E>                 | [subList](#sublist)(int fromIndex, int toIndex)                                                                                                      |             |
-| public boolean                                                                                                     | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                                    |             |
-| public int                                                                                                         | [hashCode](#hashcode)()                                                                                                                              |             |
-| public boolean                                                                                                     | [containsAll](#containsall)([Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<?> c)               |             |
+| Modifier and Type                                                                                               | Method                                                                                                                                               | Description |
+|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public void                                                                                                     | [addArrayListener](#addarraylistener)([ArrayTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/ArrayTracker.md)<E> l)       |             |
+| public void                                                                                                     | [removeArrayListener](#removearraylistener)([ArrayTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/ArrayTracker.md)<E> l) |             |
+| public int                                                                                                      | [size](#size)()                                                                                                                                      |             |
+| public boolean                                                                                                  | [isEmpty](#isempty)()                                                                                                                                |             |
+| public boolean                                                                                                  | [contains](#contains)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                                |             |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]           | [toArray](#toarray)()                                                                                                                                |             |
+| public T[]                                                                                                      | [toArray](#toarray)(T[] a)                                                                                                                           |             |
+| public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)         | [iterator](#iterator)()                                                                                                                              |             |
+| public boolean                                                                                                  | [add](#add)(E e)                                                                                                                                     |             |
+| public void                                                                                                     | [add](#add)(int index, E element)                                                                                                                    |             |
+| public boolean                                                                                                  | [remove](#remove)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                                    |             |
+| public E                                                                                                        | [remove](#remove)(int index)                                                                                                                         |             |
+| public E                                                                                                        | [set](#set)(int index, E element)                                                                                                                    |             |
+| public boolean                                                                                                  | [addAll](#addall)([Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<? extends E> c)               |             |
+| public boolean                                                                                                  | [addAll](#addall)(int index, [Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<? extends E> c)    |             |
+| public void                                                                                                     | [setAll](#setall)([Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<? extends E> c)               |             |
+| public boolean                                                                                                  | [removeAll](#removeall)([Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<?> c)                   |             |
+| public boolean                                                                                                  | [retainAll](#retainall)([Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<?> c)                   |             |
+| public void                                                                                                     | [clear](#clear)()                                                                                                                                    |             |
+| public E                                                                                                        | [get](#get)(int index)                                                                                                                               |             |
+| public int                                                                                                      | [indexOf](#indexof)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                                  |             |
+| public int                                                                                                      | [lastIndexOf](#lastindexof)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                          |             |
+| public [ListIterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/ListIterator.html) | [listIterator](#listiterator)()                                                                                                                      |             |
+| public [ListIterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/ListIterator.html) | [listIterator](#listiterator)(int index)                                                                                                             |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)                 | [subList](#sublist)(int fromIndex, int toIndex)                                                                                                      |             |
+| public boolean                                                                                                  | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                                    |             |
+| public int                                                                                                      | [hashCode](#hashcode)()                                                                                                                              |             |
+| public boolean                                                                                                  | [containsAll](#containsall)([Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<?> c)               |             |
 
 
 ### Methods inherited from [AbstractTrackable](../../../../../../io/github/qishr/cascara/common/trackable/AbstractTrackable.md)
@@ -142,7 +142,7 @@ invalidate, removeTracker, addTracker
 
 ### iterator
 
-<span style="font-family: monospace; font-size: 80%;">public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<E> __iterator__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html) __iterator__()</span>
 
 
 
@@ -285,7 +285,7 @@ invalidate, removeTracker, addTracker
 
 ### listIterator
 
-<span style="font-family: monospace; font-size: 80%;">public [ListIterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/ListIterator.html)<E> __listIterator__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [ListIterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/ListIterator.html) __listIterator__()</span>
 
 
 
@@ -298,7 +298,7 @@ invalidate, removeTracker, addTracker
 
 ### listIterator
 
-<span style="font-family: monospace; font-size: 80%;">public [ListIterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/ListIterator.html)<E> __listIterator__(int index)</span>
+<span style="font-family: monospace; font-size: 80%;">public [ListIterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/ListIterator.html) __listIterator__(int index)</span>
 
 
 
@@ -307,7 +307,7 @@ invalidate, removeTracker, addTracker
 
 ### subList
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<E> __subList__(int fromIndex, int toIndex)</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __subList__(int fromIndex, int toIndex)</span>
 
 
 

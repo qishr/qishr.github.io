@@ -22,33 +22,35 @@ Package [io.github.qishr.cascara.common.diagnostic.report](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                               | Method                                                                                                                                                                                                                                                           | Description                                                    |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| public static void                                                                                                                                                                                              | [configureSerializer](#configureserializer)()                                                                                                                                                                                                                    |                                                                |
-| protected [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)                                                                                             | [self](#self)()                                                                                                                                                                                                                                                  |                                                                |
-| public static [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)                                                                                         | [globalInstance](#globalinstance)()                                                                                                                                                                                                                              |                                                                |
-| public static [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)                                                                                         | [forClass](#forclass)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)                                                                                                                                       | Gets a `GlobalReporter` instance for the specifie class.       |
-| public static [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)                                                                                         | [forSource](#forsource)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fqcn)                                                                                                                                       | Gets a `GlobalReporter` instance for the specifie class.       |
-| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)                                                                                                | [setLevel](#setlevel)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level)                                                                                                                                         | Sets the level of output when logging directly to the console. |
-| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)                                                                                                | [setLevel](#setlevel)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fqcn, [Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level)                                      | Sets the reporting level for the specified class.              |
-| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)                                                                                                | [setLevelInternal](#setlevelinternal)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fqcn, [Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level)                      |                                                                |
-| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)                                                                                                | [setLevels](#setlevels)([Properties](../../../../../../../io/github/qishr/cascara/common/property/Properties.md) properties)                                                                                                                                     |                                                                |
-| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)                                                                                                | [setDiagnosticConsumer](#setdiagnosticconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> collector) |                                                                |
-| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)                                                                                                | [setProblemConsumer](#setproblemconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> collector)       |                                                                |
-| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)                                                                                                | [setSystemOutputEnabled](#setsystemoutputenabled)(boolean b)                                                                                                                                                                                                     |                                                                |
-| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)                                                                                                | [setImmediateFlushEnabled](#setimmediateflushenabled)(boolean b)                                                                                                                                                                                                 |                                                                |
-| protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> | [getDiagnosticConsumer](#getdiagnosticconsumer)()                                                                                                                                                                                                                |                                                                |
-| protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> | [getProblemConsumer](#getproblemconsumer)()                                                                                                                                                                                                                      |                                                                |
-| protected boolean                                                                                                                                                                                               | [isSystemOutputEnabled](#issystemoutputenabled)()                                                                                                                                                                                                                |                                                                |
-| protected boolean                                                                                                                                                                                               | [isImmediateFlushEnabled](#isimmediateflushenabled)()                                                                                                                                                                                                            |                                                                |
-| public void                                                                                                                                                                                                     | [closeIpc](#closeipc)()                                                                                                                                                                                                                                          |                                                                |
-| public void                                                                                                                                                                                                     | [report](#report)([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic)                                                                                                                                         | Central reporting method.                                      |
-| protected void                                                                                                                                                                                                  | [logLine](#logline)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) msgLine)                                     |                                                                |
+| Modifier and Type                                                                                                       | Method                                                                                                                                                                                                                                                                 | Description                                                    |
+|-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| public static void                                                                                                      | [configureSerializer](#configureserializer)()                                                                                                                                                                                                                          |                                                                |
+| protected [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)     | [self](#self)()                                                                                                                                                                                                                                                        |                                                                |
+| public static [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md) | [globalInstance](#globalinstance)()                                                                                                                                                                                                                                    |                                                                |
+| public [FormatConfig](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatConfig.md)            | [getFormatConfig](#getformatconfig)()                                                                                                                                                                                                                                  |                                                                |
+| public static [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md) | [forClass](#forclass)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)                                                                                                                                             | Gets a `GlobalReporter` instance for the specifie class.       |
+| public static [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md) | [forSource](#forsource)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fqcn)                                                                                                                                             | Gets a `GlobalReporter` instance for the specifie class.       |
+| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)        | [setLevel](#setlevel)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level)                                                                                                                                               | Sets the level of output when logging directly to the console. |
+| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)        | [setLevel](#setlevel)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fqcn, [Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level)                                            | Sets the reporting level for the specified class.              |
+| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)        | [setLevelInternal](#setlevelinternal)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) fqcn, [Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level)                            |                                                                |
+| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)        | [setLevels](#setlevels)([Properties](../../../../../../../io/github/qishr/cascara/common/property/Properties.md) properties)                                                                                                                                           |                                                                |
+| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)        | [addDiagnosticConsumer](#adddiagnosticconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> collector)       |                                                                |
+| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)        | [removeDiagnosticConsumer](#removediagnosticconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> collector) |                                                                |
+| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)        | [setProblemConsumer](#setproblemconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> collector)             |                                                                |
+| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)        | [setSystemOutputEnabled](#setsystemoutputenabled)(boolean b)                                                                                                                                                                                                           |                                                                |
+| public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)        | [setImmediateFlushEnabled](#setimmediateflushenabled)(boolean b)                                                                                                                                                                                                       |                                                                |
+| protected [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)                        | [getDiagnosticConsumers](#getdiagnosticconsumers)()                                                                                                                                                                                                                    |                                                                |
+| protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)     | [getProblemConsumer](#getproblemconsumer)()                                                                                                                                                                                                                            |                                                                |
+| protected boolean                                                                                                       | [isSystemOutputEnabled](#issystemoutputenabled)()                                                                                                                                                                                                                      |                                                                |
+| protected boolean                                                                                                       | [isImmediateFlushEnabled](#isimmediateflushenabled)()                                                                                                                                                                                                                  |                                                                |
+| public void                                                                                                             | [closeIpc](#closeipc)()                                                                                                                                                                                                                                                |                                                                |
+| public void                                                                                                             | [report](#report)([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic)                                                                                                                                               | Central reporting method.                                      |
+| protected void                                                                                                          | [logLine](#logline)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) msgLine)                                           |                                                                |
 
 
 ### Methods inherited from [AbstractReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/AbstractReporter.md)
 
-warn, trace, setStackTraceEnabled, warnAt, setPrefixEveryLine, setShowProblemCodes, reportsDebug, errorAt, debug, reportsTrace, collectsProblems, setSystemErrorEnabled, isProblem, error, addLogger, warnAt, reportAnyLevel, error, infoAt, setLineConsumer, infoAt, errorAt, setAnsiColoringEnabled, error, infoAt, warnAt, info, errorAt, warnAt, defaultFormatOptions, warnAt, errorAt, errorAt, getWriter, getLevel, errorAt, log, isSilent, errorAt, errorAt, errorAt
+errorAt, trace, setStackTraceEnabled, setPrefixEveryLine, setShowProblemCodes, reportsDebug, debug, reportsTrace, error, collectsProblems, setSystemErrorEnabled, infoAt, warnAt, isProblem, addLogger, defaultFormatConfig, errorAt, warnAt, info, errorAt, errorAt, infoAt, errorAt, reportAnyLevel, warnAt, setLineConsumer, error, errorAt, setAnsiColoringEnabled, warn, errorAt, warnAt, warnAt, warn, errorAt, getWriter, getLevel, errorAt, infoAt, log, isSilent, error
 
 
 ## Field Details
@@ -96,6 +98,16 @@ warn, trace, setStackTraceEnabled, warnAt, setPrefixEveryLine, setShowProblemCod
 ### globalInstance
 
 <span style="font-family: monospace; font-size: 80%;">public static [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md) __globalInstance__()</span>
+
+
+
+
+---
+
+### getFormatConfig
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public [FormatConfig](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatConfig.md) __getFormatConfig__()</span>
 
 
 
@@ -174,15 +186,28 @@ Sets the reporting level for the specified class.
 
 ---
 
-### setDiagnosticConsumer
+### addDiagnosticConsumer
 
-<span style="font-family: monospace; font-size: 80%;">public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md) __setDiagnosticConsumer__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> collector)</span>
+<span style="font-family: monospace; font-size: 80%;">public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md) __addDiagnosticConsumer__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> collector)</span>
 
 
 
 **Overrides:**
 
-[AbstractReporter](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/report/AbstractReporter.md#setdiagnosticconsumer)
+[AbstractReporter](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/report/AbstractReporter.md#adddiagnosticconsumer)
+
+
+---
+
+### removeDiagnosticConsumer
+
+<span style="font-family: monospace; font-size: 80%;">public [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md) __removeDiagnosticConsumer__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> collector)</span>
+
+
+
+**Overrides:**
+
+[AbstractReporter](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/report/AbstractReporter.md#removediagnosticconsumer)
 
 
 ---
@@ -218,22 +243,22 @@ Sets the reporting level for the specified class.
 
 ---
 
-### getDiagnosticConsumer
+### getDiagnosticConsumers
 
-<span style="font-family: monospace; font-size: 80%;">protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> __getDiagnosticConsumer__()</span>
+<span style="font-family: monospace; font-size: 80%;">protected [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html) __getDiagnosticConsumers__()</span>
 
 
 
 **Overrides:**
 
-[AbstractReporter](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/report/AbstractReporter.md#getdiagnosticconsumer)
+[AbstractReporter](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/report/AbstractReporter.md#getdiagnosticconsumers)
 
 
 ---
 
 ### getProblemConsumer
 
-<span style="font-family: monospace; font-size: 80%;">protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> __getProblemConsumer__()</span>
+<span style="font-family: monospace; font-size: 80%;">protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html) __getProblemConsumer__()</span>
 
 
 
@@ -284,7 +309,7 @@ public void __closeIpc__()</span>
 
 <span style="font-family: monospace; font-size: 80%;">public void __report__([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic)</span>
 
-Central reporting method.All other rporting methods call this.
+Central reporting method.All other reporting methods call this.
 
 **Overrides:**
 

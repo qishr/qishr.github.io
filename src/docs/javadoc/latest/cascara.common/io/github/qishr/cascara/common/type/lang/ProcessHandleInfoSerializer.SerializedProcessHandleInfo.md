@@ -26,14 +26,14 @@ Enclosing Class:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                         | Method                                  | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-------------|
-| public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)>     | [command](#command)()                   |             |
-| public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)[]>   | [arguments](#arguments)()               |             |
-| public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html)<[Instant](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Instant.html)>   | [startInstant](#startinstant)()         |             |
-| public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html)<[Duration](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Duration.html)> | [totalCpuDuration](#totalcpuduration)() |             |
-| public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)>     | [user](#user)()                         |             |
-| public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)>     | [commandLine](#commandline)()           |             |
+| Modifier and Type                                                                                       | Method                                  | Description |
+|---------------------------------------------------------------------------------------------------------|-----------------------------------------|-------------|
+| public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html) | [command](#command)()                   |             |
+| public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html) | [arguments](#arguments)()               |             |
+| public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html) | [startInstant](#startinstant)()         |             |
+| public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html) | [totalCpuDuration](#totalcpuduration)() |             |
+| public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html) | [user](#user)()                         |             |
+| public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html) | [commandLine](#commandline)()           |             |
 
 
 
@@ -41,7 +41,7 @@ Enclosing Class:<br/>
 
 ### command
 
-<span style="font-family: monospace; font-size: 80%;">public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> __command__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html) __command__()</span>
 
 
 
@@ -50,7 +50,7 @@ Enclosing Class:<br/>
 
 ### arguments
 
-<span style="font-family: monospace; font-size: 80%;">public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)[]> __arguments__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html) __arguments__()</span>
 
 
 
@@ -59,7 +59,7 @@ Enclosing Class:<br/>
 
 ### startInstant
 
-<span style="font-family: monospace; font-size: 80%;">public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html)<[Instant](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Instant.html)> __startInstant__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html) __startInstant__()</span>
 
 
 
@@ -68,7 +68,7 @@ Enclosing Class:<br/>
 
 ### totalCpuDuration
 
-<span style="font-family: monospace; font-size: 80%;">public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html)<[Duration](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Duration.html)> __totalCpuDuration__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html) __totalCpuDuration__()</span>
 
 
 
@@ -77,7 +77,7 @@ Enclosing Class:<br/>
 
 ### user
 
-<span style="font-family: monospace; font-size: 80%;">public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> __user__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html) __user__()</span>
 
 
 
@@ -86,7 +86,7 @@ Enclosing Class:<br/>
 
 ### commandLine
 
-<span style="font-family: monospace; font-size: 80%;">public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> __commandLine__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Optional](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Optional.html) __commandLine__()</span>
 
 
 

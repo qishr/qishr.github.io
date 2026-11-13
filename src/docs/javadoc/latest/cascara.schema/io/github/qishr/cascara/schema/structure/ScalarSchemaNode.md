@@ -22,12 +22,12 @@ Package [io.github.qishr.cascara.schema.structure](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                                                                                   | Method                                              | Description |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|-------------|
-| public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [SchemaNode](../../../../../../io/github/qishr/cascara/schema/structure/SchemaNode.md)> | [getProperties](#getproperties)()                   |             |
-| public [SchemaNode](../../../../../../io/github/qishr/cascara/schema/structure/SchemaNode.md)                                                                                                                                                                                       | [getItemSchema](#getitemschema)()                   |             |
-| public boolean                                                                                                                                                                                                                                                                      | [isPrimaryKey](#isprimarykey)()                     |             |
-| public void                                                                                                                                                                                                                                                                         | [setPrimaryKey](#setprimarykey)(boolean primaryKey) |             |
+| Modifier and Type                                                                             | Method                                              | Description |
+|-----------------------------------------------------------------------------------------------|-----------------------------------------------------|-------------|
+| public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html) | [getProperties](#getproperties)()                   |             |
+| public [SchemaNode](../../../../../../io/github/qishr/cascara/schema/structure/SchemaNode.md) | [getItemSchema](#getitemschema)()                   |             |
+| public boolean                                                                                | [isPrimaryKey](#isprimarykey)()                     |             |
+| public void                                                                                   | [setPrimaryKey](#setprimarykey)(boolean primaryKey) |             |
 
 
 ### Methods inherited from [AbstractSchemaNode](../../../../../../io/github/qishr/cascara/schema/structure/AbstractSchemaNode.md)
@@ -39,7 +39,7 @@ getDescription, getDescriptionKey, getOriginAst, getRef, getEndColumn, isRef, va
 
 ### getProperties
 
-<span style="font-family: monospace; font-size: 80%;">public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [SchemaNode](../../../../../../io/github/qishr/cascara/schema/structure/SchemaNode.md)> __getProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html) __getProperties__()</span>
 
 
 

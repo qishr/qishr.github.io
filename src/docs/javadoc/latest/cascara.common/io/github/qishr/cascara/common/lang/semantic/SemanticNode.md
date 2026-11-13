@@ -12,14 +12,14 @@ Package [io.github.qishr.cascara.common.lang.semantic](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                     | Method                              | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|-------------|
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                          | [getId](#getid)()                   |             |
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                          | [getDisplayName](#getdisplayname)() |             |
-| public abstract [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)                                                                                                          | [getSourcePath](#getsourcepath)()   |             |
-| public abstract int                                                                                                                                                                                                   | [getStartLine](#getstartline)()     |             |
-| public abstract int                                                                                                                                                                                                   | [getStartColumn](#getstartcolumn)() |             |
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [SemanticNode](../../../../../../../io/github/qishr/cascara/common/lang/semantic/SemanticNode.md)> | [getChildren](#getchildren)()       |             |
+| Modifier and Type                                                                                            | Method                              | Description |
+|--------------------------------------------------------------------------------------------------------------|-------------------------------------|-------------|
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getId](#getid)()                   |             |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getDisplayName](#getdisplayname)() |             |
+| public abstract [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) | [getSourcePath](#getsourcepath)()   |             |
+| public abstract int                                                                                          | [getStartLine](#getstartline)()     |             |
+| public abstract int                                                                                          | [getStartColumn](#getstartcolumn)() |             |
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)     | [getChildren](#getchildren)()       |             |
 
 
 
@@ -72,7 +72,7 @@ Package [io.github.qishr.cascara.common.lang.semantic](index.md)
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [SemanticNode](../../../../../../../io/github/qishr/cascara/common/lang/semantic/SemanticNode.md)> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getChildren__()</span>
 
 
 

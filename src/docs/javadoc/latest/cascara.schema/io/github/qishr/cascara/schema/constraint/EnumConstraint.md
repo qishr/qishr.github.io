@@ -25,13 +25,13 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                             | Method                                                                                                                    | Description                                                 |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| public boolean                                                                                                                                                                                | [validate](#validate)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value) | Returns the value of the `validate` record component.       |
-| public final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                     | [toString](#tostring)()                                                                                                   | Returns a string representation of this record class.       |
-| public final int                                                                                                                                                                              | [hashCode](#hashcode)()                                                                                                   | Returns a hash code value for this object.                  |
-| public final boolean                                                                                                                                                                          | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)         | Indicates whether some other object is "equal to" this one. |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [options](#options)()                                                                                                     | Returns the value of the `options` record component.        |
+| Modifier and Type                                                                                         | Method                                                                                                                    | Description                                                 |
+|-----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| public boolean                                                                                            | [validate](#validate)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value) | Returns the value of the `validate` record component.       |
+| public final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toString](#tostring)()                                                                                                   | Returns a string representation of this record class.       |
+| public final int                                                                                          | [hashCode](#hashcode)()                                                                                                   | Returns a hash code value for this object.                  |
+| public final boolean                                                                                      | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)         | Indicates whether some other object is "equal to" this one. |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)           | [options](#options)()                                                                                                     | Returns the value of the `options` record component.        |
 
 
 
@@ -79,7 +79,7 @@ Indicates whether some other object is "equal to" this one.
 
 ### options
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> __options__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __options__()</span>
 
 Returns the value of the `options` record component.
 

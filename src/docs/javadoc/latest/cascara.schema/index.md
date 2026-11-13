@@ -7,7 +7,6 @@ JSON Schema compatible schema validator, resolver, generator, compiler, decompil
 
     | Package                                                                                         | Description                                                                  |
     |-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-    | [io.github.qishr.cascara.schema.annotation](io/github/qishr/cascara/schema/annotation/index.md) |                                                                              |
     | [io.github.qishr.cascara.schema.diagnostic](io/github/qishr/cascara/schema/diagnostic/index.md) |                                                                              |
     | [io.github.qishr.cascara.schema.structure](io/github/qishr/cascara/schema/structure/index.md)   |                                                                              |
     | [io.github.qishr.cascara.schema.constraint](io/github/qishr/cascara/schema/constraint/index.md) | Constraints are applied to members variables in classes.                     |

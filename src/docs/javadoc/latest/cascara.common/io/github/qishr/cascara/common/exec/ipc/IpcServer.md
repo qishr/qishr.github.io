@@ -21,15 +21,27 @@ All Implemented Interfaces:<br/>
 
 
 
+## Constructor Summary
+
+| Constructor | Description |
+|-------------|-------------|
+| IpcServer() |             |
+
+
+
 ## Method Summary
 
-| Modifier and Type                                                                                    | Method                                                                                                                          | Description |
-|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public static [IpcServer](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcServer.md) | [start](#start)(boolean diagnosticForwarding, boolean ipcDebugEnabled)                                                          |             |
-| public synchronized void                                                                             | [listenAsync](#listenasync)()                                                                                                   |             |
-| public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)  | [getSocketPath](#getsocketpath)()                                                                                               |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T>   | [getMessages](#getmessages)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> type) |             |
-| public void                                                                                          | [close](#close)()                                                                                                               |             |
+| Modifier and Type                                                                                         | Method                                                                                                                          | Description                             |
+|-----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
+| public [IpcServer](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcServer.md)             | [setDiagnosticForwarding](#setdiagnosticforwarding)(boolean enabled)                                                            |                                         |
+| public [IpcServer](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcServer.md)             | [setFilterDiagnosticsByLevel](#setfilterdiagnosticsbylevel)(boolean enabled)                                                    |                                         |
+| public [IpcServer](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcServer.md)             | [setExceptionForwarding](#setexceptionforwarding)(boolean enabled)                                                              |                                         |
+| public [IpcServer](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcServer.md)             | [setIpcDebug](#setipcdebug)(boolean enabled)                                                                                    |                                         |
+| public [IpcServer](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcServer.md)             | [start](#start)()                                                                                                               | Start listening for client connections. |
+| public [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) | [getClientException](#getclientexception)()                                                                                     |                                         |
+| public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)       | [getSocketPath](#getsocketpath)()                                                                                               |                                         |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)           | [getMessages](#getmessages)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> type) |                                         |
+| public void                                                                                               | [close](#close)()                                                                                                               | Close server socket.                    |
 
 
 
@@ -53,23 +65,58 @@ All Implemented Interfaces:<br/>
 
 ## Method Details
 
-### start
+### setDiagnosticForwarding
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public static [IpcServer](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcServer.md) __start__(boolean diagnosticForwarding, boolean ipcDebugEnabled)</span>
-
+<span style="font-family: monospace; font-size: 80%;">public [IpcServer](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcServer.md) __setDiagnosticForwarding__(boolean enabled)</span>
 
 
-**Throws:**
-
-[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
 
 
 ---
 
-### listenAsync
+### setFilterDiagnosticsByLevel
 
-<span style="font-family: monospace; font-size: 80%;">public synchronized void __listenAsync__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [IpcServer](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcServer.md) __setFilterDiagnosticsByLevel__(boolean enabled)</span>
+
+
+
+
+---
+
+### setExceptionForwarding
+
+<span style="font-family: monospace; font-size: 80%;">public [IpcServer](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcServer.md) __setExceptionForwarding__(boolean enabled)</span>
+
+
+
+
+---
+
+### setIpcDebug
+
+<span style="font-family: monospace; font-size: 80%;">public [IpcServer](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcServer.md) __setIpcDebug__(boolean enabled)</span>
+
+
+
+
+---
+
+### start
+
+<span style="font-family: monospace; font-size: 80%;">public [IpcServer](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcServer.md) __start__()</span>
+
+Start listening for client connections.
+
+**Throws:**
+
+[IpcException](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcException.md)
+
+
+---
+
+### getClientException
+
+<span style="font-family: monospace; font-size: 80%;">public [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) __getClientException__()</span>
 
 
 
@@ -78,8 +125,7 @@ public static [IpcServer](../../../../../../../io/github/qishr/cascara/common/ex
 
 ### getSocketPath
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getSocketPath__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) __getSocketPath__()</span>
 
 
 
@@ -89,7 +135,7 @@ public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/
 ### getMessages
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> __getMessages__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> type)</span>
+public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getMessages__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> type)</span>
 
 
 
@@ -100,11 +146,11 @@ public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/
 
 <span style="font-family: monospace; font-size: 80%;">public void __close__()</span>
 
-
+Close server socket.
 
 **Throws:**
 
-[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
+[IpcException](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcException.md)
 
 **Specified By:**
 

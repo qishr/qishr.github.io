@@ -20,14 +20,14 @@ Package [io.github.qishr.cascara.ui.widget](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                        | Method                                                                                                                                                                                                              | Description |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public void                                                                                                                                                                                              | [add](#add)([ToolBarItem](../../../../../../io/github/qishr/cascara/ui/widget/ToolBarItem.md) item)                                                                                                                 |             |
-| public void                                                                                                                                                                                              | [add](#add)([ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)<[ObservableMenuItem](../../../../../../io/github/qishr/cascara/ui/menu/ObservableMenuItem.md)> item) |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ToolBarItem](../../../../../../io/github/qishr/cascara/ui/widget/ToolBarItem.md)>                       | [getItems](#getitems)()                                                                                                                                                                                             |             |
-| public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)<[ObservableMenuItem](../../../../../../io/github/qishr/cascara/ui/menu/ObservableMenuItem.md)> | [getMenu](#getmenu)()                                                                                                                                                                                               |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                      | [getName](#getname)()                                                                                                                                                                                               |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                      | [getOwnerExtension](#getownerextension)()                                                                                                                                                                           |             |
+| Modifier and Type                                                                                         | Method                                                                                                                                                                                                              | Description |
+|-----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public void                                                                                               | [add](#add)([ToolBarItem](../../../../../../io/github/qishr/cascara/ui/widget/ToolBarItem.md) item)                                                                                                                 |             |
+| public void                                                                                               | [add](#add)([ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)<[ObservableMenuItem](../../../../../../io/github/qishr/cascara/ui/menu/ObservableMenuItem.md)> item) |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)           | [getItems](#getitems)()                                                                                                                                                                                             |             |
+| public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html) | [getMenu](#getmenu)()                                                                                                                                                                                               |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)       | [getName](#getname)()                                                                                                                                                                                               |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)       | [getOwnerExtension](#getownerextension)()                                                                                                                                                                           |             |
 
 
 
@@ -53,7 +53,7 @@ Package [io.github.qishr.cascara.ui.widget](index.md)
 
 ### getItems
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ToolBarItem](../../../../../../io/github/qishr/cascara/ui/widget/ToolBarItem.md)> __getItems__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getItems__()</span>
 
 
 
@@ -62,7 +62,7 @@ Package [io.github.qishr.cascara.ui.widget](index.md)
 
 ### getMenu
 
-<span style="font-family: monospace; font-size: 80%;">public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)<[ObservableMenuItem](../../../../../../io/github/qishr/cascara/ui/menu/ObservableMenuItem.md)> __getMenu__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html) __getMenu__()</span>
 
 
 

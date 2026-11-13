@@ -25,30 +25,30 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                     | Method                                                                                                                                                                                                            | Description               |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
-| public boolean                                                                                                                                                                                                        | [isEmpty](#isempty)()                                                                                                                                                                                             |                           |
-| public int                                                                                                                                                                                                            | [size](#size)()                                                                                                                                                                                                   |                           |
-| public boolean                                                                                                                                                                                                        | [containsKey](#containskey)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                     |                           |
-| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)>                                     | [keySet](#keyset)()                                                                                                                                                                                               |                           |
-| public [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)                                                                                                                             | [get](#get)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                     |                           |
-| public [GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md)                                                                                                   | [getEntry](#getentry)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                           |                           |
-| public [GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md)                                                                                                   | [getEntry](#getentry)(int i)                                                                                                                                                                                      |                           |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md)>         | [getEntries](#getentries)()                                                                                                                                                                                       |                           |
-| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md)>           | [entrySet](#entryset)()                                                                                                                                                                                           |                           |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)>                                   | [values](#values)()                                                                                                                                                                                               |                           |
-| public [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)                                                                                                             | [put](#put)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) key, [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) value)                     |                           |
-| public [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)                                                                                                             | [remove](#remove)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) key)                                                                                                         |                           |
-| public [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)                                                                                                             | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value) |                           |
-| public [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)                                                                                                             | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [Number](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Number.html) value) |                           |
-| public [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)                                                                                                             | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) value)           |                           |
-| public [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)                                                                                                             | [remove](#remove)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                               |                           |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md)>         | [getChildren](#getchildren)()                                                                                                                                                                                     |                           |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/CommentAstNode.md)>                     | [getComments](#getcomments)()                                                                                                                                                                                     |                           |
-| public [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)                                                                                                             | [getMap](#getmap)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                               |                           |
-| public [SequenceAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/SequenceAstNode.md)<[AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)>                         | [getSequence](#getsequence)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                     |                           |
-| public [ScalarAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/ScalarAstNode.md)<[AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)>                             | [getScalar](#getscalar)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                         |                           |
-| public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<[GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md)> | [iterator](#iterator)()                                                                                                                                                                                           | Returns Iterator instance |
+| Modifier and Type                                                                                                   | Method                                                                                                                                                                                                            | Description               |
+|---------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
+| public boolean                                                                                                      | [isEmpty](#isempty)()                                                                                                                                                                                             |                           |
+| public int                                                                                                          | [size](#size)()                                                                                                                                                                                                   |                           |
+| public boolean                                                                                                      | [containsKey](#containskey)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                     |                           |
+| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)                       | [keySet](#keyset)()                                                                                                                                                                                               |                           |
+| public [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)                           | [get](#get)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                     |                           |
+| public [GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md) | [getEntry](#getentry)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                           |                           |
+| public [GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md) | [getEntry](#getentry)(int i)                                                                                                                                                                                      |                           |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)                     | [getEntries](#getentries)()                                                                                                                                                                                       |                           |
+| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)                       | [entrySet](#entryset)()                                                                                                                                                                                           |                           |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)                     | [values](#values)()                                                                                                                                                                                               |                           |
+| public [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)           | [put](#put)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) key, [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) value)                     |                           |
+| public [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)           | [remove](#remove)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) key)                                                                                                         |                           |
+| public [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)           | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value) |                           |
+| public [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)           | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [Number](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Number.html) value) |                           |
+| public [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)           | [put](#put)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) value)           |                           |
+| public [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)           | [remove](#remove)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)                                                                                               |                           |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)                     | [getChildren](#getchildren)()                                                                                                                                                                                     |                           |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)                     | [getComments](#getcomments)()                                                                                                                                                                                     |                           |
+| public [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMap.md)           | [getMap](#getmap)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                               |                           |
+| public [SequenceAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/SequenceAstNode.md)           | [getSequence](#getsequence)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                     |                           |
+| public [ScalarAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/ScalarAstNode.md)               | [getScalar](#getscalar)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                         |                           |
+| public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)             | [iterator](#iterator)()                                                                                                                                                                                           | Returns Iterator instance |
 
 
 ### Methods inherited from [GenericAstNode](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstNode.md)
@@ -99,7 +99,7 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 
 ### keySet
 
-<span style="font-family: monospace; font-size: 80%;">public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)> __keySet__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html) __keySet__()</span>
 
 
 
@@ -151,7 +151,7 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 
 ### getEntries
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md)> __getEntries__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getEntries__()</span>
 
 
 
@@ -164,7 +164,7 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 
 ### entrySet
 
-<span style="font-family: monospace; font-size: 80%;">public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md)> __entrySet__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html) __entrySet__()</span>
 
 
 
@@ -177,7 +177,7 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 
 ### values
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)> __values__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __values__()</span>
 
 
 
@@ -252,7 +252,7 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md)> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getChildren__()</span>
 
 
 
@@ -265,7 +265,7 @@ getEndColumn, getEndLine, getStartColumn, getToken, getStartLine
 
 ### getComments
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/CommentAstNode.md)> __getComments__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getComments__()</span>
 
 
 
@@ -289,7 +289,7 @@ public [GenericAstMap](../../../../../../../io/github/qishr/cascara/common/lang/
 ### getSequence
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [SequenceAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/SequenceAstNode.md)<[AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)> __getSequence__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
+public [SequenceAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/SequenceAstNode.md) __getSequence__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 
@@ -303,7 +303,7 @@ public [SequenceAstNode](../../../../../../../io/github/qishr/cascara/common/lan
 ### getScalar
 
 <span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [ScalarAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/ScalarAstNode.md)<[AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)> __getScalar__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
+public [ScalarAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/ScalarAstNode.md) __getScalar__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 
@@ -316,7 +316,7 @@ public [ScalarAstNode](../../../../../../../io/github/qishr/cascara/common/lang/
 
 ### iterator
 
-<span style="font-family: monospace; font-size: 80%;">public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<[GenericAstMapEntry](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstMapEntry.md)> __iterator__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html) __iterator__()</span>
 
 Returns Iterator instance
 

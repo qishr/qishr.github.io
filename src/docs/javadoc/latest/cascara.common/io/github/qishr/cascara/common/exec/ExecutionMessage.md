@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.common.exec](index.md)
                 io.github.qishr.cascara.common.exec.ExecutionMessage<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [DiagnosticMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+    [LocalizableMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ----
@@ -26,6 +26,7 @@ All Implemented Interfaces:<br/>
 | [INTERRUPT](#interrupt)                                                 |             |
 | [DIAGNOSTIC_SERVER_FAILED](#diagnostic_server_failed)                   |             |
 | [DIAGNOSTIC_DESERIALIZATION_FAILED](#diagnostic_deserialization_failed) |             |
+| [NO_DESERIALIZER](#no_deserializer)                                     |             |
 | [DESERIALIZATION_FAILED](#deserialization_failed)                       |             |
 | [IPC_RECV_FAILED](#ipc_recv_failed)                                     |             |
 | [NO_SOCKET_FILE](#no_socket_file)                                       |             |
@@ -109,6 +110,15 @@ public static final  DIAGNOSTIC_DESERIALIZATION_FAILED
 
 ---
 
+### NO_DESERIALIZER
+
+public static final  NO_DESERIALIZER
+
+
+
+
+---
+
 ### DESERIALIZATION_FAILED
 
 public static final  DESERIALIZATION_FAILED
@@ -174,7 +184,7 @@ public static final  CONNECT_FAILED
 
 **Specified By:**
 
-[DiagnosticMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+[LocalizableMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ---
@@ -187,7 +197,7 @@ public static final  CONNECT_FAILED
 
 **Specified By:**
 
-[DiagnosticMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+[LocalizableMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ---

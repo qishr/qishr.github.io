@@ -6,11 +6,11 @@
 
 === "All Classes and Interfaces"
 
-    | Class                                                 | Description |
-    |-------------------------------------------------------|-------------|
-    | [SchemaDiagnosticMessage](SchemaDiagnosticMessage.md) |             |
-    | [SchemaException](SchemaException.md)                 |             |
-    | [ValidationException](ValidationException.md)         |             |
+    | Class                                         | Description |
+    |-----------------------------------------------|-------------|
+    | [SchemaException](SchemaException.md)         |             |
+    | [SchemaMessage](SchemaMessage.md)             |             |
+    | [ValidationException](ValidationException.md) |             |
 
 
 === "Classes"
@@ -23,8 +23,8 @@
 
 === "Enum Classes"
 
-    | Class                                                 | Description |
-    |-------------------------------------------------------|-------------|
-    | [SchemaDiagnosticMessage](SchemaDiagnosticMessage.md) |             |
+    | Class                             | Description |
+    |-----------------------------------|-------------|
+    | [SchemaMessage](SchemaMessage.md) |             |
 
 

@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.lang.json.diagnostic](index.md)
                 io.github.qishr.cascara.lang.json.diagnostic.JsonDiagnosticMessage<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [DiagnosticMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+    [LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ----
@@ -404,7 +404,7 @@ public static final  EXPECTED_SEQUENCE
 
 **Specified By:**
 
-[DiagnosticMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+[LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ---
@@ -417,7 +417,7 @@ public static final  EXPECTED_SEQUENCE
 
 **Specified By:**
 
-[DiagnosticMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+[LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ---

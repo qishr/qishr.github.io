@@ -15,6 +15,8 @@ All Implemented Interfaces:<br/>
 @java.lang.annotation.Target(FIELD)<br/>
 public @interface __DataField__</span>
 
+Represents a custom annotation for marking methods.
+
 
 ## Method Summary
 

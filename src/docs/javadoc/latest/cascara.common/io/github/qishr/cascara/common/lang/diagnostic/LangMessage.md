@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.common.lang.diagnostic](index.md)
                 io.github.qishr.cascara.common.lang.diagnostic.LangMessage<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+    [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ----
@@ -24,6 +24,7 @@ All Implemented Interfaces:<br/>
 | [UNEXPECTED_STREAM_END](#unexpected_stream_end)                                                 |             |
 | [UNKNOWN_NODE_TYPE](#unknown_node_type)                                                         |             |
 | [FAILED_TO_MAP_TYPE](#failed_to_map_type)                                                       |             |
+| [FAILED_TO_MAP_TYPE_REASON](#failed_to_map_type_reason)                                         |             |
 | [FAILED_TO_MAP_AST](#failed_to_map_ast)                                                         |             |
 | [EXPECTED_MAP_STRUCTURE](#expected_map_structure)                                               |             |
 | [FAILED_SERIALIZE](#failed_serialize)                                                           |             |
@@ -45,20 +46,8 @@ All Implemented Interfaces:<br/>
 | [AST_FACTORY_FAIL_MAP](#ast_factory_fail_map)                                                   |             |
 | [AST_FACTORY_FAIL_SEQUENCE](#ast_factory_fail_sequence)                                         |             |
 | [AST_FACTORY_FAIL_KEY](#ast_factory_fail_key)                                                   |             |
-| [CLASS_NOT_SERIALIZABLE](#class_not_serializable)                                               |             |
-| [NO_SUCH_METHOD](#no_such_method)                                                               |             |
-| [NO_SUCH_CONSTRUCTOR](#no_such_constructor)                                                     |             |
+| [CONCURRENT_USE](#concurrent_use)                                                               |             |
 | [FIELD_NOT_ACCESSIBLE](#field_not_accessible)                                                   |             |
-| [INVOCATION_TARGET_EXCEPTION](#invocation_target_exception)                                     |             |
-| [ILLEGAL_ARGUMENT_EXCEPTION](#illegal_argument_exception)                                       |             |
-| [INSTANTIATION_EXCEPTION](#instantiation_exception)                                             |             |
-| [EXCEPTION_IN_INITIALIZER](#exception_in_initializer)                                           |             |
-| [ABSTRACT_METHOD_ERROR](#abstract_method_error)                                                 |             |
-| [NO_CLASS_DEF_FOUND_ERROR](#no_class_def_found_error)                                           |             |
-| [SERVICE_CONFIG_ERROR](#service_config_error)                                                   |             |
-| [SECURITY_EXCEPTION](#security_exception)                                                       |             |
-| [ILLEGAL_ACCESS_EXCEPTION](#illegal_access_exception)                                           |             |
-| [CLASS_CAST_EXCEPTION](#class_cast_exception)                                                   |             |
 | [UNKNOWN_GENERIC_TYPE](#unknown_generic_type)                                                   |             |
 
 
@@ -115,6 +104,15 @@ public static final  UNKNOWN_NODE_TYPE
 ### FAILED_TO_MAP_TYPE
 
 public static final  FAILED_TO_MAP_TYPE
+
+
+
+
+---
+
+### FAILED_TO_MAP_TYPE_REASON
+
+public static final  FAILED_TO_MAP_TYPE_REASON
 
 
 
@@ -310,27 +308,9 @@ public static final  AST_FACTORY_FAIL_KEY
 
 ---
 
-### CLASS_NOT_SERIALIZABLE
+### CONCURRENT_USE
 
-public static final  CLASS_NOT_SERIALIZABLE
-
-
-
-
----
-
-### NO_SUCH_METHOD
-
-public static final  NO_SUCH_METHOD
-
-
-
-
----
-
-### NO_SUCH_CONSTRUCTOR
-
-public static final  NO_SUCH_CONSTRUCTOR
+public static final  CONCURRENT_USE
 
 
 
@@ -340,96 +320,6 @@ public static final  NO_SUCH_CONSTRUCTOR
 ### FIELD_NOT_ACCESSIBLE
 
 public static final  FIELD_NOT_ACCESSIBLE
-
-
-
-
----
-
-### INVOCATION_TARGET_EXCEPTION
-
-public static final  INVOCATION_TARGET_EXCEPTION
-
-
-
-
----
-
-### ILLEGAL_ARGUMENT_EXCEPTION
-
-public static final  ILLEGAL_ARGUMENT_EXCEPTION
-
-
-
-
----
-
-### INSTANTIATION_EXCEPTION
-
-public static final  INSTANTIATION_EXCEPTION
-
-
-
-
----
-
-### EXCEPTION_IN_INITIALIZER
-
-public static final  EXCEPTION_IN_INITIALIZER
-
-
-
-
----
-
-### ABSTRACT_METHOD_ERROR
-
-public static final  ABSTRACT_METHOD_ERROR
-
-
-
-
----
-
-### NO_CLASS_DEF_FOUND_ERROR
-
-public static final  NO_CLASS_DEF_FOUND_ERROR
-
-
-
-
----
-
-### SERVICE_CONFIG_ERROR
-
-public static final  SERVICE_CONFIG_ERROR
-
-
-
-
----
-
-### SECURITY_EXCEPTION
-
-public static final  SECURITY_EXCEPTION
-
-
-
-
----
-
-### ILLEGAL_ACCESS_EXCEPTION
-
-public static final  ILLEGAL_ACCESS_EXCEPTION
-
-
-
-
----
-
-### CLASS_CAST_EXCEPTION
-
-public static final  CLASS_CAST_EXCEPTION
 
 
 
@@ -474,7 +364,7 @@ public static final  UNKNOWN_GENERIC_TYPE
 
 **Specified By:**
 
-[DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ---
@@ -487,7 +377,7 @@ public static final  UNKNOWN_GENERIC_TYPE
 
 **Specified By:**
 
-[DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ---

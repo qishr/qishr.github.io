@@ -13,9 +13,9 @@ public static interface __DeserializeEnum__</span>
 
 ## Method Summary
 
-| Modifier and Type                                                                                           | Method                                                                                                                                                                                                                                              | Description |
-|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public abstract [Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<?> | [deserializeEnum](#deserializeenum)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) targetType) |             |
+| Modifier and Type                                                                                        | Method                                                                                                                                                                                                                                              | Description |
+|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public abstract [Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html) | [deserializeEnum](#deserializeenum)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) targetType) |             |
 
 
 
@@ -23,7 +23,7 @@ public static interface __DeserializeEnum__</span>
 
 ### deserializeEnum
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<?> __deserializeEnum__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) targetType)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html) __deserializeEnum__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) targetType)</span>
 
 
 

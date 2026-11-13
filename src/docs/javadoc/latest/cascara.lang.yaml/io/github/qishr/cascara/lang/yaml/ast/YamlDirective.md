@@ -25,12 +25,12 @@ Direct Known Subtypes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                             | Method                                                                                                               | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|-------------|
-| public [DirectiveType](../../../../../../../io/github/qishr/cascara/lang/yaml/util/DirectiveType.md)                                                                                          | [getType](#gettype)()                                                                                                |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getContent](#getcontent)()                                                                                          |             |
-| public void                                                                                                                                                                                   | [accept](#accept)([YamlVisitor](../../../../../../../io/github/qishr/cascara/lang/yaml/util/YamlVisitor.md) visitor) |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)> | [getChildren](#getchildren)()                                                                                        |             |
+| Modifier and Type                                                                                    | Method                                                                                                               | Description |
+|------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|-------------|
+| public [DirectiveType](../../../../../../../io/github/qishr/cascara/lang/yaml/util/DirectiveType.md) | [getType](#gettype)()                                                                                                |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)  | [getContent](#getcontent)()                                                                                          |             |
+| public void                                                                                          | [accept](#accept)([YamlVisitor](../../../../../../../io/github/qishr/cascara/lang/yaml/util/YamlVisitor.md) visitor) |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)      | [getChildren](#getchildren)()                                                                                        |             |
 
 
 ### Methods inherited from [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)
@@ -73,7 +73,7 @@ isPreceededByNewLine, getOptions, setFileEndsWithNewLine, getTag, setAnchor, add
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getChildren__()</span>
 
 
 

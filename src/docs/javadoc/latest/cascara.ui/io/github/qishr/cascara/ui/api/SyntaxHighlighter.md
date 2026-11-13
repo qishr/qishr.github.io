@@ -15,13 +15,13 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                               | Method                                                                                                                | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------|
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ContentType](../../../../../../../cascara.common/io/github/qishr/cascara/common/util/ContentType.md)> | [getSupportedContentTypes](#getsupportedcontenttypes)()                                                               |             |
-| public abstract void                                                                                                                                                                                            | [setTextBuffer](#settextbuffer)([TextBuffer](../../../../../../io/github/qishr/cascara/ui/data/TextBuffer.md) buffer) |             |
-| public abstract [TextBuffer](../../../../../../io/github/qishr/cascara/ui/data/TextBuffer.md)                                                                                                                   | [getTextBuffer](#gettextbuffer)()                                                                                     |             |
-| public abstract boolean                                                                                                                                                                                         | [supportsSemanticHighlighting](#supportssemantichighlighting)()                                                       |             |
-| public abstract [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)<[HighlightingToken](../../../../../../io/github/qishr/cascara/ui/api/HighlightingToken.md)>  | [getHighlightingTokens](#gethighlightingtokens)()                                                                     |             |
+| Modifier and Type                                                                                                  | Method                                                                                                                | Description |
+|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------|
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)           | [getSupportedContentTypes](#getsupportedcontenttypes)()                                                               |             |
+| public abstract void                                                                                               | [setTextBuffer](#settextbuffer)([TextBuffer](../../../../../../io/github/qishr/cascara/ui/data/TextBuffer.md) buffer) |             |
+| public abstract [TextBuffer](../../../../../../io/github/qishr/cascara/ui/data/TextBuffer.md)                      | [getTextBuffer](#gettextbuffer)()                                                                                     |             |
+| public abstract boolean                                                                                            | [supportsSemanticHighlighting](#supportssemantichighlighting)()                                                       |             |
+| public abstract [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html) | [getHighlightingTokens](#gethighlightingtokens)()                                                                     |             |
 
 
 
@@ -29,7 +29,7 @@ All Implemented Interfaces:<br/>
 
 ### getSupportedContentTypes
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ContentType](../../../../../../../cascara.common/io/github/qishr/cascara/common/util/ContentType.md)> __getSupportedContentTypes__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getSupportedContentTypes__()</span>
 
 
 
@@ -65,7 +65,7 @@ All Implemented Interfaces:<br/>
 
 ### getHighlightingTokens
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)<[HighlightingToken](../../../../../../io/github/qishr/cascara/ui/api/HighlightingToken.md)> __getHighlightingTokens__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html) __getHighlightingTokens__()</span>
 
 
 

@@ -6,19 +6,21 @@
 
 === "All Classes and Interfaces"
 
-    | Class                     | Description |
-    |---------------------------|-------------|
-    | [IpcClient](IpcClient.md) |             |
-    | [IpcConfig](IpcConfig.md) |             |
-    | [IpcServer](IpcServer.md) |             |
+    | Class                           | Description |
+    |---------------------------------|-------------|
+    | [IpcClient](IpcClient.md)       |             |
+    | [IpcConfig](IpcConfig.md)       |             |
+    | [IpcException](IpcException.md) |             |
+    | [IpcServer](IpcServer.md)       |             |
 
 
 === "Classes"
 
-    | Class                     | Description |
-    |---------------------------|-------------|
-    | [IpcClient](IpcClient.md) |             |
-    | [IpcConfig](IpcConfig.md) |             |
-    | [IpcServer](IpcServer.md) |             |
+    | Class                           | Description |
+    |---------------------------------|-------------|
+    | [IpcClient](IpcClient.md)       |             |
+    | [IpcConfig](IpcConfig.md)       |             |
+    | [IpcException](IpcException.md) |             |
+    | [IpcServer](IpcServer.md)       |             |
 
 

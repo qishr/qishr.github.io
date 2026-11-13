@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.common.diagnostic.message](index.md)
                 io.github.qishr.cascara.common.diagnostic.message.InetMessage<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+    [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ----
@@ -104,7 +104,7 @@ public static final  TLS_HANDSHAKE_FAILED
 
 **Specified By:**
 
-[DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ---
@@ -117,7 +117,7 @@ public static final  TLS_HANDSHAKE_FAILED
 
 **Specified By:**
 
-[DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ---

@@ -4,7 +4,7 @@ public class ValidateWithCollector {
         IOUtils.setResourceProvider(UriScheme.RES, new ResResourceProvider(AgnosticValidationExample.class));
 
         SilentCollectingReporter reporter = new SilentCollectingReporter();
-        reporter.setDiagnosticConsumer(problem -> {
+        reporter.addDiagnosticConsumer(problem -> {
             System.err.println("Validation error: " + problem.getMessage());
         });
 

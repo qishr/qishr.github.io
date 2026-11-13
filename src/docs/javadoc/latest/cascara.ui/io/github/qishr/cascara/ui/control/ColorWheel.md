@@ -25,25 +25,25 @@ Package [io.github.qishr.cascara.ui.control](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                                                                                                   | Method                                                                                                                                         | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public final [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)<[ColorDefinition](../../../../../../io/github/qishr/cascara/ui/color/ColorDefinition.md)>                                                                                        | [colorDefinitionProperty](#colordefinitionproperty)()                                                                                          |             |
-| public final [ColorDefinition](../../../../../../io/github/qishr/cascara/ui/color/ColorDefinition.md)                                                                                                                                                                                               | [getColorDefinition](#getcolordefinition)()                                                                                                    |             |
-| public final void                                                                                                                                                                                                                                                                                   | [setColorDefinition](#setcolordefinition)([ColorDefinition](../../../../../../io/github/qishr/cascara/ui/color/ColorDefinition.md) definition) |             |
-| public final [DoubleProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/DoubleProperty.html)                                                                                                                                                                                  | [hueProperty](#hueproperty)()                                                                                                                  |             |
-| public final double                                                                                                                                                                                                                                                                                 | [getHue](#gethue)()                                                                                                                            |             |
-| public final [DoubleProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/DoubleProperty.html)                                                                                                                                                                                  | [saturationProperty](#saturationproperty)()                                                                                                    |             |
-| public final double                                                                                                                                                                                                                                                                                 | [getSaturation](#getsaturation)()                                                                                                              |             |
-| public final [DoubleProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/DoubleProperty.html)                                                                                                                                                                                  | [brightnessProperty](#brightnessproperty)()                                                                                                    |             |
-| public final double                                                                                                                                                                                                                                                                                 | [getBrightness](#getbrightness)()                                                                                                              |             |
-| public final [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)<[Color](https://openjfx.io/javadoc/25/javafx.graphics/javafx/scene/paint/Color.html)>                                                                                            | [colorProperty](#colorproperty)()                                                                                                              |             |
-| public final [Color](https://openjfx.io/javadoc/25/javafx.graphics/javafx/scene/paint/Color.html)                                                                                                                                                                                                   | [getColor](#getcolor)()                                                                                                                        |             |
-| public final void                                                                                                                                                                                                                                                                                   | [setColor](#setcolor)([Color](https://openjfx.io/javadoc/25/javafx.graphics/javafx/scene/paint/Color.html) c)                                  |             |
-| public void                                                                                                                                                                                                                                                                                         | [setOnChange](#setonchange)([OnChangeHandler](../../../../../../io/github/qishr/cascara/ui/control/ColorWheel.OnChangeHandler.md) onChange)    |             |
-| public void                                                                                                                                                                                                                                                                                         | [onChange](#onchange)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value)                      |             |
-| protected [Skin](https://openjfx.io/javadoc/25/javafx.controls/javafx/scene/control/Skin.html)<[ColorWheel](../../../../../../io/github/qishr/cascara/ui/control/ColorWheel.md)>                                                                                                                    | [createDefaultSkin](#createdefaultskin)()                                                                                                      |             |
-| public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CssMetaData](https://openjfx.io/javadoc/25/javafx.graphics/javafx/css/CssMetaData.html)<? extends [Styleable](https://openjfx.io/javadoc/25/javafx.graphics/javafx/css/Styleable.html), ?>> | [getClassCssMetaData](#getclasscssmetadata)()                                                                                                  |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CssMetaData](https://openjfx.io/javadoc/25/javafx.graphics/javafx/css/CssMetaData.html)<? extends [Styleable](https://openjfx.io/javadoc/25/javafx.graphics/javafx/css/Styleable.html), ?>>        | [getControlCssMetaData](#getcontrolcssmetadata)()                                                                                              |             |
+| Modifier and Type                                                                                                  | Method                                                                                                                                         | Description |
+|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public final [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html) | [colorDefinitionProperty](#colordefinitionproperty)()                                                                                          |             |
+| public final [ColorDefinition](../../../../../../io/github/qishr/cascara/ui/color/ColorDefinition.md)              | [getColorDefinition](#getcolordefinition)()                                                                                                    |             |
+| public final void                                                                                                  | [setColorDefinition](#setcolordefinition)([ColorDefinition](../../../../../../io/github/qishr/cascara/ui/color/ColorDefinition.md) definition) |             |
+| public final [DoubleProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/DoubleProperty.html) | [hueProperty](#hueproperty)()                                                                                                                  |             |
+| public final double                                                                                                | [getHue](#gethue)()                                                                                                                            |             |
+| public final [DoubleProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/DoubleProperty.html) | [saturationProperty](#saturationproperty)()                                                                                                    |             |
+| public final double                                                                                                | [getSaturation](#getsaturation)()                                                                                                              |             |
+| public final [DoubleProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/DoubleProperty.html) | [brightnessProperty](#brightnessproperty)()                                                                                                    |             |
+| public final double                                                                                                | [getBrightness](#getbrightness)()                                                                                                              |             |
+| public final [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html) | [colorProperty](#colorproperty)()                                                                                                              |             |
+| public final [Color](https://openjfx.io/javadoc/25/javafx.graphics/javafx/scene/paint/Color.html)                  | [getColor](#getcolor)()                                                                                                                        |             |
+| public final void                                                                                                  | [setColor](#setcolor)([Color](https://openjfx.io/javadoc/25/javafx.graphics/javafx/scene/paint/Color.html) c)                                  |             |
+| public void                                                                                                        | [setOnChange](#setonchange)([OnChangeHandler](../../../../../../io/github/qishr/cascara/ui/control/ColorWheel.OnChangeHandler.md) onChange)    |             |
+| public void                                                                                                        | [onChange](#onchange)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value)                      |             |
+| protected [Skin](https://openjfx.io/javadoc/25/javafx.controls/javafx/scene/control/Skin.html)                     | [createDefaultSkin](#createdefaultskin)()                                                                                                      |             |
+| public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)             | [getClassCssMetaData](#getclasscssmetadata)()                                                                                                  |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)                    | [getControlCssMetaData](#getcontrolcssmetadata)()                                                                                              |             |
 
 
 
@@ -51,7 +51,7 @@ Package [io.github.qishr.cascara.ui.control](index.md)
 
 ### colorDefinitionProperty
 
-<span style="font-family: monospace; font-size: 80%;">public final [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)<[ColorDefinition](../../../../../../io/github/qishr/cascara/ui/color/ColorDefinition.md)> __colorDefinitionProperty__()</span>
+<span style="font-family: monospace; font-size: 80%;">public final [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html) __colorDefinitionProperty__()</span>
 
 
 
@@ -132,7 +132,7 @@ Package [io.github.qishr.cascara.ui.control](index.md)
 
 ### colorProperty
 
-<span style="font-family: monospace; font-size: 80%;">public final [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)<[Color](https://openjfx.io/javadoc/25/javafx.graphics/javafx/scene/paint/Color.html)> __colorProperty__()</span>
+<span style="font-family: monospace; font-size: 80%;">public final [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html) __colorProperty__()</span>
 
 
 
@@ -177,7 +177,7 @@ Package [io.github.qishr.cascara.ui.control](index.md)
 
 ### createDefaultSkin
 
-<span style="font-family: monospace; font-size: 80%;">protected [Skin](https://openjfx.io/javadoc/25/javafx.controls/javafx/scene/control/Skin.html)<[ColorWheel](../../../../../../io/github/qishr/cascara/ui/control/ColorWheel.md)> __createDefaultSkin__()</span>
+<span style="font-family: monospace; font-size: 80%;">protected [Skin](https://openjfx.io/javadoc/25/javafx.controls/javafx/scene/control/Skin.html) __createDefaultSkin__()</span>
 
 
 
@@ -186,7 +186,7 @@ Package [io.github.qishr.cascara.ui.control](index.md)
 
 ### getClassCssMetaData
 
-<span style="font-family: monospace; font-size: 80%;">public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CssMetaData](https://openjfx.io/javadoc/25/javafx.graphics/javafx/css/CssMetaData.html)<? extends [Styleable](https://openjfx.io/javadoc/25/javafx.graphics/javafx/css/Styleable.html), ?>> __getClassCssMetaData__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getClassCssMetaData__()</span>
 
 
 
@@ -195,7 +195,7 @@ Package [io.github.qishr.cascara.ui.control](index.md)
 
 ### getControlCssMetaData
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CssMetaData](https://openjfx.io/javadoc/25/javafx.graphics/javafx/css/CssMetaData.html)<? extends [Styleable](https://openjfx.io/javadoc/25/javafx.graphics/javafx/css/Styleable.html), ?>> __getControlCssMetaData__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getControlCssMetaData__()</span>
 
 
 

@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.lang.yaml.diagnostic](index.md)
                 io.github.qishr.cascara.lang.yaml.diagnostic.YamlDiagnosticMessage<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [DiagnosticMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+    [LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ----
@@ -584,7 +584,7 @@ public static final  UNEXPECTED_NODE_TYPE
 
 **Specified By:**
 
-[DiagnosticMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+[LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ---
@@ -597,7 +597,7 @@ public static final  UNEXPECTED_NODE_TYPE
 
 **Specified By:**
 
-[DiagnosticMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+[LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ---

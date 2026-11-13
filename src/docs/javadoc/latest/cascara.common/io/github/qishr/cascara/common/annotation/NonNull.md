@@ -10,7 +10,7 @@ All Implemented Interfaces:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@java.lang.annotation.Target(FIELD,METHOD,PARAMETER,LOCAL_VARIABLE)<br/>
+<span style="font-family: monospace; font-size: 80%;">@java.lang.annotation.Target(FIELD,METHOD,PARAMETER,LOCAL_VARIABLE,TYPE_USE)<br/>
 @java.lang.annotation.Documented<br/>
 @java.lang.annotation.Retention(CLASS)<br/>
 public @interface __NonNull__</span>

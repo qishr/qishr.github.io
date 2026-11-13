@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.common.trackable](index.md)
                 io.github.qishr.cascara.common.trackable.TrackingMessage<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [DiagnosticMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+    [LocalizableMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ----
@@ -154,7 +154,7 @@ public static final  OPTION_PROVIDER_INIT_ERROR
 
 **Specified By:**
 
-[DiagnosticMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+[LocalizableMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ---
@@ -167,7 +167,7 @@ public static final  OPTION_PROVIDER_INIT_ERROR
 
 **Specified By:**
 
-[DiagnosticMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+[LocalizableMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ---

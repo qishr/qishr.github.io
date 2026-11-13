@@ -15,13 +15,13 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                                                                                                  | Method                                                                                                                          | Description |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)> | [getValuesMap](#getvaluesmap)()                                                                                                 |             |
-| public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]                                                                                                                                                                                     | [getValues](#getvalues)()                                                                                                       |             |
-| public abstract [Trackable](../../../../../../io/github/qishr/cascara/common/trackable/Trackable.md)[]                                                                                                                                                                                             | [getTrackables](#gettrackables)()                                                                                               |             |
-| public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Trackable](../../../../../../io/github/qishr/cascara/common/trackable/Trackable.md)>         | [getTrackablesMap](#gettrackablesmap)()                                                                                         |             |
-| public abstract [Trackable](../../../../../../io/github/qishr/cascara/common/trackable/Trackable.md)                                                                                                                                                                                               | [getTrackable](#gettrackable)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key) |             |
+| Modifier and Type                                                                                              | Method                                                                                                                          | Description |
+|----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)         | [getValuesMap](#getvaluesmap)()                                                                                                 |             |
+| public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] | [getValues](#getvalues)()                                                                                                       |             |
+| public abstract [Trackable](../../../../../../io/github/qishr/cascara/common/trackable/Trackable.md)[]         | [getTrackables](#gettrackables)()                                                                                               |             |
+| public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)         | [getTrackablesMap](#gettrackablesmap)()                                                                                         |             |
+| public abstract [Trackable](../../../../../../io/github/qishr/cascara/common/trackable/Trackable.md)           | [getTrackable](#gettrackable)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key) |             |
 
 
 
@@ -29,7 +29,7 @@ All Known Implementing Classes:<br/>
 
 ### getValuesMap
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)> __getValuesMap__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html) __getValuesMap__()</span>
 
 
 
@@ -56,7 +56,7 @@ All Known Implementing Classes:<br/>
 
 ### getTrackablesMap
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Trackable](../../../../../../io/github/qishr/cascara/common/trackable/Trackable.md)> __getTrackablesMap__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html) __getTrackablesMap__()</span>
 
 
 

@@ -30,7 +30,7 @@ Standard implementation for JSON serialization.
 | protected [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)          | [serializeKey](#serializekey)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)                                                                                                                             |             |
 | public [ContentType](../../../../../../../../cascara.common/io/github/qishr/cascara/common/util/ContentType.md) | [getContentType](#getcontenttype)()                                                                                                                                                                                                                         |             |
 | public [JsonSerializer](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonSerializer.md)     | [setReporter](#setreporter)([Reporter](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/report/Reporter.md) reporter)                                                                                                       |             |
-| public [JsonSerializer](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonSerializer.md)     | [setOptions](#setoptions)([LanguageOptions](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/LanguageOptions.md)<?> options)                                                                                                 |             |
+| public [JsonSerializer](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonSerializer.md)     | [setConfig](#setconfig)([LanguageConfig](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/LanguageConfig.md)<?> options)                                                                                                     |             |
 | public [JsonSerializer](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonSerializer.md)     | [setParser](#setparser)([AstParser](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/processor/AstParser.md)<[JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md), ?, ?> parser)                    |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)             | [toString](#tostring)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                                             |             |
 | public [JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)                       | [toAst](#toast)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)                                                                                                                                   |             |
@@ -49,7 +49,7 @@ Standard implementation for JSON serialization.
 
 ### Methods inherited from [AbstractSerializer](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/processor/AbstractSerializer.md)
 
-warn, trace, error, serialize, debug, registerTypeDescriptor, deserialize, warnInaccessible, setProviderFactoryEnabled, setHeuristicMatchEnabled, getServiceProperties, report, deserialize, warnInaccessible
+trace, error, serialize, debug, warn, registerTypeDescriptor, deserialize, warnInaccessible, setProviderFactoryEnabled, setHeuristicMatchEnabled, getServiceProperties, report, deserialize, warnInaccessible
 
 
 ## Method Details
@@ -98,15 +98,15 @@ warn, trace, error, serialize, debug, registerTypeDescriptor, deserialize, warnI
 
 ---
 
-### setOptions
+### setConfig
 
-<span style="font-family: monospace; font-size: 80%;">public [JsonSerializer](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonSerializer.md) __setOptions__([LanguageOptions](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/LanguageOptions.md)<?> options)</span>
+<span style="font-family: monospace; font-size: 80%;">public [JsonSerializer](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonSerializer.md) __setConfig__([LanguageConfig](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/LanguageConfig.md)<?> options)</span>
 
 
 
 **Overrides:**
 
-[AbstractSerializer](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/processor/AbstractSerializer.md#setoptions)
+[AbstractSerializer](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/processor/AbstractSerializer.md#setconfig)
 
 
 ---

@@ -20,14 +20,14 @@ Package [io.github.qishr.cascara.common.exec](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                              | Method                                                                                                                         | Description                                                                                                    |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| public static [JvmProcess](../../../../../../io/github/qishr/cascara/common/exec/JvmProcess.md)                                                                                                                                | [forClass](#forclass)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> mainClass) |                                                                                                                |
-| public [JvmProcess](../../../../../../io/github/qishr/cascara/common/exec/JvmProcess.md)                                                                                                                                       | [setOptions](#setoptions)([JvmOptions](../../../../../../io/github/qishr/cascara/common/exec/JvmOptions.md) options)           |                                                                                                                |
-| public [Response](../../../../../../io/github/qishr/cascara/common/exec/JvmProcess.Response.md)                                                                                                                                | [run](#run)()                                                                                                                  | Synchronous blocking execution (Preserved signature for backwards compatibility).                              |
-| public [Response](../../../../../../io/github/qishr/cascara/common/exec/JvmProcess.Response.md)                                                                                                                                | [run](#run)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) input)                | Executes the process synchronously with optional standard input, blocking the calling thread until completion. |
-| public [CompletableFuture](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/concurrent/CompletableFuture.html)<[Response](../../../../../../io/github/qishr/cascara/common/exec/JvmProcess.Response.md)> | [runAsync](#runasync)()                                                                                                        | Non-blocking background execution.                                                                             |
-| public [CompletableFuture](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/concurrent/CompletableFuture.html)<[Response](../../../../../../io/github/qishr/cascara/common/exec/JvmProcess.Response.md)> | [runAsync](#runasync)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) input)      | Non-blocking background execution with input.                                                                  |
+| Modifier and Type                                                                                                                    | Method                                                                                                                         | Description                                                                                                    |
+|--------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| public static [JvmProcess](../../../../../../io/github/qishr/cascara/common/exec/JvmProcess.md)                                      | [forClass](#forclass)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> mainClass) |                                                                                                                |
+| public [JvmProcess](../../../../../../io/github/qishr/cascara/common/exec/JvmProcess.md)                                             | [setConfig](#setconfig)([JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) config)                |                                                                                                                |
+| public [Response](../../../../../../io/github/qishr/cascara/common/exec/JvmProcess.Response.md)                                      | [run](#run)()                                                                                                                  | Synchronous blocking execution (Preserved signature for backwards compatibility).                              |
+| public [Response](../../../../../../io/github/qishr/cascara/common/exec/JvmProcess.Response.md)                                      | [run](#run)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) input)                | Executes the process synchronously with optional standard input, blocking the calling thread until completion. |
+| public [CompletableFuture](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/concurrent/CompletableFuture.html) | [runAsync](#runasync)()                                                                                                        | Non-blocking background execution.                                                                             |
+| public [CompletableFuture](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/concurrent/CompletableFuture.html) | [runAsync](#runasync)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) input)      | Non-blocking background execution with input.                                                                  |
 
 
 
@@ -42,9 +42,9 @@ Package [io.github.qishr.cascara.common.exec](index.md)
 
 ---
 
-### setOptions
+### setConfig
 
-<span style="font-family: monospace; font-size: 80%;">public [JvmProcess](../../../../../../io/github/qishr/cascara/common/exec/JvmProcess.md) __setOptions__([JvmOptions](../../../../../../io/github/qishr/cascara/common/exec/JvmOptions.md) options)</span>
+<span style="font-family: monospace; font-size: 80%;">public [JvmProcess](../../../../../../io/github/qishr/cascara/common/exec/JvmProcess.md) __setConfig__([JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) config)</span>
 
 
 
@@ -85,7 +85,7 @@ the process execution response payload
 
 ### runAsync
 
-<span style="font-family: monospace; font-size: 80%;">public [CompletableFuture](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/concurrent/CompletableFuture.html)<[Response](../../../../../../io/github/qishr/cascara/common/exec/JvmProcess.Response.md)> __runAsync__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [CompletableFuture](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/concurrent/CompletableFuture.html) __runAsync__()</span>
 
 Non-blocking background execution.
 
@@ -94,7 +94,7 @@ Non-blocking background execution.
 
 ### runAsync
 
-<span style="font-family: monospace; font-size: 80%;">public [CompletableFuture](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/concurrent/CompletableFuture.html)<[Response](../../../../../../io/github/qishr/cascara/common/exec/JvmProcess.Response.md)> __runAsync__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) input)</span>
+<span style="font-family: monospace; font-size: 80%;">public [CompletableFuture](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/concurrent/CompletableFuture.html) __runAsync__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) input)</span>
 
 Non-blocking background execution with input.
 

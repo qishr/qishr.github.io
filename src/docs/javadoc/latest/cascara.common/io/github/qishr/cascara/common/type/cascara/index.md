@@ -6,15 +6,15 @@
 
 === "All Classes and Interfaces"
 
-    | Class                                                         | Description |
-    |---------------------------------------------------------------|-------------|
-    | [DiagnosticMessageDescriptor](DiagnosticMessageDescriptor.md) |             |
+    | Class                                                           | Description |
+    |-----------------------------------------------------------------|-------------|
+    | [LocalizableMessageDescriptor](LocalizableMessageDescriptor.md) |             |
 
 
 === "Classes"
 
-    | Class                                                         | Description |
-    |---------------------------------------------------------------|-------------|
-    | [DiagnosticMessageDescriptor](DiagnosticMessageDescriptor.md) |             |
+    | Class                                                           | Description |
+    |-----------------------------------------------------------------|-------------|
+    | [LocalizableMessageDescriptor](LocalizableMessageDescriptor.md) |             |
 
 

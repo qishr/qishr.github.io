@@ -23,13 +23,13 @@ Enclosing Class:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                       | Method                                                                                                            | Description |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------|
-| public static [ThemableObject](../../../../../../io/github/qishr/cascara/ui/theme/ThemeEngine.ThemableObject.md)                                                                                        | [of](#of)([Scene](https://openjfx.io/javadoc/25/javafx.graphics/javafx/scene/Scene.html) scene)                   |             |
-| public static [ThemableObject](../../../../../../io/github/qishr/cascara/ui/theme/ThemeEngine.ThemableObject.md)                                                                                        | [of](#of)([Parent](https://openjfx.io/javadoc/25/javafx.graphics/javafx/scene/Parent.html) parent)                |             |
-| public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getStylesheets](#getstylesheets)()                                                                               |             |
-| public boolean                                                                                                                                                                                          | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o) |             |
-| public int                                                                                                                                                                                              | [hashCode](#hashcode)()                                                                                           |             |
+| Modifier and Type                                                                                                | Method                                                                                                            | Description |
+|------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------|
+| public static [ThemableObject](../../../../../../io/github/qishr/cascara/ui/theme/ThemeEngine.ThemableObject.md) | [of](#of)([Scene](https://openjfx.io/javadoc/25/javafx.graphics/javafx/scene/Scene.html) scene)                   |             |
+| public static [ThemableObject](../../../../../../io/github/qishr/cascara/ui/theme/ThemeEngine.ThemableObject.md) | [of](#of)([Parent](https://openjfx.io/javadoc/25/javafx.graphics/javafx/scene/Parent.html) parent)                |             |
+| public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)        | [getStylesheets](#getstylesheets)()                                                                               |             |
+| public boolean                                                                                                   | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o) |             |
+| public int                                                                                                       | [hashCode](#hashcode)()                                                                                           |             |
 
 
 
@@ -55,7 +55,7 @@ Enclosing Class:<br/>
 
 ### getStylesheets
 
-<span style="font-family: monospace; font-size: 80%;">public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> __getStylesheets__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html) __getStylesheets__()</span>
 
 
 

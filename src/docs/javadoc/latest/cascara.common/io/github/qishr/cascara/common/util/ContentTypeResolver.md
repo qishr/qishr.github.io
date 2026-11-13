@@ -18,12 +18,12 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                             | Method                                                                                                                                                                                                                  | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public abstract [ContentType](../../../../../../io/github/qishr/cascara/common/util/ContentType.md)                                                                                           | [resolve](#resolve)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) type)                                                                                                  |             |
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ContentType](../../../../../../io/github/qishr/cascara/common/util/ContentType.md)> | [getAll](#getall)()                                                                                                                                                                                                     |             |
-| public abstract void                                                                                                                                                                          | [add](#add)([ContentType](../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)                                                                                                            |             |
-| public abstract void                                                                                                                                                                          | [addAll](#addall)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [ContentType](../../../../../../io/github/qishr/cascara/common/util/ContentType.md)> contentTypes) |             |
+| Modifier and Type                                                                                        | Method                                                                                                                                                                                                                              | Description |
+|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public abstract [ContentType](../../../../../../io/github/qishr/cascara/common/util/ContentType.md)      | [resolve](#resolve)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) type)                                                                                                              |             |
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) | [getAll](#getall)()                                                                                                                                                                                                                 |             |
+| public abstract void                                                                                     | [add](#add)([ContentType](../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)                                                                                                                        |             |
+| public abstract void                                                                                     | [addAll](#addall)([Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<? extends [ContentType](../../../../../../io/github/qishr/cascara/common/util/ContentType.md)> contentTypes) |             |
 
 
 
@@ -40,7 +40,7 @@ All Known Implementing Classes:<br/>
 
 ### getAll
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ContentType](../../../../../../io/github/qishr/cascara/common/util/ContentType.md)> __getAll__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getAll__()</span>
 
 
 
@@ -58,7 +58,7 @@ All Known Implementing Classes:<br/>
 
 ### addAll
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __addAll__([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [ContentType](../../../../../../io/github/qishr/cascara/common/util/ContentType.md)> contentTypes)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __addAll__([Collection](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Collection.html)<? extends [ContentType](../../../../../../io/github/qishr/cascara/common/util/ContentType.md)> contentTypes)</span>
 
 
 

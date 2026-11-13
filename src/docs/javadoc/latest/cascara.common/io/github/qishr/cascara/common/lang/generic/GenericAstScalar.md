@@ -26,19 +26,19 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                 | Method                                                                                                                               | Description |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [GenericAstScalar](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstScalar.md)                                                                                   | [setQuoteStyle](#setquotestyle)([QuoteStyle](../../../../../../../io/github/qishr/cascara/common/lang/util/QuoteStyle.md) style)     |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                               | [getLexeme](#getlexeme)()                                                                                                            |             |
-| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)                                                                                               | [getPrimitive](#getprimitive)()                                                                                                      |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)>     | [getChildren](#getchildren)()                                                                                                        |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/CommentAstNode.md)> | [getComments](#getcomments)()                                                                                                        |             |
-| public [QuoteStyle](../../../../../../../io/github/qishr/cascara/common/lang/util/QuoteStyle.md)                                                                                                  | [getQuoteStyle](#getquotestyle)()                                                                                                    |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                               | [getContent](#getcontent)()                                                                                                          |             |
-| public boolean                                                                                                                                                                                    | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                    |             |
-| public int                                                                                                                                                                                        | [hashCode](#hashcode)()                                                                                                              |             |
-| public [PrimitiveType](../../../../../../../io/github/qishr/cascara/common/type/PrimitiveType.md)                                                                                                 | [getPrimitiveType](#getprimitivetype)()                                                                                              |             |
-| public [ScalarAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/ScalarAstNode.md)<[AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)>         | [setPrimitive](#setprimitive)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue) |             |
+| Modifier and Type                                                                                               | Method                                                                                                                               | Description |
+|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [GenericAstScalar](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstScalar.md) | [setQuoteStyle](#setquotestyle)([QuoteStyle](../../../../../../../io/github/qishr/cascara/common/lang/util/QuoteStyle.md) style)     |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)             | [getLexeme](#getlexeme)()                                                                                                            |             |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)             | [getPrimitive](#getprimitive)()                                                                                                      |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)                 | [getChildren](#getchildren)()                                                                                                        |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)                 | [getComments](#getcomments)()                                                                                                        |             |
+| public [QuoteStyle](../../../../../../../io/github/qishr/cascara/common/lang/util/QuoteStyle.md)                | [getQuoteStyle](#getquotestyle)()                                                                                                    |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)             | [getContent](#getcontent)()                                                                                                          |             |
+| public boolean                                                                                                  | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                    |             |
+| public int                                                                                                      | [hashCode](#hashcode)()                                                                                                              |             |
+| public [PrimitiveType](../../../../../../../io/github/qishr/cascara/common/type/PrimitiveType.md)               | [getPrimitiveType](#getprimitivetype)()                                                                                              |             |
+| public [ScalarAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/ScalarAstNode.md)           | [setPrimitive](#setprimitive)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue) |             |
 
 
 ### Methods inherited from [GenericAstNode](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstNode.md)
@@ -91,7 +91,7 @@ public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/jav
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getChildren__()</span>
 
 
 
@@ -100,7 +100,7 @@ public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/jav
 
 ### getComments
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/CommentAstNode.md)> __getComments__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getComments__()</span>
 
 
 
@@ -174,7 +174,7 @@ public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/jav
 
 ### setPrimitive
 
-<span style="font-family: monospace; font-size: 80%;">public [ScalarAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/ScalarAstNode.md)<[AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)> __setPrimitive__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue)</span>
+<span style="font-family: monospace; font-size: 80%;">public [ScalarAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/ScalarAstNode.md) __setPrimitive__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmValue)</span>
 
 
 

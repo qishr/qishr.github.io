@@ -23,9 +23,9 @@ Package [io.github.qishr.cascara.common.diagnostic.format](index.md)
 
 ## Constructor Summary
 
-| Constructor                                                                                                                          | Description |
-|--------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| ColoredLogFormatter([FormatOptions](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatOptions.md) options) |             |
+| Constructor                                                                                                                       | Description |
+|-----------------------------------------------------------------------------------------------------------------------------------|-------------|
+| ColoredLogFormatter([FormatConfig](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatConfig.md) config) |             |
 
 
 
@@ -39,7 +39,7 @@ Package [io.github.qishr.cascara.common.diagnostic.format](index.md)
 
 ### Methods inherited from [PlainLogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/PlainLogFormatter.md)
 
-format, withFields, setOptions
+format, withFields, setConfig, formatSource
 
 
 ## Field Details

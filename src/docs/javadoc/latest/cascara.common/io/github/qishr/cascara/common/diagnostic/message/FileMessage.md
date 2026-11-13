@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.common.diagnostic.message](index.md)
                 io.github.qishr.cascara.common.diagnostic.message.FileMessage<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+    [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ----
@@ -134,7 +134,7 @@ public static final  DELETE_ERROR
 
 **Specified By:**
 
-[DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ---
@@ -147,7 +147,7 @@ public static final  DELETE_ERROR
 
 **Specified By:**
 
-[DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ---

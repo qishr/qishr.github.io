@@ -2,13 +2,13 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 # Class ClassPath
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [io.github.qishr.cascara.common.util.AbstractLibraryScanner](../../../../../../io/github/qishr/cascara/common/util/AbstractLibraryScanner.md)<br/>
+        [io.github.qishr.cascara.common.util.AbstractClassFinder](../../../../../../io/github/qishr/cascara/common/util/AbstractClassFinder.md)<br/>
                 io.github.qishr.cascara.common.util.ClassPath<br/>
 <br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __ClassPath__<br/>extends [AbstractLibraryScanner](../../../../../../io/github/qishr/cascara/common/util/AbstractLibraryScanner.md)
+<span style="font-family: monospace; font-size: 80%;">public class __ClassPath__<br/>extends [AbstractClassFinder](../../../../../../io/github/qishr/cascara/common/util/AbstractClassFinder.md)
 </span>
 
 
@@ -29,57 +29,15 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 | Modifier and Type                                                                                      | Method                                                                                                                                                                                                                                                                                                                                               | Description |
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| protected void                                                                                         | [addModuleDescriptor](#addmoduledescriptor)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) moduleName, [ModuleDescriptor](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/module/ModuleDescriptor.html) descriptor)                                                             |             |
-| protected void                                                                                         | [addModuleLocation](#addmodulelocation)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) moduleName, [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) path)                                                                                                  |             |
-| protected void                                                                                         | [addClassToModule](#addclasstomodule)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) className, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) moduleName)                                                                                               |             |
 | protected [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [scanDirectoryUrl](#scandirectoryurl)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) directory, [URL](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URL.html)[] urls, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) moduleName) |             |
 
 
-### Methods inherited from [AbstractLibraryScanner](../../../../../../io/github/qishr/cascara/common/util/AbstractLibraryScanner.md)
+### Methods inherited from [AbstractClassFinder](../../../../../../io/github/qishr/cascara/common/util/AbstractClassFinder.md)
 
-getClasses, scanDirectory, pathSet, scanJar, error, scanClassFile, addClass, isExcluded
+getClasses, getPath, scanDirectory, register, pathSet, scanJar, getDiscoveredModules, error, scanClassFile, addModuleDescriptor, isExcluded, containsClass
 
 
 ## Method Details
-
-### addModuleDescriptor
-
-<span style="font-family: monospace; font-size: 80%;">protected void __addModuleDescriptor__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) moduleName, [ModuleDescriptor](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/module/ModuleDescriptor.html) descriptor)</span>
-
-
-
-**Overrides:**
-
-[AbstractLibraryScanner](../../../../../../../cascara.common/io/github/qishr/cascara/common/util/AbstractLibraryScanner.md#addmoduledescriptor)
-
-
----
-
-### addModuleLocation
-
-<span style="font-family: monospace; font-size: 80%;">protected void __addModuleLocation__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) moduleName, [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) path)</span>
-
-
-
-**Overrides:**
-
-[AbstractLibraryScanner](../../../../../../../cascara.common/io/github/qishr/cascara/common/util/AbstractLibraryScanner.md#addmodulelocation)
-
-
----
-
-### addClassToModule
-
-<span style="font-family: monospace; font-size: 80%;">protected void __addClassToModule__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) className, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) moduleName)</span>
-
-
-
-**Overrides:**
-
-[AbstractLibraryScanner](../../../../../../../cascara.common/io/github/qishr/cascara/common/util/AbstractLibraryScanner.md#addclasstomodule)
-
-
----
 
 ### scanDirectoryUrl
 

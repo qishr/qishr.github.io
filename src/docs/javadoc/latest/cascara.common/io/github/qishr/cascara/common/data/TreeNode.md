@@ -15,10 +15,10 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                           | Method                        | Description |
-|-------------------------------------------------------------------------------------------------------------|-------------------------------|-------------|
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> | [getChildren](#getchildren)() |             |
-| public abstract T                                                                                           | [getParent](#getparent)()     |             |
+| Modifier and Type                                                                                        | Method                        | Description |
+|----------------------------------------------------------------------------------------------------------|-------------------------------|-------------|
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) | [getChildren](#getchildren)() |             |
+| public abstract T                                                                                        | [getParent](#getparent)()     |             |
 
 
 
@@ -26,7 +26,7 @@ All Known Implementing Classes:<br/>
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getChildren__()</span>
 
 
 

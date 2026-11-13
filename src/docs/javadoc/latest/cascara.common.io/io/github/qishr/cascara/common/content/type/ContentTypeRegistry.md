@@ -29,10 +29,10 @@ Package [io.github.qishr.cascara.common.content.type](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                         | Method                                                                                                                                                                                                                                | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ContentType](../../../../../../../../cascara.common/io/github/qishr/cascara/common/util/ContentType.md)> | [getRecords](#getrecords)()                                                                                                                                                                                                           |             |
-| public void                                                                                                                                                                                               | [setRecords](#setrecords)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ContentType](../../../../../../../../cascara.common/io/github/qishr/cascara/common/util/ContentType.md)> records) |             |
+| Modifier and Type                                                                               | Method                                                                                                                                                                                                                                | Description |
+|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) | [getRecords](#getrecords)()                                                                                                                                                                                                           |             |
+| public void                                                                                     | [setRecords](#setrecords)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ContentType](../../../../../../../../cascara.common/io/github/qishr/cascara/common/util/ContentType.md)> records) |             |
 
 
 
@@ -68,7 +68,7 @@ public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/
 
 ### getRecords
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ContentType](../../../../../../../../cascara.common/io/github/qishr/cascara/common/util/ContentType.md)> __getRecords__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getRecords__()</span>
 
 
 

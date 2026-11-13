@@ -23,6 +23,10 @@ Package [io.github.qishr.cascara.common.diagnostic.report](index.md)
 | public void       | [close](#close)()                                                                                                             |             |
 
 
+### Methods inherited from [ReportWriter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/ReportWriter.md)
+
+write
+
 
 ## Method Details
 

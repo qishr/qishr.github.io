@@ -19,7 +19,7 @@ Direct Known Subtypes:<br/>
 
 | Modifier and Type | Method                                                                                                                        | Description |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public void       | [write](#write)(int indent, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) str) |             |
+| public void       | [write](#write)(int indent, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) obj) |             |
 | public void       | [write](#write)(char[] cbuf, int off, int len)                                                                                |             |
 | public void       | [flush](#flush)()                                                                                                             |             |
 | public void       | [close](#close)()                                                                                                             |             |
@@ -30,7 +30,7 @@ Direct Known Subtypes:<br/>
 
 ### write
 
-<span style="font-family: monospace; font-size: 80%;">public void __write__(int indent, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) str)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __write__(int indent, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) obj)</span>
 
 
 

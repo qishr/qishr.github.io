@@ -15,16 +15,16 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                    | Method                              | Description |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|-------------|
-| public abstract int                                                                                                                                                                                                  | [getStartLine](#getstartline)()     |             |
-| public abstract int                                                                                                                                                                                                  | [getStartColumn](#getstartcolumn)() |             |
-| public abstract int                                                                                                                                                                                                  | [getEndLine](#getendline)()         |             |
-| public abstract int                                                                                                                                                                                                  | [getEndColumn](#getendcolumn)()     |             |
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)>               | [getChildren](#getchildren)()       |             |
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [CommentAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/CommentAstNode.md)> | [getComments](#getcomments)()       |             |
-| public default [Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md)                                                                                                                      | [getToken](#gettoken)()             |             |
-| public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                          | [asString](#asstring)()             |             |
+| Modifier and Type                                                                                           | Method                              | Description |
+|-------------------------------------------------------------------------------------------------------------|-------------------------------------|-------------|
+| public abstract int                                                                                         | [getStartLine](#getstartline)()     |             |
+| public abstract int                                                                                         | [getStartColumn](#getstartcolumn)() |             |
+| public abstract int                                                                                         | [getEndLine](#getendline)()         |             |
+| public abstract int                                                                                         | [getEndColumn](#getendcolumn)()     |             |
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)    | [getChildren](#getchildren)()       |             |
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)    | [getComments](#getcomments)()       |             |
+| public default [Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md)             | [getToken](#gettoken)()             |             |
+| public default [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [asString](#asstring)()             |             |
 
 
 
@@ -68,7 +68,7 @@ All Known Implementing Classes:<br/>
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getChildren__()</span>
 
 
 
@@ -77,7 +77,7 @@ All Known Implementing Classes:<br/>
 
 ### getComments
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [CommentAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/CommentAstNode.md)> __getComments__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getComments__()</span>
 
 
 

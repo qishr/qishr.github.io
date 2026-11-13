@@ -25,21 +25,21 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                    | Method                                                                                                                     | Description |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|-------------|
-| protected [XmlTokenizer](../../../../../../../io/github/qishr/cascara/lang/xml/processor/XmlTokenizer.md)                                                                            | [self](#self)()                                                                                                            |             |
-| public int                                                                                                                                                                           | [getOffset](#getoffset)()                                                                                                  |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[XmlToken](../../../../../../../io/github/qishr/cascara/lang/xml/token/XmlToken.md)> | [tokenize](#tokenize)(byte[] data)                                                                                         |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[XmlToken](../../../../../../../io/github/qishr/cascara/lang/xml/token/XmlToken.md)> | [tokenize](#tokenize)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source) |             |
-| public void                                                                                                                                                                          | [open](#open)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)           |             |
-| public void                                                                                                                                                                          | [open](#open)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)     |             |
-| public [XmlToken](../../../../../../../io/github/qishr/cascara/lang/xml/token/XmlToken.md)                                                                                           | [nextToken](#nexttoken)()                                                                                                  |             |
-| public void                                                                                                                                                                          | [open](#open)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)           |             |
+| Modifier and Type                                                                                         | Method                                                                                                                     | Description |
+|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|-------------|
+| protected [XmlTokenizer](../../../../../../../io/github/qishr/cascara/lang/xml/processor/XmlTokenizer.md) | [self](#self)()                                                                                                            |             |
+| public int                                                                                                | [getOffset](#getoffset)()                                                                                                  |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)           | [tokenize](#tokenize)(byte[] data)                                                                                         |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)           | [tokenize](#tokenize)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source) |             |
+| public void                                                                                               | [open](#open)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)           |             |
+| public void                                                                                               | [open](#open)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)     |             |
+| public [XmlToken](../../../../../../../io/github/qishr/cascara/lang/xml/token/XmlToken.md)                | [nextToken](#nexttoken)()                                                                                                  |             |
+| public void                                                                                               | [open](#open)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)           |             |
 
 
 ### Methods inherited from [AbstractXmlProcessor](../../../../../../../io/github/qishr/cascara/lang/xml/processor/AbstractXmlProcessor.md)
 
-getContentType, getServiceProperties, setReporter, setOptions
+setConfig, getContentType, getServiceProperties, setReporter
 
 
 ## Method Details
@@ -72,7 +72,7 @@ getContentType, getServiceProperties, setReporter, setOptions
 
 ### tokenize
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[XmlToken](../../../../../../../io/github/qishr/cascara/lang/xml/token/XmlToken.md)> __tokenize__(byte[] data)</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __tokenize__(byte[] data)</span>
 
 
 
@@ -85,7 +85,7 @@ getContentType, getServiceProperties, setReporter, setOptions
 
 ### tokenize
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[XmlToken](../../../../../../../io/github/qishr/cascara/lang/xml/token/XmlToken.md)> __tokenize__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source)</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __tokenize__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source)</span>
 
 
 

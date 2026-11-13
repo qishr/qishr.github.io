@@ -21,16 +21,18 @@ public class __IsolatedExecutor__</span>
 
 ## Method Summary
 
-| Modifier and Type                                                                                               | Method                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Description |
-|-----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public static [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md)     | [forTask](#fortask)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [AbstractExecutionTask](../../../../../../io/github/qishr/cascara/common/exec/AbstractExecutionTask.md)<?, ?>> task, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> response)                                                                                                                                                                                        |             |
-| public static [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md)<T> | [run](#run)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [AbstractExecutionTask](../../../../../../io/github/qishr/cascara/common/exec/AbstractExecutionTask.md)<?, ?>> task, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) input, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> response, [JvmOptions](../../../../../../io/github/qishr/cascara/common/exec/JvmOptions.md) options) |             |
-| public [Serializer](../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)<?>           | [getSerializer](#getserializer)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |             |
-| public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md)            | [setOptions](#setoptions)([JvmOptions](../../../../../../io/github/qishr/cascara/common/exec/JvmOptions.md) options)                                                                                                                                                                                                                                                                                                                                                                                                                         |             |
-| public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md)            | [setIpcDebugEnabled](#setipcdebugenabled)(boolean enabled)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |             |
-| public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md)            | [setDiagnosticForwardingEnabled](#setdiagnosticforwardingenabled)(boolean enabled)                                                                                                                                                                                                                                                                                                                                                                                                                                                           |             |
-| public [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md)<T>        | [run](#run)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) input)                                                                                                                                                                                                                                                                                                                                                                                                                              |             |
-| public [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md)<T>        | [run](#run)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) input, [JvmOptions](../../../../../../io/github/qishr/cascara/common/exec/JvmOptions.md) options)                                                                                                                                                                                                                                                                                                                                   |             |
+| Modifier and Type                                                                                            | Method                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Description                                                                                    |
+|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| public static [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md)  | [forTask](#fortask)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [AbstractExecutionTask](../../../../../../io/github/qishr/cascara/common/exec/AbstractExecutionTask.md)<?, ?>> task, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> response)                                                                                                                                                                                        |                                                                                                |
+| public static [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md) | [run](#run)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [AbstractExecutionTask](../../../../../../io/github/qishr/cascara/common/exec/AbstractExecutionTask.md)<?, ?>> task, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) input, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> response, [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) jvmConfig) |                                                                                                |
+| public [Serializer](../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)           | [getSerializer](#getserializer)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                |
+| public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md)         | [setJvmConfig](#setjvmconfig)([JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) jvmConfig)                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                |
+| public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md)         | [setIpcDebug](#setipcdebug)(boolean enabled)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Enable debug output of IPC communications.                                                     |
+| public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md)         | [setDiagnosticForwarding](#setdiagnosticforwarding)(boolean enabled)                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Forward diagnostics from the child JVM process to this process's GlobalReporter.               |
+| public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md)         | [setExceptionForwarding](#setexceptionforwarding)(boolean enabled)                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Forward thrown exception to the parent JVM                                                     |
+| public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md)         | [setFilterDiagnosticsByLevel](#setfilterdiagnosticsbylevel)(boolean enabled)                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Filter forwarded diagnostic reporting by the level specified in this process's GlobalReporter. |
+| public [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md)        | [run](#run)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) input)                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                |
+| public [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md)        | [run](#run)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) input, [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) jvmConfig)                                                                                                                                                                                                                                                                                                                                   |                                                                                                |
 
 
 
@@ -47,68 +49,95 @@ public class __IsolatedExecutor__</span>
 
 ### run
 
-<span style="font-family: monospace; font-size: 80%;">public static [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md)<T> __run__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [AbstractExecutionTask](../../../../../../io/github/qishr/cascara/common/exec/AbstractExecutionTask.md)<?, ?>> task, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) input, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> response, [JvmOptions](../../../../../../io/github/qishr/cascara/common/exec/JvmOptions.md) options)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md) __run__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [AbstractExecutionTask](../../../../../../io/github/qishr/cascara/common/exec/AbstractExecutionTask.md)<?, ?>> task, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) input, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> response, [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) jvmConfig)</span>
 
 
+
+**Throws:**
+
+[Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html)
 
 
 ---
 
 ### getSerializer
 
-<span style="font-family: monospace; font-size: 80%;">public [Serializer](../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)<?> __getSerializer__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Serializer](../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md) __getSerializer__()</span>
 
 
 
 
 ---
 
-### setOptions
+### setJvmConfig
 
-<span style="font-family: monospace; font-size: 80%;">public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md) __setOptions__([JvmOptions](../../../../../../io/github/qishr/cascara/common/exec/JvmOptions.md) options)</span>
-
-
-
-
----
-
-### setIpcDebugEnabled
-
-<span style="font-family: monospace; font-size: 80%;">public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md) __setIpcDebugEnabled__(boolean enabled)</span>
+<span style="font-family: monospace; font-size: 80%;">public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md) __setJvmConfig__([JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) jvmConfig)</span>
 
 
 
 
 ---
 
-### setDiagnosticForwardingEnabled
+### setIpcDebug
 
-<span style="font-family: monospace; font-size: 80%;">public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md) __setDiagnosticForwardingEnabled__(boolean enabled)</span>
+<span style="font-family: monospace; font-size: 80%;">public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md) __setIpcDebug__(boolean enabled)</span>
+
+Enable debug output of IPC communications.
 
 
+---
+
+### setDiagnosticForwarding
+
+<span style="font-family: monospace; font-size: 80%;">public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md) __setDiagnosticForwarding__(boolean enabled)</span>
+
+Forward diagnostics from the child JVM process to this
+process's GlobalReporter.
+
+
+---
+
+### setExceptionForwarding
+
+<span style="font-family: monospace; font-size: 80%;">public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md) __setExceptionForwarding__(boolean enabled)</span>
+
+Forward thrown exception to the parent JVM
+
+
+---
+
+### setFilterDiagnosticsByLevel
+
+<span style="font-family: monospace; font-size: 80%;">public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md) __setFilterDiagnosticsByLevel__(boolean enabled)</span>
+
+Filter forwarded diagnostic reporting by the level specified in
+this process's GlobalReporter.
 
 
 ---
 
 ### run
 
-<span style="font-family: monospace; font-size: 80%;">public [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md)<T> __run__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) input)</span>
+<span style="font-family: monospace; font-size: 80%;">public [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md) __run__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) input)</span>
 
 
 
 **Throws:**
 
-[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
-, [InterruptedException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/InterruptedException.html)
+[Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html)
 
 
 ---
 
 ### run
 
-<span style="font-family: monospace; font-size: 80%;">public [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md)<T> __run__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) input, [JvmOptions](../../../../../../io/github/qishr/cascara/common/exec/JvmOptions.md) options)</span>
+<span style="font-family: monospace; font-size: 80%;">public [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md) __run__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) input, [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) jvmConfig)</span>
 
 
+
+**Throws:**
+
+[Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html)
 
 
 ---

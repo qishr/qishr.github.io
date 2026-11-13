@@ -6,16 +6,19 @@
 
 === "All Classes and Interfaces"
 
-    | Class                                                                   | Description |
-    |-------------------------------------------------------------------------|-------------|
-    | [AbstractLocalizableException](AbstractLocalizableException.md)         |             |
-    | [LocalizableException](LocalizableException.md)                         |             |
-    | [LocalizableIOException](LocalizableIOException.md)                     |             |
-    | [LocalizableRuntimeException](LocalizableRuntimeException.md)           |             |
-    | [LocatableException](LocatableException.md)                             |             |
-    | [UnexpectedNullParameterException](UnexpectedNullParameterException.md) |             |
-    | [UnexpectedNullReturnException](UnexpectedNullReturnException.md)       |             |
-    | [UnimplementedMethodException](UnimplementedMethodException.md)         |             |
+    | Class                                                                     | Description |
+    |---------------------------------------------------------------------------|-------------|
+    | [AbstractLocalizableException](AbstractLocalizableException.md)           |             |
+    | [LocalizableException](LocalizableException.md)                           |             |
+    | [LocalizableIOException](LocalizableIOException.md)                       |             |
+    | [LocalizableIllegalStateException](LocalizableIllegalStateException.md)   |             |
+    | [LocalizableInstantiationException](LocalizableInstantiationException.md) |             |
+    | [LocalizableRuntimeException](LocalizableRuntimeException.md)             |             |
+    | [LocalizableSecurityException](LocalizableSecurityException.md)           |             |
+    | [LocatableException](LocatableException.md)                               |             |
+    | [UnexpectedNullParameterException](UnexpectedNullParameterException.md)   |             |
+    | [UnexpectedNullReturnException](UnexpectedNullReturnException.md)         |             |
+    | [UnimplementedMethodException](UnimplementedMethodException.md)           |             |
 
 
 === "Interfaces"
@@ -27,14 +30,17 @@
 
 === "Classes"
 
-    | Class                                                                   | Description |
-    |-------------------------------------------------------------------------|-------------|
-    | [AbstractLocalizableException](AbstractLocalizableException.md)         |             |
-    | [LocalizableIOException](LocalizableIOException.md)                     |             |
-    | [LocalizableRuntimeException](LocalizableRuntimeException.md)           |             |
-    | [LocatableException](LocatableException.md)                             |             |
-    | [UnexpectedNullParameterException](UnexpectedNullParameterException.md) |             |
-    | [UnexpectedNullReturnException](UnexpectedNullReturnException.md)       |             |
-    | [UnimplementedMethodException](UnimplementedMethodException.md)         |             |
+    | Class                                                                     | Description |
+    |---------------------------------------------------------------------------|-------------|
+    | [AbstractLocalizableException](AbstractLocalizableException.md)           |             |
+    | [LocalizableIOException](LocalizableIOException.md)                       |             |
+    | [LocalizableIllegalStateException](LocalizableIllegalStateException.md)   |             |
+    | [LocalizableInstantiationException](LocalizableInstantiationException.md) |             |
+    | [LocalizableRuntimeException](LocalizableRuntimeException.md)             |             |
+    | [LocalizableSecurityException](LocalizableSecurityException.md)           |             |
+    | [LocatableException](LocatableException.md)                               |             |
+    | [UnexpectedNullParameterException](UnexpectedNullParameterException.md)   |             |
+    | [UnexpectedNullReturnException](UnexpectedNullReturnException.md)         |             |
+    | [UnimplementedMethodException](UnimplementedMethodException.md)           |             |
 
 

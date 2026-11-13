@@ -9,7 +9,7 @@
     | Class                                     | Description |
     |-------------------------------------------|-------------|
     | [CascaraJson](CascaraJson.md)             |             |
-    | [JsonOptions](JsonOptions.md)             |             |
+    | [JsonConfig](JsonConfig.md)               |             |
     | [JsonPrettyPrinter](JsonPrettyPrinter.md) |             |
     | [JsonSourceBuffer](JsonSourceBuffer.md)   |             |
     | [ProfilingHarness](ProfilingHarness.md)   |             |
@@ -27,7 +27,7 @@
     | Class                                     | Description |
     |-------------------------------------------|-------------|
     | [CascaraJson](CascaraJson.md)             |             |
-    | [JsonOptions](JsonOptions.md)             |             |
+    | [JsonConfig](JsonConfig.md)               |             |
     | [JsonPrettyPrinter](JsonPrettyPrinter.md) |             |
     | [ProfilingHarness](ProfilingHarness.md)   |             |
 

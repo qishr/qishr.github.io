@@ -17,7 +17,7 @@ All Implemented Interfaces:<br/>
 
 | Modifier and Type                                                                                                   | Method                                                                                                                                                                             | Description                    |
 |---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| public abstract [JsonSourceBuffer](../../../../../../../io/github/qishr/cascara/lang/json/util/JsonSourceBuffer.md) | [setOptions](#setoptions)([SourceBufferOptions](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/SourceBufferOptions.md) options)                   |                                |
+| public abstract [JsonSourceBuffer](../../../../../../../io/github/qishr/cascara/lang/json/util/JsonSourceBuffer.md) | [setConfig](#setconfig)([SourceBufferConfig](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/SourceBufferConfig.md) options)                       |                                |
 | public abstract void                                                                                                | [skipWhitespaceSimd](#skipwhitespacesimd)()                                                                                                                                        |                                |
 | public abstract byte                                                                                                | [peekByte](#peekbyte)()                                                                                                                                                            |                                |
 | public abstract byte                                                                                                | [advanceByte](#advancebyte)()                                                                                                                                                      |                                |
@@ -43,9 +43,9 @@ All Implemented Interfaces:<br/>
 
 ## Method Details
 
-### setOptions
+### setConfig
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [JsonSourceBuffer](../../../../../../../io/github/qishr/cascara/lang/json/util/JsonSourceBuffer.md) __setOptions__([SourceBufferOptions](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/SourceBufferOptions.md) options)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [JsonSourceBuffer](../../../../../../../io/github/qishr/cascara/lang/json/util/JsonSourceBuffer.md) __setConfig__([SourceBufferConfig](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/SourceBufferConfig.md) options)</span>
 
 
 

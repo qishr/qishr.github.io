@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.diagnostic.exception](index.md)
         io.github.qishr.cascara.common.diagnostic.exception.LocalizableException<br/>
 <br/>
 All Known Implementing Classes:<br/>
-    [LocalizableIOException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableIOException.md), [LocalizableRuntimeException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md), [AbstractLocalizableException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/AbstractLocalizableException.md)
+    [LocalizableIllegalStateException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableIllegalStateException.md), [LocalizableIOException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableIOException.md), [LocalizableSecurityException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableSecurityException.md), [LocalizableRuntimeException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md), [LocalizableInstantiationException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableInstantiationException.md), [AbstractLocalizableException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/AbstractLocalizableException.md)
 
 
 ----
@@ -15,28 +15,30 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                    | Method                                                                                                                                      | Description                                                              |
-|--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| public abstract [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)     | [getDiagnosticMessage](#getdiagnosticmessage)()                                                                                             | Returns a diagnostic message for the error.                              |
-| public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]                       | [getDetails](#getdetails)()                                                                                                                 | Returns the details, if any, to be used in formatting the error message. |
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                         | [getLocalizedMessage](#getlocalizedmessage)()                                                                                               | Returns a localized, formatted error message.                            |
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                         | [getMessage](#getmessage)()                                                                                                                 | Returns a localized, formatted error message.                            |
-| public abstract [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html)                   | [getCause](#getcause)()                                                                                                                     |                                                                          |
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                         | [toString](#tostring)()                                                                                                                     |                                                                          |
-| public abstract void                                                                                                                 | [printStackTrace](#printstacktrace)()                                                                                                       |                                                                          |
-| public abstract void                                                                                                                 | [printStackTrace](#printstacktrace)([PrintStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/PrintStream.html) s) |                                                                          |
-| public abstract void                                                                                                                 | [printStackTrace](#printstacktrace)([PrintWriter](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/PrintWriter.html) s) |                                                                          |
-| public abstract [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] | [getStackTrace](#getstacktrace)()                                                                                                           |                                                                          |
+| Modifier and Type                                                                                                                    | Method                                                                                                                                                                                                                                                              | Description                                                              |
+|--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| public abstract [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)   | [getLocalizableMessage](#getlocalizablemessage)()                                                                                                                                                                                                                   | Returns a localizable message for the error.                             |
+| public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]                       | [getDetails](#getdetails)()                                                                                                                                                                                                                                         | Returns the details, if any, to be used in formatting the error message. |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                         | [getLocalizedMessage](#getlocalizedmessage)()                                                                                                                                                                                                                       | Returns a localized, formatted error message.                            |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                         | [getMessage](#getmessage)()                                                                                                                                                                                                                                         | Returns a localized, formatted error message.                            |
+| public abstract [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html)                   | [getCause](#getcause)()                                                                                                                                                                                                                                             |                                                                          |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                         | [toString](#tostring)()                                                                                                                                                                                                                                             |                                                                          |
+| public abstract void                                                                                                                 | [printStackTrace](#printstacktrace)()                                                                                                                                                                                                                               |                                                                          |
+| public abstract void                                                                                                                 | [printStackTrace](#printstacktrace)([PrintStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/PrintStream.html) s)                                                                                                                         |                                                                          |
+| public abstract void                                                                                                                 | [printStackTrace](#printstacktrace)([PrintWriter](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/PrintWriter.html) s)                                                                                                                         |                                                                          |
+| public abstract [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] | [getStackTrace](#getstacktrace)()                                                                                                                                                                                                                                   |                                                                          |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                           | [formatMessage](#formatmessage)([DetailedMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/DetailedMessage.md) message)                                                                                                                       |                                                                          |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                           | [formatMessage](#formatmessage)([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |                                                                          |
 
 
 
 ## Method Details
 
-### getDiagnosticMessage
+### getLocalizableMessage
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) __getDiagnosticMessage__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) __getLocalizableMessage__()</span>
 
-Returns a diagnostic message for the error.
+Returns a localizable message for the error.
 
 
 ---
@@ -116,6 +118,24 @@ Returns a localized, formatted error message.
 ### getStackTrace
 
 <span style="font-family: monospace; font-size: 80%;">public abstract [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] __getStackTrace__()</span>
+
+
+
+
+---
+
+### formatMessage
+
+<span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __formatMessage__([DetailedMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/DetailedMessage.md) message)</span>
+
+
+
+
+---
+
+### formatMessage
+
+<span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __formatMessage__([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 
 

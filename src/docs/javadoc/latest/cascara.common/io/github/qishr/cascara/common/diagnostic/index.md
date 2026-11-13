@@ -8,6 +8,7 @@
 
     | Class                                         | Description                                                                                                                |
     |-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+    | [DetailedMessage](DetailedMessage.md)         |                                                                                                                            |
     | [Diagnostic](Diagnostic.md)                   | Represents a discrete event, log entry, or syntax/semantic problem identified during system runtime or source compilation. |
     | [DiagnosticBuilder](DiagnosticBuilder.md)     |                                                                                                                            |
     | [DiagnosticLocalizer](DiagnosticLocalizer.md) |                                                                                                                            |
@@ -24,6 +25,7 @@
 
     | Class                                     | Description                                                                                                                |
     |-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+    | [DetailedMessage](DetailedMessage.md)     |                                                                                                                            |
     | [Diagnostic](Diagnostic.md)               | Represents a discrete event, log entry, or syntax/semantic problem identified during system runtime or source compilation. |
     | [DiagnosticBuilder](DiagnosticBuilder.md) |                                                                                                                            |
 

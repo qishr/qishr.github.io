@@ -9,11 +9,10 @@
     | Class                                             | Description |
     |---------------------------------------------------|-------------|
     | [AbstractExecutionTask](AbstractExecutionTask.md) |             |
-    | [ArtifactResolver](ArtifactResolver.md)           |             |
     | [ExecutionException](ExecutionException.md)       |             |
     | [ExecutionMessage](ExecutionMessage.md)           |             |
     | [IsolatedExecutor](IsolatedExecutor.md)           |             |
-    | [JvmOptions](JvmOptions.md)                       |             |
+    | [JvmConfig](JvmConfig.md)                         |             |
     | [JvmProcess](JvmProcess.md)                       |             |
 
 
@@ -22,10 +21,9 @@
     | Class                                             | Description |
     |---------------------------------------------------|-------------|
     | [AbstractExecutionTask](AbstractExecutionTask.md) |             |
-    | [ArtifactResolver](ArtifactResolver.md)           |             |
     | [ExecutionException](ExecutionException.md)       |             |
     | [IsolatedExecutor](IsolatedExecutor.md)           |             |
-    | [JvmOptions](JvmOptions.md)                       |             |
+    | [JvmConfig](JvmConfig.md)                         |             |
     | [JvmProcess](JvmProcess.md)                       |             |
 
 

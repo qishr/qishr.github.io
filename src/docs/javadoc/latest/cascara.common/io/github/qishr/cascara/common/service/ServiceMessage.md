@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.common.service](index.md)
                 io.github.qishr.cascara.common.service.ServiceMessage<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [DiagnosticMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+    [LocalizableMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ----
@@ -32,6 +32,7 @@ All Implemented Interfaces:<br/>
 | [NO_PROVIDER_REGISTERED_FOR](#no_provider_registered_for)       |             |
 | [NO_SINGLETON_METHOD](#no_singleton_method)                     |             |
 | [INVALID_SINGLETON_INITIALIZER](#invalid_singleton_initializer) |             |
+| [VERIFICATION_FAILED](#verification_failed)                     |             |
 
 
 
@@ -165,6 +166,15 @@ public static final  INVALID_SINGLETON_INITIALIZER
 
 ---
 
+### VERIFICATION_FAILED
+
+public static final  VERIFICATION_FAILED
+
+
+
+
+---
+
 
 ## Method Details
 
@@ -194,7 +204,7 @@ public static final  INVALID_SINGLETON_INITIALIZER
 
 **Specified By:**
 
-[DiagnosticMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+[LocalizableMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ---
@@ -207,7 +217,7 @@ public static final  INVALID_SINGLETON_INITIALIZER
 
 **Specified By:**
 
-[DiagnosticMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md)
+[LocalizableMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
 
 
 ---

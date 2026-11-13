@@ -18,10 +18,10 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                            | Method                                                                                                                                    | Description                                                              |
-|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| public abstract [Processor](../../../../../../../io/github/qishr/cascara/common/lang/processor/Processor.md) | [setReporter](#setreporter)([Reporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md) reporter)       | Sets the reporter for communicating warnings or errors.                  |
-| public abstract [Processor](../../../../../../../io/github/qishr/cascara/common/lang/processor/Processor.md) | [setOptions](#setoptions)([LanguageOptions](../../../../../../../io/github/qishr/cascara/common/lang/util/LanguageOptions.md)<?> options) | Sets the language-specific options (e.g., indentation, Unicode support). |
+| Modifier and Type                                                                                            | Method                                                                                                                               | Description                                                              |
+|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| public abstract [Processor](../../../../../../../io/github/qishr/cascara/common/lang/processor/Processor.md) | [setReporter](#setreporter)([Reporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md) reporter)  | Sets the reporter for communicating warnings or errors.                  |
+| public abstract [Processor](../../../../../../../io/github/qishr/cascara/common/lang/processor/Processor.md) | [setConfig](#setconfig)([LanguageConfig](../../../../../../../io/github/qishr/cascara/common/lang/util/LanguageConfig.md)<?> config) | Sets the language-specific options (e.g., indentation, Unicode support). |
 
 
 
@@ -36,9 +36,9 @@ Sets the reporter for communicating warnings or errors.
 
 ---
 
-### setOptions
+### setConfig
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [Processor](../../../../../../../io/github/qishr/cascara/common/lang/processor/Processor.md) __setOptions__([LanguageOptions](../../../../../../../io/github/qishr/cascara/common/lang/util/LanguageOptions.md)<?> options)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Processor](../../../../../../../io/github/qishr/cascara/common/lang/processor/Processor.md) __setConfig__([LanguageConfig](../../../../../../../io/github/qishr/cascara/common/lang/util/LanguageConfig.md)<?> config)</span>
 
 Sets the language-specific options (e.g., indentation, Unicode support).
 

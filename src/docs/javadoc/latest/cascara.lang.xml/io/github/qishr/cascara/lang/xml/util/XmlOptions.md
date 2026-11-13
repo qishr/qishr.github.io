@@ -2,13 +2,13 @@ Package [io.github.qishr.cascara.lang.xml.util](index.md)
 
 # Class XmlOptions
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [io.github.qishr.cascara.common.lang.util.LanguageOptions](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/LanguageOptions.md)<[io.github.qishr.cascara.lang.xml.util.XmlOptions](../../../../../../../io/github/qishr/cascara/lang/xml/util/XmlOptions.md)><br/>
+        [io.github.qishr.cascara.common.lang.util.LanguageConfig](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/LanguageConfig.md)<[io.github.qishr.cascara.lang.xml.util.XmlOptions](../../../../../../../io/github/qishr/cascara/lang/xml/util/XmlOptions.md)><br/>
                 io.github.qishr.cascara.lang.xml.util.XmlOptions<br/>
 <br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __XmlOptions__<br/>extends [LanguageOptions](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/LanguageOptions.md)<[XmlOptions](../../../../../../../io/github/qishr/cascara/lang/xml/util/XmlOptions.md)>
+<span style="font-family: monospace; font-size: 80%;">public class __XmlOptions__<br/>extends [LanguageConfig](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/LanguageConfig.md)<[XmlOptions](../../../../../../../io/github/qishr/cascara/lang/xml/util/XmlOptions.md)>
 </span>
 
 

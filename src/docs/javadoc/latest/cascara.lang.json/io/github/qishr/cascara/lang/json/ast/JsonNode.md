@@ -36,19 +36,19 @@ Direct Known Subtypes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                   | Method                                                                                                                                                | Description |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)>              | [getChildren](#getchildren)()                                                                                                                         |             |
-| public int                                                                                                                                                                                                          | [getStartLine](#getstartline)()                                                                                                                       |             |
-| public int                                                                                                                                                                                                          | [getStartColumn](#getstartcolumn)()                                                                                                                   |             |
-| public int                                                                                                                                                                                                          | [getEndLine](#getendline)()                                                                                                                           |             |
-| public int                                                                                                                                                                                                          | [getEndColumn](#getendcolumn)()                                                                                                                       |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/CommentAstNode.md)> | [getComments](#getcomments)()                                                                                                                         |             |
-| public [JsonToken](../../../../../../../io/github/qishr/cascara/lang/json/token/JsonToken.md)                                                                                                                       | [getToken](#gettoken)()                                                                                                                               |             |
-| public void                                                                                                                                                                                                         | [setToken](#settoken)([JsonLexemeBackedToken](../../../../../../../io/github/qishr/cascara/lang/json/token/JsonLexemeBackedToken.md) token)           |             |
-| public void                                                                                                                                                                                                         | [addComment](#addcomment)([CommentAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/CommentAstNode.md) comment) |             |
-| public boolean                                                                                                                                                                                                      | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                                     |             |
-| public int                                                                                                                                                                                                          | [hashCode](#hashcode)()                                                                                                                               |             |
+| Modifier and Type                                                                                        | Method                                                                                                                                                | Description |
+|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) | [getChildren](#getchildren)()                                                                                                                         |             |
+| public int                                                                                               | [getStartLine](#getstartline)()                                                                                                                       |             |
+| public int                                                                                               | [getStartColumn](#getstartcolumn)()                                                                                                                   |             |
+| public int                                                                                               | [getEndLine](#getendline)()                                                                                                                           |             |
+| public int                                                                                               | [getEndColumn](#getendcolumn)()                                                                                                                       |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)          | [getComments](#getcomments)()                                                                                                                         |             |
+| public [JsonToken](../../../../../../../io/github/qishr/cascara/lang/json/token/JsonToken.md)            | [getToken](#gettoken)()                                                                                                                               |             |
+| public void                                                                                              | [setToken](#settoken)([JsonLexemeBackedToken](../../../../../../../io/github/qishr/cascara/lang/json/token/JsonLexemeBackedToken.md) token)           |             |
+| public void                                                                                              | [addComment](#addcomment)([CommentAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/CommentAstNode.md) comment) |             |
+| public boolean                                                                                           | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                                     |             |
+| public int                                                                                               | [hashCode](#hashcode)()                                                                                                                               |             |
 
 
 
@@ -68,7 +68,7 @@ Direct Known Subtypes:<br/>
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getChildren__()</span>
 
 
 
@@ -133,7 +133,7 @@ Direct Known Subtypes:<br/>
 
 ### getComments
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[CommentAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/CommentAstNode.md)> __getComments__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getComments__()</span>
 
 
 

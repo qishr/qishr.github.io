@@ -21,14 +21,14 @@ Package [io.github.qishr.cascara.ui.theme](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                             | Method                                                                                                                                  | Description |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                           | [getName](#getname)()                                                                                                                   |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                           | [getThemeId](#getthemeid)()                                                                                                             |             |
-| public void                                                                                                                                                                   | [setThemeId](#setthemeid)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path)            |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Variation](../../../../../../io/github/qishr/cascara/ui/theme/Variation.md)> | [getVariations](#getvariations)()                                                                                                       |             |
-| public [Variation](../../../../../../io/github/qishr/cascara/ui/theme/Variation.md)                                                                                           | [getVariation](#getvariation)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) variationId) |             |
-| protected void                                                                                                                                                                | [loadYamlString](#loadyamlstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) content) |             |
+| Modifier and Type                                                                                   | Method                                                                                                                                  | Description |
+|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getName](#getname)()                                                                                                                   |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getThemeId](#getthemeid)()                                                                                                             |             |
+| public void                                                                                         | [setThemeId](#setthemeid)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path)            |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)     | [getVariations](#getvariations)()                                                                                                       |             |
+| public [Variation](../../../../../../io/github/qishr/cascara/ui/theme/Variation.md)                 | [getVariation](#getvariation)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) variationId) |             |
+| protected void                                                                                      | [loadYamlString](#loadyamlstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) content) |             |
 
 
 
@@ -63,7 +63,7 @@ Package [io.github.qishr.cascara.ui.theme](index.md)
 
 ### getVariations
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Variation](../../../../../../io/github/qishr/cascara/ui/theme/Variation.md)> __getVariations__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getVariations__()</span>
 
 
 

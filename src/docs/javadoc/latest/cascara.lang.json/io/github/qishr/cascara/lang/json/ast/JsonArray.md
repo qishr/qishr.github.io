@@ -26,25 +26,25 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                           | Method                                                                                                            | Description               |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|---------------------------|
-| public [JsonArray](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonArray.md)                                                                                                 | [add](#add)([JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md) item)              |                           |
-| public [JsonArray](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonArray.md)                                                                                                 | [remove](#remove)(int index)                                                                                      |                           |
-| public [JsonArray](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonArray.md)                                                                                                 | [clear](#clear)()                                                                                                 |                           |
-| public int                                                                                                                                                                                  | [size](#size)()                                                                                                   |                           |
-| public [JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)                                                                                                   | [get](#get)(int index)                                                                                            |                           |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)>         | [getElements](#getelements)()                                                                                     |                           |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)>         | [getChildren](#getchildren)()                                                                                     |                           |
-| public [JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)                                                                                                   | [getFirst](#getfirst)()                                                                                           |                           |
-| public [JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)                                                                                                   | [getLast](#getlast)()                                                                                             |                           |
-| public [JsonArray](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonArray.md)                                                                                                 | [remove](#remove)([JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md) node)        |                           |
-| public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<[JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)> | [iterator](#iterator)()                                                                                           | Returns Iterator instance |
-| public boolean                                                                                                                                                                              | [isEmpty](#isempty)()                                                                                             |                           |
-| public boolean                                                                                                                                                                              | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o) |                           |
-| public int                                                                                                                                                                                  | [hashCode](#hashcode)()                                                                                           |                           |
-| public [JsonArray](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonArray.md)                                                                                                 | [getSequence](#getsequence)(int i)                                                                                |                           |
-| public [JsonObject](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonObject.md)                                                                                               | [getMap](#getmap)(int i)                                                                                          |                           |
-| public [JsonScalar](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonScalar.md)                                                                                               | [getScalar](#getscalar)(int i)                                                                                    |                           |
+| Modifier and Type                                                                                       | Method                                                                                                            | Description               |
+|---------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|---------------------------|
+| public [JsonArray](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonArray.md)             | [add](#add)([JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md) item)              |                           |
+| public [JsonArray](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonArray.md)             | [remove](#remove)(int index)                                                                                      |                           |
+| public [JsonArray](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonArray.md)             | [clear](#clear)()                                                                                                 |                           |
+| public int                                                                                              | [size](#size)()                                                                                                   |                           |
+| public [JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)               | [get](#get)(int index)                                                                                            |                           |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)         | [getElements](#getelements)()                                                                                     |                           |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)         | [getChildren](#getchildren)()                                                                                     |                           |
+| public [JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)               | [getFirst](#getfirst)()                                                                                           |                           |
+| public [JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)               | [getLast](#getlast)()                                                                                             |                           |
+| public [JsonArray](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonArray.md)             | [remove](#remove)([JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md) node)        |                           |
+| public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html) | [iterator](#iterator)()                                                                                           | Returns Iterator instance |
+| public boolean                                                                                          | [isEmpty](#isempty)()                                                                                             |                           |
+| public boolean                                                                                          | [equals](#equals)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o) |                           |
+| public int                                                                                              | [hashCode](#hashcode)()                                                                                           |                           |
+| public [JsonArray](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonArray.md)             | [getSequence](#getsequence)(int i)                                                                                |                           |
+| public [JsonObject](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonObject.md)           | [getMap](#getmap)(int i)                                                                                          |                           |
+| public [JsonScalar](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonScalar.md)           | [getScalar](#getscalar)(int i)                                                                                    |                           |
 
 
 ### Methods inherited from [JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)
@@ -117,7 +117,7 @@ getEndColumn, getEndLine, getComments, getStartColumn, getToken, setToken, addCo
 
 ### getElements
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)> __getElements__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getElements__()</span>
 
 
 
@@ -130,7 +130,7 @@ getEndColumn, getEndLine, getComments, getStartColumn, getToken, setToken, addCo
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getChildren__()</span>
 
 
 
@@ -178,7 +178,7 @@ getEndColumn, getEndLine, getComments, getStartColumn, getToken, setToken, addCo
 
 ### iterator
 
-<span style="font-family: monospace; font-size: 80%;">public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html)<[JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md)> __iterator__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html) __iterator__()</span>
 
 Returns Iterator instance
 

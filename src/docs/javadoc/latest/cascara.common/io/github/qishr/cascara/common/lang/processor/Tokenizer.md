@@ -18,17 +18,17 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                         | Method                                                                                                                         | Description                                                                |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T>                                                                                                | [tokenize](#tokenize)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)       | High-level API: Tokenizes a complete String eagerly.                       |
-| public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T>                                                                                                | [tokenize](#tokenize)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is) | High-level API: Tokenizes an entire InputStream eagerly.                   |
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T>                                                                                               | [tokenize](#tokenize)(byte[] data)                                                                                             |                                                                            |
-| public abstract void                                                                                                                                                                                      | [open](#open)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)               | Low-level Streaming API: Resets the tokenizer state to read from a String. |
-| public abstract void                                                                                                                                                                                      | [open](#open)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)               |                                                                            |
-| public abstract void                                                                                                                                                                                      | [open](#open)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)         | Low-level Streaming API: Resets the tokenizer state to read from a stream. |
-| public abstract T                                                                                                                                                                                         | [nextToken](#nexttoken)()                                                                                                      | Low-level Streaming API: Pulls the next token on demand.                   |
-| public default [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<? extends [TokenType](../../../../../../../io/github/qishr/cascara/common/lang/token/TokenType.md)> | [getTokenTypes](#gettokentypes)()                                                                                              |                                                                            |
-| public abstract int                                                                                                                                                                                       | [getOffset](#getoffset)()                                                                                                      |                                                                            |
+| Modifier and Type                                                                                        | Method                                                                                                                         | Description                                                                |
+|----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)  | [tokenize](#tokenize)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)       | High-level API: Tokenizes a complete String eagerly.                       |
+| public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)  | [tokenize](#tokenize)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is) | High-level API: Tokenizes an entire InputStream eagerly.                   |
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) | [tokenize](#tokenize)(byte[] data)                                                                                             |                                                                            |
+| public abstract void                                                                                     | [open](#open)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)               | Low-level Streaming API: Resets the tokenizer state to read from a String. |
+| public abstract void                                                                                     | [open](#open)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)               |                                                                            |
+| public abstract void                                                                                     | [open](#open)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)         | Low-level Streaming API: Resets the tokenizer state to read from a stream. |
+| public abstract T                                                                                        | [nextToken](#nexttoken)()                                                                                                      | Low-level Streaming API: Pulls the next token on demand.                   |
+| public default [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)    | [getTokenTypes](#gettokentypes)()                                                                                              |                                                                            |
+| public abstract int                                                                                      | [getOffset](#getoffset)()                                                                                                      |                                                                            |
 
 
 
@@ -36,7 +36,7 @@ All Known Implementing Classes:<br/>
 
 ### tokenize
 
-<span style="font-family: monospace; font-size: 80%;">public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> __tokenize__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)</span>
+<span style="font-family: monospace; font-size: 80%;">public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __tokenize__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)</span>
 
 High-level API: Tokenizes a complete String eagerly.
 
@@ -45,7 +45,7 @@ High-level API: Tokenizes a complete String eagerly.
 
 ### tokenize
 
-<span style="font-family: monospace; font-size: 80%;">public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> __tokenize__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)</span>
+<span style="font-family: monospace; font-size: 80%;">public default [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __tokenize__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)</span>
 
 High-level API: Tokenizes an entire InputStream eagerly.
 
@@ -54,7 +54,7 @@ High-level API: Tokenizes an entire InputStream eagerly.
 
 ### tokenize
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<T> __tokenize__(byte[] data)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __tokenize__(byte[] data)</span>
 
 
 
@@ -99,7 +99,7 @@ Low-level Streaming API: Pulls the next token on demand.
 
 ### getTokenTypes
 
-<span style="font-family: monospace; font-size: 80%;">public default [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<? extends [TokenType](../../../../../../../io/github/qishr/cascara/common/lang/token/TokenType.md)> __getTokenTypes__()</span>
+<span style="font-family: monospace; font-size: 80%;">public default [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html) __getTokenTypes__()</span>
 
 
 

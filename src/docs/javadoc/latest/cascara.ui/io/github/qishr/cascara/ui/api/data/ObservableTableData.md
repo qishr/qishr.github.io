@@ -18,11 +18,11 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                                                                                          | Method                                                                                                                            | Description |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public abstract [Observable](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/Observable.html)[]                                                                                                                                                                                     | [getObservables](#getobservables)()                                                                                               |             |
-| public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Observable](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/Observable.html)> | [getObservablesMap](#getobservablesmap)()                                                                                         |             |
-| public abstract [Observable](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/Observable.html)                                                                                                                                                                                       | [getObservable](#getobservable)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key) |             |
+| Modifier and Type                                                                                      | Method                                                                                                                            | Description |
+|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public abstract [Observable](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/Observable.html)[] | [getObservables](#getobservables)()                                                                                               |             |
+| public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html) | [getObservablesMap](#getobservablesmap)()                                                                                         |             |
+| public abstract [Observable](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/Observable.html)   | [getObservable](#getobservable)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key) |             |
 
 
 
@@ -39,7 +39,7 @@ All Known Implementing Classes:<br/>
 
 ### getObservablesMap
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Observable](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/Observable.html)> __getObservablesMap__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html) __getObservablesMap__()</span>
 
 
 

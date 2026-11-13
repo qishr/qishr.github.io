@@ -24,5 +24,5 @@ Package [io.github.qishr.cascara.common.diagnostic.exception](index.md)
 
 ### Methods inherited from [LocalizableRuntimeException](../../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)
 
-getDiagnosticMessage, getLocalizedMessage, getDetails
+getLocalizableMessage, getLocalizedMessage, getDetails
 

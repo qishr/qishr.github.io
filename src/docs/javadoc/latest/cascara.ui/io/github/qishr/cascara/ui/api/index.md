@@ -17,8 +17,8 @@
     | [SyntaxHighlighter](SyntaxHighlighter.md)     |             |
     | [TextEditor](TextEditor.md)                   |             |
     | [ToolTipProvider](ToolTipProvider.md)         |             |
-    | [UiDiagnosticMessage](UiDiagnosticMessage.md) |             |
     | [UiException](UiException.md)                 |             |
+    | [UiMessage](UiMessage.md)                     |             |
 
 
 === "Interfaces"
@@ -47,6 +47,6 @@
     | Class                                         | Description |
     |-----------------------------------------------|-------------|
     | [ServicePropertyName](ServicePropertyName.md) |             |
-    | [UiDiagnosticMessage](UiDiagnosticMessage.md) |             |
+    | [UiMessage](UiMessage.md)                     |             |
 
 

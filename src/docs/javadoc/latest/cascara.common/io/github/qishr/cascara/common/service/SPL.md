@@ -15,76 +15,69 @@ All Implemented Interfaces:<br/>
 
 ## Field Summary
 
-| Modifier and Type                                                                                                | Field                             | Description |
-|------------------------------------------------------------------------------------------------------------------|-----------------------------------|-------------|
-| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [CONTENT_TYPE](#content_type)     |             |
-| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [JAR_PATH](#jar_path)             |             |
-| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [JVM_TYPE](#jvm_type)             |             |
-| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [MODULE_NAME](#module_name)       |             |
-| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [MODULE_VERSION](#module_version) |             |
-| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [PROVIDER_NAME](#provider_name)   |             |
-| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [SERVICE_NAME](#service_name)     |             |
-| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [TITLE](#title)                   |             |
+| Modifier and Type                                                                                                | Field                                                                               | Description |
+|------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|-------------|
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [CASCARA_SPL_BOOT_ERRORS_TO_CONSOLE](#cascara_spl_boot_errors_to_console)           |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [CASCARA_SPL_DISCOVER](#cascara_spl_discover)                                       |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [CASCARA_SPL_POLICY_CHECK_EXPIRY](#cascara_spl_policy_check_expiry)                 |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [CASCARA_SPL_POLICY_REQUIRE_SIGNED](#cascara_spl_policy_require_signed)             |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [CASCARA_SPL_POLICY_REQUIRE_SIGNED_CLASS](#cascara_spl_policy_require_signed_class) |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [CASCARA_SPL_VERIFY](#cascara_spl_verify)                                           |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [SP_CONTENT_TYPE](#sp_content_type)                                                 |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [SP_JAR_PATH](#sp_jar_path)                                                         |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [SP_JVM_TYPE](#sp_jvm_type)                                                         |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [SP_MODULE_NAME](#sp_module_name)                                                   |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [SP_MODULE_VERSION](#sp_module_version)                                             |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [SP_PROVIDER_NAME](#sp_provider_name)                                               |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [SP_SERVICE_NAME](#sp_service_name)                                                 |             |
+| public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [SP_TITLE](#sp_title)                                                               |             |
 
 
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                                                                                                  | Method                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Description                                                                                           |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| public static [SPL](../../../../../../io/github/qishr/cascara/common/service/SPL.md)                                                                                                                                                                                                               | [getRoot](#getroot)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Retrieves the root Service Provider Layer.                                                            |
-| public static boolean                                                                                                                                                                                                                                                                              | [isBooting](#isbooting)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                                       |
-| public static T                                                                                                                                                                                                                                                                                    | [load](#load)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> serviceType, [ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md) metadata)                                                                                                                                                                                                                                                        | Returns an instance of a specific service provider.                                                   |
-| public static T                                                                                                                                                                                                                                                                                    | [load](#load)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> serviceType)                                                                                                                                                                                                                                                                                                                                                                 | Returns an instance of a service provider.                                                            |
-| public static T                                                                                                                                                                                                                                                                                    | [load](#load)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> serviceType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) defaultProviderFqcn)                                                                                                                                                                                                                                               | Returns an instance of a service provider.                                                            |
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [getName](#getname)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                                       |
-| public abstract [TrackableArray](../../../../../../io/github/qishr/cascara/common/trackable/TrackableArray.md)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)>                                                                                       | [getModules](#getmodules)()                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                       |
-| public abstract [TrackableArray](../../../../../../io/github/qishr/cascara/common/trackable/TrackableArray.md)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)>                                                                                     | [getDeclaredProviders](#getdeclaredproviders)()                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                                                       |
-| public abstract [TrackableArray](../../../../../../io/github/qishr/cascara/common/trackable/TrackableArray.md)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)>                                                                                     | [getVisibleProviders](#getvisibleproviders)()                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                       |
-| public abstract boolean                                                                                                                                                                                                                                                                            | [isPublic](#ispublic)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                       |
-| public abstract [SPL](../../../../../../io/github/qishr/cascara/common/service/SPL.md)                                                                                                                                                                                                             | [getParent](#getparent)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                                       |
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[SPL](../../../../../../io/github/qishr/cascara/common/service/SPL.md)>                                                                                                                   | [getChildren](#getchildren)()                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                       |
-| public abstract [SPL](../../../../../../io/github/qishr/cascara/common/service/SPL.md)                                                                                                                                                                                                             | [getChild](#getchild)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                                                                                                                                                                                                                                                                                 |                                                                                                       |
-| public abstract boolean                                                                                                                                                                                                                                                                            | [hasChild](#haschild)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                                                                                                                                                                                                                                                                                 |                                                                                                       |
-| public abstract [SPL](../../../../../../io/github/qishr/cascara/common/service/SPL.md)                                                                                                                                                                                                             | [create](#create)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                                                                                                                                                                                                                                                                                     | Creates a service provider layer with the specified name.                                             |
-| public abstract [SPL](../../../../../../io/github/qishr/cascara/common/service/SPL.md)                                                                                                                                                                                                             | [createPrivate](#createprivate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                                                                                                                                                                                                                                                                       | Creates private a service provider layer with the specified name.                                     |
-| public abstract void                                                                                                                                                                                                                                                                               | [remove](#remove)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                       |
-| public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<[ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)>> | [findServiceTypes](#findservicetypes)()                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Returns a list of all known service types.                                                            |
-| public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)>                                                                                             | [findServices](#findservices)()                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Returns a list of metadata for all known service types.                                               |
-| public abstract [ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)                                                                                                                                                                                     | [findProvider](#findprovider)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType)                                                                                                                                                                                                                                          | Retrieves metadata of the nearest known provider of the specified service type.                       |
-| public abstract [ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)                                                                                                                                                                                     | [findProvider](#findprovider)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType, [Predicate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Predicate.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> capabilityPredicate)         | Retrieves metadata of the nearest known provider whose capabilities satisfy the given predicate.      |
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)>                                                                                           | [findAllProviders](#findallproviders)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType)                                                                                                                                                                                                                                  | Retrieves metadata of all known providers of the specified service type.                              |
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)>                                                                                           | [findAllProviders](#findallproviders)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType, [Predicate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Predicate.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> capabilityPredicate) | Retrieves metadata of all known providers whose capabilities satisfy the given predicate.             |
-| public abstract [ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)                                                                                                                                                                                     | [getProvider](#getprovider)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) providerName)                                                                                                                                                                                                                                                                                                                                                   | Retrieves metadata of the specified provider if it exists in this layer, otherwise `null` is returne. |
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)>                                                                                           | [getProviders](#getproviders)()                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Retrieves metadata of providers in this layer.                                                        |
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)>                                                                                           | [getProviders](#getproviders)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType)                                                                                                                                                                                                                                          | Retrieves metadata of providers of the specified service type in this layer.                          |
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)>                                                                                           | [getProviders](#getproviders)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType, [Predicate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Predicate.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> capabilityPredicate)         | Retrieves metadata of providers in this layer whose capabilities satisfy the given predicate.         |
-| public abstract boolean                                                                                                                                                                                                                                                                            | [hasProvider](#hasprovider)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                                                                                                                                                                                                                                                                           |                                                                                                       |
-| public abstract void                                                                                                                                                                                                                                                                               | [registerClass](#registerclass)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)                                                                                                                                                                                                                                                                                                                                                     |                                                                                                       |
-| public abstract void                                                                                                                                                                                                                                                                               | [registerJar](#registerjar)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) jarPath)                                                                                                                                                                                                                                                                                                                                                        |                                                                                                       |
+| Modifier and Type                                                                                              | Method                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Description                                                                                           |
+|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| public static [SPL](../../../../../../io/github/qishr/cascara/common/service/SPL.md)                           | [getRoot](#getroot)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Retrieves the root Service Provider Layer.                                                            |
+| public static boolean                                                                                          | [isBooting](#isbooting)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                                       |
+| public static @io.github.qishr.cascara.common.annotation.Experimental boolean                                  | [hasBooted](#hasbooted)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                                       |
+| public static void                                                                                             | [setSignaturePolicy](#setsignaturepolicy)([SignaturePolicy](../../../../../../io/github/qishr/cascara/common/security/policy/SignaturePolicy.md) policy)                                                                                                                                                                                                                                                                                                                                 |                                                                                                       |
+| public static T                                                                                                | [load](#load)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> serviceType, [ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md) metadata)                                                                                                                                                                                                                                                        | Returns an instance of a specific service provider.                                                   |
+| public static T                                                                                                | [load](#load)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> serviceType)                                                                                                                                                                                                                                                                                                                                                                 | Returns an instance of a service provider.                                                            |
+| public static T                                                                                                | [load](#load)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<T> serviceType, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) defaultProviderFqcn)                                                                                                                                                                                                                                               | Returns an instance of a service provider.                                                            |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)   | [getName](#getname)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                                       |
+| public abstract [TrackableArray](../../../../../../io/github/qishr/cascara/common/trackable/TrackableArray.md) | [getModules](#getmodules)()                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                       |
+| public abstract [TrackableArray](../../../../../../io/github/qishr/cascara/common/trackable/TrackableArray.md) | [getDeclaredProviders](#getdeclaredproviders)()                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                                                       |
+| public abstract [TrackableArray](../../../../../../io/github/qishr/cascara/common/trackable/TrackableArray.md) | [getVisibleProviders](#getvisibleproviders)()                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                       |
+| public abstract boolean                                                                                        | [isPublic](#ispublic)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                       |
+| public abstract [SPL](../../../../../../io/github/qishr/cascara/common/service/SPL.md)                         | [getParent](#getparent)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                                       |
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)       | [getChildren](#getchildren)()                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                       |
+| public abstract [SPL](../../../../../../io/github/qishr/cascara/common/service/SPL.md)                         | [getChild](#getchild)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                                                                                                                                                                                                                                                                                 |                                                                                                       |
+| public abstract boolean                                                                                        | [hasChild](#haschild)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                                                                                                                                                                                                                                                                                 |                                                                                                       |
+| public abstract [SPL](../../../../../../io/github/qishr/cascara/common/service/SPL.md)                         | [create](#create)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                                                                                                                                                                                                                                                                                     | Creates a service provider layer with the specified name.                                             |
+| public abstract [SPL](../../../../../../io/github/qishr/cascara/common/service/SPL.md)                         | [createPrivate](#createprivate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                                                                                                                                                                                                                                                                       | Creates private a service provider layer with the specified name.                                     |
+| public abstract void                                                                                           | [remove](#remove)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                       |
+| public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)         | [findServiceTypes](#findservicetypes)()                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Returns a list of all known service types.                                                            |
+| public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)         | [findServices](#findservices)()                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Returns a list of metadata for all known service types.                                               |
+| public abstract [ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md) | [findProvider](#findprovider)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType)                                                                                                                                                                                                                                          | Retrieves metadata of the nearest known provider of the specified service type.                       |
+| public abstract [ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md) | [findProvider](#findprovider)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType, [Predicate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Predicate.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> capabilityPredicate)         | Retrieves metadata of the nearest known provider whose capabilities satisfy the given predicate.      |
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)       | [findAllProviders](#findallproviders)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType)                                                                                                                                                                                                                                  | Retrieves metadata of all known providers of the specified service type.                              |
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)       | [findAllProviders](#findallproviders)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType, [Predicate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Predicate.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> capabilityPredicate) | Retrieves metadata of all known providers whose capabilities satisfy the given predicate.             |
+| public abstract [ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md) | [getProvider](#getprovider)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) providerName)                                                                                                                                                                                                                                                                                                                                                   | Retrieves metadata of the specified provider if it exists in this layer, otherwise `null` is returne. |
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)       | [getProviders](#getproviders)()                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Retrieves metadata of providers in this layer.                                                        |
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)       | [getProviders](#getproviders)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType)                                                                                                                                                                                                                                          | Retrieves metadata of providers of the specified service type in this layer.                          |
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)       | [getProviders](#getproviders)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType, [Predicate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Predicate.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> capabilityPredicate)         | Retrieves metadata of providers in this layer whose capabilities satisfy the given predicate.         |
+| public abstract boolean                                                                                        | [hasProvider](#hasprovider)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                                                                                                                                                                                                                                                                           |                                                                                                       |
+| public abstract void                                                                                           | [registerClass](#registerclass)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz)                                                                                                                                                                                                                                                                                                                                                     |                                                                                                       |
+| public abstract void                                                                                           | [registerJar](#registerjar)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) jarPath)                                                                                                                                                                                                                                                                                                                                                        |                                                                                                       |
 
 
 
 ## Field Details
 
-### CONTENT_TYPE
+### CASCARA_SPL_BOOT_ERRORS_TO_CONSOLE
 
-<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __CONTENT_TYPE__</span>
-
-
-
-**See Also:**
-
-
-[Constant Field Values](../../../../../../constant-values.md)
-
-
-
----
-
-### JAR_PATH
-
-<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __JAR_PATH__</span>
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __CASCARA_SPL_BOOT_ERRORS_TO_CONSOLE__</span>
 
 
 
@@ -97,24 +90,9 @@ All Implemented Interfaces:<br/>
 
 ---
 
-### JVM_TYPE
+### CASCARA_SPL_DISCOVER
 
-<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __JVM_TYPE__</span>
-
-
-
-**See Also:**
-
-
-[Constant Field Values](../../../../../../constant-values.md)
-
-
-
----
-
-### MODULE_NAME
-
-<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __MODULE_NAME__</span>
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __CASCARA_SPL_DISCOVER__</span>
 
 
 
@@ -127,24 +105,9 @@ All Implemented Interfaces:<br/>
 
 ---
 
-### MODULE_VERSION
+### CASCARA_SPL_POLICY_CHECK_EXPIRY
 
-<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __MODULE_VERSION__</span>
-
-
-
-**See Also:**
-
-
-[Constant Field Values](../../../../../../constant-values.md)
-
-
-
----
-
-### PROVIDER_NAME
-
-<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __PROVIDER_NAME__</span>
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __CASCARA_SPL_POLICY_CHECK_EXPIRY__</span>
 
 
 
@@ -157,9 +120,9 @@ All Implemented Interfaces:<br/>
 
 ---
 
-### SERVICE_NAME
+### CASCARA_SPL_POLICY_REQUIRE_SIGNED
 
-<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __SERVICE_NAME__</span>
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __CASCARA_SPL_POLICY_REQUIRE_SIGNED__</span>
 
 
 
@@ -172,9 +135,144 @@ All Implemented Interfaces:<br/>
 
 ---
 
-### TITLE
+### CASCARA_SPL_POLICY_REQUIRE_SIGNED_CLASS
 
-<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __TITLE__</span>
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __CASCARA_SPL_POLICY_REQUIRE_SIGNED_CLASS__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../constant-values.md)
+
+
+
+---
+
+### CASCARA_SPL_VERIFY
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __CASCARA_SPL_VERIFY__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../constant-values.md)
+
+
+
+---
+
+### SP_CONTENT_TYPE
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __SP_CONTENT_TYPE__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../constant-values.md)
+
+
+
+---
+
+### SP_JAR_PATH
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __SP_JAR_PATH__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../constant-values.md)
+
+
+
+---
+
+### SP_JVM_TYPE
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __SP_JVM_TYPE__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../constant-values.md)
+
+
+
+---
+
+### SP_MODULE_NAME
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __SP_MODULE_NAME__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../constant-values.md)
+
+
+
+---
+
+### SP_MODULE_VERSION
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __SP_MODULE_VERSION__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../constant-values.md)
+
+
+
+---
+
+### SP_PROVIDER_NAME
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __SP_PROVIDER_NAME__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../constant-values.md)
+
+
+
+---
+
+### SP_SERVICE_NAME
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __SP_SERVICE_NAME__</span>
+
+
+
+**See Also:**
+
+
+[Constant Field Values](../../../../../../constant-values.md)
+
+
+
+---
+
+### SP_TITLE
+
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __SP_TITLE__</span>
 
 
 
@@ -203,6 +301,26 @@ Retrieves the root Service Provider Layer.
 ### isBooting
 
 <span style="font-family: monospace; font-size: 80%;">public static boolean __isBooting__()</span>
+
+
+
+
+---
+
+### hasBooted
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public static @io.github.qishr.cascara.common.annotation.Experimental boolean __hasBooted__()</span>
+
+
+
+
+---
+
+### setSignaturePolicy
+
+<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
+public static void __setSignaturePolicy__([SignaturePolicy](../../../../../../io/github/qishr/cascara/common/security/policy/SignaturePolicy.md) policy)</span>
 
 
 
@@ -251,7 +369,7 @@ an attempt will be made to use the supplied provider.
 
 ### getModules
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [TrackableArray](../../../../../../io/github/qishr/cascara/common/trackable/TrackableArray.md)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> __getModules__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [TrackableArray](../../../../../../io/github/qishr/cascara/common/trackable/TrackableArray.md) __getModules__()</span>
 
 
 
@@ -260,7 +378,7 @@ an attempt will be made to use the supplied provider.
 
 ### getDeclaredProviders
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [TrackableArray](../../../../../../io/github/qishr/cascara/common/trackable/TrackableArray.md)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> __getDeclaredProviders__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [TrackableArray](../../../../../../io/github/qishr/cascara/common/trackable/TrackableArray.md) __getDeclaredProviders__()</span>
 
 
 
@@ -269,7 +387,7 @@ an attempt will be made to use the supplied provider.
 
 ### getVisibleProviders
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [TrackableArray](../../../../../../io/github/qishr/cascara/common/trackable/TrackableArray.md)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> __getVisibleProviders__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [TrackableArray](../../../../../../io/github/qishr/cascara/common/trackable/TrackableArray.md) __getVisibleProviders__()</span>
 
 
 
@@ -300,7 +418,7 @@ an attempt will be made to use the supplied provider.
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[SPL](../../../../../../io/github/qishr/cascara/common/service/SPL.md)> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getChildren__()</span>
 
 
 
@@ -359,7 +477,7 @@ private layer or its descendants.
 
 ### findServiceTypes
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<[ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)>> __findServiceTypes__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html) __findServiceTypes__()</span>
 
 Returns a list of all known service types.
 
@@ -368,7 +486,7 @@ Returns a list of all known service types.
 
 ### findServices
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> __findServices__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html) __findServices__()</span>
 
 Returns a list of metadata for all known service types.
 
@@ -395,7 +513,7 @@ Retrieves metadata of the nearest known provider whose capabilities satisfy the 
 
 ### findAllProviders
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> __findAllProviders__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __findAllProviders__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType)</span>
 
 Retrieves metadata of all known providers of the specified service type.
 
@@ -404,7 +522,7 @@ Retrieves metadata of all known providers of the specified service type.
 
 ### findAllProviders
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> __findAllProviders__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType, [Predicate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Predicate.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> capabilityPredicate)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __findAllProviders__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType, [Predicate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Predicate.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> capabilityPredicate)</span>
 
 Retrieves metadata of all known providers whose capabilities satisfy the given predicate.
 
@@ -422,7 +540,7 @@ Retrieves metadata of the specified provider if it exists in this layer, otherwi
 
 ### getProviders
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> __getProviders__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getProviders__()</span>
 
 Retrieves metadata of providers in this layer.
 
@@ -431,7 +549,7 @@ Retrieves metadata of providers in this layer.
 
 ### getProviders
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> __getProviders__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getProviders__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType)</span>
 
 Retrieves metadata of providers of the specified service type in this layer.
 
@@ -440,7 +558,7 @@ Retrieves metadata of providers of the specified service type in this layer.
 
 ### getProviders
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> __getProviders__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType, [Predicate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Predicate.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> capabilityPredicate)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getProviders__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [ServiceProvider](../../../../../../io/github/qishr/cascara/common/service/ServiceProvider.md)> serviceType, [Predicate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Predicate.html)<[ServiceMetadata](../../../../../../io/github/qishr/cascara/common/service/ServiceMetadata.md)> capabilityPredicate)</span>
 
 Retrieves metadata of providers in this layer whose capabilities satisfy the given predicate.
 

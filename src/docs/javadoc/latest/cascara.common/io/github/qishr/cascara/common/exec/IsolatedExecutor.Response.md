@@ -15,16 +15,16 @@ Enclosing Class:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                             | Method                              | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|-------------|
-| public T                                                                                                                                                                                      | [getPayload](#getpayload)()         |             |
-| public T                                                                                                                                                                                      | [orElseThrow](#orelsethrow)()       |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Diagnostic](../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)>      | [getDiagnostics](#getdiagnostics)() |             |
-| public boolean                                                                                                                                                                                | [isSuccess](#issuccess)()           |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> | [getCommand](#getcommand)()         |             |
-| public [JvmOptions](../../../../../../io/github/qishr/cascara/common/exec/JvmOptions.md)                                                                                                      | [getJvmOptions](#getjvmoptions)()   |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getSystemOut](#getsystemout)()     |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                           | [getSystemErr](#getsystemerr)()     |             |
+| Modifier and Type                                                                                   | Method                              | Description |
+|-----------------------------------------------------------------------------------------------------|-------------------------------------|-------------|
+| public T                                                                                            | [getPayload](#getpayload)()         |             |
+| public T                                                                                            | [orElseThrow](#orelsethrow)()       |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)     | [getDiagnostics](#getdiagnostics)() |             |
+| public boolean                                                                                      | [isSuccess](#issuccess)()           |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)     | [getCommand](#getcommand)()         |             |
+| public [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md)              | [getJvmConfig](#getjvmconfig)()     |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getSystemOut](#getsystemout)()     |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getSystemErr](#getsystemerr)()     |             |
 
 
 
@@ -50,7 +50,7 @@ Enclosing Class:<br/>
 
 ### getDiagnostics
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[Diagnostic](../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> __getDiagnostics__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getDiagnostics__()</span>
 
 
 
@@ -68,16 +68,16 @@ Enclosing Class:<br/>
 
 ### getCommand
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> __getCommand__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getCommand__()</span>
 
 
 
 
 ---
 
-### getJvmOptions
+### getJvmConfig
 
-<span style="font-family: monospace; font-size: 80%;">public [JvmOptions](../../../../../../io/github/qishr/cascara/common/exec/JvmOptions.md) __getJvmOptions__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) __getJvmConfig__()</span>
 
 
 

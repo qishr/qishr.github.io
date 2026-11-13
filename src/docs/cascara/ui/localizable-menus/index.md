@@ -1,6 +1,6 @@
 # Localizable Menus
 
-Built on top of *Cascara.UI*'s `ObservableTreeNode`, `ObservableMenuItem` provides...
+Built on top of *Cascara.instance().UI*'s `ObservableTreeNode`, `ObservableMenuItem` provides...
 
 
 
@@ -61,10 +61,10 @@ menubar:
     online-doc: "Online Documentation"
 ```
 
-When a menu item's node name is prefixed with `#` it will not be translated. 
+When a menu item's node name is prefixed with `#` it will not be translated.
 This is for dynamically created menu items.
 
-In Studio's help menu builder, to show that non-translatable items work, I added 
+In Studio's help menu builder, to show that non-translatable items work, I added
 a menu item with a leading `#`:
 
 ```java
@@ -95,7 +95,7 @@ As well as `addMenu`'s `nodeName` (first parameter) taking an isolated node name
 also a leaf key in the translation file, we allow a full translation path to be specified
 using either dots or slashes to separate key segments.
 
-Here is how a *Help -> About* menu could be added and use the already defined 
+Here is how a *Help -> About* menu could be added and use the already defined
 `app.about` translation ket instead of adding a new one:
 
 ```java

@@ -15,12 +15,12 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                  | Method                                                                                                                        | Description |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public void                                                                                                                                                                                        | [close](#close)()                                                                                                             |             |
-| public static [VsixPackageStore](../../../../../../io/github/qishr/cascara/ui/vsix/VsixPackageStore.md)                                                                                            | [instance](#instance)()                                                                                                       |             |
-| public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)<[VsixPackageInfo](../../../../../../io/github/qishr/cascara/ui/vsix/VsixPackageInfo.md)> | [getPackages](#getpackages)()                                                                                                 |             |
-| public void                                                                                                                                                                                        | [install](#install)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) packagePath) |             |
+| Modifier and Type                                                                                         | Method                                                                                                                        | Description |
+|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public void                                                                                               | [close](#close)()                                                                                                             |             |
+| public static [VsixPackageStore](../../../../../../io/github/qishr/cascara/ui/vsix/VsixPackageStore.md)   | [instance](#instance)()                                                                                                       |             |
+| public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html) | [getPackages](#getpackages)()                                                                                                 |             |
+| public void                                                                                               | [install](#install)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) packagePath) |             |
 
 
 
@@ -50,7 +50,7 @@ All Implemented Interfaces:<br/>
 
 ### getPackages
 
-<span style="font-family: monospace; font-size: 80%;">public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)<[VsixPackageInfo](../../../../../../io/github/qishr/cascara/ui/vsix/VsixPackageInfo.md)> __getPackages__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html) __getPackages__()</span>
 
 
 

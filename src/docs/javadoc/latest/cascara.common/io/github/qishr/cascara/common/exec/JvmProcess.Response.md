@@ -15,15 +15,15 @@ Enclosing Class:<br/>
 
 ## Field Summary
 
-| Modifier and Type         | Field                     | Description |
-|---------------------------|---------------------------|-------------|
-| public final List<String> | [command](#command)       |             |
-| public final Duration     | [duration](#duration)     |             |
-| public final String       | [err](#err)               |             |
-| public final int          | [exitCode](#exitcode)     |             |
-| public final JvmOptions   | [jvmOptions](#jvmoptions) |             |
-| public final String       | [out](#out)               |             |
-| public final boolean      | [timedOut](#timedout)     |             |
+| Modifier and Type         | Field                   | Description |
+|---------------------------|-------------------------|-------------|
+| public final List<String> | [command](#command)     |             |
+| public final Duration     | [duration](#duration)   |             |
+| public final String       | [err](#err)             |             |
+| public final int          | [exitCode](#exitcode)   |             |
+| public final JvmConfig    | [jvmConfig](#jvmconfig) |             |
+| public final String       | [out](#out)             |             |
+| public final boolean      | [timedOut](#timedout)   |             |
 
 
 
@@ -65,9 +65,9 @@ Enclosing Class:<br/>
 
 ---
 
-### jvmOptions
+### jvmConfig
 
-<span style="font-family: monospace; font-size: 80%;">public final JvmOptions __jvmOptions__</span>
+<span style="font-family: monospace; font-size: 80%;">public final JvmConfig __jvmConfig__</span>
 
 
 

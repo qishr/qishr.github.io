@@ -26,6 +26,7 @@ Package [io.github.qishr.cascara.common.exec](index.md)
 | public static void   | [main](#main)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)[] args)                                                                                                               |             |
 | public void          | [executeLifecycle](#executelifecycle)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> targetClass)                                                                                 |             |
 | public void          | [run](#run)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> targetClass, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> inputClass) |             |
+| protected void       | [displayHomeContents](#displayhomecontents)()                                                                                                                                                                                    |             |
 | protected void       | [error](#error)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) msg)                                                                                                                |             |
 | protected void       | [error](#error)([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) msg)      |             |
 
@@ -41,7 +42,7 @@ Package [io.github.qishr.cascara.common.exec](index.md)
 
 **Throws:**
 
-[Exception](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Exception.html)
+[Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html)
 
 
 ---
@@ -67,6 +68,15 @@ Package [io.github.qishr.cascara.common.exec](index.md)
 ### run
 
 <span style="font-family: monospace; font-size: 80%;">public void __run__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> targetClass, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> inputClass)</span>
+
+
+
+
+---
+
+### displayHomeContents
+
+<span style="font-family: monospace; font-size: 80%;">protected void __displayHomeContents__()</span>
 
 
 

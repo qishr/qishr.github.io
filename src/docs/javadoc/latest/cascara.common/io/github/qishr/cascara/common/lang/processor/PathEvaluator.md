@@ -16,9 +16,9 @@ public interface __PathEvaluator__</span>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                            | Method                                                                                                                                                                                                                    | Description |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)> | [evaluate](#evaluate)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) root, [PathExpression](../../../../../../../io/github/qishr/cascara/common/lang/util/PathExpression.md)<?> expr) |             |
+| Modifier and Type                                                                                        | Method                                                                                                                                                                                                                    | Description |
+|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) | [evaluate](#evaluate)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) root, [PathExpression](../../../../../../../io/github/qishr/cascara/common/lang/util/PathExpression.md)<?> expr) |             |
 
 
 
@@ -26,7 +26,7 @@ public interface __PathEvaluator__</span>
 
 ### evaluate
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)> __evaluate__([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) root, [PathExpression](../../../../../../../io/github/qishr/cascara/common/lang/util/PathExpression.md)<?> expr)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __evaluate__([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) root, [PathExpression](../../../../../../../io/github/qishr/cascara/common/lang/util/PathExpression.md)<?> expr)</span>
 
 
 

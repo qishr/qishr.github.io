@@ -25,18 +25,18 @@ public class __AstTreeData__</span>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                                                                                                         | Method                                                                                                                      | Description |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [getNodeName](#getnodename)()                                                                                               |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[AstTreeData](../../../../../../../io/github/qishr/cascara/common/lang/util/AstTreeData.md)>                                                                                              | [getChildren](#getchildren)()                                                                                               |             |
-| public [AstTreeData](../../../../../../../io/github/qishr/cascara/common/lang/util/AstTreeData.md)                                                                                                                                                                                        | [getParent](#getparent)()                                                                                                   |             |
-| public void                                                                                                                                                                                                                                                                               | [setParent](#setparent)([AstTreeData](../../../../../../../io/github/qishr/cascara/common/lang/util/AstTreeData.md) parent) |             |
-| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]                                                                                                                                                                                     | [getValues](#getvalues)()                                                                                                   |             |
-| public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)> | [getValuesMap](#getvaluesmap)()                                                                                             |             |
-| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)                                                                                                                                                                                       | [getValue](#getvalue)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)     |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                                                                                                                                                                                       | [getString](#getstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)   |             |
-| public [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)                                                                                                                                                                                                 | [getPayload](#getpayload)()                                                                                                 |             |
-| public [AstTreeData](../../../../../../../io/github/qishr/cascara/common/lang/util/AstTreeData.md)                                                                                                                                                                                        | [setPayload](#setpayload)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) data)          |             |
+| Modifier and Type                                                                                     | Method                                                                                                                      | Description |
+|-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)   | [getNodeName](#getnodename)()                                                                                               |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)       | [getChildren](#getchildren)()                                                                                               |             |
+| public [AstTreeData](../../../../../../../io/github/qishr/cascara/common/lang/util/AstTreeData.md)    | [getParent](#getparent)()                                                                                                   |             |
+| public void                                                                                           | [setParent](#setparent)([AstTreeData](../../../../../../../io/github/qishr/cascara/common/lang/util/AstTreeData.md) parent) |             |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] | [getValues](#getvalues)()                                                                                                   |             |
+| public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)         | [getValuesMap](#getvaluesmap)()                                                                                             |             |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)   | [getValue](#getvalue)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)     |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)   | [getString](#getstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)   |             |
+| public [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)             | [getPayload](#getpayload)()                                                                                                 |             |
+| public [AstTreeData](../../../../../../../io/github/qishr/cascara/common/lang/util/AstTreeData.md)    | [setPayload](#setpayload)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) data)          |             |
 
 
 
@@ -57,7 +57,7 @@ public class __AstTreeData__</span>
 
 ### getChildren
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[AstTreeData](../../../../../../../io/github/qishr/cascara/common/lang/util/AstTreeData.md)> __getChildren__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getChildren__()</span>
 
 
 
@@ -93,7 +93,7 @@ public class __AstTreeData__</span>
 
 ### getValuesMap
 
-<span style="font-family: monospace; font-size: 80%;">public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)> __getValuesMap__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html) __getValuesMap__()</span>
 
 
 

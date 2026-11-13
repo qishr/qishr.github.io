@@ -19,29 +19,29 @@ All Implemented Interfaces:<br/>
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                                                                                                                        | Description |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| LocalizableIOException([DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           |             |
-| LocalizableIOException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
+| Constructor                                                                                                                                                                                                                                                                                                                                                          | Description |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| LocalizableIOException([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           |             |
+| LocalizableIOException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
 
 
 
 ## Method Summary
 
-| Modifier and Type                                                                                                       | Method                                          | Description                                                              |
-|-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|--------------------------------------------------------------------------|
-| public [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) | [getDiagnosticMessage](#getdiagnosticmessage)() | Returns a diagnostic error code for the error message.                   |
-| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]                   | [getDetails](#getdetails)()                     | Returns the details, if any, to be used in formatting the error message. |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                     | [getLocalizedMessage](#getlocalizedmessage)()   | Returns a localized, formatted error message.                            |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                     | [getMessage](#getmessage)()                     | Returns a localized, formatted error message.                            |
+| Modifier and Type                                                                                                         | Method                                            | Description                                                              |
+|---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|--------------------------------------------------------------------------|
+| public [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) | [getLocalizableMessage](#getlocalizablemessage)() | Returns a diagnostic error code for the error message.                   |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]                     | [getDetails](#getdetails)()                       | Returns the details, if any, to be used in formatting the error message. |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                       | [getLocalizedMessage](#getlocalizedmessage)()     | Returns a localized, formatted error message.                            |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                       | [getMessage](#getmessage)()                       | Returns a localized, formatted error message.                            |
 
 
 
 ## Method Details
 
-### getDiagnosticMessage
+### getLocalizableMessage
 
-<span style="font-family: monospace; font-size: 80%;">public [DiagnosticMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/DiagnosticMessage.md) __getDiagnosticMessage__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) __getLocalizableMessage__()</span>
 
 Returns a diagnostic error code for the error message.
 

@@ -25,21 +25,21 @@ All Implemented Interfaces:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                             | Method                                                                                                                                                      | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public int                                                                                                                                                                                    | [getOffset](#getoffset)()                                                                                                                                   |             |
-| public int                                                                                                                                                                                    | [getLine](#getline)()                                                                                                                                       |             |
-| public int                                                                                                                                                                                    | [getColumn](#getcolumn)()                                                                                                                                   |             |
-| public [JsonTokenizer](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonTokenizer.md)                                                                                     | [setOptions](#setoptions)([LanguageOptions](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/LanguageOptions.md)<?> options) |             |
-| protected [JsonTokenizer](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonTokenizer.md)                                                                                  | [self](#self)()                                                                                                                                             |             |
-| public void                                                                                                                                                                                   | [open](#open)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                            |             |
-| public void                                                                                                                                                                                   | [open](#open)(byte[] data)                                                                                                                                  |             |
-| public void                                                                                                                                                                                   | [open](#open)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)                                            |             |
-| public void                                                                                                                                                                                   | [open](#open)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) stream)                                  |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonToken](../../../../../../../io/github/qishr/cascara/lang/json/token/JsonToken.md)>       | [tokenize](#tokenize)(byte[] data)                                                                                                                          |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonToken](../../../../../../../io/github/qishr/cascara/lang/json/token/JsonToken.md)>       | [tokenize](#tokenize)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source)                                  |             |
-| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[JsonTokenType](../../../../../../../io/github/qishr/cascara/lang/json/token/JsonTokenType.md)> | [getTokenTypes](#gettokentypes)()                                                                                                                           |             |
-| public [JsonToken](../../../../../../../io/github/qishr/cascara/lang/json/token/JsonToken.md)                                                                                                 | [nextToken](#nexttoken)()                                                                                                                                   |             |
+| Modifier and Type                                                                                            | Method                                                                                                                                                  | Description |
+|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public int                                                                                                   | [getOffset](#getoffset)()                                                                                                                               |             |
+| public int                                                                                                   | [getLine](#getline)()                                                                                                                                   |             |
+| public int                                                                                                   | [getColumn](#getcolumn)()                                                                                                                               |             |
+| public [JsonTokenizer](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonTokenizer.md)    | [setConfig](#setconfig)([LanguageConfig](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/LanguageConfig.md)<?> options) |             |
+| protected [JsonTokenizer](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonTokenizer.md) | [self](#self)()                                                                                                                                         |             |
+| public void                                                                                                  | [open](#open)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                        |             |
+| public void                                                                                                  | [open](#open)(byte[] data)                                                                                                                              |             |
+| public void                                                                                                  | [open](#open)([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader)                                        |             |
+| public void                                                                                                  | [open](#open)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) stream)                              |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)              | [tokenize](#tokenize)(byte[] data)                                                                                                                      |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)              | [tokenize](#tokenize)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source)                              |             |
+| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)                | [getTokenTypes](#gettokentypes)()                                                                                                                       |             |
+| public [JsonToken](../../../../../../../io/github/qishr/cascara/lang/json/token/JsonToken.md)                | [nextToken](#nexttoken)()                                                                                                                               |             |
 
 
 
@@ -76,15 +76,15 @@ All Implemented Interfaces:<br/>
 
 ---
 
-### setOptions
+### setConfig
 
-<span style="font-family: monospace; font-size: 80%;">public [JsonTokenizer](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonTokenizer.md) __setOptions__([LanguageOptions](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/LanguageOptions.md)<?> options)</span>
+<span style="font-family: monospace; font-size: 80%;">public [JsonTokenizer](../../../../../../../io/github/qishr/cascara/lang/json/processor/JsonTokenizer.md) __setConfig__([LanguageConfig](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/util/LanguageConfig.md)<?> options)</span>
 
 
 
 **Overrides:**
 
-[AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html#setoptions)
+[AbstractJsonProcessor](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.lang.json/io/github/qishr/cascara/lang/json/internal/AbstractJsonProcessor.html#setconfig)
 
 
 ---
@@ -148,7 +148,7 @@ All Implemented Interfaces:<br/>
 
 ### tokenize
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonToken](../../../../../../../io/github/qishr/cascara/lang/json/token/JsonToken.md)> __tokenize__(byte[] data)</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __tokenize__(byte[] data)</span>
 
 
 
@@ -161,7 +161,7 @@ All Implemented Interfaces:<br/>
 
 ### tokenize
 
-<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<[JsonToken](../../../../../../../io/github/qishr/cascara/lang/json/token/JsonToken.md)> __tokenize__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source)</span>
+<span style="font-family: monospace; font-size: 80%;">public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __tokenize__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) source)</span>
 
 
 
@@ -174,7 +174,7 @@ All Implemented Interfaces:<br/>
 
 ### getTokenTypes
 
-<span style="font-family: monospace; font-size: 80%;">public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[JsonTokenType](../../../../../../../io/github/qishr/cascara/lang/json/token/JsonTokenType.md)> __getTokenTypes__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html) __getTokenTypes__()</span>
 
 
 

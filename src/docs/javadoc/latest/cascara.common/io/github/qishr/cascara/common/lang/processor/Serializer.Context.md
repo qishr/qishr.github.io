@@ -25,7 +25,7 @@ public static class __Context__</span>
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | public [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md)            | [serialize](#serialize)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) jvmType)         |             |
 | public C                                                                                             | [deserialize](#deserialize)([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) node, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) jvmType)                      |             |
-| public [Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<?>   | [deserializeEnum](#deserializeenum)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) targetType) |             |
+| public [Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)      | [deserializeEnum](#deserializeenum)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) targetType) |             |
 | public [Reporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md) | [getReporter](#getreporter)()                                                                                                                                                                                                                       |             |
 
 
@@ -54,7 +54,7 @@ public C __deserialize__([AstNode](../../../../../../../io/github/qishr/cascara/
 
 ### deserializeEnum
 
-<span style="font-family: monospace; font-size: 80%;">public [Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html)<?> __deserializeEnum__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) targetType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [Enum](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Enum.html) __deserializeEnum__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) targetType)</span>
 
 
 

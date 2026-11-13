@@ -24,11 +24,11 @@ public class __TypeDescriptorFactory__<br/>extends [AbstractServiceProviderFacto
 
 ## Method Summary
 
-| Modifier and Type                                                                                       | Method                                                                                                                                                       | Description |
-|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [TypeDescriptor](../../../../../../io/github/qishr/cascara/common/type/TypeDescriptor.md)<?>     | [createTypeDescriptor](#createtypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)         |             |
-| public [ScalarDescriptor](../../../../../../io/github/qishr/cascara/common/type/ScalarDescriptor.md)<?> | [createScalarDescriptor](#createscalardescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)     |             |
-| public [ScalarDescriptor](../../../../../../io/github/qishr/cascara/common/type/ScalarDescriptor.md)<?> | [createScalarDescriptor](#createscalardescriptor)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) schemaFormat) |             |
+| Modifier and Type                                                                                    | Method                                                                                                                                                       | Description |
+|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [TypeDescriptor](../../../../../../io/github/qishr/cascara/common/type/TypeDescriptor.md)     | [createTypeDescriptor](#createtypedescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)         |             |
+| public [ScalarDescriptor](../../../../../../io/github/qishr/cascara/common/type/ScalarDescriptor.md) | [createScalarDescriptor](#createscalardescriptor)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)     |             |
+| public [ScalarDescriptor](../../../../../../io/github/qishr/cascara/common/type/ScalarDescriptor.md) | [createScalarDescriptor](#createscalardescriptor)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) schemaFormat) |             |
 
 
 ### Methods inherited from [AbstractServiceProviderFactory](../../../../../../io/github/qishr/cascara/common/service/AbstractServiceProviderFactory.md)
@@ -40,7 +40,7 @@ createServiceProvider, createServiceProvider
 
 ### createTypeDescriptor
 
-<span style="font-family: monospace; font-size: 80%;">public [TypeDescriptor](../../../../../../io/github/qishr/cascara/common/type/TypeDescriptor.md)<?> __createTypeDescriptor__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [TypeDescriptor](../../../../../../io/github/qishr/cascara/common/type/TypeDescriptor.md) __createTypeDescriptor__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
 
 
 
@@ -53,7 +53,7 @@ createServiceProvider, createServiceProvider
 
 ### createScalarDescriptor
 
-<span style="font-family: monospace; font-size: 80%;">public [ScalarDescriptor](../../../../../../io/github/qishr/cascara/common/type/ScalarDescriptor.md)<?> __createScalarDescriptor__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [ScalarDescriptor](../../../../../../io/github/qishr/cascara/common/type/ScalarDescriptor.md) __createScalarDescriptor__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> jvmType)</span>
 
 
 
@@ -66,7 +66,7 @@ createServiceProvider, createServiceProvider
 
 ### createScalarDescriptor
 
-<span style="font-family: monospace; font-size: 80%;">public [ScalarDescriptor](../../../../../../io/github/qishr/cascara/common/type/ScalarDescriptor.md)<?> __createScalarDescriptor__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) schemaFormat)</span>
+<span style="font-family: monospace; font-size: 80%;">public [ScalarDescriptor](../../../../../../io/github/qishr/cascara/common/type/ScalarDescriptor.md) __createScalarDescriptor__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) schemaFormat)</span>
 
 
 

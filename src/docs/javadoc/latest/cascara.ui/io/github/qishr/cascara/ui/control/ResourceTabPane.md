@@ -34,15 +34,15 @@ Package [io.github.qishr.cascara.ui.control](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                                                                                | Method                                                                                                          | Description |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|-------------|
-| public [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)<[ResourceTab](../../../../../../io/github/qishr/cascara/ui/control/ResourceTab.md)> | [selectedTabProperty](#selectedtabproperty)()                                                                   |             |
-| public [ResourceTab](../../../../../../io/github/qishr/cascara/ui/control/ResourceTab.md)                                                                                                        | [getSelectedTab](#getselectedtab)()                                                                             |             |
-| public void                                                                                                                                                                                      | [setUri](#seturi)([ResourceTab](../../../../../../io/github/qishr/cascara/ui/control/ResourceTab.md) v)         |             |
-| public void                                                                                                                                                                                      | [selectTab](#selecttab)([ResourceTab](../../../../../../io/github/qishr/cascara/ui/control/ResourceTab.md) tab) |             |
-| public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)<[ResourceTab](../../../../../../io/github/qishr/cascara/ui/control/ResourceTab.md)>    | [getTabs](#gettabs)()                                                                                           |             |
-| public [ResourceTab](../../../../../../io/github/qishr/cascara/ui/control/ResourceTab.md)                                                                                                        | [createTab](#createtab)(boolean isTransient)                                                                    |             |
-| public void                                                                                                                                                                                      | [removeTab](#removetab)([ResourceTab](../../../../../../io/github/qishr/cascara/ui/control/ResourceTab.md) tab) |             |
+| Modifier and Type                                                                                            | Method                                                                                                          | Description |
+|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|-------------|
+| public [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html) | [selectedTabProperty](#selectedtabproperty)()                                                                   |             |
+| public [ResourceTab](../../../../../../io/github/qishr/cascara/ui/control/ResourceTab.md)                    | [getSelectedTab](#getselectedtab)()                                                                             |             |
+| public void                                                                                                  | [setUri](#seturi)([ResourceTab](../../../../../../io/github/qishr/cascara/ui/control/ResourceTab.md) v)         |             |
+| public void                                                                                                  | [selectTab](#selecttab)([ResourceTab](../../../../../../io/github/qishr/cascara/ui/control/ResourceTab.md) tab) |             |
+| public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)    | [getTabs](#gettabs)()                                                                                           |             |
+| public [ResourceTab](../../../../../../io/github/qishr/cascara/ui/control/ResourceTab.md)                    | [createTab](#createtab)(boolean isTransient)                                                                    |             |
+| public void                                                                                                  | [removeTab](#removetab)([ResourceTab](../../../../../../io/github/qishr/cascara/ui/control/ResourceTab.md) tab) |             |
 
 
 
@@ -62,7 +62,7 @@ Package [io.github.qishr.cascara.ui.control](index.md)
 
 ### selectedTabProperty
 
-<span style="font-family: monospace; font-size: 80%;">public [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html)<[ResourceTab](../../../../../../io/github/qishr/cascara/ui/control/ResourceTab.md)> __selectedTabProperty__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [ObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ObjectProperty.html) __selectedTabProperty__()</span>
 
 
 
@@ -98,7 +98,7 @@ Package [io.github.qishr.cascara.ui.control](index.md)
 
 ### getTabs
 
-<span style="font-family: monospace; font-size: 80%;">public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)<[ResourceTab](../../../../../../io/github/qishr/cascara/ui/control/ResourceTab.md)> __getTabs__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html) __getTabs__()</span>
 
 
 
