@@ -6,28 +6,27 @@
 
 === "All Classes and Interfaces"
 
-    | Class                                         | Description                                                                    |
-    |-----------------------------------------------|--------------------------------------------------------------------------------|
-    | [AbstractClassFinder](AbstractClassFinder.md) |                                                                                |
-    | [ArchiveFile](ArchiveFile.md)                 |                                                                                |
-    | [Cascara](Cascara.md)                         |                                                                                |
-    | [ClassHierarchy](ClassHierarchy.md)           |                                                                                |
-    | [ClassPath](ClassPath.md)                     |                                                                                |
-    | [Classes](Classes.md)                         |                                                                                |
-    | [ContentType](ContentType.md)                 | A stable, persisted canonical content type used throughout Cascara.instance(). |
-    | [ContentTypeResolver](ContentTypeResolver.md) |                                                                                |
-    | [ContentTypes](ContentTypes.md)               |                                                                                |
-    | [Duplicable](Duplicable.md)                   |                                                                                |
-    | [JarFile](JarFile.md)                         |                                                                                |
-    | [JarManifest](JarManifest.md)                 |                                                                                |
-    | [JreUtils](JreUtils.md)                       |                                                                                |
-    | [ModulePath](ModulePath.md)                   |                                                                                |
-    | [Pair](Pair.md)                               |                                                                                |
-    | [ReflectionUtils](ReflectionUtils.md)         |                                                                                |
-    | [StringUtils](StringUtils.md)                 |                                                                                |
-    | [TermUtils](TermUtils.md)                     |                                                                                |
-    | [UriScheme](UriScheme.md)                     |                                                                                |
-    | [ZipFile](ZipFile.md)                         |                                                                                |
+    | Class                                         | Description                                                               |
+    |-----------------------------------------------|---------------------------------------------------------------------------|
+    | [ArchiveFile](ArchiveFile.md)                 |                                                                           |
+    | [Cascara](Cascara.md)                         |                                                                           |
+    | [ClassHierarchy](ClassHierarchy.md)           |                                                                           |
+    | [ClassPath](ClassPath.md)                     |                                                                           |
+    | [Classes](Classes.md)                         |                                                                           |
+    | [Config](Config.md)                           |                                                                           |
+    | [ContentType](ContentType.md)                 | A stable, persisted canonical content type used throughout Cascara.get(). |
+    | [ContentTypeResolver](ContentTypeResolver.md) |                                                                           |
+    | [ContentTypes](ContentTypes.md)               |                                                                           |
+    | [Duplicable](Duplicable.md)                   |                                                                           |
+    | [JarFile](JarFile.md)                         |                                                                           |
+    | [JarManifest](JarManifest.md)                 |                                                                           |
+    | [JreUtils](JreUtils.md)                       |                                                                           |
+    | [ModulePath](ModulePath.md)                   |                                                                           |
+    | [Pair](Pair.md)                               |                                                                           |
+    | [ReflectionUtils](ReflectionUtils.md)         |                                                                           |
+    | [StringUtils](StringUtils.md)                 |                                                                           |
+    | [UriScheme](UriScheme.md)                     |                                                                           |
+    | [ZipFile](ZipFile.md)                         |                                                                           |
 
 
 === "Interfaces"
@@ -41,24 +40,23 @@
 
 === "Classes"
 
-    | Class                                         | Description                                                                    |
-    |-----------------------------------------------|--------------------------------------------------------------------------------|
-    | [AbstractClassFinder](AbstractClassFinder.md) |                                                                                |
-    | [Cascara](Cascara.md)                         |                                                                                |
-    | [ClassHierarchy](ClassHierarchy.md)           |                                                                                |
-    | [ClassPath](ClassPath.md)                     |                                                                                |
-    | [Classes](Classes.md)                         |                                                                                |
-    | [ContentType](ContentType.md)                 | A stable, persisted canonical content type used throughout Cascara.instance(). |
-    | [ContentTypes](ContentTypes.md)               |                                                                                |
-    | [JarFile](JarFile.md)                         |                                                                                |
-    | [JarManifest](JarManifest.md)                 |                                                                                |
-    | [JreUtils](JreUtils.md)                       |                                                                                |
-    | [ModulePath](ModulePath.md)                   |                                                                                |
-    | [Pair](Pair.md)                               |                                                                                |
-    | [ReflectionUtils](ReflectionUtils.md)         |                                                                                |
-    | [StringUtils](StringUtils.md)                 |                                                                                |
-    | [TermUtils](TermUtils.md)                     |                                                                                |
-    | [ZipFile](ZipFile.md)                         |                                                                                |
+    | Class                                 | Description                                                               |
+    |---------------------------------------|---------------------------------------------------------------------------|
+    | [Cascara](Cascara.md)                 |                                                                           |
+    | [ClassHierarchy](ClassHierarchy.md)   |                                                                           |
+    | [ClassPath](ClassPath.md)             |                                                                           |
+    | [Classes](Classes.md)                 |                                                                           |
+    | [Config](Config.md)                   |                                                                           |
+    | [ContentType](ContentType.md)         | A stable, persisted canonical content type used throughout Cascara.get(). |
+    | [ContentTypes](ContentTypes.md)       |                                                                           |
+    | [JarFile](JarFile.md)                 |                                                                           |
+    | [JarManifest](JarManifest.md)         |                                                                           |
+    | [JreUtils](JreUtils.md)               |                                                                           |
+    | [ModulePath](ModulePath.md)           |                                                                           |
+    | [Pair](Pair.md)                       |                                                                           |
+    | [ReflectionUtils](ReflectionUtils.md) |                                                                           |
+    | [StringUtils](StringUtils.md)         |                                                                           |
+    | [ZipFile](ZipFile.md)                 |                                                                           |
 
 
 === "Enum Classes"

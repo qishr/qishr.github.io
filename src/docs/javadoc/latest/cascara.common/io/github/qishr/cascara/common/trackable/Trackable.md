@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.trackable](index.md)
         io.github.qishr.cascara.common.trackable.Trackable<br/>
 <br/>
 All Known Implementing Classes:<br/>
-    [AbstractTrackable](../../../../../../io/github/qishr/cascara/common/trackable/AbstractTrackable.md), [TrackableProperty](../../../../../../io/github/qishr/cascara/common/trackable/property/TrackableProperty.md)
+    [AbstractTrackable](../../../../../../io/github/qishr/cascara/common/trackable/AbstractTrackable.md), [TrackableValue](../../../../../../io/github/qishr/cascara/common/trackable/TrackableValue.md)
 
 
 ----
@@ -15,27 +15,27 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type    | Method                                                                                                                                                     | Description |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public abstract void | [addTracker](#addtracker)([InvalidationTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener)       |             |
-| public abstract void | [removeTracker](#removetracker)([InvalidationTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener) |             |
+| Modifier and Type    | Method                                                                                                                                                                             | Description |
+|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public abstract void | [addInvalidationTracker](#addinvalidationtracker)([InvalidationTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener)       |             |
+| public abstract void | [removeInvalidationTracker](#removeinvalidationtracker)([InvalidationTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener) |             |
 
 
 
 ## Method Details
 
-### addTracker
+### addInvalidationTracker
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __addTracker__([InvalidationTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __addInvalidationTracker__([InvalidationTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener)</span>
 
 
 
 
 ---
 
-### removeTracker
+### removeInvalidationTracker
 
-<span style="font-family: monospace; font-size: 80%;">public abstract void __removeTracker__([InvalidationTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract void __removeInvalidationTracker__([InvalidationTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener)</span>
 
 
 

@@ -378,8 +378,7 @@ Associates a comment node with this specific AST node.
 
 ### getToken
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [YamlToken](../../../../../../../io/github/qishr/cascara/lang/yaml/token/YamlToken.md) __getToken__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [YamlToken](../../../../../../../io/github/qishr/cascara/lang/yaml/token/YamlToken.md) __getToken__()</span>
 
 
 

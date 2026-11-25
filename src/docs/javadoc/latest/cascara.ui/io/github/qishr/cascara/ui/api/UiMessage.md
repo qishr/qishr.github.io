@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.ui.api](index.md)
                 io.github.qishr.cascara.ui.api.UiMessage<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+    [LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ----
@@ -204,7 +204,7 @@ public static final  LOAD_DEFAULT_FAILURE
 
 **Specified By:**
 
-[LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+[LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ---
@@ -217,7 +217,7 @@ public static final  LOAD_DEFAULT_FAILURE
 
 **Specified By:**
 
-[LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+[LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ---

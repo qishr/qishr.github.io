@@ -38,13 +38,13 @@ Package [io.github.qishr.cascara.common.security.asn1.types.primitive](index.md)
 | public [BigInteger](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/math/BigInteger.html) | [getValue](#getvalue)() |             |
 
 
-### Methods inherited from [ASN1PrimitiveValue](../../../../../../../../../io/github/qishr/cascara/common/security/asn1/types/primitive/ASN1PrimitiveValue.md)
-
-valueHash
-
 ### Methods inherited from [ASN1Object](../../../../../../../../../io/github/qishr/cascara/common/security/asn1/types/ASN1Object.md)
 
 toString, getTag, getEncoded, equals, valueString, hashCode
+
+### Methods inherited from [ASN1PrimitiveValue](../../../../../../../../../io/github/qishr/cascara/common/security/asn1/types/primitive/ASN1PrimitiveValue.md)
+
+valueHash
 
 
 ## Method Details

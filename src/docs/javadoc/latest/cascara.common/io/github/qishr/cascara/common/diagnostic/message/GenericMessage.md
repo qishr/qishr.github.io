@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.common.diagnostic.message](index.md)
                 io.github.qishr.cascara.common.diagnostic.message.GenericMessage<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+    [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ----
@@ -23,17 +23,22 @@ All Implemented Interfaces:<br/>
 | [WARN](#warn)                                                                   |             |
 | [ERROR](#error)                                                                 |             |
 | [UNIMPLEMENTED_METHOD](#unimplemented_method)                                   |             |
-| [UNEXPECTED_NULL_PARAMETER](#unexpected_null_parameter)                         |             |
+| [UNEXPECTED_NULL_VALUE](#unexpected_null_value)                                 |             |
 | [UNEXPECTED_NULL_RETURN](#unexpected_null_return)                               |             |
 | [MANIFEST_NOT_FOUND](#manifest_not_found)                                       |             |
 | [MANIFEST_READ](#manifest_read)                                                 |             |
+| [MANIFEST_PARSE](#manifest_parse)                                               |             |
 | [RESOURCE_INACCESSIBLE](#resource_inaccessible)                                 |             |
+| [STREAM_READ_ERROR](#stream_read_error)                                         |             |
+| [CONFIG_LOAD_FAILED](#config_load_failed)                                       |             |
+| [CONFIG_FS_ALREADY_SET](#config_fs_already_set)                                 |             |
+| [CASCARA_CONFIG_ALREADY_INIT](#cascara_config_already_init)                     |             |
 | [EXCEPTION](#exception)                                                         |             |
 | [RUNTIME_EXCEPTION](#runtime_exception)                                         |             |
 | [NPE](#npe)                                                                     |             |
 | [CLASS_NOT_FOUND](#class_not_found)                                             |             |
+| [JRE_CLASS_CAST_EXCEPTION](#jre_class_cast_exception)                           |             |
 | [CLASS_CAST_EXCEPTION](#class_cast_exception)                                   |             |
-| [CLASS_NOT_SERIALIZABLE](#class_not_serializable)                               |             |
 | [NO_SUCH_METHOD](#no_such_method)                                               |             |
 | [NO_SUCH_CONSTRUCTOR](#no_such_constructor)                                     |             |
 | [INVOCATION_TARGET_EXCEPTION](#invocation_target_exception)                     |             |
@@ -49,6 +54,8 @@ All Implemented Interfaces:<br/>
 | [UNSUPPORTED_OPERATION](#unsupported_operation)                                 |             |
 | [UNSATISFIED_LINK_ERROR](#unsatisfied_link_error)                               |             |
 | [INTERNAL_ERROR](#internal_error)                                               |             |
+| [REFLECTIVE_OPERATION_EXCEPTION](#reflective_operation_exception)               |             |
+| [NUMBER_FORMAT_EXCEPTION](#number_format_exception)                             |             |
 | [CERTIFICATE_EXCEPTION](#certificate_exception)                                 |             |
 | [INVALID_ALGORITHM_PARAMETER_EXCEPTION](#invalid_algorithm_parameter_exception) |             |
 | [NO_SUCH_ALGORITHM_EXCEPTION](#no_such_algorithm_exception)                     |             |
@@ -61,6 +68,7 @@ All Implemented Interfaces:<br/>
 | [MESSAGE_FORMATTING_ERROR](#message_formatting_error)                           |             |
 | [DIAGNOSTIC_FORMATTING_ERROR](#diagnostic_formatting_error)                     |             |
 | [NO_RESOURCE_PROVIDER](#no_resource_provider)                                   |             |
+| [CLASS_NOT_SERIALIZABLE](#class_not_serializable)                               |             |
 
 
 
@@ -113,9 +121,9 @@ public static final  UNIMPLEMENTED_METHOD
 
 ---
 
-### UNEXPECTED_NULL_PARAMETER
+### UNEXPECTED_NULL_VALUE
 
-public static final  UNEXPECTED_NULL_PARAMETER
+public static final  UNEXPECTED_NULL_VALUE
 
 
 
@@ -149,9 +157,54 @@ public static final  MANIFEST_READ
 
 ---
 
+### MANIFEST_PARSE
+
+public static final  MANIFEST_PARSE
+
+
+
+
+---
+
 ### RESOURCE_INACCESSIBLE
 
 public static final  RESOURCE_INACCESSIBLE
+
+
+
+
+---
+
+### STREAM_READ_ERROR
+
+public static final  STREAM_READ_ERROR
+
+
+
+
+---
+
+### CONFIG_LOAD_FAILED
+
+public static final  CONFIG_LOAD_FAILED
+
+
+
+
+---
+
+### CONFIG_FS_ALREADY_SET
+
+public static final  CONFIG_FS_ALREADY_SET
+
+
+
+
+---
+
+### CASCARA_CONFIG_ALREADY_INIT
+
+public static final  CASCARA_CONFIG_ALREADY_INIT
 
 
 
@@ -194,18 +247,18 @@ public static final  CLASS_NOT_FOUND
 
 ---
 
-### CLASS_CAST_EXCEPTION
+### JRE_CLASS_CAST_EXCEPTION
 
-public static final  CLASS_CAST_EXCEPTION
+public static final  JRE_CLASS_CAST_EXCEPTION
 
 
 
 
 ---
 
-### CLASS_NOT_SERIALIZABLE
+### CLASS_CAST_EXCEPTION
 
-public static final  CLASS_NOT_SERIALIZABLE
+public static final  CLASS_CAST_EXCEPTION
 
 
 
@@ -347,6 +400,24 @@ public static final  INTERNAL_ERROR
 
 ---
 
+### REFLECTIVE_OPERATION_EXCEPTION
+
+public static final  REFLECTIVE_OPERATION_EXCEPTION
+
+
+
+
+---
+
+### NUMBER_FORMAT_EXCEPTION
+
+public static final  NUMBER_FORMAT_EXCEPTION
+
+
+
+
+---
+
 ### CERTIFICATE_EXCEPTION
 
 public static final  CERTIFICATE_EXCEPTION
@@ -455,6 +526,15 @@ public static final  NO_RESOURCE_PROVIDER
 
 ---
 
+### CLASS_NOT_SERIALIZABLE
+
+public static final  CLASS_NOT_SERIALIZABLE
+
+
+
+
+---
+
 
 ## Method Details
 
@@ -484,7 +564,7 @@ public static final  NO_RESOURCE_PROVIDER
 
 **Specified By:**
 
-[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ---
@@ -497,7 +577,7 @@ public static final  NO_RESOURCE_PROVIDER
 
 **Specified By:**
 
-[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ---

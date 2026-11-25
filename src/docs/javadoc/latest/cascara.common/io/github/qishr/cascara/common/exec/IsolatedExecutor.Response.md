@@ -15,16 +15,17 @@ Enclosing Class:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                   | Method                              | Description |
-|-----------------------------------------------------------------------------------------------------|-------------------------------------|-------------|
-| public T                                                                                            | [getPayload](#getpayload)()         |             |
-| public T                                                                                            | [orElseThrow](#orelsethrow)()       |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)     | [getDiagnostics](#getdiagnostics)() |             |
-| public boolean                                                                                      | [isSuccess](#issuccess)()           |             |
-| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)     | [getCommand](#getcommand)()         |             |
-| public [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md)              | [getJvmConfig](#getjvmconfig)()     |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getSystemOut](#getsystemout)()     |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getSystemErr](#getsystemerr)()     |             |
+| Modifier and Type                                                                                       | Method                              | Description |
+|---------------------------------------------------------------------------------------------------------|-------------------------------------|-------------|
+| public T                                                                                                | [getPayload](#getpayload)()         |             |
+| public T                                                                                                | [orElseThrow](#orelsethrow)()       |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)         | [getDiagnostics](#getdiagnostics)() |             |
+| public boolean                                                                                          | [isSuccess](#issuccess)()           |             |
+| public [Duration](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Duration.html) | [getDuration](#getduration)()       |             |
+| public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)         | [getCommand](#getcommand)()         |             |
+| public [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md)                  | [getJvmConfig](#getjvmconfig)()     |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)     | [getSystemOut](#getsystemout)()     |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)     | [getSystemErr](#getsystemerr)()     |             |
 
 
 
@@ -60,6 +61,15 @@ Enclosing Class:<br/>
 ### isSuccess
 
 <span style="font-family: monospace; font-size: 80%;">public boolean __isSuccess__()</span>
+
+
+
+
+---
+
+### getDuration
+
+<span style="font-family: monospace; font-size: 80%;">public [Duration](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Duration.html) __getDuration__()</span>
 
 
 

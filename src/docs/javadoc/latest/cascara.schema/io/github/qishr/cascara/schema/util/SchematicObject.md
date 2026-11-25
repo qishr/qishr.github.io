@@ -37,7 +37,7 @@ Package [io.github.qishr.cascara.schema.util](index.md)
 
 ### Methods inherited from [AbstractTrackable](../../../../../../../cascara.common/io/github/qishr/cascara/common/trackable/AbstractTrackable.md)
 
-addTracker, invalidate, removeTracker
+removeInvalidationTracker, invalidate, addInvalidationTracker
 
 ### Methods inherited from [TrackableObject](../../../../../../../cascara.common/io/github/qishr/cascara/common/trackable/TrackableObject.md)
 

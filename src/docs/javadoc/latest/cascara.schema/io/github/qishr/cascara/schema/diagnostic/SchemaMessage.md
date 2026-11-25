@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.schema.diagnostic](index.md)
                 io.github.qishr.cascara.schema.diagnostic.SchemaMessage<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+    [LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ----
@@ -464,7 +464,7 @@ public static final  TARGET_IS_NULL
 
 **Specified By:**
 
-[LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+[LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ---
@@ -477,7 +477,7 @@ public static final  TARGET_IS_NULL
 
 **Specified By:**
 
-[LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+[LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ---

@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.common.trackable.property](index.md)
                 io.github.qishr.cascara.common.trackable.property.TrackableProperty<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [Trackable](../../../../../../../io/github/qishr/cascara/common/trackable/Trackable.md)
+    [TrackableValue](../../../../../../../io/github/qishr/cascara/common/trackable/TrackableValue.md)<T>
 
 Direct Known Subtypes:<br/>
     [TrackableBooleanProperty](../../../../../../../io/github/qishr/cascara/common/trackable/property/TrackableBooleanProperty.md), [TrackableStringProperty](../../../../../../../io/github/qishr/cascara/common/trackable/property/TrackableStringProperty.md), [TrackableNumberProperty](../../../../../../../io/github/qishr/cascara/common/trackable/property/TrackableNumberProperty.md), [TrackableIntegerProperty](../../../../../../../io/github/qishr/cascara/common/trackable/property/TrackableIntegerProperty.md)
@@ -14,8 +14,7 @@ Direct Known Subtypes:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public class __TrackableProperty__<br/>extends [Property](../../../../../../../io/github/qishr/cascara/common/property/Property.md)<T>
+<span style="font-family: monospace; font-size: 80%;">public class __TrackableProperty__<br/>extends [Property](../../../../../../../io/github/qishr/cascara/common/property/Property.md)<T>
 </span>
 
 
@@ -33,24 +32,26 @@ public class __TrackableProperty__<br/>extends [Property](../../../../../../../i
 
 ## Method Summary
 
-| Modifier and Type                                                                                   | Method                                                                                                                                                        | Description |
-|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) | [getOwner](#getowner)()                                                                                                                                       |             |
-| public void                                                                                         | [setOwner](#setowner)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                                         |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getMediaType](#getmediatype)()                                                                                                                               |             |
-| public void                                                                                         | [setMediaType](#setmediatype)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) type)                              |             |
-| public boolean                                                                                      | [isDeclaredProperty](#isdeclaredproperty)()                                                                                                                   |             |
-| public void                                                                                         | [setDeclaredProperty](#setdeclaredproperty)(boolean b)                                                                                                        |             |
-| public void                                                                                         | [setValue](#setvalue)(T v)                                                                                                                                    |             |
-| public void                                                                                         | [setName](#setname)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) s)                                           |             |
-| protected void                                                                                      | [invalidate](#invalidate)()                                                                                                                                   |             |
-| public void                                                                                         | [addTracker](#addtracker)([InvalidationTracker](../../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener)       |             |
-| public void                                                                                         | [removeTracker](#removetracker)([InvalidationTracker](../../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener) |             |
+| Modifier and Type                                                                                   | Method                                                                                                                                                                               | Description |
+|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) | [getOwner](#getowner)()                                                                                                                                                              |             |
+| public void                                                                                         | [setOwner](#setowner)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) o)                                                                |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getMediaType](#getmediatype)()                                                                                                                                                      |             |
+| public void                                                                                         | [setMediaType](#setmediatype)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) type)                                                     |             |
+| public boolean                                                                                      | [isDeclaredProperty](#isdeclaredproperty)()                                                                                                                                          |             |
+| public void                                                                                         | [setDeclaredProperty](#setdeclaredproperty)(boolean b)                                                                                                                               |             |
+| public void                                                                                         | [setValue](#setvalue)(T v)                                                                                                                                                           |             |
+| public void                                                                                         | [setName](#setname)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                               |             |
+| protected void                                                                                      | [invalidate](#invalidate)(T oldValue, T newValue)                                                                                                                                    |             |
+| public void                                                                                         | [addTracker](#addtracker)([ValueTracker](../../../../../../../io/github/qishr/cascara/common/trackable/tracker/ValueTracker.md)<T> tracker)                                          |             |
+| public void                                                                                         | [removeTracker](#removetracker)([ValueTracker](../../../../../../../io/github/qishr/cascara/common/trackable/tracker/ValueTracker.md)<T> tracker)                                    |             |
+| public void                                                                                         | [addInvalidationTracker](#addinvalidationtracker)([InvalidationTracker](../../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) tracker)       |             |
+| public void                                                                                         | [removeInvalidationTracker](#removeinvalidationtracker)([InvalidationTracker](../../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) tracker) |             |
 
 
 ### Methods inherited from [Property](../../../../../../../io/github/qishr/cascara/common/property/Property.md)
 
-asInteger, asLong, isEmpty, getValue, getValue, asBoolean, setPrimitiveType, getString, asString, asLong, getPrimitiveType, getName, getValues, asDouble, asInteger, asDouble, asBoolean, getValuesMap
+asInteger, asLong, isEmpty, getValue, toString, getValue, asBoolean, setPrimitiveType, getString, asString, duplicate, asLong, getPrimitiveType, getName, getValues, asDouble, copyFrom, asInteger, asDouble, asBoolean, getValuesMap
 
 
 ## Method Details
@@ -124,7 +125,7 @@ asInteger, asLong, isEmpty, getValue, getValue, asBoolean, setPrimitiveType, get
 
 ### setName
 
-<span style="font-family: monospace; font-size: 80%;">public void __setName__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) s)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __setName__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)</span>
 
 
 
@@ -133,7 +134,7 @@ asInteger, asLong, isEmpty, getValue, getValue, asBoolean, setPrimitiveType, get
 
 ### invalidate
 
-<span style="font-family: monospace; font-size: 80%;">protected void __invalidate__()</span>
+<span style="font-family: monospace; font-size: 80%;">protected void __invalidate__(T oldValue, T newValue)</span>
 
 
 
@@ -142,26 +143,44 @@ asInteger, asLong, isEmpty, getValue, getValue, asBoolean, setPrimitiveType, get
 
 ### addTracker
 
-<span style="font-family: monospace; font-size: 80%;">public void __addTracker__([InvalidationTracker](../../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __addTracker__([ValueTracker](../../../../../../../io/github/qishr/cascara/common/trackable/tracker/ValueTracker.md)<T> tracker)</span>
 
 
 
 **Specified By:**
 
-[Trackable](../../../../../../../io/github/qishr/cascara/common/trackable/Trackable.md)
+[TrackableValue](../../../../../../../io/github/qishr/cascara/common/trackable/TrackableValue.md)
 
 
 ---
 
 ### removeTracker
 
-<span style="font-family: monospace; font-size: 80%;">public void __removeTracker__([InvalidationTracker](../../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __removeTracker__([ValueTracker](../../../../../../../io/github/qishr/cascara/common/trackable/tracker/ValueTracker.md)<T> tracker)</span>
 
 
 
 **Specified By:**
 
-[Trackable](../../../../../../../io/github/qishr/cascara/common/trackable/Trackable.md)
+[TrackableValue](../../../../../../../io/github/qishr/cascara/common/trackable/TrackableValue.md)
+
+
+---
+
+### addInvalidationTracker
+
+<span style="font-family: monospace; font-size: 80%;">public void __addInvalidationTracker__([InvalidationTracker](../../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) tracker)</span>
+
+
+
+
+---
+
+### removeInvalidationTracker
+
+<span style="font-family: monospace; font-size: 80%;">public void __removeInvalidationTracker__([InvalidationTracker](../../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) tracker)</span>
+
+
 
 
 ---

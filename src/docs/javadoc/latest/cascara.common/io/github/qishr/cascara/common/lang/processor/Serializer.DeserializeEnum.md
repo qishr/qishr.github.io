@@ -7,8 +7,7 @@ Package [io.github.qishr.cascara.common.lang.processor](index.md)
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public static interface __DeserializeEnum__</span>
+<span style="font-family: monospace; font-size: 80%;">public static interface __DeserializeEnum__</span>
 
 
 ## Method Summary

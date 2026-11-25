@@ -7,8 +7,7 @@ Package [io.github.qishr.cascara.common.lang.util](index.md)
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public class __SemanticDiff__</span>
+<span style="font-family: monospace; font-size: 80%;">public class __SemanticDiff__</span>
 
 
 ## Constructor Summary

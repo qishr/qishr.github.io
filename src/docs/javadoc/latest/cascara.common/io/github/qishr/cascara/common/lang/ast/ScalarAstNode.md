@@ -61,8 +61,7 @@ Sets the [QuoteStyle](../../../../../../../io/github/qishr/cascara/common/lang/u
 
 ### getLexeme
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getLexeme__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getLexeme__()</span>
 
 Returns the exact, unparsed text block directly from the file buffer.
 
@@ -71,8 +70,7 @@ Returns the exact, unparsed text block directly from the file buffer.
 
 ### getPrimitive
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) __getPrimitive__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) __getPrimitive__()</span>
 
 Returns the Java-native representation of the scalar (e.g., Integer, Boolean, String).
 
@@ -99,8 +97,7 @@ Returns the Java-native representation of the scalar (e.g., Integer, Boolean, St
 
 ### getContent
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getContent__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getContent__()</span>
 
 
 

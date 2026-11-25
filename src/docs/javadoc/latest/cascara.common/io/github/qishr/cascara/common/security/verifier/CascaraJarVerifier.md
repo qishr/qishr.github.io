@@ -10,7 +10,7 @@ All Implemented Interfaces:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __CascaraJarVerifier__</span>
+<span style="font-family: monospace; font-size: 80%;">public final class __CascaraJarVerifier__</span>
 
 
 ## Constructor Summary
@@ -43,8 +43,7 @@ All Implemented Interfaces:<br/>
 
 ### setKeys
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public [CascaraJarVerifier](../../../../../../../io/github/qishr/cascara/common/security/verifier/CascaraJarVerifier.md) __setKeys__([Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), byte[]> keysFiles)</span>
+<span style="font-family: monospace; font-size: 80%;">public [CascaraJarVerifier](../../../../../../../io/github/qishr/cascara/common/security/verifier/CascaraJarVerifier.md) __setKeys__([Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), byte[]> keysFiles)</span>
 
 
 
@@ -57,8 +56,7 @@ public [CascaraJarVerifier](../../../../../../../io/github/qishr/cascara/common/
 
 ### setSignatures
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public [CascaraJarVerifier](../../../../../../../io/github/qishr/cascara/common/security/verifier/CascaraJarVerifier.md) __setSignatures__([Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), byte[]> signatureFiles)</span>
+<span style="font-family: monospace; font-size: 80%;">public [CascaraJarVerifier](../../../../../../../io/github/qishr/cascara/common/security/verifier/CascaraJarVerifier.md) __setSignatures__([Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), byte[]> signatureFiles)</span>
 
 
 
@@ -71,8 +69,7 @@ public [CascaraJarVerifier](../../../../../../../io/github/qishr/cascara/common/
 
 ### setManifest
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public [CascaraJarVerifier](../../../../../../../io/github/qishr/cascara/common/security/verifier/CascaraJarVerifier.md) __setManifest__(byte[] mf)</span>
+<span style="font-family: monospace; font-size: 80%;">public [CascaraJarVerifier](../../../../../../../io/github/qishr/cascara/common/security/verifier/CascaraJarVerifier.md) __setManifest__(byte[] mf)</span>
 
 
 
@@ -124,8 +121,7 @@ Verifies an individual file entry's stream against its SHA-256 digest in MANIFES
 
 ### getSigner
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [VerifiedSigner](../../../../../../../io/github/qishr/cascara/common/security/verifier/JarVerifier.VerifiedSigner.md) __getSigner__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)</span>
+<span style="font-family: monospace; font-size: 80%;">public [VerifiedSigner](../../../../../../../io/github/qishr/cascara/common/security/verifier/JarVerifier.VerifiedSigner.md) __getSigner__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)</span>
 
 
 

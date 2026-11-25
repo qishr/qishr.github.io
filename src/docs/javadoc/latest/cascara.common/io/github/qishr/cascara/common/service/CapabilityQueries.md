@@ -72,8 +72,7 @@ Matches if a property is a boolean flag set to true
 
 ### supportsContentType
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Beta<br/>
-public static [Predicate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Predicate.html) __supportsContentType__([ContentType](../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [Predicate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Predicate.html) __supportsContentType__([ContentType](../../../../../../io/github/qishr/cascara/common/util/ContentType.md) contentType)</span>
 
 Matches if a property is a boolean flag set to true
 

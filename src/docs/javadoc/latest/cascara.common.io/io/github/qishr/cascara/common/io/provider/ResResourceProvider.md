@@ -53,7 +53,7 @@ getServiceProperties
 
 **Throws:**
 
-[LocalizableIOException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocalizableIOException.md)
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
 
 
 ---

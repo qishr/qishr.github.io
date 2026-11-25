@@ -61,8 +61,7 @@ Returns the value corresponding to this entry.
 
 ### setRaw
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public abstract [MapEntryAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/MapEntryAstNode.md) __setRaw__(V value)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [MapEntryAstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/MapEntryAstNode.md) __setRaw__(V value)</span>
 
 Replaces the value corresponding to this entry with the specified value (optional operation).
 

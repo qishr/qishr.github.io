@@ -10,8 +10,7 @@ All Implemented Interfaces:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public class __GenericAstConverter__</span>
+<span style="font-family: monospace; font-size: 80%;">public class __GenericAstConverter__</span>
 
 
 ## Constructor Summary
@@ -39,8 +38,7 @@ public class __GenericAstConverter__</span>
 
 ### fromAst
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [GenericAstNode](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstNode.md) __fromAst__([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) ast)</span>
+<span style="font-family: monospace; font-size: 80%;">public [GenericAstNode](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstNode.md) __fromAst__([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) ast)</span>
 
 
 
@@ -53,8 +51,7 @@ public [GenericAstNode](../../../../../../../io/github/qishr/cascara/common/lang
 
 ### toGenericAst
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [GenericAstNode](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstNode.md) __toGenericAst__([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) node)</span>
+<span style="font-family: monospace; font-size: 80%;">public [GenericAstNode](../../../../../../../io/github/qishr/cascara/common/lang/generic/GenericAstNode.md) __toGenericAst__([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) node)</span>
 
 
 

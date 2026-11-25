@@ -43,8 +43,7 @@ Enclosing Class:<br/>
 
 ### with
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public static [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html) __with__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) annotation)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html) __with__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) annotation)</span>
 
 
 

@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.common.exec](index.md)
                 io.github.qishr.cascara.common.exec.ExecutionMessage<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [LocalizableMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+    [LocalizableMessage](../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ----
@@ -19,18 +19,24 @@ All Implemented Interfaces:<br/>
 
 | Enum Constant                                                           | Description |
 |-------------------------------------------------------------------------|-------------|
-| [PROCESS_FAILED](#process_failed)                                       |             |
 | [TASK_FAILED](#task_failed)                                             |             |
+| [MAIN_CLASS_ERROR](#main_class_error)                                   |             |
+| [UNRESOLVE_INPUT_CLASS](#unresolve_input_class)                         |             |
+| [PROCESS_NOT_STARTED](#process_not_started)                             |             |
+| [PROCESS_NOT_EXITED](#process_not_exited)                               |             |
 | [INPUT_FAILED](#input_failed)                                           |             |
 | [OUTPUT_FAILED](#output_failed)                                         |             |
 | [INTERRUPT](#interrupt)                                                 |             |
-| [DIAGNOSTIC_SERVER_FAILED](#diagnostic_server_failed)                   |             |
-| [DIAGNOSTIC_DESERIALIZATION_FAILED](#diagnostic_deserialization_failed) |             |
 | [NO_DESERIALIZER](#no_deserializer)                                     |             |
 | [DESERIALIZATION_FAILED](#deserialization_failed)                       |             |
+| [DIAGNOSTIC_SERVER_FAILED](#diagnostic_server_failed)                   |             |
+| [DIAGNOSTIC_DESERIALIZATION_FAILED](#diagnostic_deserialization_failed) |             |
+| [IPC_INIT_FAILED](#ipc_init_failed)                                     |             |
+| [IPC_NO_SOCKET_FILE](#ipc_no_socket_file)                               |             |
+| [IPC_CONNECT_FAILED](#ipc_connect_failed)                               |             |
 | [IPC_RECV_FAILED](#ipc_recv_failed)                                     |             |
-| [NO_SOCKET_FILE](#no_socket_file)                                       |             |
-| [CONNECT_FAILED](#connect_failed)                                       |             |
+| [IPC_CLOSE_FAILED](#ipc_close_failed)                                   |             |
+| [IPC_REMOVE_FAILED](#ipc_remove_failed)                                 |             |
 
 
 
@@ -47,18 +53,45 @@ All Implemented Interfaces:<br/>
 
 ## Enum Constant Details
 
-### PROCESS_FAILED
+### TASK_FAILED
 
-public static final  PROCESS_FAILED
+public static final  TASK_FAILED
 
 
 
 
 ---
 
-### TASK_FAILED
+### MAIN_CLASS_ERROR
 
-public static final  TASK_FAILED
+public static final  MAIN_CLASS_ERROR
+
+
+
+
+---
+
+### UNRESOLVE_INPUT_CLASS
+
+public static final  UNRESOLVE_INPUT_CLASS
+
+
+
+
+---
+
+### PROCESS_NOT_STARTED
+
+public static final  PROCESS_NOT_STARTED
+
+
+
+
+---
+
+### PROCESS_NOT_EXITED
+
+public static final  PROCESS_NOT_EXITED
 
 
 
@@ -92,24 +125,6 @@ public static final  INTERRUPT
 
 ---
 
-### DIAGNOSTIC_SERVER_FAILED
-
-public static final  DIAGNOSTIC_SERVER_FAILED
-
-
-
-
----
-
-### DIAGNOSTIC_DESERIALIZATION_FAILED
-
-public static final  DIAGNOSTIC_DESERIALIZATION_FAILED
-
-
-
-
----
-
 ### NO_DESERIALIZER
 
 public static final  NO_DESERIALIZER
@@ -128,6 +143,51 @@ public static final  DESERIALIZATION_FAILED
 
 ---
 
+### DIAGNOSTIC_SERVER_FAILED
+
+public static final  DIAGNOSTIC_SERVER_FAILED
+
+
+
+
+---
+
+### DIAGNOSTIC_DESERIALIZATION_FAILED
+
+public static final  DIAGNOSTIC_DESERIALIZATION_FAILED
+
+
+
+
+---
+
+### IPC_INIT_FAILED
+
+public static final  IPC_INIT_FAILED
+
+
+
+
+---
+
+### IPC_NO_SOCKET_FILE
+
+public static final  IPC_NO_SOCKET_FILE
+
+
+
+
+---
+
+### IPC_CONNECT_FAILED
+
+public static final  IPC_CONNECT_FAILED
+
+
+
+
+---
+
 ### IPC_RECV_FAILED
 
 public static final  IPC_RECV_FAILED
@@ -137,18 +197,18 @@ public static final  IPC_RECV_FAILED
 
 ---
 
-### NO_SOCKET_FILE
+### IPC_CLOSE_FAILED
 
-public static final  NO_SOCKET_FILE
+public static final  IPC_CLOSE_FAILED
 
 
 
 
 ---
 
-### CONNECT_FAILED
+### IPC_REMOVE_FAILED
 
-public static final  CONNECT_FAILED
+public static final  IPC_REMOVE_FAILED
 
 
 
@@ -184,7 +244,7 @@ public static final  CONNECT_FAILED
 
 **Specified By:**
 
-[LocalizableMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+[LocalizableMessage](../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ---
@@ -197,7 +257,7 @@ public static final  CONNECT_FAILED
 
 **Specified By:**
 
-[LocalizableMessage](../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+[LocalizableMessage](../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ---

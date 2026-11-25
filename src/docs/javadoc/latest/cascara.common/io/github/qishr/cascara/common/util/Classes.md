@@ -7,8 +7,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public class __Classes__</span>
+<span style="font-family: monospace; font-size: 80%;">public final class __Classes__</span>
 
 
 ## Nested Class Summary
@@ -44,8 +43,7 @@ public class __Classes__</span>
 
 ### getTimestamp
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public static [Instant](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Instant.html) __getTimestamp__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static [Instant](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Instant.html) __getTimestamp__()</span>
 
 
 

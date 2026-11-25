@@ -7,18 +7,18 @@ Cascara common APIs and utilities.
 
     | Package                                                                                                                                   | Description                                                                |
     |-------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-    | [io.github.qishr.cascara.common.annotation](io/github/qishr/cascara/common/annotation/index.md)                                           |                                                                            |
     | [io.github.qishr.cascara.common.color](io/github/qishr/cascara/common/color/index.md)                                                     |                                                                            |
     | [io.github.qishr.cascara.common.data](io/github/qishr/cascara/common/data/index.md)                                                       |                                                                            |
     | [io.github.qishr.cascara.common.diagnostic](io/github/qishr/cascara/common/diagnostic/index.md)                                           |                                                                            |
-    | [io.github.qishr.cascara.common.diagnostic.exception](io/github/qishr/cascara/common/diagnostic/exception/index.md)                       |                                                                            |
     | [io.github.qishr.cascara.common.diagnostic.format](io/github/qishr/cascara/common/diagnostic/format/index.md)                             |                                                                            |
     | [io.github.qishr.cascara.common.diagnostic.log](io/github/qishr/cascara/common/diagnostic/log/index.md)                                   |                                                                            |
     | [io.github.qishr.cascara.common.diagnostic.message](io/github/qishr/cascara/common/diagnostic/message/index.md)                           |                                                                            |
     | [io.github.qishr.cascara.common.diagnostic.report](io/github/qishr/cascara/common/diagnostic/report/index.md)                             |                                                                            |
+    | [io.github.qishr.cascara.common.exception](io/github/qishr/cascara/common/exception/index.md)                                             |                                                                            |
     | [io.github.qishr.cascara.common.exec](io/github/qishr/cascara/common/exec/index.md)                                                       |                                                                            |
     | [io.github.qishr.cascara.common.exec.ipc](io/github/qishr/cascara/common/exec/ipc/index.md)                                               |                                                                            |
-    | [io.github.qishr.cascara.common.filewatcher](io/github/qishr/cascara/common/filewatcher/index.md)                                         |                                                                            |
+    | [io.github.qishr.cascara.common.i18n](io/github/qishr/cascara/common/i18n/index.md)                                                       |                                                                            |
+    | [io.github.qishr.cascara.common.i18n.exception](io/github/qishr/cascara/common/i18n/exception/index.md)                                   |                                                                            |
     | [io.github.qishr.cascara.common.lang.generic](io/github/qishr/cascara/common/lang/generic/index.md)                                       | A language-agnostic implementation of the AST API                          |
     | [io.github.qishr.cascara.common.lang.ast](io/github/qishr/cascara/common/lang/ast/index.md)                                               |                                                                            |
     | [io.github.qishr.cascara.common.lang.streaming](io/github/qishr/cascara/common/lang/streaming/index.md)                                   |                                                                            |
@@ -39,7 +39,7 @@ Cascara common APIs and utilities.
     | [io.github.qishr.cascara.common.security.asn1.types.string](io/github/qishr/cascara/common/security/asn1/types/string/index.md)           |                                                                            |
     | [io.github.qishr.cascara.common.security.cert](io/github/qishr/cascara/common/security/cert/index.md)                                     |                                                                            |
     | [io.github.qishr.cascara.common.security.cms](io/github/qishr/cascara/common/security/cms/index.md)                                       |                                                                            |
-    | [io.github.qishr.cascara.common.security.diagnostic](io/github/qishr/cascara/common/security/diagnostic/index.md)                         |                                                                            |
+    | [io.github.qishr.cascara.common.security.exception](io/github/qishr/cascara/common/security/exception/index.md)                           |                                                                            |
     | [io.github.qishr.cascara.common.security.policy](io/github/qishr/cascara/common/security/policy/index.md)                                 |                                                                            |
     | [io.github.qishr.cascara.common.security.verifier](io/github/qishr/cascara/common/security/verifier/index.md)                             |                                                                            |
     | [io.github.qishr.cascara.common.semver](io/github/qishr/cascara/common/semver/index.md)                                                   |                                                                            |
@@ -59,24 +59,22 @@ Cascara common APIs and utilities.
 
 === "Requires"
 
-    | Module                                                                                                    | Description |
-    |-----------------------------------------------------------------------------------------------------------|-------------|
-    | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html)             |             |
-    | [java.management](https://docs.oracle.com/en/java/javase/24/docs/api/java.management/module-summary.html) |             |
-    | [jdk.unsupported](https://docs.oracle.com/en/java/javase/24/docs/api/jdk.unsupported/module-summary.html) |             |
+    | Module                                                                                                                        | Description |
+    |-------------------------------------------------------------------------------------------------------------------------------|-------------|
+    | [java.base](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html)                                 |             |
+    | [java.management](https://docs.oracle.com/en/java/javase/24/docs/api/java.management/module-summary.html)                     |             |
+    | [jdk.unsupported](https://docs.oracle.com/en/java/javase/24/docs/api/jdk.unsupported/module-summary.html)                     |             |
+    | [cascara.common.annotation](https://docs.oracle.com/en/java/javase/24/docs/api/cascara.common.annotation/module-summary.html) |             |
 
 
 === "Opens"
 
-    | Package                                                                                                 | Description                                       |
-    |---------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-    | [io.github.qishr.cascara.common.data](io/github/qishr/cascara/common/data/index.md)                     |                                                   |
-    | [io.github.qishr.cascara.common.diagnostic](io/github/qishr/cascara/common/diagnostic/index.md)         |                                                   |
-    | [io.github.qishr.cascara.common.lang.generic](io/github/qishr/cascara/common/lang/generic/index.md)     | A language-agnostic implementation of the AST API |
-    | [io.github.qishr.cascara.common.lang.processor](io/github/qishr/cascara/common/lang/processor/index.md) |                                                   |
-    | [io.github.qishr.cascara.common.property](io/github/qishr/cascara/common/property/index.md)             |                                                   |
-    | [io.github.qishr.cascara.common.trackable](io/github/qishr/cascara/common/trackable/index.md)           |                                                   |
-    | [io.github.qishr.cascara.common.util](io/github/qishr/cascara/common/util/index.md)                     |                                                   |
+    | Package                                                                                         | Description |
+    |-------------------------------------------------------------------------------------------------|-------------|
+    | [io.github.qishr.cascara.common.diagnostic](io/github/qishr/cascara/common/diagnostic/index.md) |             |
+    | [io.github.qishr.cascara.common.property](io/github/qishr/cascara/common/property/index.md)     |             |
+    | [io.github.qishr.cascara.common.trackable](io/github/qishr/cascara/common/trackable/index.md)   |             |
+    | [io.github.qishr.cascara.common.util](io/github/qishr/cascara/common/util/index.md)             |             |
 
 
 === "Uses"

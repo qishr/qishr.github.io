@@ -60,8 +60,7 @@ All Implemented Interfaces:<br/>
 
 ### fromAst
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) __fromAst__([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) ast)</span>
+<span style="font-family: monospace; font-size: 80%;">public [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) __fromAst__([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) ast)</span>
 
 
 
@@ -74,8 +73,7 @@ public [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/Yam
 
 ### toGenericAst
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [GenericAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstNode.md) __toGenericAst__([YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) yaml)</span>
+<span style="font-family: monospace; font-size: 80%;">public [GenericAstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/generic/GenericAstNode.md) __toGenericAst__([YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md) yaml)</span>
 
 
 

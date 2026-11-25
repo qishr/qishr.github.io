@@ -8,8 +8,7 @@ Package [io.github.qishr.cascara.common.property](index.md)
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public class __ArrayProperty__<br/>extends [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md)<[List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<?>>
+<span style="font-family: monospace; font-size: 80%;">public class __ArrayProperty__<br/>extends [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md)<[List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<?>>
 </span>
 
 
@@ -31,7 +30,7 @@ public class __ArrayProperty__<br/>extends [Property](../../../../../../io/githu
 
 ### Methods inherited from [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md)
 
-asInteger, asLong, isEmpty, getValue, getValue, asBoolean, setValue, setPrimitiveType, getString, asString, asLong, getPrimitiveType, getName, getValues, asDouble, setName, asInteger, asDouble, asBoolean, getValuesMap
+asInteger, asLong, isEmpty, getValue, toString, getValue, asBoolean, setValue, setPrimitiveType, getString, asString, duplicate, asLong, getPrimitiveType, getName, getValues, asDouble, copyFrom, setName, asInteger, asDouble, asBoolean, getValuesMap
 
 
 ## Method Details

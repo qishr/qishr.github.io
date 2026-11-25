@@ -179,10 +179,13 @@ Package [io.github.qishr.cascara.common.exec.ipc](index.md)
 
 ### createSerializer
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public static [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md) __createSerializer__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md) __createSerializer__()</span>
 
 
+
+**Throws:**
+
+[IpcException](../../../../../../../io/github/qishr/cascara/common/exec/ipc/IpcException.md)
 
 
 ---

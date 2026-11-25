@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
         io.github.qishr.cascara.common.util.Duplicable<br/>
 <br/>
 All Known Implementing Classes:<br/>
-    [HsbaColor](../../../../../../io/github/qishr/cascara/common/color/HsbaColor.md), [RgbaColor](../../../../../../io/github/qishr/cascara/common/color/RgbaColor.md), [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md), [JsonConfig](../../../../../../../cascara.lang.json/io/github/qishr/cascara/lang/json/util/JsonConfig.md), [YamlConfig](../../../../../../../cascara.lang.yaml/io/github/qishr/cascara/lang/yaml/util/YamlConfig.md)
+    [HsbaColor](../../../../../../io/github/qishr/cascara/common/color/HsbaColor.md), [RgbaColor](../../../../../../io/github/qishr/cascara/common/color/RgbaColor.md), [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md), [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md), [JsonConfig](../../../../../../../cascara.lang.json/io/github/qishr/cascara/lang/json/util/JsonConfig.md), [YamlConfig](../../../../../../../cascara.lang.yaml/io/github/qishr/cascara/lang/yaml/util/YamlConfig.md)
 
 
 ----

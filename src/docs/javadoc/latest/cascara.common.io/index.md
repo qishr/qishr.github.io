@@ -5,12 +5,13 @@ Cascara common IO and content type utilities
 
 === "Exports"
 
-    | Package                                                                                             | Description |
-    |-----------------------------------------------------------------------------------------------------|-------------|
-    | [io.github.qishr.cascara.common.content](io/github/qishr/cascara/common/content/index.md)           |             |
-    | [io.github.qishr.cascara.common.content.type](io/github/qishr/cascara/common/content/type/index.md) |             |
-    | [io.github.qishr.cascara.common.io](io/github/qishr/cascara/common/io/index.md)                     |             |
-    | [io.github.qishr.cascara.common.io.provider](io/github/qishr/cascara/common/io/provider/index.md)   |             |
+    | Package                                                                                                 | Description |
+    |---------------------------------------------------------------------------------------------------------|-------------|
+    | [io.github.qishr.cascara.common.content](io/github/qishr/cascara/common/content/index.md)               |             |
+    | [io.github.qishr.cascara.common.content.type](io/github/qishr/cascara/common/content/type/index.md)     |             |
+    | [io.github.qishr.cascara.common.io](io/github/qishr/cascara/common/io/index.md)                         |             |
+    | [io.github.qishr.cascara.common.io.filewatcher](io/github/qishr/cascara/common/io/filewatcher/index.md) |             |
+    | [io.github.qishr.cascara.common.io.provider](io/github/qishr/cascara/common/io/provider/index.md)       |             |
 
 
 === "Requires"

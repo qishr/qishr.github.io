@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.common.content.type](index.md)
                 io.github.qishr.cascara.common.content.type.ContentTypeMessage<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+    [LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ----
@@ -84,7 +84,7 @@ public static final  REGISTRY_UPDATE_ERROR
 
 **Specified By:**
 
-[LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+[LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ---
@@ -97,7 +97,7 @@ public static final  REGISTRY_UPDATE_ERROR
 
 **Specified By:**
 
-[LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+[LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ---

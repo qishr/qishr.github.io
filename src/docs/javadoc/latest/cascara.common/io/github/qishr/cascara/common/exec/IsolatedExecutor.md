@@ -7,8 +7,7 @@ Package [io.github.qishr.cascara.common.exec](index.md)
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Beta<br/>
-public class __IsolatedExecutor__</span>
+<span style="font-family: monospace; font-size: 80%;">public class __IsolatedExecutor__</span>
 
 
 ## Nested Class Summary
@@ -26,6 +25,7 @@ public class __IsolatedExecutor__</span>
 | public static [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md)  | [forTask](#fortask)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [AbstractExecutionTask](../../../../../../io/github/qishr/cascara/common/exec/AbstractExecutionTask.md)<?, ?>> task, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> response)                                                                                                                                                                                        |                                                                                                |
 | public static [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md) | [run](#run)([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [AbstractExecutionTask](../../../../../../io/github/qishr/cascara/common/exec/AbstractExecutionTask.md)<?, ?>> task, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) input, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> response, [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) jvmConfig) |                                                                                                |
 | public [Serializer](../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md)           | [getSerializer](#getserializer)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                |
+| public [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md)                       | [getJvmConfig](#getjvmconfig)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                |
 | public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md)         | [setJvmConfig](#setjvmconfig)([JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) jvmConfig)                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                                |
 | public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md)         | [setIpcDebug](#setipcdebug)(boolean enabled)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Enable debug output of IPC communications.                                                     |
 | public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md)         | [setDiagnosticForwarding](#setdiagnosticforwarding)(boolean enabled)                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Forward diagnostics from the child JVM process to this process's GlobalReporter.               |
@@ -33,6 +33,7 @@ public class __IsolatedExecutor__</span>
 | public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md)         | [setFilterDiagnosticsByLevel](#setfilterdiagnosticsbylevel)(boolean enabled)                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Filter forwarded diagnostic reporting by the level specified in this process's GlobalReporter. |
 | public [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md)        | [run](#run)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) input)                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                |
 | public [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md)        | [run](#run)([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) input, [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) jvmConfig)                                                                                                                                                                                                                                                                                                                                   |                                                                                                |
+| public [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md)        | [getResponse](#getresponse)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                                |
 
 
 
@@ -63,6 +64,15 @@ public class __IsolatedExecutor__</span>
 ### getSerializer
 
 <span style="font-family: monospace; font-size: 80%;">public [Serializer](../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md) __getSerializer__()</span>
+
+
+
+
+---
+
+### getJvmConfig
+
+<span style="font-family: monospace; font-size: 80%;">public [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) __getJvmConfig__()</span>
 
 
 
@@ -111,7 +121,10 @@ Forward thrown exception to the parent JVM
 <span style="font-family: monospace; font-size: 80%;">public [IsolatedExecutor](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.md) __setFilterDiagnosticsByLevel__(boolean enabled)</span>
 
 Filter forwarded diagnostic reporting by the level specified in
-this process's GlobalReporter.
+this process's GlobalReporter.WHen true, this process's GlobalReporter will not reveive
+diagnostics from the isolated JVM if their level is not included
+in this process's GlobalReporter level for the class they're
+reported from.
 
 
 ---
@@ -138,6 +151,15 @@ this process's GlobalReporter.
 **Throws:**
 
 [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html)
+
+
+---
+
+### getResponse
+
+<span style="font-family: monospace; font-size: 80%;">public [Response](../../../../../../io/github/qishr/cascara/common/exec/IsolatedExecutor.Response.md) __getResponse__()</span>
+
+
 
 
 ---

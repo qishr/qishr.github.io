@@ -30,13 +30,13 @@ Package [io.github.qishr.cascara.common.type.lang](index.md)
 | public boolean                                                                                      | [validate](#validate)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Reporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md) collector) |             |
 
 
-### Methods inherited from [AbstractScalarDescriptor](../../../../../../../io/github/qishr/cascara/common/type/AbstractScalarDescriptor.md)
-
-getFormat, formatError, populateSchema, getContentEncoding
-
 ### Methods inherited from [AbstractTypeDescriptor](../../../../../../../io/github/qishr/cascara/common/type/AbstractTypeDescriptor.md)
 
 getSchemaType, getServiceProperties, getJvmType
+
+### Methods inherited from [AbstractScalarDescriptor](../../../../../../../io/github/qishr/cascara/common/type/AbstractScalarDescriptor.md)
+
+getFormat, formatError, populateSchema, getContentEncoding
 
 
 ## Method Details
@@ -52,8 +52,7 @@ getSchemaType, getServiceProperties, getJvmType
 
 ### toPrimitive
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toPrimitive__([Byte](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Byte.html)[] jvmInstance)</span>
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toPrimitive__([Byte](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Byte.html)[] jvmInstance)</span>
 
 
 

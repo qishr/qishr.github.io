@@ -73,8 +73,7 @@ All Implemented Interfaces:<br/>
 
 ### fromAst
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md) __fromAst__([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) from)</span>
+<span style="font-family: monospace; font-size: 80%;">public [JsonNode](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonNode.md) __fromAst__([AstNode](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/ast/AstNode.md) from)</span>
 
 
 

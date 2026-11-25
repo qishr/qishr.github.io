@@ -5,7 +5,7 @@ Package [io.github.qishr.cascara.ui.data](index.md)
         [java.lang.Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html)<br/>
                 [java.lang.Exception](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Exception.html)<br/>
                         [java.lang.RuntimeException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/RuntimeException.html)<br/>
-                                [io.github.qishr.cascara.common.diagnostic.exception.LocalizableRuntimeException](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)<br/>
+                                [io.github.qishr.cascara.common.i18n.exception.LocalizableRuntimeException](../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/exception/LocalizableRuntimeException.md)<br/>
                                         [io.github.qishr.cascara.ui.api.UiException](../../../../../../io/github/qishr/cascara/ui/api/UiException.md)<br/>
                                                 io.github.qishr.cascara.ui.data.UiDataException<br/>
 <br/>
@@ -18,13 +18,13 @@ Package [io.github.qishr.cascara.ui.data](index.md)
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                                                                                                                               | Description                                  |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| UiDataException([LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           | Constructor for errors without an exception. |
-| UiDataException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) | Constructor for errors with an exception.    |
+| Constructor                                                                                                                                                                                                                                                                                                                                                 | Description                                  |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
+| UiDataException([LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           | Constructor for errors without an exception. |
+| UiDataException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) | Constructor for errors with an exception.    |
 
 
-### Methods inherited from [LocalizableRuntimeException](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)
+### Methods inherited from [LocalizableRuntimeException](../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/exception/LocalizableRuntimeException.md)
 
-getLocalizableMessage, getLocalizedMessage, getDetails
+getLocalizableMessage, of, getLocalizedMessage, getMessage, getDetails
 

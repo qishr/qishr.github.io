@@ -7,8 +7,7 @@ Package [io.github.qishr.cascara.common.lang.processor](index.md)
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public static class __Context__</span>
+<span style="font-family: monospace; font-size: 80%;">public static class __Context__</span>
 
 
 ## Constructor Summary
@@ -34,8 +33,7 @@ public static class __Context__</span>
 
 ### serialize
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) __serialize__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) jvmType)</span>
+<span style="font-family: monospace; font-size: 80%;">public [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) __serialize__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) jvmType)</span>
 
 
 
@@ -44,8 +42,7 @@ public [AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/As
 
 ### deserialize
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public C __deserialize__([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) node, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) jvmType)</span>
+<span style="font-family: monospace; font-size: 80%;">public C __deserialize__([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) node, [Type](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/reflect/Type.html) jvmType)</span>
 
 
 
@@ -63,8 +60,7 @@ public C __deserialize__([AstNode](../../../../../../../io/github/qishr/cascara/
 
 ### getReporter
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public [Reporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md) __getReporter__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Reporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md) __getReporter__()</span>
 
 
 

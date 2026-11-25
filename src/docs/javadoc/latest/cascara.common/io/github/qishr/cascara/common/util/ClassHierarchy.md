@@ -7,8 +7,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public class __ClassHierarchy__</span>
+<span style="font-family: monospace; font-size: 80%;">public class __ClassHierarchy__</span>
 
 
 ## Method Summary
@@ -35,8 +34,7 @@ public class __ClassHierarchy__</span>
 
 ### getSubclasses
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getSubclasses__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) className)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __getSubclasses__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) className)</span>
 
 
 
@@ -54,8 +52,7 @@ public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.bas
 
 ### getTimestamp
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public static [Instant](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Instant.html) __getTimestamp__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static [Instant](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/time/Instant.html) __getTimestamp__()</span>
 
 
 

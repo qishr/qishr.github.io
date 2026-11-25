@@ -23,6 +23,7 @@ Enclosing Class:<br/>
 | public final int          | [exitCode](#exitcode)   |             |
 | public final JvmConfig    | [jvmConfig](#jvmconfig) |             |
 | public final String       | [out](#out)             |             |
+| public final long         | [pid](#pid)             |             |
 | public final boolean      | [timedOut](#timedout)   |             |
 
 
@@ -77,6 +78,15 @@ Enclosing Class:<br/>
 ### out
 
 <span style="font-family: monospace; font-size: 80%;">public final String __out__</span>
+
+
+
+
+---
+
+### pid
+
+<span style="font-family: monospace; font-size: 80%;">public final long __pid__</span>
 
 
 

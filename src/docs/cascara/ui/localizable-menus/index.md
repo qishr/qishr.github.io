@@ -1,6 +1,6 @@
 # Localizable Menus
 
-Built on top of *Cascara.instance().UI*'s `ObservableTreeNode`, `ObservableMenuItem` provides...
+Built on top of *Cascara.get().UI*'s `ObservableTreeNode`, `ObservableMenuItem` provides...
 
 
 

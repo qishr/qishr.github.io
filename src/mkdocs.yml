@@ -94,6 +94,8 @@ nav:
   - Home: index.md
   - Overview:
       - Overview: cascara/overview/index.md
+      - Configuration: cascara/configuration/index.md
+      - Diagnostics: cascara/diagnostics/index.md
       - File Formats:
           - Overview: cascara/file-formats/index.md
           - CT: cascara/language-processors/ct/index.md
@@ -104,7 +106,6 @@ nav:
               - Gradle Plugin: cascara/file-formats/vsix/gradle-plugin.md
           - YAML: cascara/language-processors/yaml/index.md
           - ZIP: javadoc/latest/cascara.common/io/github/qishr/cascara/common/util/ZipFile.md
-      - Diagnostics: cascara/diagnostics/index.md
   - Getting Started:
       - Overview: cascara/getting-started/index.md
       - Building from Source: cascara/getting-started/building-from-source.md

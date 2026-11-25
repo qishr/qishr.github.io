@@ -7,8 +7,7 @@ Package [io.github.qishr.cascara.common.lang.streaming](index.md)
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public interface __StreamHandler__</span>
+<span style="font-family: monospace; font-size: 80%;">public interface __StreamHandler__</span>
 
 
 ## Method Summary

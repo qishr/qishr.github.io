@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.common.lang.diagnostic](index.md)
                 io.github.qishr.cascara.common.lang.diagnostic.LangMessage<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+    [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ----
@@ -42,6 +42,7 @@ All Implemented Interfaces:<br/>
 | [AMBIGUOUS_POLYMORPHIC](#ambiguous_polymorphic)                                                 |             |
 | [AMBIGUOUS_TARGET_TYPE](#ambiguous_target_type)                                                 |             |
 | [NON_SCALAR_KEY](#non_scalar_key)                                                               |             |
+| [NON_STRING_KEY](#non_string_key)                                                               |             |
 | [AST_FACTORY_FAIL_SCALAR](#ast_factory_fail_scalar)                                             |             |
 | [AST_FACTORY_FAIL_MAP](#ast_factory_fail_map)                                                   |             |
 | [AST_FACTORY_FAIL_SEQUENCE](#ast_factory_fail_sequence)                                         |             |
@@ -272,6 +273,15 @@ public static final  NON_SCALAR_KEY
 
 ---
 
+### NON_STRING_KEY
+
+public static final  NON_STRING_KEY
+
+
+
+
+---
+
 ### AST_FACTORY_FAIL_SCALAR
 
 public static final  AST_FACTORY_FAIL_SCALAR
@@ -364,7 +374,7 @@ public static final  UNKNOWN_GENERIC_TYPE
 
 **Specified By:**
 
-[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ---
@@ -377,7 +387,7 @@ public static final  UNKNOWN_GENERIC_TYPE
 
 **Specified By:**
 
-[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ---

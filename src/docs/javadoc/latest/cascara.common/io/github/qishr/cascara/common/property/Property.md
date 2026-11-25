@@ -5,10 +5,10 @@ Package [io.github.qishr.cascara.common.property](index.md)
         io.github.qishr.cascara.common.property.Property<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [TabularData](../../../../../../io/github/qishr/cascara/common/data/TabularData.md)
+    [TabularData](../../../../../../io/github/qishr/cascara/common/data/TabularData.md), [Duplicable](../../../../../../io/github/qishr/cascara/common/util/Duplicable.md)<[Property](../../../../../../io/github/qishr/cascara/common/property/Property.md)<T>>
 
 Direct Known Subtypes:<br/>
-    [BooleanProperty](../../../../../../io/github/qishr/cascara/common/property/BooleanProperty.md), [IntegerProperty](../../../../../../io/github/qishr/cascara/common/property/IntegerProperty.md), [NumberProperty](../../../../../../io/github/qishr/cascara/common/property/NumberProperty.md), [StringProperty](../../../../../../io/github/qishr/cascara/common/property/StringProperty.md), [ArrayProperty](../../../../../../io/github/qishr/cascara/common/property/ArrayProperty.md), [TrackableProperty](../../../../../../io/github/qishr/cascara/common/trackable/property/TrackableProperty.md)
+    [BooleanProperty](../../../../../../io/github/qishr/cascara/common/property/BooleanProperty.md), [IntegerProperty](../../../../../../io/github/qishr/cascara/common/property/IntegerProperty.md), [NumberProperty](../../../../../../io/github/qishr/cascara/common/property/NumberProperty.md), [StringProperty](../../../../../../io/github/qishr/cascara/common/property/StringProperty.md), [ArrayProperty](../../../../../../io/github/qishr/cascara/common/property/ArrayProperty.md), [TrackableProperty](../../../../../../io/github/qishr/cascara/common/trackable/property/TrackableProperty.md), [Setting](../../../../../../io/github/qishr/cascara/common/util/Config.Setting.md)
 
 
 ----
@@ -30,6 +30,7 @@ Direct Known Subtypes:<br/>
 
 | Modifier and Type                                                                                     | Method                                                                                                                              | Description |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md)              | [copyFrom](#copyfrom)([Property](../../../../../../io/github/qishr/cascara/common/property/Property.md)<?> property)                |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)   | [getName](#getname)()                                                                                                               |             |
 | public void                                                                                           | [setName](#setname)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) k)                 |             |
 | public [PrimitiveType](../../../../../../io/github/qishr/cascara/common/type/PrimitiveType.md)        | [getPrimitiveType](#getprimitivetype)()                                                                                             |             |
@@ -50,10 +51,21 @@ Direct Known Subtypes:<br/>
 | public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] | [getValues](#getvalues)()                                                                                                           |             |
 | public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)         | [getValuesMap](#getvaluesmap)()                                                                                                     |             |
 | public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)   | [getValue](#getvalue)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key)             |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)   | [toString](#tostring)()                                                                                                             |             |
+| public [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md)              | [duplicate](#duplicate)()                                                                                                           |             |
 
 
 
 ## Method Details
+
+### copyFrom
+
+<span style="font-family: monospace; font-size: 80%;">public [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md) __copyFrom__([Property](../../../../../../io/github/qishr/cascara/common/property/Property.md)<?> property)</span>
+
+
+
+
+---
 
 ### getName
 
@@ -247,6 +259,32 @@ Direct Known Subtypes:<br/>
 **Specified By:**
 
 [TabularData](../../../../../../io/github/qishr/cascara/common/data/TabularData.md)
+
+
+---
+
+### toString
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toString__()</span>
+
+
+
+**Overrides:**
+
+[Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html#tostring)
+
+
+---
+
+### duplicate
+
+<span style="font-family: monospace; font-size: 80%;">public [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md) __duplicate__()</span>
+
+
+
+**Specified By:**
+
+[Duplicable](../../../../../../io/github/qishr/cascara/common/util/Duplicable.md)
 
 
 ---

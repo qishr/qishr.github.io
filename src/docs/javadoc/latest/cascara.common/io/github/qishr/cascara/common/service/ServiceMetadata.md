@@ -31,6 +31,7 @@ Package [io.github.qishr.cascara.common.service](index.md)
 | public [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)   | [getType](#gettype)()                                                                                                                               |             |
 | public [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)   | [getCapabilityType](#getcapabilitytype)()                                                                                                           |             |
 | public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)        | [getProperties](#getproperties)()                                                                                                                   |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getProperty](#getproperty)([PropertyName](../../../../../../io/github/qishr/cascara/common/property/Properties.PropertyName.md) name)              |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getProperty](#getproperty)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                      |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getJarPath](#getjarpath)()                                                                                                                         |             |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getTitle](#gettitle)()                                                                                                                             |             |
@@ -118,6 +119,15 @@ Package [io.github.qishr.cascara.common.service](index.md)
 ### getProperties
 
 <span style="font-family: monospace; font-size: 80%;">public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) __getProperties__()</span>
+
+
+
+
+---
+
+### getProperty
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getProperty__([PropertyName](../../../../../../io/github/qishr/cascara/common/property/Properties.PropertyName.md) name)</span>
 
 
 

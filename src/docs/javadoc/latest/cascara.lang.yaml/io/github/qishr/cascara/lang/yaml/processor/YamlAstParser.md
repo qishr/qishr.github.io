@@ -112,8 +112,7 @@ Entry point for parsing an InputStream.
 
 ### parseMulti
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public [YamlStream](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlStream.md) __parseMulti__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)</span>
+<span style="font-family: monospace; font-size: 80%;">public [YamlStream](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlStream.md) __parseMulti__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)</span>
 
 Type-safe method specifically for multi-document scenarios.
 
@@ -122,8 +121,7 @@ Type-safe method specifically for multi-document scenarios.
 
 ### parseMulti
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public [YamlStream](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlStream.md) __parseMulti__(byte[] data)</span>
+<span style="font-family: monospace; font-size: 80%;">public [YamlStream](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlStream.md) __parseMulti__(byte[] data)</span>
 
 
 
@@ -132,8 +130,7 @@ public [YamlStream](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/Y
 
 ### parseMulti
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public [YamlStream](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlStream.md) __parseMulti__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)</span>
+<span style="font-family: monospace; font-size: 80%;">public [YamlStream](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlStream.md) __parseMulti__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)</span>
 
 Method specifically for multi-document scenarios.
 

@@ -2,14 +2,13 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 # Class ModulePath
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
-        [io.github.qishr.cascara.common.util.AbstractClassFinder](../../../../../../io/github/qishr/cascara/common/util/AbstractClassFinder.md)<br/>
+        io.github.qishr.cascara.common.util.internal.AbstractClassFinder<br/>
                 io.github.qishr.cascara.common.util.ModulePath<br/>
 <br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public class __ModulePath__<br/>extends [AbstractClassFinder](../../../../../../io/github/qishr/cascara/common/util/AbstractClassFinder.md)
+<span style="font-family: monospace; font-size: 80%;">public final class __ModulePath__<br/>extends AbstractClassFinder
 </span>
 
 
@@ -40,6 +39,9 @@ public class __ModulePath__<br/>extends [AbstractClassFinder](../../../../../../
 
 | Modifier and Type                                                                                                              | Method                                                                                                                                                                                                                                                                                                                                               | Description |
 |--------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)                                  | [getClasses](#getclasses)()                                                                                                                                                                                                                                                                                                                          |             |
+| public boolean                                                                                                                 | [containsClass](#containsclass)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) className)                                                                                                                                                                                                              |             |
+| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)                                  | [getDiscoveredModules](#getdiscoveredmodules)()                                                                                                                                                                                                                                                                                                      |             |
 | public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)                                  | [getModuleNames](#getmodulenames)()                                                                                                                                                                                                                                                                                                                  |             |
 | public [ModuleDescriptor](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/module/ModuleDescriptor.html) | [getDescriptor](#getdescriptor)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) moduleName)                                                                                                                                                                                                             |             |
 | public [Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html)                            | [getPathForModule](#getpathformodule)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) moduleName)                                                                                                                                                                                                       |             |
@@ -48,12 +50,35 @@ public class __ModulePath__<br/>extends [AbstractClassFinder](../../../../../../
 | protected [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                         | [scanDirectoryUrl](#scandirectoryurl)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) directory, [URL](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URL.html)[] urls, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) moduleName) |             |
 
 
-### Methods inherited from [AbstractClassFinder](../../../../../../io/github/qishr/cascara/common/util/AbstractClassFinder.md)
-
-getClasses, getPath, scanDirectory, register, pathSet, scanJar, getDiscoveredModules, error, scanClassFile, addModuleDescriptor, isExcluded, containsClass
-
 
 ## Method Details
+
+### getClasses
+
+<span style="font-family: monospace; font-size: 80%;">public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html) __getClasses__()</span>
+
+
+
+
+---
+
+### containsClass
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __containsClass__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) className)</span>
+
+
+
+
+---
+
+### getDiscoveredModules
+
+<span style="font-family: monospace; font-size: 80%;">public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html) __getDiscoveredModules__()</span>
+
+
+
+
+---
 
 ### getModuleNames
 

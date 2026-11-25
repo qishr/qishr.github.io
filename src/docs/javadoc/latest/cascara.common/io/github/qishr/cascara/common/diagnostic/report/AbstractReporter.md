@@ -8,7 +8,7 @@ All Implemented Interfaces:<br/>
     [Reporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md)
 
 Direct Known Subtypes:<br/>
-    [SilentCollectingReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/SilentCollectingReporter.md), [LocalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/LocalReporter.md), [GlobalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/GlobalReporter.md)
+    [SilentCollectingReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/SilentCollectingReporter.md), [LocalReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/LocalReporter.md), [ClassReporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/ClassReporter.md)
 
 
 ----
@@ -18,23 +18,18 @@ Direct Known Subtypes:<br/>
 
 ## Field Summary
 
-| Modifier and Type                   | Field                                       | Description                                                                                                |
-|-------------------------------------|---------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| protected static final ZoneId       | [UTC](#utc)                                 |                                                                                                            |
-| protected boolean                   | [ansiColoringEnabled](#ansicoloringenabled) |                                                                                                            |
-| protected ConsoleLogger             | [consoleLogger](#consolelogger)             |                                                                                                            |
-| protected Set<Consumer<Diagnostic>> | [diagnosticConsumers](#diagnosticconsumers) | Consumes diagnostics included in the current Level or more important, with ERROR being the most important. |
-| protected boolean                   | [flushEnabled](#flushenabled)               |                                                                                                            |
-| protected FormatConfig              | [formatConfig](#formatconfig)               |                                                                                                            |
-| protected Level                     | [level](#level)                             |                                                                                                            |
-| protected LineLogger                | [lineLogger](#linelogger)                   |                                                                                                            |
-| protected List<Logger>              | [loggers](#loggers)                         |                                                                                                            |
-| protected Consumer<Diagnostic>      | [problemConsumer](#problemconsumer)         | Consumes ERROR, WARN, and INFO diagnostics.                                                                |
-| protected Serializer<?>             | [serializer](#serializer)                   |                                                                                                            |
-| protected String                    | [source](#source)                           | The simple name of the class that made the report                                                          |
-| protected boolean                   | [systemErrorEnabled](#systemerrorenabled)   |                                                                                                            |
-| protected boolean                   | [systemOutputEnabled](#systemoutputenabled) |                                                                                                            |
-| protected ReportWriter[]            | [writers](#writers)                         |                                                                                                            |
+| Modifier and Type               | Field                           | Description                                       |
+|---------------------------------|---------------------------------|---------------------------------------------------|
+| protected static final ZoneId   | [UTC](#utc)                     |                                                   |
+| protected ConsoleLogger         | [consoleLogger](#consolelogger) |                                                   |
+| protected LogFormatConfig       | [formatConfig](#formatconfig)   |                                                   |
+| protected static ReporterConfig | [globalConfig](#globalconfig)   |                                                   |
+| protected Level                 | [level](#level)                 |                                                   |
+| protected LineLogger            | [lineLogger](#linelogger)       |                                                   |
+| protected List<Logger>          | [loggers](#loggers)             |                                                   |
+| protected Serializer<?>         | [serializer](#serializer)       |                                                   |
+| protected String                | [source](#source)               | The simple name of the class that made the report |
+| protected ReportWriter[]        | [writers](#writers)             |                                                   |
 
 
 
@@ -48,63 +43,49 @@ Direct Known Subtypes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                   | Method                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Description                                                                                  |
-|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| protected abstract T                                                                                                | [self](#self)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                                              |
-| protected [FormatConfig](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatConfig.md)     | [defaultFormatConfig](#defaultformatconfig)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | To be overridden by reporters neding specific default config                                 |
-| public T                                                                                                            | [addLogger](#addlogger)([Logger](../../../../../../../io/github/qishr/cascara/common/diagnostic/log/Logger.md) logger)                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                              |
-| public [Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md)                  | [getLevel](#getlevel)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                              |
-| public T                                                                                                            | [setLevel](#setlevel)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level)                                                                                                                                                                                                                                                                                                                                                                                                                             | Sets the level of output when logging directly to the console.                               |
-| public T                                                                                                            | [setLineConsumer](#setlineconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> consumer)                                                                                                                                                                                                                                                                                                |                                                                                              |
-| protected [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)                    | [getDiagnosticConsumers](#getdiagnosticconsumers)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                              |
-| public T                                                                                                            | [addDiagnosticConsumer](#adddiagnosticconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> consumer)                                                                                                                                                                                                                                                                                      | Registers a consumer to receive all diagnostics processed by this reporter.                  |
-| public T                                                                                                            | [removeDiagnosticConsumer](#removediagnosticconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> consumer)                                                                                                                                                                                                                                                                                | Unregisters a consumer of diagnostic reports.                                                |
-| protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html) | [getProblemConsumer](#getproblemconsumer)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                                              |
-| public T                                                                                                            | [setProblemConsumer](#setproblemconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> consumer)                                                                                                                                                                                                                                                                                            | Registers a consumer to receive only problem-level diagnostics.                              |
-| public @io.github.qishr.cascara.common.annotation.Experimental boolean                                              | [collectsProblems](#collectsproblems)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Checks whether any active consumer is collecting problems.                                   |
-| public T                                                                                                            | [setStackTraceEnabled](#setstacktraceenabled)(boolean b)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                              |
-| public T                                                                                                            | [setPrefixEveryLine](#setprefixeveryline)(boolean b)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                                                                                              |
-| public T                                                                                                            | [setShowProblemCodes](#setshowproblemcodes)(boolean b)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                              |
-| protected boolean                                                                                                   | [isSystemOutputEnabled](#issystemoutputenabled)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                              |
-| public T                                                                                                            | [setSystemOutputEnabled](#setsystemoutputenabled)(boolean b)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Controls whether diagnostic logging to console is enabled.                                   |
-| protected boolean                                                                                                   | [isImmediateFlushEnabled](#isimmediateflushenabled)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                              |
-| public T                                                                                                            | [setImmediateFlushEnabled](#setimmediateflushenabled)(boolean b)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Controls whether diagnostics logged to console are flushed immediately.                      |
-| public T                                                                                                            | [setSystemErrorEnabled](#setsystemerrorenabled)(boolean b)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Controls whether errors logged to console go to System.out or System.err.                    |
-| public T                                                                                                            | [setAnsiColoringEnabled](#setansicoloringenabled)(boolean b)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Controls whether diagnostics logged to console use ANSI coloring.                            |
-| public boolean                                                                                                      | [isSilent](#issilent)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                                              |
-| public boolean                                                                                                      | [reportsDebug](#reportsdebug)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                                              |
-| public boolean                                                                                                      | [reportsTrace](#reportstrace)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                                              |
-| public [ReportWriter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/ReportWriter.md)        | [getWriter](#getwriter)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level)                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                              |
-| public void                                                                                                         | [warn](#warn)([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) e)                                                                                                                                                                                                                                                                                                                                                                                                                                  | Reports an Exception as a warning                                                            |
-| public void                                                                                                         | [error](#error)([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) e)                                                                                                                                                                                                                                                                                                                                                                                                                                | Reports an Exception as an error                                                             |
-| public void                                                                                                         | [trace](#trace)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                        | Reports a trace message through the reporter.                                                |
-| public void                                                                                                         | [debug](#debug)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                                        | Reports a debug message through the reporter.                                                |
-| public void                                                                                                         | [info](#info)([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                    | Reports an informational message through the reporter.                                       |
-| public void                                                                                                         | [warn](#warn)([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                    | Reports a warning message including location information.                                    |
-| public void                                                                                                         | [error](#error)([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                  | Reports an error message including location information.                                     |
-| public void                                                                                                         | [error](#error)([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                        | Reports an error message including location information.                                     |
-| public void                                                                                                         | [infoAt](#infoat)(int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                          | Reports an informational message anchored to a resource location by line and column.         |
-| public void                                                                                                         | [warnAt](#warnat)(int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                          | Reports a warning anchored to a resource location by line and column.                        |
-| public void                                                                                                         | [errorAt](#errorat)(int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                        | Reports an error anchored to a resource location by line and column.                         |
-| public void                                                                                                         | [errorAt](#errorat)(int line, int column, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                              | Reports an error anchored to a resource location by line and column.                         |
-| public void                                                                                                         | [infoAt](#infoat)(int line, int column, int startOffset, int endOffset, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                          | Reports an informational message anchored to a precise character span within a resource.     |
-| public void                                                                                                         | [warnAt](#warnat)(int line, int column, int startOffset, int endOffset, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                          | Reports a warning anchored to a precise character span within a resource.                    |
-| public void                                                                                                         | [errorAt](#errorat)(int line, int column, int startOffset, int endOffset, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                        | Reports an error anchored to a precise character span within a resource.                     |
-| public void                                                                                                         | [errorAt](#errorat)(int line, int column, int startOffset, int endOffset, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                              | Reports an error anchored to a precise character span within a resource.                     |
-| public void                                                                                                         | [infoAt](#infoat)([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                        | Reports an informational message derived from the location attributes of a structural token. |
-| public void                                                                                                         | [warnAt](#warnat)([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                        | Reports a warning derived from the location attributes of a structural token.                |
-| public void                                                                                                         | [errorAt](#errorat)([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                      | Reports an error derived from the location attributes of a structural token.                 |
-| public void                                                                                                         | [errorAt](#errorat)([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                            | Reports an error derived from the location attributes of a structural token.                 |
-| public void                                                                                                         | [warnAt](#warnat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                               |                                                                                              |
-| public void                                                                                                         | [errorAt](#errorat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                             |                                                                                              |
-| public void                                                                                                         | [warnAt](#warnat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                             |                                                                                              |
-| public void                                                                                                         | [errorAt](#errorat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           |                                                                                              |
-| public void                                                                                                         | [errorAt](#errorat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |                                                                                              |
-| protected void                                                                                                      | [report](#report)([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic)                                                                                                                                                                                                                                                                                                                                                                                                                             | Central reporting method.                                                                    |
-| protected void                                                                                                      | [reportAnyLevel](#reportanylevel)([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic)                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                              |
-| protected void                                                                                                      | [log](#log)([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic)                                                                                                                                                                                                                                                                                                                                                                                                                                   |                                                                                              |
-| protected void                                                                                                      | [logLine](#logline)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) msgLine)                                                                                                                                                                                                                                                                                                                         | Used by LogWriter to log lines of text                                                       |
-| protected boolean                                                                                                   | [isProblem](#isproblem)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level)                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                              |
+| Modifier and Type                                                                                            | Method                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Description                                                                                  |
+|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| protected abstract T                                                                                         | [self](#self)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                              |
+| protected boolean                                                                                            | [isConsoleOutputEnabled](#isconsoleoutputenabled)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                              |
+| protected static void                                                                                        | [assertApiOverrideEnabled](#assertapioverrideenabled)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                              |
+| public T                                                                                                     | [addLogger](#addlogger)([Logger](../../../../../../../io/github/qishr/cascara/common/diagnostic/log/Logger.md) logger)                                                                                                                                                                                                                                                                                                                                                                                                                 |                                                                                              |
+| public [Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md)           | [getLevel](#getlevel)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                              |
+| public T                                                                                                     | [setLevel](#setlevel)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level)                                                                                                                                                                                                                                                                                                                                                                                                               | Sets the level of output when logging directly to the console.                               |
+| public T                                                                                                     | [setLineConsumer](#setlineconsumer)([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> consumer)                                                                                                                                                                                                                                                                                  |                                                                                              |
+| public boolean                                                                                               | [isSilent](#issilent)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                              |
+| public boolean                                                                                               | [reportsDebug](#reportsdebug)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                              |
+| public boolean                                                                                               | [reportsTrace](#reportstrace)()                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                              |
+| public [ReportWriter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/ReportWriter.md) | [getWriter](#getwriter)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level)                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                              |
+| public void                                                                                                  | [warn](#warn)([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) e)                                                                                                                                                                                                                                                                                                                                                                                                                    | Reports an Exception as a warning                                                            |
+| public void                                                                                                  | [error](#error)([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) e)                                                                                                                                                                                                                                                                                                                                                                                                                  | Reports an Exception as an error                                                             |
+| public void                                                                                                  | [trace](#trace)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                          | Reports a trace message through the reporter.                                                |
+| public void                                                                                                  | [debug](#debug)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                          | Reports a debug message through the reporter.                                                |
+| public void                                                                                                  | [info](#info)([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                    | Reports an informational message through the reporter.                                       |
+| public void                                                                                                  | [warn](#warn)([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                    | Reports a warning message including location information.                                    |
+| public void                                                                                                  | [error](#error)([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                                                  | Reports an error message including location information.                                     |
+| public void                                                                                                  | [error](#error)([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                        | Reports an error message including location information.                                     |
+| public void                                                                                                  | [infoAt](#infoat)(int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                          | Reports an informational message anchored to a resource location by line and column.         |
+| public void                                                                                                  | [warnAt](#warnat)(int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                          | Reports a warning anchored to a resource location by line and column.                        |
+| public void                                                                                                  | [errorAt](#errorat)(int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                                                        | Reports an error anchored to a resource location by line and column.                         |
+| public void                                                                                                  | [errorAt](#errorat)(int line, int column, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                              | Reports an error anchored to a resource location by line and column.                         |
+| public void                                                                                                  | [infoAt](#infoat)(int line, int column, int startOffset, int endOffset, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                          | Reports an informational message anchored to a precise character span within a resource.     |
+| public void                                                                                                  | [warnAt](#warnat)(int line, int column, int startOffset, int endOffset, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                          | Reports a warning anchored to a precise character span within a resource.                    |
+| public void                                                                                                  | [errorAt](#errorat)(int line, int column, int startOffset, int endOffset, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                                                        | Reports an error anchored to a precise character span within a resource.                     |
+| public void                                                                                                  | [errorAt](#errorat)(int line, int column, int startOffset, int endOffset, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                              | Reports an error anchored to a precise character span within a resource.                     |
+| public void                                                                                                  | [infoAt](#infoat)([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                        | Reports an informational message derived from the location attributes of a structural token. |
+| public void                                                                                                  | [warnAt](#warnat)([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                        | Reports a warning derived from the location attributes of a structural token.                |
+| public void                                                                                                  | [errorAt](#errorat)([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                                                      | Reports an error derived from the location attributes of a structural token.                 |
+| public void                                                                                                  | [errorAt](#errorat)([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                            | Reports an error derived from the location attributes of a structural token.                 |
+| public void                                                                                                  | [warnAt](#warnat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                               |                                                                                              |
+| public void                                                                                                  | [errorAt](#errorat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                                                                             |                                                                                              |
+| public void                                                                                                  | [warnAt](#warnat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                             |                                                                                              |
+| public void                                                                                                  | [errorAt](#errorat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           |                                                                                              |
+| public void                                                                                                  | [errorAt](#errorat)([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |                                                                                              |
+| protected void                                                                                               | [report](#report)([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic)                                                                                                                                                                                                                                                                                                                                                                                                               | Central reporting method.                                                                    |
+| protected void                                                                                               | [reportAnyLevel](#reportanylevel)([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic)                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                              |
+| protected void                                                                                               | [log](#log)([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic)                                                                                                                                                                                                                                                                                                                                                                                                                     |                                                                                              |
+| protected void                                                                                               | [logLine](#logline)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) msgLine)                                                                                                                                                                                                                                                                                                           | Used by LogWriter to log lines of text                                                       |
+| protected boolean                                                                                            | [isProblem](#isproblem)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level)                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                              |
 
 
 
@@ -113,15 +94,6 @@ Direct Known Subtypes:<br/>
 ### UTC
 
 <span style="font-family: monospace; font-size: 80%;">protected static final ZoneId __UTC__</span>
-
-
-
-
----
-
-### ansiColoringEnabled
-
-<span style="font-family: monospace; font-size: 80%;">protected boolean __ansiColoringEnabled__</span>
 
 
 
@@ -137,28 +109,18 @@ Direct Known Subtypes:<br/>
 
 ---
 
-### diagnosticConsumers
-
-<span style="font-family: monospace; font-size: 80%;">protected Set<Consumer<Diagnostic>> __diagnosticConsumers__</span>
-
-Consumes diagnostics included in the current Level or more
-important, with ERROR being the most important.
-
-
----
-
-### flushEnabled
-
-<span style="font-family: monospace; font-size: 80%;">protected boolean __flushEnabled__</span>
-
-
-
-
----
-
 ### formatConfig
 
-<span style="font-family: monospace; font-size: 80%;">protected FormatConfig __formatConfig__</span>
+<span style="font-family: monospace; font-size: 80%;">protected LogFormatConfig __formatConfig__</span>
+
+
+
+
+---
+
+### globalConfig
+
+<span style="font-family: monospace; font-size: 80%;">protected static ReporterConfig __globalConfig__</span>
 
 
 
@@ -192,15 +154,6 @@ important, with ERROR being the most important.
 
 ---
 
-### problemConsumer
-
-<span style="font-family: monospace; font-size: 80%;">protected Consumer<Diagnostic> __problemConsumer__</span>
-
-Consumes ERROR, WARN, and INFO diagnostics.
-
-
----
-
 ### serializer
 
 <span style="font-family: monospace; font-size: 80%;">protected Serializer<?> __serializer__</span>
@@ -215,24 +168,6 @@ Consumes ERROR, WARN, and INFO diagnostics.
 <span style="font-family: monospace; font-size: 80%;">protected String __source__</span>
 
 The simple name of the class that made the report
-
-
----
-
-### systemErrorEnabled
-
-<span style="font-family: monospace; font-size: 80%;">protected boolean __systemErrorEnabled__</span>
-
-
-
-
----
-
-### systemOutputEnabled
-
-<span style="font-family: monospace; font-size: 80%;">protected boolean __systemOutputEnabled__</span>
-
-
 
 
 ---
@@ -258,11 +193,20 @@ The simple name of the class that made the report
 
 ---
 
-### defaultFormatConfig
+### isConsoleOutputEnabled
 
-<span style="font-family: monospace; font-size: 80%;">protected [FormatConfig](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatConfig.md) __defaultFormatConfig__()</span>
+<span style="font-family: monospace; font-size: 80%;">protected boolean __isConsoleOutputEnabled__()</span>
 
-To be overridden by reporters neding specific default config
+
+
+
+---
+
+### assertApiOverrideEnabled
+
+<span style="font-family: monospace; font-size: 80%;">protected static void __assertApiOverrideEnabled__()</span>
+
+
 
 
 ---
@@ -304,172 +248,13 @@ Sets the level of output when logging directly to the console.
 
 ### setLineConsumer
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public T __setLineConsumer__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> consumer)</span>
+<span style="font-family: monospace; font-size: 80%;">public T __setLineConsumer__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)> consumer)</span>
 
 
 
 **Specified By:**
 
 [Reporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md)
-
-
----
-
-### getDiagnosticConsumers
-
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-protected [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html) __getDiagnosticConsumers__()</span>
-
-
-
-
----
-
-### addDiagnosticConsumer
-
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public T __addDiagnosticConsumer__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> consumer)</span>
-
-Registers a consumer to receive all diagnostics processed by this reporter.
-
-**Specified By:**
-
-[Reporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md)
-
-
----
-
-### removeDiagnosticConsumer
-
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public T __removeDiagnosticConsumer__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> consumer)</span>
-
-Unregisters a consumer of diagnostic reports.
-
-**Specified By:**
-
-[Reporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md)
-
-
----
-
-### getProblemConsumer
-
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-protected [Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html) __getProblemConsumer__()</span>
-
-
-
-
----
-
-### setProblemConsumer
-
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public T __setProblemConsumer__([Consumer](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/function/Consumer.html)<[Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md)> consumer)</span>
-
-Registers a consumer to receive only problem-level diagnostics.
-
-**Specified By:**
-
-[Reporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md)
-
-
----
-
-### collectsProblems
-
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public @io.github.qishr.cascara.common.annotation.Experimental boolean __collectsProblems__()</span>
-
-Checks whether any active consumer is collecting problems.
-
-**Specified By:**
-
-[Reporter](../../../../../../../io/github/qishr/cascara/common/diagnostic/report/Reporter.md)
-
-
----
-
-### setStackTraceEnabled
-
-<span style="font-family: monospace; font-size: 80%;">public T __setStackTraceEnabled__(boolean b)</span>
-
-
-
-
----
-
-### setPrefixEveryLine
-
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public T __setPrefixEveryLine__(boolean b)</span>
-
-
-
-
----
-
-### setShowProblemCodes
-
-<span style="font-family: monospace; font-size: 80%;">public T __setShowProblemCodes__(boolean b)</span>
-
-
-
-
----
-
-### isSystemOutputEnabled
-
-<span style="font-family: monospace; font-size: 80%;">protected boolean __isSystemOutputEnabled__()</span>
-
-
-
-
----
-
-### setSystemOutputEnabled
-
-<span style="font-family: monospace; font-size: 80%;">public T __setSystemOutputEnabled__(boolean b)</span>
-
-Controls whether diagnostic logging to console is enabled.
-
-
----
-
-### isImmediateFlushEnabled
-
-<span style="font-family: monospace; font-size: 80%;">protected boolean __isImmediateFlushEnabled__()</span>
-
-
-
-
----
-
-### setImmediateFlushEnabled
-
-<span style="font-family: monospace; font-size: 80%;">public T __setImmediateFlushEnabled__(boolean b)</span>
-
-Controls whether diagnostics logged to console are flushed immediately.
-
-
----
-
-### setSystemErrorEnabled
-
-<span style="font-family: monospace; font-size: 80%;">public T __setSystemErrorEnabled__(boolean b)</span>
-
-Controls whether errors logged to console go to System.out or System.err.
-
-
----
-
-### setAnsiColoringEnabled
-
-<span style="font-family: monospace; font-size: 80%;">public T __setAnsiColoringEnabled__(boolean b)</span>
-
-Controls whether diagnostics logged to console use ANSI coloring.
 
 
 ---
@@ -580,7 +365,7 @@ Reports a debug message through the reporter.
 
 ### info
 
-<span style="font-family: monospace; font-size: 80%;">public void __info__([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __info__([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports an informational message through the reporter.
 
@@ -593,7 +378,7 @@ Reports an informational message through the reporter.
 
 ### warn
 
-<span style="font-family: monospace; font-size: 80%;">public void __warn__([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __warn__([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports a warning message including location information.
 
@@ -606,7 +391,7 @@ Reports a warning message including location information.
 
 ### error
 
-<span style="font-family: monospace; font-size: 80%;">public void __error__([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __error__([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports an error message including location information.
 
@@ -619,7 +404,7 @@ Reports an error message including location information.
 
 ### error
 
-<span style="font-family: monospace; font-size: 80%;">public void __error__([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __error__([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports an error message including location information.
 
@@ -632,7 +417,7 @@ Reports an error message including location information.
 
 ### infoAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __infoAt__(int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __infoAt__(int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports an informational message anchored to a resource location by line and column.
 
@@ -645,7 +430,7 @@ Reports an informational message anchored to a resource location by line and col
 
 ### warnAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __warnAt__(int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __warnAt__(int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports a warning anchored to a resource location by line and column.
 
@@ -658,7 +443,7 @@ Reports a warning anchored to a resource location by line and column.
 
 ### errorAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __errorAt__(int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __errorAt__(int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports an error anchored to a resource location by line and column.
 
@@ -671,7 +456,7 @@ Reports an error anchored to a resource location by line and column.
 
 ### errorAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __errorAt__(int line, int column, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __errorAt__(int line, int column, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports an error anchored to a resource location by line and column.
 
@@ -684,7 +469,7 @@ Reports an error anchored to a resource location by line and column.
 
 ### infoAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __infoAt__(int line, int column, int startOffset, int endOffset, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __infoAt__(int line, int column, int startOffset, int endOffset, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports an informational message anchored to a precise character span within a resource.
 
@@ -697,7 +482,7 @@ Reports an informational message anchored to a precise character span within a r
 
 ### warnAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __warnAt__(int line, int column, int startOffset, int endOffset, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __warnAt__(int line, int column, int startOffset, int endOffset, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports a warning anchored to a precise character span within a resource.
 
@@ -710,7 +495,7 @@ Reports a warning anchored to a precise character span within a resource.
 
 ### errorAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __errorAt__(int line, int column, int startOffset, int endOffset, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __errorAt__(int line, int column, int startOffset, int endOffset, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports an error anchored to a precise character span within a resource.
 
@@ -723,7 +508,7 @@ Reports an error anchored to a precise character span within a resource.
 
 ### errorAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __errorAt__(int line, int column, int startOffset, int endOffset, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __errorAt__(int line, int column, int startOffset, int endOffset, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports an error anchored to a precise character span within a resource.
 
@@ -736,7 +521,7 @@ Reports an error anchored to a precise character span within a resource.
 
 ### infoAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __infoAt__([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __infoAt__([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports an informational message derived from the location attributes of a structural token.
 
@@ -749,7 +534,7 @@ Reports an informational message derived from the location attributes of a struc
 
 ### warnAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __warnAt__([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __warnAt__([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports a warning derived from the location attributes of a structural token.
 
@@ -762,7 +547,7 @@ Reports a warning derived from the location attributes of a structural token.
 
 ### errorAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __errorAt__([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __errorAt__([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports an error derived from the location attributes of a structural token.
 
@@ -775,7 +560,7 @@ Reports an error derived from the location attributes of a structural token.
 
 ### errorAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __errorAt__([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __errorAt__([Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 Reports an error derived from the location attributes of a structural token.
 
@@ -788,7 +573,7 @@ Reports an error derived from the location attributes of a structural token.
 
 ### warnAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __warnAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __warnAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 
 
@@ -801,7 +586,7 @@ Reports an error derived from the location attributes of a structural token.
 
 ### errorAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __errorAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __errorAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, int line, int column, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 
 
@@ -814,7 +599,7 @@ Reports an error derived from the location attributes of a structural token.
 
 ### warnAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __warnAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __warnAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 
 
@@ -827,7 +612,7 @@ Reports an error derived from the location attributes of a structural token.
 
 ### errorAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __errorAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __errorAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 
 
@@ -840,7 +625,7 @@ Reports an error derived from the location attributes of a structural token.
 
 ### errorAt
 
-<span style="font-family: monospace; font-size: 80%;">public void __errorAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __errorAt__([URI](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/net/URI.html) uri, [Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) token, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
 
 
 

@@ -4,19 +4,26 @@ Package [io.github.qishr.cascara.common.exec.ipc](index.md)
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
         [java.lang.Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html)<br/>
                 [java.lang.Exception](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Exception.html)<br/>
-                        io.github.qishr.cascara.common.exec.ipc.IpcException<br/>
+                        [java.lang.RuntimeException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/RuntimeException.html)<br/>
+                                [io.github.qishr.cascara.common.i18n.exception.LocalizableRuntimeException](../../../../../../../io/github/qishr/cascara/common/i18n/exception/LocalizableRuntimeException.md)<br/>
+                                        io.github.qishr.cascara.common.exec.ipc.IpcException<br/>
 <br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __IpcException__<br/>extends [Exception](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Exception.html)
+<span style="font-family: monospace; font-size: 80%;">public class __IpcException__<br/>extends [LocalizableRuntimeException](../../../../../../../io/github/qishr/cascara/common/i18n/exception/LocalizableRuntimeException.md)
 </span>
 
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                              | Description |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| IpcException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) msg) |             |
+| Constructor                                                                                                                                                                                                                                                                                                                                  | Description |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| IpcException([LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           |             |
+| IpcException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md) message, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
 
+
+### Methods inherited from [LocalizableRuntimeException](../../../../../../../io/github/qishr/cascara/common/i18n/exception/LocalizableRuntimeException.md)
+
+getLocalizableMessage, of, getLocalizedMessage, getMessage, getDetails
 

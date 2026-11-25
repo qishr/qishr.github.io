@@ -4,9 +4,6 @@ Package [io.github.qishr.cascara.ui.language](index.md)
 [java.lang.Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)<br/>
         io.github.qishr.cascara.ui.language.ObservableLocalizer<br/>
 <br/>
-All Implemented Interfaces:<br/>
-    [Localizer](../../../../../../io/github/qishr/cascara/ui/language/Localizer.md), [DiagnosticLocalizer](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/DiagnosticLocalizer.md)
-
 All Known Implementing Classes:<br/>
     [UiLocalizer](../../../../../../io/github/qishr/cascara/ui/language/UiLocalizer.md)
 
@@ -18,24 +15,54 @@ All Known Implementing Classes:<br/>
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                     | Method                                                                                                                                                                                                                                                                                                                                                   | Description |
-|---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public abstract [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)                    | [getLanguageConfig](#getlanguageconfig)()                                                                                                                                                                                                                                                                                                                |             |
-| public abstract [ReadOnlyObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ReadOnlyObjectProperty.html) | [activeLocaleProperty](#activelocaleproperty)()                                                                                                                                                                                                                                                                                                          |             |
-| public abstract [ReadOnlyObjectWrapper](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ReadOnlyObjectWrapper.html)   | [activeLanguageOptionProperty](#activelanguageoptionproperty)()                                                                                                                                                                                                                                                                                          |             |
-| public abstract [OptionProvider](../../../../../../io/github/qishr/cascara/ui/option/OptionProvider.md)                               | [getLanguageOptionProvider](#getlanguageoptionprovider)()                                                                                                                                                                                                                                                                                                |             |
-| public abstract void                                                                                                                  | [setActiveLanguage](#setactivelanguage)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) languageTag)                                                                                                                                                                                                        |             |
-| public abstract [NodeOrientation](https://openjfx.io/javadoc/25/javafx.graphics/javafx/geometry/NodeOrientation.html)                 | [getDirection](#getdirection)()                                                                                                                                                                                                                                                                                                                          |             |
-| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                          | [formatWithDefault](#formatwithdefault)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) defaultText, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] args) |             |
-| public abstract void                                                                                                                  | [setActiveLanguage](#setactivelanguage)([Option](../../../../../../io/github/qishr/cascara/ui/option/Option.md) language)                                                                                                                                                                                                                                |             |
+| Modifier and Type                                                                                                                     | Method                                                                                                                                                                                                                                                                                                                                                   | Description                                                                              |
+|---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                          | [format](#format)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                                             | Formats the code with dynamic arguments using the environment's current language bundle. |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                          | [format](#format)([LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md) diagnosticCode, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] args)                                                                                               |                                                                                          |
+| public abstract boolean                                                                                                               | [registerTranslations](#registertranslations)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) yamlStream)                                                                                                                                                                                           |                                                                                          |
+| public abstract [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html)                    | [getLanguageOptions](#getlanguageoptions)()                                                                                                                                                                                                                                                                                                              |                                                                                          |
+| public abstract [ReadOnlyObjectProperty](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ReadOnlyObjectProperty.html) | [activeLocaleProperty](#activelocaleproperty)()                                                                                                                                                                                                                                                                                                          |                                                                                          |
+| public abstract [ReadOnlyObjectWrapper](https://openjfx.io/javadoc/25/javafx.base/javafx/beans/property/ReadOnlyObjectWrapper.html)   | [activeLanguageOptionProperty](#activelanguageoptionproperty)()                                                                                                                                                                                                                                                                                          |                                                                                          |
+| public abstract [OptionProvider](../../../../../../io/github/qishr/cascara/ui/option/OptionProvider.md)                               | [getLanguageOptionProvider](#getlanguageoptionprovider)()                                                                                                                                                                                                                                                                                                |                                                                                          |
+| public abstract void                                                                                                                  | [setActiveLanguage](#setactivelanguage)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) languageTag)                                                                                                                                                                                                        |                                                                                          |
+| public abstract [NodeOrientation](https://openjfx.io/javadoc/25/javafx.graphics/javafx/geometry/NodeOrientation.html)                 | [getDirection](#getdirection)()                                                                                                                                                                                                                                                                                                                          |                                                                                          |
+| public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                          | [formatWithDefault](#formatwithdefault)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) defaultText, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] args) |                                                                                          |
+| public abstract void                                                                                                                  | [setActiveLanguage](#setactivelanguage)([Option](../../../../../../io/github/qishr/cascara/ui/option/Option.md) language)                                                                                                                                                                                                                                |                                                                                          |
 
 
 
 ## Method Details
 
-### getLanguageConfig
+### format
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html) __getLanguageConfig__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __format__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)</span>
+
+Formats the code with dynamic arguments using the environment's current language bundle.
+
+
+---
+
+### format
+
+<span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __format__([LocalizableMessage](../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md) diagnosticCode, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] args)</span>
+
+
+
+
+---
+
+### registerTranslations
+
+<span style="font-family: monospace; font-size: 80%;">public abstract boolean __registerTranslations__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) yamlStream)</span>
+
+
+
+
+---
+
+### getLanguageOptions
+
+<span style="font-family: monospace; font-size: 80%;">public abstract [ObservableList](https://openjfx.io/javadoc/25/javafx.base/javafx/collections/ObservableList.html) __getLanguageOptions__()</span>
 
 
 

@@ -19,12 +19,14 @@ Package [io.github.qishr.cascara.common.security.asn1.types](index.md)
 | public static final ASN1Tag<ASN1Enumerated>       | [ENUMERATED](#enumerated)               |             |
 | public static final ASN1Tag<ASN1Integer>          | [INTEGER](#integer)                     |             |
 | public static final ASN1Tag<ASN1Null>             | [NULL](#null)                           |             |
+| public static final ASN1Tag<ASN1NumericString>    | [NUMERIC_STRING](#numeric_string)       |             |
 | public static final ASN1Tag<ASN1ObjectIdentifier> | [OBJECT_IDENTIFIER](#object_identifier) |             |
 | public static final ASN1Tag<ASN1OctetString>      | [OCTET_STRING](#octet_string)           |             |
 | public static final ASN1Tag<ASN1PrintableString>  | [PRINTABLE_STRING](#printable_string)   |             |
 | public static final ASN1Tag<ASN1Sequence>         | [SEQUENCE](#sequence)                   |             |
 | public static final ASN1Tag<ASN1Set>              | [SET](#set)                             |             |
 | public static final ASN1Tag<ASN1UTCTime>          | [UTC_TIME](#utc_time)                   |             |
+| public static final ASN1Tag<ASN1UTF8String>       | [UTF8_STRING](#utf8_string)             |             |
 
 
 
@@ -107,6 +109,15 @@ Package [io.github.qishr.cascara.common.security.asn1.types](index.md)
 
 ---
 
+### NUMERIC_STRING
+
+<span style="font-family: monospace; font-size: 80%;">public static final ASN1Tag<ASN1NumericString> __NUMERIC_STRING__</span>
+
+
+
+
+---
+
 ### OBJECT_IDENTIFIER
 
 <span style="font-family: monospace; font-size: 80%;">public static final ASN1Tag<ASN1ObjectIdentifier> __OBJECT_IDENTIFIER__</span>
@@ -155,6 +166,15 @@ Package [io.github.qishr.cascara.common.security.asn1.types](index.md)
 ### UTC_TIME
 
 <span style="font-family: monospace; font-size: 80%;">public static final ASN1Tag<ASN1UTCTime> __UTC_TIME__</span>
+
+
+
+
+---
+
+### UTF8_STRING
+
+<span style="font-family: monospace; font-size: 80%;">public static final ASN1Tag<ASN1UTF8String> __UTF8_STRING__</span>
 
 
 

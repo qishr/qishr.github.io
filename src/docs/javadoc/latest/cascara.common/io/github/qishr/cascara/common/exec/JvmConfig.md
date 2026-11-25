@@ -7,8 +7,7 @@ Package [io.github.qishr.cascara.common.exec](index.md)
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Beta<br/>
-public class __JvmConfig__</span>
+<span style="font-family: monospace; font-size: 80%;">public class __JvmConfig__</span>
 
 
 ## Constructor Summary
@@ -24,9 +23,9 @@ public class __JvmConfig__</span>
 | Modifier and Type                                                                                       | Method                                                                                                                                                                                                                                        | Description                                                                                                |
 |---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)           | [getSystemProperties](#getsystemproperties)()                                                                                                                                                                                                 |                                                                                                            |
-| public [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md)                  | [setSystemProperty](#setsystemproperty)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value) |                                                                                                            |
+| public [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md)                  | [setSystemProperty](#setsystemproperty)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value) |                                                                                                            |
 | public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)           | [getEnv](#getenv)()                                                                                                                                                                                                                           |                                                                                                            |
-| public [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md)                  | [setEnv](#setenv)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value)                       |                                                                                                            |
+| public [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md)                  | [setEnv](#setenv)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value)                       |                                                                                                            |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)         | [getModules](#getmodules)()                                                                                                                                                                                                                   |                                                                                                            |
 | public [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md)                  | [addModule](#addmodule)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) moduleName)                                                                                                              |                                                                                                            |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)         | [getOpens](#getopens)()                                                                                                                                                                                                                       |                                                                                                            |
@@ -66,7 +65,7 @@ public class __JvmConfig__</span>
 
 ### setSystemProperty
 
-<span style="font-family: monospace; font-size: 80%;">public [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) __setSystemProperty__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value)</span>
+<span style="font-family: monospace; font-size: 80%;">public [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) __setSystemProperty__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value)</span>
 
 
 
@@ -84,7 +83,7 @@ public class __JvmConfig__</span>
 
 ### setEnv
 
-<span style="font-family: monospace; font-size: 80%;">public [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) __setEnv__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) value)</span>
+<span style="font-family: monospace; font-size: 80%;">public [JvmConfig](../../../../../../io/github/qishr/cascara/common/exec/JvmConfig.md) __setEnv__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) key, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value)</span>
 
 
 

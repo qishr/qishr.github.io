@@ -32,8 +32,7 @@ All Known Implementing Classes:<br/>
 
 ### toJvmType
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract T __toJvmType__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract T __toJvmType__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)</span>
 
 Converts the `text` into the JVM type specified by this TypeDescriptor.
 
@@ -42,8 +41,7 @@ Converts the `text` into the JVM type specified by this TypeDescriptor.
 
 ### toPrimitive
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) __toPrimitive__(T jvmInstance)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) __toPrimitive__(T jvmInstance)</span>
 
 Converts the JVM type specified by this TypeDescriptor into a JSON Schema primitive type.
 
@@ -56,8 +54,7 @@ One of: null, string, integer (JVM Long), number (JVM Double), boolean.
 
 ### getFormat
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getFormat__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getFormat__()</span>
 
 Retuns the JSON Schema `format` used by this TypeDescriptor.
 
@@ -66,8 +63,7 @@ Retuns the JSON Schema `format` used by this TypeDescriptor.
 
 ### getContentEncoding
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getContentEncoding__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getContentEncoding__()</span>
 
 Returns the JSON Schema `contentEncoding` use by this TypeDescriptor.
 

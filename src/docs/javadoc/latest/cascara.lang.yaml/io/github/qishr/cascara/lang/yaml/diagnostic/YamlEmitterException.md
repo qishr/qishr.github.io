@@ -5,30 +5,30 @@ Package [io.github.qishr.cascara.lang.yaml.diagnostic](index.md)
         [java.lang.Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html)<br/>
                 [java.lang.Exception](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Exception.html)<br/>
                         [java.lang.RuntimeException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/RuntimeException.html)<br/>
-                                [io.github.qishr.cascara.common.diagnostic.exception.LocalizableRuntimeException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)<br/>
-                                        [io.github.qishr.cascara.common.diagnostic.exception.LocatableException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocatableException.md)<br/>
+                                [io.github.qishr.cascara.common.i18n.exception.LocalizableRuntimeException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/exception/LocalizableRuntimeException.md)<br/>
+                                        [io.github.qishr.cascara.common.exception.LocatableException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/exception/LocatableException.md)<br/>
                                                 io.github.qishr.cascara.lang.yaml.diagnostic.YamlEmitterException<br/>
 <br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __YamlEmitterException__<br/>extends [LocatableException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocatableException.md)
+<span style="font-family: monospace; font-size: 80%;">public class __YamlEmitterException__<br/>extends [LocatableException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/exception/LocatableException.md)
 </span>
 
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                                                                                                                                       | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| YamlEmitterException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
-| YamlEmitterException([LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           |             |
+| Constructor                                                                                                                                                                                                                                                                                                                                                         | Description |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| YamlEmitterException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
+| YamlEmitterException([LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           |             |
 
 
-### Methods inherited from [LocatableException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocatableException.md)
+### Methods inherited from [LocatableException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/exception/LocatableException.md)
 
 getRawMessage, getUri, getLine, setUri, getLocalizedMessage, getMessage, getColumn
 
-### Methods inherited from [LocalizableRuntimeException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)
+### Methods inherited from [LocalizableRuntimeException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/exception/LocalizableRuntimeException.md)
 
-getLocalizableMessage, getDetails
+getLocalizableMessage, of, getDetails
 

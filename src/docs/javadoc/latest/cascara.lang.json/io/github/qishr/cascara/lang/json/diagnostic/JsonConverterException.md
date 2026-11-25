@@ -5,25 +5,25 @@ Package [io.github.qishr.cascara.lang.json.diagnostic](index.md)
         [java.lang.Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html)<br/>
                 [java.lang.Exception](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Exception.html)<br/>
                         [java.lang.RuntimeException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/RuntimeException.html)<br/>
-                                [io.github.qishr.cascara.common.diagnostic.exception.LocalizableRuntimeException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)<br/>
+                                [io.github.qishr.cascara.common.i18n.exception.LocalizableRuntimeException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/exception/LocalizableRuntimeException.md)<br/>
                                         io.github.qishr.cascara.lang.json.diagnostic.JsonConverterException<br/>
 <br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">public class __JsonConverterException__<br/>extends [LocalizableRuntimeException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)
+<span style="font-family: monospace; font-size: 80%;">public class __JsonConverterException__<br/>extends [LocalizableRuntimeException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/exception/LocalizableRuntimeException.md)
 </span>
 
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                                                                                                                                         | Description |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| JsonConverterException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
-| JsonConverterException([LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           |             |
+| Constructor                                                                                                                                                                                                                                                                                                                                                           | Description |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| JsonConverterException([Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) cause, [LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
+| JsonConverterException([LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details)                                                                                                           |             |
 
 
-### Methods inherited from [LocalizableRuntimeException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)
+### Methods inherited from [LocalizableRuntimeException](../../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/exception/LocalizableRuntimeException.md)
 
-getLocalizableMessage, getLocalizedMessage, getDetails
+getLocalizableMessage, of, getLocalizedMessage, getMessage, getDetails
 

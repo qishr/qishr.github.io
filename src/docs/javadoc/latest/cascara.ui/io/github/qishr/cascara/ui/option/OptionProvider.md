@@ -43,7 +43,7 @@ All Known Implementing Classes:<br/>
 
 **Throws:**
 
-[LocalizableRuntimeException](../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/exception/LocalizableRuntimeException.md)
+[LocalizableRuntimeException](../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/exception/LocalizableRuntimeException.md)
 
 
 ---

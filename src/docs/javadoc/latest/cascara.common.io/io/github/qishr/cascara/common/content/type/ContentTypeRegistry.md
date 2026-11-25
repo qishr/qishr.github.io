@@ -40,8 +40,7 @@ Package [io.github.qishr.cascara.common.content.type](index.md)
 
 ### SCHEMA
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.DataField<br/>
-public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __SCHEMA__</span>
+<span style="font-family: monospace; font-size: 80%;">public static final [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __SCHEMA__</span>
 
 
 

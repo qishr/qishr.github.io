@@ -20,14 +20,15 @@ Package [io.github.qishr.cascara.common.security.cert](index.md)
 
 ## Method Summary
 
-| Modifier and Type                                                                                           | Method                                                                                                                                                                     | Description                                                                                                                                   |
-|-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| public static [TrustStore](../../../../../../../io/github/qishr/cascara/common/security/cert/TrustStore.md) | [empty](#empty)()                                                                                                                                                          |                                                                                                                                               |
-| public static [TrustStore](../../../../../../../io/github/qishr/cascara/common/security/cert/TrustStore.md) | [fromSystemProperties](#fromsystemproperties)()                                                                                                                            | Loads a TrustStore from standard Cascara system properties: -Dcascara.truststore=/path/to/truststore.jks -Dcascara.truststore.password=secret |
-| public static [TrustStore](../../../../../../../io/github/qishr/cascara/common/security/cert/TrustStore.md) | [load](#load)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) path, char[] password)                                          |                                                                                                                                               |
-| public boolean                                                                                              | [contains](#contains)([X509Certificate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/security/cert/X509Certificate.html) cert)                        |                                                                                                                                               |
-| public boolean                                                                                              | [isTrusted](#istrusted)([X509Certificate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/security/cert/X509Certificate.html) cert, boolean checkExpiry) |                                                                                                                                               |
-| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)               | [getCertificates](#getcertificates)()                                                                                                                                      |                                                                                                                                               |
+| Modifier and Type                                                                                           | Method                                                                                                                                                                     | Description                                                 |
+|-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| public static [TrustStore](../../../../../../../io/github/qishr/cascara/common/security/cert/TrustStore.md) | [empty](#empty)()                                                                                                                                                          |                                                             |
+| public static [TrustStore](../../../../../../../io/github/qishr/cascara/common/security/cert/TrustStore.md) | [load](#load)()                                                                                                                                                            | Loads a TrustStore from standard Cascara system properties: |
+| public static [TrustStore](../../../../../../../io/github/qishr/cascara/common/security/cert/TrustStore.md) | [load](#load)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) path, char[] password)                                          |                                                             |
+| public boolean                                                                                              | [contains](#contains)([X509Certificate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/security/cert/X509Certificate.html) cert)                        |                                                             |
+| public boolean                                                                                              | [isEmpty](#isempty)()                                                                                                                                                      |                                                             |
+| public boolean                                                                                              | [isTrusted](#istrusted)([X509Certificate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/security/cert/X509Certificate.html) cert, boolean checkExpiry) |                                                             |
+| public [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)               | [getCertificates](#getcertificates)()                                                                                                                                      |                                                             |
 
 
 
@@ -42,12 +43,11 @@ Package [io.github.qishr.cascara.common.security.cert](index.md)
 
 ---
 
-### fromSystemProperties
+### load
 
-<span style="font-family: monospace; font-size: 80%;">public static [TrustStore](../../../../../../../io/github/qishr/cascara/common/security/cert/TrustStore.md) __fromSystemProperties__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static [TrustStore](../../../../../../../io/github/qishr/cascara/common/security/cert/TrustStore.md) __load__()</span>
 
-Loads a TrustStore from standard Cascara system properties:
--Dcascara.truststore=/path/to/truststore.jks
+Loads a TrustStore from standard Cascara system properties:-Dcascara.truststore=/path/to/truststore.jks
 -Dcascara.truststore.password=secret
 
 
@@ -65,6 +65,15 @@ Loads a TrustStore from standard Cascara system properties:
 ### contains
 
 <span style="font-family: monospace; font-size: 80%;">public boolean __contains__([X509Certificate](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/security/cert/X509Certificate.html) cert)</span>
+
+
+
+
+---
+
+### isEmpty
+
+<span style="font-family: monospace; font-size: 80%;">public boolean __isEmpty__()</span>
 
 
 

@@ -22,29 +22,28 @@ Direct Known Subtypes:<br/>
 |------------------------------------------|-----------------------------|-------------|
 | protected static final DateTimeFormatter | [TIME_FORMAT](#time_format) |             |
 | protected static final ZoneId            | [UTC](#utc)                 |             |
-| protected FormatConfig                   | [config](#config)           |             |
+| protected LogFormatConfig                | [config](#config)           |             |
 | protected long                           | [processId](#processid)     |             |
 
 
 
 ## Constructor Summary
 
-| Constructor                                                                                                                     | Description |
-|---------------------------------------------------------------------------------------------------------------------------------|-------------|
-| PlainLogFormatter([FormatConfig](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatConfig.md) config) |             |
+| Constructor         | Description |
+|---------------------|-------------|
+| PlainLogFormatter() |             |
 
 
 
 ## Method Summary
 
-| Modifier and Type                                                                                                      | Method                                                                                                                                                                                                                                                                                                                                                                          | Description |
-|------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public [PlainLogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/PlainLogFormatter.md) | [withFields](#withfields)([Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[Field](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.Field.md)> fields)                                                                                                                                                  |             |
-| public [LogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.md)           | [setConfig](#setconfig)([FormatConfig](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatConfig.md) config)                                                                                                                                                                                                                                           |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                    | [format](#format)([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic)                                                                                                                                                                                                                                                        |             |
-| protected [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                 | [formatSource](#formatsource)([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic)                                                                                                                                                                                                                                            |             |
-| protected void                                                                                                         | [formatLine](#formatline)([StringBuilder](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StringBuilder.html) sb, [Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) msgLine, int msgLineNumber)        |             |
-| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)                    | [formatStackTrace](#formatstacktrace)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level, [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] stackTrace, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t) |             |
+| Modifier and Type                                                                                            | Method                                                                                                                                                                                                                                                                                                                                                                          | Description |
+|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public [LogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.md) | [setConfig](#setconfig)([LogFormatConfig](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatConfig.md) config)                                                                                                                                                                                                                                     |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)          | [format](#format)([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic)                                                                                                                                                                                                                                                        |             |
+| protected [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)       | [formatSource](#formatsource)([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic)                                                                                                                                                                                                                                            |             |
+| protected void                                                                                               | [formatLine](#formatline)([StringBuilder](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StringBuilder.html) sb, [Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) msgLine, int msgLineNumber)        |             |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)          | [formatStackTrace](#formatstacktrace)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level, [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] stackTrace, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t) |             |
 
 
 
@@ -70,7 +69,7 @@ Direct Known Subtypes:<br/>
 
 ### config
 
-<span style="font-family: monospace; font-size: 80%;">protected FormatConfig __config__</span>
+<span style="font-family: monospace; font-size: 80%;">protected LogFormatConfig __config__</span>
 
 
 
@@ -89,22 +88,9 @@ Direct Known Subtypes:<br/>
 
 ## Method Details
 
-### withFields
-
-<span style="font-family: monospace; font-size: 80%;">public [PlainLogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/PlainLogFormatter.md) __withFields__([Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[Field](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.Field.md)> fields)</span>
-
-
-
-**Specified By:**
-
-[LogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.md)
-
-
----
-
 ### setConfig
 
-<span style="font-family: monospace; font-size: 80%;">public [LogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.md) __setConfig__([FormatConfig](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatConfig.md) config)</span>
+<span style="font-family: monospace; font-size: 80%;">public [LogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.md) __setConfig__([LogFormatConfig](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatConfig.md) config)</span>
 
 
 

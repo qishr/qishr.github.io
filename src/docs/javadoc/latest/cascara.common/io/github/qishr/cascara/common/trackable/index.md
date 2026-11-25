@@ -13,6 +13,7 @@
     | [TrackableArray](TrackableArray.md)             |             |
     | [TrackableObject](TrackableObject.md)           |             |
     | [TrackableTabularData](TrackableTabularData.md) |             |
+    | [TrackableValue](TrackableValue.md)             |             |
     | [TrackingException](TrackingException.md)       |             |
     | [TrackingMessage](TrackingMessage.md)           |             |
 
@@ -23,6 +24,7 @@
     |-------------------------------------------------|-------------|
     | [Trackable](Trackable.md)                       |             |
     | [TrackableTabularData](TrackableTabularData.md) |             |
+    | [TrackableValue](TrackableValue.md)             |             |
 
 
 === "Classes"

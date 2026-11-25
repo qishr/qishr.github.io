@@ -8,7 +8,6 @@
 
     | Class                                       | Description |
     |---------------------------------------------|-------------|
-    | [SignatureException](SignatureException.md) |             |
     | [SignaturePolicy](SignaturePolicy.md)       |             |
     | [SignatureStatus](SignatureStatus.md)       |             |
     | [SplSignaturePolicy](SplSignaturePolicy.md) |             |
@@ -25,7 +24,6 @@
 
     | Class                                       | Description |
     |---------------------------------------------|-------------|
-    | [SignatureException](SignatureException.md) |             |
     | [SplSignaturePolicy](SplSignaturePolicy.md) |             |
 
 

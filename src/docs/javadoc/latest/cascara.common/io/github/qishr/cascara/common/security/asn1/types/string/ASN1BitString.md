@@ -42,13 +42,13 @@ Package [io.github.qishr.cascara.common.security.asn1.types.string](index.md)
 | public int                                                                                             | [length](#length)()           |                                                      |
 
 
-### Methods inherited from [ASN1Object](../../../../../../../../../io/github/qishr/cascara/common/security/asn1/types/ASN1Object.md)
-
-toString, getTag, getEncoded, equals, hashCode
-
 ### Methods inherited from [ASN1String](../../../../../../../../../io/github/qishr/cascara/common/security/asn1/types/string/ASN1String.md)
 
 iterator, getValueBytes
+
+### Methods inherited from [ASN1Object](../../../../../../../../../io/github/qishr/cascara/common/security/asn1/types/ASN1Object.md)
+
+toString, getTag, getEncoded, equals, hashCode
 
 
 ## Method Details

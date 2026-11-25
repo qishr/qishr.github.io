@@ -8,8 +8,7 @@ Package [io.github.qishr.cascara.common.lang.processor](index.md)
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Beta<br/>
-public class __ProcessorFactory__<br/>extends [AbstractServiceProviderFactory](../../../../../../../io/github/qishr/cascara/common/service/AbstractServiceProviderFactory.md)
+<span style="font-family: monospace; font-size: 80%;">public class __ProcessorFactory__<br/>extends [AbstractServiceProviderFactory](../../../../../../../io/github/qishr/cascara/common/service/AbstractServiceProviderFactory.md)
 </span>
 
 
@@ -74,8 +73,7 @@ createServiceProvider, createServiceProvider
 
 ### system
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public static [ProcessorFactory](../../../../../../../io/github/qishr/cascara/common/lang/processor/ProcessorFactory.md) __system__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static [ProcessorFactory](../../../../../../../io/github/qishr/cascara/common/lang/processor/ProcessorFactory.md) __system__()</span>
 
 
 

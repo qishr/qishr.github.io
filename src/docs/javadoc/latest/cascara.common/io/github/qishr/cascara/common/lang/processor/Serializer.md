@@ -54,8 +54,7 @@ move seamlessly between raw objects, structured ASTs, and the final string outpu
 
 ### toString
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toString__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toString__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) jvmInstance)</span>
 
 Converts a Java Object directly into its textual representation,
 for example JSON or YAML.
@@ -107,8 +106,7 @@ Returns an AST representation of the provided object.
 
 ### fromString
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract C __fromString__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract C __fromString__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)</span>
 
 
 
@@ -131,8 +129,7 @@ A populated instance of the requested class.
 
 ### fromString
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract C __fromString__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [TypeReference](../../../../../../../io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract C __fromString__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text, [TypeReference](../../../../../../../io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)</span>
 
 
 
@@ -145,8 +142,7 @@ public abstract C __fromString__([String](https://docs.oracle.com/en/java/javase
 
 ### fromReader
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract C __fromReader__([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract C __fromReader__([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)</span>
 
 
 
@@ -159,8 +155,7 @@ public abstract C __fromReader__([Reader](https://docs.oracle.com/en/java/javase
 
 ### fromReader
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract C __fromReader__([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader, [TypeReference](../../../../../../../io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract C __fromReader__([Reader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/Reader.html) reader, [TypeReference](../../../../../../../io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)</span>
 
 
 
@@ -173,8 +168,7 @@ public abstract C __fromReader__([Reader](https://docs.oracle.com/en/java/javase
 
 ### fromStream
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract C __fromStream__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract C __fromStream__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)</span>
 
 
 
@@ -187,8 +181,7 @@ public abstract C __fromStream__([InputStream](https://docs.oracle.com/en/java/j
 
 ### fromStream
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract C __fromStream__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [TypeReference](../../../../../../../io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract C __fromStream__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is, [TypeReference](../../../../../../../io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)</span>
 
 
 
@@ -201,8 +194,7 @@ public abstract C __fromStream__([InputStream](https://docs.oracle.com/en/java/j
 
 ### fromAst
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract C __fromAst__([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract C __fromAst__([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<C> jvmType)</span>
 
 Transforms an AST representation back into a specific Java type.
 
@@ -221,8 +213,7 @@ A populated instance of the requested class.
 
 ### fromAst
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract C __fromAst__([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [TypeReference](../../../../../../../io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract C __fromAst__([AstNode](../../../../../../../io/github/qishr/cascara/common/lang/ast/AstNode.md) astNode, [TypeReference](../../../../../../../io/github/qishr/cascara/common/type/TypeReference.md)<C> typeRef)</span>
 
 
 
@@ -231,8 +222,7 @@ public abstract C __fromAst__([AstNode](../../../../../../../io/github/qishr/cas
 
 ### registerTypeDescriptor
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public abstract [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md) __registerTypeDescriptor__([TypeDescriptor](../../../../../../../io/github/qishr/cascara/common/type/TypeDescriptor.md)<?> typeDescriptor)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md) __registerTypeDescriptor__([TypeDescriptor](../../../../../../../io/github/qishr/cascara/common/type/TypeDescriptor.md)<?> typeDescriptor)</span>
 
 
 
@@ -241,8 +231,7 @@ public abstract [Serializer](../../../../../../../io/github/qishr/cascara/common
 
 ### setParser
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public abstract [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md) __setParser__([AstParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/AstParser.md)<N, ?, ?> parser)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md) __setParser__([AstParser](../../../../../../../io/github/qishr/cascara/common/lang/processor/AstParser.md)<N, ?, ?> parser)</span>
 
 
 
@@ -251,8 +240,7 @@ public abstract [Serializer](../../../../../../../io/github/qishr/cascara/common
 
 ### setProviderFactoryEnabled
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public abstract [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md) __setProviderFactoryEnabled__(boolean b)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md) __setProviderFactoryEnabled__(boolean b)</span>
 
 
 
@@ -261,8 +249,7 @@ public abstract [Serializer](../../../../../../../io/github/qishr/cascara/common
 
 ### setHeuristicMatchEnabled
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public abstract [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md) __setHeuristicMatchEnabled__(boolean b)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Serializer](../../../../../../../io/github/qishr/cascara/common/lang/processor/Serializer.md) __setHeuristicMatchEnabled__(boolean b)</span>
 
 
 

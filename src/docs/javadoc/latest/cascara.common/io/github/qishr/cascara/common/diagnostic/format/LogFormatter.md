@@ -20,9 +20,8 @@ Formats diagnostic instances into string representations.
 | Modifier and Type                                                                                                     | Method                                                                                                                                                                                                                                                                                                                                                                          | Description                                      |
 |-----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)          | [format](#format)([Diagnostic](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.md) diagnostic)                                                                                                                                                                                                                                                        | Formats the given diagnostic into a output line. |
-| public abstract [LogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.md) | [withFields](#withfields)([Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[Field](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.Field.md)> fields)                                                                                                                                                  | Configures active fields shown in output.        |
 | public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)          | [formatStackTrace](#formatstacktrace)([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level, [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] stackTrace, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t) |                                                  |
-| public abstract [LogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.md) | [setConfig](#setconfig)([FormatConfig](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatConfig.md) config)                                                                                                                                                                                                                                           |                                                  |
+| public abstract [LogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.md) | [setConfig](#setconfig)([LogFormatConfig](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatConfig.md) config)                                                                                                                                                                                                                                     |                                                  |
 
 
 
@@ -49,27 +48,6 @@ cascara.common-1.0.0
 
 ---
 
-### withFields
-
-<span style="font-family: monospace; font-size: 80%;">public abstract [LogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.md) __withFields__([Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)<[Field](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.Field.md)> fields)</span>
-
-Configures active fields shown in output.
-
-**Parameters:**
-
-`fields` - active fields to include
-
-**Returns:**
-
-this formatter instance
-
-**Since:**
-
-cascara.common-1.0.0
-
-
----
-
 ### formatStackTrace
 
 <span style="font-family: monospace; font-size: 80%;">public abstract [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __formatStackTrace__([Level](../../../../../../../io/github/qishr/cascara/common/diagnostic/Diagnostic.Level.md) level, [StackTraceElement](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/StackTraceElement.html)[] stackTrace, [Throwable](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Throwable.html) t)</span>
@@ -81,7 +59,7 @@ cascara.common-1.0.0
 
 ### setConfig
 
-<span style="font-family: monospace; font-size: 80%;">public abstract [LogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.md) __setConfig__([FormatConfig](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/FormatConfig.md) config)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [LogFormatter](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatter.md) __setConfig__([LogFormatConfig](../../../../../../../io/github/qishr/cascara/common/diagnostic/format/LogFormatConfig.md) config)</span>
 
 
 

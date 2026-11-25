@@ -14,19 +14,19 @@ Package [io.github.qishr.cascara.lang.yaml.token](index.md)
 
 ## Constructor Summary
 
-| Constructor                                                                                                                                                                                                                                                                                         | Description |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| YamlErrorToken(int line, int column, int offset, [LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
+| Constructor                                                                                                                                                                                                                                                                           | Description |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| YamlErrorToken(int line, int column, int offset, [LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md) code, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[] details) |             |
 
 
 
 ## Method Summary
 
-| Modifier and Type                                                                                                                           | Method                      | Description |
-|---------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|-------------|
-| public [LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) | [getCode](#getcode)()       |             |
-| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]                                       | [getDetails](#getdetails)() |             |
-| public [YamlTokenType](../../../../../../../io/github/qishr/cascara/lang/yaml/token/YamlTokenType.md)                                       | [getType](#gettype)()       |             |
+| Modifier and Type                                                                                                             | Method                      | Description |
+|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------|-------------|
+| public [LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md) | [getCode](#getcode)()       |             |
+| public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]                         | [getDetails](#getdetails)() |             |
+| public [YamlTokenType](../../../../../../../io/github/qishr/cascara/lang/yaml/token/YamlTokenType.md)                         | [getType](#gettype)()       |             |
 
 
 ### Methods inherited from [YamlToken](../../../../../../../io/github/qishr/cascara/lang/yaml/token/YamlToken.md)
@@ -38,7 +38,7 @@ getOffset, setFollowedByTab, getLexeme, toString, setHasPreceedingNewLine, getSt
 
 ### getCode
 
-<span style="font-family: monospace; font-size: 80%;">public [LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md) __getCode__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [LocalizableMessage](../../../../../../../../cascara.common/io/github/qishr/cascara/common/i18n/LocalizableMessage.md) __getCode__()</span>
 
 
 

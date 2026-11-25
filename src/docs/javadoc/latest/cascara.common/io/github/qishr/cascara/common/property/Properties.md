@@ -23,9 +23,10 @@ All Implemented Interfaces:<br/>
 
 ## Constructor Summary
 
-| Constructor  | Description |
-|--------------|-------------|
-| Properties() |             |
+| Constructor                                                                                                                                                                                                          | Description |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Properties()                                                                                                                                                                                                         |             |
+| Properties([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<? extends [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md)<?>> propertyClass) |             |
 
 
 
@@ -33,12 +34,15 @@ All Implemented Interfaces:<br/>
 
 | Modifier and Type                                                                                       | Method                                                                                                                                                                                                                                | Description                     |
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| public [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md)                | [createProperty](#createproperty)()                                                                                                                                                                                                   |                                 |
 | public boolean                                                                                          | [containsKey](#containskey)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) k)                                                                                                           |                                 |
 | public [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)           | [getValuesMap](#getvaluesmap)()                                                                                                                                                                                                       |                                 |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)         | [asList](#aslist)()                                                                                                                                                                                                                   |                                 |
 | public [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md)                | [getProperty](#getproperty)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                        |                                 |
+| public int                                                                                              | [size](#size)()                                                                                                                                                                                                                       |                                 |
 | public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)     | [getValue](#getvalue)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                              |                                 |
 | public T                                                                                                | [get](#get)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                                        |                                 |
+| public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)     | [getString](#getstring)([PropertyName](../../../../../../io/github/qishr/cascara/common/property/Properties.PropertyName.md) name)                                                                                                    |                                 |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)     | [getString](#getstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                                                                                                            |                                 |
 | public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html)     | [getString](#getstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) defaultValue) |                                 |
 | public int                                                                                              | [getInt](#getint)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, int defaultValue)                                                                                                |                                 |
@@ -47,13 +51,11 @@ All Implemented Interfaces:<br/>
 | public double                                                                                           | [getNumber](#getnumber)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, double defaultValue)                                                                                       | For consistency with JSONSchema |
 | public long                                                                                             | [getInteger](#getinteger)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, long defaultValue)                                                                                       | For consistency with JSONSchema |
 | public boolean                                                                                          | [getBoolean](#getboolean)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, boolean defaultValue)                                                                                    |                                 |
+| public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)            | [set](#set)([PropertyName](../../../../../../io/github/qishr/cascara/common/property/Properties.PropertyName.md) name, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value)            |                                 |
 | public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)            | [set](#set)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value)                    |                                 |
-| public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)            | [set](#set)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) k, double v)                                                                                                                 |                                 |
-| public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)            | [set](#set)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) k, int v)                                                                                                                    |                                 |
-| public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)            | [set](#set)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) k, boolean v)                                                                                                                |                                 |
-| public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)            | [addAll](#addall)([Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) properties)                                                                                                                   |                                 |
+| public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)            | [addAll](#addall)([Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) properties)                                                                                                                   | Copies                          |
+| public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)            | [addAll](#addall)([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md)<?>> properties)                | Copies                          |
 | public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)            | [add](#add)([Property](../../../../../../io/github/qishr/cascara/common/property/Property.md)<?> property)                                                                                                                            |                                 |
-| public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)            | [add](#add)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value)                    |                                 |
 | public [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html)[]   | [getValues](#getvalues)()                                                                                                                                                                                                             |                                 |
 | public void                                                                                             | [remove](#remove)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) k)                                                                                                                     |                                 |
 | public void                                                                                             | [remove](#remove)([Property](../../../../../../io/github/qishr/cascara/common/property/Property.md)<?> property)                                                                                                                      |                                 |
@@ -64,11 +66,21 @@ All Implemented Interfaces:<br/>
 | public [Iterator](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Iterator.html) | [iterator](#iterator)()                                                                                                                                                                                                               | Returns Iterator instance       |
 | public static [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)     | [fromSystemProperties](#fromsystemproperties)()                                                                                                                                                                                       |                                 |
 | public static [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)     | [parse](#parse)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) text)                                                                                                                    |                                 |
-| public static [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)     | [load](#load)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) path)                                                                                                                      |                                 |
+| public static [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)     | [fromFile](#fromfile)([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) path)                                                                                                              |                                 |
+| public static [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)     | [fromStream](#fromstream)([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)                                                                                                    |                                 |
 
 
 
 ## Method Details
+
+### createProperty
+
+<span style="font-family: monospace; font-size: 80%;">public [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md) __createProperty__()</span>
+
+
+
+
+---
 
 ### containsKey
 
@@ -103,8 +115,16 @@ All Implemented Interfaces:<br/>
 
 ### getProperty
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md) __getProperty__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)</span>
+<span style="font-family: monospace; font-size: 80%;">public [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md) __getProperty__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)</span>
+
+
+
+
+---
+
+### size
+
+<span style="font-family: monospace; font-size: 80%;">public int __size__()</span>
 
 
 
@@ -126,8 +146,7 @@ public [Property](../../../../../../io/github/qishr/cascara/common/property/Prop
 
 ### get
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public T __get__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)</span>
+<span style="font-family: monospace; font-size: 80%;">public T __get__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)</span>
 
 
 
@@ -136,8 +155,16 @@ public T __get__([String](https://docs.oracle.com/en/java/javase/24/docs/api/jav
 
 ### getString
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getString__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)</span>
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getString__([PropertyName](../../../../../../io/github/qishr/cascara/common/property/Properties.PropertyName.md) name)</span>
+
+
+
+
+---
+
+### getString
+
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getString__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)</span>
 
 
 
@@ -213,34 +240,16 @@ For consistency with JSONSchema
 
 ### set
 
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) __set__([PropertyName](../../../../../../io/github/qishr/cascara/common/property/Properties.PropertyName.md) name, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value)</span>
+
+
+
+
+---
+
+### set
+
 <span style="font-family: monospace; font-size: 80%;">public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) __set__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value)</span>
-
-
-
-
----
-
-### set
-
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) __set__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) k, double v)</span>
-
-
-
-
----
-
-### set
-
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) __set__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) k, int v)</span>
-
-
-
-
----
-
-### set
-
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) __set__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) k, boolean v)</span>
 
 
 
@@ -251,7 +260,16 @@ For consistency with JSONSchema
 
 <span style="font-family: monospace; font-size: 80%;">public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) __addAll__([Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) properties)</span>
 
+Copies
 
+
+---
+
+### addAll
+
+<span style="font-family: monospace; font-size: 80%;">public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) __addAll__([List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)<? extends [Property](../../../../../../io/github/qishr/cascara/common/property/Property.md)<?>> properties)</span>
+
+Copies
 
 
 ---
@@ -259,15 +277,6 @@ For consistency with JSONSchema
 ### add
 
 <span style="font-family: monospace; font-size: 80%;">public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) __add__([Property](../../../../../../io/github/qishr/cascara/common/property/Property.md)<?> property)</span>
-
-
-
-
----
-
-### add
-
-<span style="font-family: monospace; font-size: 80%;">public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) __add__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, [Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) value)</span>
 
 
 
@@ -380,15 +389,28 @@ Returns Iterator instance
 
 ---
 
-### load
+### fromFile
 
-<span style="font-family: monospace; font-size: 80%;">public static [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) __load__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) path)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) __fromFile__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) path)</span>
 
 
 
 **Throws:**
 
-[LocalizableIOException](../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableIOException.md)
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
+
+
+---
+
+### fromStream
+
+<span style="font-family: monospace; font-size: 80%;">public static [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md) __fromStream__([InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) is)</span>
+
+
+
+**Throws:**
+
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
 
 
 ---

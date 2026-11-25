@@ -32,13 +32,13 @@ All Implemented Interfaces:<br/>
 | public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [getContrastColor](#getcontrastcolor)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) colorStr)                                                                                                                                                                                                                                                                              |             |
 
 
-### Methods inherited from [AbstractRenderer](../../../../../../../io/github/qishr/cascara/ui/render/AbstractRenderer.md)
-
-getSchemaType, getSchemaFormat, getContentType, getServiceProperties
-
 ### Methods inherited from [AbstractScalarRenderer](../../../../../../../io/github/qishr/cascara/ui/render/AbstractScalarRenderer.md)
 
 extractString, extractString
+
+### Methods inherited from [AbstractRenderer](../../../../../../../io/github/qishr/cascara/ui/render/AbstractRenderer.md)
+
+getSchemaType, getSchemaFormat, getContentType, getServiceProperties
 
 
 ## Method Details

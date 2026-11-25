@@ -9,7 +9,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 <span style="font-family: monospace; font-size: 80%;">public class __ContentType__</span>
 
-A stable, persisted canonical content type used throughout Cascara.instance().This class represents the authoritative identity of a content type,
+A stable, persisted canonical content type used throughout Cascara.get().This class represents the authoritative identity of a content type,
 including its canonical ID, canonical name, and the full set of MIME
 types and filename suffixes associated with it.
 

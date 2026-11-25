@@ -63,6 +63,7 @@ A convenience method for instantiating provider classes.
     | [ServiceMetadata](ServiceMetadata.md)                               |                                                                                               |
     | [ServiceProvider](ServiceProvider.md)                               |                                                                                               |
     | [ServiceProviderFactory](ServiceProviderFactory.md)                 |  Note: For language processors, use io.github.qishr.cascara.common.lang.util.ProcessorFactory |
+    | [SplConfig](SplConfig.md)                                           |                                                                                               |
 
 
 === "Interfaces"
@@ -83,6 +84,7 @@ A convenience method for instantiating provider classes.
     | [ServiceException](ServiceException.md)                             |                                                                                               |
     | [ServiceMetadata](ServiceMetadata.md)                               |                                                                                               |
     | [ServiceProviderFactory](ServiceProviderFactory.md)                 |  Note: For language processors, use io.github.qishr.cascara.common.lang.util.ProcessorFactory |
+    | [SplConfig](SplConfig.md)                                           |                                                                                               |
 
 
 === "Enum Classes"

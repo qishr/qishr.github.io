@@ -12,6 +12,7 @@ Language-agnostic Primitive type and TypeDescriptor utilities.
     | [AbstractTypeDescriptor](AbstractTypeDescriptor.md)     |                                         |
     | [PrimitiveType](PrimitiveType.md)                       | Represents JSON Schema primitive types. |
     | [ScalarDescriptor](ScalarDescriptor.md)                 |                                         |
+    | [TypeConfig](TypeConfig.md)                             |                                         |
     | [TypeDescriptor](TypeDescriptor.md)                     |                                         |
     | [TypeDescriptorFactory](TypeDescriptorFactory.md)       |                                         |
     | [TypeReference](TypeReference.md)                       | References a generic type.              |
@@ -33,6 +34,7 @@ Language-agnostic Primitive type and TypeDescriptor utilities.
     |---------------------------------------------------------|----------------------------|
     | [AbstractScalarDescriptor](AbstractScalarDescriptor.md) |                            |
     | [AbstractTypeDescriptor](AbstractTypeDescriptor.md)     |                            |
+    | [TypeConfig](TypeConfig.md)                             |                            |
     | [TypeDescriptorFactory](TypeDescriptorFactory.md)       |                            |
     | [TypeReference](TypeReference.md)                       | References a generic type. |
 

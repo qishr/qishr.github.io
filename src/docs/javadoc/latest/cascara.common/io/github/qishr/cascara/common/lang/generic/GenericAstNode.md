@@ -92,8 +92,7 @@ Direct Known Subtypes:<br/>
 
 ### getToken
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) __getToken__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [Token](../../../../../../../io/github/qishr/cascara/common/lang/token/Token.md) __getToken__()</span>
 
 
 

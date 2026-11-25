@@ -6,7 +6,7 @@ Package [io.github.qishr.cascara.common.diagnostic.message](index.md)
                 io.github.qishr.cascara.common.diagnostic.message.HttpMessage<br/>
 <br/>
 All Implemented Interfaces:<br/>
-    [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+    [LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ----
@@ -105,7 +105,7 @@ public static final  SERVER_ERROR
 
 **Specified By:**
 
-[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ---
@@ -118,7 +118,7 @@ public static final  SERVER_ERROR
 
 **Specified By:**
 
-[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/diagnostic/message/LocalizableMessage.md)
+[LocalizableMessage](../../../../../../../io/github/qishr/cascara/common/i18n/LocalizableMessage.md)
 
 
 ---

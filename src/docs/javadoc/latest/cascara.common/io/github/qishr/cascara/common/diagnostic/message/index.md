@@ -6,21 +6,21 @@
 
 === "All Classes and Interfaces"
 
-    | Class                                       | Description |
-    |---------------------------------------------|-------------|
-    | [DnsMessage](DnsMessage.md)                 |             |
-    | [FileMessage](FileMessage.md)               |             |
-    | [GenericMessage](GenericMessage.md)         |             |
-    | [HttpMessage](HttpMessage.md)               |             |
-    | [InetMessage](InetMessage.md)               |             |
-    | [LocalizableMessage](LocalizableMessage.md) |             |
+    | Class                                     | Description |
+    |-------------------------------------------|-------------|
+    | [DiagnosticMessage](DiagnosticMessage.md) |             |
+    | [DnsMessage](DnsMessage.md)               |             |
+    | [FileMessage](FileMessage.md)             |             |
+    | [GenericMessage](GenericMessage.md)       |             |
+    | [HttpMessage](HttpMessage.md)             |             |
+    | [InetMessage](InetMessage.md)             |             |
 
 
-=== "Interfaces"
+=== "Classes"
 
-    | Class                                       | Description |
-    |---------------------------------------------|-------------|
-    | [LocalizableMessage](LocalizableMessage.md) |             |
+    | Class                                     | Description |
+    |-------------------------------------------|-------------|
+    | [DiagnosticMessage](DiagnosticMessage.md) |             |
 
 
 === "Enum Classes"

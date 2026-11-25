@@ -13,8 +13,7 @@ All Known Implementing Classes:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Beta<br/>
-public interface __PullParser__</span>
+<span style="font-family: monospace; font-size: 80%;">public interface __PullParser__</span>
 
 
 ## Method Summary

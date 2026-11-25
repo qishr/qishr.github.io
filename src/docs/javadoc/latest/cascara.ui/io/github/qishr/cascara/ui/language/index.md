@@ -11,9 +11,8 @@
     | [LanguageOption](LanguageOption.md)                 |             |
     | [LanguageOptionProvider](LanguageOptionProvider.md) |             |
     | [Localization](Localization.md)                     |             |
-    | [Localizer](Localizer.md)                           |             |
     | [ObservableLocalizer](ObservableLocalizer.md)       |             |
-    | [Translation](Translation.md)                       |             |
+    | [OldLocalizer](OldLocalizer.md)                     |             |
     | [UiLocalizer](UiLocalizer.md)                       |             |
 
 
@@ -21,8 +20,8 @@
 
     | Class                                         | Description |
     |-----------------------------------------------|-------------|
-    | [Localizer](Localizer.md)                     |             |
     | [ObservableLocalizer](ObservableLocalizer.md) |             |
+    | [OldLocalizer](OldLocalizer.md)               |             |
 
 
 === "Classes"
@@ -32,7 +31,6 @@
     | [LanguageOption](LanguageOption.md)                 |             |
     | [LanguageOptionProvider](LanguageOptionProvider.md) |             |
     | [Localization](Localization.md)                     |             |
-    | [Translation](Translation.md)                       |             |
     | [UiLocalizer](UiLocalizer.md)                       |             |
 
 

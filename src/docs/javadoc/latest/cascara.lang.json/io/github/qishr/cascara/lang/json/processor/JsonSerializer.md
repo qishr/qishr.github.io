@@ -49,7 +49,7 @@ Standard implementation for JSON serialization.
 
 ### Methods inherited from [AbstractSerializer](../../../../../../../../cascara.common/io/github/qishr/cascara/common/lang/processor/AbstractSerializer.md)
 
-trace, error, serialize, debug, warn, registerTypeDescriptor, deserialize, warnInaccessible, setProviderFactoryEnabled, setHeuristicMatchEnabled, getServiceProperties, report, deserialize, warnInaccessible
+trace, error, serialize, debug, registerTypeDescriptor, deserialize, warnInaccessible, setProviderFactoryEnabled, setHeuristicMatchEnabled, warn, getServiceProperties, report, deserialize, warnInaccessible
 
 
 ## Method Details

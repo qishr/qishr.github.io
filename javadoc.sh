@@ -1,9 +1,9 @@
 /usr/bin/env /Library/Java/JavaVirtualMachines/zulu-25.jdk/Contents/Home/bin/java \
 -da --add-exports=jdk.javadoc/jdk.javadoc.internal.tool=markista -XX:+ShowCodeDetailsInExceptionMessages \
---module-path /Users/sandy/git/markista/markista/markista/build/classes/java/main:/Users/sandy/git/markista/markista/markista/build/resources/main:/Users/sandy/git/cascara/ecosystem/studio/cascara-studio-dev/cascara-studio/build/modulepath \
+--module-path /Users/sandy/git/markista/markista/markista-doclet/build/classes/java/main:/Users/sandy/git/markista/markista/markista-doclet/build/resources/main:/Users/sandy/git/cascara/ecosystem/studio/cascara-studio-dev/cascara-studio/build/modulepath \
 -m markista/io.github.sandydunlop.markista.doclet.MarkdownDoclet \
 -doclet io.github.sandydunlop.markista.doclet.MarkdownDoclet \
--docletpath /Users/sandy/git/markista/markista/markista/build/classes/java/main \
+-docletpath /Users/sandy/git/markista/markista/markista-doclet/build/classes/java/main \
 -tabs \
 -d /Users/sandy/git/cascara/ecosystem/other/qishr.github.io/src/docs/javadoc/latest \
 --show-module-contents all \
@@ -20,7 +20,7 @@
 --module-source-path cascara.lang.yaml=/Users/sandy/git/cascara/ecosystem/core/cascara-lang-yaml/src/main/java \
 --module-source-path cascara.macos.files=/Users/sandy/git/cascara/ecosystem/studio/cascara-macos-files/src/main/java \
 --module-source-path cascara.macos.menus=/Users/sandy/git/cascara/ecosystem/studio/cascara-macos-menus/src/main/java \
---module-source-path cascara.ui=/Users/sandy/git/cascara/ecosystem/core/cascara-ui/cascara-ui/src/main/java
+--module-source-path cascara.ui=/Users/sandy/git/cascara/ecosystem/core/cascara-ui/cascara-ui-lib/src/main/java
 
 #--module-path /Users/sandy/git/cascara/ecosystem/core/cascara-ui/cascara-ui/build/modulepath:/Users/sandy/git/cascara/ecosystem/studio/cascara-macos-files/build/modulepath/cascara-macos-files-1.1.1.jar:/Users/sandy/git/cascara/ecosystem/studio/cascara-macos-menus/build/modulepath/cascara-macos-menus-0.2.1.jar \
 

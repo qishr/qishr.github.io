@@ -46,15 +46,14 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 **Throws:**
 
-[LocalizableIOException](../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableIOException.md)
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
 
 
 ---
 
 ### getResourceAsStream
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public static [InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) __getResourceAsStream__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) __getResourceAsStream__([Class](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Class.html)<?> clazz, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) path)</span>
 
 Returns an `InputStream` for a JRE resource.
 
@@ -64,7 +63,7 @@ The `InputStream` returned by `Class.getResourceAsStream`.
 
 **Throws:**
 
-[LocalizableIOException](../../../../../../io/github/qishr/cascara/common/diagnostic/exception/LocalizableIOException.md)
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
 
 
 ---
@@ -98,8 +97,7 @@ The `InputStream` returned by `Class.getResourceAsStream`.
 
 ### getModule
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public static [Module](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Module.html) __getModule__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) moduleName)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [Module](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Module.html) __getModule__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) moduleName)</span>
 
 
 
@@ -117,8 +115,7 @@ public static [Module](https://docs.oracle.com/en/java/javase/24/docs/api/java.b
 
 ### getEffectiveClassLoader
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public static [ClassLoader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/ClassLoader.html) __getEffectiveClassLoader__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static [ClassLoader](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/ClassLoader.html) __getEffectiveClassLoader__()</span>
 
 
 
@@ -127,8 +124,7 @@ public static [ClassLoader](https://docs.oracle.com/en/java/javase/24/docs/api/j
 
 ### isRunningInTerminal
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public static @io.github.qishr.cascara.common.annotation.Experimental boolean __isRunningInTerminal__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static @io.github.qishr.cascara.common.annotation.Experimental boolean __isRunningInTerminal__()</span>
 
 
 
@@ -137,8 +133,7 @@ public static @io.github.qishr.cascara.common.annotation.Experimental boolean __
 
 ### isRunningViaGradle
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public static @io.github.qishr.cascara.common.annotation.Experimental boolean __isRunningViaGradle__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static @io.github.qishr.cascara.common.annotation.Experimental boolean __isRunningViaGradle__()</span>
 
 
 
@@ -147,8 +142,7 @@ public static @io.github.qishr.cascara.common.annotation.Experimental boolean __
 
 ### isRunningViaEclipse
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public static @io.github.qishr.cascara.common.annotation.Experimental boolean __isRunningViaEclipse__()</span>
+<span style="font-family: monospace; font-size: 80%;">public static @io.github.qishr.cascara.common.annotation.Experimental boolean __isRunningViaEclipse__()</span>
 
 
 

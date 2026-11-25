@@ -40,8 +40,7 @@ All Known Implementing Classes:<br/>
 
 ### setKeys
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public abstract [JarVerifier](../../../../../../../io/github/qishr/cascara/common/security/verifier/JarVerifier.md) __setKeys__([Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), byte[]> keys)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [JarVerifier](../../../../../../../io/github/qishr/cascara/common/security/verifier/JarVerifier.md) __setKeys__([Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), byte[]> keys)</span>
 
 
 
@@ -50,8 +49,7 @@ public abstract [JarVerifier](../../../../../../../io/github/qishr/cascara/commo
 
 ### setSignatures
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public abstract [JarVerifier](../../../../../../../io/github/qishr/cascara/common/security/verifier/JarVerifier.md) __setSignatures__([Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), byte[]> signatures)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [JarVerifier](../../../../../../../io/github/qishr/cascara/common/security/verifier/JarVerifier.md) __setSignatures__([Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html)<[String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html), byte[]> signatures)</span>
 
 
 
@@ -60,8 +58,7 @@ public abstract [JarVerifier](../../../../../../../io/github/qishr/cascara/commo
 
 ### setManifest
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public abstract [JarVerifier](../../../../../../../io/github/qishr/cascara/common/security/verifier/JarVerifier.md) __setManifest__(byte[] rawManifestBytes)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [JarVerifier](../../../../../../../io/github/qishr/cascara/common/security/verifier/JarVerifier.md) __setManifest__(byte[] rawManifestBytes)</span>
 
 
 
@@ -97,8 +94,7 @@ public abstract [JarVerifier](../../../../../../../io/github/qishr/cascara/commo
 
 ### getSigners
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html) __getSigners__()</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Map.html) __getSigners__()</span>
 
 
 
@@ -107,8 +103,7 @@ public abstract [Map](https://docs.oracle.com/en/java/javase/24/docs/api/java.ba
 
 ### getSigner
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public abstract [VerifiedSigner](../../../../../../../io/github/qishr/cascara/common/security/verifier/JarVerifier.VerifiedSigner.md) __getSigner__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)</span>
+<span style="font-family: monospace; font-size: 80%;">public abstract [VerifiedSigner](../../../../../../../io/github/qishr/cascara/common/security/verifier/JarVerifier.VerifiedSigner.md) __getSigner__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)</span>
 
 
 

@@ -37,7 +37,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 | public [JarManifest](../../../../../../io/github/qishr/cascara/common/util/JarManifest.md)                  | [getManifest](#getmanifest)()                                                                                                                 |             |
 | public [JarEntry](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/jar/JarEntry.html) | [getJarEntry](#getjarentry)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name)                |             |
 | public [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)             | [getJarEntries](#getjarentries)()                                                                                                             |             |
-| public [InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) | [getInputStream](#getinputstream)([JarFileEntry](../../../../../../io/github/qishr/cascara/common/util/JarFile.JarFileEntry.md) entry)        |             |
+| public [InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) | [getInputStream](#getinputstream)([ZipEntry](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/zip/ZipEntry.html) entry) |             |
 | public [InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) | [getInputStream](#getinputstream)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)     |             |
 | public byte[]                                                                                               | [extractFile](#extractfile)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) entryName)           |             |
 | public [Properties](../../../../../../io/github/qishr/cascara/common/property/Properties.md)                | [getMavenProperties](#getmavenproperties)()                                                                                                   |             |
@@ -51,7 +51,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 ### Methods inherited from [ZipFile](../../../../../../io/github/qishr/cascara/common/util/ZipFile.md)
 
-create, addFile, listEntries, getInputStream, addFile, remove, getEntries, addDirectory, addFile, walk, addDirectory, extractFile, getEntries, getEntries, getComment, getEntry, stream, getPath, close, size
+create, addFile, listEntries, addFile, remove, getEntries, addDirectory, addFile, walk, addDirectory, extractFile, getEntries, getEntries, getComment, getEntry, stream, getPath, close, size
 
 
 ## Field Details
@@ -89,8 +89,7 @@ create, addFile, listEntries, getInputStream, addFile, remove, getEntries, addDi
 
 ### open
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public static [JarFile](../../../../../../io/github/qishr/cascara/common/util/JarFile.md) __open__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) jarPath, boolean verify)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [JarFile](../../../../../../io/github/qishr/cascara/common/util/JarFile.md) __open__([Path](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/nio/file/Path.html) jarPath, boolean verify)</span>
 
 
 
@@ -130,7 +129,7 @@ public static [JarFile](../../../../../../io/github/qishr/cascara/common/util/Ja
 
 ### getInputStream
 
-<span style="font-family: monospace; font-size: 80%;">public [InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) __getInputStream__([JarFileEntry](../../../../../../io/github/qishr/cascara/common/util/JarFile.JarFileEntry.md) entry)</span>
+<span style="font-family: monospace; font-size: 80%;">public [InputStream](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/InputStream.html) __getInputStream__([ZipEntry](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/zip/ZipEntry.html) entry)</span>
 
 
 
@@ -178,8 +177,7 @@ public static [JarFile](../../../../../../io/github/qishr/cascara/common/util/Ja
 
 ### getModuleName
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getModuleName__()</span>
+<span style="font-family: monospace; font-size: 80%;">public [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __getModuleName__()</span>
 
 
 

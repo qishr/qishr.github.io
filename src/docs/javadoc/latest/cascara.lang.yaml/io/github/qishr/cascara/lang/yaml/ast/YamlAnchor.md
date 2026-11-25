@@ -36,13 +36,13 @@ Package [io.github.qishr.cascara.lang.yaml.ast](index.md)
 | public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [extractAnchorName](#extractanchorname)([YamlToken](../../../../../../../io/github/qishr/cascara/lang/yaml/token/YamlToken.md) anchorToken) |                                                            |
 
 
-### Methods inherited from [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)
-
-isPreceededByNewLine, getOptions, setFileEndsWithNewLine, getTag, setAnchor, addComments, getStartLine, fileEndsWithNewLine, getEndColumn, setTag, addComment, setPreceededByNewLine, getResolvedTag, getToken, getAnchor, getNodeStyle, setNodeStyle, getStartColumn, getSemanticColumn, getEndLine, getComments, getProperties, setResolvedTag, setSemanticColumn
-
 ### Methods inherited from [YamlNodeProperty](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNodeProperty.md)
 
 accept
+
+### Methods inherited from [YamlNode](../../../../../../../io/github/qishr/cascara/lang/yaml/ast/YamlNode.md)
+
+isPreceededByNewLine, getOptions, setFileEndsWithNewLine, getTag, setAnchor, addComments, getStartLine, fileEndsWithNewLine, getEndColumn, setTag, addComment, setPreceededByNewLine, getResolvedTag, getToken, getAnchor, getNodeStyle, setNodeStyle, getStartColumn, getSemanticColumn, getEndLine, getComments, getProperties, setResolvedTag, setSemanticColumn
 
 
 ## Method Details
@@ -119,8 +119,7 @@ Generates a hash code based on the node's logical content.
 
 ### extractAnchorName
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __extractAnchorName__([YamlToken](../../../../../../../io/github/qishr/cascara/lang/yaml/token/YamlToken.md) anchorToken)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __extractAnchorName__([YamlToken](../../../../../../../io/github/qishr/cascara/lang/yaml/token/YamlToken.md) anchorToken)</span>
 
 
 

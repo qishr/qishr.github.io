@@ -9,8 +9,7 @@ Package [io.github.qishr.cascara.common.trackable.property](index.md)
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public class __TrackableBooleanProperty__<br/>extends [TrackableProperty](../../../../../../../io/github/qishr/cascara/common/trackable/property/TrackableProperty.md)<[Boolean](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Boolean.html)>
+<span style="font-family: monospace; font-size: 80%;">public class __TrackableBooleanProperty__<br/>extends [TrackableProperty](../../../../../../../io/github/qishr/cascara/common/trackable/property/TrackableProperty.md)<[Boolean](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Boolean.html)>
 </span>
 
 
@@ -31,11 +30,11 @@ public class __TrackableBooleanProperty__<br/>extends [TrackableProperty](../../
 
 ### Methods inherited from [TrackableProperty](../../../../../../../io/github/qishr/cascara/common/trackable/property/TrackableProperty.md)
 
-getOwner, setOwner, setDeclaredProperty, addTracker, setValue, isDeclaredProperty, invalidate, removeTracker, setMediaType, setName, getMediaType
+addTracker, removeInvalidationTracker, getOwner, invalidate, setOwner, setDeclaredProperty, setValue, isDeclaredProperty, removeTracker, setMediaType, setName, addInvalidationTracker, getMediaType
 
 ### Methods inherited from [Property](../../../../../../../io/github/qishr/cascara/common/property/Property.md)
 
-asLong, asBoolean, asString, getName, getValues, asDouble, asInteger, asDouble, asBoolean, asInteger, isEmpty, getValue, getValue, setPrimitiveType, getString, asLong, getPrimitiveType, getValuesMap
+asLong, asBoolean, asString, duplicate, getName, getValues, asDouble, asInteger, asDouble, asBoolean, asInteger, isEmpty, getValue, toString, getValue, setPrimitiveType, getString, asLong, getPrimitiveType, copyFrom, getValuesMap
 
 
 ## Method Details

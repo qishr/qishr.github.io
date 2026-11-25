@@ -10,8 +10,7 @@ All Implemented Interfaces:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public final class __SplSignaturePolicy__</span>
+<span style="font-family: monospace; font-size: 80%;">public final class __SplSignaturePolicy__</span>
 
 
 ## Nested Class Summary
@@ -102,8 +101,7 @@ public final class __SplSignaturePolicy__</span>
 
 ### evaluate
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.NonNull<br/>
-public [SignatureStatus](../../../../../../../io/github/qishr/cascara/common/security/policy/SignatureStatus.md) __evaluate__([JarFile](../../../../../../../io/github/qishr/cascara/common/util/JarFile.md) jarFile)</span>
+<span style="font-family: monospace; font-size: 80%;">public [SignatureStatus](../../../../../../../io/github/qishr/cascara/common/security/policy/SignatureStatus.md) __evaluate__([JarFile](../../../../../../../io/github/qishr/cascara/common/util/JarFile.md) jarFile)</span>
 
 
 

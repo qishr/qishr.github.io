@@ -80,8 +80,7 @@ The table (this) to allow method chaining.
 
 ### setBorderColor
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public [TextualTable](../../../../../../io/github/qishr/cascara/common/data/TextualTable.md) __setBorderColor__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) s)</span>
+<span style="font-family: monospace; font-size: 80%;">public [TextualTable](../../../../../../io/github/qishr/cascara/common/data/TextualTable.md) __setBorderColor__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) s)</span>
 
 
 
@@ -153,6 +152,10 @@ Renders the table as text without any indentation.
 
 The table (this) to allow method chaining.
 
+**Throws:**
+
+[Exception](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Exception.html)
+
 
 ---
 
@@ -167,6 +170,10 @@ Renders the table as text with a given indentation level (number of spaces).
 `writer` - The Writer to output text to.
 
 `indent` - The number of spaces to indent each line.
+
+**Throws:**
+
+[IOException](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/IOException.html)
 
 
 ---

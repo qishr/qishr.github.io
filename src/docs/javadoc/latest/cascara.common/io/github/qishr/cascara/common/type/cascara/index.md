@@ -8,13 +8,17 @@
 
     | Class                                                           | Description |
     |-----------------------------------------------------------------|-------------|
+    | [DetailedMessageSerializer](DetailedMessageSerializer.md)       |             |
     | [LocalizableMessageDescriptor](LocalizableMessageDescriptor.md) |             |
+    | [SignatureExceptionSerializer](SignatureExceptionSerializer.md) |             |
 
 
 === "Classes"
 
     | Class                                                           | Description |
     |-----------------------------------------------------------------|-------------|
+    | [DetailedMessageSerializer](DetailedMessageSerializer.md)       |             |
     | [LocalizableMessageDescriptor](LocalizableMessageDescriptor.md) |             |
+    | [SignatureExceptionSerializer](SignatureExceptionSerializer.md) |             |
 
 

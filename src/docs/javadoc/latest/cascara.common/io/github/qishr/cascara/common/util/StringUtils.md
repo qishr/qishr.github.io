@@ -7,8 +7,7 @@ Package [io.github.qishr.cascara.common.util](index.md)
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public class __StringUtils__</span>
+<span style="font-family: monospace; font-size: 80%;">public class __StringUtils__</span>
 
 
 ## Field Summary
@@ -39,20 +38,26 @@ public class __StringUtils__</span>
 
 ## Method Summary
 
-| Modifier and Type                                                                                          | Method                                                                                                                                                                                                                                       | Description |
-|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [unescapeUnicode](#unescapeunicode)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) s)                                                                                                          |             |
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [unescapeHex](#unescapehex)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) s)                                                                                                                  |             |
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [debugString](#debugstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string, int pos)                                                                                                    |             |
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [debugString](#debugstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)                                                                                                             |             |
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [debugString](#debugstring)(int limit, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)                                                                                                  |             |
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [debugString](#debugstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, int pos) |             |
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [visibleChar](#visiblechar)(int c)                                                                                                                                                                                                           |             |
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toKebabCase](#tokebabcase)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) camelCase)                                                                                                          |             |
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toPascalCase](#topascalcase)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) kebabCase)                                                                                                        |             |
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toCamelCase](#tocamelcase)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) kebabCase)                                                                                                          |             |
-| public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)     | [parseNumberList](#parsenumberlist)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) numbers)                                                                                                    |             |
-| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [fromDouble](#fromdouble)(double d, int fractionalPartLen)                                                                                                                                                                                   |             |
+| Modifier and Type                                                                                          | Method                                                                                                                                                                                                                                            | Description |
+|------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [unescapeUnicode](#unescapeunicode)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) s)                                                                                                               |             |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [unescapeHex](#unescapehex)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) s)                                                                                                                       |             |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [debugString](#debugstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string, int pos)                                                                                                         |             |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [debugString](#debugstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)                                                                                                                  |             |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [debugString](#debugstring)(int limit, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)                                                                                                       |             |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [debugString](#debugstring)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) name, int pos)      |             |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [visibleChar](#visiblechar)(int c)                                                                                                                                                                                                                |             |
+| public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)     | [parseStringList](#parsestringlist)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)                                                                                                          |             |
+| public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)     | [parseStringList](#parsestringlist)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) delimiter)  |             |
+| public static [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)       | [parseStringSet](#parsestringset)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)                                                                                                            |             |
+| public static [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html)       | [parseStringSet](#parsestringset)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) delimiter)    |             |
+| public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)     | [parseNumberList](#parsenumberlist)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) numbers)                                                                                                         |             |
+| public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html)     | [parseNumberList](#parsenumberlist)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) numbers, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) delimiter) |             |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [fromDouble](#fromdouble)(double d, int fractionalPartLen)                                                                                                                                                                                        |             |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toCamelCase](#tocamelcase)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)                                                                                                                  |             |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toKebabCase](#tokebabcase)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)                                                                                                                  |             |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toPascalCase](#topascalcase)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)                                                                                                                |             |
+| public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) | [toSnakeCase](#tosnakecase)([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)                                                                                                                  |             |
 
 
 
@@ -289,27 +294,36 @@ public class __StringUtils__</span>
 
 ---
 
-### toKebabCase
+### parseStringList
 
-<span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toKebabCase__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) camelCase)</span>
-
-
-
-
----
-
-### toPascalCase
-
-<span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toPascalCase__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) kebabCase)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __parseStringList__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)</span>
 
 
 
 
 ---
 
-### toCamelCase
+### parseStringList
 
-<span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toCamelCase__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) kebabCase)</span>
+<span style="font-family: monospace; font-size: 80%;">public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __parseStringList__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) delimiter)</span>
+
+
+
+
+---
+
+### parseStringSet
+
+<span style="font-family: monospace; font-size: 80%;">public static [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html) __parseStringSet__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)</span>
+
+
+
+
+---
+
+### parseStringSet
+
+<span style="font-family: monospace; font-size: 80%;">public static [Set](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/Set.html) __parseStringSet__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) delimiter)</span>
 
 
 
@@ -325,9 +339,54 @@ public class __StringUtils__</span>
 
 ---
 
+### parseNumberList
+
+<span style="font-family: monospace; font-size: 80%;">public static [List](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/util/List.html) __parseNumberList__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) numbers, [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) delimiter)</span>
+
+
+
+
+---
+
 ### fromDouble
 
 <span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __fromDouble__(double d, int fractionalPartLen)</span>
+
+
+
+
+---
+
+### toCamelCase
+
+<span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toCamelCase__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)</span>
+
+
+
+
+---
+
+### toKebabCase
+
+<span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toKebabCase__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)</span>
+
+
+
+
+---
+
+### toPascalCase
+
+<span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toPascalCase__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)</span>
+
+
+
+
+---
+
+### toSnakeCase
+
+<span style="font-family: monospace; font-size: 80%;">public static [String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) __toSnakeCase__([String](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html) string)</span>
 
 
 

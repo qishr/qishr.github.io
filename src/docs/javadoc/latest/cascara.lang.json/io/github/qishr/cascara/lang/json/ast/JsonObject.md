@@ -81,8 +81,7 @@ getEndColumn, getEndLine, getComments, getStartColumn, getToken, setToken, addCo
 
 ### getEntry
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [JsonProperty](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonProperty.md) __getEntry__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">public [JsonProperty](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonProperty.md) __getEntry__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 
@@ -95,8 +94,7 @@ public [JsonProperty](../../../../../../../io/github/qishr/cascara/lang/json/ast
 
 ### getEntry
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [JsonProperty](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonProperty.md) __getEntry__(int i)</span>
+<span style="font-family: monospace; font-size: 80%;">public [JsonProperty](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonProperty.md) __getEntry__(int i)</span>
 
 
 
@@ -200,8 +198,7 @@ public [JsonProperty](../../../../../../../io/github/qishr/cascara/lang/json/ast
 
 ### getScalar
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Nullable<br/>
-public [JsonScalar](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonScalar.md) __getScalar__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
+<span style="font-family: monospace; font-size: 80%;">public [JsonScalar](../../../../../../../io/github/qishr/cascara/lang/json/ast/JsonScalar.md) __getScalar__([Object](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html) key)</span>
 
 
 

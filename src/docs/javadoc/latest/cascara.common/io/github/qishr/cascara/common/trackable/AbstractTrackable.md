@@ -26,11 +26,11 @@ Direct Known Subtypes:<br/>
 
 ## Method Summary
 
-| Modifier and Type | Method                                                                                                                                                     | Description |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| protected void    | [invalidate](#invalidate)()                                                                                                                                |             |
-| public void       | [addTracker](#addtracker)([InvalidationTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener)       |             |
-| public void       | [removeTracker](#removetracker)([InvalidationTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener) |             |
+| Modifier and Type | Method                                                                                                                                                                             | Description |
+|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| protected void    | [invalidate](#invalidate)()                                                                                                                                                        |             |
+| public void       | [addInvalidationTracker](#addinvalidationtracker)([InvalidationTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener)       |             |
+| public void       | [removeInvalidationTracker](#removeinvalidationtracker)([InvalidationTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener) |             |
 
 
 
@@ -45,9 +45,9 @@ Direct Known Subtypes:<br/>
 
 ---
 
-### addTracker
+### addInvalidationTracker
 
-<span style="font-family: monospace; font-size: 80%;">public void __addTracker__([InvalidationTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __addInvalidationTracker__([InvalidationTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener)</span>
 
 
 
@@ -58,9 +58,9 @@ Direct Known Subtypes:<br/>
 
 ---
 
-### removeTracker
+### removeInvalidationTracker
 
-<span style="font-family: monospace; font-size: 80%;">public void __removeTracker__([InvalidationTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener)</span>
+<span style="font-family: monospace; font-size: 80%;">public void __removeInvalidationTracker__([InvalidationTracker](../../../../../../io/github/qishr/cascara/common/trackable/tracker/InvalidationTracker.md) listener)</span>
 
 
 

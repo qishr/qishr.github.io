@@ -88,8 +88,7 @@ Direct Known Subtypes:<br/>
 
 ### JSON5
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public static final io.github.qishr.cascara.lang.json.util.@io.github.qishr.cascara.common.annotation.Experimental JsonConfig __JSON5__</span>
+<span style="font-family: monospace; font-size: 80%;">public static final io.github.qishr.cascara.lang.json.util.@io.github.qishr.cascara.common.annotation.Experimental JsonConfig __JSON5__</span>
 
 
 

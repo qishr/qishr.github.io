@@ -14,8 +14,7 @@ Direct Known Subtypes:<br/>
 
 ----
 
-<span style="font-family: monospace; font-size: 80%;">@io.github.qishr.cascara.common.annotation.Experimental<br/>
-public class __TrackableObject__<br/>extends [AbstractTrackable](../../../../../../io/github/qishr/cascara/common/trackable/AbstractTrackable.md)
+<span style="font-family: monospace; font-size: 80%;">public class __TrackableObject__<br/>extends [AbstractTrackable](../../../../../../io/github/qishr/cascara/common/trackable/AbstractTrackable.md)
 </span>
 
 
@@ -56,7 +55,7 @@ public class __TrackableObject__<br/>extends [AbstractTrackable](../../../../../
 
 ### Methods inherited from [AbstractTrackable](../../../../../../io/github/qishr/cascara/common/trackable/AbstractTrackable.md)
 
-invalidate, removeTracker, addTracker
+invalidate, removeInvalidationTracker, addInvalidationTracker
 
 
 ## Method Details
